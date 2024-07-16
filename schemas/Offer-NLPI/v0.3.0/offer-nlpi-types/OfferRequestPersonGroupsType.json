@@ -1,0 +1,66 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "array",
+	"minItems": 1,
+	"items": {
+		"type": "object",
+		"properties": {
+			"persongroupId": {
+				"$ref": "../../../Generics/v0.3.0/PersonGroupIdType.json"
+			},
+			"persongroupDescription": {
+				"$ref": "../../../Generics/v0.3.0/PersongroupDescriptionType.json"
+			},
+			"DSBPayrollFemale": {
+				"$ref": "DSBPayrollFemaleType.json"
+			},
+			"DSBPayrollMale": {
+				"$ref": "DSBPayrollMaleType.json"
+			},
+			"DSBPayrollTotal": {
+				"description": "Total daily sickness benefits salary for men and women",
+				"type": "number",
+				"multipleOf": 0.01
+			},
+			"numberOfPersonsFemale": {
+				"$ref": "../../../Generics/v0.3.0/NumberOfPersonsFemaleType.json"
+			},
+			"numberOfPersonsMale": {
+				"$ref": "../../../Generics/v0.3.0/NumberOfPersonsMaleType.json"
+			},
+			"numberOfPersonsTotal": {
+				"description": "Total number of persons",
+				"type": "integer"
+			},
+			"maximumPayrollAmount": {
+				"$ref": "../../../Generics/v0.3.0/MaximumPayrollAmountType.json"
+			},
+			"coverage": {
+				"description": "Daily sickness benefits insurance coverage",
+				"$ref": "CoverageType.json"
+			},
+			"avarageAgePersongroup": {
+				"description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then or equal to 4",
+				"type": "number",
+				"multipleOf": 0.01
+			},
+			"uniformPremiumRate": {
+				"description": "Unit premium rate i.e. should a distinction be made between men and women in the premium rate.",
+				"type": "boolean"
+			}
+		},
+		"additionalProperties": false,
+		"required": [
+			"persongroupId",
+			"persongroupDescription",
+			"DSBPayrollFemale",
+			"DSBPayrollMale",
+			"DSBPayrollTotal",
+			"numberOfPersonsFemale",
+			"numberOfPersonsMale",
+			"numberOfPersonsTotal",
+			"coverage"
+		]
+	},
+	"description": "Group(s) of persons"
+}

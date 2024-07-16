@@ -1,0 +1,79 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Standard header informations",
+	"type": "object",
+	"properties": {
+		"recipient": {
+			"description": "Recipient",
+			"type": "object",
+			"properties": {
+				"broker": {
+					"$ref": "BrokerType.json"
+				},
+				"insurer": {
+					"$ref": "InsurerType.json"
+				},
+				"otherExchangePartner": {
+					"$ref": "OtherExchangePartnerType.json"
+				}
+			},
+			"additionalProperties": false,
+			"oneOf": [
+				{
+					"required": ["broker"]
+				},
+				{
+					"required": ["insurer"]
+				},
+				{
+					"required": ["otherExchangePartner"]
+				}
+			]
+		},
+		"sender": {
+			"type": "object",
+			"description": "Sender",
+			"properties": {
+				"broker": {
+					"$ref": "BrokerType.json"
+				},
+				"insurer": {
+					"$ref": "InsurerType.json"
+				},
+				"otherExchangePartner": {
+					"$ref": "OtherExchangePartnerType.json"
+				}
+			},
+			"additionalProperties": false,
+			"oneOf": [
+				{
+					"required": ["broker"]
+				},
+				{
+					"required": ["insurer"]
+				},
+				{
+					"required": ["otherExchangePartner"]
+				}
+			]
+		},
+		"standard": {
+			"type": "string",
+			"description": "the URI should contain the Standard, type, subtype and version of the json document",
+			"minLength": 1,
+			"format": "uri-reference",
+			"examples": [
+				"http://www.igb2b.ch/offer/nlpi/request/0.2.0",
+				"http://www.igb2b.ch/offer/nlpi/offer/0.2.0",
+				"http://www.igb2b.ch/offer/nlpi/feedback/0.2.0",
+				"http://www.igb2b.ch/offer/nlpi/conclusiondecision/0.2.0"
+			]
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"sender",
+		"recipient",
+		"standard"
+	]
+}

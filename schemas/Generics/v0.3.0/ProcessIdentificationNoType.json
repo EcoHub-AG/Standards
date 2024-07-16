@@ -1,0 +1,7 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Unique identification number of the process",
+	"type": "string",
+	"format": "uuid",
+	"example": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c"
+}

@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Various insurance options",
+	"type": "object",
+	"properties": {
+		"premiumRateGuaranty": {
+			"$ref": "PremiumRateGuarantyType.json"
+		},
+		"renunciationTerminationRightClaim": {
+			"$ref": "RenunciationTerminationRightClaimType.json"
+		},
+		"annualCancellation": {
+			"$ref": "AnnualCancellationType.json"
+		},
+		"DSBtypePayInstalment": {
+			"$ref": "DSBtypePayInstalmentType.json"
+		},
+		"additionalOptions": {
+			"$ref": "../../../Generics/v0.3.0/AdditionalOptionsType.json"
+		},
+		"profitParticipation": {
+			"$ref": "ProfitParticipationType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"profitParticipation"
+	]
+}

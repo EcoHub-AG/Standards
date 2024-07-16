@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Other partner for data exchange",
+	"properties": {
+		"companyId": {
+			"$ref": "CompanyIdType.json",
+			"description": "Unique company identification number (UID) for companies based in Switzerland or EU member states as specified in the UID register of the respective authority."
+		},
+		"companyName": {
+			"$ref": "CompanyNameType.json",
+			"description": "Company name. For a sole proprietorship, name and surname must be entered."
+		},
+		"digitalPartnerId": {
+			"type": "string",
+			"format": "uuid",
+			"example": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c",
+			"description": "Unique identification number of the digital partner"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"companyName",
+		"digitalPartnerId"
+	]
+}

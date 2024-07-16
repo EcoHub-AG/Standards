@@ -1,0 +1,10 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Payment method",
+	"type": "string",
+	"enum": [
+		"1/4 year",
+		"1/2 year",
+		"annually"
+	]
+}

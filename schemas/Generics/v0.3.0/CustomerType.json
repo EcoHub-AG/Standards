@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Customer",
+  "name": "CustomerType",
+  "type": "object",
+  "properties": {
+    "companyName": {
+      "$ref": "CompanyNameType.json"
+    },
+    "companyId": {
+      "$ref": "CompanyIdType.json"
+    },
+    "companyLegalForm": {
+      "$ref": "CompanyLegalFormType.json"
+    },
+    "companyLegalStatus": {
+      "$ref": "CompanyLegalStatusType.json"
+    },
+    "localityDomicil": {
+      "description": "Domicil Address Type",
+	  "$ref": "LocalityDomicilType.json"
+    },
+    "isDomicilLocalityCorrespondenceAddress": {
+      "type": "boolean"
+    },
+    "localityCorrespondence": {
+   	  "description": "Correspondence Address Type",
+      "$ref": "LocalityCorrespondenceType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "companyName",
+    "companyLegalForm",
+    "localityDomicil",
+    "isDomicilLocalityCorrespondenceAddress"
+  ],
+  "if": {
+    "properties": {
+      "isDomicilLocalityCorrespondenceAddress": {
+        "const": false
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "localityCorrespondence"
+    ]
+  }
+}

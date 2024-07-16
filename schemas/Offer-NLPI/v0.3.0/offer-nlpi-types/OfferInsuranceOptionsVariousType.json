@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Various insurance options",
+	"type": "object",
+	"properties": {
+		"premiumRateGuaranty": {
+			"$ref": "PremiumRateGuarantyType.json"
+		},
+		"renunciationTerminationRightClaim": {
+			"$ref": "RenunciationTerminationRightClaimType.json"
+		},
+		"annualCancellation": {
+			"$ref": "AnnualCancellationType.json"
+		},
+		"DSBtypePayInstalment": {
+			"$ref": "DSBtypePayInstalmentType.json"
+		},
+		"additionalOptions": {
+			"$ref": "../../../Generics/v0.3.0/AdditionalOptionsType.json"
+		},
+		"profitParticipation": {
+			"$ref": "ProfitParticipationType.json"
+		},
+		"profitParticipationPremiumRate": {
+			"description": "Surplus participation premium share in percentage",
+			"type": "string"
+		},
+		"profitParticipationRate": {
+			"description": "Surplus participation profit share in percentage",
+			"type": "string"
+		},
+		"profitParticipationPeriodYears": {
+			"description": "Duration of the surplus period in years",
+			"type": "integer"
+		}
+	},
+	"if": {
+		"properties": {
+			"profitParticipation": {
+				"const": true
+			}
+		}
+	},
+	"then": {
+		"required": [
+			"profitParticipationPremiumRate",
+			"profitParticipationRate",
+			"profitParticipationPeriodYears"
+		]
+    },
+    "additionalProperties": false,
+	"required": [
+		"profitParticipation"
+	]
+}

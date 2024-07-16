@@ -1,0 +1,30 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Daily sickness benefits",
+	"properties": {
+		"persongroups": {
+			"$ref": "OfferRequestPersonGroupsType.json"
+		},
+		"fixedPayrolls": {
+			"$ref": "OfferRequestFixedPayrollsType.json"
+		},
+		"insuranceOptions": {
+			"$ref": "OfferRequestInsuranceOptionsType.json"
+		}
+	},
+	"anyOf": [
+		{
+			"required": [
+				"persongroups"
+			]
+		},
+		{
+			"required": [
+				"fixedPayrolls"
+			]
+		}
+	],
+	"additionalProperties": false,
+	"unevaluatedProperties": false
+}

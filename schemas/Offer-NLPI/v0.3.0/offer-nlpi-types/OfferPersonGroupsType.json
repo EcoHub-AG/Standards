@@ -1,0 +1,105 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Group(s) of persons",
+	"type": "array",
+	"minItems": 1,
+	"items": {
+		"type": "object",
+		"properties": {
+			"persongroupId": {
+				"$ref": "../../../Generics/v0.3.0/PersonGroupIdType.json"
+			},
+			"persongroupDescription": {
+				"$ref": "../../../Generics/v0.3.0/PersongroupDescriptionType.json"
+			},
+			"DSBPayrollFemale": {
+				"$ref": "DSBPayrollFemaleType.json"
+			},
+			"DSBPayrollMale": {
+				"$ref": "DSBPayrollMaleType.json"
+			},
+			"DSBPayrollTotal": {
+				"description": "Total daily sickness benefits salary for men and women",
+				"type": "number",
+				"multipleOf": 0.01
+			},
+			"numberOfPersonsFemale": {
+				"$ref": "../../../Generics/v0.3.0/NumberOfPersonsFemaleType.json"
+			},
+			"numberOfPersonsMale": {
+				"$ref": "../../../Generics/v0.3.0/NumberOfPersonsMaleType.json"
+			},
+			"numberOfPersonsTotal": {
+				"description": "Total number of persons",
+				"type": "integer"
+			},
+			"maximumPayrollAmount": {
+				"$ref": "../../../Generics/v0.3.0/MaximumPayrollAmountType.json"
+			},
+			"coverage": {
+				"description": "Daily sickness benefits insurance coverage",
+				"$ref": "CoverageType.json"
+			},
+			"premiumPersongroup": {
+				"description": "Premium of the insured group of persons",
+				"type": "object",
+				"properties": {
+					"netPremiumDSBPersongroupMalePercentage": {
+						"description": "Net premium rate for daily sickness benefits for men in the group of persons. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+						"type": "number",
+						"multipleOf": 0.001
+					},
+					"netPremiumDSBPersongroupMaleAmount": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Net premium amount for daily sickness benefits for men in the group of persons. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer."
+					},
+					"netPremiumDSBPersongroupFemalePercentage": {
+						"description": "Net premium rate for daily sickness benefits for women in the group of persons. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+						"type": "number",
+						"multipleOf": 0.001
+					},
+					"netPremiumDSBPersongroupFemaleAmount": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Net premium amount for daily sickness benefits for women in the group of persons. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer."
+					},
+					"netPremiumDSBMPersongroupPercentage": {
+						"description": "Net premium rate for maternity benefits for persons in the group of persons. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+						"type": "number",
+						"multipleOf": 0.001
+					},
+					"netPremiumDSBMPersongroupAmount": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Net premium amount for maternity benefits for persons in the group of persons. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer."
+					},
+					"netPremiumDSBPPersongroupPercentage": {
+						"description": "Net premium rate for paternity benefits for persons in the group of persons. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+						"type": "number",
+						"multipleOf": 0.001
+					},
+					"netPremiumDSBPPersongroupAmount": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Net premium amount for paternity benefits for persons in the group of persons. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer."
+					}
+				},
+				"additionalProperties": false
+			}
+		},
+		"additionalProperties": false,
+		"required": [
+			"persongroupId",
+			"persongroupDescription",
+			"DSBPayrollFemale",
+			"DSBPayrollMale",
+			"DSBPayrollTotal",
+			"numberOfPersonsFemale",
+			"numberOfPersonsMale",
+			"numberOfPersonsTotal",
+			"coverage",
+			"premiumPersongroup"
+		]
+	}
+}

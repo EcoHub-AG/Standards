@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Insurance coverage",
+  "type": "object",
+  "properties": {
+    "DSBCoverage": {
+      "$ref": "DSBCoverageType.json"
+    },
+    "DSBMCoverage": {
+      "$ref": "DSBMCoverageType.json"
+    },
+    "DSBPCoverage": {
+      "$ref": "DSBPCoverageType.json"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Offer type",
+	"type": "string",
+	"enum": [
+		"initial",
+		"update"
+	]
+}

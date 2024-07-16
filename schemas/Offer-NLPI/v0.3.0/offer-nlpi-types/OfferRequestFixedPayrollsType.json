@@ -1,0 +1,49 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Fixed insured payroll",
+	"type": "array",
+	"minItems": 1,
+	"items": {
+		"type": "object",
+		"properties": {
+			"surname": {
+				"$ref": "../../../Generics/v0.3.0/SurNameType.json"
+			},
+			"firstname": {
+				"$ref": "../../../Generics/v0.3.0/FirstNameType.json"
+			},
+			"birthDate": {
+				"$ref": "../../../Generics/v0.3.0/BirthDateType.json"
+			},
+			"gender": {
+				"$ref": "../../../Generics/v0.3.0/GenderType.json"
+			},
+			"businessRelationPerson": {
+				"$ref": "BusinessRelationPersonType.json"
+			},
+			"benefitCoverage": {
+				"$ref": "BenefitCoverageType.json"
+			},
+			"insuranceType": {
+				"$ref": "InsuranceTypeType.json"
+			},
+			"fixedPayroll": {
+				"$ref": "FixedPayrollType.json"
+			},
+			"coverage": {
+				"description": "Daily sickness benefits insurance coverage",
+				"$ref": "CoverageType.json"
+			}
+		},
+		"additionalProperties": false,
+		"required": [
+			"surname",
+			"firstname",
+			"birthDate",
+			"gender",
+			"benefitCoverage",
+			"insuranceType",
+			"coverage"
+		]
+	}
+}

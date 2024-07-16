@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"NOGAsection": {
+			"description": "Section the NOGA code belongs to",
+			"type": "string"
+		},
+		"NOGAcode": {
+			"description": "NOGA Code, is a 6 digit string identifier",
+			"type": "string",
+			"maxLength": 6
+		},
+		"NOGAname": {
+			"description": "Corresponding name for the NOGA code",
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
