@@ -1,0 +1,3 @@
+schemas/Offer-NLPI/v0.3.0/offer-nlpi-root
+schemas/Offer-NLPI/v0.3.0/offer-nlpi-types
+schemas/Generics/v0.3.0/*
