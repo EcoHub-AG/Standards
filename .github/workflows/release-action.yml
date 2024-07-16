@@ -1,0 +1,41 @@
+name: Create Custom Release Assets
+permissions:
+  contents: write
+  packages: read
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create custom zip files
+        id: create_zips
+        run: |
+          zip_files=""
+          for config in sparse-checkout-configs/*.txt; do
+            name=$(basename "$config" .txt)
+            git config core.sparseCheckout true
+            cp "$config" .git/info/sparse-checkout
+            git read-tree -mu HEAD
+            zip -r "${name}.zip" . -x ".git/*" "config/*"
+            echo "Created $name.zip"
+            zip_files+="${name}.zip "
+          done
+          echo "::set-output name=zip_files::$zip_files"
+
+      - name: Upload release assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./${{ steps.create_zips.outputs.zip_files }}
+          asset_name: ${{ steps.create_zips.outputs.zip_files }}
+          asset_content_type: application/zip
