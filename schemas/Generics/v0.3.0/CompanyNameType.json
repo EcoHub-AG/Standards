@@ -4,5 +4,5 @@
 	"name": "CompanyNameType",
 	"type": "string",
 	"maxLength": 255,
-	"example": "MyCompany Name"
+	"examples": ["MyCompany Name"]
 }

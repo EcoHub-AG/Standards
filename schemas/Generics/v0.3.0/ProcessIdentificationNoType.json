@@ -3,5 +3,5 @@
 	"description": "Unique identification number of the process",
 	"type": "string",
 	"format": "uuid",
-	"example": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c"
+	"examples": ["632e56bd-5f23-4d5b-b1ca-d8d9ccda278c"]
 }

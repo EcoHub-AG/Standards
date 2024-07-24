@@ -1,6 +1,10 @@
 ### Version 0.3.0 (29.05.2024)
 Initial release version
 
+### Version 1.0.0
+- Some types were using the "example" keyword, which is not a valid annotation. These occurences have been changed to
+"examples" with the value wrapped in an array, to make it compliant to the json schema draft.
+
 
 
 

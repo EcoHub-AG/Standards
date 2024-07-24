@@ -4,5 +4,5 @@
   "type": "string",
   "maxLength": 5,
   "pattern": ".*[\\S].*",
-  "example": "15S"
+  "examples": ["15S"]
 }
