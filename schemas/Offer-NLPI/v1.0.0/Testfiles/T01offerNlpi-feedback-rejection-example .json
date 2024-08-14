@@ -1,0 +1,58 @@
+{
+	"processIdentificationNo": "00000000-0000-0000-0000-000000000001",
+	"timestamp": "2024-01-15T19:20:47.0",
+	"header": {
+		"recipient": {
+			"insurer": {
+				"companyId": "CHE-112.444.553",
+				"companyName": "Test Insurer",
+				"insurerCode": "901S"
+			}
+		},
+		"sender": {
+			"broker": {
+				"brokerRegisterNo": "CHE-FINMA-12345",
+				"companyId": "CHE-120.330.754",
+				"companyName": "Test Broker"
+			}
+		},
+		"standard": "http://www.igb2b.ch/offer/nlpi/feedback/0.2.3"
+	},
+	"customer": {
+		"companyName": "Coiffeur Verband Schweiz",
+		"companyId": "CHE-105.841.533",
+		"companyLegalForm": "Association",
+		"companyLegalStatus": "active",
+		"localityDomicil": {
+			"zip": "8000",
+			"city": "Zürich",
+			"country": "CH",
+			"streetName": "Zollstrasse",
+			"houseNumber": "1",
+			"postOfficeBox": "501",
+			"adressExtension": "c/o Dachverband Kleingewerbe"
+		},
+		"isDomicilLocalityCorrespondenceAddress": false,
+		"localityCorrespondence": {
+			"zip": "8000",
+			"city": "Zürich",
+			"country": "CH",
+			"streetName": "Zollstrasse",
+			"houseNumber": "1",
+			"postOfficeBox": "501",
+			"adressExtension": "c/o Dachverband Kleingewerbe"
+		}		
+	},
+	"quotationNo": "4564543-01",
+	"offerDecision": {
+		"offerRejection": {
+			"offerRejectionReason": "This is a statement explaining why the offer was rejected."
+		}
+	},
+	"offerFeedbackMessage": "Customer rejects the offer",
+	"brokerContact": {
+		"contactName": "Test Broker AG - Account Management West",
+		"contactMail": "info@testbrokerag.ch",
+		"contactPhone": "+41444000000"
+	}
+}

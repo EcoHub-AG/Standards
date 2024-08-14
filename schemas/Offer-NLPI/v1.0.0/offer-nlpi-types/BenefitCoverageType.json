@@ -1,0 +1,10 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Insured daily benefit coverage",
+	"type": "string",
+	"enum": [
+		"sickness",
+		"accident",
+		"sickness and accident"
+	]
+}
