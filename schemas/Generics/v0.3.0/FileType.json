@@ -6,7 +6,7 @@
     "filename": {
       "description": "Name of the file with extension",
       "type": "string",
-      "examples": ["offer-document.pdf"]
+      "example": "offer-document.pdf"
     },
     "data": {
       "description": "Base64 encoded content of the attachment",
@@ -16,7 +16,7 @@
     "fingerprint": {
       "description": "The base64-encoded MD5 hash value of the file binary",
       "type": "string",
-      "examples": ["WAHLbX5Pnc0+qYwSonSm/w=="]
+      "example": "WAHLbX5Pnc0+qYwSonSm/w=="
     }
   },
   "additionalProperties": false,

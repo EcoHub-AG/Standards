@@ -3,5 +3,5 @@
 	"description": "ID of the person group",
 	"type": "string",
 	"format": "uuid",
-	"examples": ["345aa049-7693-4710-89d7-e13b87ab988a"]
+	"example": "345aa049-7693-4710-89d7-e13b87ab988a"
 }

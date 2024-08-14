@@ -14,7 +14,7 @@
 		"digitalPartnerId": {
 			"type": "string",
 			"format": "uuid",
-			"examples": ["632e56bd-5f23-4d5b-b1ca-d8d9ccda278c"],
+			"example": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c",
 			"description": "Unique identification number of the digital partner"
 		}
 	},
