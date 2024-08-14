@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Legal form of the company",
+  "name": "CompanyLegalFormType",
+  "type": "string",
+  "enum": [
+    "Incorporated company",
+    "Sole proprietorship",
+    "Simple partnership",
+    "Cooperative",
+    "Limited liability company",
+    "General partnership",
+    "Limited partnership",
+    "Limited commercial partnership",
+    "Corporation under public law",
+    "Association",
+    "Foundation"
+  ],
+  "examples": ["Foundation"]
+}

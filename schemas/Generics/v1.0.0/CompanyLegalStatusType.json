@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Status of the company in terms of legal form",
+  "name": "CompanyLegalStatusType",
+  "type": "string",
+  "enum": [
+    "in Foundation (with entry in the commercial register)",
+    "in Foundation (without entry in the commercial register)",
+    "change of ownership",
+    "active",
+    "in Liquidation",
+    "liquidated"
+  ],
+  "examples": ["active"]
+}
