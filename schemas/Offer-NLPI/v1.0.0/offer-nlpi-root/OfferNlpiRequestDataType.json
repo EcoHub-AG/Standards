@@ -1,16 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"type": "object",
-	"description": "Offer NLPI request version 0.3.0",
+	"description": "Schema for a request for an offer in the Offer NLPI process",
 	"properties": {
 		"processIdentificationNo": {
-			"$ref": "../../../Generics/v0.3.0/ProcessIdentificationNoType.json"
+			"$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
 		},
 		"timestamp": {
-			"$ref": "../../../Generics/v0.3.0/TimestampType.json"
+			"$ref": "../../../Generics/v1.0.0/TimestampType.json"
 		},
 		"header": {
-			"$ref": "../../../Generics/v0.3.0/HeaderType.json"
+			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
 		},
 		"customer": {
 			"$ref": "../offer-nlpi-types/OfferCustomerType.json"
@@ -24,10 +24,10 @@
 			"unevaluatedItems": false
 		},
 		"agency": {
-			"$ref": "../../../Generics/v0.3.0/AgencyType.json"
+			"$ref": "../../../Generics/v1.0.0/AgencyType.json"
 		},
 		"brokerContact": {
-			"$ref": "../../../Generics/v0.3.0/ContactType.json"
+			"$ref": "../../../Generics/v1.0.0/ContactType.json"
 		},
 		"offerRequestType": {
 			"$ref": "../offer-nlpi-types/OfferTypeType.json"
@@ -38,11 +38,11 @@
 			"description": "Date of offer by which the insurer must submit the offer"
 		},
 		"offerLanguage": {
-			"$ref": "../../../Generics/v0.3.0/LanguageType.json",
+			"$ref": "../../../Generics/v1.0.0/LanguageType.json",
 			"description": "Language in which the offer must be made out"
 		},
 		"currency": {
-			"$ref": "../../../Generics/v0.3.0/CurrencyISOCodeType.json"
+			"$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
 		},
 		"previousInsurer": {
 			"description": "Previous insurer",
@@ -58,11 +58,12 @@
 			"$ref": "../offer-nlpi-types/OfferRequestDSBType.json"
 		},
 		"comment": {
-			"$ref": "../../../Generics/v0.3.0/RestrictedStringType.json"
+			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
 		}
 	},
 	"additionalProperties": false,
 	"required": [
+		"processIdentificationNo",
 		"insuranceStartDate",
 		"previousInsurer",
 		"offerRequestType",

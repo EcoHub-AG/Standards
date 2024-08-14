@@ -4,31 +4,31 @@
 	"type": "object",
 	"properties": {
 		"companyName": {
-			"$ref": "../../../Generics/v0.3.0/CompanyNameType.json"
+			"$ref": "../../../Generics/v1.0.0/CompanyNameType.json"
 		},
 		"companyId": {
-			"$ref": "../../../Generics/v0.3.0/CompanyIdType.json"
+			"$ref": "../../../Generics/v1.0.0/CompanyIdType.json"
 		},
 		"companyLegalForm": {
-			"$ref": "../../../Generics/v0.3.0/CompanyLegalFormType.json"
+			"$ref": "../../../Generics/v1.0.0/CompanyLegalFormType.json"
 		},
 		"companyLegalStatus": {
-			"$ref": "../../../Generics/v0.3.0/CompanyLegalStatusType.json"
+			"$ref": "../../../Generics/v1.0.0/CompanyLegalStatusType.json"
 		},
 		"localityDomicil": {
 			"description": "Domicil Address Type",
-			"$ref": "../../../Generics/v0.3.0/LocalityDomicilType.json"
+			"$ref": "../../../Generics/v1.0.0/LocalityDomicilType.json"
 		},
 		"isDomicilLocalityCorrespondenceAddress": {
 			"type": "boolean"
 		},
 		"localityCorrespondence": {
 			"description": "Correspondence Address Type",
-			"$ref": "../../../Generics/v0.3.0/LocalityCorrespondenceType.json"
+			"$ref": "../../../Generics/v1.0.0/LocalityCorrespondenceType.json"
 		},
 		"GAVcompliance": {
 			"description": "Guaranteed compliance with the GAV-conformity",
-			"$ref": "../../../Generics/v0.3.0/TristateType.json"
+			"$ref": "../../../Generics/v1.0.0/TristateType.json"
 		},
 		"GAVname": {
 			"description": "GAV-Designation",

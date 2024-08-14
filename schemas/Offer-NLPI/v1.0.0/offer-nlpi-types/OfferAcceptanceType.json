@@ -15,7 +15,7 @@
 					"type": "array",
 					"minItems": 1,
 					"items": {
-						"$ref": "../../../Generics/v0.3.0/FileType.json"
+						"$ref": "../../../Generics/v1.0.0/FileType.json"
 					}
 				},
 				"physicalSignedDocument": {
@@ -23,7 +23,7 @@
 					"type": "array",
 					"minItems": 1,
 					"items": {
-						"$ref": "../../../Generics/v0.3.0/FileType.json"
+						"$ref": "../../../Generics/v1.0.0/FileType.json"
 					}
 				}
 			},
@@ -58,7 +58,7 @@
 					"type": "array",
 					"minItems": 1,
 					"items": {
-						"$ref": "../../../Generics/v0.3.0/FileType.json"
+						"$ref": "../../../Generics/v1.0.0/FileType.json"
 					}
 				},
 				"physicalSignedDocument": {
@@ -66,7 +66,7 @@
 					"type": "array",
 					"minItems": 1,
 					"items": {
-						"$ref": "../../../Generics/v0.3.0/FileType.json"
+						"$ref": "../../../Generics/v1.0.0/FileType.json"
 					}
 				},
 				"otherAttachments": {
@@ -74,7 +74,7 @@
 					"type": "array",
 					"minItems": 1,
 					"items": {
-						"$ref": "../../../Generics/v0.3.0/FileType.json"
+						"$ref": "../../../Generics/v1.0.0/FileType.json"
 					}
 				}
 			},

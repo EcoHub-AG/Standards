@@ -4,19 +4,19 @@
 	"type": "object",
 	"properties": {
 		"processIdentificationNo": {
-			"$ref": "../../../Generics/v0.3.0/ProcessIdentificationNoType.json"
+			"$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
 		},
 		"timestamp": {
-			"$ref": "../../../Generics/v0.3.0/TimestampType.json"
+			"$ref": "../../../Generics/v1.0.0/TimestampType.json"
 		},
 		"header": {
-			"$ref": "../../../Generics/v0.3.0/HeaderType.json"
+			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
 		},
 		"customer": {
-			"$ref": "../../../Generics/v0.3.0/CustomerType.json"
+			"$ref": "../../../Generics/v1.0.0/CustomerType.json"
 		},
 		"quotationNo": {
-			"$ref": "../../../Generics/v0.3.0/QuotationNoType.json"
+			"$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
 		},
 		"offerDecision": {
 			"description": "Decision whether an offer is accepted or rejected",
@@ -48,11 +48,11 @@
 			"additionalProperties": false
 		},
 		"offerFeedbackMessage": {
-			"$ref": "../../../Generics/v0.3.0/RestrictedStringType.json",
+			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
 			"description": "Feedback text for the offer acceptance or rejection decision"
 		},
 		"brokerContact": {
-			"$ref": "../../../Generics/v0.3.0/ContactType.json"
+			"$ref": "../../../Generics/v1.0.0/ContactType.json"
 		}
 	},
 	"additionalProperties": false,

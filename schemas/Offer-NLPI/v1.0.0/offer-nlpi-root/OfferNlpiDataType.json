@@ -4,13 +4,13 @@
 	"type": "object",
 	"properties": {
 		"processIdentificationNo": {
-			"$ref": "../../../Generics/v0.3.0/ProcessIdentificationNoType.json"
+			"$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
 		},
 		"timestamp": {
-			"$ref": "../../../Generics/v0.3.0/TimestampType.json"
+			"$ref": "../../../Generics/v1.0.0/TimestampType.json"
 		},
 		"header": {
-			"$ref": "../../../Generics/v0.3.0/HeaderType.json"
+			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
 		},
 		"customer": {
 			"$ref": "../offer-nlpi-types/OfferCustomerType.json"
@@ -24,10 +24,10 @@
 			"unevaluatedItems": false
 		},
 		"insurerContact": {
-			"$ref": "../../../Generics/v0.3.0/ContactType.json"
+			"$ref": "../../../Generics/v1.0.0/ContactType.json"
 		},
 		"quotationNo": {
-			"$ref": "../../../Generics/v0.3.0/QuotationNoType.json"
+			"$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
 		},
 		"offerType": {
 			"$ref": "../offer-nlpi-types/OfferTypeType.json"
@@ -47,7 +47,7 @@
 			"$ref": "../offer-nlpi-types/InsuranceEndDateType.json"
 		},
 		"currency": {
-			"$ref": "../../../Generics/v0.3.0/CurrencyISOCodeType.json"
+			"$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
 		},
 		"DSB": {
 			"$ref": "../offer-nlpi-types/OfferDSBType.json"
@@ -113,7 +113,7 @@
 			"additionalProperties": false
 		},
 		"comment": {
-			"$ref": "../../../Generics/v0.3.0/RestrictedStringType.json",
+			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
 			"description": "General comment field"
 		},
 		"offerDocument": {
@@ -121,7 +121,7 @@
 			"type": "array",
 			"minItems": 1,
 			"items": {
-				"$ref": "../../../Generics/v0.3.0/FileType.json"
+				"$ref": "../../../Generics/v1.0.0/FileType.json"
 			}
 		},
 		"contractConditionsDocument": {
@@ -129,12 +129,12 @@
 			"type": "array",
 			"minItems": 1,
 			"items": {
-				"$ref": "../../../Generics/v0.3.0/FileType.json"
+				"$ref": "../../../Generics/v1.0.0/FileType.json"
 			}
 		},
 		"offerAttachmentDocument": {
 			"description": "Additional offer documents e.g. flyers, product fact sheets, health questionnaire",
-			"$ref": "../../../Generics/v0.3.0/MultiFileType.json"
+			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
 		}
 	},
 	"required": [

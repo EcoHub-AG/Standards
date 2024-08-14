@@ -7,16 +7,16 @@
 		"type": "object",
 		"properties": {
 			"surname": {
-				"$ref": "../../../Generics/v0.3.0/SurNameType.json"
+				"$ref": "../../../Generics/v1.0.0/SurNameType.json"
 			},
 			"firstname": {
-				"$ref": "../../../Generics/v0.3.0/FirstNameType.json"
+				"$ref": "../../../Generics/v1.0.0/FirstNameType.json"
 			},
 			"birthDate": {
-				"$ref": "../../../Generics/v0.3.0/BirthDateType.json"
+				"$ref": "../../../Generics/v1.0.0/BirthDateType.json"
 			},
 			"gender": {
-				"$ref": "../../../Generics/v0.3.0/GenderType.json"
+				"$ref": "../../../Generics/v1.0.0/GenderType.json"
 			},
 			"businessRelationPerson": {
 				"$ref": "BusinessRelationPersonType.json"

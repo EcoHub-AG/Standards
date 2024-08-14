@@ -16,7 +16,7 @@
 			"$ref": "DSBtypePayInstalmentType.json"
 		},
 		"additionalOptions": {
-			"$ref": "../../../Generics/v0.3.0/AdditionalOptionsType.json"
+			"$ref": "../../../Generics/v1.0.0/AdditionalOptionsType.json"
 		},
 		"profitParticipation": {
 			"$ref": "ProfitParticipationType.json"

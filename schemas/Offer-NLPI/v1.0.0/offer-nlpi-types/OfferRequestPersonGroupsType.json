@@ -6,10 +6,10 @@
 		"type": "object",
 		"properties": {
 			"persongroupId": {
-				"$ref": "../../../Generics/v0.3.0/PersonGroupIdType.json"
+				"$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
 			},
 			"persongroupDescription": {
-				"$ref": "../../../Generics/v0.3.0/PersongroupDescriptionType.json"
+				"$ref": "../../../Generics/v1.0.0/PersongroupDescriptionType.json"
 			},
 			"DSBPayrollFemale": {
 				"$ref": "DSBPayrollFemaleType.json"
@@ -23,17 +23,17 @@
 				"multipleOf": 0.01
 			},
 			"numberOfPersonsFemale": {
-				"$ref": "../../../Generics/v0.3.0/NumberOfPersonsFemaleType.json"
+				"$ref": "../../../Generics/v1.0.0/NumberOfPersonsFemaleType.json"
 			},
 			"numberOfPersonsMale": {
-				"$ref": "../../../Generics/v0.3.0/NumberOfPersonsMaleType.json"
+				"$ref": "../../../Generics/v1.0.0/NumberOfPersonsMaleType.json"
 			},
 			"numberOfPersonsTotal": {
 				"description": "Total number of persons",
 				"type": "integer"
 			},
 			"maximumPayrollAmount": {
-				"$ref": "../../../Generics/v0.3.0/MaximumPayrollAmountType.json"
+				"$ref": "../../../Generics/v1.0.0/MaximumPayrollAmountType.json"
 			},
 			"coverage": {
 				"description": "Daily sickness benefits insurance coverage",
