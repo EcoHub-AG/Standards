@@ -15,11 +15,22 @@
     "contactPhone": {
       "description": "Phonenumber of the contact",
       "type": "string"
+    },
+    "consultantName": {
+      "description": "Name of the consultant",
+      "type": "string"
+    },
+    "consultantFINMARegisterNo": {
+      "description": "FINMA-Nr. of the consultant",
+      "type": "string"
     }
   },
   "required": [
     "contactName",
-    "contactMail"
+    "contactMail",
+    "contactPhone",
+    "consultantName",
+    "consultantFINMARegisterNo"
   ],
   "additionalProperties": false
 }

@@ -4,11 +4,11 @@
   "name": "CompanyLegalStatusType",
   "type": "string",
   "enum": [
-    "in Foundation (with entry in the commercial register)",
-    "in Foundation (without entry in the commercial register)",
+    "in foundation (with entry in the commercial register)",
+    "in foundation (without entry in the commercial register)",
     "change of ownership",
     "active",
-    "in Liquidation",
+    "in liquidation",
     "liquidated"
   ],
   "examples": ["active"]

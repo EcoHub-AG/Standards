@@ -1,42 +1,37 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Address Type",
-  "name": "AddressType",
-  "definitions": {
-    "streetNameDef": {
-      "description": "Street name",
-      "type": "string",
-      "maxLength": 100
-    },
-    "houseNumberDef": {
-      "description": "House number",
-      "type": "string",
-      "maxLength": 10
-    },
-    "adressExtensionDef": {
-      "description": "Additional address information",
-      "type": "string",
-      "maxLength": 100
-    },
-    "postOfficeBoxDef": {
-      "description": "Post office box",
-      "type": "string",
-      "maxLength": 20
-    },
-    "zipDef": {
-      "description": "International zip code",
-      "type": "string",
-      "maxLength": 10,
-      "pattern": "[A-Z0-9]{1}[A-Z0-9 ]{0,7}[A-Z0-9]{2}",
-      "examples": [8001]
-    },
-    "cityDef": {
-      "description": "City",
-      "type": "string",
-      "maxLength": 100
-    },
-    "countryDef": {
-      "$ref": "CountryISOCodeType.json"
-    }
-  }
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Domicil address type",
+	"name": "AddressType",
+	"type": "object",
+	"properties": {
+		"streetName": {
+			"$ref": "AddressDefinitions.json#/definitions/streetNameDef"
+		},
+		"houseNumber": {
+			"$ref": "AddressDefinitions.json#/definitions/houseNumberDef"
+		},
+		"adressExtension": {
+			"$ref": "AddressDefinitions.json#/definitions/adressExtensionDef"
+		},
+		"postOfficeBox": {
+			"$ref": "AddressDefinitions.json#/definitions/postOfficeBoxDef"
+		},
+		"zip": {
+			"$ref": "AddressDefinitions.json#/definitions/zipDef"
+		},
+		"city": {
+			"$ref": "AddressDefinitions.json#/definitions/cityDef"
+		},
+		"country": {
+			"$ref": "CountryISOCodeType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"streetName",
+		"houseNumber",
+		"zip",
+		"city",
+		"country"
+	]
 }

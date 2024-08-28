@@ -4,58 +4,10 @@
 	"type": "object",
 	"properties": {
 		"recipient": {
-			"description": "Recipient",
-			"type": "object",
-			"properties": {
-				"broker": {
-					"$ref": "BrokerType.json"
-				},
-				"insurer": {
-					"$ref": "InsurerType.json"
-				},
-				"otherExchangePartner": {
-					"$ref": "OtherExchangePartnerType.json"
-				}
-			},
-			"additionalProperties": false,
-			"oneOf": [
-				{
-					"required": ["broker"]
-				},
-				{
-					"required": ["insurer"]
-				},
-				{
-					"required": ["otherExchangePartner"]
-				}
-			]
+			"$ref": "SenderReceiverType.json"
 		},
 		"sender": {
-			"type": "object",
-			"description": "Sender",
-			"properties": {
-				"broker": {
-					"$ref": "BrokerType.json"
-				},
-				"insurer": {
-					"$ref": "InsurerType.json"
-				},
-				"otherExchangePartner": {
-					"$ref": "OtherExchangePartnerType.json"
-				}
-			},
-			"additionalProperties": false,
-			"oneOf": [
-				{
-					"required": ["broker"]
-				},
-				{
-					"required": ["insurer"]
-				},
-				{
-					"required": ["otherExchangePartner"]
-				}
-			]
+			"$ref": "SenderReceiverType.json"
 		},
 		"standard": {
 			"type": "string",

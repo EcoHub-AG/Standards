@@ -1,0 +1,46 @@
+### Version 0.3.0 (29.05.2024)
+Initial release version
+
+### Version 1.0.0
+General improvements and necessary changes for Offer NLPI v1.0.0
+
+- AddressType (Renamed)
+    - Renamed to AddressDefinitions
+- BrokerType (Changed)
+    - changed property "companyId" to mandatory
+- CompanyLegalFormType (Changed)
+    - added enum value "Unknown"
+- CompanyLegalStatusType (Changed)
+    - fixed wrong capitalization of some enum values
+- ContactType (Changed)
+    - changed property "contactPhone" to mandatory
+    - Added mandatory properties "consultantName" and "consultantFINMARegisterNo"
+- CustomerTypeType (Added)
+- HeaderType (Changed)
+    - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
+- InsurerType (Changed)
+    - changed property "companyId" to mandatory
+- LocalityCorrespondenceType (Removed)
+    - Duplicate of LocalityDomicilType.
+- LocalityDomicilType (Renamed)
+    - Renamed to AddressType
+- OtherExchangePartnerType (Changed)
+    - changed property "companyId" to mandatory
+- SenderReceiverType (Added)
+- TimeStampType (Cosmetic)
+    - Added example
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

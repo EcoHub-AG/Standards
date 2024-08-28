@@ -2,5 +2,6 @@
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"description": "Creation date and time",
 	"type": "string",
-	"format": "date-time"
+	"format": "date-time",
+	"examples": ["2024-08-14T15:47:23.264Z"]
 }

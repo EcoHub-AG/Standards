@@ -14,7 +14,8 @@
     "Limited commercial partnership",
     "Corporation under public law",
     "Association",
-    "Foundation"
+    "Foundation",
+    "Unknown"
   ],
   "examples": ["Foundation"]
 }

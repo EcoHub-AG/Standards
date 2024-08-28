@@ -18,6 +18,7 @@
 	},
 	"additionalProperties": false,
 	"required": [
+		"companyId",
 		"companyName",
 		"insurerCode"
 	]

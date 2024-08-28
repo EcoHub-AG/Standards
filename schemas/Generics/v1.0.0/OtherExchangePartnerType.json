@@ -20,6 +20,7 @@
 	},
 	"additionalProperties": false,
 	"required": [
+		"companyId",
 		"companyName",
 		"digitalPartnerId"
 	]
