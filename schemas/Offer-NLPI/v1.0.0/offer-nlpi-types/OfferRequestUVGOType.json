@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
+	"properties": {
+		"persongroups": {
+			"$ref": "OfferRequestUVGOPersonGroupsType.json"
+		},
+		"voluntarilyInsuredPersons": {
+			"$ref": "OfferRequestUVGOFixedPayrollsType.json"
+		},
+		"insuranceOptionsVarious": {
+			"$ref": "OfferRequestInsuranceOptionsVariousType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"insuranceOptionsVarious"
+	]
+}

@@ -2,5 +2,11 @@
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"description": "Insurance duration in years",
 	"type": "integer",
-	"maxLength": 2
+	"enum": [
+		1,
+		2,
+		3,
+		4,
+		5
+	]
 }

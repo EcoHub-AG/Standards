@@ -1,0 +1,60 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Group(s) of persons",
+	"type": "array",
+	"minItems": 1,
+	"items": {
+		"type": "object",
+		"properties": {
+			"persongroupId": {
+				"$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
+			},
+			"persongroupDescription": {
+				"$ref": "../../../Generics/v1.0.0/PersongroupDescriptionType.json"
+			},
+			"numberOfPersonsBU": {
+				"description": "Number of employees OA",
+				"type": "integer"
+			},
+			"numberOfPersonsNBU": {
+				"description": "Number of employees NOA",
+				"type": "integer"
+			},
+			"numberOfPersonsTotal": {
+				"description": "Total number of employees",
+				"type": "integer"
+			},
+			"payrollTotalEmployeesBU": {
+				"description": "Accident insurance total payroll of all employees OA",
+				"type": "number",
+				"multipleOf": 0.01
+			},
+			"payrollTotalEmployeesNBU": {
+				"description": "Accident insurance total payroll of all employees NOA",
+				"type": "number",
+				"multipleOf": 0.01
+			},
+			"payrollTotalEmployees": {
+				"description": "Accident insurance total payroll of all employees",
+				"type": "number",
+				"multipleOf": 0.01
+			},
+			"coverage": {
+				"description": "Converage of the person groups",
+				"$ref": "UVGOCoverageType.json"
+			}
+		},
+		"additionalProperties": false,
+		"required": [
+			"persongroupId",
+			"persongroupDescription",
+			"numberOfPersonsBU",
+			"numberOfPersonsNBU",
+			"numberOfPersonsTotal",
+			"payrollTotalEmployeesBU",
+			"payrollTotalEmployeesNBU",
+			"payrollTotalEmployees",
+			"coverage"
+		]
+	}
+}

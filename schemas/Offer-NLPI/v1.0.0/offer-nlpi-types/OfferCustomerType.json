@@ -1,93 +1,153 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Customer",
-	"type": "object",
-	"properties": {
-		"companyName": {
-			"$ref": "../../../Generics/v1.0.0/CompanyNameType.json"
-		},
-		"companyId": {
-			"$ref": "../../../Generics/v1.0.0/CompanyIdType.json"
-		},
-		"companyLegalForm": {
-			"$ref": "../../../Generics/v1.0.0/CompanyLegalFormType.json"
-		},
-		"companyLegalStatus": {
-			"$ref": "../../../Generics/v1.0.0/CompanyLegalStatusType.json"
-		},
-		"localityDomicil": {
-			"description": "Domicil Address Type",
-			"$ref": "../../../Generics/v1.0.0/LocalityDomicilType.json"
-		},
-		"isDomicilLocalityCorrespondenceAddress": {
-			"type": "boolean"
-		},
-		"localityCorrespondence": {
-			"description": "Correspondence Address Type",
-			"$ref": "../../../Generics/v1.0.0/LocalityCorrespondenceType.json"
-		},
-		"GAVcompliance": {
-			"description": "Guaranteed compliance with the GAV-conformity",
-			"$ref": "../../../Generics/v1.0.0/TristateType.json"
-		},
-		"GAVname": {
-			"description": "GAV-Designation",
-			"type": "array",
-			"minItems": 1,
-			"items": {
-				"description": "GAV-Designation(s)",
-				"type": "string"
-			}
-		},
-		"NOGACodeMain": {
-			"description": "Main NOGA-Code",
-			"$ref": "NogaCodeType.json"
-		},
-		"NOGACodeAdditional": {
-			"description": "Additional NOGA-Code activities",
-			"type": "array",
-			"minItems": 1,
-			"items": {
-				"$ref": "NogaCodeType.json"
-			}
-		}
-	},
-	"additionalProperties": false,
-	"required": [
-		"companyName",
-		"companyLegalForm",
-		"localityDomicil",
-		"isDomicilLocalityCorrespondenceAddress",
-		"GAVcompliance"
-	],
-	"allOf": [
-		{
-			"if": {
-				"properties": {
-					"isDomicilLocalityCorrespondenceAddress": {
-						"const": false
-					}
-				}
-			},
-			"then": {
-				"required": [
-					"localityCorrespondence"
-				]
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"GAVcompliance": {
-						"const": "Yes"
-					}
-				}
-			},
-			"then": {
-				"required": [
-					"GAVname"
-				]
-			}
-		}
-	]
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Customer",
+  "type": "object",
+  "properties": {
+    "customerType": {
+      "$ref": "../../../Generics/v1.0.0/CustomerTypeType.json"
+    },
+    "surname": {
+      "$ref": "../../../Generics/v1.0.0/SurNameType.json"
+    },
+    "firstname": {
+      "$ref": "../../../Generics/v1.0.0/FirstNameType.json"
+    },
+    "birthDate": {
+      "$ref": "../../../Generics/v1.0.0/BirthDateType.json"
+    },
+    "gender": {
+      "$ref": "../../../Generics/v1.0.0/GenderType.json"
+    },
+    "companyName": {
+      "$ref": "../../../Generics/v1.0.0/CompanyNameType.json"
+    },
+    "companyId": {
+      "$ref": "../../../Generics/v1.0.0/CompanyIdType.json"
+    },
+    "companyFoundingDate": {
+      "description": "Founding date of the company",
+      "type": "string",
+      "format": "date",
+      "examples": [
+        "2024-08-14"
+      ]
+    },
+    "companyLegalForm": {
+      "$ref": "../../../Generics/v1.0.0/CompanyLegalFormType.json"
+    },
+    "companyLegalStatus": {
+      "$ref": "../../../Generics/v1.0.0/CompanyLegalStatusType.json"
+    },
+    "riskCharacteristic": {
+      "$ref": "RiskCharacteristicType.json"
+    },
+    "domicilAddress": {
+      "description": "Domicil Address Type",
+      "$ref": "../../../Generics/v1.0.0/AddressType.json"
+    },
+    "isDomicilAddressCorrespondenceAddress": {
+      "type": "boolean"
+    },
+    "correspondenceAddress": {
+      "description": "Correspondence Address Type",
+      "$ref": "../../../Generics/v1.0.0/AddressType.json"
+    },
+    "GAVCompliance": {
+      "description": "Guaranteed compliance with the GAV-conformity",
+      "$ref": "../../../Generics/v1.0.0/TristateType.json"
+    },
+    "GAVName": {
+      "description": "GAV-Designation",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "description": "GAV-Designation(s)",
+        "type": "string"
+      }
+    },
+    "UVGRiskNo": {
+      "description": "UVG risk number of the insured risk",
+      "$ref": "RiskNumberType.json"
+    },
+    "NOGACodeMain": {
+      "description": "Main NOGA-Code",
+      "$ref": "NogaCodeType.json"
+    },
+    "NOGACodeAdditional": {
+      "description": "Additional NOGA-Code activities",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "NogaCodeType.json"
+      }
+    },
+    "typeOfActivity": {
+      "description": "Type of activity of the company",
+      "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "customerType",
+    "domicilAddress",
+    "isDomicilAddressCorrespondenceAddress",
+    "GAVcompliance",
+    "riskCharacteristic",
+    "NOGACodeMain"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "isDomicilAddressCorrespondenceAddress": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "correspondenceAddress"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "GAVcompliance": {
+            "const": "Yes"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "GAVname"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "customerType": {
+            "const": "private individual"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "surname",
+          "firstname",
+          "birthDate",
+          "gender"
+        ]
+      },
+      "else": {
+        "required": [
+          "companyName",
+          "companyLegalForm",
+          "companyLegalStatus",
+          "typeOfActivity"
+        ]
+      }
+    }
+  ]
 }

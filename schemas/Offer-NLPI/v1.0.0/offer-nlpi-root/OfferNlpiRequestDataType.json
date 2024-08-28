@@ -21,7 +21,7 @@
 			"items": {
 				"$ref": "../offer-nlpi-types/OfferCustomerType.json"
 			},
-			"unevaluatedItems": false
+			"additionalItems": false
 		},
 		"agency": {
 			"$ref": "../../../Generics/v1.0.0/AgencyType.json"
@@ -57,18 +57,28 @@
 		"DSB": {
 			"$ref": "../offer-nlpi-types/OfferRequestDSBType.json"
 		},
+		"UVGCompulsory": {
+			"$ref": "../offer-nlpi-types/OfferRequestUVGOType.json"
+		},
 		"comment": {
 			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
+		},
+		"document": {
+			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
 		}
 	},
 	"additionalProperties": false,
 	"required": [
 		"processIdentificationNo",
+		"timestamp",
+		"header",
+		"customer",
+		"brokerContact",
+		"currency",
 		"insuranceStartDate",
+		"insuranceDurationInYears",
 		"previousInsurer",
 		"offerRequestType",
-		"currency",
 		"DSB"
-	],
-	"unevaluatedProperties": false
+	]
 }

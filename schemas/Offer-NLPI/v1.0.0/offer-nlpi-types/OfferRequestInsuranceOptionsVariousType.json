@@ -12,7 +12,7 @@
 		"annualCancellation": {
 			"$ref": "AnnualCancellationType.json"
 		},
-		"DSBtypePayInstalment": {
+		"typePayInstalment": {
 			"$ref": "DSBtypePayInstalmentType.json"
 		},
 		"additionalOptions": {
@@ -24,6 +24,10 @@
 	},
 	"additionalProperties": false,
 	"required": [
+		"premiumRateGuaranty",
+		"renunciationTerminationRightClaim",
+		"annualCancellation",
+		"typePayInstalment",
 		"profitParticipation"
 	]
 }
