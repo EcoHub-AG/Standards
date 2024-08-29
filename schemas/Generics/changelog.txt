@@ -6,6 +6,7 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 
 - AddressType (Renamed)
     - Renamed to AddressDefinitions
+- BrokerContactType (Added)
 - BrokerType (Changed)
     - changed property "companyId" to mandatory
 - CompanyLegalFormType (Changed)
@@ -14,7 +15,6 @@ General improvements and necessary changes for Offer NLPI v1.0.0
     - fixed wrong capitalization of some enum values
 - ContactType (Changed)
     - changed property "contactPhone" to mandatory
-    - Added mandatory properties "consultantName" and "consultantFINMARegisterNo"
 - CustomerTypeType (Added)
 - HeaderType (Changed)
     - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
