@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Various insurance options",
+	"type": "object",
+	"properties": {
+		"renunciationTerminationRightClaim": {
+			"$ref": "RenunciationTerminationRightClaimType.json"
+		},
+		"annualCancellation": {
+			"$ref": "AnnualCancellationType.json"
+		},
+		"typePayInstalment": {
+			"$ref": "DSBtypePayInstalmentType.json"
+		}
+
+	},
+    "additionalProperties": false,
+	"required": [
+		"renunciationTerminationRightClaim",
+		"annualCancellation",
+		"typePayInstalment"
+	]
+}

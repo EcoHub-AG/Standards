@@ -7,6 +7,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 
 - InsuranceDurationInYears (Changed)
     - Restricted values to enum
+- InsuranceOptionsVariousUVGOType (Added)
 - NogaCodeType (Changed)
     - fixed capitalization of property names
     - all properties are now mandatory
@@ -17,11 +18,24 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "isDomicilLocalityCorrespondenceAddress" to "isDomicilAddressCorrespondenceAddress"
     - Renamed property "localityCorrespondence" to "correspondenceAddress"
     - Fixed capitalization for properties "GAVcompliance" and "GAVname"
+- OfferFixedPayrollsType (Renamed)
+    - Renamed to OfferDSBFixedPayrollsType
+- OfferNlpiDataType (Changed)
+    - Added property "UVGCompulsory"
+    - Added properties "totalPremiumBUAndNBU", "netPremiumUVGTotal", "netPremiumTotal",
+    "instalmentSurchargePercentageUVGCompulsory", "instalmentSurchargeAmountUVGCompulsory" to "premiumOverview"
+    - Changed description of properties "instalmentSurchargePercentage", "instalmentSurchargeAmount" in "premiumOverview"
+    - replaced in-file definition of property "offerDocument" with reference to "MultiFileType"
+    - replaced in-file definition of property "contractConditionsDocument" with reference to "MultiFileType"
+    - property DSB is now optional
+    - property "insurerContact" is now mandatory
 - OfferNlpiRequestDataType (Changed)
     - Removed keyword "unevaluatedProperties"
-    - Changed restriction "unevaluatedItems" of "coInsuredCustomer" to "additionalItems"
     - Added properties "UVGCompulsory" and "document"
+    - Changed type of property "brokerContract" to BrokerContactType
     - properties "timestamp", "header", "customer", "borkerContact", "insuranceDurationInYears" are now mandatory
+- OfferPersonGroupsType.json (Renamed)
+    - Renamed to OfferDSBPersonGroupsType.json
 - OfferRequestFixedPayrollsType (Renamed)
     - Renamed to OfferRequestDSBFixedPayrollsType
 - OfferRequestPersonGroupsType (Renamed)
@@ -32,9 +46,16 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - OfferRequestUVGOFixedPayrollsType (Added)
 - OfferRequestUVGOPersonGroupsType (Added)
 - OfferRequestUVGOType (Added)
+- OfferUVGOFixedPayrollsType (Added)
+- OfferUVGOPersonGroupsType (Added)
+- OfferUVGOType (Added)
 - RiskCharacteristicType (Added)
 - RiskNumberType (Added)
 - UVGOCoverageType (Added)
+
+
+
+
 
 
 

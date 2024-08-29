@@ -21,13 +21,13 @@
 			"items": {
 				"$ref": "../offer-nlpi-types/OfferCustomerType.json"
 			},
-			"additionalItems": false
+			"unevaluatedItems": false
 		},
 		"agency": {
 			"$ref": "../../../Generics/v1.0.0/AgencyType.json"
 		},
 		"brokerContact": {
-			"$ref": "../../../Generics/v1.0.0/ContactType.json"
+			"$ref": "../../../Generics/v1.0.0/BrokerContactType.json"
 		},
 		"offerRequestType": {
 			"$ref": "../offer-nlpi-types/OfferTypeType.json"

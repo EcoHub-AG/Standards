@@ -4,10 +4,10 @@
 	"description": "Daily sickness benefits",
 	"properties": {
 		"persongroups": {
-			"$ref": "OfferPersonGroupsType.json"
+			"$ref": "OfferDSBPersonGroupsType.json"
 		},
 		"fixedPayrolls": {
-			"$ref": "OfferFixedPayrollsType.json"
+			"$ref": "OfferDSBFixedPayrollsType.json"
 		},
 		"insuranceOptions": {
 			"$ref": "OfferInsuranceOptionsType.json"

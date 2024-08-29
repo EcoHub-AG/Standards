@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Group(s) of persons",
+  "type": "object",
+  "properties": {
+    "persongroupId": {
+      "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
+    },
+    "persongroupDescription": {
+      "$ref": "../../../Generics/v1.0.0/PersongroupDescriptionType.json"
+    },
+    "coverage": {
+      "description": "Converage of the person groups",
+      "$ref": "UVGOCoverageType.json"
+    },
+    "premiumPersongroup": {
+      "description": "Premium of the insured group of persons",
+      "type": "object",
+      "properties": {
+        "hazardClassBU": {
+          "description": "Hazard class BU",
+          "type": "string"
+        },
+        "hazardSubClassBU": {
+          "description": "Hazard sub class BU",
+          "type": "string"
+        },
+        "payrollBU": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "description": "UVG payroll BU"
+        },
+        "premiumRiskRateBU": {
+          "description": "Premium risk rate BU in ‰",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "costAdminRateBU": {
+          "description": "Costs admin rate in ‰ BU",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "sharingCostRateBU": {
+          "description": "Sharing costs  rate in ‰ BU",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "accidentPreventionContributionRateBU": {
+          "description": "Accident prevention contribution in ‰ BU",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "premiumMinimumAmountBU": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "description": "Minimum premium for BU in CHF"
+        },
+        "finalPremiumRateBU": {
+          "description": "Final premium rate BU in ‰. Corresponds to the final premium rate / gross premium rate",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "totalPremiumBU": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "description": "Total annual premium BU in CHF"
+        },
+        "hazardClassNBU": {
+          "description": "Hazard class NBU",
+          "type": "string"
+        },
+        "hazardSubClassNBU": {
+          "description": "Hazard sub class NBU",
+          "type": "string"
+        },
+        "payrollNBU": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "description": "UVG payroll NBU"
+        },
+        "premiumRiskRateNBU": {
+          "description": "Premium risk rate NBU in ‰",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "costAdminRateNU": {
+          "description": "Costs admin rate in ‰ NBU",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "sharingCostRateNBU": {
+          "description": "Sharing costs  rate in ‰ NBU",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "accidentPreventionContributionRateNBU": {
+          "description": "Accident prevention contribution in ‰ NBU",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "premiumMinimumAmountNBU": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "description": "Minimum premium for NBU in CHF"
+        },
+        "finalPremiumRateNBU": {
+          "description": "Final premium rate NBU in ‰. Corresponds to the final premium rate / gross premium rate",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "totalPremiumNBU": {
+          "type": "number",
+          "multipleOf": 0.01,
+          "description": "Total annual premium NBU in CHF"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "hazardClassBU",
+        "hazardSubClassBU",
+        "payrollBU",
+        "costAdminRateBU",
+        "sharingCostRateBU",
+        "accidentPreventionContributionRateBU",
+        "premiumMinimumAmountBU",
+        "finalPremiumRateBU",
+        "hazardClassNBU",
+        "hazardSubClassNBU",
+        "costAdminRateNBU",
+        "sharingCostRateNBU",
+        "accidentPreventionContributionRateNBU",
+        "premiumMinimumAmountNBU",
+        "finalPremiumRateNBU",
+        "totalPremiumNBU"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "persongroupId",
+    "coverage",
+    "premiumPersongroup"
+  ]
+}
