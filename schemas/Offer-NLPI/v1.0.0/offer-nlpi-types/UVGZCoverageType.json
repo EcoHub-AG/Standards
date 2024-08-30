@@ -41,7 +41,7 @@
     "disabilityCapital",
     "dailyAllowance",
     "dailyHospitalAllowance",
-    "differentialCover",
+    "differentialCover"
   ],
   "additionalProperties": false
 }
