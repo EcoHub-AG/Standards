@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "array",
+	"description": "Vountarily insured persons",
+	"minItems": 1,
+	"maxItems": 2,
+	"items": {
+		"type": "object",
+		"properties": {
+			"personId": {
+				"description": "ID of the voluntarly insured Person",
+				"type": "string",
+				"format": "uuid",
+				"examples": ["345aa049-7693-4710-89d7-e13b87ab988a"]
+			},
+			"role": {
+				"type": "string",
+				"description": "Role of the voluntarily insured person",
+				"$ref": "BusinessRelationPersonType.json"
+			},
+			"gender": {
+				"$ref": "../../../Generics/v1.0.0/GenderType.json"
+			},
+			"surname": {
+				"$ref": "../../../Generics/v1.0.0/SurNameType.json"
+			},
+			"firstname": {
+				"$ref": "../../../Generics/v1.0.0/FirstNameType.json"
+			},
+			"birthDate": {
+				"$ref": "../../../Generics/v1.0.0/BirthDateType.json"
+			},
+			"fixedPayroll": {
+				"description": "Fixed payroll amount in CHF",
+				"$ref": "FixedPayrollType.json"
+			},
+			"surplusPayroll": {
+				"description": "Surplus payroll wages in CHF",
+				"$ref": "FixedPayrollType.json"
+			},
+			"coverage": {
+				"$ref": "UVGOCoverageType.json"
+			}
+		},
+		"required": [
+			"personId",
+			"role",
+			"gender",
+			"surname",
+			"firstname",
+			"birthDate",
+			"fixedPayroll",
+			"coverage"
+		]
+	}
+}

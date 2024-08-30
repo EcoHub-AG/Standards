@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Group(s) of persons",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "persongroupId": {
+        "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
+      },
+      "totalNumberOfPersons": {
+        "description": "Total number of employees",
+        "type": "integer"
+      },
+      "maxSalary": {
+        "description": "Maximum salary in CHF",
+        "type": "number",
+        "multipleOf": 0.01
+      },
+      "payrollTotalEmployees": {
+        "description": "Total payroll of all employees",
+        "type": "number",
+        "multipleOf": 0.01
+      },
+      "surplusSalaryTotal": {
+        "description": "Payroll: Surplus salary total in CHF",
+        "type": "number",
+        "multipleOf": 0.01
+      },
+      "coverage": {
+        "description": "Coverage of the person groups",
+        "$ref": "UVGZCoverageType.json"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "persongroupId",
+      "totalNumberOfPersons",
+      "maxSalary",
+      "payrollTotalEmployees",
+      "surplusSalaryTotal",
+      "coverage"
+    ]
+  },
+  "unevaluatedItems": false
+}

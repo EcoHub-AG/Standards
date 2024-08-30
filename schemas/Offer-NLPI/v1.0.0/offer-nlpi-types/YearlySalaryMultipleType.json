@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "string",
+  "enum": [
+    "nein",
+    "1-facher Jahreslohn",
+    "2-facher Jahreslohn",
+    "3-facher Jahreslohn",
+    "4-facher Jahreslohn",
+    "5-facher Jahreslohn",
+    "6-facher Jahreslohn",
+    "7-facher Jahreslohn",
+    "8-facher Jahreslohn",
+    "9-facher Jahreslohn"
+  ]
+}

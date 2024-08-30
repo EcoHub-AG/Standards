@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Daily allowance insured",
+	"properties": {
+		"dailyAllowanceInsured": {
+			"type": "boolean",
+			"description": "Daily allowance insured?"
+		},
+		"dailyAllowance": {
+			"description": "Daily allowance in % UVG salary",
+			"$ref": "DailyAllowancePercentageType.json"
+		},
+		"dailyAllowanceWaitingPeriod": {
+			"description": "Daily allowance UVG salary from day x",
+			"$ref": "DailyAllowanceWaitingPeriodType.json"
+		},
+		"dailyAllowanceD12": {
+			"description": "Daily allowance UVG wage 1st + 2nd day in %",
+			"$ref": "DailyAllowancePercentageType.json"
+		},
+		"dailyAllowanceSurplus": {
+			"description": "Daily allovance UVG wage surplus in %",
+			"type": "DailyAllowancePercentageType.json"
+		},
+		"dailyAllowanceSurplusWaitingPeriod": {
+			"description": "Daily allowance UVG wage surplus from day x",
+			"$ref": "DailyAllowanceWaitingPeriodType.json"
+		},
+		"dailyAllowanceRelapses": {
+			"description": "Daily allowance for relapses/late effects",
+			"type": "boolean"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"dailyAllowanceInsured"
+	],
+	"if": {
+		"properties": {
+			"deathCapitalInsured": {
+				"const": true
+			}
+		}
+	},
+	"then": {
+		"required": [
+			"dailyAllowance",
+			"dailyAllowanceWaitingPeriod"
+		]
+	}
+}

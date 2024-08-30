@@ -5,6 +5,13 @@ Initial release version
 Version 0.3.0 only included properties for KTG. This version expands the Standard to additionally
  allow transmission of data for UVGO and UVGZ.
 
+- AHVSalaryMultipleType (Added)
+- DailyAllowancePercentageType (Added)
+- DailyAllowanceType (Added)
+- DailyAllowanceWaitingPeriodType (Added)
+- DailyHospitalAllowanceType (Added)
+- DeathCapitalType (Added)
+- DisabilityCapitalType (Added)
 - InsuranceDurationInYears (Changed)
     - Restricted values to enum
 - InsuranceOptionsVariousUVGOType (Added)
@@ -18,6 +25,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "isDomicilLocalityCorrespondenceAddress" to "isDomicilAddressCorrespondenceAddress"
     - Renamed property "localityCorrespondence" to "correspondenceAddress"
     - Fixed capitalization for properties "GAVcompliance" and "GAVname"
+    - Added properties "SUVACompany" and "UVGInsurer"
 - OfferFixedPayrollsType (Renamed)
     - Renamed to OfferDSBFixedPayrollsType
 - OfferNlpiDataType (Changed)
@@ -31,7 +39,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - property "insurerContact" is now mandatory
 - OfferNlpiRequestDataType (Changed)
     - Removed keyword "unevaluatedProperties"
-    - Added properties "UVGCompulsory" and "document"
+    - Added properties "UVGCompulsory", "UVGSupplement" and "document"
     - Changed type of property "brokerContract" to BrokerContactType
     - properties "timestamp", "header", "customer", "borkerContact", "insuranceDurationInYears" are now mandatory
 - OfferPersonGroupsType.json (Renamed)
@@ -46,12 +54,18 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - OfferRequestUVGOFixedPayrollsType (Added)
 - OfferRequestUVGOPersonGroupsType (Added)
 - OfferRequestUVGOType (Added)
+- OfferRequestUVGZFixedPayrollsType (Added)
+- OfferRequestUVGZPersonGroupsType (Added)
+- OfferRequestUVGZType (Added)
 - OfferUVGOFixedPayrollsType (Added)
 - OfferUVGOPersonGroupsType (Added)
 - OfferUVGOType (Added)
+- PensionType (Added)
 - RiskCharacteristicType (Added)
 - RiskNumberType (Added)
 - UVGOCoverageType (Added)
+- UVGZCoverageType (Added)
+- YearlySalaryMultipleType (Added)
 
 
 

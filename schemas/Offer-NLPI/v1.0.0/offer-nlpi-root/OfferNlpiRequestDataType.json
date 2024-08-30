@@ -60,6 +60,9 @@
 		"UVGCompulsory": {
 			"$ref": "../offer-nlpi-types/OfferRequestUVGOType.json"
 		},
+		"UVGSupplement": {
+			"$ref": "../offer-nlpi-types/OfferRequestUVGZType.json"
+		},
 		"comment": {
 			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
 		},

@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"disabilityCapitalInsured": {
+			"type": "boolean",
+			"description": "Disability capital insured?"
+		},
+		"integrityCapital": {
+			"type": "boolean",
+			"description": "Integrity capital"
+		},
+		"disabilityCapitalUVG": {
+			"description": "Disability capital x times the annual salary",
+			"$ref": "YearlySalaryMultipleType.json"
+		},
+		"disabilityCapitalSurplus": {
+			"description": "Disability capital surplus x times the surplus annual salary",
+			"$ref": "YearlySalaryMultipleType.json"
+		},
+		"disabilityCapitalProg": {
+			"description": "Disability capital progressiv in %",
+			"type": "string",
+			"enum": [
+				"0%",
+				"100%",
+				"150%",
+				"225%",
+				"250%",
+				"350%"
+			]
+		},
+		"bridgingCapital": {
+			"description": "Bridging capital in addition to the lump-sum disability capital: x times the AHV salary",
+			"$ref": "AHVSalaryMultipleType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"disabilityCapitalInsured"
+	],
+	"if": {
+		"properties": {
+			"disabilityCapitalInsured": {
+				"const": true
+			}
+		}
+	},
+	"then": {
+		"required": [
+			"integrityCapital",
+			"disabilityCapitalUVG",
+			"disabilityCapitalSurplus",
+			"disabilityCapitalProg",
+			"bridgingCapital"
+		]
+	}
+}

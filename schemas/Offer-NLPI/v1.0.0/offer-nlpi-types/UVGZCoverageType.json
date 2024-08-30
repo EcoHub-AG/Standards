@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "UVGZ coverage",
+  "type": "object",
+  "properties": {
+    "deathCapital": {
+      "$ref": "DeathCapitalType.json"
+    },
+    "disabilityCapital": {
+      "$ref": "DisabilityCapitalType.json"
+    },
+    "dailyAllowance": {
+      "$ref": "DailyAllowanceType.json"
+    },
+    "dailyHospitalAllowance": {
+      "$ref": "DailyHospitalAllowanceType.json"
+    },
+    "medicalExpenses": {
+      "type": "string",
+      "description": "Type of medical expenses",
+      "enum": [
+        "Privatabteilung",
+        "Halbprivatabteilung"
+      ]
+    },
+    "differentialCover": {
+      "description": "Differential cover",
+      "type": "boolean"
+    },
+    "disabilityPension": {
+      "description": "Disability Pension",
+      "$ref": "PensionType.json"
+    },
+    "survivorsPension": {
+      "description": "Survivors Pension",
+      "$ref": "PensionType.json"
+    }
+  },
+  "required": [
+    "deathCapital",
+    "disabilityCapital",
+    "dailyAllowance",
+    "dailyHospitalAllowance",
+    "differentialCover",
+  ],
+  "additionalProperties": false
+}

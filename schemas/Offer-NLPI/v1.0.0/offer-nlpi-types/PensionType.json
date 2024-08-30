@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "properties": {
+    "pensionPercent": {
+      "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
+      "type": "integer",
+      "enum": [
+        70,
+        80,
+        90,
+        100
+      ]
+    },
+    "benefitPeriod": {
+      "description": "Benefit period pension",
+      "type": "string",
+      "enum": [
+        "bis AHV-Alter",
+        "gemäss UVG"
+      ]
+    }
+  },
+  "required": [
+    "pensionPercent",
+    "benefitPeriod"
+  ]
+}

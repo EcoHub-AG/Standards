@@ -84,6 +84,59 @@
     "typeOfActivity": {
       "description": "Type of activity of the company",
       "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
+    },
+    "SUVACompany": {
+      "description": "SUVA Company?",
+      "type": "boolean"
+    },
+    "UVGInsurer": {
+      "type": "object",
+      "description": "UVG Insurer",
+      "properties": {
+        "UVGInsurerExists": {
+          "description": "UVG Insurer",
+          "type": "boolean"
+        },
+        "UVGInsurerName": {
+          "description": "UVG Insurer",
+          "type": "string"
+        },
+        "premiumBUUVG": {
+          "description": "If UVG Insurer “YES” UVG final premium rate BU and NBU mandatory",
+          "type": "number",
+          "multipleOf": 0.01
+        },
+        "premiumNBUUVG": {
+          "description": "If UVG Insurer “YES” UVG final premium rate BU and NBU mandatory",
+          "type": "number",
+          "multipleOf": 0.01
+        },
+        "premiumBUSUVA": {
+          "description": "If SUVA company “YES” SUVA net premium rate BU and NBU mandatory",
+          "type": "number",
+          "multipleOf": 0.01
+        },
+        "premiumNBUSUVA": {
+          "description": "If SUVA company “YES” SUVA net premium rate BU and NBU mandatory",
+          "type": "number",
+          "multipleOf": 0.01
+        }
+      },
+      "required": [
+        "UVGInsurerExists"
+      ],
+      "if": {
+        "properties": {
+          "UVGInsurerExists": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "UVGInsurerName"
+        ]
+      }
     }
   },
   "additionalProperties": false,
@@ -145,7 +198,8 @@
           "companyName",
           "companyLegalForm",
           "companyLegalStatus",
-          "typeOfActivity"
+          "typeOfActivity",
+          "SUVACompany"
         ]
       }
     }
