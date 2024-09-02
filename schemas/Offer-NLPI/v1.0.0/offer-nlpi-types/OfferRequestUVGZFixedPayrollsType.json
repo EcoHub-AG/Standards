@@ -39,7 +39,7 @@
 				"$ref": "FixedPayrollType.json"
 			},
 			"coverage": {
-				"$ref": "UVGOCoverageType.json"
+				"$ref": "UVGZCoverageType.json"
 			}
 		},
 		"required": [

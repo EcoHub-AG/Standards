@@ -1,0 +1,160 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "array",
+	"description": "Vountarily insured persons",
+	"minItems": 1,
+	"maxItems": 2,
+	"items": {
+		"type": "object",
+		"properties": {
+			"personId": {
+				"description": "ID of the voluntarly insured Person",
+				"type": "string",
+				"format": "uuid",
+				"examples": ["345aa049-7693-4710-89d7-e13b87ab988a"]
+			},
+			"role": {
+				"type": "string",
+				"description": "Role of the voluntarily insured person",
+				"$ref": "BusinessRelationPersonType.json"
+			},
+			"gender": {
+				"$ref": "../../../Generics/v1.0.0/GenderType.json"
+			},
+			"surname": {
+				"$ref": "../../../Generics/v1.0.0/SurNameType.json"
+			},
+			"firstname": {
+				"$ref": "../../../Generics/v1.0.0/FirstNameType.json"
+			},
+			"birthDate": {
+				"$ref": "../../../Generics/v1.0.0/BirthDateType.json"
+			},
+			"fixedPayroll": {
+				"description": "Fixed payroll amount in CHF",
+				"$ref": "FixedPayrollType.json"
+			},
+			"surplusPayroll": {
+				"description": "Surplus payroll wages in CHF",
+				"$ref": "FixedPayrollType.json"
+			},
+			"coverage": {
+				"$ref": "UVGOCoverageType.json"
+			},
+			"premiumFixedPayroll": {
+				"type": "object",
+				"properties": {
+					"disabilityCapitalSalary": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Disability lump sum / UVG salary"
+					},
+					"disabilityCapitalSurplusSalary": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Disability lump sum / surplus salary"
+					},
+					"disabilityPensionSalary": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Disability pension / gross / UVG salary"
+					},
+					"disabilityPensionSalaryNet": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Disability pension / net / UVG salary"
+					},
+					"disabilityPensionSalarySurplus": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Disability pension / gross / surplus salary"
+					},
+					"disabilityPensionSalarySurplusNet": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Disability pension / net / surplus salary"
+					},
+					"deathCapitalSalary": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Lump-sum death benefit / gross / UVG salary"
+					},
+					"deathCapitalSurplusSalary": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Lump-sum death benefit / gross / surplus salary"
+					},
+					"deathCapitalSalaryNet": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Lump-sum death benefit / net / UVG salary"
+					},
+					"deathCapitalSurplusSalaryNet": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Lump-sum death benefit / net / surplus salary"
+					},
+					"survivorsPensionSalary": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Survivors' pension / men gross / UVG salary"
+					},
+					"survivorsPensionSalaryNet": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Survivors' pension / net / UVG salary"
+					},
+					"survivorsPensionSalarySurplus": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Survivors' pension / gross / surplus salary"
+					},
+					"survivorsPensionSalarySurplusNet": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Survivors' pension / net / surplus salary"
+					},
+					"premiumDiffCoverage": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Premium for differential cover in CHF"
+					},
+					"finalPremiumRateFixedPayroll": {
+						"type": "number",
+						"multipleOf": 0.01,
+						"description": "Final premium rate fixed payroll"
+					}
+				},
+				"additionalProperties": false,
+				"required": [
+					"disabilityCapitalSalary",
+					"disabilityCapitalSurplusSalary",
+					"disabilityPensionSalary",
+					"disabilityPensionSalaryNet",
+					"disabilityPensionSalarySurplus",
+					"disabilityPensionSalarySurplusNet",
+					"deathCapitalSalary",
+					"deathCapitalSurplusSalary",
+					"deathCapitalSalaryNet",
+					"deathCapitalSurplusSalaryNet",
+					"survivorsPensionSalary",
+					"survivorsPensionSalaryNet",
+					"survivorsPensionSalarySurplus",
+					"survivorsPensionSalarySurplusNet",
+					"premiumDiffCoverage",
+					"finalPremiumRateFixedPayroll"
+				]
+			}
+		},
+		"required": [
+			"personId",
+			"role",
+			"gender",
+			"surname",
+			"firstname",
+			"birthDate",
+			"fixedPayroll",
+			"coverage"
+		]
+	}
+}

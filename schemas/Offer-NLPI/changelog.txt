@@ -29,8 +29,8 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - OfferFixedPayrollsType (Renamed)
     - Renamed to OfferDSBFixedPayrollsType
 - OfferNlpiDataType (Changed)
-    - Added property "UVGCompulsory"
-    - Added properties "totalPremiumBUAndNBU", "netPremiumUVGTotal", "netPremiumTotal",
+    - Added properties "UVGCompulsory", "UVGSupplement"
+    - Added properties "totalPremiumBUAndNBU", "netPremiumUVGTotal", "netPremiumTotal", "netPremiumUVGZTotal" to "premiumOverview"
     "instalmentSurchargePercentageUVGCompulsory", "instalmentSurchargeAmountUVGCompulsory" to "premiumOverview"
     - Changed description of properties "instalmentSurchargePercentage", "instalmentSurchargeAmount" in "premiumOverview"
     - replaced in-file definition of property "offerDocument" with reference to "MultiFileType"
@@ -60,6 +60,9 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - OfferUVGOFixedPayrollsType (Added)
 - OfferUVGOPersonGroupsType (Added)
 - OfferUVGOType (Added)
+- OfferUVGZFixedPayrollsType (Added)
+- OfferUVGZPersonGroupsType (Added)
+- OfferUVGZType (Added)
 - PensionType (Added)
 - RiskCharacteristicType (Added)
 - RiskNumberType (Added)
