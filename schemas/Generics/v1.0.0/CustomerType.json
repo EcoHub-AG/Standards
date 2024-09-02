@@ -16,16 +16,16 @@
     "companyLegalStatus": {
       "$ref": "CompanyLegalStatusType.json"
     },
-    "localityDomicil": {
+    "domicilAddress": {
       "description": "Domicil Address Type",
-	  "$ref": "LocalityDomicilType.json"
+	  "$ref": "AddressType.json"
     },
-    "isDomicilLocalityCorrespondenceAddress": {
+    "isDomicilAddressCorrespondenceAddress": {
       "type": "boolean"
     },
-    "localityCorrespondence": {
+    "correspondenceAddress": {
    	  "description": "Correspondence Address Type",
-      "$ref": "LocalityCorrespondenceType.json"
+      "$ref": "AddressType.json"
     }
   },
   "additionalProperties": false,
