@@ -13,7 +13,7 @@
 			"$ref": "AnnualCancellationType.json"
 		},
 		"DSBtypePayInstalment": {
-			"$ref": "DSBTypePayInstalmentType.json"
+			"$ref": "PayInstalmentType.json"
 		},
 		"additionalOptions": {
 			"$ref": "../../../Generics/v1.0.0/AdditionalOptionsType.json"

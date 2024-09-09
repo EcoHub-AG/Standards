@@ -12,6 +12,8 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - DisabilityCapitalType (Added)
 - DSBPayrollFemaleType (Removed)
 - DSBPayrollMaleType (Removed)
+- DSPTypePayInstallmentType (Renamed)
+    - Renamed to "payInstalmentType"
 - FixedPayrollType (Removed)
 - InsuranceDurationInYears (Changed)
     - Restricted values to enum
