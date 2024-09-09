@@ -3,54 +3,12 @@
   "description": "Customer",
   "type": "object",
   "properties": {
-    "customerType": {
-      "$ref": "../../../Generics/v1.0.0/CustomerTypeType.json"
-    },
-    "surname": {
-      "$ref": "../../../Generics/v1.0.0/SurNameType.json"
-    },
-    "firstname": {
-      "$ref": "../../../Generics/v1.0.0/FirstNameType.json"
-    },
-    "birthDate": {
-      "$ref": "../../../Generics/v1.0.0/BirthDateType.json"
-    },
-    "gender": {
-      "$ref": "../../../Generics/v1.0.0/GenderType.json"
-    },
-    "companyName": {
-      "$ref": "../../../Generics/v1.0.0/CompanyNameType.json"
-    },
-    "companyId": {
-      "$ref": "../../../Generics/v1.0.0/CompanyIdType.json"
-    },
-    "companyFoundingDate": {
-      "description": "Founding date of the company",
-      "type": "string",
-      "format": "date",
-      "examples": [
-        "2024-08-14"
-      ]
-    },
-    "companyLegalForm": {
-      "$ref": "../../../Generics/v1.0.0/CompanyLegalFormType.json"
-    },
-    "companyLegalStatus": {
-      "$ref": "../../../Generics/v1.0.0/CompanyLegalStatusType.json"
+    "customer": {
+      "description": "Core information of the customer",
+      "$ref": "../../../Generics/v1.0.0/CustomerType.json"
     },
     "riskCharacteristic": {
       "$ref": "RiskCharacteristicType.json"
-    },
-    "domicilAddress": {
-      "description": "Domicil Address Type",
-      "$ref": "../../../Generics/v1.0.0/AddressType.json"
-    },
-    "isDomicilAddressCorrespondenceAddress": {
-      "type": "boolean"
-    },
-    "correspondenceAddress": {
-      "description": "Correspondence Address Type",
-      "$ref": "../../../Generics/v1.0.0/AddressType.json"
     },
     "GAVCompliance": {
       "description": "Guaranteed compliance with the GAV-conformity",
@@ -88,66 +46,21 @@
   },
   "additionalProperties": false,
   "required": [
-    "customerType",
-    "domicilAddress",
-    "isDomicilAddressCorrespondenceAddress",
-    "GAVcompliance",
+    "customer",
     "riskCharacteristic",
     "NOGACodeMain",
     "typeOfActivity"
   ],
-  "allOf": [
-    {
-      "if": {
-        "properties": {
-          "isDomicilAddressCorrespondenceAddress": {
-            "const": false
-          }
-        }
-      },
-      "then": {
-        "required": [
-          "correspondenceAddress"
-        ]
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "GAVcompliance": {
-            "const": "Yes"
-          }
-        }
-      },
-      "then": {
-        "required": [
-          "GAVname"
-        ]
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "customerType": {
-            "const": "private individual"
-          }
-        }
-      },
-      "then": {
-        "required": [
-          "surname",
-          "firstname",
-          "birthDate",
-          "gender"
-        ]
-      },
-      "else": {
-        "required": [
-          "companyName",
-          "companyLegalForm",
-          "companyLegalStatus"
-        ]
+  "if": {
+    "properties": {
+      "GAVcompliance": {
+        "const": "Yes"
       }
     }
-  ]
+  },
+  "then": {
+    "required": [
+      "GAVname"
+    ]
+  }
 }

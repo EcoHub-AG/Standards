@@ -23,12 +23,9 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - fixed capitalization of property names
     - all properties are now mandatory
 - OfferCustomerType (Changed)
-    - Added mandatory property "customerType": A customer can now be of type "private individual" or "company", affecting which fields are mandatory
+    - Extracted generic customer information to separate property, referencing "CustomerType"
     - Added mandatory property "typeOfActivity"
-    - Added properties "surname", "firstname", "birthDate", "gender", "companyFoundingDate", "riskCharacteristic", "UVGRiskNo"
-    - Renamed property "localityDomicil" to "domicilAddress"
-    - Renamed property "isDomicilLocalityCorrespondenceAddress" to "isDomicilAddressCorrespondenceAddress"
-    - Renamed property "localityCorrespondence" to "correspondenceAddress"
+    - Added properties "riskCharacteristic", "UVGRiskNo"
     - Fixed capitalization for properties "GAVcompliance" and "GAVname"
 - OfferFixedPayrollsType (Changed)
     - Renamed to OfferDSBFixedPayrollsType
