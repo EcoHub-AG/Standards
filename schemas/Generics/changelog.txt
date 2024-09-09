@@ -24,8 +24,6 @@ General improvements and necessary changes for Offer NLPI v1.0.0
     - Duplicate of LocalityDomicilType.
 - LocalityDomicilType (Renamed)
     - Renamed to AddressType
-- OtherExchangePartnerType (Changed)
-    - changed property "companyId" to mandatory
 - SenderReceiverType (Added)
 - TimeStampType (Cosmetic)
     - Added example
