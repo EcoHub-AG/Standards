@@ -4,6 +4,26 @@
 	"type": "array",
 	"minItems": 1,
 	"items": {
-		"$ref": "AdditionalOptionType.json"
+		"type": "object",
+		"properties": {
+			"optionName": {
+				"description": "Option name",
+				"type": "string"
+			},
+			"optionValue": {
+				"description": "Option value",
+				"type": "string"
+			},
+			"optionDescription": {
+				"description": "Option description",
+				"type": "string"
+			}
+		},
+		"additionalProperties": false,
+		"required": [
+			"optionName",
+			"optionValue",
+			"optionDescription"
+		]
 	}
 }

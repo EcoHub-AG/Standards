@@ -4,6 +4,9 @@ Initial release version
 ### Version 1.0.0
 General improvements and necessary changes for Offer NLPI v1.0.0
 
+- AdditionalOptionsType (Changed)
+    - Inlined definition for array items
+- AdditionalOptionType (Removed)
 - AddressType (Renamed)
     - Renamed to AddressDefinitions
 - BrokerContactType (Added)

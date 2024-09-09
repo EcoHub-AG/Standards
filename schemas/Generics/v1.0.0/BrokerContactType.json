@@ -22,7 +22,7 @@
     },
     "consultantFINMARegisterNo": {
       "description": "FINMA-Nr. of the consultant",
-      "type": "string"
+      "$ref": "RegFINMANoType.json"
     }
   },
   "required": [
