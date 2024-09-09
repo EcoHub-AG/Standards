@@ -35,7 +35,7 @@
 			},
 			"fixedPayroll": {
 				"description": "Insured fixed salary of the voluntarily insured person",
-				"$ref": "FixedPayrollType.json"
+				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"coverage": {
 				"$ref": "UVGOCoverageType.json"

@@ -1,6 +1,0 @@
-{
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Maximum insured payroll amount in CHF",
-	"type": "number",
-	"multipleOf": 0.01
-}

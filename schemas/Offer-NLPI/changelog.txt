@@ -10,9 +10,13 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - DailyHospitalAllowanceType (Added)
 - DeathCapitalType (Added)
 - DisabilityCapitalType (Added)
+- DSBPayrollFemaleType (Removed)
+- DSBPayrollMaleType (Removed)
+- FixedPayrollType (Removed)
 - InsuranceDurationInYears (Changed)
     - Restricted values to enum
 - InsuranceOptionsVariousUVGOType (Added)
+- MaximumPayrollAmountType (Removed)
 - NogaCodeType (Changed)
     - fixed capitalization of property names
     - all properties are now mandatory
@@ -24,10 +28,14 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "isDomicilLocalityCorrespondenceAddress" to "isDomicilAddressCorrespondenceAddress"
     - Renamed property "localityCorrespondence" to "correspondenceAddress"
     - Fixed capitalization for properties "GAVcompliance" and "GAVname"
-- OfferFixedPayrollsType (Renamed)
+- OfferFixedPayrollsType (Changed)
     - Renamed to OfferDSBFixedPayrollsType
+    - changed type of properties "fixedPayroll", "netPremiumDSBFixedPayrollMaleAmount", "netPremiumDSBFixedPayrollFemaleAmount",
+        "netPremiumDSBMFixedPayrollAmount", "netPremiumDSBPFixedPayrollAmount" to "MonetaryAmountType"
 - OfferNlpiDataType (Changed)
     - Added properties "UVGCompulsory", "UVGSupplement"
+    - changed type of properties "netPremiumDSBTotal", "combinationDiscountAmount", "otherDiscountAmount",
+                "surchargesTotal", "instalmentSurchargeAmount", "premiumMinimumAmount" in "premiumOverview" to "MonetaryAmountType"
     - Added properties "totalPremiumBUAndNBU", "netPremiumUVGTotal", "netPremiumTotal", "netPremiumUVGZTotal" to "premiumOverview"
     "instalmentSurchargePercentageUVGCompulsory", "instalmentSurchargeAmountUVGCompulsory" to "premiumOverview"
     - Changed description of properties "instalmentSurchargePercentage", "instalmentSurchargeAmount" in "premiumOverview"
@@ -42,14 +50,19 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Changed type of property "brokerContract" to BrokerContactType
     - properties "timestamp", "header", "customer", "brokerContact", "insuranceDurationInYears" are now mandatory,
     - property "DSB" is no longer required. Instead, one of "DSB", "UVGCompulsory", "UVGSupplement" is required
-- OfferPersonGroupsType.json (Renamed)
+- OfferPersonGroupsType.json (Changed)
     - Renamed to OfferDSBPersonGroupsType.json
+    - changed type of properties "DSBPayrollFemale", "DSBPayrollMale", "DSBPayrollTotal",
+            "maximumPayrollAmount" to "MonetaryAmountType"
+    - changed type of properties "netPremiumDSBPersongroupMaleAmount", "netPremiumDSBPersongroupFemaleAmount", "netPremiumDSBMPersongroupAmount",
+                "netPremiumDSBPPersongroupAmount" in "premiumPersongroup" to "MonetaryAmountType"
 - OfferRequestDSBType (Changed)
     - Renamed property "persongroups" to "personGroups"
 - OfferRequestFixedPayrollsType (Changed)
     - Renamed to OfferRequestDSBFixedPayrollsType
     - Added property "personId"
     - Renamed property "businessRelationPerson" to "role"
+    - changed type of property "fixedPayroll" to "MonetaryAmountType"
 - OfferRequestPersonGroupsType (Changed)
     - Renamed to OfferRequestDSBPersonGroupsType
     - Renamed property "persongroupId" to "personGroupId"
@@ -58,6 +71,8 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "DSBPayrollMale" to "payrollMale"
     - Renamed property "DSBPayrollTotal" to "payrollTotal"
     - Renamed property "avarageAgePersongroup" to "averageAgePersonGroup"
+    - changed type of properties "payrollFemale", "payrollMale", "payrollTotal",
+                  "maximumPayrollAmount" to "MonetaryAmountType"
 - OfferRequestInsuranceOptionsVariousType (Changed)
     - renamed property "DSBtypePayInstalment" to "typePayInstalment"
     - renamed property "profitParticipation" to "surplusParticipation"

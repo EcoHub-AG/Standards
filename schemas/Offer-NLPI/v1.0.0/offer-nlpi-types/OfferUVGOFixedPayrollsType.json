@@ -35,7 +35,7 @@
 			},
 			"fixedPayroll": {
 				"description": "Insured fixed salary of the voluntarily insured person",
-				"$ref": "FixedPayrollType.json"
+				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"coverage": {
 				"$ref": "UVGOCoverageType.json"
@@ -57,9 +57,8 @@
 						"multipleOf": 0.001
 					},
 					"totalPremium": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Annual premium of the voluntarily insured person\n"
+						"description": "Annual premium of the voluntarily insured person",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					}
 				},
 				"additionalProperties": false,

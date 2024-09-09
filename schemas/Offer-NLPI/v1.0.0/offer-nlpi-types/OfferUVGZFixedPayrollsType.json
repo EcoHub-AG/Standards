@@ -32,11 +32,11 @@
 			},
 			"fixedPayroll": {
 				"description": "Fixed payroll amount in CHF",
-				"$ref": "FixedPayrollType.json"
+				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"surplusPayroll": {
 				"description": "Surplus payroll wages in CHF",
-				"$ref": "FixedPayrollType.json"
+				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"coverage": {
 				"$ref": "UVGOCoverageType.json"
@@ -45,84 +45,68 @@
 				"type": "object",
 				"properties": {
 					"disabilityCapitalSalary": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Disability lump sum / UVG salary"
+						"description": "Disability lump sum / UVG salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"disabilityCapitalSurplusSalary": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Disability lump sum / surplus salary"
+						"description": "Disability lump sum / surplus salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"disabilityPensionSalary": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Disability pension / gross / UVG salary"
+						"description": "Disability pension / gross / UVG salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"disabilityPensionSalaryNet": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Disability pension / net / UVG salary"
+						"description": "Disability pension / net / UVG salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"disabilityPensionSalarySurplus": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Disability pension / gross / surplus salary"
+						"description": "Disability pension / gross / surplus salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"disabilityPensionSalarySurplusNet": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Disability pension / net / surplus salary"
+						"description": "Disability pension / net / surplus salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"deathCapitalSalary": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Lump-sum death benefit / gross / UVG salary"
+						"description": "Lump-sum death benefit / gross / UVG salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"deathCapitalSurplusSalary": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Lump-sum death benefit / gross / surplus salary"
+						"description": "Lump-sum death benefit / gross / surplus salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"deathCapitalSalaryNet": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Lump-sum death benefit / net / UVG salary"
+						"description": "Lump-sum death benefit / net / UVG salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"deathCapitalSurplusSalaryNet": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Lump-sum death benefit / net / surplus salary"
+						"description": "Lump-sum death benefit / net / surplus salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"survivorsPensionSalary": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Survivors' pension / men gross / UVG salary"
+						"description": "Survivors' pension / men gross / UVG salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"survivorsPensionSalaryNet": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Survivors' pension / net / UVG salary"
+						"description": "Survivors' pension / net / UVG salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"survivorsPensionSalarySurplus": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Survivors' pension / gross / surplus salary"
+						"description": "Survivors' pension / gross / surplus salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"survivorsPensionSalarySurplusNet": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Survivors' pension / net / surplus salary"
+						"description": "Survivors' pension / net / surplus salary",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"premiumDiffCoverage": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Premium for differential cover in CHF"
+						"description": "Premium for differential cover in CHF",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					},
 					"finalPremiumRateFixedPayroll": {
-						"type": "number",
-						"multipleOf": 0.01,
-						"description": "Final premium rate fixed payroll"
+						"description": "Final premium rate fixed payroll",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 					}
 				},
 				"additionalProperties": false,

@@ -24,6 +24,7 @@ General improvements and necessary changes for Offer NLPI v1.0.0
     - Duplicate of LocalityDomicilType.
 - LocalityDomicilType (Renamed)
     - Renamed to AddressType
+- MonetaryAmountType (Added)
 - SenderReceiverType (Added)
 - TimeStampType (Cosmetic)
     - Added example

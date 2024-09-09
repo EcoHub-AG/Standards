@@ -1,6 +1,0 @@
-{
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Daily sickness benefits salary total for men",
-	"type": "number",
-	"multipleOf": 0.01
-}

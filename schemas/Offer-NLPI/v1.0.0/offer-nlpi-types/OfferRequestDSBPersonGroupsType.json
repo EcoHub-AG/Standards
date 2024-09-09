@@ -1,66 +1,67 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Group(s) of persons",
-	"type": "array",
-	"minItems": 1,
-	"items": {
-		"type": "object",
-		"properties": {
-			"personGroupId": {
-				"$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
-			},
-			"personGroupDescription": {
-				"$ref": "../../../Generics/v1.0.0/PersonGroupDescriptionType.json"
-			},
-			"numberOfPersonsFemale": {
-				"$ref": "../../../Generics/v1.0.0/NumberOfPersonsFemaleType.json"
-			},
-			"numberOfPersonsMale": {
-				"$ref": "../../../Generics/v1.0.0/NumberOfPersonsMaleType.json"
-			},
-			"numberOfPersonsTotal": {
-				"description": "Total number of persons",
-				"type": "integer"
-			},
-			"payrollFemale": {
-				"$ref": "DSBPayrollFemaleType.json"
-			},
-			"payrollMale": {
-				"$ref": "DSBPayrollMaleType.json"
-			},
-			"payrollTotal": {
-				"description": "Total daily sickness benefits salary for men and women",
-				"type": "number",
-				"multipleOf": 0.01
-			},
-			"maximumPayrollAmount": {
-				"$ref": "../../../Generics/v1.0.0/MaximumPayrollAmountType.json"
-			},
-			"averageAgePersonGroup": {
-				"description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then or equal to 4",
-				"type": "number",
-				"multipleOf": 0.01
-			},
-			"uniformPremiumRate": {
-				"description": "Unit premium rate i.e. should a distinction be made between men and women in the premium rate.",
-				"type": "boolean"
-			},
-			"coverage": {
-				"description": "Daily sickness benefits insurance coverage",
-				"$ref": "CoverageType.json"
-			}
-		},
-		"additionalProperties": false,
-		"required": [
-			"personGroupId",
-			"personGroupDescription",
-			"numberOfPersonsFemale",
-			"numberOfPersonsMale",
-			"numberOfPersonsTotal",
-			"payrollFemale",
-			"payrollMale",
-			"payrollTotal",
-			"coverage"
-		]
-	}
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Group(s) of persons",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personGroupId": {
+        "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
+      },
+      "personGroupDescription": {
+        "$ref": "../../../Generics/v1.0.0/PersonGroupDescriptionType.json"
+      },
+      "numberOfPersonsFemale": {
+        "$ref": "../../../Generics/v1.0.0/NumberOfPersonsFemaleType.json"
+      },
+      "numberOfPersonsMale": {
+        "$ref": "../../../Generics/v1.0.0/NumberOfPersonsMaleType.json"
+      },
+      "numberOfPersonsTotal": {
+        "description": "Total number of persons",
+        "type": "integer"
+      },
+      "payrollFemale": {
+        "description": "Daily sickness benefits salary total for women",
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "payrollMale": {
+        "description": "Daily sickness benefits salary total for men",
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "payrollTotal": {
+        "description": "Total daily sickness benefits salary for men and women",
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "maximumPayrollAmount": {
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "averageAgePersonGroup": {
+        "description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then or equal to 4",
+        "type": "number",
+        "multipleOf": 0.01
+      },
+      "uniformPremiumRate": {
+        "description": "Unit premium rate i.e. should a distinction be made between men and women in the premium rate.",
+        "type": "boolean"
+      },
+      "coverage": {
+        "description": "Daily sickness benefits insurance coverage",
+        "$ref": "CoverageType.json"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "personGroupId",
+      "personGroupDescription",
+      "numberOfPersonsFemale",
+      "numberOfPersonsMale",
+      "numberOfPersonsTotal",
+      "payrollFemale",
+      "payrollMale",
+      "payrollTotal",
+      "coverage"
+    ]
+  }
 }

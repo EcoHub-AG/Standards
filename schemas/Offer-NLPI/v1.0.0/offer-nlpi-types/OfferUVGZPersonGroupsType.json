@@ -15,18 +15,15 @@
       },
       "maxSalary": {
         "description": "Maximum salary in CHF",
-        "type": "number",
-        "multipleOf": 0.01
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "payrollTotalEmployees": {
         "description": "Total payroll of all employees",
-        "type": "number",
-        "multipleOf": 0.01
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "surplusSalaryTotal": {
         "description": "Payroll: Surplus salary total in CHF",
-        "type": "number",
-        "multipleOf": 0.01
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "coverage": {
         "description": "Coverage of the person groups",
@@ -91,14 +88,12 @@
             "multipleOf": 0.001
           },
           "premiumDiffCoverage": {
-            "type": "number",
-            "multipleOf": 0.01,
-            "description": "Premium for differential cover in CHF"
+            "description": "Premium for differential cover in CHF",
+            "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
           },
           "finalPremiumPersonGroup": {
-            "type": "number",
-            "multipleOf": 0.01,
-            "description": "Premium for group of persons in CHF"
+            "description": "Premium for group of persons in CHF",
+            "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
           }
         },
         "required": [

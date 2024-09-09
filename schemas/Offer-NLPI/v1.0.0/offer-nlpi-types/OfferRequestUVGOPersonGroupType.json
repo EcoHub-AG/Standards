@@ -20,18 +20,15 @@
     },
     "payrollBU": {
       "description": "Accident insurance total payroll of all employees OA",
-      "type": "number",
-      "multipleOf": 0.01
+      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "payrollNBU": {
       "description": "Accident insurance total payroll of all employees NOA",
-      "type": "number",
-      "multipleOf": 0.01
+      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "payrollTotal": {
       "description": "Accident insurance total payroll of all employees",
-      "type": "number",
-      "multipleOf": 0.01
+      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "coverage": {
       "description": "Coverage of the person groups",

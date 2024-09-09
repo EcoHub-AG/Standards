@@ -26,9 +26,8 @@
           "type": "string"
         },
         "payrollBU": {
-          "type": "number",
-          "multipleOf": 0.01,
-          "description": "UVG payroll BU"
+          "description": "UVG payroll BU",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         },
         "premiumRiskRateBU": {
           "description": "Premium risk rate BU in ‰",
@@ -51,9 +50,8 @@
           "multipleOf": 0.001
         },
         "premiumMinimumAmountBU": {
-          "type": "number",
-          "multipleOf": 0.01,
-          "description": "Minimum premium for BU in CHF"
+          "description": "Minimum premium for BU in CHF",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         },
         "finalPremiumRateBU": {
           "description": "Final premium rate BU in ‰. Corresponds to the final premium rate / gross premium rate",
@@ -61,9 +59,8 @@
           "multipleOf": 0.001
         },
         "totalPremiumBU": {
-          "type": "number",
-          "multipleOf": 0.01,
-          "description": "Total annual premium BU in CHF"
+          "description": "Total annual premium BU in CHF",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         },
         "hazardClassNBU": {
           "description": "Hazard class NBU",
@@ -74,9 +71,8 @@
           "type": "string"
         },
         "payrollNBU": {
-          "type": "number",
-          "multipleOf": 0.01,
-          "description": "UVG payroll NBU"
+          "description": "UVG payroll NBU",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         },
         "premiumRiskRateNBU": {
           "description": "Premium risk rate NBU in ‰",
@@ -99,9 +95,8 @@
           "multipleOf": 0.001
         },
         "premiumMinimumAmountNBU": {
-          "type": "number",
-          "multipleOf": 0.01,
-          "description": "Minimum premium for NBU in CHF"
+          "description": "Minimum premium for NBU in CHF",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         },
         "finalPremiumRateNBU": {
           "description": "Final premium rate NBU in ‰. Corresponds to the final premium rate / gross premium rate",
@@ -109,9 +104,8 @@
           "multipleOf": 0.001
         },
         "totalPremiumNBU": {
-          "type": "number",
-          "multipleOf": 0.01,
-          "description": "Total annual premium NBU in CHF"
+          "description": "Total annual premium NBU in CHF",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         }
       },
       "additionalProperties": false,

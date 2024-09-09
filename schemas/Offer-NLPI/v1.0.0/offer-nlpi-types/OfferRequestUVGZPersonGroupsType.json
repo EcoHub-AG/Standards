@@ -15,16 +15,14 @@
       },
       "payrollTotal": {
         "description": "Total payroll of all employees",
-        "type": "number",
-        "multipleOf": 0.01
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "maximumPayrollAmount": {
-        "$ref": "../../../Generics/v1.0.0/MaximumPayrollAmountType.json"
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "surplusSalaryTotal": {
         "description": "Payroll: Surplus salary total in CHF",
-        "type": "number",
-        "multipleOf": 0.01
+        "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "coverage": {
         "description": "Coverage of the person groups",

@@ -1,187 +1,175 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Offer NLPI version 0.3.0",
-	"type": "object",
-	"properties": {
-		"processIdentificationNo": {
-			"$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
-		},
-		"timestamp": {
-			"$ref": "../../../Generics/v1.0.0/TimestampType.json"
-		},
-		"header": {
-			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
-		},
-		"customer": {
-			"$ref": "../offer-nlpi-types/OfferCustomerType.json"
-		},
-		"coInsuredCustomer": {
-			"type": "array",
-			"minItems": 1,
-			"items": {
-				"$ref": "../offer-nlpi-types/OfferCustomerType.json"
-			},
-			"unevaluatedItems": false
-		},
-		"insurerContact": {
-			"$ref": "../../../Generics/v1.0.0/ContactType.json"
-		},
-		"quotationNo": {
-			"$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
-		},
-		"offerType": {
-			"$ref": "../offer-nlpi-types/OfferTypeType.json"
-		},
-		"offerValidToDate": {
-			"description": "Validity end date of the offer",
-			"type": "string",
-			"format": "date"
-		},
-		"offerBindingNature": {
-			"$ref": "../offer-nlpi-types/OfferBindingNatureType.json"
-		},
-		"insuranceStartDate": {
-			"$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
-		},
-		"insuranceEndDate": {
-			"$ref": "../offer-nlpi-types/InsuranceEndDateType.json"
-		},
-		"currency": {
-			"$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
-		},
-		"DSB": {
-			"$ref": "../offer-nlpi-types/OfferDSBType.json"
-		},
-		"UVGCompulsory": {
-			"$ref": "../offer-nlpi-types/OfferUVGOType.json"
-		},
-		"UVGSupplement": {
-			"$ref": "../offer-nlpi-types/OfferUVGZType.json"
-		},
-		"premiumOverview": {
-			"description": "Overview of premiums for the entire offer (incl. all insured groups of persons and fixed payroll amounts)",
-			"type": "object",
-			"properties": {
-				"tariffYear": {
-					"description": "Tariff year",
-					"type": "string"
-				},
-				"netPremiumDSBTotal": {
-					"description": "The total net premium DSB corresponds to the amount of the net premium total offered for DSB coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"totalPremiumBUAndNBU": {
-					"description": "Total annual premium BU/NBU in CHF",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"netPremiumUVGTotal": {
-					"description": "The total net premium UVG corresponds to the amount of the net premium total offered for UVG coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"netPremiumUVGZTotal": {
-					"description": "The total net premium UVG-Z corresponds to the amount of the net premium total offered for UVG-Z coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"netPremiumTotal": {
-					"description": "The total net premium corresponds to the amount of the net premium offered on the total offer after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"instalmentSurchargePercentageUVGCompulsory": {
-					"type": "number",
-					"multipleOf": 0.001,
-					"description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage  for UVG compulsory."
-				},
-				"instalmentSurchargeAmountUVGCompulsory": {
-					"type": "number",
-					"multipleOf": 0.01,
-					"description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for UVG compulsory."
-				},
-				"combinationDiscountPercentage": {
-					"description": "Discount considered in the net premium in percentage when buying in combination with other products (e.g. DSB and UVGO/UVGZ).",
-					"type": "number",
-					"multipleOf": 0.001
-				},
-				"combinationDiscountAmount": {
-					"description": "Discount amount considered in the net premium buying in combination with other products (e.g. DSB and UVGO/UVGZ).",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"otherDiscountPercentage": {
-					"description": "Additional discounts, e.g. progress-related or business policy discounts.",
-					"type": "number",
-					"multipleOf": 0.001
-				},
-				"otherDiscountAmount": {
-					"description": "Additional discount amount for progress-related or business policy discounts.",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"surchargesTotal": {
-					"description": "Total of all surcharges for fixed premium components (surcharges not included in the net premium rate)",
-					"type": "number",
-					"multipleOf": 0.01
-				},
-				"instalmentSurchargePercentage": {
-					"type": "number",
-					"multipleOf": 0.001,
-					"description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage  for the hole contract (UVGO, UVGZ, KTG)."
-				},
-				"instalmentSurchargeAmount": {
-					"type": "number",
-					"multipleOf": 0.01,
-					"description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for the hole contract (UVGO, UVGZ, KTG)."
-				},
-				"premiumMinimumAmount": {
-					"type": "number",
-					"multipleOf": 0.01,
-					"description": "Minimum premium of the contract"
-				}
-			},
-			"required": [
-				"tariffYear",
-				"netPremiumDSBTotal"
-			],
-			"additionalProperties": false
-		},
-		"comment": {
-			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
-			"description": "General comment field"
-		},
-		"offerDocument": {
-			"description": "Offer document",
-			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
-		},
-		"contractConditionsDocument": {
-			"description": "Contract conditions document",
-			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
-		},
-		"offerAttachmentDocument": {
-			"description": "Additional offer documents e.g. flyers, product fact sheets, health questionnaire",
-			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
-		}
-	},
-	"required": [
-		"processIdentificationNo",
-		"timestamp",
-		"header",
-		"customer",
-		"insurerContact",
-		"quotationNo",
-		"offerType",
-		"offerValidToDate",
-		"offerBindingNature",
-		"insuranceStartDate",
-		"currency",
-		"offerDocument",
-		"contractConditionsDocument",
-		"premiumOverview"
-
-	],
-	"unevaluatedProperties": false,
-	"additionalProperties": false
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Offer NLPI version 0.3.0",
+  "type": "object",
+  "properties": {
+    "processIdentificationNo": {
+      "$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
+    },
+    "timestamp": {
+      "$ref": "../../../Generics/v1.0.0/TimestampType.json"
+    },
+    "header": {
+      "$ref": "../../../Generics/v1.0.0/HeaderType.json"
+    },
+    "customer": {
+      "$ref": "../offer-nlpi-types/OfferCustomerType.json"
+    },
+    "coInsuredCustomer": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "../offer-nlpi-types/OfferCustomerType.json"
+      },
+      "unevaluatedItems": false
+    },
+    "insurerContact": {
+      "$ref": "../../../Generics/v1.0.0/ContactType.json"
+    },
+    "quotationNo": {
+      "$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
+    },
+    "offerType": {
+      "$ref": "../offer-nlpi-types/OfferTypeType.json"
+    },
+    "offerValidToDate": {
+      "description": "Validity end date of the offer",
+      "type": "string",
+      "format": "date"
+    },
+    "offerBindingNature": {
+      "$ref": "../offer-nlpi-types/OfferBindingNatureType.json"
+    },
+    "insuranceStartDate": {
+      "$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
+    },
+    "insuranceEndDate": {
+      "$ref": "../offer-nlpi-types/InsuranceEndDateType.json"
+    },
+    "currency": {
+      "$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
+    },
+    "DSB": {
+      "$ref": "../offer-nlpi-types/OfferDSBType.json"
+    },
+    "UVGCompulsory": {
+      "$ref": "../offer-nlpi-types/OfferUVGOType.json"
+    },
+    "UVGSupplement": {
+      "$ref": "../offer-nlpi-types/OfferUVGZType.json"
+    },
+    "premiumOverview": {
+      "description": "Overview of premiums for the entire offer (incl. all insured groups of persons and fixed payroll amounts)",
+      "type": "object",
+      "properties": {
+        "tariffYear": {
+          "description": "Tariff year",
+          "type": "string"
+        },
+        "netPremiumDSBTotal": {
+          "description": "The total net premium DSB corresponds to the amount of the net premium total offered for DSB coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "totalPremiumBUAndNBU": {
+          "description": "Total annual premium BU/NBU in CHF",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "netPremiumUVGTotal": {
+          "description": "The total net premium UVG corresponds to the amount of the net premium total offered for UVG coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "netPremiumUVGZTotal": {
+          "description": "The total net premium UVG-Z corresponds to the amount of the net premium total offered for UVG-Z coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "netPremiumTotal": {
+          "description": "The total net premium corresponds to the amount of the net premium offered on the total offer after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "instalmentSurchargePercentageUVGCompulsory": {
+          "type": "number",
+          "multipleOf": 0.001,
+          "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage  for UVG compulsory."
+        },
+        "instalmentSurchargeAmountUVGCompulsory": {
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json",
+          "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for UVG compulsory."
+        },
+        "combinationDiscountPercentage": {
+          "description": "Discount considered in the net premium in percentage when buying in combination with other products (e.g. DSB and UVGO/UVGZ).",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "combinationDiscountAmount": {
+          "description": "Discount amount considered in the net premium buying in combination with other products (e.g. DSB and UVGO/UVGZ).",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "otherDiscountPercentage": {
+          "description": "Additional discounts, e.g. progress-related or business policy discounts.",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "otherDiscountAmount": {
+          "description": "Additional discount amount for progress-related or business policy discounts.",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "surchargesTotal": {
+          "description": "Total of all surcharges for fixed premium components (surcharges not included in the net premium rate)",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "instalmentSurchargePercentage": {
+          "type": "number",
+          "multipleOf": 0.001,
+          "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage  for the hole contract (UVGO, UVGZ, KTG)."
+        },
+        "instalmentSurchargeAmount": {
+          "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for the hole contract (UVGO, UVGZ, KTG).",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "premiumMinimumAmount": {
+          "description": "Minimum premium of the contract",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        }
+      },
+      "required": [
+        "tariffYear",
+        "netPremiumDSBTotal"
+      ],
+      "additionalProperties": false
+    },
+    "comment": {
+      "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
+      "description": "General comment field"
+    },
+    "offerDocument": {
+      "description": "Offer document",
+      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
+    },
+    "contractConditionsDocument": {
+      "description": "Contract conditions document",
+      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
+    },
+    "offerAttachmentDocument": {
+      "description": "Additional offer documents e.g. flyers, product fact sheets, health questionnaire",
+      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
+    }
+  },
+  "required": [
+    "processIdentificationNo",
+    "timestamp",
+    "header",
+    "customer",
+    "insurerContact",
+    "quotationNo",
+    "offerType",
+    "offerValidToDate",
+    "offerBindingNature",
+    "insuranceStartDate",
+    "currency",
+    "offerDocument",
+    "contractConditionsDocument",
+    "premiumOverview"
+  ],
+  "unevaluatedProperties": false,
+  "additionalProperties": false
 }
