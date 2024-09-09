@@ -3,18 +3,43 @@
 	"type": "object",
 	"description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
 	"properties": {
-		"persongroup": {
-			"$ref": "OfferRequestUVGOPersonGroupsType.json"
+		"personGroup": {
+			"$ref": "OfferRequestUVGOPersonGroupType.json"
 		},
 		"voluntarilyInsuredPersons": {
 			"$ref": "OfferRequestUVGOFixedPayrollsType.json"
 		},
 		"insuranceOptionsVarious": {
-			"$ref": "InsuranceOptionsVariousUVGOType.json"
+			"type": "object",
+			"properties": {
+				"annualCancellation": {
+					"$ref": "AnnualCancellationType.json"
+				},
+				"typePayInstalment": {
+					"$ref": "DSBTypePayInstalmentType.json"
+				}
+			},
+			"additionalProperties": false,
+			"required": [
+				"annualCancellation",
+				"typePayInstalment"
+			]
 		}
 	},
 	"additionalProperties": false,
 	"required": [
 		"insuranceOptionsVarious"
+	],
+	"anyOf": [
+		{
+			"required": [
+				"personGroup"
+			]
+		},
+		{
+			"required": [
+				"voluntarilyInsuredPersons"
+			]
+		}
 	]
 }

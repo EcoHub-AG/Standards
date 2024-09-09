@@ -19,6 +19,7 @@
       "type": "string",
       "description": "Type of medical expenses",
       "enum": [
+        "keine",
         "Privatabteilung",
         "Halbprivatabteilung"
       ]

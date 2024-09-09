@@ -12,7 +12,7 @@
 		},
 		"deathCapitalSurplus": {
 			"description": "Death capital x times the surplus annual salary",
-			"$ref": "YearlySalaryMultipleType.json"
+			"$ref": "YearlySalaryOptionalMultipleType.json"
 		},
 		"bridgingCapital": {
 			"description": "Bridging capital in addition to the lump-sum death benefit: x times the AHV salary",

@@ -1,52 +1,137 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"type": "object",
-	"description": "Daily allowance insured",
-	"properties": {
-		"dailyAllowanceInsured": {
-			"type": "boolean",
-			"description": "Daily allowance insured?"
-		},
-		"dailyAllowance": {
-			"description": "Daily allowance in % UVG salary",
-			"$ref": "DailyAllowancePercentageType.json"
-		},
-		"dailyAllowanceWaitingPeriod": {
-			"description": "Daily allowance UVG salary from day x",
-			"$ref": "DailyAllowanceWaitingPeriodType.json"
-		},
-		"dailyAllowanceD12": {
-			"description": "Daily allowance UVG wage 1st + 2nd day in %",
-			"$ref": "DailyAllowancePercentageType.json"
-		},
-		"dailyAllowanceSurplus": {
-			"description": "Daily allovance UVG wage surplus in %",
-			"type": "DailyAllowancePercentageType.json"
-		},
-		"dailyAllowanceSurplusWaitingPeriod": {
-			"description": "Daily allowance UVG wage surplus from day x",
-			"$ref": "DailyAllowanceWaitingPeriodType.json"
-		},
-		"dailyAllowanceRelapses": {
-			"description": "Daily allowance for relapses/late effects",
-			"type": "boolean"
-		}
-	},
-	"additionalProperties": false,
-	"required": [
-		"dailyAllowanceInsured"
-	],
-	"if": {
-		"properties": {
-			"deathCapitalInsured": {
-				"const": true
-			}
-		}
-	},
-	"then": {
-		"required": [
-			"dailyAllowance",
-			"dailyAllowanceWaitingPeriod"
-		]
-	}
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "Daily allowance insured",
+  "properties": {
+    "dailyAllowanceInsured": {
+      "type": "boolean",
+      "description": "Daily allowance insured?"
+    },
+    "dailyAllowance": {
+      "description": "Daily allowance in % UVG salary",
+      "type": "integer",
+      "enum": [
+        80,
+        90,
+        100
+      ]
+    },
+    "dailyAllowanceWaitingPeriod": {
+      "description": "Daily allowance UVG salary from day x",
+      "type": "integer",
+      "enum": [
+        0,
+        2,
+        3,
+        7,
+        14,
+        21,
+        30,
+        60,
+        90,
+        180,
+        360
+      ]
+    },
+    "dailyAllowanceFirstCoupleDaysInsured": {
+      "description": "Daily allowance for 1st + 2nd day insured?",
+      "type": "boolean"
+    },
+    "dailyAllowanceFirstCoupleDays": {
+      "description": "Daily allowance UVG wage 1st + 2nd day in %",
+      "type": "integer",
+      "enum": [
+        80,
+        90,
+        100
+      ]
+    },
+    "dailyAllowanceSurplusInsured": {
+      "description": "Daily allowance UVG wage surplus insured?",
+      "type": "boolean"
+    },
+    "dailyAllowanceSurplus": {
+      "description": "Daily allowance UVG wage surplus in %",
+      "type": "integer",
+      "enum": [
+        80,
+        90,
+        100
+      ]
+    },
+    "dailyAllowanceSurplusWaitingPeriod": {
+      "description": "Daily allowance UVG wage surplus from day x",
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        14,
+        21,
+        30,
+        60,
+        90,
+        180,
+        360
+      ]
+    },
+    "dailyAllowanceRelapses": {
+      "description": "Daily allowance for relapses/late effects",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "dailyAllowanceInsured"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "dailyAllowanceInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "dailyAllowance",
+          "dailyAllowanceWaitingPeriod",
+          "dailyAllowanceFirstCoupleDaysInsured",
+          "dailyAllowanceSurplusInsured"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "dailyAllowanceFirstCoupleDaysInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "dailyAllowanceFirstCoupleDays"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "dailyAllowanceSurplusInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "dailyAllowanceSurplus",
+          "dailyAllowanceSurplusWaitingPeriod"
+        ]
+      }
+    }
+  ]
 }

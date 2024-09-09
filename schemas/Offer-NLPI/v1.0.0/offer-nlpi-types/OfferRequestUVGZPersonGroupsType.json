@@ -6,22 +6,20 @@
   "items": {
     "type": "object",
     "properties": {
-      "persongroupId": {
+      "personGroupId": {
         "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
       },
-      "totalNumberOfPersons": {
+      "numberOfPersonsTotal": {
         "description": "Total number of employees",
         "type": "integer"
       },
-      "maxSalary": {
-        "description": "Maximum salary in CHF",
-        "type": "number",
-        "multipleOf": 0.01
-      },
-      "payrollTotalEmployees": {
+      "payrollTotal": {
         "description": "Total payroll of all employees",
         "type": "number",
         "multipleOf": 0.01
+      },
+      "maximumPayrollAmount": {
+        "$ref": "../../../Generics/v1.0.0/MaximumPayrollAmountType.json"
       },
       "surplusSalaryTotal": {
         "description": "Payroll: Surplus salary total in CHF",
@@ -35,10 +33,10 @@
     },
     "additionalProperties": false,
     "required": [
-      "persongroupId",
-      "totalNumberOfPersons",
-      "maxSalary",
-      "payrollTotalEmployees",
+      "personGroupId",
+      "numberOfPersonsTotal",
+      "payrollTotal",
+      "maximumPayrollAmount",
       "surplusSalaryTotal",
       "coverage"
     ]

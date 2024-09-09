@@ -6,11 +6,20 @@
 	"items": {
 		"type": "object",
 		"properties": {
-			"surname": {
-				"$ref": "../../../Generics/v1.0.0/SurNameType.json"
+			"personId": {
+				"description": "ID of the insured Person",
+				"type": "string",
+				"format": "uuid",
+				"examples": ["345aa049-7693-4710-89d7-e13b87ab988a"]
+			},
+			"role": {
+				"$ref": "BusinessRelationPersonType.json"
 			},
 			"firstname": {
 				"$ref": "../../../Generics/v1.0.0/FirstNameType.json"
+			},
+			"surname": {
+				"$ref": "../../../Generics/v1.0.0/SurNameType.json"
 			},
 			"birthDate": {
 				"$ref": "../../../Generics/v1.0.0/BirthDateType.json"
@@ -18,17 +27,14 @@
 			"gender": {
 				"$ref": "../../../Generics/v1.0.0/GenderType.json"
 			},
-			"businessRelationPerson": {
-				"$ref": "BusinessRelationPersonType.json"
+			"fixedPayroll": {
+				"$ref": "FixedPayrollType.json"
 			},
 			"benefitCoverage": {
 				"$ref": "BenefitCoverageType.json"
 			},
 			"insuranceType": {
 				"$ref": "InsuranceTypeType.json"
-			},
-			"fixedPayroll": {
-				"$ref": "FixedPayrollType.json"
 			},
 			"coverage": {
 				"description": "Daily sickness benefits insurance coverage",

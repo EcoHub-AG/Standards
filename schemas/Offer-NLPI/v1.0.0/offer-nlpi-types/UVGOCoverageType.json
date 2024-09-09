@@ -1,18 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "UVGO coverage",
-  "type": "object",
-  "properties": {
-    "UVGCompulsoryCoverage": {
-      "type": "string",
-      "enum": [
-        "Deckung gemäss obligatorischer Unfallversicherung UVG",
-        "Deckung gemäss obligatorischer Unfallversicherung OUFL"
-      ]
-    }
-  },
-  "required": [
-    "UVGCompulsoryCoverage"
-  ],
-  "additionalProperties": false
+  "type": "string",
+  "enum": [
+    "Deckung gemäss obligatorischer Unfallversicherung UVG",
+    "Deckung gemäss obligatorischer Unfallversicherung OUFL"
+  ]
 }

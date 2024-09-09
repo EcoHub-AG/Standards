@@ -21,17 +21,17 @@
 					"Familienangehöriger"
 				]
 			},
-			"gender": {
-				"$ref": "../../../Generics/v1.0.0/GenderType.json"
+			"firstname": {
+				"$ref": "../../../Generics/v1.0.0/FirstNameType.json"
 			},
 			"surname": {
 				"$ref": "../../../Generics/v1.0.0/SurNameType.json"
 			},
-			"firstname": {
-				"$ref": "../../../Generics/v1.0.0/FirstNameType.json"
-			},
 			"birthDate": {
 				"$ref": "../../../Generics/v1.0.0/BirthDateType.json"
+			},
+			"gender": {
+				"$ref": "../../../Generics/v1.0.0/GenderType.json"
 			},
 			"fixedPayroll": {
 				"description": "Insured fixed salary of the voluntarily insured person",

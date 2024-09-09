@@ -7,7 +7,7 @@
       "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
     },
     "persongroupDescription": {
-      "$ref": "../../../Generics/v1.0.0/PersongroupDescriptionType.json"
+      "$ref": "../../../Generics/v1.0.0/PersonGroupDescriptionType.json"
     },
     "coverage": {
       "description": "Converage of the person groups",

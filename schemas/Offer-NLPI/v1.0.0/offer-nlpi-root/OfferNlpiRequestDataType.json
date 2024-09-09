@@ -29,9 +29,6 @@
 		"brokerContact": {
 			"$ref": "../../../Generics/v1.0.0/BrokerContactType.json"
 		},
-		"offerRequestType": {
-			"$ref": "../offer-nlpi-types/OfferTypeType.json"
-		},
 		"offerToDate": {
 			"type": "string",
 			"format": "date",
@@ -47,6 +44,10 @@
 		"previousInsurer": {
 			"description": "Previous insurer",
 			"$ref": "../offer-nlpi-types/PreviousInsurerType.json"
+		},
+		"UVGCompulsoryInsurer": {
+			"description": "The current UVG compulsory insurer when requesting an UVG supplementary offer.",
+			"$ref": "../offer-nlpi-types/UVGCompulsoryInsurerType.json"
 		},
 		"insuranceStartDate": {
 			"$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
@@ -80,8 +81,20 @@
 		"currency",
 		"insuranceStartDate",
 		"insuranceDurationInYears",
-		"previousInsurer",
-		"offerRequestType",
-		"DSB"
+		"previousInsurer"
+	],
+	"dependentRequired": {
+		"UVGSupplement": ["UVGCompulsoryInsurer"]
+	},
+	"oneOf": [
+		{
+			"required": ["DSB"]
+		},
+		{
+			"required": ["UVGCompulsory"]
+		},
+		{
+			"required": ["UVGSupplement"]
+		}
 	]
 }

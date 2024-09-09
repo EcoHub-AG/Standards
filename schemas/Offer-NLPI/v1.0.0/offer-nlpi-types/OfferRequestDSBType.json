@@ -3,7 +3,7 @@
 	"type": "object",
 	"description": "Daily sickness benefits",
 	"properties": {
-		"persongroups": {
+		"personGroups": {
 			"$ref": "OfferRequestDSBPersonGroupsType.json"
 		},
 		"fixedPayrolls": {
@@ -16,7 +16,7 @@
 	"anyOf": [
 		{
 			"required": [
-				"persongroups"
+				"personGroups"
 			]
 		},
 		{

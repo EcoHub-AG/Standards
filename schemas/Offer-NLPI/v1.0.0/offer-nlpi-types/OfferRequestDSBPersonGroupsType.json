@@ -1,26 +1,16 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Group(s) of persons",
 	"type": "array",
 	"minItems": 1,
 	"items": {
 		"type": "object",
 		"properties": {
-			"persongroupId": {
+			"personGroupId": {
 				"$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
 			},
-			"persongroupDescription": {
-				"$ref": "../../../Generics/v1.0.0/PersongroupDescriptionType.json"
-			},
-			"DSBPayrollFemale": {
-				"$ref": "DSBPayrollFemaleType.json"
-			},
-			"DSBPayrollMale": {
-				"$ref": "DSBPayrollMaleType.json"
-			},
-			"DSBPayrollTotal": {
-				"description": "Total daily sickness benefits salary for men and women",
-				"type": "number",
-				"multipleOf": 0.01
+			"personGroupDescription": {
+				"$ref": "../../../Generics/v1.0.0/PersonGroupDescriptionType.json"
 			},
 			"numberOfPersonsFemale": {
 				"$ref": "../../../Generics/v1.0.0/NumberOfPersonsFemaleType.json"
@@ -32,14 +22,21 @@
 				"description": "Total number of persons",
 				"type": "integer"
 			},
+			"payrollFemale": {
+				"$ref": "DSBPayrollFemaleType.json"
+			},
+			"payrollMale": {
+				"$ref": "DSBPayrollMaleType.json"
+			},
+			"payrollTotal": {
+				"description": "Total daily sickness benefits salary for men and women",
+				"type": "number",
+				"multipleOf": 0.01
+			},
 			"maximumPayrollAmount": {
 				"$ref": "../../../Generics/v1.0.0/MaximumPayrollAmountType.json"
 			},
-			"coverage": {
-				"description": "Daily sickness benefits insurance coverage",
-				"$ref": "CoverageType.json"
-			},
-			"avarageAgePersongroup": {
+			"averageAgePersonGroup": {
 				"description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then or equal to 4",
 				"type": "number",
 				"multipleOf": 0.01
@@ -47,20 +44,23 @@
 			"uniformPremiumRate": {
 				"description": "Unit premium rate i.e. should a distinction be made between men and women in the premium rate.",
 				"type": "boolean"
+			},
+			"coverage": {
+				"description": "Daily sickness benefits insurance coverage",
+				"$ref": "CoverageType.json"
 			}
 		},
 		"additionalProperties": false,
 		"required": [
-			"persongroupId",
-			"persongroupDescription",
-			"DSBPayrollFemale",
-			"DSBPayrollMale",
-			"DSBPayrollTotal",
+			"personGroupId",
+			"personGroupDescription",
 			"numberOfPersonsFemale",
 			"numberOfPersonsMale",
 			"numberOfPersonsTotal",
+			"payrollFemale",
+			"payrollMale",
+			"payrollTotal",
 			"coverage"
 		]
-	},
-	"description": "Group(s) of persons"
+	}
 }

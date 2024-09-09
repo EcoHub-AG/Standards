@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "type": "string",
   "enum": [
+    "nein",
     "1-facher Jahreslohn",
     "2-facher Jahreslohn",
     "3-facher Jahreslohn",

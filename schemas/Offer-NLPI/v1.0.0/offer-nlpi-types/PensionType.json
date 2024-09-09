@@ -2,6 +2,10 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "type": "object",
   "properties": {
+    "pensionInsured": {
+      "description": "Is this type of pension insured?",
+      "type": "boolean"
+    },
     "pensionPercent": {
       "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
       "type": "integer",
@@ -22,7 +26,19 @@
     }
   },
   "required": [
-    "pensionPercent",
-    "benefitPeriod"
-  ]
+    "pensionInsured"
+  ],
+  "if": {
+    "properties": {
+      "pensionInsured": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "pensionPercent",
+      "benefitPeriod"
+    ]
+  }
 }

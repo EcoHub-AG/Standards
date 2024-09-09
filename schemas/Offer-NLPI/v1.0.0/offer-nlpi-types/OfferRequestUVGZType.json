@@ -3,7 +3,7 @@
 	"type": "object",
 	"description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
 	"properties": {
-		"persongroup": {
+		"personGroups": {
 			"$ref": "OfferRequestUVGZPersonGroupsType.json"
 		},
 		"fixedPayrolls": {
@@ -15,7 +15,18 @@
 	},
 	"additionalProperties": false,
 	"required": [
-		"insuranceOptionsVarious",
-		"persongroup"
+		"insuranceOptionsVarious"
+	],
+	"anyOf": [
+		{
+			"required": [
+				"personGroups"
+			]
+		},
+		{
+			"required": [
+				"fixedPayrolls"
+			]
+		}
 	]
 }

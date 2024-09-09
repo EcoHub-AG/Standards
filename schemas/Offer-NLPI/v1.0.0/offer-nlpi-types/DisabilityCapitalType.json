@@ -16,7 +16,7 @@
 		},
 		"disabilityCapitalSurplus": {
 			"description": "Disability capital surplus x times the surplus annual salary",
-			"$ref": "YearlySalaryMultipleType.json"
+			"$ref": "YearlySalaryOptionalMultipleType.json"
 		},
 		"disabilityCapitalProg": {
 			"description": "Disability capital progressiv in %",

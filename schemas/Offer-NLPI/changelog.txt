@@ -6,9 +6,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
  allow transmission of data for UVGO and UVGZ.
 
 - AHVSalaryMultipleType (Added)
-- DailyAllowancePercentageType (Added)
 - DailyAllowanceType (Added)
-- DailyAllowanceWaitingPeriodType (Added)
 - DailyHospitalAllowanceType (Added)
 - DeathCapitalType (Added)
 - DisabilityCapitalType (Added)
@@ -20,12 +18,12 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - all properties are now mandatory
 - OfferCustomerType (Changed)
     - Added mandatory property "customerType": A customer can now be of type "private individual" or "company", affecting which fields are mandatory
-    - Added properties "surname", "firstname", "birthDate", "gender", "companyFoundingDate", "riskCharacteristic", "UVGRiskNo", "typeOfActivity"
+    - Added mandatory property "typeOfActivity"
+    - Added properties "surname", "firstname", "birthDate", "gender", "companyFoundingDate", "riskCharacteristic", "UVGRiskNo"
     - Renamed property "localityDomicil" to "domicilAddress"
     - Renamed property "isDomicilLocalityCorrespondenceAddress" to "isDomicilAddressCorrespondenceAddress"
     - Renamed property "localityCorrespondence" to "correspondenceAddress"
     - Fixed capitalization for properties "GAVcompliance" and "GAVname"
-    - Added properties "SUVACompany" and "UVGInsurer"
 - OfferFixedPayrollsType (Renamed)
     - Renamed to OfferDSBFixedPayrollsType
 - OfferNlpiDataType (Changed)
@@ -39,17 +37,30 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - property "insurerContact" is now mandatory
 - OfferNlpiRequestDataType (Changed)
     - Removed keyword "unevaluatedProperties"
-    - Added properties "UVGCompulsory", "UVGSupplement" and "document"
+    - Removed property "offerRequestType"
+    - Added properties "UVGCompulsory", "UVGSupplement", "UVGCompulsoryInsurer" and "document"
     - Changed type of property "brokerContract" to BrokerContactType
-    - properties "timestamp", "header", "customer", "borkerContact", "insuranceDurationInYears" are now mandatory
+    - properties "timestamp", "header", "customer", "brokerContact", "insuranceDurationInYears" are now mandatory,
+    - property "DSB" is no longer required. Instead, one of "DSB", "UVGCompulsory", "UVGSupplement" is required
 - OfferPersonGroupsType.json (Renamed)
     - Renamed to OfferDSBPersonGroupsType.json
-- OfferRequestFixedPayrollsType (Renamed)
+- OfferRequestDSBType (Changed)
+    - Renamed property "persongroups" to "personGroups"
+- OfferRequestFixedPayrollsType (Changed)
     - Renamed to OfferRequestDSBFixedPayrollsType
-- OfferRequestPersonGroupsType (Renamed)
+    - Added property "personId"
+    - Renamed property "businessRelationPerson" to "role"
+- OfferRequestPersonGroupsType (Changed)
     - Renamed to OfferRequestDSBPersonGroupsType
+    - Renamed property "persongroupId" to "personGroupId"
+    - Renamed property "persongroupDescription" to "personGroupDescription"
+    - Renamed property "DSBPayrollFemale" to "payrollFemale"
+    - Renamed property "DSBPayrollMale" to "payrollMale"
+    - Renamed property "DSBPayrollTotal" to "payrollTotal"
+    - Renamed property "avarageAgePersongroup" to "averageAgePersonGroup"
 - OfferRequestInsuranceOptionsVariousType (Changed)
     - renamed property "DSBtypePayInstalment" to "typePayInstalment"
+    - renamed property "profitParticipation" to "surplusParticipation"
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "typePayInstalment" are now mandatory
 - OfferRequestUVGOFixedPayrollsType (Added)
 - OfferRequestUVGOPersonGroupsType (Added)
@@ -66,9 +77,11 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - PensionType (Added)
 - RiskCharacteristicType (Added)
 - RiskNumberType (Added)
+- UVGCompulsoryInsurerType (Added)
 - UVGOCoverageType (Added)
 - UVGZCoverageType (Added)
 - YearlySalaryMultipleType (Added)
+- YearlySalaryOptionalMultipleType (Added)
 
 
 
