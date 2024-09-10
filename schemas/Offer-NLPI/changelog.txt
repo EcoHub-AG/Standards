@@ -27,10 +27,10 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Added mandatory property "typeOfActivity"
     - Added properties "riskCharacteristic", "UVGRiskNo"
     - Fixed capitalization for properties "GAVcompliance" and "GAVname"
-- OfferFixedPayrollsType (Changed)
-    - Renamed to OfferDSBFixedPayrollsType
-    - changed type of properties "fixedPayroll", "netPremiumDSBFixedPayrollMaleAmount", "netPremiumDSBFixedPayrollFemaleAmount",
-        "netPremiumDSBMFixedPayrollAmount", "netPremiumDSBPFixedPayrollAmount" to "MonetaryAmountType"
+- OfferDSBType
+    - Reference shared schema for property personGroups
+    - Reference shared schema for property fixPayrolls
+- OfferFixedPayrollsType (Removed)
 - OfferNlpiDataType (Changed)
     - Added properties "UVGCompulsory", "UVGSupplement"
     - changed type of properties "netPremiumDSBTotal", "combinationDiscountAmount", "otherDiscountAmount",
@@ -49,21 +49,18 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Changed type of property "brokerContract" to BrokerContactType
     - properties "timestamp", "header", "customer", "brokerContact", "insuranceDurationInYears" are now mandatory,
     - property "DSB" is no longer required. Instead, one of "DSB", "UVGCompulsory", "UVGSupplement" is required
-- OfferPersonGroupsType.json (Changed)
-    - Renamed to OfferDSBPersonGroupsType.json
-    - changed type of properties "DSBPayrollFemale", "DSBPayrollMale", "DSBPayrollTotal",
-            "maximumPayrollAmount" to "MonetaryAmountType"
-    - changed type of properties "netPremiumDSBPersongroupMaleAmount", "netPremiumDSBPersongroupFemaleAmount", "netPremiumDSBMPersongroupAmount",
-                "netPremiumDSBPPersongroupAmount" in "premiumPersongroup" to "MonetaryAmountType"
+- OfferPersonGroupsType (Removed)
 - OfferRequestDSBType (Changed)
     - Renamed property "persongroups" to "personGroups"
+    - Reference shared schema for property personGroups
+    - Reference shared schema for property fixPayrolls
 - OfferRequestFixedPayrollsType (Changed)
-    - Renamed to OfferRequestDSBFixedPayrollsType
+    - Renamed to DSBFixedPayrollsType
     - Added property "personId"
     - Renamed property "businessRelationPerson" to "role"
     - changed type of property "fixedPayroll" to "MonetaryAmountType"
 - OfferRequestPersonGroupsType (Changed)
-    - Renamed to OfferRequestDSBPersonGroupsType
+    - Renamed to DSBPersonGroupsType
     - Renamed property "persongroupId" to "personGroupId"
     - Renamed property "persongroupDescription" to "personGroupDescription"
     - Renamed property "DSBPayrollFemale" to "payrollFemale"

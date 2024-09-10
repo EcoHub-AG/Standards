@@ -1,17 +1,36 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"type": "object",
-	"description": "Daily sickness benefits",
-	"properties": {
-		"persongroups": {
-			"$ref": "OfferDSBPersonGroupsType.json"
-		},
-		"fixedPayrolls": {
-			"$ref": "OfferDSBFixedPayrollsType.json"
-		},
-		"insuranceOptions": {
-			"$ref": "OfferInsuranceOptionsType.json"
-		}
-	},
-	"additionalProperties": false
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "Daily sickness benefits",
+  "properties": {
+    "personGroups": {
+      "$ref": "DSBPersonGroupsType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumPersonGroup"
+            ]
+          }
+        }
+      ]
+      },
+      "fixedPayrolls": {
+        "$ref": "DSBFixedPayrollsType.json",
+        "allOf": [
+          {
+            "items": {
+                "required": [
+                  "premiumFixedPayroll"
+                ]
+            }
+          }
+        ]
+      },
+      "insuranceOptions": {
+        "$ref": "OfferInsuranceOptionsType.json"
+      }
+    },
+    "additionalProperties": false
+  }
 }
