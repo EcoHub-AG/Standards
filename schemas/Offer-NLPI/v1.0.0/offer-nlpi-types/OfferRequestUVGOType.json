@@ -1,45 +1,54 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"type": "object",
-	"description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
-	"properties": {
-		"personGroup": {
-			"$ref": "OfferRequestUVGOPersonGroupType.json"
-		},
-		"voluntarilyInsuredPersons": {
-			"$ref": "OfferRequestUVGOFixedPayrollsType.json"
-		},
-		"insuranceOptionsVarious": {
-			"type": "object",
-			"properties": {
-				"annualCancellation": {
-					"$ref": "AnnualCancellationType.json"
-				},
-				"typePayInstalment": {
-					"$ref": "PayInstalmentType.json"
-				}
-			},
-			"additionalProperties": false,
-			"required": [
-				"annualCancellation",
-				"typePayInstalment"
-			]
-		}
-	},
-	"additionalProperties": false,
-	"required": [
-		"insuranceOptionsVarious"
-	],
-	"anyOf": [
-		{
-			"required": [
-				"personGroup"
-			]
-		},
-		{
-			"required": [
-				"voluntarilyInsuredPersons"
-			]
-		}
-	]
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
+  "properties": {
+    "personGroup": {
+      "$ref": "UVGOPersonGroupType.json",
+      "allOf": [
+        {
+          "not": {
+            "required": [
+              "premiumPersonGroup"
+            ]
+          }
+        }
+      ]
+    },
+    "voluntarilyInsuredPersons": {
+      "$ref": "OfferRequestUVGOFixedPayrollsType.json"
+    },
+    "insuranceOptionsVarious": {
+      "type": "object",
+      "properties": {
+        "annualCancellation": {
+          "$ref": "AnnualCancellationType.json"
+        },
+        "typePayInstalment": {
+          "$ref": "PayInstalmentType.json"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "annualCancellation",
+        "typePayInstalment"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "insuranceOptionsVarious"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "personGroup"
+      ]
+    },
+    {
+      "required": [
+        "voluntarilyInsuredPersons"
+      ]
+    }
+  ]
 }
