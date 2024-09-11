@@ -12,7 +12,7 @@
 			"$ref": "InsuranceOptionsBenefitPeriodType.json"
 		},
 		"insuranceOptionsVarious": {
-			"$ref": "OfferInsuranceOptionsVariousType.json"
+			"$ref": "InsuranceOptionsVariousType.json"
 		}
 	},
 	"additionalProperties": false

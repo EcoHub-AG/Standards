@@ -33,6 +33,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Reference shared schema for property insuranceOptions
 - OfferFixedPayrollsType (Removed)
 - OfferInsuranceOptionsVariousType (Changed)
+    - renamed to InsuranceOptionsVariousType
     - renamed property "DSBtypePayInstalment" to "typePayInstalment"
     - renamed property "profitParticipation" to "surplusParticipation"
     - renamed property "profitParticipationPremiumRate" to "surplusParticipationPremiumRate"
@@ -78,25 +79,21 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "avarageAgePersongroup" to "averageAgePersonGroup"
     - changed type of properties "payrollFemale", "payrollMale", "payrollTotal",
                   "maximumPayrollAmount" to "MonetaryAmountType"
-- OfferRequestInsuranceOptionsVariousType (Removed)
-- OfferRequestUVGOFixedPayrollsType (Added)
 - OfferRequestUVGOType (Added)
-- OfferRequestUVGZFixedPayrollsType (Added)
-- OfferRequestUVGZPersonGroupsType (Added)
 - OfferRequestUVGZType (Added)
-- OfferUVGOFixedPayrollsType (Added)
-- UVGOPersonGroupPremiumType (Added)
-- UVGOPersonGroupType (Added)
 - OfferUVGOType (Added)
-- OfferUVGZFixedPayrollsType (Added)
-- OfferUVGZPersonGroupsType (Added)
 - OfferUVGZType (Added)
 - PensionType (Added)
 - RiskCharacteristicType (Added)
 - RiskNumberType (Added)
 - UVGCompulsoryInsurerType (Added)
 - UVGOCoverageType (Added)
+- UVGOFixedPayrollsType (Added)
+- UVGOPersonGroupPremiumType (Added)
+- UVGOPersonGroupType (Added)
 - UVGZCoverageType (Added)
+- UVGZFixedPayrollsType (Added)
+- UVGZPersonGroupsType (Added)
 - YearlySalaryMultipleType (Added)
 - YearlySalaryOptionalMultipleType (Added)
 

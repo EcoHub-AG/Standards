@@ -28,7 +28,19 @@
       ]
     },
     "insuranceOptionsVarious": {
-      "$ref": "OfferInsuranceOptionsVariousType.json"
+      "$ref": "InsuranceOptionsVariousType.json",
+      "if": {
+        "surplusParticipation": {
+          "const": true
+        }
+      },
+      "then": {
+        "required": [
+          "surplusParticipationPremiumRate",
+          "surplusParticipationRate",
+          "surplusParticipationPeriodYears"
+        ]
+      }
     }
   },
   "additionalProperties": false,
