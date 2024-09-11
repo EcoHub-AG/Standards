@@ -32,7 +32,22 @@
       ]
     },
     "insuranceOptions": {
-      "$ref": "OfferRequestInsuranceOptionsType.json"
+      "$ref": "OfferInsuranceOptionsType.json",
+      "allOf": [
+        {
+          "properties": {
+            "insuranceOptionsVarious": {
+              "not": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
+            }
+          }
+        }
+      ]
     }
   },
   "anyOf": [

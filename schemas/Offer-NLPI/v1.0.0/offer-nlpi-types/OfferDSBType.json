@@ -14,23 +14,42 @@
           }
         }
       ]
-      },
-      "fixedPayrolls": {
-        "$ref": "DSBFixedPayrollsType.json",
-        "allOf": [
-          {
-            "items": {
-                "required": [
-                  "premiumFixedPayroll"
-                ]
+    },
+    "fixedPayrolls": {
+      "$ref": "DSBFixedPayrollsType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumFixedPayroll"
+            ]
+          }
+        }
+      ]
+    },
+    "insuranceOptions": {
+      "$ref": "OfferInsuranceOptionsType.json",
+      "if": {
+        "properties": {
+          "insuranceOptionsVarious": {
+            "surplusParticipation": {
+              "const": true
             }
           }
-        ]
+        }
       },
-      "insuranceOptions": {
-        "$ref": "OfferInsuranceOptionsType.json"
+      "then": {
+        "properties": {
+          "insuranceOptionsVarious": {
+            "required": [
+              "surplusParticipationPremiumRate",
+              "surplusParticipationRate",
+              "surplusParticipationPeriodYears"
+            ]
+          }
+        }
       }
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
 }

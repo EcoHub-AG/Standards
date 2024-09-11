@@ -30,7 +30,15 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - OfferDSBType
     - Reference shared schema for property personGroups
     - Reference shared schema for property fixPayrolls
+    - Reference shared schema for property insuranceOptions
 - OfferFixedPayrollsType (Removed)
+- OfferInsuranceOptionsVariousType (Changed)
+    - renamed property "DSBtypePayInstalment" to "typePayInstalment"
+    - renamed property "profitParticipation" to "surplusParticipation"
+    - renamed property "profitParticipationPremiumRate" to "surplusParticipationPremiumRate"
+    - renamed property "profitParticipationRate" to "surplusParticipationRate"
+    - renamed property "profitParticipationPeriodYears" to "surplusParticipationPeriodYears"
+    - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "typePayInstalment" are now mandatory
 - OfferNlpiDataType (Changed)
     - Added properties "UVGCompulsory", "UVGSupplement"
     - changed type of properties "netPremiumDSBTotal", "combinationDiscountAmount", "otherDiscountAmount",
@@ -54,6 +62,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "persongroups" to "personGroups"
     - Reference shared schema for property personGroups
     - Reference shared schema for property fixPayrolls
+    - Reference shared schema for property insuranceOptions
 - OfferRequestFixedPayrollsType (Changed)
     - Renamed to DSBFixedPayrollsType
     - Added property "personId"
@@ -69,10 +78,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "avarageAgePersongroup" to "averageAgePersonGroup"
     - changed type of properties "payrollFemale", "payrollMale", "payrollTotal",
                   "maximumPayrollAmount" to "MonetaryAmountType"
-- OfferRequestInsuranceOptionsVariousType (Changed)
-    - renamed property "DSBtypePayInstalment" to "typePayInstalment"
-    - renamed property "profitParticipation" to "surplusParticipation"
-    - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "typePayInstalment" are now mandatory
+- OfferRequestInsuranceOptionsVariousType (Removed)
 - OfferRequestUVGOFixedPayrollsType (Added)
 - OfferRequestUVGOPersonGroupsType (Added)
 - OfferRequestUVGOType (Added)

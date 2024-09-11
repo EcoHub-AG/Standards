@@ -12,44 +12,34 @@
 		"annualCancellation": {
 			"$ref": "AnnualCancellationType.json"
 		},
-		"DSBtypePayInstalment": {
+		"typePayInstalment": {
 			"$ref": "PayInstalmentType.json"
 		},
 		"additionalOptions": {
 			"$ref": "../../../Generics/v1.0.0/AdditionalOptionsType.json"
 		},
-		"profitParticipation": {
+		"surplusParticipation": {
 			"$ref": "ProfitParticipationType.json"
 		},
-		"profitParticipationPremiumRate": {
-			"description": "Surplus participation premium share in percentage",
+		"surplusParticipationPremiumRate": {
+			"description": "Surplus participation premium share in percentage. Set as part of the offer and omitted during request.",
 			"type": "string"
 		},
-		"profitParticipationRate": {
-			"description": "Surplus participation profit share in percentage",
+		"surplusParticipationRate": {
+			"description": "Surplus participation profit share in percentage. Set as part of the offer and omitted during request.",
 			"type": "string"
 		},
-		"profitParticipationPeriodYears": {
-			"description": "Duration of the surplus period in years",
+		"surplusParticipationPeriodYears": {
+			"description": "Duration of the surplus period in years. Set as part of the offer and omitted during request.",
 			"type": "integer"
 		}
 	},
-	"if": {
-		"properties": {
-			"profitParticipation": {
-				"const": true
-			}
-		}
-	},
-	"then": {
-		"required": [
-			"profitParticipationPremiumRate",
-			"profitParticipationRate",
-			"profitParticipationPeriodYears"
-		]
-    },
     "additionalProperties": false,
 	"required": [
+		"premiumRateGuaranty",
+		"renunciationTerminationRightClaim",
+		"annualCancellation",
+		"typePayInstalment",
 		"profitParticipation"
 	]
 }

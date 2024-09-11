@@ -51,7 +51,7 @@
         "$ref": "CoverageType.json"
       },
       "premiumPersonGroup": {
-        "description": "Premium of the insured group of persons",
+        "description": "Premium of the insured group of persons. Must be set for offer and omitted during request.",
         "type": "object",
         "properties": {
           "netPremiumDSBPersonGroupMalePercentage": {

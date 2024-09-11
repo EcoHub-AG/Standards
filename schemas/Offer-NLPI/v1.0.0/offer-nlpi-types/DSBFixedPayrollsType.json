@@ -42,7 +42,7 @@
 				"$ref": "CoverageType.json"
 			},
 			"premiumFixedPayroll": {
-				"description": "Premium of the insured fixed payroll total",
+				"description": "Premium of the insured fixed payroll total. Must be set for offer and omitted during request.",
 				"type": "object",
 				"properties": {
 					"netPremiumDSBFixedPayrollMalePercentage": {
