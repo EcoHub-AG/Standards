@@ -22,42 +22,42 @@
     "premiumNBU": {
       "description": "Final premium rate BU and NBU mandatory",
       "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
-    },
-    "required": [
-      "insurerType"
-    ],
-    "allOf": [
-      {
-        "if": {
-          "properties": {
-            "insurerType": {
-              "const": "SUVA"
-            }
+    }
+  },
+  "required": [
+    "insurerType"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "insurerType": {
+            "const": "SUVA"
           }
-        },
-        "then": {
-          "required": [
-            "premiumBU",
-            "premiumNBU"
-          ]
         }
       },
-      {
-        "if": {
-          "properties": {
-            "insurerType": {
-              "const": "private insurer"
-            }
-          }
-        },
-        "then": {
-          "required": [
-            "insurerName",
-            "premiumBU",
-            "premiumNBU"
-          ]
-        }
+      "then": {
+        "required": [
+          "premiumBU",
+          "premiumNBU"
+        ]
       }
-    ]
-  }
+    },
+    {
+      "if": {
+        "properties": {
+          "insurerType": {
+            "const": "private insurer"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "insurerName",
+          "premiumBU",
+          "premiumNBU"
+        ]
+      }
+    }
+  ]
 }
