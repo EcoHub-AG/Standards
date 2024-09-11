@@ -16,7 +16,18 @@
       ]
     },
     "voluntarilyInsuredPersons": {
-      "$ref": "OfferRequestUVGOFixedPayrollsType.json"
+      "$ref": "UVGOFixedPayrollsType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumVoluntarilyInsuredPerson"
+              ]
+            }
+          }
+        }
+      ]
     },
     "insuranceOptionsVarious": {
       "type": "object",

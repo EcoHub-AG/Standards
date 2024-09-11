@@ -33,12 +33,41 @@
 			"gender": {
 				"$ref": "../../../Generics/v1.0.0/GenderType.json"
 			},
-			"fixedPayroll": {
+			"payrollVoluntarilyInsuredPerson": {
 				"description": "Insured fixed salary of the voluntarily insured person",
 				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"coverage": {
 				"$ref": "UVGOCoverageType.json"
+			},
+			"premiumVoluntarilyInsuredPerson": {
+				"type": "object",
+				"properties": {
+					"hazardClass": {
+						"description": "Hazard class Voluntarily insured person",
+						"type": "string"
+					},
+					"hazardSubClass": {
+						"description": "Hazard sub class Voluntarily insured person",
+						"type": "string"
+					},
+					"finalPremiumRate": {
+						"description": "Final premium rate volontary insured person in ‰. Corresponds to the final premium rate / gross premium rate",
+						"type": "number",
+						"multipleOf": 0.001
+					},
+					"totalPremium": {
+						"description": "Annual premium of the voluntarily insured person",
+						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+					}
+				},
+				"additionalProperties": false,
+				"required": [
+					"hazardClass",
+					"hazardSubClass",
+					"finalPremiumRate",
+					"totalPremium"
+				]
 			}
 		},
 		"required": [
