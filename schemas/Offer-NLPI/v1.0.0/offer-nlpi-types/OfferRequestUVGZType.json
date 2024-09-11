@@ -1,32 +1,43 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"type": "object",
-	"description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
-	"properties": {
-		"personGroups": {
-			"$ref": "OfferRequestUVGZPersonGroupsType.json"
-		},
-		"fixedPayrolls": {
-			"$ref": "OfferRequestUVGZFixedPayrollsType.json"
-		},
-		"insuranceOptionsVarious": {
-			"$ref": "OfferRequestInsuranceOptionsVariousType.json"
-		}
-	},
-	"additionalProperties": false,
-	"required": [
-		"insuranceOptionsVarious"
-	],
-	"anyOf": [
-		{
-			"required": [
-				"personGroups"
-			]
-		},
-		{
-			"required": [
-				"fixedPayrolls"
-			]
-		}
-	]
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
+  "properties": {
+    "personGroups": {
+      "$ref": "UVGZPersonGroupsType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumPersonGroup"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "fixedPayrolls": {
+      "$ref": "OfferRequestUVGZFixedPayrollsType.json"
+    },
+    "insuranceOptionsVarious": {
+      "$ref": "OfferRequestInsuranceOptionsVariousType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "insuranceOptionsVarious"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "personGroups"
+      ]
+    },
+    {
+      "required": [
+        "fixedPayrolls"
+      ]
+    }
+  ]
 }

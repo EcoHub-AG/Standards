@@ -6,19 +6,18 @@
   "items": {
     "type": "object",
     "properties": {
-      "persongroupId": {
+      "personGroupId": {
         "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
       },
-      "totalNumberOfPersons": {
+      "numberOfPersonsTotal": {
         "description": "Total number of employees",
         "type": "integer"
       },
-      "maxSalary": {
-        "description": "Maximum salary in CHF",
+      "payrollTotal": {
+        "description": "Total payroll of all employees",
         "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
-      "payrollTotalEmployees": {
-        "description": "Total payroll of all employees",
+      "maximumPayrollAmount": {
         "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "surplusSalaryTotal": {
@@ -30,6 +29,7 @@
         "$ref": "UVGZCoverageType.json"
       },
       "premiumPersonGroup": {
+        "description": "Must be set for offer and omitted for request.",
         "type": "object",
         "properties": {
           "medicalExpensesPremiumRate": {
@@ -115,10 +115,10 @@
     },
     "additionalProperties": false,
     "required": [
-      "persongroupId",
-      "totalNumberOfPersons",
-      "maxSalary",
-      "payrollTotalEmployees",
+      "personGroupId",
+      "numberOfPersonsTotal",
+      "payrollTotal",
+      "maximumPayrollAmount",
       "surplusSalaryTotal",
       "coverage"
     ]
