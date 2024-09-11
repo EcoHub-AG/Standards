@@ -16,7 +16,16 @@
       ]
     },
     "fixedPayrolls": {
-      "$ref": "OfferUVGZFixedPayrollsType.json"
+      "$ref": "UVGZFixedPayrollsType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumFixedPayroll"
+            ]
+          }
+        }
+      ]
     },
     "insuranceOptionsVarious": {
       "$ref": "OfferInsuranceOptionsVariousType.json"
@@ -24,7 +33,18 @@
   },
   "additionalProperties": false,
   "required": [
-    "insuranceOptionsVarious",
-    "persongroup"
+    "insuranceOptionsVarious"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "personGroups"
+      ]
+    },
+    {
+      "required": [
+        "fixedPayrolls"
+      ]
+    }
   ]
 }

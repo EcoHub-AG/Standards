@@ -18,7 +18,18 @@
       ]
     },
     "fixedPayrolls": {
-      "$ref": "OfferRequestUVGZFixedPayrollsType.json"
+      "$ref": "UVGZFixedPayrollsType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumFixedPayroll"
+              ]
+            }
+          }
+        }
+      ]
     },
     "insuranceOptionsVarious": {
       "$ref": "OfferRequestInsuranceOptionsVariousType.json"
