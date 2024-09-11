@@ -30,20 +30,7 @@
       ]
     },
     "insuranceOptionsVarious": {
-      "type": "object",
-      "properties": {
-        "annualCancellation": {
-          "$ref": "AnnualCancellationType.json"
-        },
-        "typePayInstalment": {
-          "$ref": "PayInstalmentType.json"
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "annualCancellation",
-        "typePayInstalment"
-      ]
+      "$ref": "InsuranceOptionsVariousUVGOType.json"
     }
   },
   "additionalProperties": false,

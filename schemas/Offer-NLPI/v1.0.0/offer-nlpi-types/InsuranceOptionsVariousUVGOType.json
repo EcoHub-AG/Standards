@@ -3,9 +3,6 @@
 	"description": "Various insurance options",
 	"type": "object",
 	"properties": {
-		"renunciationTerminationRightClaim": {
-			"$ref": "RenunciationTerminationRightClaimType.json"
-		},
 		"annualCancellation": {
 			"$ref": "AnnualCancellationType.json"
 		},
@@ -16,7 +13,6 @@
 	},
     "additionalProperties": false,
 	"required": [
-		"renunciationTerminationRightClaim",
 		"annualCancellation",
 		"typePayInstalment"
 	]
