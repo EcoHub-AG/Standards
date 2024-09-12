@@ -30,6 +30,8 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 - LocalityDomicilType (Renamed)
     - Renamed to AddressType
 - MonetaryAmountType (Added)
+- PersonGroupIdType (Renamed)
+    - Renamed to be used as a more general UuidType.
 - SenderReceiverType (Added)
 - TimeStampType (Cosmetic)
     - Added example
