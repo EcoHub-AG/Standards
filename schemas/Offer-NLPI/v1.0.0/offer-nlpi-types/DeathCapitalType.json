@@ -19,7 +19,7 @@
 			"$ref": "AHVSalaryMultipleType.json"
 		},
 		"wageSupplement": {
-			"description": "Wage supplement",
+			"description": "Wage supplement. Only available for personGroups.",
 			"type": "boolean"
 		}
 	},

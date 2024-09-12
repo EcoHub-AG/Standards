@@ -78,7 +78,7 @@
       ]
     },
     "dailyAllowanceRelapses": {
-      "description": "Daily allowance for relapses/late effects",
+      "description": "Daily allowance for relapses/late effects. Only available for fixedPayrolls.",
       "type": "boolean"
     }
   },

@@ -38,7 +38,20 @@
 				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"coverage": {
-				"$ref": "UVGZCoverageType.json"
+				"$ref": "UVGZCoverageType.json",
+				"allOf": [
+					{
+						"properties": {
+							"deathCapital": {
+								"not": {
+									"required": [
+										"wageSupplement"
+									]
+								}
+							}
+						}
+					}
+				]
 			},
 			"premiumFixedPayroll": {
 				"type": "object",
