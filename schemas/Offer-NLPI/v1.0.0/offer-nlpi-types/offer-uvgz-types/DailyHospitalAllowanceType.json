@@ -14,7 +14,7 @@
 		},
 		"dailyHospitalAllowanceFixAmount": {
 			"description": "Daily hospital allowance as a fixed amount in CHF",
-			"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"dailyHospitalAnnualSalary": {
 			"description": "Daily hospital allowance in % of the annual salary",

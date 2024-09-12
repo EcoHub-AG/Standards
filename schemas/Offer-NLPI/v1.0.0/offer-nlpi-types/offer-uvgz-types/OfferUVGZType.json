@@ -28,7 +28,7 @@
       ]
     },
     "insuranceOptionsVarious": {
-      "$ref": "InsuranceOptionsVariousType.json",
+      "$ref": "../InsuranceOptionsVariousType.json",
       "if": {
         "surplusParticipation": {
           "const": true

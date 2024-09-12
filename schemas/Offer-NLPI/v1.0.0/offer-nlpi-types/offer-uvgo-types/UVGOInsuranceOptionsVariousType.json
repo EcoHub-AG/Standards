@@ -8,7 +8,7 @@
 			"type": "boolean"
 		},
 		"typePayInstalment": {
-			"$ref": "PayInstalmentType.json"
+			"$ref": "../PayInstalmentType.json"
 		}
 
 	},

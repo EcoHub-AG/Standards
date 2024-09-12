@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "type": "object",
-  "description": "Daily sickness benefits",
+  "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
   "properties": {
     "personGroups": {
-      "$ref": "DSBPersonGroupsType.json",
+      "$ref": "UVGZPersonGroupsType.json",
       "allOf": [
         {
           "items": {
@@ -18,7 +18,7 @@
       ]
     },
     "fixedPayrolls": {
-      "$ref": "DSBFixedPayrollsType.json",
+      "$ref": "UVGZFixedPayrollsType.json",
       "allOf": [
         {
           "items": {
@@ -31,25 +31,25 @@
         }
       ]
     },
-    "insuranceOptions": {
-      "$ref": "OfferInsuranceOptionsType.json",
+    "insuranceOptionsVarious": {
+      "$ref": "../InsuranceOptionsVariousType.json",
       "allOf": [
         {
-          "properties": {
-            "insuranceOptionsVarious": {
-              "not": {
-                "required": [
-                  "surplusParticipationPremiumRate",
-                  "surplusParticipationRate",
-                  "surplusParticipationPeriodYears"
-                ]
-              }
-            }
+          "not": {
+            "required": [
+              "surplusParticipationPremiumRate",
+              "surplusParticipationRate",
+              "surplusParticipationPeriodYears"
+            ]
           }
         }
       ]
     }
   },
+  "additionalProperties": false,
+  "required": [
+    "insuranceOptionsVarious"
+  ],
   "anyOf": [
     {
       "required": [
@@ -61,7 +61,5 @@
         "fixedPayrolls"
       ]
     }
-  ],
-  "additionalProperties": false,
-  "unevaluatedProperties": false
+  ]
 }

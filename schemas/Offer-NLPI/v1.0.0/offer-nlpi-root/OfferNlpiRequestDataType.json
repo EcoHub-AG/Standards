@@ -47,7 +47,7 @@
 		},
 		"UVGCompulsoryInsurer": {
 			"description": "The current UVG compulsory insurer when requesting an UVG supplementary offer.",
-			"$ref": "../offer-nlpi-types/UVGCompulsoryInsurerType.json"
+			"$ref": "../offer-nlpi-types/offer-uvgo-types/UVGOInsurerType.json"
 		},
 		"insuranceStartDate": {
 			"$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
@@ -56,13 +56,13 @@
 			"$ref": "../offer-nlpi-types/InsuranceDurationInYearsType.json"
 		},
 		"DSB": {
-			"$ref": "../offer-nlpi-types/OfferRequestDSBType.json"
+			"$ref": "../offer-nlpi-types/offer-dsb-types/OfferRequestDSBType.json"
 		},
 		"UVGCompulsory": {
-			"$ref": "../offer-nlpi-types/OfferRequestUVGOType.json"
+			"$ref": "../offer-nlpi-types/offer-uvgo-types/OfferRequestUVGOType.json"
 		},
 		"UVGSupplement": {
-			"$ref": "../offer-nlpi-types/OfferRequestUVGZType.json"
+			"$ref": "../offer-nlpi-types/offer-uvgz-types/OfferRequestUVGZType.json"
 		},
 		"comment": {
 			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"

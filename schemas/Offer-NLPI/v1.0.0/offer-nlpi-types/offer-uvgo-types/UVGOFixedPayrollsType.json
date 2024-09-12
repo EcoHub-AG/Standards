@@ -22,20 +22,20 @@
 				]
 			},
 			"firstname": {
-				"$ref": "../../../Generics/v1.0.0/FirstNameType.json"
+				"$ref": "../../../../Generics/v1.0.0/FirstNameType.json"
 			},
 			"surname": {
-				"$ref": "../../../Generics/v1.0.0/SurNameType.json"
+				"$ref": "../../../../Generics/v1.0.0/SurNameType.json"
 			},
 			"birthDate": {
-				"$ref": "../../../Generics/v1.0.0/BirthDateType.json"
+				"$ref": "../../../../Generics/v1.0.0/BirthDateType.json"
 			},
 			"gender": {
-				"$ref": "../../../Generics/v1.0.0/GenderType.json"
+				"$ref": "../../../../Generics/v1.0.0/GenderType.json"
 			},
 			"payrollVoluntarilyInsuredPerson": {
 				"description": "Insured fixed salary of the voluntarily insured person",
-				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+				"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"coverage": {
 				"$ref": "UVGOCoverageType.json"
@@ -58,7 +58,7 @@
 					},
 					"totalPremium": {
 						"description": "Annual premium of the voluntarily insured person",
-						"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+						"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 					}
 				},
 				"additionalProperties": false,

@@ -19,7 +19,6 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - FixedPayrollType (Removed)
 - InsuranceDurationInYears (Changed)
     - Restricted values to enum
-- InsuranceOptionsVariousUVGOType (Added)
 - InsuranceTypeType (Removed)
 - MaximumPayrollAmountType (Removed)
 - NogaCodeType (Changed)
@@ -38,6 +37,8 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Reference shared schema for property fixPayrolls
     - Reference shared schema for property insuranceOptions
 - OfferFixedPayrollsType (Removed)
+- OfferInsuranceOptionsType (Renamed)
+    - Renamed to DSBInsuranceOptionsType
 - OfferInsuranceOptionsVariousType (Changed)
     - renamed to InsuranceOptionsVariousType
     - renamed property "DSBtypePayInstalment" to "typePayInstalment"
@@ -99,9 +100,10 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - PremiumRateGuarantyType (Removed)
 - ProfitParticipationType (Removed)
 - RenunciationTerminationRightClaimType (Removed)
-- UVGCompulsoryInsurerType (Added)
 - UVGOCoverageType (Added)
 - UVGOFixedPayrollsType (Added)
+- UVGOInsuranceOptionsVariousType (Added)
+- UVGOInsurerType (Added)
 - UVGOPersonGroupPremiumType (Added)
 - UVGOPersonGroupType (Added)
 - UVGZCoverageType (Added)

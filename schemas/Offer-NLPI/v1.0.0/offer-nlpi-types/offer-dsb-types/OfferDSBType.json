@@ -28,7 +28,7 @@
       ]
     },
     "insuranceOptions": {
-      "$ref": "OfferInsuranceOptionsType.json",
+      "$ref": "DSBInsuranceOptionsType.json",
       "if": {
         "properties": {
           "insuranceOptionsVarious": {

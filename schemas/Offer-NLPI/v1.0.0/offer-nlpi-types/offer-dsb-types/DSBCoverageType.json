@@ -34,7 +34,7 @@
       ]
     },
     "DSBBenefitPeriod": {
-      "$ref": "../../../Generics/v1.0.0/BenefitPeriodType.json"
+      "$ref": "../../../../Generics/v1.0.0/BenefitPeriodType.json"
     },
     "DSBBenefitAmountPercentage": {
       "description": "Daily sickness benefit amount in percentage",

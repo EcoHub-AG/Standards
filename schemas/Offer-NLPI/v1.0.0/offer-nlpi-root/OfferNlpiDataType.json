@@ -52,13 +52,13 @@
       "$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
     },
     "DSB": {
-      "$ref": "../offer-nlpi-types/OfferDSBType.json"
+      "$ref": "../offer-nlpi-types/offer-dsb-types/OfferDSBType.json"
     },
     "UVGCompulsory": {
-      "$ref": "../offer-nlpi-types/OfferUVGOType.json"
+      "$ref": "../offer-nlpi-types/offer-uvgo-types/OfferUVGOType.json"
     },
     "UVGSupplement": {
-      "$ref": "../offer-nlpi-types/OfferUVGZType.json"
+      "$ref": "../offer-nlpi-types/offer-uvgz-types/OfferUVGZType.json"
     },
     "premiumOverview": {
       "description": "Overview of premiums for the entire offer (incl. all insured groups of persons and fixed payroll amounts)",

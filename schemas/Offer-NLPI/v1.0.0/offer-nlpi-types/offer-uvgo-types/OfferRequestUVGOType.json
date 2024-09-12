@@ -30,7 +30,7 @@
       ]
     },
     "insuranceOptionsVarious": {
-      "$ref": "InsuranceOptionsVariousUVGOType.json"
+      "$ref": "UVGOInsuranceOptionsVariousType.json"
     }
   },
   "additionalProperties": false,
