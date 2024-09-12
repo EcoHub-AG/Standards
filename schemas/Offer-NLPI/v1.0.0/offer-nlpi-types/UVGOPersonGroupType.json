@@ -4,7 +4,8 @@
   "type": "object",
   "properties": {
     "personGroupId": {
-      "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
+      "description": "ID of the person group",
+      "$ref": "../../../Generics/v1.0.0/UuidType.json"
     },
     "numberOfPersonsBU": {
       "description": "Number of employees OA",

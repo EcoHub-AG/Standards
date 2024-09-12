@@ -7,16 +7,20 @@
     "type": "object",
     "properties": {
       "personGroupId": {
-        "$ref": "../../../Generics/v1.0.0/PersonGroupIdType.json"
+        "description": "ID of the person group",
+        "$ref": "../../../Generics/v1.0.0/UuidType.json"
       },
       "personGroupDescription": {
-        "$ref": "../../../Generics/v1.0.0/PersonGroupDescriptionType.json"
+        "description": "Name of the group of persons",
+        "type": "string"
       },
       "numberOfPersonsFemale": {
-        "$ref": "../../../Generics/v1.0.0/NumberOfPersonsFemaleType.json"
+        "description": "Number of women",
+        "type": "integer"
       },
       "numberOfPersonsMale": {
-        "$ref": "../../../Generics/v1.0.0/NumberOfPersonsMaleType.json"
+        "description": "Number of men",
+        "type": "integer"
       },
       "numberOfPersonsTotal": {
         "description": "Total number of persons",

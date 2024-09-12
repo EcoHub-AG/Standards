@@ -1,5 +1,0 @@
-{
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Name of the group of persons",
-	"type": "string"
-}

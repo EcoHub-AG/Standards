@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Offer binding nature",
-  "type": "string",
-  "enum": [
-    "non_binding_offer",
-    "binding_offer"
-  ]
-}

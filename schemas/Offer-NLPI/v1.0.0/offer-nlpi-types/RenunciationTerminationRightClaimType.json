@@ -1,5 +1,0 @@
-{
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Waiver of the insurer's right to terminate the contract in the event of a claim",
-	"type": "boolean"
-}

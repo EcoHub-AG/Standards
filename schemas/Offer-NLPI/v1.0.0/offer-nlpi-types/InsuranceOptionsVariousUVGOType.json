@@ -4,7 +4,8 @@
 	"type": "object",
 	"properties": {
 		"annualCancellation": {
-			"$ref": "AnnualCancellationType.json"
+			"description": "Annual right of termination",
+			"type": "boolean"
 		},
 		"typePayInstalment": {
 			"$ref": "PayInstalmentType.json"

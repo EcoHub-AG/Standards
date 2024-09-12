@@ -4,13 +4,16 @@
 	"type": "object",
 	"properties": {
 		"premiumRateGuaranty": {
-			"$ref": "PremiumRateGuarantyType.json"
+			"description": "Premium rate guarantee during the agreed contract period",
+			"type": "boolean"
 		},
 		"renunciationTerminationRightClaim": {
-			"$ref": "RenunciationTerminationRightClaimType.json"
+			"description": "Waiver of the insurer's right to terminate the contract in the event of a claim",
+			"type": "boolean"
 		},
 		"annualCancellation": {
-			"$ref": "AnnualCancellationType.json"
+			"description": "Annual right of termination",
+			"type": "boolean"
 		},
 		"typePayInstalment": {
 			"$ref": "PayInstalmentType.json"
@@ -19,7 +22,8 @@
 			"$ref": "../../../Generics/v1.0.0/AdditionalOptionsType.json"
 		},
 		"surplusParticipation": {
-			"$ref": "ProfitParticipationType.json"
+			"description": "Surplus participation",
+			"type": "boolean"
 		},
 		"surplusParticipationPremiumRate": {
 			"description": "Surplus participation premium share in percentage. Set as part of the offer and omitted during request.",

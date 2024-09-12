@@ -8,7 +8,14 @@
       "$ref": "../../../Generics/v1.0.0/CustomerType.json"
     },
     "riskCharacteristic": {
-      "$ref": "RiskCharacteristicType.json"
+      "description": "Definition of special constructs and risk characteristics of the company",
+      "type": "string",
+      "enum": [
+        "Holding/Risikogemeinschaft/Risikogruppe",
+        "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)",
+        "keine",
+        "unbekannt"
+      ]
     },
     "GAVCompliance": {
       "description": "Guaranteed compliance with the GAV-conformity",
@@ -25,7 +32,9 @@
     },
     "UVGRiskNo": {
       "description": "UVG risk number of the insured risk",
-      "$ref": "RiskNumberType.json"
+      "type": "string",
+      "maxLength": 7,
+      "pattern": "[0-9]{4}/.[0-9 ]{2}"
     },
     "NOGACodeMain": {
       "description": "Main NOGA-Code",

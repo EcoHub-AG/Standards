@@ -5,7 +5,9 @@ Initial release version
 Version 0.3.0 only included properties for KTG. This version expands the Standard to additionally
  allow transmission of data for UVGO and UVGZ.
 
+- AnnualCancellationType (Removed)
 - AHVSalaryMultipleType (Added)
+- BenefitCoverageType (Removed)
 - DailyAllowanceType (Added)
 - DailyHospitalAllowanceType (Added)
 - DeathCapitalType (Added)
@@ -18,10 +20,14 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - InsuranceDurationInYears (Changed)
     - Restricted values to enum
 - InsuranceOptionsVariousUVGOType (Added)
+- InsuranceTypeType (Removed)
 - MaximumPayrollAmountType (Removed)
 - NogaCodeType (Changed)
     - fixed capitalization of property names
     - all properties are now mandatory
+- NumberOfPersonsFemaleType (Removed)
+- NumberOfPersonsMaleType (Removed)
+- OfferBindingNatureType (Removed)
 - OfferCustomerType (Changed)
     - Extracted generic customer information to separate property, referencing "CustomerType"
     - Added mandatory property "typeOfActivity"
@@ -40,6 +46,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - renamed property "profitParticipationRate" to "surplusParticipationRate"
     - renamed property "profitParticipationPeriodYears" to "surplusParticipationPeriodYears"
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "typePayInstalment" are now mandatory
+    - inlined definitions for properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation"
 - OfferNlpiDataType (Changed)
     - Added properties "UVGCompulsory", "UVGSupplement"
     - Removed property "offerType"
@@ -52,6 +59,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - replaced in-file definition of property "contractConditionsDocument" with reference to "MultiFileType"
     - property DSB is now optional
     - property "insurerContact" is now mandatory
+    - inlined definition for property "offerBindingNature"
 - OfferNlpiRequestDataType (Changed)
     - Removed keyword "unevaluatedProperties"
     - Removed property "offerRequestType"
@@ -70,6 +78,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Added property "personId"
     - Renamed property "businessRelationPerson" to "role"
     - changed type of property "fixedPayroll" to "MonetaryAmountType"
+    - inlined definitions for properties "benefitCoverage", "insuranceType"
 - OfferRequestPersonGroupsType (Changed)
     - Renamed to DSBPersonGroupsType
     - Renamed property "persongroupId" to "personGroupId"
@@ -80,12 +89,16 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "avarageAgePersongroup" to "averageAgePersonGroup"
     - changed type of properties "payrollFemale", "payrollMale", "payrollTotal",
                   "maximumPayrollAmount" to "MonetaryAmountType"
+    - inlined definitions for "personGroupDescription", "numberOfPersonsFemale", "numberOfPersonsMale"
 - OfferRequestUVGOType (Added)
 - OfferRequestUVGZType (Added)
+- OfferTypeType (Removed)
 - OfferUVGOType (Added)
 - OfferUVGZType (Added)
-- RiskCharacteristicType (Added)
-- RiskNumberType (Added)
+- PersonGroupDescriptionType (Removed)
+- PremiumRateGuarantyType (Removed)
+- ProfitParticipationType (Removed)
+- RenunciationTerminationRightClaimType (Removed)
 - UVGCompulsoryInsurerType (Added)
 - UVGOCoverageType (Added)
 - UVGOFixedPayrollsType (Added)

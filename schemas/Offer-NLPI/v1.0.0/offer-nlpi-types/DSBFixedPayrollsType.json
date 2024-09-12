@@ -32,10 +32,20 @@
 				"$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
 			},
 			"benefitCoverage": {
-				"$ref": "BenefitCoverageType.json"
+				"type": "string",
+				"enum": [
+					"sickness",
+					"accident",
+					"sickness and accident"
+				]
 			},
 			"insuranceType": {
-				"$ref": "InsuranceTypeType.json"
+				"description": "Insurance benefit type",
+				"type": "string",
+				"enum": [
+					"sum insurance",
+					"damage insurance"
+				]
 			},
 			"coverage": {
 				"description": "Daily sickness benefits insurance coverage",
