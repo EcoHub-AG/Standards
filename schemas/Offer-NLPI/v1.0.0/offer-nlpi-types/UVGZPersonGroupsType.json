@@ -26,7 +26,20 @@
       },
       "coverage": {
         "description": "Coverage of the person groups",
-        "$ref": "UVGZCoverageType.json"
+        "$ref": "UVGZCoverageType.json",
+        "allOf": [
+          {
+            "properties": {
+              "dailyAllowance": {
+                "not": {
+                  "required": [
+                    "dailyAllowanceRelapses"
+                  ]
+                }
+              }
+            }
+          }
+        ]
       },
       "premiumPersonGroup": {
         "description": "Must be set for offer and omitted for request.",
