@@ -29,9 +29,6 @@
     "quotationNo": {
       "$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
     },
-    "offerType": {
-      "$ref": "../offer-nlpi-types/OfferTypeType.json"
-    },
     "offerValidToDate": {
       "description": "Validity end date of the offer",
       "type": "string",
@@ -161,7 +158,6 @@
     "customer",
     "insurerContact",
     "quotationNo",
-    "offerType",
     "offerValidToDate",
     "offerBindingNature",
     "insuranceStartDate",

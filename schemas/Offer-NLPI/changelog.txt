@@ -42,6 +42,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "typePayInstalment" are now mandatory
 - OfferNlpiDataType (Changed)
     - Added properties "UVGCompulsory", "UVGSupplement"
+    - Removed property "offerType"
     - changed type of properties "netPremiumDSBTotal", "combinationDiscountAmount", "otherDiscountAmount",
                 "surchargesTotal", "instalmentSurchargeAmount", "premiumMinimumAmount" in "premiumOverview" to "MonetaryAmountType"
     - Added properties "totalPremiumBUAndNBU", "netPremiumUVGTotal", "netPremiumTotal", "netPremiumUVGZTotal" to "premiumOverview"
@@ -83,7 +84,6 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - OfferRequestUVGZType (Added)
 - OfferUVGOType (Added)
 - OfferUVGZType (Added)
-- PensionType (Added)
 - RiskCharacteristicType (Added)
 - RiskNumberType (Added)
 - UVGCompulsoryInsurerType (Added)
