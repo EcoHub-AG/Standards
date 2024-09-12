@@ -28,7 +28,7 @@
       "type": "string",
       "maxLength": 10,
       "pattern": "[A-Z0-9]{1}[A-Z0-9 ]{0,7}[A-Z0-9]{2}",
-      "examples": [8001]
+      "examples": ["8001 (Swiss)", "53474 (Germany)", "WC2N 4HS (UK)", "10003 (US)", "M5P 2N7 (Canada)"]
     },
     "cityDef": {
       "description": "City",
