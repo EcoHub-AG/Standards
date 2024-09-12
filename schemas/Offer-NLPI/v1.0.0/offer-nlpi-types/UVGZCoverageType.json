@@ -30,11 +30,95 @@
     },
     "disabilityPension": {
       "description": "Disability Pension",
-      "$ref": "PensionType.json"
+      "type": "object",
+      "properties": {
+        "pensionInsured": {
+          "description": "Is this type of pension insured?",
+          "type": "boolean"
+        },
+        "pensionPercent": {
+          "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
+          "type": "integer",
+          "enum": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "benefitPeriod": {
+          "description": "Benefit period pension",
+          "type": "string",
+          "enum": [
+            "bis AHV-Alter",
+            "gemäss UVG"
+          ]
+        }
+      },
+      "required": [
+        "pensionInsured"
+      ],
+      "if": {
+        "properties": {
+          "pensionInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "pensionPercent",
+          "benefitPeriod"
+        ]
+      }
     },
     "survivorsPension": {
       "description": "Survivors Pension",
-      "$ref": "PensionType.json"
+      "type": "object",
+      "properties": {
+        "pensionInsured": {
+          "description": "Is this type of pension insured?",
+          "type": "boolean"
+        },
+        "pensionPercent": {
+          "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
+          "type": "integer",
+          "enum": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "benefitPeriod": {
+          "description": "Benefit period pension",
+          "type": "string",
+          "enum": [
+            "bis AHV-Alter",
+            "gemäss UVG"
+          ]
+        },
+        "survivorsPartnerPension": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "pensionInsured"
+      ],
+      "if": {
+        "properties": {
+          "pensionInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "pensionPercent",
+          "benefitPeriod",
+          "survivorsPartnerPension"
+        ]
+      }
     }
   },
   "required": [

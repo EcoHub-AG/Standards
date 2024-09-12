@@ -36,6 +36,13 @@
                     "dailyAllowanceRelapses"
                   ]
                 }
+              },
+              "survivorsPension": {
+                "not": {
+                  "required": [
+                    "survivorsPartnerPension"
+                  ]
+                }
               }
             }
           }
