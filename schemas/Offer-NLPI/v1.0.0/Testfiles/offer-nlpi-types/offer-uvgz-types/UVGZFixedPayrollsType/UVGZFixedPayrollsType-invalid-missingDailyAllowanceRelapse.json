@@ -1,0 +1,42 @@
+[
+  {
+    "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+    "role": "BusinessOwner",
+    "firstname": "John",
+    "surname": "Doe",
+    "birthDate": "1980-05-15",
+    "gender": "male",
+    "fixedPayroll": 150000.00,
+    "surplusPayroll": 50000.00,
+    "coverage": {
+      "deathCapital": {
+        "deathCapitalInsured": false
+      },
+      "disabilityCapital": {
+        "disabilityCapitalInsured": false
+      },
+      "dailyAllowance": {
+        "dailyAllowanceInsured": true,
+        "dailyAllowance": 100,
+        "dailyAllowanceWaitingPeriod": 3,
+        "dailyAllowanceFirstCoupleDaysInsured": false,
+        "dailyAllowanceSurplusInsured": true,
+        "dailyAllowanceFirstCoupleDays": 80,
+        "dailyAllowanceSurplus": 100,
+        "dailyAllowanceSurplusWaitingPeriod": 7
+      },
+      "dailyHospitalAllowance": {
+        "dailyHospitalAllowanceInsured": "ja, in % des Jahreslohnes",
+        "dailyHospitalAnnualSalary": 20
+      },
+      "medicalExpenses": "Privatabteilung",
+      "differentialCover": true,
+      "disabilityPension": {
+        "pensionInsured": false
+      },
+      "survivorsPension": {
+        "pensionInsured": false
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "insurer": {
+    "companyId": "CHE-112.444.553",
+    "companyName": "Test Insurer",
+    "insurerCode": "901S"
+  },
+  "broker": {
+    "brokerRegisterNo": "CHE-FINMA-12345",
+    "companyId": "CHE-120.330.754",
+    "companyName": "Test Broker"
+  }
+}

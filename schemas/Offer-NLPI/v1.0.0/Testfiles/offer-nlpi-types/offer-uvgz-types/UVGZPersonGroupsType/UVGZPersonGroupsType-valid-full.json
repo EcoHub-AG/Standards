@@ -1,0 +1,67 @@
+[
+  {
+    "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+    "numberOfPersonsTotal": 50,
+    "payrollTotal": 2500000.00,
+    "maximumPayrollAmount": 148200.00,
+    "surplusSalaryTotal": 500000.00,
+    "coverage": {
+      "deathCapital": {
+        "deathCapitalInsured": true,
+        "deathCapitalUVG": "3-facher Jahreslohn",
+        "deathCapitalSurplus": "2-facher Jahreslohn",
+        "bridgingCapital": "1-facher AHV-Lohn",
+        "wageSupplement": true
+      },
+      "disabilityCapital": {
+        "disabilityCapitalInsured": true,
+        "integrityCapital": true,
+        "disabilityCapitalUVG": "4-facher Jahreslohn",
+        "disabilityCapitalSurplus": "3-facher Jahreslohn",
+        "disabilityCapitalProg": "225%",
+        "bridgingCapital": "2-facher AHV-Lohn"
+      },
+      "dailyAllowance": {
+        "dailyAllowanceInsured": true,
+        "dailyAllowance": 90,
+        "dailyAllowanceWaitingPeriod": 2,
+        "dailyAllowanceFirstCoupleDaysInsured": true,
+        "dailyAllowanceFirstCoupleDays": 80,
+        "dailyAllowanceSurplusInsured": true,
+        "dailyAllowanceSurplus": 90,
+        "dailyAllowanceSurplusWaitingPeriod": 3
+      },
+      "dailyHospitalAllowance": {
+        "dailyHospitalAllowanceInsured": "ja, fester Betrag in CHF",
+        "dailyHospitalAllowanceFixAmount": 100.00
+      },
+      "medicalExpenses": "Halbprivatabteilung",
+      "differentialCover": true,
+      "disabilityPension": {
+        "pensionInsured": true,
+        "pensionPercent": 80,
+        "benefitPeriod": "bis AHV-Alter"
+      },
+      "survivorsPension": {
+        "pensionInsured": true,
+        "pensionPercent": 70,
+        "benefitPeriod": "gemäss UVG"
+      }
+    },
+    "premiumPersonGroup": {
+      "medicalExpensesPremiumRate": 2.345,
+      "dailyAllowanceNetPremiumRate": 1.678,
+      "dailyHospitalAllowancePremiumRate": 0.987,
+      "disabilityCapitalPremiumRate": 3.210,
+      "disabilityCapitalSurplusSalaryPremiumRate": 1.543,
+      "disabilityPensionPremiumRate": 2.876,
+      "disabilityPensionSalarySurplusPremiumRate": 1.234,
+      "deathCapitalPremiumRate": 4.321,
+      "deathCapitalSurplusSalaryPremiumRate": 2.109,
+      "survivorsPensionSalaryPremiumRate": 3.654,
+      "survivorsPensionSalarySurplusPremiumRate": 1.987,
+      "premiumDiffCoverage": 1500.50,
+      "finalPremiumPersonGroup": 25000.75
+    }
+  }
+]
