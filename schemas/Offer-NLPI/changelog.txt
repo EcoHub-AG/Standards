@@ -10,12 +10,15 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - BenefitCoverageType (Removed)
 - BenefitPeriodType (Added)
     - Moved from generics
+- CoverageType (Changed)
+    - Added validation so at least one of the properties must be set
 - DailyAllowanceType (Added)
 - DailyHospitalAllowanceType (Added)
 - DeathCapitalType (Added)
 - DisabilityCapitalType (Added)
 - DSBPayrollFemaleType (Removed)
 - DSBPayrollMaleType (Removed)
+- DSBPremiumType (Added)
 - DSPTypePayInstallmentType (Renamed)
     - Renamed to "payInstalmentType"
 - FixedPayrollType (Removed)
@@ -45,8 +48,8 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - renamed to InsuranceOptionsVariousType
     - renamed property "DSBtypePayInstalment" to "typePayInstalment"
     - renamed property "profitParticipation" to "surplusParticipation"
-    - renamed property "profitParticipationPremiumRate" to "surplusParticipationPremiumRate"
-    - renamed property "profitParticipationRate" to "surplusParticipationRate"
+    - renamed property "profitParticipationPremiumRate" to "surplusParticipationPremiumRate" and changed type to number
+    - renamed property "profitParticipationRate" to "surplusParticipationRate" and changed type to number
     - renamed property "profitParticipationPeriodYears" to "surplusParticipationPeriodYears"
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "typePayInstalment" are now mandatory
     - inlined definitions for properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation"
@@ -82,6 +85,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Renamed property "businessRelationPerson" to "role"
     - changed type of property "fixedPayroll" to "MonetaryAmountType"
     - inlined definitions for properties "benefitCoverage", "insuranceType"
+    - extracted definition of "premiumFixedPayroll" to separate type
 - OfferRequestPersonGroupsType (Changed)
     - Renamed to DSBPersonGroupsType
     - Renamed property "persongroupId" to "personGroupId"
@@ -93,6 +97,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - changed type of properties "payrollFemale", "payrollMale", "payrollTotal",
                   "maximumPayrollAmount" to "MonetaryAmountType"
     - inlined definitions for "personGroupDescription", "numberOfPersonsFemale", "numberOfPersonsMale"
+    - extracted definition of "premiumFixedPayroll" to separate type
 - OfferRequestUVGOType (Added)
 - OfferRequestUVGZType (Added)
 - OfferTypeType (Removed)

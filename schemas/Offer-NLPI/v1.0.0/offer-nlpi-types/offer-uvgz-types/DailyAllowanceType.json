@@ -110,7 +110,8 @@
           "dailyAllowanceFirstCoupleDaysInsured": {
             "const": true
           }
-        }
+        },
+        "required": ["dailyAllowanceFirstCoupleDaysInsured"]
       },
       "then": {
         "required": [
@@ -124,7 +125,8 @@
           "dailyAllowanceSurplusInsured": {
             "const": true
           }
-        }
+        },
+        "required": ["dailyAllowanceSurplusInsured"]
       },
       "then": {
         "required": [

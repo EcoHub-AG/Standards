@@ -86,7 +86,7 @@
 	"dependentRequired": {
 		"UVGSupplement": ["UVGCompulsoryInsurer"]
 	},
-	"oneOf": [
+	"anyOf": [
 		{
 			"required": ["DSB"]
 		},

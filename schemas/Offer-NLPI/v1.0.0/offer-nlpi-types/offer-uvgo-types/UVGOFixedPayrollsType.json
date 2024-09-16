@@ -77,7 +77,7 @@
 			"surname",
 			"firstname",
 			"birthDate",
-			"fixedPayroll",
+			"payrollVoluntarilyInsuredPerson",
 			"coverage"
 		]
 	}

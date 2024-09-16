@@ -34,7 +34,7 @@
       "description": "UVG risk number of the insured risk",
       "type": "string",
       "maxLength": 7,
-      "pattern": "[0-9]{4}/.[0-9 ]{2}"
+      "pattern": "[0-9]{4}\\.[0-9]{2}"
     },
     "NOGACodeMain": {
       "description": "Main NOGA-Code",
@@ -69,7 +69,7 @@
   },
   "then": {
     "required": [
-      "GAVname"
+      "GAVName"
     ]
   }
 }

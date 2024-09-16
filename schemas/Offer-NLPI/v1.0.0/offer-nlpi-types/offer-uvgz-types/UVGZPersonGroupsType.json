@@ -30,6 +30,28 @@
         "$ref": "UVGZCoverageType.json",
         "allOf": [
           {
+            "if": {
+              "properties": {
+                "deathCapital": {
+                  "properties": {
+                    "deathCapitalInsured": {
+                      "const": true
+                    }
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "deathCapital": {
+                  "required": [
+                    "wageSupplement"
+                  ]
+                }
+              }
+            }
+          },
+          {
             "properties": {
               "dailyAllowance": {
                 "not": {
@@ -93,7 +115,7 @@
             "type": "number",
             "multipleOf": 0.001
           },
-          "deathCapitalsurplusSalaryPremiumRate": {
+          "deathCapitalSurplusSalaryPremiumRate": {
             "description": "Lump-sum death benefit surplus salary premium rate in  ‰",
             "type": "number",
             "multipleOf": 0.001
@@ -126,15 +148,15 @@
           "disabilityPensionPremiumRate",
           "disabilityPensionSalarySurplusPremiumRate",
           "deathCapitalPremiumRate",
-          "deathCapitalsurplusSalaryPremiumRate",
+          "deathCapitalSurplusSalaryPremiumRate",
           "survivorsPensionSalaryPremiumRate",
           "survivorsPensionSalarySurplusPremiumRate",
           "premiumDiffCoverage",
           "finalPremiumPersonGroup"
-        ]
+        ],
+        "additionalProperties": false
       }
     },
-    "additionalProperties": false,
     "required": [
       "personGroupId",
       "numberOfPersonsTotal",
@@ -142,7 +164,8 @@
       "maximumPayrollAmount",
       "surplusSalaryTotal",
       "coverage"
-    ]
+    ],
+    "additionalProperties": false
   },
-  "unevaluatedItems": false
+  "additionalItems": false
 }

@@ -13,5 +13,16 @@
       "$ref": "DSBPCoverageType.json"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "anyOf": [
+    {
+      "required": ["DSBCoverage"]
+    },
+    {
+      "required": ["DSBMCoverage"]
+    },
+    {
+      "required": ["DSBPCoverage"]
+    }
+  ]
 }

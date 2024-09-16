@@ -27,11 +27,13 @@
 		},
 		"surplusParticipationPremiumRate": {
 			"description": "Surplus participation premium share in percentage. Set as part of the offer and omitted during request.",
-			"type": "string"
+			"type": "number",
+			"multipleOf": 0.001
 		},
 		"surplusParticipationRate": {
 			"description": "Surplus participation profit share in percentage. Set as part of the offer and omitted during request.",
-			"type": "string"
+			"type": "number",
+			"multipleOf": 0.001
 		},
 		"surplusParticipationPeriodYears": {
 			"description": "Duration of the surplus period in years. Set as part of the offer and omitted during request.",

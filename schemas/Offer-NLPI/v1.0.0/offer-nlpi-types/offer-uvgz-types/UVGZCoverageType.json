@@ -115,8 +115,7 @@
       "then": {
         "required": [
           "pensionPercent",
-          "benefitPeriod",
-          "survivorsPartnerPension"
+          "benefitPeriod"
         ]
       }
     }

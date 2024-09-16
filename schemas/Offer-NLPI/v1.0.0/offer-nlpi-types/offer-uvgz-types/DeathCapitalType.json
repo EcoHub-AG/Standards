@@ -38,8 +38,7 @@
 		"required": [
 			"deathCapitalUVG",
 			"deathCapitalSurplus",
-			"bridgingCapital",
-			"wageSupplement"
+			"bridgingCapital"
 		]
 	}
 }
