@@ -9,6 +9,8 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 - AdditionalOptionType (Removed)
 - AddressType (Renamed)
     - Renamed to AddressDefinitions
+- BenefitPeriodType (Removed)
+    - Moved type to Offer NLPI standard
 - BrokerContactType (Added)
 - BrokerType (Changed)
     - changed property "companyId" to mandatory

@@ -8,6 +8,8 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - AnnualCancellationType (Removed)
 - AHVSalaryMultipleType (Added)
 - BenefitCoverageType (Removed)
+- BenefitPeriodType (Added)
+    - Moved from generics
 - DailyAllowanceType (Added)
 - DailyHospitalAllowanceType (Added)
 - DeathCapitalType (Added)
