@@ -34,14 +34,6 @@
       "type": "string",
       "format": "date"
     },
-    "offerBindingNature": {
-      "description": "Offer binding nature",
-      "type": "string",
-      "enum": [
-        "non_binding_offer",
-        "binding_offer"
-      ]
-    },
     "insuranceStartDate": {
       "$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
     },
@@ -164,7 +156,6 @@
     "insurerContact",
     "quotationNo",
     "offerValidToDate",
-    "offerBindingNature",
     "insuranceStartDate",
     "currency",
     "offerDocument",

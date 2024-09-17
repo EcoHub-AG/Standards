@@ -1,42 +1,6 @@
 {
   "personGroups": [
     {
-      "personGroupId": "10000000-0000-0000-0000-000000000001",
-      "personGroupDescription": "Alle Frauen",
-      "numberOfPersonsFemale": 4,
-      "numberOfPersonsMale": 0,
-      "numberOfPersonsTotal": 4,
-      "payrollFemale": 304000,
-      "payrollMale": 0,
-      "payrollTotal": 304000,
-      "maximumPayrollAmount": 450000,
-      "averageAgePersonGroup": 39.7,
-      "uniformPremiumRate": true,
-      "coverage": {
-        "DSBCoverage": {
-          "DSBDaysWaitingNo": 90,
-          "DSBCalculationBasis": "case",
-          "DSBBenefitPeriod": {
-            "benefitDurationDays": 730,
-            "benefitDurationCondition": "minus waiting period",
-            "periodDays": 70
-          },
-          "DSBBenefitAmountPercentage": 80,
-          "DSBLegalBasis": "VVG"
-        },
-        "DSBMCoverage": {
-          "DSBMBenefitDurationWeeks": 14,
-          "DSBMBenefitAmountPercentage": 80,
-          "DSBMPayrollBasis": "EOG wage"
-        },
-        "DSBPCoverage": {
-          "DSBPBenefitDurationWeeks": 14,
-          "DSBPBenefitAmountPercentage": 80,
-          "DSBPPayrollBasis": "EOG wage"
-        }
-      }
-    },
-    {
       "personGroupId": "10000000-0000-0000-0000-000000000002",
       "personGroupDescription": "Alle Männer",
       "numberOfPersonsFemale": 0,
@@ -60,86 +24,13 @@
           "DSBBenefitAmountPercentage": 75,
           "DSBLegalBasis": "KVG"
         },
-        "DSBMCoverage": {
-          "DSBMBenefitDurationWeeks": 14,
-          "DSBMBenefitAmountPercentage": 80,
-          "DSBMPayrollBasis": "EOG wage"
-        },
-        "DSBPCoverage": {
-          "DSBPBenefitDurationWeeks": 6,
-          "DSBPBenefitAmountPercentage": 100,
-          "DSBPPayrollBasis": "EOG wage"
-        }
-      }
-    }
-  ],
-  "fixedPayrolls": [
-    {
-      "personId": "06637133-2230-472e-80fa-ba1c9661d0a7",
-      "role": "BusinessOwner",
-      "firstname": "Kaiser",
-      "surname": "Leonie",
-      "birthDate": "1996-03-14",
-      "gender": "female",
-      "fixedPayroll": 99000,
-      "benefitCoverage": "sickness",
-      "insuranceType": "sum insurance",
-      "coverage": {
-        "DSBCoverage": {
-          "DSBDaysWaitingNo": 60,
-          "DSBCalculationBasis": "working year",
-          "DSBBenefitPeriod": {
-            "benefitDurationDays": 730,
-            "benefitDurationCondition": "after expiry of waiting period",
-            "periodDays": 0
-          },
-          "DSBBenefitAmountPercentage": 100,
-          "DSBLegalBasis": "VVG"
-        },
-        "DSBMCoverage": {
-          "DSBMBenefitDurationWeeks": 14,
-          "DSBMBenefitAmountPercentage": 100,
-          "DSBMPayrollBasis": "total wage"
-        },
-        "DSBPCoverage": {
-          "DSBPBenefitDurationWeeks": 6,
-          "DSBPBenefitAmountPercentage": 100,
-          "DSBPPayrollBasis": "EOG wage"
-        }
-      }
-    },
-    {
-      "personId": "06637133-2230-472e-80fa-ba1c9661d0a7",
-      "role": "BusinessOwner",
-      "firstname": "Aregger",
-      "surname": "Theo",
-      "birthDate": "1980-01-05",
-      "gender": "male",
-      "fixedPayroll": 99000,
-      "benefitCoverage": "sickness",
-      "insuranceType": "damage insurance",
-      "coverage": {
-        "DSBCoverage": {
-          "DSBDaysWaitingNo": 90,
-          "DSBCalculationBasis": "case",
-          "DSBBenefitPeriod": {
-            "benefitDurationDays": 365,
-            "benefitDurationCondition": "within",
-            "periodDays": 540
-          },
-          "DSBBenefitAmountPercentage": 90,
-          "DSBLegalBasis": "VVG"
-        },
-        "DSBMCoverage": {
-          "DSBMBenefitDurationWeeks": 14,
-          "DSBMBenefitAmountPercentage": 100,
-          "DSBMPayrollBasis": "total wage"
-        },
-        "DSBPCoverage": {
-          "DSBPBenefitDurationWeeks": 2,
-          "DSBPBenefitAmountPercentage": 80,
-          "DSBPPayrollBasis": "EOG wage"
-        }
+        "DSBPCoverage": [
+          {
+            "DSBPBenefitDurationWeeks": 6,
+            "DSBPBenefitAmountPercentage": 100,
+            "DSBPPayrollBasis": "EOG wage"
+          }
+        ]
       }
     }
   ],

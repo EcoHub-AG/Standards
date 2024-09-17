@@ -16,8 +16,14 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - DailyHospitalAllowanceType (Added)
 - DeathCapitalType (Added)
 - DisabilityCapitalType (Added)
+- DSBMCoverageType (Changed)
+    - changed type to array
+    - added property "maximumPayrollAmount"
 - DSBPayrollFemaleType (Removed)
 - DSBPayrollMaleType (Removed)
+- DSBPCoverageType (Changed)
+    - changed type to array
+    - added property "maximumPayrollAmount"
 - DSBPremiumType (Added)
 - DSPTypePayInstallmentType (Renamed)
     - Renamed to "payInstalmentType"
@@ -55,7 +61,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - inlined definitions for properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation"
 - OfferNlpiDataType (Changed)
     - Added properties "UVGCompulsory", "UVGSupplement"
-    - Removed property "offerType"
+    - Removed property "offerType", "offerBindingNature"
     - changed type of properties "netPremiumDSBTotal", "combinationDiscountAmount", "otherDiscountAmount",
                 "surchargesTotal", "instalmentSurchargeAmount", "premiumMinimumAmount" in "premiumOverview" to "MonetaryAmountType"
     - Added properties "totalPremiumBUAndNBU", "netPremiumUVGTotal", "netPremiumTotal", "netPremiumUVGZTotal" to "premiumOverview"
