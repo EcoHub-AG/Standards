@@ -27,5 +27,23 @@
 		"sender",
 		"recipient",
 		"standard"
-	]
+	],
+	"if": {
+		"properties": {
+			"sender": {
+				"required": ["broker"]
+			}
+		}
+	},
+	"then": {
+		"properties": {
+			"sender": {
+				"properties": {
+					"broker": {
+						"required": ["brokerBranch", "brokerContact"]
+					}
+				}
+			}
+		}
+	}
 }

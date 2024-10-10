@@ -74,7 +74,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - inlined definition for property "offerBindingNature"
 - OfferNlpiRequestDataType (Changed)
     - Removed keyword "unevaluatedProperties"
-    - Removed property "offerRequestType"
+    - Removed properties "offerRequestType", "brokerContact", "agency"
     - Added properties "UVGCompulsory", "UVGSupplement", "UVGCompulsoryInsurer" and "document"
     - Changed type of property "brokerContract" to BrokerContactType
     - properties "timestamp", "header", "customer", "brokerContact", "insuranceDurationInYears" are now mandatory,

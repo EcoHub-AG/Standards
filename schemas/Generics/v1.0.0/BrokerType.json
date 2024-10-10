@@ -15,6 +15,13 @@
 		"companyName": {
 			"$ref": "CompanyNameType.json",
 			"description": "Company name. For a sole proprietorship, name and surname must be entered."
+		},
+		"brokerBranch": {
+			"description": "IGB2B Number of the branch, agency of the broker, broker entitled to commission. Can be HQ or deviation branch.",
+			"$ref": "OrgUnitNumberType.json"
+		},
+		"brokerContact": {
+			"$ref": "BrokerContactType.json"
 		}
 	},
 	"additionalProperties": false,

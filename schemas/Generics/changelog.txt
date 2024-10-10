@@ -9,11 +9,13 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 - AdditionalOptionType (Removed)
 - AddressType (Renamed)
     - Renamed to AddressDefinitions
+- AgencyType (Removed)
 - BenefitPeriodType (Removed)
     - Moved type to Offer NLPI standard
 - BrokerContactType (Added)
 - BrokerType (Changed)
     - changed property "companyId" to mandatory
+    - added properties "brokerBranch" and "brokerContact"
 - CompanyLegalFormType (Changed)
     - added enum value "Unknown"
 - CompanyLegalStatusType (Changed)
@@ -25,6 +27,7 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 - CustomerTypeType (Added)
 - HeaderType (Changed)
     - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
+    - require properties "brokerBranch" and "brokerContact" when broker is sender
 - InsurerType (Changed)
     - changed property "companyId" to mandatory
 - LocalityCorrespondenceType (Removed)
@@ -32,10 +35,12 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 - LocalityDomicilType (Renamed)
     - Renamed to AddressType
 - MonetaryAmountType (Added)
+- OrgUnitNumberType (Added)
+- OtherExchangePartnerType (Documentation)
 - PersonGroupIdType (Renamed)
     - Renamed to be used as a more general UuidType.
 - SenderReceiverType (Added)
-- TimeStampType (Cosmetic)
+- TimeStampType (Documentation)
     - Added example
 
 

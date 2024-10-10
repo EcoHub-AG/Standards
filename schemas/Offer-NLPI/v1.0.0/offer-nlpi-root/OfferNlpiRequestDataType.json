@@ -23,12 +23,6 @@
 			},
 			"unevaluatedItems": false
 		},
-		"agency": {
-			"$ref": "../../../Generics/v1.0.0/AgencyType.json"
-		},
-		"brokerContact": {
-			"$ref": "../../../Generics/v1.0.0/BrokerContactType.json"
-		},
 		"offerToDate": {
 			"type": "string",
 			"format": "date",

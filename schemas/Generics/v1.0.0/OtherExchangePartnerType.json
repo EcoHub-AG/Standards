@@ -4,8 +4,7 @@
 	"description": "Other partner for data exchange",
 	"properties": {
 		"companyId": {
-			"$ref": "CompanyIdType.json",
-			"description": "Unique company identification number (UID) for companies based in Switzerland or EU member states as specified in the UID register of the respective authority."
+			"$ref": "CompanyIdType.json"
 		},
 		"companyName": {
 			"$ref": "CompanyNameType.json",
