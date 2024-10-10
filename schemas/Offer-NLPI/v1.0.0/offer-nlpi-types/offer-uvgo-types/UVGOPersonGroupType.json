@@ -1,69 +1,63 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "description": "Group of compulsory insured people",
-  "type": "object",
-  "properties": {
-    "personGroupId": {
-      "description": "ID of the person group",
-      "$ref": "../../../../Generics/v1.0.0/UuidType.json"
-    },
-    "numberOfPersonsBU": {
-      "description": "Number of employees OA",
-      "type": "integer"
-    },
-    "numberOfPersonsNBU": {
-      "description": "Number of employees NOA",
-      "type": "integer"
-    },
-    "numberOfPersonsTotal": {
-      "description": "Total number of employees",
-      "type": "integer"
-    },
-    "payrollBU": {
-      "description": "Accident insurance total payroll of all employees OA",
-      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
-    },
-    "payrollNBU": {
-      "description": "Accident insurance total payroll of all employees NOA",
-      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
-    },
-    "payrollTotal": {
-      "description": "Accident insurance total payroll of all employees",
-      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
-    },
-    "coverage": {
-      "description": "Coverage of the person groups",
-      "$ref": "UVGOCoverageType.json"
-    },
-    "premiumPersonGroup": {
-      "description": "Premium of the insured group of persons",
-      "type": "object",
-      "properties": {
-        "premiumNBU": {
-          "description": "Premium for NBU",
-          "$ref": "UVGOPersonGroupPremiumType.json"
-        },
-        "premiumBU": {
-          "description": "Premium for BU",
-          "$ref": "UVGOPersonGroupPremiumType.json"
-        }
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personGroupId": {
+        "description": "ID of the person group",
+        "$ref": "../../../../Generics/v1.0.0/UuidType.json"
       },
-      "additionalProperties": false,
-      "required": [
-        "premiumNBU",
-        "premiumBU"
-      ]
-    }
-  },
-  "additionalProperties": false,
-  "required": [
-    "personGroupId",
-    "numberOfPersonsBU",
-    "numberOfPersonsNBU",
-    "numberOfPersonsTotal",
-    "payrollBU",
-    "payrollNBU",
-    "payrollTotal",
-    "coverage"
-  ]
+      "numberOfPersonsBU": {
+        "description": "Number of employees OA. If unknown, value 0 can be specified.",
+        "type": "integer"
+      },
+      "numberOfPersonsNBU": {
+        "description": "Number of employees NOA. If unknown, value 0 can be specified.",
+        "type": "integer"
+      },
+      "payrollBU": {
+        "description": "Accident insurance total payroll of all employees OA",
+        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "payrollNBU": {
+        "description": "Accident insurance total payroll of all employees NOA",
+        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "coverage": {
+        "description": "Coverage of the person groups",
+        "$ref": "UVGOCoverageType.json"
+      },
+      "premiumPersonGroup": {
+        "description": "Premium of the insured group of persons",
+        "type": "object",
+        "properties": {
+          "premiumNBU": {
+            "description": "Premium for NBU",
+            "$ref": "UVGOPersonGroupPremiumType.json"
+          },
+          "premiumBU": {
+            "description": "Premium for BU",
+            "$ref": "UVGOPersonGroupPremiumType.json"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "premiumNBU",
+          "premiumBU"
+        ]
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "personGroupId",
+      "numberOfPersonsBU",
+      "numberOfPersonsNBU",
+      "payrollBU",
+      "payrollNBU",
+      "coverage"
+    ]
+  }
 }

@@ -1,14 +1,13 @@
 {
-  "personGroup": {
-    "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
-    "numberOfPersonsBU": 50,
-    "numberOfPersonsNBU": 30,
-    "numberOfPersonsTotal": 80,
-    "payrollBU": 2500000.00,
-    "payrollNBU": 1500000.00,
-    "payrollTotal": 4000000.00,
-    "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG"
-  },
+  "personGroup": [
+    {
+      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+      "numberOfPersonsBU": 50,
+      "numberOfPersonsNBU": 30,
+      "payrollBU": 2500000.00,
+      "payrollNBU": 1500000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG"
+    }],
   "voluntarilyInsuredPersons": [
     {
       "personId": "345aa049-7693-4710-89d7-e13b87ab988a",

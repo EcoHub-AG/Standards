@@ -7,10 +7,12 @@
       "$ref": "UVGOPersonGroupType.json",
       "allOf": [
         {
-          "not": {
-            "required": [
-              "premiumPersonGroup"
-            ]
+          "items": {
+            "not": {
+              "required": [
+                "premiumPersonGroup"
+              ]
+            }
           }
         }
       ]
