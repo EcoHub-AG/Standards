@@ -7,16 +7,6 @@
       "description": "Core information of the customer",
       "$ref": "../../../Generics/v1.0.0/CompanyCustomerType.json"
     },
-    "riskCharacteristic": {
-      "description": "Definition of special constructs and risk characteristics of the company",
-      "type": "string",
-      "enum": [
-        "Holding/Risikogemeinschaft/Risikogruppe",
-        "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)",
-        "keine",
-        "unbekannt"
-      ]
-    },
     "GAVCompliance": {
       "description": "Guaranteed compliance with the GAV-conformity",
       "$ref": "../../../Generics/v1.0.0/TristateType.json"
@@ -56,9 +46,7 @@
   "additionalProperties": false,
   "required": [
     "customer",
-    "riskCharacteristic",
-    "NOGACodeMain",
-    "typeOfActivity"
+    "NOGACodeMain"
   ],
   "if": {
     "properties": {

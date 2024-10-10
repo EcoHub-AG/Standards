@@ -25,22 +25,18 @@
       "adressExtension": "c/o Dachverband Kleingewerbe"
     }
   },
-  "riskCharacteristic": "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)",
   "GAVCompliance": "Yes",
   "UVGRiskNo": "1234.56",
   "NOGACodeMain": {
-    "NOGASection": "S ERBRINGUNG VON SONSTIGEN DIENSTLEISTUNGEN",
     "NOGACode": "960201",
     "NOGAName": "Coiffeursalons"
   },
   "NOGACodeAdditional": [
     {
-      "NOGASection": "S ERBRINGUNG VON SONSTIGEN DIENSTLEISTUNGEN",
       "NOGACode": "960202",
       "NOGAName": "Kosmetiksalons"
     },
     {
-      "NOGASection": "I GASTGEWERBE/BEHERBERGUNG UND GASTRONOMIE",
       "NOGACode": "561001",
       "NOGAName": "Restaurants, Imbissstuben, Tea-Rooms und Gelaterias"
     }

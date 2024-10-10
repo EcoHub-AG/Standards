@@ -2,24 +2,18 @@
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"type": "object",
 	"properties": {
-		"NOGASection": {
-			"description": "Section the NOGA code belongs to",
-			"type": "string"
-		},
 		"NOGACode": {
-			"description": "NOGA Code, is a 6 digit string identifier",
+			"description": "6-digit NOGA code, without preceding letters",
 			"type": "string",
 			"maxLength": 6
 		},
 		"NOGAName": {
-			"description": "Corresponding name for the NOGA code",
+			"description": "NOGA name is derived from the 6-digit NOGA code",
 			"type": "string"
 		}
 	},
 	"additionalProperties": false,
 	"required": [
-		"NOGASection",
-		"NOGACode",
-		"NOGAName"
+		"NOGACode"
 	]
 }
