@@ -33,15 +33,16 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - InsuranceTypeType (Removed)
 - MaximumPayrollAmountType (Removed)
 - NogaCodeType (Changed)
+    - removed property "NOGASection"
     - fixed capitalization of property names
-    - all properties are now mandatory
+    - NOGACode is now mandatory
 - NumberOfPersonsFemaleType (Removed)
 - NumberOfPersonsMaleType (Removed)
 - OfferBindingNatureType (Removed)
 - OfferCustomerType (Changed)
     - Extracted generic customer information to separate property, referencing "CustomerType"
-    - Added mandatory property "typeOfActivity"
-    - Added properties "riskCharacteristic", "UVGRiskNo"
+    - Added property "typeOfActivity"
+    - Added property "UVGRiskNo"
     - Fixed capitalization for properties "GAVcompliance" and "GAVname"
 - OfferDSBType
     - Reference shared schema for property personGroups
