@@ -1,5 +1,5 @@
 {
-  "previousInsurer": "Yes",
+  "previousInsurer": true,
   "previousInsurerDetails": [
     {
       "insurerCode": "901S",

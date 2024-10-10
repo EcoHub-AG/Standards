@@ -4,10 +4,10 @@
 	"properties": {
 		"previousInsurer": {
 			"description": "Marker to determine if a previous insurer is known",
-			"$ref": "../../../Generics/v1.0.0/TristateType.json"
+			"type": "boolean"
 		},
 		"previousInsurerDetails": {
-			"description": "Previous insurer details",
+			"description": "Details of the previous insurer. AKD/MIDI, in the event of non-delivery the insurer's response will take correspondingly longer.",
 			"type": "array",
 			"minItems": 1,
 			"items": {
@@ -43,10 +43,7 @@
 								}
 							},
 							"required": [
-								"contractNo",
-								"insuranceStartDate",
-								"insuranceEndDate",
-								"claimsExperienceDocument"
+								"contractNo"
 							],
 							"additionalProperties": false
 						}
@@ -68,7 +65,7 @@
 	"if": {
 		"properties": {
 			"previousInsurer": {
-				"const": "Yes"
+				"const": true
 			}
 		}
 	},

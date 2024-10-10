@@ -112,6 +112,9 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - OfferUVGZType (Added)
 - PersonGroupDescriptionType (Removed)
 - PremiumRateGuarantyType (Removed)
+- PreviousInsurerType (Changed)
+    - changed type of property "previousInsurer" to boolean
+    - properties insuranceStartDate, insuranceEndDate, claimsExperienceDocument are now optional.
 - ProfitParticipationType (Removed)
 - RenunciationTerminationRightClaimType (Removed)
 - UVGOCoverageType (Added)
