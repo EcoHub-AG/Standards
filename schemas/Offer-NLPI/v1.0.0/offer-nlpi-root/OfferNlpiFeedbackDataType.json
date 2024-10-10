@@ -13,7 +13,7 @@
 			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
 		},
 		"customer": {
-			"$ref": "../../../Generics/v1.0.0/CustomerType.json"
+			"$ref": "../../../Generics/v1.0.0/CompanyCustomerType.json"
 		},
 		"quotationNo": {
 			"$ref": "../../../Generics/v1.0.0/QuotationNoType.json"

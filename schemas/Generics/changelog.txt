@@ -22,9 +22,8 @@ General improvements and necessary changes for Offer NLPI v1.0.0
     - fixed wrong capitalization of some enum values
 - ContactType (Changed)
     - changed property "contactPhone" to mandatory
-- CustomerType (Changed)
-    - Refactor CustomerType to support private individuals
-- CustomerTypeType (Added)
+- CustomerType (Renamed)
+    - Renamed CustomerType to CompanyCustomerType
 - HeaderType (Changed)
     - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
     - require properties "brokerBranch" and "brokerContact" when broker is sender

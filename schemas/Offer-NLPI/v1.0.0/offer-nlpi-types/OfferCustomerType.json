@@ -5,7 +5,7 @@
   "properties": {
     "customer": {
       "description": "Core information of the customer",
-      "$ref": "../../../Generics/v1.0.0/CustomerType.json"
+      "$ref": "../../../Generics/v1.0.0/CompanyCustomerType.json"
     },
     "riskCharacteristic": {
       "description": "Definition of special constructs and risk characteristics of the company",

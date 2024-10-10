@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Company identification number (UID)",
+	"description": "Unique company identification number (UID) for companies based in Switzerland or EU member states as specified in the UID register of the respective authority.",
 	"name": "CompanyIdType",
 	"type": "string",
 	"maxLength": 15,
