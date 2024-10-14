@@ -62,6 +62,7 @@
 			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
 		},
 		"document": {
+			"description": "Document of the tender",
 			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
 		}
 	},
@@ -75,7 +76,8 @@
 		"currency",
 		"insuranceStartDate",
 		"insuranceDurationInYears",
-		"previousInsurer"
+		"previousInsurer",
+		"document"
 	],
 	"dependentRequired": {
 		"UVGSupplement": ["UVGCompulsoryInsurer"]
