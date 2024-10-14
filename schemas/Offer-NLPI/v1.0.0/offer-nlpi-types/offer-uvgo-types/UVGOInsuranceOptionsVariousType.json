@@ -9,12 +9,18 @@
 		},
 		"typePayInstalment": {
 			"$ref": "../PayInstalmentType.json"
+		},
+		"contractExtensionAfterExpiration": {
+			"type": "boolean",
+			"description": "Contract extension by 1 year after expiration"
 		}
+
 
 	},
     "additionalProperties": false,
 	"required": [
 		"annualCancellation",
-		"typePayInstalment"
+		"typePayInstalment",
+		"contractExtensionAfterExpiration"
 	]
 }

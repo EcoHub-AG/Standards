@@ -32,20 +32,9 @@
         }
       }
     }],
-  "voluntarilyInsuredPersons": [
-    {
-      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
-      "role": "Inhaber",
-      "firstname": "John",
-      "surname": "Doe",
-      "birthDate": "1980-05-15",
-      "gender": "male",
-      "payrollVoluntarilyInsuredPerson": 120000.00,
-      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG"
-    }
-  ],
   "insuranceOptionsVarious": {
     "annualCancellation": true,
-    "typePayInstalment": "annually"
+    "typePayInstalment": "annually",
+    "contractExtensionAfterExpiration": false
   }
 }
