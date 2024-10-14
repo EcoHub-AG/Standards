@@ -72,7 +72,6 @@
 		"timestamp",
 		"header",
 		"customer",
-		"brokerContact",
 		"currency",
 		"insuranceStartDate",
 		"insuranceDurationInYears",
