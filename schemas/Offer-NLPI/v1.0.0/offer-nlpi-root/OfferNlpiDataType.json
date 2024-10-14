@@ -156,7 +156,6 @@
     "insuranceEndDate",
     "currency",
     "offerDocument",
-    "contractConditionsDocument",
     "premiumOverview"
   ],
   "unevaluatedProperties": false,

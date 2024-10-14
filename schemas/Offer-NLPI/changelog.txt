@@ -70,6 +70,7 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - Changed description of properties "instalmentSurchargePercentage", "instalmentSurchargeAmount" in "premiumOverview"
     - replaced in-file definition of property "offerDocument" with reference to "MultiFileType"
     - replaced in-file definition of property "contractConditionsDocument" with reference to "MultiFileType"
+    - "contractConditionsDocument" is now optional
     - property DSB is now optional
     - property insuranceEndDate is now mandatory
 - OfferNlpiRequestDataType (Changed)
