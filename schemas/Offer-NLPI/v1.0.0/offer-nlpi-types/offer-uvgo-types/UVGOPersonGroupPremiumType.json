@@ -31,10 +31,6 @@
       "type": "number",
       "multipleOf": 0.001
     },
-    "premiumMinimumAmount": {
-      "description": "Minimum premium in CHF",
-      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
-    },
     "finalPremiumRate": {
       "description": "Final premium rate in ‰. Corresponds to the final premium rate / gross premium rate",
       "type": "number",
@@ -47,12 +43,10 @@
   },
   "additionalProperties": false,
   "required": [
-    "hazardClass",
-    "hazardSubClass",
+    "premiumRiskRate",
     "costAdminRate",
     "sharingCostRate",
     "accidentPreventionContributionRate",
-    "premiumMinimumAmount",
     "finalPremiumRate",
     "totalPremium"
   ]

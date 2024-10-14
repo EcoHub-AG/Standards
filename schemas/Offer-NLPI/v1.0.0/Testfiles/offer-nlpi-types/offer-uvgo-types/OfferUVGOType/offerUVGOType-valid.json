@@ -15,7 +15,6 @@
           "costAdminRate": 0.750,
           "sharingCostRate": 0.250,
           "accidentPreventionContributionRate": 0.100,
-          "premiumMinimumAmount": 500.00,
           "finalPremiumRate": 3.600,
           "totalPremium": 10000.00
         },
@@ -26,7 +25,6 @@
           "costAdminRate": 0.750,
           "sharingCostRate": 0.250,
           "accidentPreventionContributionRate": 0.100,
-          "premiumMinimumAmount": 500.00,
           "finalPremiumRate": 3.600,
           "totalPremium": 10000.00
         }
