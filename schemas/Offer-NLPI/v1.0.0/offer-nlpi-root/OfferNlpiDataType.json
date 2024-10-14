@@ -117,15 +117,19 @@
           "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for the hole contract (UVGO, UVGZ, KTG).",
           "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         },
-        "premiumMinimumAmount": {
-          "description": "Minimum premium of the contract",
+        "premiumMinimumAmountDSB": {
+          "description": "Minimum premium of the contract for DSB",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "premiumMinimumAmountBU": {
+          "description": "Minimum premium for BU in CHF",
+          "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+        },
+        "premiumMinimumAmountNBU": {
+          "description": "Minimum premium for NBU in CHF",
           "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
         }
       },
-      "required": [
-        "tariffYear",
-        "netPremiumDSBTotal"
-      ],
       "additionalProperties": false
     },
     "comment": {
@@ -158,6 +162,29 @@
     "offerDocument",
     "premiumOverview"
   ],
+  "dependentSchemas": {
+    "DSB": {
+      "properties": {
+        "premiumOverview": {
+          "required": [
+            "netPremiumDSBTotal"
+          ]
+        }
+      }
+    },
+    "UVGCompulsory": {
+      "properties": {
+        "premiumOverview": {
+          "required": [
+            "totalPremiumBUAndNBU",
+            "netPremiumUVGTotal",
+            "premiumMinimumAmountBU",
+            "premiumMinimumAmountNBU"
+          ]
+        }
+      }
+    }
+  },
   "unevaluatedProperties": false,
   "additionalProperties": false
 }
