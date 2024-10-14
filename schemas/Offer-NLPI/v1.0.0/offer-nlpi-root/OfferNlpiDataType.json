@@ -153,6 +153,7 @@
     "quotationNo",
     "offerValidToDate",
     "insuranceStartDate",
+    "insuranceEndDate",
     "currency",
     "offerDocument",
     "contractConditionsDocument",

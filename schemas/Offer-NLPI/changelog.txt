@@ -66,12 +66,12 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
     - changed type of properties "netPremiumDSBTotal", "combinationDiscountAmount", "otherDiscountAmount",
                 "surchargesTotal", "instalmentSurchargeAmount", "premiumMinimumAmount" in "premiumOverview" to "MonetaryAmountType"
     - Added properties "totalPremiumBUAndNBU", "netPremiumUVGTotal", "netPremiumTotal", "netPremiumUVGZTotal" to "premiumOverview"
-    "instalmentSurchargePercentageUVGCompulsory", "instalmentSurchargeAmountUVGCompulsory" to "premiumOverview"
+        "instalmentSurchargePercentageUVGCompulsory", "instalmentSurchargeAmountUVGCompulsory" to "premiumOverview"
     - Changed description of properties "instalmentSurchargePercentage", "instalmentSurchargeAmount" in "premiumOverview"
     - replaced in-file definition of property "offerDocument" with reference to "MultiFileType"
     - replaced in-file definition of property "contractConditionsDocument" with reference to "MultiFileType"
     - property DSB is now optional
-    - inlined definition for property "offerBindingNature"
+    - property insuranceEndDate is now mandatory
 - OfferNlpiRequestDataType (Changed)
     - Removed keyword "unevaluatedProperties"
     - Removed properties "offerRequestType", "brokerContact", "agency"
