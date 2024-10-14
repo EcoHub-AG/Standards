@@ -30,19 +30,18 @@
                 "premiumInsuredPerson"
               ]
             }
-          }
-        ],
-        "if": true,
-        "then": {
-          "properties": {
-            "role": {
-              "enum": [
-                "BusinessOwner",
-                "FamilyMembers"
-              ]
+          },
+          {
+            "properties": {
+              "role": {
+                "enum": [
+                  "BusinessOwner",
+                  "FamilyMembers"
+                ]
+              }
             }
           }
-        }
+        ]
       }
     },
     "personsConnectionEmployer": {
@@ -57,21 +56,20 @@
                 "premiumInsuredPerson"
               ]
             }
-          }
-        ],
-        "if": true,
-        "then": {
-          "properties": {
-            "role": {
-              "enum": [
-                "BusinessPartner",
-                "Shareholder",
-                "CooperativeMember",
-                "FamilyMembers"
-              ]
+          },
+          {
+            "properties": {
+              "role": {
+                "enum": [
+                  "BusinessPartner",
+                  "Shareholder",
+                  "CooperativeMember",
+                  "FamilyMembers"
+                ]
+              }
             }
           }
-        }
+        ]
       }
     },
     "insuranceOptionsVarious": {
