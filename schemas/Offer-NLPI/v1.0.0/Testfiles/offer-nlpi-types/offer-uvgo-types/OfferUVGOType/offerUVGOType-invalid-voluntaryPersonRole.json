@@ -1,14 +1,4 @@
 {
-  "personGroup": [
-    {
-      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
-      "numberOfPersonsBU": 50,
-      "numberOfPersonsNBU": 30,
-      "payrollBU": 2500000.00,
-      "payrollNBU": 1500000.00,
-      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG"
-    }
-  ],
   "voluntarilyInsuredPersons": [
     {
       "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
@@ -20,25 +10,32 @@
       "payroll": 120000.00,
       "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG",
       "premiumInsuredPerson": {
-        "hazardClass": "B2",
-        "hazardSubClass": "C3",
-        "finalPremiumRate": 2.750,
-        "totalPremium": 3300.00
+        "hazardClass": "A",
+        "hazardSubClass": "A1",
+        "finalPremiumRate": 3.600,
+        "totalPremium": 10000.00
       }
     },
     {
       "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
-      "role": "FamilyMembers",
+      "role": "BusinessPartner",
       "firstname": "Jane",
       "surname": "Doe",
       "birthDate": "1982-09-22",
       "gender": "female",
       "payroll": 90000.00,
-      "coverage": "Deckung gemäss obligatorischer Unfallversicherung OUFL"
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung OUFL",
+      "premiumInsuredPerson": {
+        "hazardClass": "A",
+        "hazardSubClass": "A1",
+        "finalPremiumRate": 3.600,
+        "totalPremium": 10000.00
+      }
     }
   ],
   "insuranceOptionsVarious": {
     "annualCancellation": true,
-    "typePayInstalment": "1/2 year"
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
   }
 }

@@ -16,16 +16,59 @@
       ]
     },
     "voluntarilyInsuredPersons": {
-      "$ref": "UVGOFixedPayrollsType.json",
-      "allOf": [
-        {
-          "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {
+        "$ref": "UVGOFixedPayrollsType.json",
+        "allOf": [
+          {
+            "items": {
               "required": [
-                "premiumVoluntarilyInsuredPerson"
+                "premiumInsuredPerson"
               ]
+            }
+          }
+        ],
+        "if": true,
+        "then": {
+          "properties": {
+            "role": {
+              "enum": [
+                "BusinessOwner",
+                "FamilyMembers"
+              ]
+            }
           }
         }
-      ]
+      }
+    },
+    "personsConnectionEmployer": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "UVGOFixedPayrollsType.json",
+        "allOf": [
+          {
+            "required": [
+              "premiumInsuredPerson"
+            ]
+          }
+        ],
+        "if": true,
+        "then": {
+          "properties": {
+            "role": {
+              "enum": [
+                "BusinessPartner",
+                "Shareholder",
+                "CooperativeMember",
+                "FamilyMembers"
+              ]
+            }
+          }
+        }
+      }
     },
     "insuranceOptionsVarious": {
       "$ref": "UVGOInsuranceOptionsVariousType.json"

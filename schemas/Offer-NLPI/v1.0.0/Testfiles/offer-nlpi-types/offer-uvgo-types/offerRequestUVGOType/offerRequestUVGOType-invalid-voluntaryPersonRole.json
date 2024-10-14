@@ -22,29 +22,7 @@
     },
     {
       "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
-      "role": "FamilyMembers",
-      "firstname": "Jane",
-      "surname": "Doe",
-      "birthDate": "1982-09-22",
-      "gender": "female",
-      "payroll": 90000.00,
-      "coverage": "Deckung gemäss obligatorischer Unfallversicherung OUFL"
-    }
-  ],
-  "personsConnectionEmployer": [
-    {
-      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
       "role": "BusinessPartner",
-      "firstname": "John",
-      "surname": "Doe",
-      "birthDate": "1980-05-15",
-      "gender": "male",
-      "payroll": 120000.00,
-      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG"
-    },
-    {
-      "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
-      "role": "FamilyMembers",
       "firstname": "Jane",
       "surname": "Doe",
       "birthDate": "1982-09-22",
@@ -55,6 +33,7 @@
   ],
   "insuranceOptionsVarious": {
     "annualCancellation": true,
-    "typePayInstalment": "1/2 year"
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
   }
 }

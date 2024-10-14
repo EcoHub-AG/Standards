@@ -1,84 +1,78 @@
 {
-	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"type": "array",
-	"description": "Vountarily insured persons",
-	"minItems": 1,
-	"maxItems": 2,
-	"items": {
-		"type": "object",
-		"properties": {
-			"personId": {
-				"description": "ID of the voluntarly insured Person",
-				"type": "string",
-				"format": "uuid",
-				"examples": ["345aa049-7693-4710-89d7-e13b87ab988a"]
-			},
-			"role": {
-				"type": "string",
-				"description": "Role of the voluntarily insured person",
-				"enum": [
-					"Inhaber",
-					"Familienangehöriger"
-				]
-			},
-			"firstname": {
-				"$ref": "../../../../Generics/v1.0.0/FirstNameType.json"
-			},
-			"surname": {
-				"$ref": "../../../../Generics/v1.0.0/SurNameType.json"
-			},
-			"birthDate": {
-				"$ref": "../../../../Generics/v1.0.0/BirthDateType.json"
-			},
-			"gender": {
-				"$ref": "../../../../Generics/v1.0.0/GenderType.json"
-			},
-			"payrollVoluntarilyInsuredPerson": {
-				"description": "Insured fixed salary of the voluntarily insured person",
-				"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
-			},
-			"coverage": {
-				"$ref": "UVGOCoverageType.json"
-			},
-			"premiumVoluntarilyInsuredPerson": {
-				"type": "object",
-				"properties": {
-					"hazardClass": {
-						"description": "Hazard class Voluntarily insured person",
-						"type": "string"
-					},
-					"hazardSubClass": {
-						"description": "Hazard sub class Voluntarily insured person",
-						"type": "string"
-					},
-					"finalPremiumRate": {
-						"description": "Final premium rate volontary insured person in ‰. Corresponds to the final premium rate / gross premium rate",
-						"type": "number",
-						"multipleOf": 0.001
-					},
-					"totalPremium": {
-						"description": "Annual premium of the voluntarily insured person",
-						"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
-					}
-				},
-				"additionalProperties": false,
-				"required": [
-					"hazardClass",
-					"hazardSubClass",
-					"finalPremiumRate",
-					"totalPremium"
-				]
-			}
-		},
-		"required": [
-			"personId",
-			"role",
-			"gender",
-			"surname",
-			"firstname",
-			"birthDate",
-			"payrollVoluntarilyInsuredPerson",
-			"coverage"
-		]
-	}
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Vountarily insured persons",
+  "type": "object",
+  "properties": {
+    "personId": {
+      "description": "ID of the insured Person",
+      "type": "string",
+      "format": "uuid",
+      "examples": [
+        "345aa049-7693-4710-89d7-e13b87ab988a"
+      ]
+    },
+    "role": {
+      "description": "Role of the insured person",
+      "$ref": "../BusinessRelationPersonType.json"
+    },
+    "firstname": {
+      "$ref": "../../../../Generics/v1.0.0/FirstNameType.json"
+    },
+    "surname": {
+      "$ref": "../../../../Generics/v1.0.0/SurNameType.json"
+    },
+    "birthDate": {
+      "$ref": "../../../../Generics/v1.0.0/BirthDateType.json"
+    },
+    "gender": {
+      "$ref": "../../../../Generics/v1.0.0/GenderType.json"
+    },
+    "payroll": {
+      "description": "Insured fixed salary of the voluntarily insured person",
+      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+    },
+    "coverage": {
+      "$ref": "UVGOCoverageType.json"
+    },
+    "premiumInsuredPerson": {
+      "type": "object",
+      "properties": {
+        "hazardClass": {
+          "description": "Hazard class Voluntarily insured person",
+          "type": "string"
+        },
+        "hazardSubClass": {
+          "description": "Hazard sub class Voluntarily insured person",
+          "type": "string"
+        },
+        "finalPremiumRate": {
+          "description": "Final premium rate volontary insured person in ‰. Corresponds to the final premium rate / gross premium rate",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "totalPremium": {
+          "description": "Annual premium of the voluntarily insured person",
+          "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "hazardClass",
+        "hazardSubClass",
+        "finalPremiumRate",
+        "totalPremium"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "personId",
+    "role",
+    "gender",
+    "surname",
+    "firstname",
+    "birthDate",
+    "payroll",
+    "coverage"
+  ]
 }
