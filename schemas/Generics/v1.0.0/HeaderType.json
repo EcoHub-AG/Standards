@@ -28,22 +28,46 @@
 		"recipient",
 		"standard"
 	],
-	"if": {
-		"properties": {
-			"sender": {
-				"required": ["broker"]
-			}
-		}
-	},
-	"then": {
-		"properties": {
-			"sender": {
+	"allOf": [
+		{
+			"if": {
 				"properties": {
-					"broker": {
-						"required": ["brokerBranch", "brokerContact"]
+					"sender": {
+						"required": ["broker"]
+					}
+				}
+			},
+			"then": {
+				"properties": {
+					"sender": {
+						"properties": {
+							"broker": {
+								"required": ["brokerBranch", "brokerContact"]
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"sender": {
+						"required": ["insurer"]
+					}
+				}
+			},
+			"then": {
+				"properties": {
+					"sender": {
+						"properties": {
+							"insurer": {
+								"required": ["insurerContact"]
+							}
+						}
 					}
 				}
 			}
 		}
-	}
+	]
 }

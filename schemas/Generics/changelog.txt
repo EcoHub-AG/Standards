@@ -27,8 +27,10 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 - HeaderType (Changed)
     - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
     - require properties "brokerBranch" and "brokerContact" when broker is sender
+    - require properties "insurerContact" when insurer is sender
 - InsurerType (Changed)
     - changed property "companyId" to mandatory
+    - added property "insurerContact"
 - LocalityCorrespondenceType (Removed)
     - Duplicate of LocalityDomicilType.
 - LocalityDomicilType (Renamed)

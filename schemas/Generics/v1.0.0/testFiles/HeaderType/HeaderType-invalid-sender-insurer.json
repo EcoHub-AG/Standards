@@ -3,12 +3,7 @@
     "insurer": {
       "companyId": "CHE-112.444.553",
       "companyName": "Test Insurer",
-      "insurerCode": "901S",
-      "insurerContact": {
-        "contactName": "Broker Account Management West",
-        "contactMail": "info-west@testinsurer.ch",
-        "contactPhone": "+41444200000"
-      }
+      "insurerCode": "901S"
     }
   },
   "recipient": {

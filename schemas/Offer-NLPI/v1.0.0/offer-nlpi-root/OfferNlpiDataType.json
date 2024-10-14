@@ -23,9 +23,6 @@
       },
       "unevaluatedItems": false
     },
-    "insurerContact": {
-      "$ref": "../../../Generics/v1.0.0/ContactType.json"
-    },
     "quotationNo": {
       "$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
     },
@@ -153,7 +150,6 @@
     "timestamp",
     "header",
     "customer",
-    "insurerContact",
     "quotationNo",
     "offerValidToDate",
     "insuranceStartDate",
