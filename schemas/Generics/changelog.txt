@@ -17,7 +17,7 @@ General improvements and necessary changes for Offer NLPI v1.0.0
     - changed property "companyId" to mandatory
     - added properties "brokerBranch" and "brokerContact"
 - CompanyLegalFormType (Changed)
-    - added enum value "Unknown"
+    - added enum values
 - CompanyLegalStatusType (Changed)
     - fixed wrong capitalization of some enum values
 - ContactType (Changed)

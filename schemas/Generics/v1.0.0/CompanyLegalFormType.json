@@ -15,7 +15,14 @@
     "Corporation under public law",
     "Association",
     "Foundation",
-    "Unknown"
+    "Institution (FL)",
+    "Establishment (FL)",
+    "European Company (FL)",
+    "European Economic Interest Grouping (FL)",
+    "Liechtenstein Venture Cooperative - LVC (FL)",
+    "Protected Cell Company (FL)",
+    "Registered trust company (FL)",
+    "Trust - Fiduciary relationship (FL)"
   ],
   "examples": ["Foundation"]
 }
