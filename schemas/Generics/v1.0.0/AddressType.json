@@ -29,7 +29,6 @@
 	"additionalProperties": false,
 	"required": [
 		"streetName",
-		"houseNumber",
 		"zip",
 		"city",
 		"country"

@@ -37,6 +37,7 @@ General improvements and necessary changes for Offer NLPI v1.0.0
     - Duplicate of LocalityDomicilType.
 - LocalityDomicilType (Renamed)
     - Renamed to AddressType
+    - houseNumber is now optional
 - MonetaryAmountType (Added)
 - OrgUnitNumberType (Added)
 - OtherExchangePartnerType (Documentation)
