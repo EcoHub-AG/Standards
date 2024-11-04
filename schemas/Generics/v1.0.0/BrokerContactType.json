@@ -16,8 +16,12 @@
       "description": "Phonenumber of the contact",
       "type": "string"
     },
-    "consultantName": {
-      "description": "Name of the consultant",
+    "consultantSurname": {
+      "description": "Surname of the consultant",
+      "type": "string"
+    },
+    "consultantFirstName": {
+      "description": "First name of the consultant",
       "type": "string"
     },
     "consultantFINMARegisterNo": {
@@ -29,7 +33,8 @@
     "contactName",
     "contactMail",
     "contactPhone",
-    "consultantName",
+    "consultantSurname",
+    "consultantFirstName",
     "consultantFINMARegisterNo"
   ],
   "additionalProperties": false
