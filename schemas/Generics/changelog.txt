@@ -25,6 +25,7 @@ General improvements and necessary changes for Offer NLPI v1.0.0
 - CustomerType (Renamed)
     - Renamed CustomerType to CompanyCustomerType
     - Changed "companyFoundingDate" to "companyFoundingYear"
+    - added property "riskCharacteristic"
 - HeaderType (Changed)
     - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
     - require properties "brokerBranch" and "brokerContact" when broker is sender
