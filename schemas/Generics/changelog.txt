@@ -24,6 +24,7 @@ General improvements and necessary changes for Offer NLPI v1.0.0
     - changed property "contactPhone" to mandatory
 - CustomerType (Renamed)
     - Renamed CustomerType to CompanyCustomerType
+    - Changed "companyFoundingDate" to "companyFoundingYear"
 - HeaderType (Changed)
     - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
     - require properties "brokerBranch" and "brokerContact" when broker is sender

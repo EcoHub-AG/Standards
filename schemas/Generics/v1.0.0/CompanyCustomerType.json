@@ -16,12 +16,13 @@
     "companyLegalStatus": {
       "$ref": "CompanyLegalStatusType.json"
     },
-    "companyFoundingDate": {
-      "description": "Founding date of the company",
+    "companyFoundingYear": {
+      "description": "Founding year of the company",
       "type": "string",
-      "format": "date",
+      "maxLength": 4,
+      "pattern": "^\\d{4}$",
       "examples": [
-        "2024-08-14"
+        "2024"
       ]
     },
     "domicilAddress": {
