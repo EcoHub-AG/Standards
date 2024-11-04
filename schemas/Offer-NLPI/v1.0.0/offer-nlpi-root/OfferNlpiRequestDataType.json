@@ -62,7 +62,7 @@
 			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
 		},
 		"document": {
-			"description": "Document of the tender",
+			"description": "Document (minimum PDF of the quote request)",
 			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
 		}
 	},
