@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "The persons business relation type to the company",
+	"type": "string",
+	"enum": [
+		"BusinessOwner",
+		"Chief Executive Officer",
+		"Associate",
+		"FamilyMembers",
+		"BusinessPartner",
+		"Shareholder",
+		"CooperativeMember",
+		"Other"
+	]
+}

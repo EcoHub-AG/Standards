@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Daily sickness benefit insurance coverage",
+  "type": "object",
+  "properties": {
+    "DSBDaysWaitingNo": {
+      "description": "Daily sickness benefits waiting period duration in days",
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        14,
+        21,
+        30,
+        60,
+        90,
+        120,
+        180,
+        360,
+        365
+      ]
+    },
+    "DSBCalculationBasis": {
+      "description": "Daily sickness benefit calculation basis",
+      "type": "string",
+      "enum": [
+        "case",
+        "working year",
+        "calendar year",
+        "cumulativ"
+      ]
+    },
+    "DSBBenefitPeriod": {
+      "$ref": "BenefitPeriodType.json"
+    },
+    "DSBBenefitAmountPercentage": {
+      "description": "Daily sickness benefit amount in percentage",
+      "type": "integer",
+      "enum": [
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        87,
+        90,
+        92,
+        95,
+        97,
+        100
+      ]
+    },
+    "DSBLegalBasis": {
+      "description": "Daily sickness benefits legal basis",
+      "type": "string",
+      "enum": [
+        "VVG",
+        "KVG"
+      ]
+    }
+  },
+  "required": [
+    "DSBDaysWaitingNo",
+    "DSBCalculationBasis",
+    "DSBBenefitPeriod",
+    "DSBLegalBasis",
+    "DSBBenefitAmountPercentage"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,63 @@
+### Version 0.3.0 (29.05.2024)
+Initial release version
+
+### Version 0.4.0 (05.11.2024)
+General improvements and necessary changes for Offer NLPI v0.4.0
+
+- AdditionalOptionsType (Changed)
+    - Inlined definition for array items
+- AdditionalOptionType (Removed)
+- AddressType (Renamed)
+    - Renamed to AddressDefinitions
+- AgencyType (Removed)
+- BenefitPeriodType (Removed)
+    - Moved type to Offer NLPI standard
+- BrokerContactType (Added)
+- BrokerType (Changed)
+    - changed property "companyId" to mandatory
+    - added properties "brokerBranch" and "brokerContact"
+- CompanyLegalFormType (Changed)
+    - added enum values
+- CompanyLegalStatusType (Changed)
+    - fixed wrong capitalization of some enum values
+- ContactType (Changed)
+    - changed property "contactPhone" to mandatory
+- CustomerType (Renamed)
+    - Renamed CustomerType to CompanyCustomerType
+    - Changed "companyFoundingDate" to "companyFoundingYear"
+    - added property "riskCharacteristic"
+- HeaderType (Changed)
+    - Extracted content of properties "recipient" and "sender" to "SenderReceiverType"
+    - require properties "brokerBranch" and "brokerContact" when broker is sender
+    - require properties "insurerContact" when insurer is sender
+- InsurerType (Changed)
+    - changed property "companyId" to mandatory
+    - added property "insurerContact"
+- LocalityCorrespondenceType (Removed)
+    - Duplicate of LocalityDomicilType.
+- LocalityDomicilType (Renamed)
+    - Renamed to AddressType
+    - houseNumber is now optional
+- MonetaryAmountType (Added)
+- OrgUnitNumberType (Added)
+- OtherExchangePartnerType (Documentation)
+- PersonGroupIdType (Renamed)
+    - Renamed to be used as a more general UuidType.
+- SenderReceiverType (Added)
+- TimeStampType (Documentation)
+    - Added example
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

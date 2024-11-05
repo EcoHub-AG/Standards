@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"deathCapitalInsured": {
+			"type": "boolean",
+			"description": "Death capital insured?"
+		},
+		"deathCapitalUVG": {
+			"description": "Death capital x times the annual salary",
+			"$ref": "YearlySalaryMultipleType.json"
+		},
+		"deathCapitalSurplus": {
+			"description": "Death capital x times the surplus annual salary",
+			"$ref": "YearlySalaryOptionalMultipleType.json"
+		},
+		"bridgingCapital": {
+			"description": "Bridging capital in addition to the lump-sum death benefit: x times the AHV salary",
+			"$ref": "AHVSalaryMultipleType.json"
+		},
+		"wageSupplement": {
+			"description": "Wage supplement. Only available for personGroups.",
+			"type": "boolean"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"deathCapitalInsured"
+	],
+	"if": {
+		"properties": {
+			"deathCapitalInsured": {
+				"const": true
+			}
+		}
+	},
+	"then": {
+		"required": [
+			"deathCapitalUVG",
+			"deathCapitalSurplus",
+			"bridgingCapital"
+		]
+	}
+}

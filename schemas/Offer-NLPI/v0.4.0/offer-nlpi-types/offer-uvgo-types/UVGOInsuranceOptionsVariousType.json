@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Various insurance options",
+	"type": "object",
+	"properties": {
+		"annualCancellation": {
+			"description": "Annual right of termination",
+			"type": "boolean"
+		},
+		"typePayInstalment": {
+			"$ref": "../PayInstalmentType.json"
+		},
+		"contractExtensionAfterExpiration": {
+			"type": "boolean",
+			"description": "Contract extension by 1 year after expiration"
+		}
+
+
+	},
+    "additionalProperties": false,
+	"required": [
+		"annualCancellation",
+		"typePayInstalment",
+		"contractExtensionAfterExpiration"
+	]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
+  "properties": {
+    "personGroups": {
+      "$ref": "UVGZPersonGroupsType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumPersonGroup"
+            ]
+          }
+        }
+      ]
+    },
+    "fixedPayrolls": {
+      "$ref": "UVGZFixedPayrollsType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumFixedPayroll"
+            ]
+          }
+        }
+      ]
+    },
+    "insuranceOptionsVarious": {
+      "$ref": "../InsuranceOptionsVariousType.json",
+      "if": {
+        "surplusParticipation": {
+          "const": true
+        }
+      },
+      "then": {
+        "required": [
+          "surplusParticipationPremiumRate",
+          "surplusParticipationRate",
+          "surplusParticipationPeriodYears"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "insuranceOptionsVarious"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "personGroups"
+      ]
+    },
+    {
+      "required": [
+        "fixedPayrolls"
+      ]
+    }
+  ]
+}

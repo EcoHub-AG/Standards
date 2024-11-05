@@ -1,0 +1,39 @@
+[
+  {
+    "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+    "role": "BusinessOwner",
+    "firstname": "John",
+    "surname": "Doe",
+    "birthDate": "1980-05-15",
+    "gender": "male",
+    "fixedPayroll": 150000.00,
+    "surplusPayroll": 50000.00,
+    "coverage": {
+      "deathCapital": {
+        "deathCapitalInsured": true,
+        "deathCapitalUVG": "5-facher Jahreslohn",
+        "deathCapitalSurplus": "3-facher Jahreslohn",
+        "bridgingCapital": "2-facher AHV-Lohn",
+        "wageSupplement": true
+      },
+      "disabilityCapital": {
+        "disabilityCapitalInsured": false
+      },
+      "dailyAllowance": {
+        "dailyAllowanceInsured": false
+      },
+      "dailyHospitalAllowance": {
+        "dailyHospitalAllowanceInsured": "ja, in % des Jahreslohnes",
+        "dailyHospitalAnnualSalary": 20
+      },
+      "medicalExpenses": "Privatabteilung",
+      "differentialCover": true,
+      "disabilityPension": {
+        "pensionInsured": false
+      },
+      "survivorsPension": {
+        "pensionInsured": false
+      }
+    }
+  }
+]

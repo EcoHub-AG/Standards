@@ -1,0 +1,7 @@
+{
+  "insuranceOptionsVarious": {
+    "annualCancellation": true,
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
+  }
+}

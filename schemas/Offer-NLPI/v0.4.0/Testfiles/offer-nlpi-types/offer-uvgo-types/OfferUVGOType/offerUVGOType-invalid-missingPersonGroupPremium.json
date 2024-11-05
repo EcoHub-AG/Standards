@@ -1,0 +1,17 @@
+{
+  "personGroup": [
+    {
+      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+      "numberOfPersonsBU": 50,
+      "numberOfPersonsNBU": 30,
+      "payrollBU": 2500000.00,
+      "payrollNBU": 1500000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG"
+    }
+  ],
+  "insuranceOptionsVarious": {
+    "annualCancellation": true,
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
+  }
+}

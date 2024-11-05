@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Group(s) of persons",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personGroupId": {
+        "description": "ID of the person group",
+        "$ref": "../../../../Generics/v1.0.0/UuidType.json"
+      },
+      "numberOfPersonsTotal": {
+        "description": "Total number of employees",
+        "type": "integer"
+      },
+      "payrollTotal": {
+        "description": "Total payroll of all employees",
+        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "maximumPayrollAmount": {
+        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "surplusSalaryTotal": {
+        "description": "Payroll: Surplus salary total in CHF",
+        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+      },
+      "coverage": {
+        "description": "Coverage of the person groups",
+        "$ref": "UVGZCoverageType.json",
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "deathCapital": {
+                  "properties": {
+                    "deathCapitalInsured": {
+                      "const": true
+                    }
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "deathCapital": {
+                  "required": [
+                    "wageSupplement"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "properties": {
+              "dailyAllowance": {
+                "not": {
+                  "required": [
+                    "dailyAllowanceRelapses"
+                  ]
+                }
+              },
+              "survivorsPension": {
+                "not": {
+                  "required": [
+                    "survivorsPartnerPension"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "premiumPersonGroup": {
+        "description": "Must be set for offer and omitted for request.",
+        "type": "object",
+        "properties": {
+          "medicalExpensesPremiumRate": {
+            "description": "Medical expenses premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "dailyAllowanceNetPremiumRate": {
+            "description": "Daily allowance premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "dailyHospitalAllowancePremiumRate": {
+            "description": "Daily hospital premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "disabilityCapitalPremiumRate": {
+            "description": "Disability capital lump sum premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "disabilityCapitalSurplusSalaryPremiumRate": {
+            "description": "Disability capital lump sum  surplus salary premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "disabilityPensionPremiumRate": {
+            "description": "Disability pension premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "disabilityPensionSalarySurplusPremiumRate": {
+            "description": "Disability pension salary surplus premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "deathCapitalPremiumRate": {
+            "description": "Lump-sum death benefit premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "deathCapitalSurplusSalaryPremiumRate": {
+            "description": "Lump-sum death benefit surplus salary premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "survivorsPensionSalaryPremiumRate": {
+            "description": "Survivors' pension premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "survivorsPensionSalarySurplusPremiumRate": {
+            "description": "Survivors' pension surplus salary premium rate in  ‰",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "premiumDiffCoverage": {
+            "description": "Premium for differential cover in CHF",
+            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+          },
+          "finalPremiumPersonGroup": {
+            "description": "Premium for group of persons in CHF",
+            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+          }
+        },
+        "required": [
+          "medicalExpensesPremiumRate",
+          "dailyAllowanceNetPremiumRate",
+          "dailyHospitalAllowancePremiumRate",
+          "disabilityCapitalPremiumRate",
+          "disabilityCapitalSurplusSalaryPremiumRate",
+          "disabilityPensionPremiumRate",
+          "disabilityPensionSalarySurplusPremiumRate",
+          "deathCapitalPremiumRate",
+          "deathCapitalSurplusSalaryPremiumRate",
+          "survivorsPensionSalaryPremiumRate",
+          "survivorsPensionSalarySurplusPremiumRate",
+          "premiumDiffCoverage",
+          "finalPremiumPersonGroup"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "personGroupId",
+      "numberOfPersonsTotal",
+      "payrollTotal",
+      "maximumPayrollAmount",
+      "surplusSalaryTotal",
+      "coverage"
+    ],
+    "additionalProperties": false
+  },
+  "additionalItems": false
+}

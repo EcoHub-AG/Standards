@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Domicil address type",
+	"name": "AddressType",
+	"type": "object",
+	"properties": {
+		"streetName": {
+			"$ref": "AddressDefinitions.json#/definitions/streetNameDef"
+		},
+		"houseNumber": {
+			"$ref": "AddressDefinitions.json#/definitions/houseNumberDef"
+		},
+		"adressExtension": {
+			"$ref": "AddressDefinitions.json#/definitions/adressExtensionDef"
+		},
+		"postOfficeBox": {
+			"$ref": "AddressDefinitions.json#/definitions/postOfficeBoxDef"
+		},
+		"zip": {
+			"$ref": "AddressDefinitions.json#/definitions/zipDef"
+		},
+		"city": {
+			"$ref": "AddressDefinitions.json#/definitions/cityDef"
+		},
+		"country": {
+			"$ref": "CountryISOCodeType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"streetName",
+		"zip",
+		"city",
+		"country"
+	]
+}

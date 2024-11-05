@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "Daily sickness benefits",
+  "properties": {
+    "personGroups": {
+      "$ref": "DSBPersonGroupsType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumPersonGroup"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "fixedPayrolls": {
+      "$ref": "DSBFixedPayrollsType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumFixedPayroll"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "insuranceOptions": {
+      "$ref": "DSBInsuranceOptionsType.json",
+      "allOf": [
+        {
+          "properties": {
+            "insuranceOptionsVarious": {
+              "not": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "personGroups"
+      ]
+    },
+    {
+      "required": [
+        "fixedPayrolls"
+      ]
+    }
+  ],
+  "additionalProperties": false,
+  "unevaluatedProperties": false
+}

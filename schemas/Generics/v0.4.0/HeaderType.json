@@ -1,0 +1,73 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Standard header informations",
+	"type": "object",
+	"properties": {
+		"recipient": {
+			"$ref": "SenderReceiverType.json"
+		},
+		"sender": {
+			"$ref": "SenderReceiverType.json"
+		},
+		"standard": {
+			"type": "string",
+			"description": "the URI should contain the Standard, type, subtype and version of the json document",
+			"minLength": 1,
+			"format": "uri-reference",
+			"examples": [
+				"http://www.igb2b.ch/offer/nlpi/request/0.2.0",
+				"http://www.igb2b.ch/offer/nlpi/offer/0.2.0",
+				"http://www.igb2b.ch/offer/nlpi/feedback/0.2.0",
+				"http://www.igb2b.ch/offer/nlpi/conclusiondecision/0.2.0"
+			]
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"sender",
+		"recipient",
+		"standard"
+	],
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"sender": {
+						"required": ["broker"]
+					}
+				}
+			},
+			"then": {
+				"properties": {
+					"sender": {
+						"properties": {
+							"broker": {
+								"required": ["brokerBranch", "brokerContact"]
+							}
+						}
+					}
+				}
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"sender": {
+						"required": ["insurer"]
+					}
+				}
+			},
+			"then": {
+				"properties": {
+					"sender": {
+						"properties": {
+							"insurer": {
+								"required": ["insurerContact"]
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

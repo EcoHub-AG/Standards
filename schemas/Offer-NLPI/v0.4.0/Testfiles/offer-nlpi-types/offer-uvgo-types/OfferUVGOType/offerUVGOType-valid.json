@@ -1,0 +1,107 @@
+{
+  "personGroup": [
+    {
+      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+      "numberOfPersonsBU": 50,
+      "numberOfPersonsNBU": 30,
+      "payrollBU": 2500000.00,
+      "payrollNBU": 1500000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG",
+      "premiumPersonGroup": {
+        "premiumBU": {
+          "hazardClass": "A",
+          "hazardSubClass": "A1",
+          "premiumRiskRate": 2.500,
+          "costAdminRate": 0.750,
+          "sharingCostRate": 0.250,
+          "accidentPreventionContributionRate": 0.100,
+          "finalPremiumRate": 3.600,
+          "totalPremium": 10000.00
+        },
+        "premiumNBU": {
+          "hazardClass": "A",
+          "hazardSubClass": "A1",
+          "premiumRiskRate": 2.500,
+          "costAdminRate": 0.750,
+          "sharingCostRate": 0.250,
+          "accidentPreventionContributionRate": 0.100,
+          "finalPremiumRate": 3.600,
+          "totalPremium": 10000.00
+        }
+      }
+    }
+  ],
+  "voluntarilyInsuredPersons": [
+    {
+      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+      "role": "BusinessOwner",
+      "firstname": "John",
+      "surname": "Doe",
+      "birthDate": "1980-05-15",
+      "gender": "male",
+      "payroll": 120000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG",
+      "premiumInsuredPerson": {
+        "hazardClass": "A",
+        "hazardSubClass": "A1",
+        "finalPremiumRate": 3.600,
+        "totalPremium": 10000.00
+      }
+    },
+    {
+      "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
+      "role": "FamilyMembers",
+      "firstname": "Jane",
+      "surname": "Doe",
+      "birthDate": "1982-09-22",
+      "gender": "female",
+      "payroll": 90000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung OUFL",
+      "premiumInsuredPerson": {
+        "hazardClass": "A",
+        "hazardSubClass": "A1",
+        "finalPremiumRate": 3.600,
+        "totalPremium": 10000.00
+      }
+    }
+  ],
+  "personsConnectionEmployer": [
+    {
+      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+      "role": "BusinessPartner",
+      "firstname": "John",
+      "surname": "Doe",
+      "birthDate": "1980-05-15",
+      "gender": "male",
+      "payroll": 120000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG",
+      "premiumInsuredPerson": {
+        "hazardClass": "A",
+        "hazardSubClass": "A1",
+        "finalPremiumRate": 3.600,
+        "totalPremium": 10000.00
+      }
+    },
+    {
+      "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
+      "role": "FamilyMembers",
+      "firstname": "Jane",
+      "surname": "Doe",
+      "birthDate": "1982-09-22",
+      "gender": "female",
+      "payroll": 90000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung OUFL",
+      "premiumInsuredPerson": {
+        "hazardClass": "A",
+        "hazardSubClass": "A1",
+        "finalPremiumRate": 3.600,
+        "totalPremium": 10000.00
+      }
+    }
+  ],
+  "insuranceOptionsVarious": {
+    "annualCancellation": true,
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
+  }
+}

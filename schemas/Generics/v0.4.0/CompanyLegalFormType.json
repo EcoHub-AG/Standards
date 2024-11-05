@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Legal form of the company",
+  "name": "CompanyLegalFormType",
+  "type": "string",
+  "enum": [
+    "Incorporated company",
+    "Sole proprietorship",
+    "Simple partnership",
+    "Cooperative",
+    "Limited liability company",
+    "General partnership",
+    "Limited partnership",
+    "Limited commercial partnership",
+    "Corporation under public law",
+    "Association",
+    "Foundation",
+    "Institution (FL)",
+    "Establishment (FL)",
+    "European Company (FL)",
+    "European Economic Interest Grouping (FL)",
+    "Liechtenstein Venture Cooperative - LVC (FL)",
+    "Protected Cell Company (FL)",
+    "Registered trust company (FL)",
+    "Trust - Fiduciary relationship (FL)"
+  ],
+  "examples": ["Foundation"]
+}
