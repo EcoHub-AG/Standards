@@ -42,16 +42,17 @@ jobs:
         id: api_info
         run: |
           TAG_NAME=${GITHUB_REF#refs/tags/}
-          if [[ $TAG_NAME == Offer-NLPI-v* ]]; then
+          if [[ $TAG_NAME == offer-nlpi-v* ]]; then
             echo "offerNlpi=true" >> $GITHUB_OUTPUT
             echo "API_NAME=Offer-NLPI" >> $GITHUB_OUTPUT
-            echo "API_VERSION=${TAG_NAME#Offer-NLPI-v}" >> $GITHUB_OUTPUT
+            echo "API_VERSION=${TAG_NAME#offer-nlpi-v}" >> $GITHUB_OUTPUT
           else
             echo "Unknown API tag format"
             exit 1
           fi
 
       - name: Generate documentation
+        if: steps.api_info.outputs.offerNlpi == 'true'
         run: |
           API_NAME=${{ steps.api_info.outputs.API_NAME }}
           API_VERSION=${{ steps.api_info.outputs.API_VERSION }}
