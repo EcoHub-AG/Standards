@@ -24,7 +24,7 @@ jobs:
 
       - name: Only continue if tag is on main branch
         run: |
-          if ! git branch -r --contains ${{ github.ref }} | grep -q "origin/main"; then
+          if ! git branch -r --contains ${{ github.ref }} | grep -q "origin/offer-nlpi-v1.0.0"; then
             echo "Tag is not on main branch. Exiting."
             exit 0  # Exit with success code to stop the workflow without failing
           fi
