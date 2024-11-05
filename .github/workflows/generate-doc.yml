@@ -1,0 +1,68 @@
+name: Generate documentation
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on new tags following the naming pattern
+  push:
+    tags:
+      - '**'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for all tags and branches
+
+      - name: Only continue if tag is on main branch
+        run: |
+          if ! git branch -r --contains ${{ github.ref }} | grep -q "origin/main"; then
+            echo "Tag is not on main branch. Exiting."
+            exit 0  # Exit with success code to stop the workflow without failing
+          fi
+          echo "Tag is on main branch. Proceeding with the workflow."
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install JSON Schema for Humans
+        run: pip install json-schema-for-humans
+
+      - name: Determine API and version
+        id: api_info
+        run: |
+          TAG_NAME=${GITHUB_REF#refs/tags/}
+          if [[ $TAG_NAME == Offer-NLPI-v* ]]; then
+            echo "offerNlpi=true" >> $GITHUB_OUTPUT
+            echo "API_NAME=Offer-NLPI" >> $GITHUB_OUTPUT
+            echo "API_VERSION=${TAG_NAME#Offer-NLPI-v}" >> $GITHUB_OUTPUT
+          else
+            echo "Unknown API tag format"
+            exit 1
+          fi
+
+      - name: Generate documentation
+        run: |
+          API_NAME=${{ steps.api_info.outputs.API_NAME }}
+          API_VERSION=${{ steps.api_info.outputs.API_VERSION }}
+          OUTPUT_DIR="docs/${API_NAME}/${API_VERSION}"
+          
+          mkdir -p "${OUTPUT_DIR}"
+          generate-schema-doc "schemas/Offer-NLPI/v${API_VERSION}/offer-nlpi-root" "${OUTPUT_DIR}"
+
+
+      # Commit all changed files back to the repository
+      - name: Commit generated html output
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: main
