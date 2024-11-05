@@ -18,17 +18,24 @@ jobs:
       - name: Create custom zip files
         id: create_zips
         run: |
-          zip_files=""
-          for config in sparse-checkout-configs/*.txt; do
-            name=$(basename "$config" .txt)
+          # Extract the tag name from the GitHub ref
+          TAG_NAME=${GITHUB_REF#refs/tags/}
+          
+          # Find the matching config file
+          CONFIG_FILE="sparse-checkout-configs/${TAG_NAME}.txt"
+          
+          if [ -f "$CONFIG_FILE" ]; then
+            echo "Creating zip for $TAG_NAME"
             git config core.sparseCheckout true
-            cp "$config" .git/info/sparse-checkout
+            cp "$CONFIG_FILE" .git/info/sparse-checkout
             git read-tree -mu HEAD
-            zip -r "${name}.zip" . -x ".git/*" "config/*"
-            echo "Created $name.zip"
-            zip_files+="${name}.zip "
-          done
-          echo "::set-output name=zip_files::$zip_files"
+            zip -r "${TAG_NAME}.zip" . -x ".git/*" "config/*"
+            echo "Created ${TAG_NAME}.zip"
+            echo "::set-output name=zip_file::${TAG_NAME}.zip"
+          else
+            echo "No matching config file found for tag $TAG_NAME"
+            exit 1
+          fi
 
       - name: Upload release assets
         uses: actions/upload-release-asset@v1
@@ -36,6 +43,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./${{ steps.create_zips.outputs.zip_files }}
-          asset_name: ${{ steps.create_zips.outputs.zip_files }}
+          asset_path: ./${{ steps.create_zips.outputs.zip_file }}
+          asset_name: ${{ steps.create_zips.outputs.zip_file }}
           asset_content_type: application/zip
