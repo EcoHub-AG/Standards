@@ -45,7 +45,7 @@
         "$ref": "PayrollBasisType.json"
       },
       "maximumPayrollAmount": {
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       }
     },
     "required": [

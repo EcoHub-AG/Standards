@@ -4,13 +4,13 @@
 	"description": "Schema for a request for an offer in the Offer NLPI process",
 	"properties": {
 		"processIdentificationNo": {
-			"$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
+			"$ref": "../../../Generics/v0.4.0/ProcessIdentificationNoType.json"
 		},
 		"timestamp": {
-			"$ref": "../../../Generics/v1.0.0/TimestampType.json"
+			"$ref": "../../../Generics/v0.4.0/TimestampType.json"
 		},
 		"header": {
-			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
+			"$ref": "../../../Generics/v0.4.0/HeaderType.json"
 		},
 		"customer": {
 			"$ref": "../offer-nlpi-types/OfferCustomerType.json"
@@ -29,11 +29,11 @@
 			"description": "Date of offer by which the insurer must submit the offer"
 		},
 		"offerLanguage": {
-			"$ref": "../../../Generics/v1.0.0/LanguageType.json",
+			"$ref": "../../../Generics/v0.4.0/LanguageType.json",
 			"description": "Language in which the offer must be made out"
 		},
 		"currency": {
-			"$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
+			"$ref": "../../../Generics/v0.4.0/CurrencyISOCodeType.json"
 		},
 		"previousInsurer": {
 			"description": "Previous insurer",
@@ -59,11 +59,11 @@
 			"$ref": "../offer-nlpi-types/offer-uvgz-types/OfferRequestUVGZType.json"
 		},
 		"comment": {
-			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
+			"$ref": "../../../Generics/v0.4.0/RestrictedStringType.json"
 		},
 		"document": {
 			"description": "Document (minimum PDF of the quote request)",
-			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
+			"$ref": "../../../Generics/v0.4.0/MultiFileType.json"
 		}
 	},
 	"additionalProperties": false,

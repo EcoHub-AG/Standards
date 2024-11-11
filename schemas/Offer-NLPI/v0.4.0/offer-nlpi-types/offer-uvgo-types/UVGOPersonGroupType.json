@@ -8,7 +8,7 @@
     "properties": {
       "personGroupId": {
         "description": "ID of the person group",
-        "$ref": "../../../../Generics/v1.0.0/UuidType.json"
+        "$ref": "../../../../Generics/v0.4.0/UuidType.json"
       },
       "numberOfPersonsBU": {
         "description": "Number of employees OA. If unknown, value 0 can be specified.",
@@ -20,11 +20,11 @@
       },
       "payrollBU": {
         "description": "Accident insurance total payroll of all employees OA",
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "payrollNBU": {
         "description": "Accident insurance total payroll of all employees NOA",
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "coverage": {
         "description": "Coverage of the person groups",

@@ -17,7 +17,7 @@
 						"$ref": "InsurerCodeType.json"
 					},
 					"companyName": {
-						"$ref": "../../../Generics/v1.0.0/CompanyNameType.json"
+						"$ref": "../../../Generics/v0.4.0/CompanyNameType.json"
 					},
 					"contract": {
 						"description": "Contract",
@@ -39,7 +39,7 @@
 								},
 								"claimsExperienceDocument": {
 									"description": "Claims experience document",
-									"$ref": "../../../Generics/v1.0.0/FileType.json"
+									"$ref": "../../../Generics/v0.4.0/FileType.json"
 								}
 							},
 							"required": [

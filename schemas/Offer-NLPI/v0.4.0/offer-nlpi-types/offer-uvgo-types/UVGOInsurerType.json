@@ -17,11 +17,11 @@
     },
     "premiumBU": {
       "description": "Final premium rate BU and NBU mandatory",
-      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+      "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
     },
     "premiumNBU": {
       "description": "Final premium rate BU and NBU mandatory",
-      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+      "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
     }
   },
   "required": [

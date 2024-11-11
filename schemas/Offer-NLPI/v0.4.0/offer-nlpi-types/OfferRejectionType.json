@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "offerRejectionReason": {
-	  "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
+	  "$ref": "../../../Generics/v0.4.0/RestrictedStringType.json",
       "description": "Reason for rejection of offer"
     }
   },

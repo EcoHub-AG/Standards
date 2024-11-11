@@ -19,7 +19,7 @@
 			"$ref": "PayInstalmentType.json"
 		},
 		"additionalOptions": {
-			"$ref": "../../../Generics/v1.0.0/AdditionalOptionsType.json"
+			"$ref": "../../../Generics/v0.4.0/AdditionalOptionsType.json"
 		},
 		"surplusParticipation": {
 			"description": "Surplus participation",

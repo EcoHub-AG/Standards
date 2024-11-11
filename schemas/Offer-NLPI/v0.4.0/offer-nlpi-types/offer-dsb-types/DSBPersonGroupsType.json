@@ -8,7 +8,7 @@
     "properties": {
       "personGroupId": {
         "description": "ID of the person group",
-        "$ref": "../../../../Generics/v1.0.0/UuidType.json"
+        "$ref": "../../../../Generics/v0.4.0/UuidType.json"
       },
       "personGroupDescription": {
         "description": "Name of the group of persons",
@@ -28,18 +28,18 @@
       },
       "payrollFemale": {
         "description": "Daily sickness benefits salary total for women",
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "payrollMale": {
         "description": "Daily sickness benefits salary total for men",
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "payrollTotal": {
         "description": "Total daily sickness benefits salary for men and women",
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "maximumPayrollAmount": {
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "averageAgePersonGroup": {
         "description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then or equal to 4",

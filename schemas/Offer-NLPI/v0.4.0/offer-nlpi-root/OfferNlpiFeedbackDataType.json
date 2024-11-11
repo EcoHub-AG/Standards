@@ -1,22 +1,22 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
-	"description": "Offer NLPI feedback version 0.3.0",
+	"description": "Offer NLPI feedback",
 	"type": "object",
 	"properties": {
 		"processIdentificationNo": {
-			"$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
+			"$ref": "../../../Generics/v0.4.0/ProcessIdentificationNoType.json"
 		},
 		"timestamp": {
-			"$ref": "../../../Generics/v1.0.0/TimestampType.json"
+			"$ref": "../../../Generics/v0.4.0/TimestampType.json"
 		},
 		"header": {
-			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
+			"$ref": "../../../Generics/v0.4.0/HeaderType.json"
 		},
 		"customer": {
-			"$ref": "../../../Generics/v1.0.0/CompanyCustomerType.json"
+			"$ref": "../../../Generics/v0.4.0/CompanyCustomerType.json"
 		},
 		"quotationNo": {
-			"$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
+			"$ref": "../../../Generics/v0.4.0/QuotationNoType.json"
 		},
 		"offerDecision": {
 			"description": "Decision whether an offer is accepted or rejected",
@@ -48,11 +48,11 @@
 			"additionalProperties": false
 		},
 		"offerFeedbackMessage": {
-			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
+			"$ref": "../../../Generics/v0.4.0/RestrictedStringType.json",
 			"description": "Feedback text for the offer acceptance or rejection decision"
 		},
 		"brokerContact": {
-			"$ref": "../../../Generics/v1.0.0/ContactType.json"
+			"$ref": "../../../Generics/v0.4.0/ContactType.json"
 		}
 	},
 	"additionalProperties": false,

@@ -16,20 +16,20 @@
 				"$ref": "../BusinessRelationPersonType.json"
 			},
 			"firstname": {
-				"$ref": "../../../../Generics/v1.0.0/FirstNameType.json"
+				"$ref": "../../../../Generics/v0.4.0/FirstNameType.json"
 			},
 			"surname": {
-				"$ref": "../../../../Generics/v1.0.0/SurNameType.json"
+				"$ref": "../../../../Generics/v0.4.0/SurNameType.json"
 			},
 			"birthDate": {
-				"$ref": "../../../../Generics/v1.0.0/BirthDateType.json"
+				"$ref": "../../../../Generics/v0.4.0/BirthDateType.json"
 			},
 			"gender": {
-				"$ref": "../../../../Generics/v1.0.0/GenderType.json"
+				"$ref": "../../../../Generics/v0.4.0/GenderType.json"
 			},
 			"fixedPayroll": {
 				"description": "Fixed payroll amount",
-				"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+				"$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
 			},
 			"benefitCoverage": {
 				"type": "string",

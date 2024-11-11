@@ -8,7 +8,7 @@
     "properties": {
       "personGroupId": {
         "description": "ID of the person group",
-        "$ref": "../../../../Generics/v1.0.0/UuidType.json"
+        "$ref": "../../../../Generics/v0.4.0/UuidType.json"
       },
       "numberOfPersonsTotal": {
         "description": "Total number of employees",
@@ -16,14 +16,14 @@
       },
       "payrollTotal": {
         "description": "Total payroll of all employees",
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "maximumPayrollAmount": {
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "surplusSalaryTotal": {
         "description": "Payroll: Surplus salary total in CHF",
-        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
       },
       "coverage": {
         "description": "Coverage of the person groups",
@@ -132,11 +132,11 @@
           },
           "premiumDiffCoverage": {
             "description": "Premium for differential cover in CHF",
-            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+            "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
           },
           "finalPremiumPersonGroup": {
             "description": "Premium for group of persons in CHF",
-            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
+            "$ref": "../../../../Generics/v0.4.0/MonetaryAmountType.json"
           }
         },
         "required": [
