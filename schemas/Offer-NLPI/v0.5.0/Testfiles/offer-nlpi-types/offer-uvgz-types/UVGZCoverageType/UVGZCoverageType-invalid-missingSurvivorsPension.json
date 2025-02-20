@@ -1,0 +1,43 @@
+{
+  "deathCapital": {
+    "deathCapitalInsured": true,
+    "deathCapitalUVG": "3-facher Jahreslohn",
+    "deathCapitalSurplus": "2-facher Jahreslohn",
+    "bridgingCapital": "1-facher AHV-Lohn",
+    "wageSupplement": true
+  },
+  "disabilityCapital": {
+    "disabilityCapitalInsured": true,
+    "integrityCapital": true,
+    "disabilityCapitalUVG": "4-facher Jahreslohn",
+    "disabilityCapitalSurplus": "3-facher Jahreslohn",
+    "disabilityCapitalProg": "225%",
+    "bridgingCapital": "2-facher AHV-Lohn"
+  },
+  "dailyAllowance": {
+    "dailyAllowanceInsured": true,
+    "dailyAllowance": 90,
+    "dailyAllowanceWaitingPeriod": 2,
+    "dailyAllowanceFirstCoupleDaysInsured": true,
+    "dailyAllowanceFirstCoupleDays": 80,
+    "dailyAllowanceSurplusInsured": true,
+    "dailyAllowanceSurplus": 90,
+    "dailyAllowanceSurplusWaitingPeriod": 3
+  },
+  "dailyHospitalAllowance": {
+    "dailyHospitalAllowanceInsured": "ja, fester Betrag in CHF",
+    "dailyHospitalAllowanceFixAmount": 100.00
+  },
+  "medicalExpenses": "Halbprivatabteilung",
+  "differentialCover": true,
+  "disabilityPension": {
+    "pensionInsured": true,
+    "pensionPercent": 80,
+    "benefitPeriod": "bis AHV-Alter"
+  },
+  "survivorsPension": {
+    "pensionInsured": true,
+    "pensionPercent": 70,
+    "survivorsPartnerPension": true
+  }
+}

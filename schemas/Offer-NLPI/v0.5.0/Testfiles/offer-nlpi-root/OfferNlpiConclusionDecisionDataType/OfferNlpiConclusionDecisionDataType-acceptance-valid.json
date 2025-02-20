@@ -1,0 +1,61 @@
+{
+	"processIdentificationNo": "00000000-0000-0000-0000-000000000001",
+	"timestamp": "2024-01-16T11:22:47.0",
+	"header": {
+		"recipient": {
+			"broker": {
+				"brokerRegisterNo": "CHE-FINMA-12345",
+				"companyId": "CHE-120.330.754",
+				"companyName": "Test Broker"
+			}
+		},
+		"sender": {
+			"insurer": {
+				"companyId": "CHE-112.444.553",
+				"companyName": "Test Insurer",
+				"insurerCode": "901S",
+				"insurerContact": {
+					"contactName": "Broker Account Management West",
+					"contactMail": "info-west@testinsurer.ch",
+					"contactPhone": "+41444200000"
+				}
+			}
+		},
+		"standard": "http://www.igb2b.ch/offer/nlpi/offer/0.2.3"
+	},
+	"customer": {
+		"companyName": "Coiffeur Verband Schweiz",
+		"companyId": "CHE-105.841.533",
+		"companyLegalForm": "Association",
+		"companyLegalStatus": "active",
+		"companyFoundingYear": "2022",
+		"riskCharacteristic": "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)",
+		"domicilAddress": {
+			"zip": "8000",
+			"city": "Zürich",
+			"country": "CH",
+			"streetName": "Zollstrasse",
+			"houseNumber": "1",
+			"postOfficeBox": "501",
+			"adressExtension": "c/o Dachverband Kleingewerbe"
+		},
+		"isDomicilAddressCorrespondenceAddress": false,
+		"correspondenceAddress": {
+			"zip": "8000",
+			"city": "Zürich",
+			"country": "CH",
+			"streetName": "Zollstrasse",
+			"houseNumber": "1",
+			"postOfficeBox": "501",
+			"adressExtension": "c/o Dachverband Kleingewerbe"
+		}
+	},
+	"offerConclusionDecision": "offerConclusionDenial",
+	"offerConclusionDenialReason": "Just testing the if condition of the json schema",
+	"offerConclusionDecisionMessage": "Insurer comfirms the closed offer. Contract in preparation.",
+	"insurerContact": {
+		"contactName": "Broker Account Management West",
+		"contactMail": "info-west@testinsurer.ch",
+		"contactPhone": "+41444200000"
+	}
+}

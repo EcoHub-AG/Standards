@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
+  "properties": {
+    "personGroup": {
+      "$ref": "UVGOPersonGroupType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumPersonGroup"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "voluntarilyInsuredPersons": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {
+        "$ref": "UVGOFixedPayrollsType.json",
+        "allOf": [
+          {
+            "not": {
+              "required": [
+                "premiumInsuredPerson"
+              ]
+            }
+          },
+          {
+            "properties": {
+              "role": {
+                "enum": [
+                  "BusinessOwner",
+                  "FamilyMembers"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "personsConnectionEmployer": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "UVGOFixedPayrollsType.json",
+        "allOf": [
+          {
+            "not": {
+              "required": [
+                "premiumInsuredPerson"
+              ]
+            }
+          },
+          {
+            "properties": {
+              "role": {
+                "enum": [
+                  "BusinessPartner",
+                  "Shareholder",
+                  "CooperativeMember",
+                  "FamilyMembers"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "insuranceOptionsVarious": {
+      "$ref": "UVGOInsuranceOptionsVariousType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "insuranceOptionsVarious"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "personGroup"
+      ]
+    },
+    {
+      "required": [
+        "voluntarilyInsuredPersons"
+      ]
+    },
+    {
+      "required": [
+        "personsConnectionEmployer"
+      ]
+    }
+  ]
+}

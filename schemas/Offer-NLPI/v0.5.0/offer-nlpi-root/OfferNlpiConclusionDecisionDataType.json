@@ -1,0 +1,86 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Offer NLPI conclusion decision",
+	"type": "object",
+	"properties": {
+		"processIdentificationNo": {
+			"$ref": "../../../Generics/v0.5.0/ProcessIdentificationNoType.json"
+		},
+		"timestamp": {
+			"$ref": "../../../Generics/v0.5.0/TimestampType.json"
+		},
+		"header": {
+			"$ref": "../../../Generics/v0.5.0/HeaderType.json"
+		},
+		"customer": {
+			"$ref": "../../../Generics/v0.5.0/CompanyCustomerType.json"
+		},
+		"quotationNo": {
+			"$ref": "../../../Generics/v0.5.0/QuotationNoType.json"
+		},
+		"offerConclusionDecision": {
+			"description": "Definitive decision to close the offer",
+			"type": "string",
+			"enum": [
+				"offerConclusionAcceptance",
+				"offerConclusionDenial"
+			]
+		},
+		"offerConclusionDenialReason": {
+			"$ref": "../../../Generics/v0.5.0/RestrictedStringType.json",
+			"description": "Reason for refusal/waiver of an offer conclusion"
+		},
+		"offerConclusionDecisionMessage": {
+			"description": "Feedback text for the offer closure decision",
+			"type": "string"
+		},
+		"insurerContact": {
+			"$ref": "../../../Generics/v0.5.0/ContactType.json"
+		}
+	},
+	"additionalProperties": false,
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"offerConclusionDecision": {
+						"const": "offerConclusionDenial"
+					}
+				}
+			},
+			"then": {
+				"required": [
+					"offerConclusionDenialReason"
+				]
+			}
+		},
+		{
+			"if": {
+				"properties": {
+					"offerConclusionDecision": {
+						"const": "offerConclusionAcceptance"
+					}
+				}
+			},
+			"then": {
+				"required": [
+					"quotationNo"
+				],
+				"not": {
+					"required": [
+						"offerConclusionDenialReason"
+					]
+				}
+			}
+		}
+	],
+	"required": [
+		"processIdentificationNo",
+		"timestamp",
+		"header",
+		"customer",
+		"offerConclusionDecision",
+		"insurerContact"
+	],
+	"unevaluatedProperties": false
+}

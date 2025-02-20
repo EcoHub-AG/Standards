@@ -1,0 +1,74 @@
+{
+  "fixedPayrolls": [
+    {
+      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+      "role": "BusinessOwner",
+      "firstname": "John",
+      "surname": "Doe",
+      "birthDate": "1980-05-15",
+      "gender": "male",
+      "fixedPayroll": 150000.00,
+      "surplusPayroll": 50000.00,
+      "coverage": {
+        "deathCapital": {
+          "deathCapitalInsured": false
+        },
+        "disabilityCapital": {
+          "disabilityCapitalInsured": false
+        },
+        "dailyAllowance": {
+          "dailyAllowanceInsured": false
+        },
+        "dailyHospitalAllowance": {
+          "dailyHospitalAllowanceInsured": "ja, in % des Jahreslohnes",
+          "dailyHospitalAnnualSalary": 20
+        },
+        "medicalExpenses": "Privatabteilung",
+        "differentialCover": true,
+        "disabilityPension": {
+          "pensionInsured": false
+        },
+        "survivorsPension": {
+          "pensionInsured": false
+        }
+      },
+      "premiumFixedPayroll": {
+        "disabilityCapitalSalary": 100000.00,
+        "disabilityCapitalSurplusSalary": 50000.00,
+        "disabilityPensionSalary": 75000.00,
+        "disabilityPensionSalaryNet": 60000.00,
+        "disabilityPensionSalarySurplus": 25000.00,
+        "disabilityPensionSalarySurplusNet": 20000.00,
+        "deathCapitalSalary": 200000.00,
+        "deathCapitalSurplusSalary": 100000.00,
+        "deathCapitalSalaryNet": 160000.00,
+        "deathCapitalSurplusSalaryNet": 80000.00,
+        "survivorsPensionSalary": 50000.00,
+        "survivorsPensionSalaryNet": 40000.00,
+        "survivorsPensionSalarySurplus": 25000.00,
+        "survivorsPensionSalarySurplusNet": 20000.00,
+        "premiumDiffCoverage": 5000.00,
+        "finalPremiumRateFixedPayroll": 15000.00
+      }
+    }
+  ],
+  "insuranceOptionsVarious": {
+    "premiumRateGuaranty": true,
+    "renunciationTerminationRightClaim": true,
+    "annualCancellation": false,
+    "typePayInstalment": "1/2 year",
+    "surplusParticipation": true,
+    "additionalOptions": [
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSB",
+          "optionValue": "20000",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        },
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSBM",
+          "optionValue": "DSBM",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        }
+      ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "personGroup": [
+    {
+      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+      "numberOfPersonsBU": 50,
+      "numberOfPersonsNBU": 30,
+      "payrollBU": 2500000.00,
+      "payrollNBU": 1500000.00,
+      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG",
+      "premiumPersonGroup": {
+        "premiumNBU": {
+          "hazardClass": "A1",
+          "hazardSubClass": "B2",
+          "premiumRiskRate": 1.5,
+          "costAdminRate": 3.5,
+          "sharingCostRate": 2.5,
+          "accidentPreventionContributionRate": 37500.00,
+          "premiumMinimumAmount": 2.7,
+          "finalPremiumRate": 2.3,
+          "totalPremium": 500.00
+        },
+        "premiumBU": {
+          "hazardClass": "A1",
+          "hazardSubClass": "B2",
+          "premiumRiskRate": 1.5,
+          "costAdminRate": 3.5,
+          "sharingCostRate": 2.5,
+          "accidentPreventionContributionRate": 37500.00,
+          "premiumMinimumAmount": 2.7,
+          "finalPremiumRate": 2.3,
+          "totalPremium": 500.00
+        }
+      }
+    }],
+  "insuranceOptionsVarious": {
+    "annualCancellation": true,
+    "typePayInstalment": "annually",
+    "contractExtensionAfterExpiration": false
+  }
+}

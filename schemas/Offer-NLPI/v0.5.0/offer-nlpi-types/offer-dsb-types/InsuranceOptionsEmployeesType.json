@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Insurance options employees",
+  "type": "object",
+  "properties": {
+    "insuranceStartByEmployment": {
+      "description": "Insurance from the beginning of employment",
+      "type": "boolean"
+    },
+    "insuranceTemporaryEmployees": {
+      "description": "Insurance of temporarily employed persons (temporary employment up to 3 months)",
+      "type": "boolean"
+    },
+    "insuranceParttimeEmployees": {
+      "description": "Insurance of part-time employees (less than 8 working hours per week)",
+      "type": "boolean"
+    },
+    "insuranceHourlyEmployees": {
+      "description": "Insurance of employees on an hourly basis (at least 8 working hours per week)",
+      "type": "boolean"
+    },
+    "insuranceEmployeesExhaustedBenefitPeriod": {
+      "description": "Insurance of persons with exhausted benefit period",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

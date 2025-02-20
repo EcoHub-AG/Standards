@@ -1,0 +1,34 @@
+[
+  {
+    "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+    "numberOfPersonsTotal": 50,
+    "payrollTotal": 2500000.00,
+    "maximumPayrollAmount": 148200.00,
+    "surplusSalaryTotal": 500000.00,
+    "coverage": {
+      "deathCapital": {
+        "deathCapitalInsured": false
+      },
+      "disabilityCapital": {
+        "disabilityCapitalInsured": false
+      },
+      "dailyAllowance": {
+        "dailyAllowanceInsured": false
+      },
+      "dailyHospitalAllowance": {
+        "dailyHospitalAllowanceInsured": "nein"
+      },
+      "medicalExpenses": "Halbprivatabteilung",
+      "differentialCover": true,
+      "disabilityPension": {
+        "pensionInsured": false
+      },
+      "survivorsPension": {
+        "pensionInsured": true,
+        "pensionPercent": 70,
+        "benefitPeriod": "gemäss UVG",
+        "survivorsPartnerPension": true
+      }
+    }
+  }
+]

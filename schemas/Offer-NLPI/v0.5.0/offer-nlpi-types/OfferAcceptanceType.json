@@ -1,0 +1,88 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Offer acceptance",
+	"type": "object",
+	"properties": {
+		"offerDocument": {
+			"type": "object",
+			"properties": {
+				"digitalSignedOffer": {
+					"description": "Is offer digitally signed",
+					"type": "boolean"
+				},
+				"digitalSignedDocument": {
+					"description": "Digitally signed document",
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "../../../Generics/v0.5.0/FileType.json"
+					}
+				},
+				"physicalSignedDocument": {
+					"description": "Physically signed document",
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "../../../Generics/v0.5.0/FileType.json"
+					}
+				}
+			},
+			"if": {
+				"properties": {
+					"digitalSignedOffer": {
+						"const": true
+					}
+				}
+			},
+			"then": {
+				"required": [
+					"digitalSignedDocument"
+				]
+			},
+			"else": {
+				"required": [
+					"physicalSignedDocument"
+				]
+			},
+			"required": [
+				"digitalSignedOffer"
+			],
+			"additionalProperties": false
+		},
+		"offerAttachmentDocument": {
+			"description": "Additional signed or non-signed documents e.g. flyers, product fact sheets, health questionnaire",
+			"type": "object",
+			"properties": {
+				"digitalSignedDocument": {
+					"description": "Digitally signed document",
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "../../../Generics/v0.5.0/FileType.json"
+					}
+				},
+				"physicalSignedDocument": {
+					"description": "Physically signed document",
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "../../../Generics/v0.5.0/FileType.json"
+					}
+				},
+				"otherAttachments": {
+					"description": "List of non signed attachments",
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "../../../Generics/v0.5.0/FileType.json"
+					}
+				}
+			},
+			"additionalProperties": false
+		}
+	},
+	"required": [
+		"offerDocument"
+	],
+	"additionalProperties": false
+}

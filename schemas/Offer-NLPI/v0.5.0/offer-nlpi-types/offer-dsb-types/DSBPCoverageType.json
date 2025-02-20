@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Paternity daily benefit insurance coverage",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "DSBPBenefitDurationWeeks": {
+        "description": "Paternity allowance benefit duration in weeks",
+        "type": "integer",
+        "enum": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "DSBPBenefitAmountPercentage": {
+        "description": "Paternity daily benefit amount in percentage",
+        "type": "integer",
+        "enum": [
+          80,
+          90,
+          100
+        ]
+      },
+      "DSBPPayrollBasis": {
+        "description": "Paternity daily benefit wage basis",
+        "$ref": "PayrollBasisType.json"
+      },
+      "maximumPayrollAmount": {
+        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      }
+    },
+    "required": [
+      "DSBPBenefitDurationWeeks",
+      "DSBPBenefitAmountPercentage",
+      "DSBPPayrollBasis"
+    ],
+    "additionalProperties": false
+  },
+  "unevaluatedItems": false
+}

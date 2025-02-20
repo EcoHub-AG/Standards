@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"insuranceOptionsEmployees": {
+			"$ref": "InsuranceOptionsEmployeesType.json"
+		},
+		"insuranceOptionsBenefitScope": {
+			"$ref": "InsuranceOptionsBenefitScopeType.json"
+		},
+		"insuranceOptionsBenefitPeriod": {
+			"$ref": "InsuranceOptionsBenefitPeriodType.json"
+		},
+		"insuranceOptionsVarious": {
+			"$ref": "../InsuranceOptionsVariousType.json"
+		}
+	},
+	"additionalProperties": false
+}

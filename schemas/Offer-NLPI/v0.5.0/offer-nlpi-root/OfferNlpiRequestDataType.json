@@ -1,0 +1,95 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Schema for a request for an offer in the Offer NLPI process",
+	"properties": {
+		"processIdentificationNo": {
+			"$ref": "../../../Generics/v0.5.0/ProcessIdentificationNoType.json"
+		},
+		"timestamp": {
+			"$ref": "../../../Generics/v0.5.0/TimestampType.json"
+		},
+		"header": {
+			"$ref": "../../../Generics/v0.5.0/HeaderType.json"
+		},
+		"customer": {
+			"$ref": "../offer-nlpi-types/OfferCustomerType.json"
+		},
+		"coInsuredCustomer": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$ref": "../offer-nlpi-types/OfferCustomerType.json"
+			},
+			"unevaluatedItems": false
+		},
+		"offerToDate": {
+			"type": "string",
+			"format": "date",
+			"description": "Date of offer by which the insurer must submit the offer"
+		},
+		"offerLanguage": {
+			"$ref": "../../../Generics/v0.5.0/LanguageType.json",
+			"description": "Language in which the offer must be made out"
+		},
+		"currency": {
+			"$ref": "../../../Generics/v0.5.0/CurrencyISOCodeType.json"
+		},
+		"previousInsurer": {
+			"description": "Previous insurer",
+			"$ref": "../offer-nlpi-types/PreviousInsurerType.json"
+		},
+		"UVGCompulsoryInsurer": {
+			"description": "The current UVG compulsory insurer when requesting an UVG supplementary offer.",
+			"$ref": "../offer-nlpi-types/offer-uvgo-types/UVGOInsurerType.json"
+		},
+		"insuranceStartDate": {
+			"$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
+		},
+		"insuranceDurationInYears": {
+			"$ref": "../offer-nlpi-types/InsuranceDurationInYearsType.json"
+		},
+		"DSB": {
+			"$ref": "../offer-nlpi-types/offer-dsb-types/OfferRequestDSBType.json"
+		},
+		"UVGCompulsory": {
+			"$ref": "../offer-nlpi-types/offer-uvgo-types/OfferRequestUVGOType.json"
+		},
+		"UVGSupplement": {
+			"$ref": "../offer-nlpi-types/offer-uvgz-types/OfferRequestUVGZType.json"
+		},
+		"comment": {
+			"$ref": "../../../Generics/v0.5.0/RestrictedStringType.json"
+		},
+		"document": {
+			"description": "Document (minimum PDF of the quote request)",
+			"$ref": "../../../Generics/v0.5.0/MultiFileType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"processIdentificationNo",
+		"timestamp",
+		"header",
+		"customer",
+		"currency",
+		"insuranceStartDate",
+		"insuranceDurationInYears",
+		"previousInsurer",
+		"document"
+	],
+	"dependentRequired": {
+		"UVGSupplement": ["UVGCompulsoryInsurer"]
+	},
+	"anyOf": [
+		{
+			"required": ["DSB"]
+		},
+		{
+			"required": ["UVGCompulsory"]
+		},
+		{
+			"required": ["UVGSupplement"]
+		}
+	]
+}

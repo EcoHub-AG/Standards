@@ -1,0 +1,44 @@
+{
+  "personGroups": [
+    {
+      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+      "numberOfPersonsTotal": 50,
+      "payrollTotal": 2500000.00,
+      "maximumPayrollAmount": 148200.00,
+      "surplusSalaryTotal": 500000.00,
+      "coverage": {
+        "deathCapital": {
+          "deathCapitalInsured": false
+        },
+        "disabilityCapital": {
+          "disabilityCapitalInsured": false
+        },
+        "dailyAllowance": {
+          "dailyAllowanceInsured": false
+        },
+        "dailyHospitalAllowance": {
+          "dailyHospitalAllowanceInsured": "ja, fester Betrag in CHF",
+          "dailyHospitalAllowanceFixAmount": 100.00
+        },
+        "medicalExpenses": "Halbprivatabteilung",
+        "differentialCover": false,
+        "disabilityPension": {
+          "pensionInsured": false
+        },
+        "survivorsPension": {
+          "pensionInsured": false
+        }
+      }
+    }
+  ],
+  "insuranceOptionsVarious": {
+    "premiumRateGuaranty": true,
+    "renunciationTerminationRightClaim": true,
+    "annualCancellation": false,
+    "typePayInstalment": "1/2 year",
+    "surplusParticipation": true,
+    "surplusParticipationPremiumRate": 5.250,
+    "surplusParticipationRate": 10.500,
+    "surplusParticipationPeriodYears": 3
+  }
+}

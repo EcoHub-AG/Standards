@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "UVGZ coverage",
+  "type": "object",
+  "properties": {
+    "deathCapital": {
+      "$ref": "DeathCapitalType.json"
+    },
+    "disabilityCapital": {
+      "$ref": "DisabilityCapitalType.json"
+    },
+    "dailyAllowance": {
+      "$ref": "DailyAllowanceType.json"
+    },
+    "dailyHospitalAllowance": {
+      "$ref": "DailyHospitalAllowanceType.json"
+    },
+    "medicalExpenses": {
+      "type": "string",
+      "description": "Type of medical expenses",
+      "enum": [
+        "keine",
+        "Privatabteilung",
+        "Halbprivatabteilung"
+      ]
+    },
+    "differentialCover": {
+      "description": "Differential cover",
+      "type": "boolean"
+    },
+    "disabilityPension": {
+      "description": "Disability Pension",
+      "type": "object",
+      "properties": {
+        "pensionInsured": {
+          "description": "Is this type of pension insured?",
+          "type": "boolean"
+        },
+        "pensionPercent": {
+          "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
+          "type": "integer",
+          "enum": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "benefitPeriod": {
+          "description": "Benefit period pension",
+          "type": "string",
+          "enum": [
+            "bis AHV-Alter",
+            "gemäss UVG"
+          ]
+        }
+      },
+      "required": [
+        "pensionInsured"
+      ],
+      "if": {
+        "properties": {
+          "pensionInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "pensionPercent",
+          "benefitPeriod"
+        ]
+      }
+    },
+    "survivorsPension": {
+      "description": "Survivors Pension",
+      "type": "object",
+      "properties": {
+        "pensionInsured": {
+          "description": "Is this type of pension insured?",
+          "type": "boolean"
+        },
+        "pensionPercent": {
+          "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
+          "type": "integer",
+          "enum": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "benefitPeriod": {
+          "description": "Benefit period pension",
+          "type": "string",
+          "enum": [
+            "bis AHV-Alter",
+            "gemäss UVG"
+          ]
+        },
+        "survivorsPartnerPension": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "pensionInsured"
+      ],
+      "if": {
+        "properties": {
+          "pensionInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "pensionPercent",
+          "benefitPeriod"
+        ]
+      }
+    }
+  },
+  "required": [
+    "deathCapital",
+    "disabilityCapital",
+    "dailyAllowance",
+    "dailyHospitalAllowance",
+    "differentialCover"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,50 @@
+{
+  "customer": {
+    "companyName": "Coiffeur Verband Schweiz",
+    "companyId": "CHE-105.841.533",
+    "companyLegalForm": "Association",
+    "companyLegalStatus": "active",
+    "companyFoundingYear": "2024",
+    "riskCharacteristic": "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)",
+    "domicilAddress": {
+      "streetName": "Zollstrasse",
+      "houseNumber": "1",
+      "adressExtension": "c/o Dachverband Kleingewerbe",
+      "postOfficeBox": "501",
+      "zip": "8000",
+      "city": "Zürich",
+      "country": "CH"
+    },
+    "isDomicilAddressCorrespondenceAddress": false,
+    "correspondenceAddress": {
+      "zip": "8000",
+      "city": "Zürich",
+      "country": "CH",
+      "streetName": "Zollstrasse",
+      "houseNumber": "1",
+      "postOfficeBox": "501",
+      "adressExtension": "c/o Dachverband Kleingewerbe"
+    }
+  },
+  "GAVCompliance": "Yes",
+  "GAVName": [
+    "GAV für das schweizerische Coiffeurgewerbe",
+    "L-GAV des Gastgewerbes"
+  ],
+  "UVGRiskNo": "1234.56",
+  "NOGACodeMain": {
+    "NOGACode": "960201",
+    "NOGAName": "Coiffeursalons"
+  },
+  "NOGACodeAdditional": [
+    {
+      "NOGACode": "960202",
+      "NOGAName": "Kosmetiksalons"
+    },
+    {
+      "NOGACode": "561001",
+      "NOGAName": "Restaurants, Imbissstuben, Tea-Rooms und Gelaterias"
+    }
+  ],
+  "typeOfActivity": "Carpenter"
+}
