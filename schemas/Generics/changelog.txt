@@ -1,5 +1,7 @@
-### Version 0.3.0 (29.05.2024)
-Initial release version
+### Version 0.5.5
+- RegFINMANoType (Changed)
+    - Changed format to support the new finma number format and disallow the old format
+
 
 ### Version 0.4.0 (05.11.2024)
 General improvements and necessary changes for Offer NLPI v0.4.0
@@ -47,7 +49,8 @@ General improvements and necessary changes for Offer NLPI v0.4.0
 - TimeStampType (Documentation)
     - Added example
 
-
+### Version 0.3.0 (29.05.2024)
+Initial release version
 
 
 

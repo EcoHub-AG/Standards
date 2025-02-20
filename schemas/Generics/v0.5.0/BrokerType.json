@@ -6,7 +6,7 @@
 	"properties": {
 		"brokerRegisterNo": {
 			"$ref": "RegFINMANoType.json",
-			"description": "Register number of the broker. Register number for the independent intermediaries as defined by the IG B2B ; prefix with country code and register plus register number FINMA or FMA (example: CHE-FINMA-10001). Note for insurers: For those intermediaries who are not at FINMA or FMA but want to participate on electronic data exchange, e.g., in-house brokers, the code assigned by IG B2B (example: CHE-IGB2B-50001) must be recorded."
+			"description": "Register number of the broker. Register number for the independent intermediaries as defined by the IG B2B ; prefix with country code and register plus register number FINMA or FMA (example: CHE-FINMA-F12345678). Note for insurers: For those intermediaries who are not at FINMA or FMA but want to participate on electronic data exchange, e.g., in-house brokers, the code assigned by IG B2B (example: CHE-IGB2B-50001) must be recorded."
 		},
 		"companyId": {
 			"$ref": "CompanyIdType.json",

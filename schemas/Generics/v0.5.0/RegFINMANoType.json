@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"description": "Data type for the register number.",
-	"examples": ["CHE-FINMA-12345", "LIE-FMA-12345", "CHE-IGB2B-12345"],
+	"examples": ["CHE-FINMA-F12345678", "LIE-FMA-12345", "CHE-IGB2B-12345"],
 	"type": "string",
 	"maxLength": 19,
-	"pattern": "^(CHE\\-(FINMA\\-(\\d{5}|\\S{9})|IGB\\dB\\-(\\d{5}))|LIE\\-FMA\\-\\S{5})$"
+	"pattern": "^(CHE\\-(FINMA\\-F\\d{8}|IGB\\dB\\-(\\d{5}))|LIE\\-FMA\\-\\d{6})$"
 }
