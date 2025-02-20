@@ -1,4 +1,6 @@
 ### Version 0.5.5
+- BrokerType (Changed)
+    - removed attribute "brokerContact" (moved to OfferNlpiRequestDataType)
 - RegFINMANoType (Changed)
     - Changed format to support the new finma number format and disallow the old format
 

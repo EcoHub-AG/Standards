@@ -61,6 +61,9 @@
 		"comment": {
 			"$ref": "../../../Generics/v0.5.0/RestrictedStringType.json"
 		},
+		"brokerContact": {
+			"$ref": "../../../Generics/v0.5.0/BrokerContactType.json"
+		},
 		"document": {
 			"description": "Document (minimum PDF of the quote request)",
 			"$ref": "../../../Generics/v0.5.0/MultiFileType.json"
@@ -76,6 +79,7 @@
 		"insuranceStartDate",
 		"insuranceDurationInYears",
 		"previousInsurer",
+		"brokerContact",
 		"document"
 	],
 	"dependentRequired": {

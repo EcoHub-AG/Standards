@@ -1,5 +1,6 @@
-### Version 0.3.0 (29.05.2024)
-Initial release version
+### Version 0.5.0
+- OfferNlpiRequestDataType (Changed)
+    - added attribute "brokerContact" (moved to BrokerType)
 
 ### Version 0.4.0 (05.11.2024)
 Version 0.3.0 only included properties for KTG. This version expands the Standard to additionally
@@ -131,7 +132,8 @@ Version 0.3.0 only included properties for KTG. This version expands the Standar
 - YearlySalaryMultipleType (Added)
 - YearlySalaryOptionalMultipleType (Added)
 
-
+### Version 0.3.0 (29.05.2024)
+Initial release version
 
 
 

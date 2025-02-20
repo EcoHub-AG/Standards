@@ -42,7 +42,7 @@
 					"sender": {
 						"properties": {
 							"broker": {
-								"required": ["brokerBranch", "brokerContact"]
+								"required": ["brokerBranch"]
 							}
 						}
 					}
