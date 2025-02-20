@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Address Type",
+  "name": "AddressType",
+  "definitions": {
+    "streetNameDef": {
+      "description": "Street name",
+      "type": "string",
+      "maxLength": 100
+    },
+    "houseNumberDef": {
+      "description": "House number",
+      "type": "string",
+      "maxLength": 10
+    },
+    "adressExtensionDef": {
+      "description": "Additional address information",
+      "type": "string",
+      "maxLength": 100
+    },
+    "postOfficeBoxDef": {
+      "description": "Post office box",
+      "type": "string",
+      "maxLength": 20
+    },
+    "zipDef": {
+      "description": "International zip code",
+      "type": "string",
+      "maxLength": 10,
+      "pattern": "[A-Z0-9]{1}[A-Z0-9 ]{0,7}[A-Z0-9]{2}",
+      "examples": ["8001 (Swiss)", "53474 (Germany)", "WC2N 4HS (UK)", "10003 (US)", "M5P 2N7 (Canada)"]
+    },
+    "cityDef": {
+      "description": "City",
+      "type": "string",
+      "maxLength": 100
+    },
+    "countryDef": {
+      "$ref": "CountryISOCodeType.json"
+    }
+  }
+}
