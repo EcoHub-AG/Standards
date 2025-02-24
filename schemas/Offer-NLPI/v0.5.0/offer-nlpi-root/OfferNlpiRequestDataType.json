@@ -23,7 +23,7 @@
 			},
 			"unevaluatedItems": false
 		},
-		"offerToDate": {
+		"offerDeadline": {
 			"type": "string",
 			"format": "date",
 			"description": "Date of offer by which the insurer must submit the offer"
@@ -75,6 +75,7 @@
 		"timestamp",
 		"header",
 		"customer",
+		"offerDeadline",
 		"currency",
 		"insuranceStartDate",
 		"insuranceDurationInYears",
