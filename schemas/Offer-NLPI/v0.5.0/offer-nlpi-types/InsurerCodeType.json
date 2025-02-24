@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Unique company code for insurer",
+  "description": "Unique company code for insurer, according to list IG B2B",
   "type": "string",
   "maxLength": 5,
   "pattern": ".*[\\S].*",
