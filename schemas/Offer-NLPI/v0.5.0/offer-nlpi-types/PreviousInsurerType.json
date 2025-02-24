@@ -31,11 +31,15 @@
 									"type": "string",
 									"description": "Unique number of the corresponding contract"
 								},
-								"insuranceStartDate": {
-									"$ref": "InsuranceStartDateType.json"
+								"beginningPreInsuranceDate": {
+									"description": "Beginning of the pre-insurance contract",
+									"type": "string",
+									"format": "date"
 								},
-								"insuranceEndDate": {
-									"$ref": "InsuranceEndDateType.json"
+								"endPreInsuranceDate": {
+									"description": "Beginning of the pre-insurance contract",
+									"type": "string",
+									"format": "date"
 								},
 								"claimsExperienceDocument": {
 									"description": "Claims experience document",
