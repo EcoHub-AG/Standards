@@ -29,8 +29,9 @@
       "description": "Definition of special constructs and risk characteristics of the company",
       "type": "string",
       "enum": [
-        "Holding/Risikogemeinschaft/Risikogruppe",
-        "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)"
+        "Holding/risk community/risk group",
+        "Anobag (employees without employers liable to pay contributions)",
+        "no ones available"
       ]
     },
     "domicilAddress": {

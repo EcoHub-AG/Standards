@@ -1,6 +1,8 @@
 ### Version 0.5.5
 - BrokerType (Changed)
     - removed attribute "brokerContact" (moved to OfferNlpiRequestDataType)
+- CompanyCustomerType (Changed)
+    - Adjusted enum values for "riskCharacteristic"
 - HeaderType (Changed)
     - renamed "standard" to "schemaUrl"
 - RegFINMANoType (Changed)
