@@ -8,11 +8,11 @@
       "$ref": "../../../Generics/v0.5.0/CompanyCustomerType.json"
     },
     "GAVCompliance": {
-      "description": "Guaranteed compliance with the GAV-conformity",
+      "description": "Guaranteed compliance with the GAV-conformity. Only relevant for DSB.",
       "$ref": "../../../Generics/v0.5.0/TristateType.json"
     },
     "GAVName": {
-      "description": "GAV-Designation",
+      "description": "GAV-Designation. Only relevant for DSB. Mandatory if GAVCompliance = 'Yes'",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -51,7 +51,7 @@
   ],
   "if": {
     "properties": {
-      "GAVcompliance": {
+      "GAVCompliance": {
         "const": "Yes"
       }
     }
