@@ -42,7 +42,7 @@
       "type": "boolean"
     },
     "correspondenceAddress": {
-      "description": "Correspondence Address Type",
+      "description": "Address for correspondence. When 'isDomicilAddressCorrespondenceAddress' = false, this element is mandatory.",
       "$ref": "AddressType.json"
     }
   },
