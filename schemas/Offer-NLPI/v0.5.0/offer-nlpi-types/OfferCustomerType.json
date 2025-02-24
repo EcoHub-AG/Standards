@@ -46,7 +46,8 @@
   "additionalProperties": false,
   "required": [
     "customer",
-    "NOGACodeMain"
+    "NOGACodeMain",
+    "UVGRiskNo"
   ],
   "if": {
     "properties": {

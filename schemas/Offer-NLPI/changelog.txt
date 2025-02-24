@@ -1,4 +1,6 @@
 ### Version 0.5.0
+- OfferCustomerType (Changed)
+    - UVGRiskNo is now mandatory
 - OfferNlpiRequestDataType (Changed)
     - added attribute "brokerContact" (moved to BrokerType)
 
