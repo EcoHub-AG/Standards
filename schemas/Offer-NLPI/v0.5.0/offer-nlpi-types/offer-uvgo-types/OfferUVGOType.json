@@ -43,6 +43,7 @@
     },
     "personsConnectionEmployer": {
       "type": "array",
+      "description": "Persons with special connection to the employer. Professional and customary wage. Are staff members insured in accordance with Art. 22 para. 2 lit. c UVV whose effective AHV salary does not correspond at least to the salary customary for the profession and location?",
       "minItems": 1,
       "items": {
         "$ref": "UVGOFixedPayrollsType.json",
