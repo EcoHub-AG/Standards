@@ -28,7 +28,7 @@
 				"$ref": "../../../../Generics/v0.5.0/GenderType.json"
 			},
 			"fixedPayroll": {
-				"description": "Fixed payroll amount",
+				"description": "Fixed payroll amount in CHF",
 				"$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
 			},
 			"benefitCoverage": {
