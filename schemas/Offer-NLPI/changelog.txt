@@ -4,6 +4,10 @@
 - OfferNlpiRequestDataType (Changed)
     - added attribute "brokerContact" (moved to BrokerType)
     - "offerToDate" renamed to "offerDeadline" and now mandatory
+- OfferRequestUVGOType (Changed)
+    - removed max size restriction for voluntarilyInsuredPersons
+- OfferUVGOType (Changed)
+    - removed max size restriction for voluntarilyInsuredPersons
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
