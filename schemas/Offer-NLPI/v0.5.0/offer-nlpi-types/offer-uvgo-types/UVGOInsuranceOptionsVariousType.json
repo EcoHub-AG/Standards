@@ -13,9 +13,10 @@
 		"contractExtensionAfterExpiration": {
 			"type": "boolean",
 			"description": "Contract extension by 1 year after expiration"
+		},
+		"additionalOptions": {
+			"$ref": "../../../../Generics/v0.5.0/AdditionalOptionsType.json"
 		}
-
-
 	},
     "additionalProperties": false,
 	"required": [
