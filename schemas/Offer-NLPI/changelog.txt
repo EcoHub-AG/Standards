@@ -8,6 +8,8 @@
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
     - renamed "insuranceEndDate" to "endPreInsuranceDate"
+- UVGOPersonGroupType (Changed)
+    - Added property "personGroupDescription"
 
 ### Version 0.4.0 (05.11.2024)
 Version 0.3.0 only included properties for KTG. This version expands the Standard to additionally

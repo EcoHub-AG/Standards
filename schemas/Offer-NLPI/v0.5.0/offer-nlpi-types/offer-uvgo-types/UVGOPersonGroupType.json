@@ -10,6 +10,10 @@
         "description": "ID of the person group",
         "$ref": "../../../../Generics/v0.5.0/UuidType.json"
       },
+      "personGroupDescription": {
+        "description": "Name of the group of persons",
+        "type": "string"
+      },
       "numberOfPersonsBU": {
         "description": "Number of employees OA. If unknown, value 0 can be specified.",
         "type": "integer"
@@ -53,6 +57,7 @@
     "additionalProperties": false,
     "required": [
       "personGroupId",
+      "personGroupDescription",
       "numberOfPersonsBU",
       "numberOfPersonsNBU",
       "payrollBU",
