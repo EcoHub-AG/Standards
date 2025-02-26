@@ -10,6 +10,10 @@
         "description": "ID of the person group",
         "$ref": "../../../../Generics/v0.5.0/UuidType.json"
       },
+      "personGroupDescription": {
+        "description": "Name of the group of persons",
+        "type": "string"
+      },
       "numberOfPersonsTotal": {
         "description": "Total number of employees",
         "type": "integer"
@@ -159,6 +163,7 @@
     },
     "required": [
       "personGroupId",
+      "personGroupDescription",
       "numberOfPersonsTotal",
       "payrollTotal",
       "maximumPayrollAmount",

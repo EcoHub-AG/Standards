@@ -12,9 +12,11 @@
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
     - renamed "insuranceEndDate" to "endPreInsuranceDate"
-- UVGOIInsuranceOptionsVariousType (Changed)
+- UVGOInsuranceOptionsVariousType (Changed)
     - Added "additionalOptions" property
 - UVGOPersonGroupType (Changed)
+    - Added property "personGroupDescription"
+- UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
 
 ### Version 0.4.0 (05.11.2024)

@@ -1,6 +1,7 @@
 [
   {
     "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+    "personGroupDescription": "Group 1",
     "numberOfPersonsTotal": 50,
     "payrollTotal": 2500000.00,
     "maximumPayrollAmount": 148200.00,
