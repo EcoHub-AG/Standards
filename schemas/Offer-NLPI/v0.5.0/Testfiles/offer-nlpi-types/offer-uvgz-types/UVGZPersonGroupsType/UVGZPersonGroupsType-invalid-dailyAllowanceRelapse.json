@@ -4,7 +4,6 @@
     "personGroupDescription": "Group 1",
     "numberOfPersonsTotal": 50,
     "payrollTotal": 2500000.00,
-    "maximumPayrollAmount": 148200.00,
     "surplusSalaryTotal": 500000.00,
     "coverage": {
       "deathCapital": {

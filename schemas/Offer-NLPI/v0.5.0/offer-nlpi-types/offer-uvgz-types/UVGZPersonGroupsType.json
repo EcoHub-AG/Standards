@@ -22,9 +22,6 @@
         "description": "Total payroll of all employees",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
-      "maximumPayrollAmount": {
-        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
-      },
       "surplusSalaryTotal": {
         "description": "Payroll: Surplus salary total in CHF",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
