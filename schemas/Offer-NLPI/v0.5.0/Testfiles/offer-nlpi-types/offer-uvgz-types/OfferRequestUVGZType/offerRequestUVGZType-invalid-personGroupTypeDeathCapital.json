@@ -9,8 +9,8 @@
       "surplusSalaryTotal": 500000.00,
       "coverage": {
         "deathCapital": {
-          "deathCapitalUVG": "3-fold",
-          "deathCapitalSurplus": "2-fold",
+          "deathCapitalUVG": "10-fold",
+          "deathCapitalSurplus": "14-fold",
           "wageSupplement": true
         },
         "disabilityCapital": {

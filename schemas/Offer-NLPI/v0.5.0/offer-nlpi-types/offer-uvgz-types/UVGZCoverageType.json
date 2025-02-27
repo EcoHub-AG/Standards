@@ -121,7 +121,6 @@
     }
   },
   "required": [
-    "deathCapital",
     "disabilityCapital",
     "dailyAllowance",
     "dailyHospitalAllowance",

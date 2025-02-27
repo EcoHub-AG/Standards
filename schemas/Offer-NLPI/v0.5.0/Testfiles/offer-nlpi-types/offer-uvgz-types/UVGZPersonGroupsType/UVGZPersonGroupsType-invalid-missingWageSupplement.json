@@ -7,10 +7,8 @@
     "surplusSalaryTotal": 500000.00,
     "coverage": {
       "deathCapital": {
-        "deathCapitalInsured": true,
-        "deathCapitalUVG": "3-facher Jahreslohn",
-        "deathCapitalSurplus": "2-facher Jahreslohn",
-        "bridgingCapital": "1-facher AHV-Lohn"
+        "deathCapitalUVG": "3-fold",
+        "deathCapitalSurplus": "2-fold",
       },
       "disabilityCapital": {
         "disabilityCapitalInsured": false

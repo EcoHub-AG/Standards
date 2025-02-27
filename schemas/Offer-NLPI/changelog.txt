@@ -1,4 +1,8 @@
 ### Version 0.5.0
+- DeathCapitalType (Changed)
+    - removed property "deathCapitalInsured"
+    - removed property "bridgingCapital"
+    - properties "deathCapitalUVG" and "deathCapitalSurplus" are now mandatory
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
 - OfferNlpiRequestDataType (Changed)
@@ -8,6 +12,8 @@
     - removed max size restriction for voluntarilyInsuredPersons
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
+- OfferUVGZType (Changed)
+    - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus" for "personGroups"
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
@@ -16,9 +22,13 @@
     - Added "additionalOptions" property
 - UVGOPersonGroupType (Changed)
     - Added property "personGroupDescription"
+- UVGZCoverageType (Changed)
+    - property "deathCapital" is now optional
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "maximumPayrollAmount"
+- YearlySalaryTypeMultiple (Changed)
+    - translated and added enum values
 
 ### Version 0.4.0 (05.11.2024)
 Version 0.3.0 only included properties for KTG. This version expands the Standard to additionally
