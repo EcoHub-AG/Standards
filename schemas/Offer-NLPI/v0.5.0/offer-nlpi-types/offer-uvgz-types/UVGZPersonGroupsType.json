@@ -104,13 +104,6 @@
           },
           {
             "properties": {
-              "dailyAllowance": {
-                "not": {
-                  "required": [
-                    "dailyAllowanceRelapses"
-                  ]
-                }
-              },
               "survivorsPension": {
                 "not": {
                   "required": [

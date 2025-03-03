@@ -1,14 +1,4 @@
 {
-  "dailyAllowance": {
-    "dailyAllowanceInsured": true,
-    "dailyAllowance": 90,
-    "dailyAllowanceWaitingPeriod": 2,
-    "dailyAllowanceFirstCoupleDaysInsured": true,
-    "dailyAllowanceFirstCoupleDays": 80,
-    "dailyAllowanceSurplusInsured": true,
-    "dailyAllowanceSurplus": 90,
-    "dailyAllowanceSurplusWaitingPeriod": 3
-  },
   "dailyHospitalAllowance": {
     "dailyHospitalAllowanceInsured": "ja, fester Betrag in CHF",
     "dailyHospitalAllowanceFixAmount": 100.00

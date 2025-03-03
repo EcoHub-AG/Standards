@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "string",
+  "enum": [
+    "1 (FL)",
+    "2",
+    "7",
+    "14",
+    "21",
+    "30",
+    "60",
+    "90",
+    "120",
+    "180",
+    "360",
+    "365",
+    "not insured"
+  ]
+}

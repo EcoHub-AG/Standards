@@ -21,15 +21,14 @@
       },
       "integrityCapital": true,
       "dailyAllowance": {
-        "dailyAllowanceInsured": true,
-        "dailyAllowance": 100,
-        "dailyAllowanceWaitingPeriod": 3,
-        "dailyAllowanceFirstCoupleDaysInsured": false,
-        "dailyAllowanceSurplusInsured": true,
-        "dailyAllowanceFirstCoupleDays": 80,
-        "dailyAllowanceSurplus": 100,
-        "dailyAllowanceSurplusWaitingPeriod": 7,
-        "dailyAllowanceRelapses": true
+        "dailyAllowanceForUVGWaitingDaysUVGSalary": "90%",
+        "dailyAllowanceForUVGWaitingDaysSurplusSalary": "not insured",
+        "waitingPeriodInDaysForDailyAllowanceUVGSalary": "1 (FL)",
+        "dailyAllowanceAfterExpiryWaitingPeriodUVGSalary": "5%",
+        "waitingPeriodInDaysForDailyAllowanceSurplusSalary": "365",
+        "dailyAllowanceAfterExpiryWaitingPeriodSurplusSalary": "100%",
+        "dailyAllowanceRelapsesLateEffectsUVG": "insured for NBU-insured personnel",
+        "dailyAllowanceRelapsesLateEffectsUVGZ": "insured"
       },
       "dailyHospitalAllowance": {
         "dailyHospitalAllowanceInsured": "ja, in % des Jahreslohnes",

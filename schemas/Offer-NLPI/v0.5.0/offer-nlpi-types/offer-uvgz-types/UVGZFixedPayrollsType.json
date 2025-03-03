@@ -45,28 +45,6 @@
           {
             "if": {
               "properties": {
-                "dailyAllowance": {
-                  "properties": {
-                    "dailyAllowanceInsured": {
-                      "const": true
-                    }
-                  }
-                }
-              }
-            },
-            "then": {
-              "properties": {
-                "dailyAllowance": {
-                  "required": [
-                    "dailyAllowanceRelapses"
-                  ]
-                }
-              }
-            }
-          },
-          {
-            "if": {
-              "properties": {
                 "survivorsPension": {
                   "properties": {
                     "pensionInsured": {
