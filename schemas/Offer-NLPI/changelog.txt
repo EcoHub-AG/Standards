@@ -1,9 +1,18 @@
 ### Version 0.5.0
+- AHVSalaryMultipleType (Removed)
 - DeathCapitalType (Changed)
     - removed property "deathCapitalInsured"
     - removed property "bridgingCapital"
     - properties "deathCapitalUVG" and "deathCapitalSurplus" are now mandatory
     - removed property "wageSupplement" (moved to UVGZCoverageType)
+- DisabilityCapitalType (Changed)
+    - removed property "disabilityCapitalInsured"
+    - removed property "integrityCapital" (moved to UVGZCoverageType)
+    - renamed property "disabilityCapitalSurplus" to "disabilityCapitalSurplusSalary"
+    - changed type of property "disabilityCapitalSurplus" to YearlySalaryMultipleType
+    - replaced enum value "0%" with "none" for property "disabilityCapitalProg"
+    - removed property "bridgingCapital"
+    - properties "disabilityCapitalUVG", "disabilityCapitalSurplusSalary" and "disabilityCapitalProg" are now mandatory
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
 - OfferNlpiRequestDataType (Changed)
@@ -23,13 +32,17 @@
     - Added property "personGroupDescription"
 - UVGZCoverageType (Changed)
     - property "deathCapital" is now optional
+    - property "disabilityCapital" is now optional
     - added optional property wageSupplement (moved from DeathCapitalType)
+    - added optional integrityCapital (moved from DisabilityCapitalType)
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "maximumPayrollAmount"
     - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus"
-- YearlySalaryTypeMultiple (Changed)
+    - Added restriction for allowed enum values for "disabilityCapitalUVG" and "disabilityCapitalSurplusSalary"
+- YearlySalaryMultipleType (Changed)
     - translated and added enum values
+- YearlySalaryOptionalMultipleType (Removed)
 
 ### Version 0.4.0 (05.11.2024)
 Version 0.3.0 only included properties for KTG. This version expands the Standard to additionally

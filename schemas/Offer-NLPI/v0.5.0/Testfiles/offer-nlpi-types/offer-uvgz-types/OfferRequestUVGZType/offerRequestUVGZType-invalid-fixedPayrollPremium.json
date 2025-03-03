@@ -10,9 +10,6 @@
       "fixedPayroll": 150000.00,
       "surplusPayroll": 50000.00,
       "coverage": {
-        "disabilityCapital": {
-          "disabilityCapitalInsured": false
-        },
         "dailyAllowance": {
           "dailyAllowanceInsured": false
         },

@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "type": "string",
-  "enum": [
-    "nein",
-    "1-facher AHV-Lohn",
-    "2-facher AHV-Lohn"
-  ]
-}

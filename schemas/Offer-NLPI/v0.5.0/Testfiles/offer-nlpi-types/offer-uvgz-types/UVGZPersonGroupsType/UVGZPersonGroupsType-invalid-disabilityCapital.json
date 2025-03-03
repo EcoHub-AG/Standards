@@ -6,9 +6,10 @@
     "payrollTotal": 2500000.00,
     "surplusSalaryTotal": 500000.00,
     "coverage": {
-      "deathCapital": {
-        "deathCapitalUVG": "10-fold",
-        "deathCapitalSurplus": "12-fold"
+      "disabilityCapital": {
+        "disabilityCapitalUVG": "12-fold",
+        "disabilityCapitalSurplusSalary": "13-fold",
+        "disabilityCapitalProg": "225%"
       },
       "dailyAllowance": {
         "dailyAllowanceInsured": true,

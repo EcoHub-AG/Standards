@@ -15,13 +15,11 @@
       },
       "wageSupplement": true,
       "disabilityCapital": {
-        "disabilityCapitalInsured": true,
-        "integrityCapital": true,
-        "disabilityCapitalUVG": "6-fold",
-        "disabilityCapitalSurplus": "4-facher Jahreslohn",
-        "disabilityCapitalProg": "350%",
-        "bridgingCapital": "2-facher AHV-Lohn"
+        "disabilityCapitalUVG": "4-fold",
+        "disabilityCapitalSurplusSalary": "3-fold",
+        "disabilityCapitalProg": "225%"
       },
+      "integrityCapital": true,
       "dailyAllowance": {
         "dailyAllowanceInsured": true,
         "dailyAllowance": 100,

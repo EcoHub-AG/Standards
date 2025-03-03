@@ -13,6 +13,10 @@
     "disabilityCapital": {
       "$ref": "DisabilityCapitalType.json"
     },
+    "integrityCapital": {
+      "type": "boolean",
+      "description": "Integrity capital based on UVG benefits co-insured?"
+    },
     "dailyAllowance": {
       "$ref": "DailyAllowanceType.json"
     },
@@ -125,7 +129,6 @@
     }
   },
   "required": [
-    "disabilityCapital",
     "dailyAllowance",
     "dailyHospitalAllowance",
     "differentialCover"
