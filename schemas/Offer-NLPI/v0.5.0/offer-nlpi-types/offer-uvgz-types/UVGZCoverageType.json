@@ -6,6 +6,10 @@
     "deathCapital": {
       "$ref": "DeathCapitalType.json"
     },
+    "wageSupplement": {
+      "description": "Wage supplement.",
+      "type": "boolean"
+    },
     "disabilityCapital": {
       "$ref": "DisabilityCapitalType.json"
     },

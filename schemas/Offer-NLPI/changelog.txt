@@ -3,6 +3,7 @@
     - removed property "deathCapitalInsured"
     - removed property "bridgingCapital"
     - properties "deathCapitalUVG" and "deathCapitalSurplus" are now mandatory
+    - removed property "wageSupplement" (moved to UVGZCoverageType)
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
 - OfferNlpiRequestDataType (Changed)
@@ -22,6 +23,7 @@
     - Added property "personGroupDescription"
 - UVGZCoverageType (Changed)
     - property "deathCapital" is now optional
+    - added optional property wageSupplement (moved from DeathCapitalType)
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "maximumPayrollAmount"

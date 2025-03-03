@@ -13,6 +13,7 @@
         "deathCapitalUVG": "16-fold",
         "deathCapitalSurplus": "14-fold"
       },
+      "wageSupplement": true,
       "disabilityCapital": {
         "disabilityCapitalInsured": true,
         "integrityCapital": true,

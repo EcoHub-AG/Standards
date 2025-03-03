@@ -9,9 +9,9 @@
       "coverage": {
         "deathCapital": {
           "deathCapitalUVG": "3-fold",
-          "deathCapitalSurplus": "2-fold",
-          "wageSupplement": true
+          "deathCapitalSurplus": "2-fold"
         },
+        "wageSupplement": true,
         "disabilityCapital": {
           "disabilityCapitalInsured": true,
           "integrityCapital": true,
@@ -64,6 +64,7 @@
           "deathCapitalUVG": "5-fold",
           "deathCapitalSurplus": "3-fold"
         },
+        "wageSupplement": true,
         "disabilityCapital": {
           "disabilityCapitalInsured": true,
           "integrityCapital": true,

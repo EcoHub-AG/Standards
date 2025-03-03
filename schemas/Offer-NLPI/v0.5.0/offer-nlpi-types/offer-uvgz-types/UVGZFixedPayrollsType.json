@@ -43,17 +43,6 @@
         "$ref": "UVGZCoverageType.json",
         "allOf": [
           {
-            "properties": {
-              "deathCapital": {
-                "not": {
-                  "required": [
-                    "wageSupplement"
-                  ]
-                }
-              }
-            }
-          },
-          {
             "if": {
               "properties": {
                 "dailyAllowance": {

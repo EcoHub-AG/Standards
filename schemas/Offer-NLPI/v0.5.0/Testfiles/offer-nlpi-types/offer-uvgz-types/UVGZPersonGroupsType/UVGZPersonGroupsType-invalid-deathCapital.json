@@ -8,8 +8,7 @@
     "coverage": {
       "deathCapital": {
         "deathCapitalUVG": "10-fold",
-        "deathCapitalSurplus": "12-fold",
-        "wageSupplement": true
+        "deathCapitalSurplus": "12-fold"
       },
       "disabilityCapital": {
         "disabilityCapitalInsured": true,

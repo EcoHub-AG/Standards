@@ -1,9 +1,9 @@
 {
   "deathCapital": {
     "deathCapitalUVG": "3-fold",
-    "deathCapitalSurplus": "2-fold",
-    "wageSupplement": true
+    "deathCapitalSurplus": "2-fold"
   },
+  "wageSupplement": true,
   "disabilityCapital": {
     "disabilityCapitalInsured": true,
     "integrityCapital": true,
