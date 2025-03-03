@@ -31,23 +31,39 @@
         "$ref": "UVGZCoverageType.json",
         "allOf": [
           {
-            "if": {
-              "properties": {
-                "deathCapital": {
-                  "properties": {
-                    "deathCapitalInsured": {
-                      "const": true
-                    }
+            "properties": {
+              "deathCapital": {
+                "properties": {
+                  "deathCapitalUVG": {
+                    "enum": [
+                      "no",
+                      "0.5-fold",
+                      "1-fold",
+                      "2-fold",
+                      "3-fold",
+                      "4-fold",
+                      "5-fold",
+                      "6-fold",
+                      "7-fold",
+                      "8-fold",
+                      "9-fold"
+                    ]
+                  },
+                  "deathCapitalSurplus": {
+                    "enum": [
+                      "no",
+                      "0.5-fold",
+                      "1-fold",
+                      "2-fold",
+                      "3-fold",
+                      "4-fold",
+                      "5-fold",
+                      "6-fold",
+                      "7-fold",
+                      "8-fold",
+                      "9-fold"
+                    ]
                   }
-                }
-              }
-            },
-            "then": {
-              "properties": {
-                "deathCapital": {
-                  "required": [
-                    "wageSupplement"
-                  ]
                 }
               }
             }
@@ -163,7 +179,6 @@
       "personGroupDescription",
       "numberOfPersonsTotal",
       "payrollTotal",
-      "maximumPayrollAmount",
       "surplusSalaryTotal",
       "coverage"
     ],

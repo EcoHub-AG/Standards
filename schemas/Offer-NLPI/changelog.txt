@@ -12,8 +12,6 @@
     - removed max size restriction for voluntarilyInsuredPersons
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
-- OfferUVGZType (Changed)
-    - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus" for "personGroups"
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
@@ -27,6 +25,7 @@
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "maximumPayrollAmount"
+    - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus"
 - YearlySalaryTypeMultiple (Changed)
     - translated and added enum values
 

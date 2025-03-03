@@ -8,7 +8,7 @@
     "coverage": {
       "deathCapital": {
         "deathCapitalUVG": "3-fold",
-        "deathCapitalSurplus": "2-fold",
+        "deathCapitalSurplus": "2-fold"
       },
       "disabilityCapital": {
         "disabilityCapitalInsured": false

@@ -26,7 +26,7 @@
 	"required": [
 		"sender",
 		"recipient",
-		"standard"
+		"schemaUrl"
 	],
 	"allOf": [
 		{
