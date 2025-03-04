@@ -9,7 +9,6 @@
     "fixedPayroll": 150000.00,
     "surplusPayroll": 50000.00,
     "coverage": {
-      "medicalExpenses": "Privatabteilung",
       "differentialCover": true,
       "disabilityPension": {
         "pensionInsured": false

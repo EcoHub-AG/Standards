@@ -7,7 +7,6 @@
       "payrollTotal": 2500000.00,
       "surplusSalaryTotal": 500000.00,
       "coverage": {
-        "medicalExpenses": "Halbprivatabteilung",
         "differentialCover": false,
         "disabilityPension": {
           "pensionInsured": false

@@ -21,6 +21,7 @@
     - replaced enum value "0%" with "none" for property "disabilityCapitalProg"
     - removed property "bridgingCapital"
     - properties "disabilityCapitalUVG", "disabilityCapitalSurplusSalary" and "disabilityCapitalProg" are now mandatory
+- MedicalExpensesHospitalType (Added)
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
 - OfferNlpiRequestDataType (Changed)
@@ -45,6 +46,8 @@
     - property "dailyHospitalAllowance" is now optional
     - added optional property wageSupplement (moved from DeathCapitalType)
     - added optional integrityCapital (moved from DisabilityCapitalType)
+    - removed property medicalExpenses
+    - added property "medicalExpensesHospitalType"
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "maximumPayrollAmount"
