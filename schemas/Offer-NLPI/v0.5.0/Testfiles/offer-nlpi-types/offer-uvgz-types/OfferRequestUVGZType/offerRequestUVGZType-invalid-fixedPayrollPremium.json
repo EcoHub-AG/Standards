@@ -1,7 +1,7 @@
 {
   "fixedPayrolls": [
     {
-      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+      "fixedPayrollId": "345aa049-7693-4710-89d7-e13b87ab988a",
       "role": "BusinessOwner",
       "firstname": "John",
       "surname": "Doe",

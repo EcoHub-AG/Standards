@@ -48,6 +48,8 @@
     - added optional integrityCapital (moved from DisabilityCapitalType)
     - removed property medicalExpenses
     - added property "medicalExpensesHospitalType"
+- UVGZFixedPayrollsType (Changed)
+    - Renamed property "personId" to "fixedPayrollId"
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "maximumPayrollAmount"
