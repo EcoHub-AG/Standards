@@ -6,9 +6,6 @@
     "payrollTotal": 2500000.00,
     "surplusSalaryTotal": 500000.00,
     "coverage": {
-      "dailyHospitalAllowance": {
-        "dailyHospitalAllowanceInsured": "nein"
-      },
       "medicalExpenses": "Halbprivatabteilung",
       "differentialCover": true,
       "disabilityPension": {

@@ -5,6 +5,9 @@
 - DailyAllowanceType (Replaced)
     - removed all properties and replaced them with different ones
 - DailyAllowanceWaitingPeriodType (Added)
+- DailyHospitalAllowanceType
+    - Removed properties "dailyHospitalAllowanceInsured", "dailyHospitalAnnualSalary"
+    - property "dailyHospitalAllowanceFixAmount" is now mandatory
 - DeathCapitalType (Changed)
     - removed property "deathCapitalInsured"
     - removed property "bridgingCapital"
@@ -39,6 +42,7 @@
     - property "deathCapital" is now optional
     - property "disabilityCapital" is now optional
     - property "dailyAllowance" is now optional
+    - property "dailyHospitalAllowance" is now optional
     - added optional property wageSupplement (moved from DeathCapitalType)
     - added optional integrityCapital (moved from DisabilityCapitalType)
 - UVGZPersonGroupsType (Changed)

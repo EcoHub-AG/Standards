@@ -1,64 +1,15 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"type": "object",
-	"description": "Daily hospital allowance",
+	"description": "Daily hospital allowance insured",
 	"properties": {
-		"dailyHospitalAllowanceInsured": {
-			"type": "string",
-			"description": "Daily hospital allowance insured?",
-			"enum": [
-				"ja, fester Betrag in CHF",
-				"ja, in % des Jahreslohnes",
-				"nein"
-			]
-		},
 		"dailyHospitalAllowanceFixAmount": {
 			"description": "Daily hospital allowance as a fixed amount in CHF",
 			"$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
-		},
-		"dailyHospitalAnnualSalary": {
-			"description": "Daily hospital allowance in % of the annual salary",
-			"type": "number",
-			"enum": [
-				10,
-				20,
-				30
-			]
 		}
 	},
 	"additionalProperties": false,
 	"required": [
-		"dailyHospitalAllowanceInsured"
-	],
-	"allOf": [
-		{
-			"if": {
-				"properties": {
-					"dailyHospitalAllowanceInsured": {
-						"const": "ja, fester Betrag in CHF"
-					}
-				}
-			},
-			"then": {
-				"required": [
-					"dailyHospitalAllowanceFixAmount"
-				]
-			}
-		},
-		{
-			"if": {
-				"properties": {
-					"dailyHospitalAllowanceInsured": {
-						"const": "ja, in % des Jahreslohnes"
-					}
-				}
-			},
-			"then": {
-				"required": [
-					"dailyHospitalAnnualSalary"
-				]
-			}
-		}
+		"dailyHospitalAllowanceFixAmount"
 	]
-
 }

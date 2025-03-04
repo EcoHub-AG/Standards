@@ -129,7 +129,6 @@
     }
   },
   "required": [
-    "dailyHospitalAllowance",
     "differentialCover"
   ],
   "additionalProperties": false

@@ -29,7 +29,6 @@
           "dailyAllowanceRelapsesLateEffectsUVGZ": "insured"
         },
         "dailyHospitalAllowance": {
-          "dailyHospitalAllowanceInsured": "ja, fester Betrag in CHF",
           "dailyHospitalAllowanceFixAmount": 100.00
         },
         "medicalExpenses": "Halbprivatabteilung",
@@ -80,8 +79,7 @@
           "dailyAllowanceRelapsesLateEffectsUVGZ": "insured"
         },
         "dailyHospitalAllowance": {
-          "dailyHospitalAllowanceInsured": "ja, in % des Jahreslohnes",
-          "dailyHospitalAnnualSalary": 20
+          "dailyHospitalAllowanceFixAmount": 100.00
         },
         "medicalExpenses": "Privatabteilung",
         "differentialCover": true,

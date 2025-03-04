@@ -10,10 +10,6 @@
         "deathCapitalUVG": "10-fold",
         "deathCapitalSurplus": "12-fold"
       },
-      "dailyHospitalAllowance": {
-        "dailyHospitalAllowanceInsured": "ja, fester Betrag in CHF",
-        "dailyHospitalAllowanceFixAmount": 100.00
-      },
       "medicalExpenses": "Halbprivatabteilung",
       "differentialCover": true,
       "disabilityPension": {
