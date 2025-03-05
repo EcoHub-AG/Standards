@@ -156,7 +156,7 @@
       }
     },
     "required": [
-      "personId",
+      "fixedPayrollId",
       "role",
       "gender",
       "surname",
