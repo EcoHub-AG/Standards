@@ -49,7 +49,8 @@
     - removed property medicalExpenses
     - added property "medicalExpensesHospitalType"
 - UVGZFixedPayrollsType (Changed)
-    - Renamed property "personId" to "fixedPayrollId"
+    - renamed property "personId" to "fixedPayrollId"
+    - removed property "surplusPayroll"
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "maximumPayrollAmount"

@@ -35,10 +35,6 @@
         "description": "Fixed payroll amount in CHF",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
-      "surplusPayroll": {
-        "description": "Surplus payroll wages in CHF",
-        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
-      },
       "coverage": {
         "$ref": "UVGZCoverageType.json",
         "allOf": [

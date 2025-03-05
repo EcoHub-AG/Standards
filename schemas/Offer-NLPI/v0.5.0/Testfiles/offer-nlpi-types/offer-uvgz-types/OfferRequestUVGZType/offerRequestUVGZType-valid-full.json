@@ -57,7 +57,6 @@
       "birthDate": "1980-05-15",
       "gender": "male",
       "fixedPayroll": 150000.00,
-      "surplusPayroll": 50000.00,
       "coverage": {
         "deathCapital": {
           "deathCapitalUVG": "5-fold",
