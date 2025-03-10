@@ -38,6 +38,7 @@
     - "offerToDate" renamed to "offerDeadline" and now mandatory
     - Added mandatory constants processName, subProcessName and processVersion
     - Added property "combinationMeta"
+    - Property "offerLanguage" is now mandatory
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
 - OfferUVGOType (Changed)

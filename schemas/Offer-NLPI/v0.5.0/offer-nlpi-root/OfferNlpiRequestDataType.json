@@ -99,6 +99,7 @@
 		"header",
 		"customer",
 		"offerDeadline",
+		"offerLanguage",
 		"currency",
 		"insuranceStartDate",
 		"insuranceDurationInYears",
