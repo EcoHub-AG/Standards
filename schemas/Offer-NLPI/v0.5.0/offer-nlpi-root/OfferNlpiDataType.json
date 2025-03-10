@@ -148,6 +148,9 @@
       "$ref": "../../../Generics/v0.5.0/RestrictedStringType.json",
       "description": "General comment field"
     },
+    "insurerContact": {
+      "$ref": "../../../Generics/v0.5.0/ContactType.json"
+    },
     "offerDocument": {
       "description": "Offer document",
       "$ref": "../../../Generics/v0.5.0/MultiFileType.json"
@@ -175,7 +178,8 @@
     "insuranceEndDate",
     "currency",
     "offerDocument",
-    "premiumOverview"
+    "premiumOverview",
+    "insurerContact"
   ],
   "dependentSchemas": {
     "DSB": {

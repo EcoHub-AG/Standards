@@ -14,9 +14,6 @@
 		"insurerCode": {
 			"$ref": "InsurerCodeType.json",
 			"description": "Insurer code"
-		},
-		"insurerContact": {
-			"$ref": "ContactType.json"
 		}
 	},
 	"additionalProperties": false,

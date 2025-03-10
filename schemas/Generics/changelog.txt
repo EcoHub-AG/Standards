@@ -7,6 +7,8 @@
     - removed values "other" and "unknown"
 - HeaderType (Changed)
     - removed property "standard"
+- InsurerType (Changed)
+    - removed property "insurerContact"
 - RegFINMANoType (Changed)
     - Changed format to support the new finma number format and disallow the old format
 

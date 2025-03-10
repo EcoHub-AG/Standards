@@ -28,6 +28,7 @@
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
+    - Added mandatory property "insurerContact"
 - OfferNlpiFeedbackDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiRequestDataType (Changed)

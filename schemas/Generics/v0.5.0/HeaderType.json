@@ -35,26 +35,6 @@
 					}
 				}
 			}
-		},
-		{
-			"if": {
-				"properties": {
-					"sender": {
-						"required": ["insurer"]
-					}
-				}
-			},
-			"then": {
-				"properties": {
-					"sender": {
-						"properties": {
-							"insurer": {
-								"required": ["insurerContact"]
-							}
-						}
-					}
-				}
-			}
 		}
 	]
 }
