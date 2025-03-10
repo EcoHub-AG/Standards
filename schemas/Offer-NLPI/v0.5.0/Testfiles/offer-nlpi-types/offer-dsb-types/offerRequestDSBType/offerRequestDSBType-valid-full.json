@@ -9,8 +9,9 @@
       "payrollFemale": 304000,
       "payrollMale": 0,
       "payrollTotal": 304000,
-      "maximumPayrollAmount": 450000,
-      "averageAgePersonGroup": 39.7,
+      "maxSalary": 450000,
+      "averageAgeMale": 39.7,
+      "averageAgeFemale": 39.7,
       "uniformPremiumRate": true,
       "coverage": {
         "DSBCoverage": {

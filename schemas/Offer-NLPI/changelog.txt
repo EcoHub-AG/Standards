@@ -22,6 +22,11 @@
     - replaced enum value "0%" with "none" for property "disabilityCapitalProg"
     - removed property "bridgingCapital"
     - properties "disabilityCapitalUVG", "disabilityCapitalSurplusSalary" and "disabilityCapitalProg" are now mandatory
+- DSBPersonGroupsType (Changed)
+    - renamed property "maximumPayrollAmount" to "maxSalary"
+    - removed property "averageAgePersonGroup"
+    - added property "averageAgeMale"
+    - added property "averageAgeFemale"
 - MedicalExpensesHospitalType (Added)
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
