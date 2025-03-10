@@ -6,7 +6,7 @@
 - GenderType
     - removed values "other" and "unknown"
 - HeaderType (Changed)
-    - renamed "standard" to "schemaUrl"
+    - removed property "standard"
 - RegFINMANoType (Changed)
     - Changed format to support the new finma number format and disallow the old format
 

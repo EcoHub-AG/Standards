@@ -24,9 +24,16 @@
 - MedicalExpensesHospitalType (Added)
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
+- OfferNlpiConclusionDecisionDataType (Changed)
+    - Added mandatory constants processName, subProcessName and processVersion
+- OfferNlpiDataType (Changed)
+    - Added mandatory constants processName, subProcessName and processVersion
+- OfferNlpiFeedbackDataType (Changed)
+    - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiRequestDataType (Changed)
     - added attribute "brokerContact" (moved to BrokerType)
     - "offerToDate" renamed to "offerDeadline" and now mandatory
+    - Added mandatory constants processName, subProcessName and processVersion
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
 - OfferUVGOType (Changed)

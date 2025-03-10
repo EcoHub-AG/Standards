@@ -9,6 +9,18 @@
 		"timestamp": {
 			"$ref": "../../../Generics/v0.5.0/TimestampType.json"
 		},
+		"processName": {
+			"description": "Name of the process",
+			"const": "offer.nlpi"
+		},
+		"subProcessName": {
+			"description": "Name of the subprocess",
+			"const": "request"
+		},
+		"processVersion": {
+			"description": "Version of the process",
+			"const": "0.5.0"
+		},
 		"header": {
 			"$ref": "../../../Generics/v0.5.0/HeaderType.json"
 		},
@@ -73,6 +85,9 @@
 	"required": [
 		"processIdentificationNo",
 		"timestamp",
+		"processName",
+		"subProcessName",
+		"processVersion",
 		"header",
 		"customer",
 		"offerDeadline",

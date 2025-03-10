@@ -1,6 +1,9 @@
 {
 	"processIdentificationNo": "00000000-0000-0000-0000-000000000001",
 	"timestamp": "2024-01-15T19:20:47.0",
+	"processName": "offer.nlpi",
+	"subProcessName": "feedback",
+	"processVersion": "0.5.0",
 	"header": {
 		"recipient": {
 			"insurer": {
@@ -24,8 +27,7 @@
 					"consultantFINMARegisterNo": "CHE-IGB2B-56439"
 				}
 			}
-		},
-		"standard": "http://www.igb2b.ch/offer/nlpi/request/0.2.3"
+		}
 	},
 	"customer": {
 		"companyName": "Coiffeur Verband Schweiz",
