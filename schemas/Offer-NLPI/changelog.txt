@@ -1,5 +1,6 @@
 ### Version 0.5.0
 - AHVSalaryMultipleType (Removed)
+- CombinationMetaType (Added)
 - DailyAllowancePercentageType (Added)
 - DailyAllowanceRelapsesType (Added)
 - DailyAllowanceType (Replaced)
@@ -29,12 +30,14 @@
 - OfferNlpiDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
     - Added mandatory property "insurerContact"
+    - Added property "combinationMeta"
 - OfferNlpiFeedbackDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiRequestDataType (Changed)
     - added attribute "brokerContact" (moved to BrokerType)
     - "offerToDate" renamed to "offerDeadline" and now mandatory
     - Added mandatory constants processName, subProcessName and processVersion
+    - Added property "combinationMeta"
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
 - OfferUVGOType (Changed)

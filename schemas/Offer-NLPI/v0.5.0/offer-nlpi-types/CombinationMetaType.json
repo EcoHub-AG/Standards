@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"combinationId": {
+			"description": "Unique identification number of the combination",
+			"$ref": "../../../Generics/v0.5.0/UuidType.json"
+		},
+		"combinationLobIG": {
+			"description": "\"IG B2B branch code according to IG B2B. Only main categories of the branch code list are used",
+			"type": "array",
+			"items": {
+				"type": "string",
+				"enum": [
+					"38000 Compulsory accident insurance (UVG/OUFL)",
+					"36000 Supplementary accident insurance (UVGZ)",
+					"42000 Collective daily sickness benefits insurance"
+				]
+			}
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"combinationLobIG"
+	]
+}

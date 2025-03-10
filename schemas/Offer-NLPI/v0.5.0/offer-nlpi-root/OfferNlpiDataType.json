@@ -24,6 +24,9 @@
     "header": {
       "$ref": "../../../Generics/v0.5.0/HeaderType.json"
     },
+    "combinationMeta": {
+      "$ref": "../offer-nlpi-types/CombinationMetaType.json"
+    },
     "customer": {
       "$ref": "../offer-nlpi-types/OfferCustomerType.json"
     },
