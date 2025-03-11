@@ -57,6 +57,7 @@
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
     - replaced valid enum values for property "role" in "personsConnectionEmployer"
+    - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"

@@ -74,11 +74,16 @@
     },
     "insuranceOptionsVarious": {
       "$ref": "UVGOInsuranceOptionsVariousType.json"
+    },
+    "previousInsurer": {
+      "description": "Previous insurer",
+      "$ref": "../../offer-nlpi-types/PreviousInsurerType.json"
     }
   },
   "additionalProperties": false,
   "required": [
-    "insuranceOptionsVarious"
+    "insuranceOptionsVarious",
+    "previousInsurer"
   ],
   "anyOf": [
     {
