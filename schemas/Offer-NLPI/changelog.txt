@@ -69,6 +69,10 @@
     - Added "additionalOptions" property
 - UVGOPersonGroupType (Changed)
     - Added property "personGroupDescription"
+    - renamed property "numberOfPersonsBU" to "numberOfPersonsOA"
+    - renamed property "numberOfPersonsNBU" to "numberOfPersonsNOA"
+    - renamed property "payrollBU" to "payrollEmployeesOA"
+    - renamed property "payrollNBU" to "payrollEmployeesNOA"
 - UVGZCoverageType (Changed)
     - property "deathCapital" is now optional
     - property "disabilityCapital" is now optional

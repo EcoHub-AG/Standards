@@ -3,10 +3,10 @@
     {
       "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
       "personGroupDescription": "Group 1",
-      "numberOfPersonsBU": 50,
-      "numberOfPersonsNBU": 30,
-      "payrollBU": 2500000.00,
-      "payrollNBU": 1500000.00,
+      "numberOfPersonsOA": 50,
+      "": 30,
+      "payrollEmployeesOA": 2500000.00,
+      "payrollEmployeesNOA": 1500000.00,
       "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG",
       "premiumPersonGroup": {
         "premiumBU": {

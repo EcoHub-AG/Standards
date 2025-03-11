@@ -14,19 +14,19 @@
         "description": "Name of the group of persons",
         "type": "string"
       },
-      "numberOfPersonsBU": {
+      "numberOfPersonsOA": {
         "description": "Number of employees OA. If unknown, value 0 can be specified.",
         "type": "integer"
       },
-      "numberOfPersonsNBU": {
+      "numberOfPersonsNOA": {
         "description": "Number of employees NOA. If unknown, value 0 can be specified.",
         "type": "integer"
       },
-      "payrollBU": {
+      "payrollEmployeesOA": {
         "description": "Accident insurance total payroll of all employees OA",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
-      "payrollNBU": {
+      "payrollEmployeesNOA": {
         "description": "Accident insurance total payroll of all employees NOA",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
@@ -58,10 +58,10 @@
     "required": [
       "personGroupId",
       "personGroupDescription",
-      "numberOfPersonsBU",
-      "numberOfPersonsNBU",
-      "payrollBU",
-      "payrollNBU",
+      "numberOfPersonsOA",
+      "numberOfPersonsNOA",
+      "payrollEmployeesOA",
+      "payrollEmployeesNOA",
       "coverage"
     ]
   }
