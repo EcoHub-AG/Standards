@@ -28,7 +28,7 @@
       "$ref": "../../../../Generics/v0.5.0/GenderType.json"
     },
     "payroll": {
-      "description": "Insured fixed salary of the voluntarily insured person",
+      "description": "Insured fixed salary of the insured person",
       "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
     },
     "coverage": {
