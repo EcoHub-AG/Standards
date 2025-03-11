@@ -38,7 +38,7 @@
 									"$ref": "InsuranceEndDateType.json"
 								},
 								"claimsExperienceDocument": {
-									"description": "Claims experience document",
+									"description": "Claims experience document. AKD/MIDI, in the event of non-delivery the insurer's response will take correspondingly longer.",
 									"$ref": "../../../Generics/v0.3.0/FileType.json"
 								}
 							},
