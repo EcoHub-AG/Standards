@@ -15,7 +15,7 @@
         "type": "string"
       },
       "numberOfPersonsTotal": {
-        "description": "Total number of employees",
+        "description": "Total number of employees. If unknown, 0 can also be entered.",
         "type": "integer"
       },
       "payrollTotal": {
