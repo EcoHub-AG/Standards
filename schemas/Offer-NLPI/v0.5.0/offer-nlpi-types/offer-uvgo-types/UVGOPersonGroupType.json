@@ -31,7 +31,7 @@
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
       "coverage": {
-        "description": "Coverage of the person groups",
+        "description": "Coverage of the person groups UVG Compulsory Federal Accident Insurance Act (UVG)",
         "$ref": "UVGOCoverageType.json"
       },
       "premiumPersonGroup": {

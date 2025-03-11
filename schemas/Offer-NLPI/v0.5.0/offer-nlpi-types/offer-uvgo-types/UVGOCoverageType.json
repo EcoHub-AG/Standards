@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "type": "string",
   "enum": [
-    "Deckung gemäss obligatorischer Unfallversicherung UVG",
-    "Deckung gemäss obligatorischer Unfallversicherung OUFL"
+    "Coverage according to compulsory accident insurance UVG",
+    "coverage according to compulsory accident insurance OUFL"
   ]
 }

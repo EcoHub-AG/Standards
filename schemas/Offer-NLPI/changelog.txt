@@ -65,6 +65,8 @@
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
     - renamed "insuranceEndDate" to "endPreInsuranceDate"
+- UVGOCoverageType
+    - replaced enum values
 - UVGOInsuranceOptionsVariousType (Changed)
     - Added "additionalOptions" property
 - UVGOPersonGroupType (Changed)

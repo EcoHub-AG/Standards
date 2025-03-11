@@ -8,7 +8,7 @@
       "birthDate": "1980-05-15",
       "gender": "male",
       "payroll": 120000.00,
-      "coverage": "Deckung gemäss obligatorischer Unfallversicherung UVG"
+      "coverage": "coverage according to compulsory accident insurance UVG"
     },
     {
       "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
@@ -18,7 +18,7 @@
       "birthDate": "1982-09-22",
       "gender": "female",
       "payroll": 90000.00,
-      "coverage": "Deckung gemäss obligatorischer Unfallversicherung OUFL"
+      "coverage": "coverage according to compulsory accident insurance OFUL"
     }
   ],
   "insuranceOptionsVarious": {
