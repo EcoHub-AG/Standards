@@ -50,6 +50,9 @@
     - Added mandatory constants processName, subProcessName and processVersion
     - Added property "combinationMeta"
     - Property "offerLanguage" is now mandatory
+    - removed property "previousInsurer" (moved into DSB, UVGCompulsory, UVGSupplement)
+- OfferRequestDSBType
+    - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"

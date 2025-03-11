@@ -48,8 +48,15 @@
           }
         }
       ]
+    },
+    "previousInsurer": {
+      "description": "Previous insurer",
+      "$ref": "../../offer-nlpi-types/PreviousInsurerType.json"
     }
   },
+  "required": [
+    "previousInsurer"
+  ],
   "anyOf": [
     {
       "required": [
