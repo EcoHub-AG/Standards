@@ -2,7 +2,7 @@
   "fixedPayrolls": [
     {
       "fixedPayrollId": "345aa049-7693-4710-89d7-e13b87ab988a",
-      "role": "BusinessOwner",
+      "role": "self-employed person",
       "firstname": "John",
       "surname": "Doe",
       "birthDate": "1980-05-15",

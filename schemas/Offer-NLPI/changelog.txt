@@ -1,5 +1,7 @@
 ### Version 0.5.0
 - AHVSalaryMultipleType (Removed)
+- BusinessRelationPersonType (Changed)
+    - replaced all enum values
 - CombinationMetaType (Added)
 - DailyAllowancePercentageType (Added)
 - DailyAllowanceRelapsesType (Added)
@@ -50,8 +52,12 @@
     - Property "offerLanguage" is now mandatory
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
+    - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
+    - replaced valid enum values for property "role" in "personsConnectionEmployer"
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
+    - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
+    - replaced valid enum values for property "role" in "personsConnectionEmployer"
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
