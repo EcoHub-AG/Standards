@@ -43,10 +43,6 @@
       "DSBPPayrollBasis": {
         "description": "Paternity daily benefit wage basis",
         "$ref": "PayrollBasisType.json"
-      },
-      "maxSalary": {
-        "description": "Maximum salary in CHF",
-        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       }
     },
     "required": [
