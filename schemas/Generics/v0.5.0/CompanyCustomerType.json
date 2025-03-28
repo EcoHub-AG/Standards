@@ -25,15 +25,6 @@
         "2024"
       ]
     },
-    "riskCharacteristic": {
-      "description": "Definition of special constructs and risk characteristics of the company",
-      "type": "string",
-      "enum": [
-        "Holding/risk community/risk group",
-        "Anobag (employees without employers liable to pay contributions)",
-        "no ones available"
-      ]
-    },
     "domicilAddress": {
       "description": "Domicil Address Type",
       "$ref": "AddressType.json"
@@ -51,7 +42,6 @@
     "companyName",
     "companyLegalForm",
     "companyLegalStatus",
-    "riskCharacteristic",
     "domicilAddress",
     "isDomicilAddressCorrespondenceAddress"
   ],

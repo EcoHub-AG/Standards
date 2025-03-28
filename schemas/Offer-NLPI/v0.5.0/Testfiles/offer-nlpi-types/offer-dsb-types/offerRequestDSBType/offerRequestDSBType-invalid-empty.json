@@ -1,4 +1,5 @@
 {
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
   "insuranceOptions": {
     "insuranceOptionsEmployees": {
       "insuranceStartByEmployment": true,

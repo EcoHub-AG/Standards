@@ -53,11 +53,15 @@
     - removed property "previousInsurer" (moved into DSB, UVGCompulsory, UVGSupplement)
 - OfferRequestDSBType
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
+    - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
     - replaced valid enum values for property "role" in "personsConnectionEmployer"
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
+    - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
+- OfferRequestUVGZType (Changed)
+    - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
@@ -66,6 +70,7 @@
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
     - renamed "insuranceEndDate" to "endPreInsuranceDate"
+- RiskCharacteristicType (Added)
 - UVGOCoverageType
     - replaced enum values
 - UVGOInsuranceOptionsVariousType (Changed)

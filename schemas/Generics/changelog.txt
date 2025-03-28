@@ -2,7 +2,7 @@
 - BrokerType (Changed)
     - removed attribute "brokerContact" (moved to OfferNlpiRequestDataType)
 - CompanyCustomerType (Changed)
-    - Adjusted enum values for "riskCharacteristic"
+    - removed "riskCharacteristic"
 - GenderType
     - removed values "other" and "unknown"
 - HeaderType (Changed)

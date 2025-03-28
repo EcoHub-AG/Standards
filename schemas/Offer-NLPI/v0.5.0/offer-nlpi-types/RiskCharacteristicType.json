@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Definition of special constructs and risk characteristics of the company",
+  "type": "string",
+  "enum": [
+    "Holding/Risk community/Risk group",
+    "Anobag (employees without employers liable to pay contributions)",
+    "No ones available"
+  ]
+}
