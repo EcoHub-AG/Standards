@@ -34,7 +34,19 @@
       ]
     },
     "DSBBenefitPeriod": {
-      "$ref": "BenefitPeriodType.json"
+      "type": "string",
+      "description": "Duration of benefits in days",
+      "enum": [
+        "60 days within 360",
+        "365 days",
+        "730 days minus waiting period",
+        "750 days minus waiting period",
+        "730 days after expiration of waiting period",
+        "720 in 900 days",
+        "730 in 900 days",
+        "365 days within 540 days",
+        "365 days minus waiting period"
+      ]
     },
     "DSBBenefitAmountPercentage": {
       "description": "Daily sickness benefit amount in percentage",

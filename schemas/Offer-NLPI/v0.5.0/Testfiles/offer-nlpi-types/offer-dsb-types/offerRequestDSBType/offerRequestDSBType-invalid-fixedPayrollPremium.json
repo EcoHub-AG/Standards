@@ -15,11 +15,7 @@
         "DSBCoverage": {
           "DSBDaysWaitingNo": 60,
           "DSBCalculationBasis": "working year",
-          "DSBBenefitPeriod": {
-            "benefitDurationDays": 730,
-            "benefitDurationCondition": "after expiry of waiting period",
-            "periodDays": 0
-          },
+          "DSBBenefitPeriod": "365 days",
           "DSBBenefitAmountPercentage": 100,
           "DSBLegalBasis": "VVG"
         }

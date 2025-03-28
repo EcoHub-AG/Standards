@@ -18,11 +18,7 @@
         "DSBCoverage": {
           "DSBDaysWaitingNo": 90,
           "DSBCalculationBasis": "Calendar year",
-          "DSBBenefitPeriod": {
-            "benefitDurationDays": 720,
-            "benefitDurationCondition": "within",
-            "periodDays": 900
-          },
+          "DSBBenefitPeriod": "365 days",
           "DSBBenefitAmountPercentage": 75,
           "DSBLegalBasis": "KVG"
         },

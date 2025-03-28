@@ -1,5 +1,6 @@
 ### Version 0.5.0
 - AHVSalaryMultipleType (Removed)
+- BenefitPeriodType (Removed)
 - BusinessRelationPersonType (Changed)
     - replaced all enum values
 - CombinationMetaType (Added)
@@ -29,6 +30,7 @@
 - DSBPCoverageType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
     - capitalized enum values of property "DSBCalculationBasis"
+    - changed type of property "DSBBenefitPeriod" from object to enum
 - DSBPersonGroupsType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
     - removed property "averageAgePersonGroup"
