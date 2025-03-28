@@ -17,7 +17,7 @@
       "coverage": {
         "DSBCoverage": {
           "DSBDaysWaitingNo": 90,
-          "DSBCalculationBasis": "calendar year",
+          "DSBCalculationBasis": "Calendar year",
           "DSBBenefitPeriod": {
             "benefitDurationDays": 720,
             "benefitDurationCondition": "within",

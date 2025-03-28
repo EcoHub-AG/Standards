@@ -1,7 +1,7 @@
 {
   "DSBCoverage": {
     "DSBDaysWaitingNo": 90,
-    "DSBCalculationBasis": "case",
+    "DSBCalculationBasis": "Case",
     "DSBBenefitPeriod": {
       "benefitDurationDays": 730,
       "benefitDurationCondition": "minus waiting period",

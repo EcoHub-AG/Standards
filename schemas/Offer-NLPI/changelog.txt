@@ -28,6 +28,7 @@
     - renamed property "maximumPayrollAmount" to "maxSalary"
 - DSBPCoverageType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
+    - capitalized enum values of property "DSBCalculationBasis"
 - DSBPersonGroupsType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
     - removed property "averageAgePersonGroup"
