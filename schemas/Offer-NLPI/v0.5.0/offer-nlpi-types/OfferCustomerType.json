@@ -41,6 +41,10 @@
     "typeOfActivity": {
       "description": "Type of activity of the company",
       "$ref": "../../../Generics/v0.5.0/RestrictedStringType.json"
+    },
+    "SUVACompany": {
+      "description": "Only relevant for UVGZ request",
+      "$ref": "SUVACompanyType.json"
     }
   },
   "additionalProperties": false,

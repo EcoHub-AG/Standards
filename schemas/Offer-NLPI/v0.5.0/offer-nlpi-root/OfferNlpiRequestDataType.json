@@ -55,10 +55,6 @@
 		"currency": {
 			"$ref": "../../../Generics/v0.5.0/CurrencyISOCodeType.json"
 		},
-		"UVGCompulsoryInsurer": {
-			"description": "The current UVG compulsory insurer when requesting an UVG supplementary offer.",
-			"$ref": "../offer-nlpi-types/offer-uvgo-types/UVGOInsurerType.json"
-		},
 		"insuranceStartDate": {
 			"$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
 		},
@@ -102,9 +98,6 @@
 		"brokerContact",
 		"document"
 	],
-	"dependentRequired": {
-		"UVGSupplement": ["UVGCompulsoryInsurer"]
-	},
 	"anyOf": [
 		{
 			"required": ["DSB"]
@@ -114,6 +107,23 @@
 		},
 		{
 			"required": ["UVGSupplement"]
+		}
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": ["UVGSupplement"]
+			},
+			"then": {
+				"customer": {
+					"required": ["SUVACompany"]
+				},
+				"coInsuredCustomer": {
+					"items": {
+						"required": ["SUVACompany"]
+					}
+				}
+			}
 		}
 	]
 }

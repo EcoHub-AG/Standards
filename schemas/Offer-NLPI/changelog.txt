@@ -36,6 +36,7 @@
 - MedicalExpensesHospitalType (Added)
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
+    - Added property "SUVACompany"
 - OfferNlpiConclusionDecisionDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiDataType (Changed)
@@ -51,6 +52,7 @@
     - Added property "combinationMeta"
     - Property "offerLanguage" is now mandatory
     - removed property "previousInsurer" (moved into DSB, UVGCompulsory, UVGSupplement)
+    - removed property "UVGCompulsoryInsurer"
 - OfferRequestDSBType
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
@@ -71,10 +73,12 @@
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
     - renamed "insuranceEndDate" to "endPreInsuranceDate"
 - RiskCharacteristicType (Added)
+- SUVACompanyType (Added)
 - UVGOCoverageType
     - replaced enum values
 - UVGOInsuranceOptionsVariousType (Changed)
     - Added "additionalOptions" property
+- UVGOInsurerType (Removed)
 - UVGOPersonGroupType (Changed)
     - Added property "personGroupDescription"
     - renamed property "numberOfPersonsBU" to "numberOfPersonsOA"
