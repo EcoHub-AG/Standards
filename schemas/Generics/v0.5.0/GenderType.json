@@ -4,7 +4,7 @@
   "description": "Enum of available genders",
   "type": "string",
   "enum": [
-    "female",
-    "male"
+    "Female",
+    "Male"
   ]
 }

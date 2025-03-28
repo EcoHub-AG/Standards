@@ -6,25 +6,9 @@
       "firstname": "John",
       "surname": "Doe",
       "birthDate": "1980-05-15",
-      "gender": "male",
+      "gender": "Male",
       "payroll": 120000.00,
       "coverage": "coverage according to compulsory accident insurance UVG",
-      "premiumInsuredPerson": {
-        "hazardClass": "A",
-        "hazardSubClass": "A1",
-        "finalPremiumRate": 3.600,
-        "totalPremium": 10000.00
-      }
-    },
-    {
-      "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
-      "role": "Contributing family member",
-      "firstname": "Jane",
-      "surname": "Doe",
-      "birthDate": "1982-09-22",
-      "gender": "female",
-      "payroll": 90000.00,
-      "coverage": "coverage according to compulsory accident insurance OFUL",
       "premiumInsuredPerson": {
         "hazardClass": "A",
         "hazardSubClass": "A1",

@@ -1,33 +1,13 @@
 {
   "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
-  "personGroup": [
-    {
-      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
-      "numberOfPersonsOA": 50,
-      "": 30,
-      "payrollEmployeesOA": 2500000.00,
-      "payrollEmployeesNOA": 1500000.00,
-      "coverage": "coverage according to compulsory accident insurance UVG"
-    }
-  ],
   "voluntarilyInsuredPersons": [
-    {
-      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
-      "role": "Self-employed person",
-      "firstname": "John",
-      "surname": "Doe",
-      "birthDate": "1980-05-15",
-      "gender": "male",
-      "payroll": 120000.00,
-      "coverage": "coverage according to compulsory accident insurance UVG"
-    },
     {
       "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
       "role": "Partner",
       "firstname": "Jane",
       "surname": "Doe",
       "birthDate": "1982-09-22",
-      "gender": "female",
+      "gender": "Female",
       "payroll": 90000.00,
       "coverage": "coverage according to compulsory accident insurance OFUL"
     }

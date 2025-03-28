@@ -7,7 +7,7 @@
       "firstname": "John",
       "surname": "Doe",
       "birthDate": "1980-05-15",
-      "gender": "male",
+      "gender": "Male",
       "payroll": 120000.00,
       "coverage": "coverage according to compulsory accident insurance UVG",
       "premiumInsuredPerson": {
@@ -16,16 +16,6 @@
         "finalPremiumRate": 2.750,
         "totalPremium": 3300.00
       }
-    },
-    {
-      "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
-      "role": "Shareholder",
-      "firstname": "Jane",
-      "surname": "Doe",
-      "birthDate": "1982-09-22",
-      "gender": "female",
-      "payroll": 90000.00,
-      "coverage": "coverage according to compulsory accident insurance OFUL"
     }
   ],
   "insuranceOptionsVarious": {

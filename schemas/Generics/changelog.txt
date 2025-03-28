@@ -5,6 +5,7 @@
     - removed "riskCharacteristic"
 - GenderType
     - removed values "other" and "unknown"
+    - capitalized enum values
 - HeaderType (Changed)
     - removed property "standard"
 - InsurerType (Changed)

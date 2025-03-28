@@ -7,7 +7,7 @@
       "firstname": "John",
       "surname": "Doe",
       "birthDate": "1980-05-15",
-      "gender": "male",
+      "gender": "Female",
       "fixedPayroll": 150000.00,
       "coverage": {
         "differentialCover": true,
