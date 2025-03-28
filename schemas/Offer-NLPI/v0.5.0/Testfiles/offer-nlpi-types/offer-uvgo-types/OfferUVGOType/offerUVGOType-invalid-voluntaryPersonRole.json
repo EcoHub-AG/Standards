@@ -2,7 +2,7 @@
   "voluntarilyInsuredPersons": [
     {
       "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
-      "role": "self-employed person",
+      "role": "Self-employed person",
       "firstname": "John",
       "surname": "Doe",
       "birthDate": "1980-05-15",
@@ -18,7 +18,7 @@
     },
     {
       "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
-      "role": "partner",
+      "role": "Partner",
       "firstname": "Jane",
       "surname": "Doe",
       "birthDate": "1982-09-22",

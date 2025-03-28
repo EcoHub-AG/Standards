@@ -3,10 +3,10 @@
 	"description": "Role of the insured person",
 	"type": "string",
 	"enum": [
-		"self-employed person",
-		"contributing family member",
-		"partner",
-		"shareholder",
-		"cooperative member"
+		"Self-employed person",
+		"Contributing family member",
+		"Partner",
+		"Shareholder",
+		"Cooperative member"
 	]
 }

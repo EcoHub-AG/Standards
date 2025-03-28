@@ -32,8 +32,8 @@
             "properties": {
               "role": {
                 "enum": [
-                  "self-employed person",
-                  "contributing family member"
+                  "Self-employed person",
+                  "Contributing family member"
                 ]
               }
             }
@@ -57,10 +57,10 @@
             "properties": {
               "role": {
                 "enum": [
-                  "contributing family member",
-                  "partner",
-                  "shareholder",
-                  "cooperative member"
+                  "Contributing family member",
+                  "Partner",
+                  "Shareholder",
+                  "Cooperative member"
                 ]
               }
             }
