@@ -20,8 +20,8 @@
         }
       ]
     },
-    "fixedPayrolls": {
-      "$ref": "DSBFixedPayrollsType.json",
+    "personMentionedByName": {
+      "$ref": "DSBPersonType.json",
       "allOf": [
         {
           "items": {
@@ -69,7 +69,7 @@
     },
     {
       "required": [
-        "fixedPayrolls"
+        "personMentionedByName"
       ]
     }
   ],

@@ -25,6 +25,7 @@
     - replaced enum value "0%" with "none" for property "disabilityCapitalProg"
     - removed property "bridgingCapital"
     - properties "disabilityCapitalUVG", "disabilityCapitalSurplusSalary" and "disabilityCapitalProg" are now mandatory
+- DSBFixedPayrollsType (Renamed to DSBPersonType)
 - DSBMCoverageType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
 - DSBPCoverageType (Changed)
@@ -40,6 +41,8 @@
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
     - Added property "SUVACompany"
+- OfferDSBType (Changed)
+    - renamed property "fixedPayrolls" to "personMentionedByName"
 - OfferNlpiConclusionDecisionDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiDataType (Changed)
@@ -59,6 +62,7 @@
 - OfferRequestDSBType
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
+    - renamed property "fixedPayrolls" to "personMentionedByName"
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
