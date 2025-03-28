@@ -71,6 +71,8 @@
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
     - replaced valid enum values for property "role" in "personsConnectionEmployer"
+- PayrollBasisType
+    - capitalized enum value 'total wage'
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"

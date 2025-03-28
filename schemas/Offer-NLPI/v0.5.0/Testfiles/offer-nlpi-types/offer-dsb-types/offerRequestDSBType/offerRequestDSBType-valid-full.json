@@ -62,7 +62,7 @@
           {
             "DSBMBenefitDurationWeeks": 14,
             "DSBMBenefitAmountPercentage": 100,
-            "DSBMPayrollBasis": "total wage"
+            "DSBMPayrollBasis": "Total wage"
           }
         ],
         "DSBPCoverage": [
