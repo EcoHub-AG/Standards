@@ -18,6 +18,7 @@
     - properties "deathCapitalUVG" and "deathCapitalSurplus" are now mandatory
     - renamed property "deathCapitalUVG" to "deathCapitalUVGSalary"
     - removed property "wageSupplement" (moved to UVGZCoverageType)
+- DisabilityCapitalProgressionType (Added)
 - DisabilityCapitalType (Changed)
     - removed property "disabilityCapitalInsured"
     - removed property "integrityCapital" (moved to UVGZCoverageType)
@@ -28,6 +29,7 @@
     - renamed property "disabilityCapitalProg" to "disabilityCapitalProgUVGSalary"
     - removed property "bridgingCapital"
     - properties "disabilityCapitalUVGSalary", "disabilityCapitalSurplusSalary" and "disabilityCapitalProgUVGSalary" are now mandatory
+    - added mandatory property "disabilityCapitalProgSurplusSalary"
 - DSBFixedPayrollsType (Changed)
     - Renamed type to DSBPersonType
     - Added property "degreeOfEmployment"

@@ -12,21 +12,18 @@
 		},
 		"disabilityCapitalProgUVGSalary": {
 			"description": "Disability capital progressive of the UVG salary in %",
-			"type": "string",
-			"enum": [
-				"None",
-				"100%",
-				"150%",
-				"225%",
-				"250%",
-				"350%"
-			]
+			"$ref": "DisabilityCapitalProgressionType.json"
+		},
+		"disabilityCapitalProgSurplusSalary": {
+			"description": "Disability capital progressive of surplus salary in %",
+			"$ref": "DisabilityCapitalProgressionType.json"
 		}
 	},
 	"additionalProperties": false,
 	"required": [
 		"disabilityCapitalUVGSalary",
 		"disabilityCapitalSurplusSalary",
-		"disabilityCapitalProgUVGSalary"
+		"disabilityCapitalProgUVGSalary",
+		"disabilityCapitalProgSurplusSalary"
 	]
 }

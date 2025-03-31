@@ -7,7 +7,8 @@
   "disabilityCapital": {
     "disabilityCapitalUVGSalary": "4-fold",
     "disabilityCapitalSurplusSalary": "3-fold",
-    "disabilityCapitalProgUVGSalary": "225%"
+    "disabilityCapitalProgUVGSalary": "225%",
+    "disabilityCapitalProgSurplusSalary": "225%"
   },
   "integrityCapital": true,
   "dailyAllowance": {
