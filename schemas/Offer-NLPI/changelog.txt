@@ -130,7 +130,8 @@
     - removed property "surplusPayroll"
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
-    - Removed property "maximumPayrollAmount"
+    - Removed property "payrollTotal"
+    - Renamed property "maximumPayrollAmount" to "maxSalary"
     - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus"
     - Added restriction for allowed enum values for "disabilityCapitalUVG" and "disabilityCapitalSurplusSalary"
 - YearlySalaryMultipleType (Changed)

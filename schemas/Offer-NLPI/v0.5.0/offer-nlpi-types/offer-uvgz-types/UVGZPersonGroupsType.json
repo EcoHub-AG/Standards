@@ -18,8 +18,8 @@
         "description": "Total number of employees. If unknown, 0 can also be entered.",
         "type": "integer"
       },
-      "payrollTotal": {
-        "description": "Total payroll of all employees",
+      "maxSalary": {
+        "description": "Maximum salary in CHF",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
       "surplusSalaryTotal": {
@@ -205,7 +205,7 @@
       "personGroupId",
       "personGroupDescription",
       "numberOfPersonsTotal",
-      "payrollTotal",
+      "maxSalary",
       "surplusSalaryTotal",
       "coverage"
     ],
