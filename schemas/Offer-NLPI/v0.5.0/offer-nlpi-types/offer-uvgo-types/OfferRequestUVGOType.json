@@ -24,7 +24,7 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "UVGOFixedPayrollsType.json",
+        "$ref": "UVGOPersonType.json",
         "allOf": [
           {
             "not": {
