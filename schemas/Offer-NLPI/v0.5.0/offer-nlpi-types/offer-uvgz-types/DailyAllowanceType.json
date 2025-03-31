@@ -8,7 +8,7 @@
       "$ref": "DailyAllowancePercentageType.json"
     },
     "dailyAllowanceForUVGWaitingDaysSurplusSalary": {
-      "description": "Daily allowance UVG salary from day x",
+      "description": "Daily allowance for UVG-waiting days Surplus Salary",
       "$ref": "DailyAllowancePercentageType.json"
     },
     "waitingPeriodInDaysForDailyAllowanceUVGSalary": {
@@ -23,7 +23,7 @@
         "10%",
         "15%",
         "20%",
-        "not insured"
+        "Not insured"
       ]
     },
     "waitingPeriodInDaysForDailyAllowanceSurplusSalary": {

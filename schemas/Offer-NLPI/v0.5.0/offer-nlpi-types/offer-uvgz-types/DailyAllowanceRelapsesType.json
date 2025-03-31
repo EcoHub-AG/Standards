@@ -2,8 +2,8 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "type": "string",
   "enum": [
-    "insured",
-    "insured for NBU-insured personnel",
-    "not insured"
+    "Insured",
+    "Insured for NBU-insured personnel",
+    "Not insured"
   ]
 }
