@@ -16,6 +16,7 @@
     - removed property "deathCapitalInsured"
     - removed property "bridgingCapital"
     - properties "deathCapitalUVG" and "deathCapitalSurplus" are now mandatory
+    - renamed property "deathCapitalUVG" to "deathCapitalUVGSalary"
     - removed property "wageSupplement" (moved to UVGZCoverageType)
 - DisabilityCapitalType (Changed)
     - removed property "disabilityCapitalInsured"

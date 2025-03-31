@@ -18,7 +18,7 @@
     },
     "coverage": {
       "deathCapital": {
-        "deathCapitalUVG": "3-fold",
+        "deathCapitalUVGSalary": "3-fold",
         "deathCapitalSurplus": "2-fold"
       },
       "wageSupplement": true,

@@ -34,7 +34,7 @@
             "properties": {
               "deathCapital": {
                 "properties": {
-                  "deathCapitalUVG": {
+                  "deathCapitalUVGSalary": {
                     "enum": [
                       "No",
                       "0.5-fold",

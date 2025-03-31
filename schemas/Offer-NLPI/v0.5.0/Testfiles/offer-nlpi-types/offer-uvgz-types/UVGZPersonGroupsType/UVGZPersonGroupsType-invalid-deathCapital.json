@@ -10,7 +10,7 @@
     },
     "coverage": {
       "deathCapital": {
-        "deathCapitalUVG": "10-fold",
+        "deathCapitalUVGSalary": "10-fold",
         "deathCapitalSurplus": "12-fold"
       },
       "differentialCover": true,

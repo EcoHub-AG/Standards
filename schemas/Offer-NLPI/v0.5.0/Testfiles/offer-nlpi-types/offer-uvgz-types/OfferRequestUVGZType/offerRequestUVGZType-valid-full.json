@@ -20,7 +20,7 @@
       },
       "coverage": {
         "deathCapital": {
-          "deathCapitalUVG": "3-fold",
+          "deathCapitalUVGSalary": "3-fold",
           "deathCapitalSurplus": "2-fold"
         },
         "wageSupplement": true,
@@ -71,7 +71,7 @@
       "fixedPayroll": 150000.00,
       "coverage": {
         "deathCapital": {
-          "deathCapitalUVG": "5-fold",
+          "deathCapitalUVGSalary": "5-fold",
           "deathCapitalSurplus": "3-fold"
         },
         "wageSupplement": true,
