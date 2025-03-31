@@ -51,12 +51,17 @@
           }
         }
       ]
+    },
+    "previousInsurer": {
+      "description": "Previous insurer",
+      "$ref": "../../offer-nlpi-types/PreviousInsurerType.json"
     }
   },
   "additionalProperties": false,
   "required": [
     "riskCharacteristic",
-    "insuranceOptions"
+    "insuranceOptions",
+    "previousInsurer"
   ],
   "anyOf": [
     {

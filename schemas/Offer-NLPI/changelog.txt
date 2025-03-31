@@ -93,6 +93,7 @@
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
     - renamed "insuranceOptionsVarious" to "insuranceOptions"
     - changed type of "insuranceOptions" to "UVGZInsuranceOptionsType"
+    - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
