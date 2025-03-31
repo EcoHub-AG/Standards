@@ -32,7 +32,7 @@
         "$ref": "../../../../Generics/v0.5.0/GenderType.json"
       },
       "fixedPayroll": {
-        "description": "Fixed payroll amount in CHF",
+        "description": "Fixed payroll UVGZ amount in CHF",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
       "coverage": {
