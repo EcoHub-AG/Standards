@@ -10,9 +10,6 @@
       "gender": "Female",
       "fixedPayroll": 150000.00,
       "coverage": {
-        "survivorsPension": {
-          "pensionInsured": false
-        }
       },
       "premiumFixedPayroll": {
         "disabilityCapitalSalary": 100000.00,

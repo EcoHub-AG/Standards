@@ -36,31 +36,7 @@
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
       "coverage": {
-        "$ref": "UVGZCoverageType.json",
-        "allOf": [
-          {
-            "if": {
-              "properties": {
-                "survivorsPension": {
-                  "properties": {
-                    "pensionInsured": {
-                      "const": true
-                    }
-                  }
-                }
-              }
-            },
-            "then": {
-              "properties": {
-                "survivorsPension": {
-                  "required": [
-                    "survivorsPartnerPension"
-                  ]
-                }
-              }
-            }
-          }
-        ]
+        "$ref": "UVGZCoverageType.json"
       },
       "premiumFixedPayroll": {
         "type": "object",

@@ -101,17 +101,6 @@
                 }
               }
             }
-          },
-          {
-            "properties": {
-              "survivorsPension": {
-                "not": {
-                  "required": [
-                    "survivorsPartnerPension"
-                  ]
-                }
-              }
-            }
           }
         ]
       },

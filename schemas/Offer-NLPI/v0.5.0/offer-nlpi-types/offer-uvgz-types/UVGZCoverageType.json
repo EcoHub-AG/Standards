@@ -36,72 +36,37 @@
       "properties": {
         "disabilityPensionSurplusSalary": {
           "description": "Disability pension on surplus salary (cumulative maximum salary of all individual pensions)",
-          "type": "string",
-          "enum": [
-            "Analog UVG",
-            "Analog OUFL"
-          ]
+          "$ref": "PensionSalaryType.json"
         },
         "disabilityPensionSurplusSalaryBenefitPeriod": {
           "description": "Benefit period disability pension",
-          "type": "string",
-          "enum": [
-            "Until reference age",
-            "According to UVG"
-          ]
+          "$ref": "PensionBenefitPeriodType.json"
         }
       },
       "required": [
         "disabilityPensionSurplusSalary",
         "disabilityPensionSurplusSalaryBenefitPeriod"
-      ]
+      ],
+      "additionalProperties": false
     },
     "survivorsPension": {
       "description": "Survivors Pension",
       "type": "object",
       "properties": {
-        "pensionInsured": {
-          "description": "Is this type of pension insured?",
-          "type": "boolean"
+        "leftBehindPensionSurplusSalary": {
+          "description": "Survivors' pension of the surplus salary (cumulative maximum salary of all individual pensions)",
+          "$ref": "PensionSalaryType.json"
         },
-        "pensionPercent": {
-          "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
-          "type": "integer",
-          "enum": [
-            70,
-            80,
-            90,
-            100
-          ]
-        },
-        "benefitPeriod": {
-          "description": "Benefit period pension",
-          "type": "string",
-          "enum": [
-            "bis AHV-Alter",
-            "gemäss UVG"
-          ]
-        },
-        "survivorsPartnerPension": {
-          "type": "boolean"
+        "leftBehindPensionSurplusSalaryBenefitPeriod": {
+          "description": "Benefit period survivors' pension",
+          "$ref": "PensionBenefitPeriodType.json"
         }
       },
       "required": [
-        "pensionInsured"
+        "leftBehindPensionSurplusSalary",
+        "leftBehindPensionSurplusSalaryBenefitPeriod"
       ],
-      "if": {
-        "properties": {
-          "pensionInsured": {
-            "const": true
-          }
-        }
-      },
-      "then": {
-        "required": [
-          "pensionPercent",
-          "benefitPeriod"
-        ]
-      }
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

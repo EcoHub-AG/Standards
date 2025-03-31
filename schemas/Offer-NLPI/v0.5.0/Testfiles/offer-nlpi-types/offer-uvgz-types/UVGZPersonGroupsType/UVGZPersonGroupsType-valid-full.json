@@ -51,9 +51,8 @@
         "disabilityPensionSurplusSalaryBenefitPeriod": "Until reference age"
       },
       "survivorsPension": {
-        "pensionInsured": true,
-        "pensionPercent": 70,
-        "benefitPeriod": "gemäss UVG"
+        "leftBehindPensionSurplusSalary": "Analog UVG",
+        "leftBehindPensionSurplusSalaryBenefitPeriod": "Until reference age"
       }
     },
     "premiumPersonGroup": {

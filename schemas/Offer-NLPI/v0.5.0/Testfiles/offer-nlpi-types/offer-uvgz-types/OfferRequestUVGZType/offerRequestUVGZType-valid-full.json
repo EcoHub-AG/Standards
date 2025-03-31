@@ -105,10 +105,8 @@
           "disabilityPensionSurplusSalaryBenefitPeriod": "Until reference age"
         },
         "survivorsPension": {
-          "pensionInsured": true,
-          "pensionPercent": 80,
-          "benefitPeriod": "bis AHV-Alter",
-          "survivorsPartnerPension": true
+          "leftBehindPensionSurplusSalary": "Analog UVG",
+          "leftBehindPensionSurplusSalaryBenefitPeriod": "Until reference age"
         }
       }
     }

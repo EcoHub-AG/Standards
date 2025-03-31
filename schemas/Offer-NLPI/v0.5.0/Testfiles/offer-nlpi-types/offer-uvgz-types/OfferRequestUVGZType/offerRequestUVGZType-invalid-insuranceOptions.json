@@ -11,9 +11,6 @@
         "surplusPayrollTotal": 20000
       },
       "coverage": {
-        "survivorsPension": {
-          "pensionInsured": false
-        }
       }
     }
   ],

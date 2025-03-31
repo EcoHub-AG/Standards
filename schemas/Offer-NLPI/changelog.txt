@@ -99,6 +99,8 @@
 - PayrollBasisType
     - capitalized enum value 'total wage'
 - PayrollEmployeesType (Added)
+- PensionSalaryType (Added)
+- PensionBenefitPeriodType (Added)
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
@@ -133,6 +135,7 @@
     - removed property medicalExpenses
     - added property "medicalExpensesHospitalType"
     - replaced properties in "disabilityPension"
+    - replaced properties in "survivorsPension"
 - UVGZFixedPayrollsType (Changed)
     - renamed property "personId" to "fixedPayrollId"
     - removed property "surplusPayroll"
