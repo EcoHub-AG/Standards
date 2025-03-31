@@ -31,6 +31,10 @@
     - Capitalized enum values of property "benefitCoverage"
     - Property "benefitCoverage" is only conditionally mandatory based on role
     - Capitalized enum values of property "insuranceType"
+- DSBInsuranceOptionsType (Changed)
+    - moved-in sub-properties from "insuranceOptionsEmployeesType"
+    - moved-in sub-properties from "InsuranceOptionsBenefitScopeType"
+    - moved-in sub-properties from "InsuranceOptionsBenefitPeriodType"
 - DSBMCoverageType (Changed)
     - removed property "maximumPayrollAmount"
 - DSBPCoverageType (Changed)
@@ -42,6 +46,9 @@
     - removed property "averageAgePersonGroup"
     - added property "averageAgeMale"
     - added property "averageAgeFemale"
+- InsuranceOptionsBenefitPeriodType (Removed)
+- InsuranceOptionsBenefitScopeType (Removed)
+- InsuranceOptionsEmployeesType (Removed)
 - MedicalExpensesHospitalType (Added)
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory

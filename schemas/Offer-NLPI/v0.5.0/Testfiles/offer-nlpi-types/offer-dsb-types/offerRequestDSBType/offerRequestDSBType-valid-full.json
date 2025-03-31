@@ -76,24 +76,18 @@
     }
   ],
   "insuranceOptions": {
-    "insuranceOptionsEmployees": {
-      "insuranceStartByEmployment": true,
-      "insuranceTemporaryEmployees": true,
-      "insuranceParttimeEmployees": true,
-      "insuranceHourlyEmployees": true,
-      "insuranceEmployeesExhaustedBenefitPeriod": true
-    },
-    "insuranceOptionsBenefitScope": {
-      "insuranceChildFamilyAllowances": false,
-      "insuranceWageIncreaseIncapacity": true,
-      "subsequentPaymentsAfterDeath": false,
-      "renunciationBenefitReductionsNegligence": true,
-      "unpaidLeaveInsurance": true
-    },
-    "insuranceOptionsBenefitPeriod": {
-      "renunciationCreditingWaitingPeriod": false,
-      "subsequentBenefitsContractTermination": true
-    },
+    "insuranceStartByEmployment": true,
+    "insuranceTemporaryEmployees": true,
+    "insuranceParttimeEmployees": true,
+    "insuranceHourlyEmployees": true,
+    "insuranceEmployeesExhaustedBenefitPeriod": true,
+    "insuranceChildFamilyAllowances": false,
+    "insuranceWageIncreaseIncapacity": true,
+    "subsequentPaymentsAfterDeath": false,
+    "renunciationBenefitReductionsNegligence": true,
+    "unpaidLeaveInsurance": true,
+    "renunciationCreditingWaitingPeriod": false,
+    "subsequentBenefitsContractTermination": true,
     "insuranceOptionsVarious": {
       "premiumRateGuaranty": true,
       "renunciationTerminationRightClaim": true,
