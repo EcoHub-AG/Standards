@@ -10,7 +10,7 @@
       "gender": "Female",
       "fixedPayroll": 99000,
       "benefitCoverage": "Sickness",
-      "insuranceType": "sum insurance",
+      "insuranceType": "Sum insurance",
       "coverage": {
         "DSBCoverage": {
           "DSBDaysWaitingNo": 60,

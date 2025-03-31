@@ -6,7 +6,7 @@
   "birthDate": "1996-03-14",
   "gender": "Female",
   "fixedPayroll": 99000,
-  "insuranceType": "sum insurance",
+  "insuranceType": "Sum insurance",
   "coverage": {
     "DSBCoverage": {
       "DSBDaysWaitingNo": 60,

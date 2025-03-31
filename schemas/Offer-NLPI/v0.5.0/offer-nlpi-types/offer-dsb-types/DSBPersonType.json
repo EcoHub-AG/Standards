@@ -48,8 +48,8 @@
 				"description": "Insurance benefit type",
 				"type": "string",
 				"enum": [
-					"sum insurance",
-					"damage insurance"
+					"Sum insurance",
+					"Damage insurance"
 				]
 			},
 			"coverage": {
