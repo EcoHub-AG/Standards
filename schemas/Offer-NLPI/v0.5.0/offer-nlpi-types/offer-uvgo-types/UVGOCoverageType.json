@@ -3,6 +3,6 @@
   "type": "string",
   "enum": [
     "Coverage according to compulsory accident insurance UVG",
-    "coverage according to compulsory accident insurance OUFL"
+    "Coverage according to compulsory accident insurance OUFL"
   ]
 }
