@@ -15,8 +15,8 @@
         }
       ]
     },
-    "fixedPayrolls": {
-      "$ref": "UVGZFixedPayrollsType.json",
+    "personMentionedByName": {
+      "$ref": "UVGZPersonType.json",
       "allOf": [
         {
           "items": {
@@ -55,7 +55,7 @@
     },
     {
       "required": [
-        "fixedPayrolls"
+        "personMentionedByName"
       ]
     }
   ]

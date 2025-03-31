@@ -138,6 +138,7 @@
     - replaced properties in "survivorsPension"
     - added property "survivorsPartnerPension"
 - UVGZFixedPayrollsType (Changed)
+    - renamed to "UVGZPersonType"
     - removed property "surplusPayroll"
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
