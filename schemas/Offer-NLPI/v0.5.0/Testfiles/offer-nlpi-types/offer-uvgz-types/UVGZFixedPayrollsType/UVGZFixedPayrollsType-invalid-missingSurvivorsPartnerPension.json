@@ -8,10 +8,6 @@
     "gender": "Female",
     "fixedPayroll": 150000.00,
     "coverage": {
-      "differentialCover": true,
-      "disabilityPension": {
-        "pensionInsured": false
-      },
       "survivorsPension": {
         "pensionInsured": true,
         "pensionPercent": 80,

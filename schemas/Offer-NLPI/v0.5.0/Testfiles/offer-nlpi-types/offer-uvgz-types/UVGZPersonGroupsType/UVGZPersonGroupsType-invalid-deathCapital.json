@@ -13,12 +13,6 @@
         "deathCapitalUVGSalary": "10-fold",
         "deathCapitalSurplus": "12-fold"
       },
-      "differentialCover": true,
-      "disabilityPension": {
-        "pensionInsured": true,
-        "pensionPercent": 80,
-        "benefitPeriod": "bis AHV-Alter"
-      },
       "survivorsPension": {
         "pensionInsured": true,
         "pensionPercent": 70,

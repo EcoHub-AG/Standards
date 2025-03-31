@@ -11,10 +11,6 @@
         "surplusPayrollTotal": 20000
       },
       "coverage": {
-        "differentialCover": false,
-        "disabilityPension": {
-          "pensionInsured": false
-        },
         "survivorsPension": {
           "pensionInsured": false
         }

@@ -38,9 +38,8 @@
       },
       "differentialCover": true,
       "disabilityPension": {
-        "pensionInsured": true,
-        "pensionPercent": 90,
-        "benefitPeriod": "gemäss UVG"
+        "disabilityPensionSurplusSalary": "Analog UVG",
+        "disabilityPensionSurplusSalaryBenefitPeriod": "Until reference age"
       },
       "survivorsPension": {
         "pensionInsured": true,

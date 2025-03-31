@@ -132,6 +132,7 @@
     - added optional property integrityCapital (moved from DisabilityCapitalType)
     - removed property medicalExpenses
     - added property "medicalExpensesHospitalType"
+    - replaced properties in "disabilityPension"
 - UVGZFixedPayrollsType (Changed)
     - renamed property "personId" to "fixedPayrollId"
     - removed property "surplusPayroll"

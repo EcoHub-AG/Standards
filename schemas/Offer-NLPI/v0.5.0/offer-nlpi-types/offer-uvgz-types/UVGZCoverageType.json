@@ -34,45 +34,27 @@
       "description": "Disability Pension",
       "type": "object",
       "properties": {
-        "pensionInsured": {
-          "description": "Is this type of pension insured?",
-          "type": "boolean"
-        },
-        "pensionPercent": {
-          "description": "Pension in % of the surplus salary (cumulative maximum salary of all individual pensions)",
-          "type": "integer",
-          "enum": [
-            70,
-            80,
-            90,
-            100
-          ]
-        },
-        "benefitPeriod": {
-          "description": "Benefit period pension",
+        "disabilityPensionSurplusSalary": {
+          "description": "Disability pension on surplus salary (cumulative maximum salary of all individual pensions)",
           "type": "string",
           "enum": [
-            "bis AHV-Alter",
-            "gemäss UVG"
+            "Analog UVG",
+            "Analog OUFL"
+          ]
+        },
+        "disabilityPensionSurplusSalaryBenefitPeriod": {
+          "description": "Benefit period disability pension",
+          "type": "string",
+          "enum": [
+            "Until reference age",
+            "According to UVG"
           ]
         }
       },
       "required": [
-        "pensionInsured"
-      ],
-      "if": {
-        "properties": {
-          "pensionInsured": {
-            "const": true
-          }
-        }
-      },
-      "then": {
-        "required": [
-          "pensionPercent",
-          "benefitPeriod"
-        ]
-      }
+        "disabilityPensionSurplusSalary",
+        "disabilityPensionSurplusSalaryBenefitPeriod"
+      ]
     },
     "survivorsPension": {
       "description": "Survivors Pension",

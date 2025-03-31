@@ -29,9 +29,8 @@
   },
   "differentialCover": true,
   "disabilityPension": {
-    "pensionInsured": true,
-    "pensionPercent": 80,
-    "benefitPeriod": "bis AHV-Alter"
+    "disabilityPensionSurplusSalary": "Analog UVG",
+    "disabilityPensionSurplusSalaryBenefitPeriod": "Until reference age"
   },
   "survivorsPension": {
     "pensionInsured": true,

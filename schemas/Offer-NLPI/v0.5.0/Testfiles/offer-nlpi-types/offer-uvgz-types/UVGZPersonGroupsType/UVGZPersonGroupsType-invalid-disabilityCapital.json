@@ -15,12 +15,6 @@
         "disabilityCapitalProgUVGSalary": "225%",
         "disabilityCapitalProgSurplusSalary": "225%"
       },
-      "differentialCover": true,
-      "disabilityPension": {
-        "pensionInsured": true,
-        "pensionPercent": 80,
-        "benefitPeriod": "bis AHV-Alter"
-      },
       "survivorsPension": {
         "pensionInsured": true,
         "pensionPercent": 70,
