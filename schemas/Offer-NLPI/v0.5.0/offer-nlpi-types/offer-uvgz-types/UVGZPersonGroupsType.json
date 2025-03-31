@@ -22,9 +22,9 @@
         "description": "Maximum salary in CHF",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
-      "surplusSalaryTotal": {
-        "description": "Payroll: Surplus salary total in CHF",
-        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      "payrollEmployees": {
+        "description": "Payroll employees",
+        "$ref": "PayrollEmployeesType.json"
       },
       "coverage": {
         "description": "Coverage of the person groups",
@@ -206,7 +206,7 @@
       "personGroupDescription",
       "numberOfPersonsTotal",
       "maxSalary",
-      "surplusSalaryTotal",
+      "payrollEmployees",
       "coverage"
     ],
     "additionalProperties": false

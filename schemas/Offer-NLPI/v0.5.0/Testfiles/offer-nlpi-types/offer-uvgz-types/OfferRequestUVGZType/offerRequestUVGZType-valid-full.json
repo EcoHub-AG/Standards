@@ -6,7 +6,18 @@
       "personGroupDescription": "Group 1",
       "numberOfPersonsTotal": 50,
       "maxSalary": 2500000.00,
-      "surplusSalaryTotal": 500000.00,
+      "payrollEmployees": {
+        "payrollTotalEmployees": 500000,
+        "UVGPayrollMaleOA": 150000,
+        "UVGPayrollFemaleOA": 120000,
+        "UVGPayrollMaleNOA": 100000,
+        "UVGPayrollFemaleNOA": 80000,
+        "surplusPayrollTotal": 20000,
+        "surplusPayrollMaleOA": 5000,
+        "surplusPayrollFemaleOA": 3000,
+        "surplusPayrollMaleNOA": 4000,
+        "surplusPayrollFemaleNOA": 3000
+      },
       "coverage": {
         "deathCapital": {
           "deathCapitalUVG": "3-fold",

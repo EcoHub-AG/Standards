@@ -93,6 +93,7 @@
     - capitalized enum value "anually"
 - PayrollBasisType
     - capitalized enum value 'total wage'
+- PayrollEmployeesType (Added)
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
@@ -132,6 +133,8 @@
     - Added property "personGroupDescription"
     - Removed property "payrollTotal"
     - Renamed property "maximumPayrollAmount" to "maxSalary"
+    - Removed property "surplusSalaryTotal"
+    - Added mandatory property "payrollEmployees"
     - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus"
     - Added restriction for allowed enum values for "disabilityCapitalUVG" and "disabilityCapitalSurplusSalary"
 - YearlySalaryMultipleType (Changed)

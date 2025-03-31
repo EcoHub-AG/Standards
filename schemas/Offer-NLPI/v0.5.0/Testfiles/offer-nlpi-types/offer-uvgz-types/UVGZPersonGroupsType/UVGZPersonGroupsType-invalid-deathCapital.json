@@ -4,7 +4,10 @@
     "personGroupDescription": "Group 1",
     "numberOfPersonsTotal": 50,
     "maxSalary": 2500000.00,
-    "surplusSalaryTotal": 500000.00,
+    "payrollEmployees": {
+      "payrollTotalEmployees": 500000,
+      "surplusPayrollTotal": 20000
+    },
     "coverage": {
       "deathCapital": {
         "deathCapitalUVG": "10-fold",
