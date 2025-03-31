@@ -6,8 +6,8 @@
     "deathCapital": {
       "$ref": "DeathCapitalType.json"
     },
-    "wageSupplement": {
-      "description": "Wage supplement.",
+    "subsequentPaymentsAfterDeath": {
+      "description": "Supplementary salary in the event of death in accordance with Art. 338 OR",
       "type": "boolean"
     },
     "disabilityCapital": {

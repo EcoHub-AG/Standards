@@ -23,7 +23,7 @@
           "deathCapitalUVGSalary": "3-fold",
           "deathCapitalSurplus": "2-fold"
         },
-        "wageSupplement": true,
+        "subsequentPaymentsAfterDeath": true,
         "disabilityCapital": {
           "disabilityCapitalUVG": "4-fold",
           "disabilityCapitalSurplusSalary": "3-fold",
@@ -74,7 +74,7 @@
           "deathCapitalUVGSalary": "5-fold",
           "deathCapitalSurplus": "3-fold"
         },
-        "wageSupplement": true,
+        "subsequentPaymentsAfterDeath": true,
         "disabilityCapital": {
           "disabilityCapitalUVG": "4-fold",
           "disabilityCapitalSurplusSalary": "3-fold",
