@@ -27,7 +27,7 @@
       "$ref": "MedicalExpensesHospitalType.json"
     },
     "differentialCover": {
-      "description": "Differential cover",
+      "description": "Differential cover (special risk)",
       "type": "boolean"
     },
     "disabilityPension": {
@@ -122,8 +122,5 @@
       }
     }
   },
-  "required": [
-    "differentialCover"
-  ],
   "additionalProperties": false
 }

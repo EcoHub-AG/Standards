@@ -127,6 +127,7 @@
     - property "disabilityCapital" is now optional
     - property "dailyAllowance" is now optional
     - property "dailyHospitalAllowance" is now optional
+    - property "differentialCover" is now optional
     - added optional property "subsequentPaymentsAfterDeath"
     - added optional property integrityCapital (moved from DisabilityCapitalType)
     - removed property medicalExpenses
