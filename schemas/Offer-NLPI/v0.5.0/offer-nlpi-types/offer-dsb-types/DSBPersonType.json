@@ -28,19 +28,20 @@
 				"$ref": "../../../../Generics/v0.5.0/GenderType.json"
 			},
 			"fixedPayroll": {
-				"description": "Fixed payroll amount in CHF",
+				"description": "Fixed payroll DSB amount in CHF",
 				"$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
 			},
 			"degreeOfEmployment": {
-				"description": "Degree of employment in %",
+				"description": "Degree of employment in %.",
 				"type": "number"
 			},
 			"benefitCoverage": {
 				"type": "string",
+				"description": "Must be provided if the role of the insured person is either 'Self-employed person' or 'contributing family member'",
 				"enum": [
-					"sickness",
-					"accident",
-					"sickness and accident"
+					"Sickness",
+					"Accident",
+					"Sickness and accident"
 				]
 			},
 			"insuranceType": {
@@ -69,9 +70,26 @@
 			"birthDate",
 			"gender",
 			"fixedPayroll",
-			"benefitCoverage",
 			"insuranceType",
 			"coverage"
+		],
+		"allOf": [
+			{
+				"if": {
+					"role": "Self-employed person"
+				},
+				"then": {
+					"required": ["benefitCoverage"]
+				}
+			},
+			{
+				"if": {
+					"role": "Contributing family member"
+				},
+				"then": {
+					"required": ["benefitCoverage"]
+				}
+			}
 		]
 	}
 }

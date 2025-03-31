@@ -28,6 +28,8 @@
 - DSBFixedPayrollsType (Changed)
     - Renamed type to DSBPersonType
     - Added property "degreeOfEmployment"
+    - Capitalized enum values of property "benefitCoverage"
+    - Property "benefitCoverage" is only conditionally mandatory based on role
 - DSBMCoverageType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
 - DSBPCoverageType (Changed)

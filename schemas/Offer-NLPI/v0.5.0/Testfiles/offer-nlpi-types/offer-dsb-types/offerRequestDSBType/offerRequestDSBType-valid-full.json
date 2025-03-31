@@ -50,7 +50,7 @@
       "birthDate": "1996-03-14",
       "gender": "Female",
       "fixedPayroll": 99000,
-      "benefitCoverage": "sickness",
+      "benefitCoverage": "Sickness",
       "insuranceType": "sum insurance",
       "coverage": {
         "DSBCoverage": {

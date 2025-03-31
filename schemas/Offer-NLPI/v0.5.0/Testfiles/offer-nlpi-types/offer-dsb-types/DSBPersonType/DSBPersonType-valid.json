@@ -1,0 +1,36 @@
+{
+  "personId": "06637133-2230-472e-80fa-ba1c9661d0a7",
+  "role": "Self-employed person",
+  "firstname": "Kaiser",
+  "surname": "Leonie",
+  "birthDate": "1996-03-14",
+  "gender": "Female",
+  "fixedPayroll": 99000,
+  "benefitCoverage": "Sickness",
+  "insuranceType": "sum insurance",
+  "coverage": {
+    "DSBCoverage": {
+      "DSBDaysWaitingNo": 60,
+      "DSBCalculationBasis": "working year",
+      "DSBBenefitPeriod": "365 days",
+      "DSBBenefitAmountPercentage": 100,
+      "DSBLegalBasis": "VVG"
+    },
+    "DSBMCoverage": [
+      {
+        "DSBMBenefitDurationWeeks": 14,
+        "DSBMBenefitAmountPercentage": 100,
+        "DSBMPayrollBasis": "Total wage",
+        "maxSalary": 100000
+      }
+    ],
+    "DSBPCoverage": [
+      {
+        "DSBPBenefitDurationWeeks": 6,
+        "DSBPBenefitAmountPercentage": 100,
+        "DSBPPayrollBasis": "EOG wage",
+        "maxSalary": 100000
+      }
+    ]
+  }
+}
