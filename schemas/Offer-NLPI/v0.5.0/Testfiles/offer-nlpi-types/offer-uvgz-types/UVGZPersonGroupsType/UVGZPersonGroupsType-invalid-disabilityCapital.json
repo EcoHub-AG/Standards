@@ -12,7 +12,7 @@
       "disabilityCapital": {
         "disabilityCapitalUVGSalary": "12-fold",
         "disabilityCapitalSurplusSalary": "13-fold",
-        "disabilityCapitalProg": "225%"
+        "disabilityCapitalProgUVGSalary": "225%"
       },
       "differentialCover": true,
       "disabilityPension": {

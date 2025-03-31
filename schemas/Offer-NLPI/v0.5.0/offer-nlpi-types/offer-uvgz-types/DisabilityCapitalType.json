@@ -10,11 +10,11 @@
 			"description": "Disability capital surplus x times the surplus annual salary",
 			"$ref": "YearlySalaryMultipleType.json"
 		},
-		"disabilityCapitalProg": {
-			"description": "Disability capital progressiv of the UVG salary in %",
+		"disabilityCapitalProgUVGSalary": {
+			"description": "Disability capital progressive of the UVG salary in %",
 			"type": "string",
 			"enum": [
-				"none",
+				"None",
 				"100%",
 				"150%",
 				"225%",
@@ -27,6 +27,6 @@
 	"required": [
 		"disabilityCapitalUVGSalary",
 		"disabilityCapitalSurplusSalary",
-		"disabilityCapitalProg"
+		"disabilityCapitalProgUVGSalary"
 	]
 }

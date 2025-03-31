@@ -24,9 +24,10 @@
     - renamed property "disabilityCapitalUVG" to "disabilityCapitalUVGSalary"
     - renamed property "disabilityCapitalSurplus" to "disabilityCapitalSurplusSalary"
     - changed type of property "disabilityCapitalSurplus" to YearlySalaryMultipleType
-    - replaced enum value "0%" with "none" for property "disabilityCapitalProg"
+    - replaced enum value "0%" with "None" for property "disabilityCapitalProg"
+    - renamed property "disabilityCapitalProg" to "disabilityCapitalProgUVGSalary"
     - removed property "bridgingCapital"
-    - properties "disabilityCapitalUVG", "disabilityCapitalSurplusSalary" and "disabilityCapitalProg" are now mandatory
+    - properties "disabilityCapitalUVGSalary", "disabilityCapitalSurplusSalary" and "disabilityCapitalProgUVGSalary" are now mandatory
 - DSBFixedPayrollsType (Changed)
     - Renamed type to DSBPersonType
     - Added property "degreeOfEmployment"
