@@ -89,6 +89,8 @@
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
     - renamed property "voluntarilyInsuredPersons" to "personMentionedByName"
     - removed property "personsConnectionEmployer"
+- PayInstalmentType (Changed)
+    - capitalized enum value "anually"
 - PayrollBasisType
     - capitalized enum value 'total wage'
 - PreviousInsurerType
@@ -106,6 +108,7 @@
     - Removed property "coverage"
 - UVGOInsuranceOptionsVariousType (Changed)
     - Added "additionalOptions" property
+    - property "annualCancellation" is now optional
 - UVGOInsurerType (Removed)
 - UVGOPersonGroupType (Changed)
     - Added property "personGroupDescription"

@@ -49,7 +49,7 @@
       "premiumRateGuaranty": true,
       "renunciationTerminationRightClaim": true,
       "annualCancellation": true,
-      "typePayInstalment": "annually",
+      "typePayInstalment": "Annually",
       "additionalOptions": [
         {
           "optionName": "Addtitional Insurance Option Bonus DSB",
