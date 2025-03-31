@@ -36,7 +36,7 @@
                 "properties": {
                   "deathCapitalUVG": {
                     "enum": [
-                      "no",
+                      "No",
                       "0.5-fold",
                       "1-fold",
                       "2-fold",
@@ -51,7 +51,7 @@
                   },
                   "deathCapitalSurplus": {
                     "enum": [
-                      "no",
+                      "No",
                       "0.5-fold",
                       "1-fold",
                       "2-fold",
@@ -70,7 +70,7 @@
                 "properties": {
                   "disabilityCapitalUVG": {
                     "enum": [
-                      "no",
+                      "No",
                       "0.5-fold",
                       "1-fold",
                       "2-fold",
@@ -85,7 +85,7 @@
                   },
                   "disabilityCapitalSurplusSalary": {
                     "enum": [
-                      "no",
+                      "No",
                       "0.5-fold",
                       "1-fold",
                       "2-fold",
