@@ -7,8 +7,8 @@
 			"description": "Type of medical expenses hospital",
 			"type": "string",
 			"enum": [
-				"private ward",
-				"semi-private ward"
+				"Private ward",
+				"Semi-private ward"
 			]
 		}
 	},

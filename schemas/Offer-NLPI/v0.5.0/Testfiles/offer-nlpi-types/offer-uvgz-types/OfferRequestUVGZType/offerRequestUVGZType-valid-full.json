@@ -45,7 +45,7 @@
           "dailyHospitalAllowanceFixAmount": 100.00
         },
         "medicalExpensesHospital": {
-          "medicalExpensesHospitalType": "private ward"
+          "medicalExpensesHospitalType": "Private ward"
         },
         "differentialCover": true,
         "disabilityPension": {
@@ -97,7 +97,7 @@
           "dailyHospitalAllowanceFixAmount": 100.00
         },
         "medicalExpensesHospital": {
-          "medicalExpensesHospitalType": "private ward"
+          "medicalExpensesHospitalType": "Private ward"
         },
         "differentialCover": true,
         "disabilityPension": {
