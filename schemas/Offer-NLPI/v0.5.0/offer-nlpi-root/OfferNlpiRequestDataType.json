@@ -79,6 +79,10 @@
 		"document": {
 			"description": "Document (minimum PDF of the quote request)",
 			"$ref": "../../../Generics/v0.5.0/MultiFileType.json"
+		},
+		"uploadLink": {
+			"type": "string",
+			"description": "Link to platform for access by underwriters. If the process cannot be handled exclusively via SAF."
 		}
 	},
 	"additionalProperties": false,

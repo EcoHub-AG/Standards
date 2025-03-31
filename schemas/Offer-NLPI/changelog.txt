@@ -78,6 +78,7 @@
     - Property "offerLanguage" is now mandatory
     - removed property "previousInsurer" (moved into DSB, UVGCompulsory, UVGSupplement)
     - removed property "UVGCompulsoryInsurer"
+    - added property "uploadLink"
 - OfferRequestDSBType
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
