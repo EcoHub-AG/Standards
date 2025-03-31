@@ -75,6 +75,8 @@
       "birthDate": "1980-05-15",
       "gender": "Female",
       "fixedPayroll": 150000.00,
+      "degreeOfEmployment": 90,
+      "insuranceType": "Sum insurance",
       "coverage": {
         "deathCapital": {
           "deathCapitalUVGSalary": "5-fold",

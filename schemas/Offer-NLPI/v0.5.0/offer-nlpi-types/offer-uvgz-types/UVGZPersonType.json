@@ -35,6 +35,18 @@
         "description": "Fixed payroll UVGZ amount in CHF",
         "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
       },
+      "degreeOfEmployment": {
+        "description": "Degree of employment in %.",
+        "type": "number"
+      },
+      "insuranceType": {
+        "description": "Insurance benefit type",
+        "type": "string",
+        "enum": [
+          "Sum insurance",
+          "Damage insurance"
+        ]
+      },
       "coverage": {
         "$ref": "UVGZCoverageType.json"
       },
@@ -135,6 +147,7 @@
       "firstname",
       "birthDate",
       "fixedPayroll",
+      "insuranceType",
       "coverage"
     ]
   }

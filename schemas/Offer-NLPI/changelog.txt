@@ -140,6 +140,8 @@
 - UVGZFixedPayrollsType (Changed)
     - renamed to "UVGZPersonType"
     - removed property "surplusPayroll"
+    - added property "degreeOfEmployment"
+    - added mandatory property "insuranceType"
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "payrollTotal"
