@@ -2,7 +2,7 @@
   "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
   "fixedPayrolls": [
     {
-      "fixedPayrollId": "345aa049-7693-4710-89d7-e13b87ab988a",
+      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
       "role": "Self-employed person",
       "firstname": "John",
       "surname": "Doe",

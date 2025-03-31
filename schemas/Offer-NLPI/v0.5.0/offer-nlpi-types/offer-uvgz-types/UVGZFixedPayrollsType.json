@@ -6,8 +6,8 @@
   "items": {
     "type": "object",
     "properties": {
-      "fixedPayrollId": {
-        "description": "ID of the group of insured fixed payrolls",
+      "personId": {
+        "description": "ID of the insured Person",
         "type": "string",
         "format": "uuid",
         "examples": [
@@ -128,7 +128,7 @@
       }
     },
     "required": [
-      "fixedPayrollId",
+      "personId",
       "role",
       "gender",
       "surname",
