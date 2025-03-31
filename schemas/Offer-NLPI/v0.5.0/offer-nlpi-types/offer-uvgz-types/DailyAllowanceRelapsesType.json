@@ -3,7 +3,7 @@
   "type": "string",
   "enum": [
     "Insured",
-    "Insured for NBU-insured personnel",
+    "Insured for NOA-insured personnel",
     "Not insured"
   ]
 }

@@ -36,7 +36,7 @@
         "dailyAllowanceAfterExpiryWaitingPeriodUVGSalary": "5%",
         "waitingPeriodInDaysForDailyAllowanceSurplusSalary": "365",
         "dailyAllowanceAfterExpiryWaitingPeriodSurplusSalary": "100%",
-        "dailyAllowanceRelapsesLateEffectsUVG": "Insured for NBU-insured personnel",
+        "dailyAllowanceRelapsesLateEffectsUVG": "Insured for NOA-insured personnel",
         "dailyAllowanceRelapsesLateEffectsUVGZ": "Insured"
       },
       "dailyHospitalAllowance": {
