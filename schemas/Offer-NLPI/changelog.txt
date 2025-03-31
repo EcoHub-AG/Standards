@@ -21,6 +21,7 @@
 - DisabilityCapitalType (Changed)
     - removed property "disabilityCapitalInsured"
     - removed property "integrityCapital" (moved to UVGZCoverageType)
+    - renamed property "disabilityCapitalUVG" to "disabilityCapitalUVGSalary"
     - renamed property "disabilityCapitalSurplus" to "disabilityCapitalSurplusSalary"
     - changed type of property "disabilityCapitalSurplus" to YearlySalaryMultipleType
     - replaced enum value "0%" with "none" for property "disabilityCapitalProg"

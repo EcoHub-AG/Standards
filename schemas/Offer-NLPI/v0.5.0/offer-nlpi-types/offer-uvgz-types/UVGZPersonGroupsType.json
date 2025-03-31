@@ -68,7 +68,7 @@
               },
               "disabilityCapital": {
                 "properties": {
-                  "disabilityCapitalUVG": {
+                  "disabilityCapitalUVGSalary": {
                     "enum": [
                       "No",
                       "0.5-fold",

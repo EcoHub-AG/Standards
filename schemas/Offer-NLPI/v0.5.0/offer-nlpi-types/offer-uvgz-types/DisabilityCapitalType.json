@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"type": "object",
 	"properties": {
-		"disabilityCapitalUVG": {
+		"disabilityCapitalUVGSalary": {
 			"description": "Disability capital x times the annual salary",
 			"$ref": "YearlySalaryMultipleType.json"
 		},
@@ -25,7 +25,7 @@
 	},
 	"additionalProperties": false,
 	"required": [
-		"disabilityCapitalUVG",
+		"disabilityCapitalUVGSalary",
 		"disabilityCapitalSurplusSalary",
 		"disabilityCapitalProg"
 	]
