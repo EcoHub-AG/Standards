@@ -20,7 +20,7 @@
         }
       ]
     },
-    "voluntarilyInsuredPersons": {
+    "personMentionedByName": {
       "type": "array",
       "minItems": 1,
       "items": {
@@ -31,45 +31,6 @@
               "required": [
                 "premiumInsuredPerson"
               ]
-            }
-          },
-          {
-            "properties": {
-              "role": {
-                "enum": [
-                  "Self-employed person",
-                  "Contributing family member"
-                ]
-              }
-            }
-          }
-        ]
-      }
-    },
-    "personsConnectionEmployer": {
-      "type": "array",
-      "description": "Persons with special connection to the employer. Professional and customary wage. Are staff members insured in accordance with Art. 22 para. 2 lit. c UVV whose effective AHV salary does not correspond at least to the salary customary for the profession and location?",
-      "minItems": 1,
-      "items": {
-        "$ref": "UVGOFixedPayrollsType.json",
-        "allOf": [
-          {
-            "not": {
-              "required": [
-                "premiumInsuredPerson"
-              ]
-            }
-          },
-          {
-            "properties": {
-              "role": {
-                "enum": [
-                  "Contributing family member",
-                  "Partner",
-                  "Shareholder",
-                  "Cooperative member"
-                ]
-              }
             }
           }
         ]
@@ -97,12 +58,7 @@
     },
     {
       "required": [
-        "voluntarilyInsuredPersons"
-      ]
-    },
-    {
-      "required": [
-        "personsConnectionEmployer"
+        "personMentionedByName"
       ]
     }
   ]

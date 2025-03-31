@@ -1,20 +1,14 @@
 {
-  "voluntarilyInsuredPersons": [
+  "personMentionedByName": [
     {
       "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
-      "role": "Partner",
+      "role": "Contributing family member",
       "firstname": "Jane",
       "surname": "Doe",
       "birthDate": "1982-09-22",
       "gender": "Female",
       "payroll": 90000.00,
-      "coverage": "coverage according to compulsory accident insurance OFUL",
-      "premiumInsuredPerson": {
-        "hazardClass": "A",
-        "hazardSubClass": "A1",
-        "finalPremiumRate": 3.600,
-        "totalPremium": 10000.00
-      }
+      "coverage": "coverage according to compulsory accident insurance OFUL"
     }
   ],
   "insuranceOptionsVarious": {

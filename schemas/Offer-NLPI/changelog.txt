@@ -78,7 +78,8 @@
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
-    - replaced valid enum values for property "role" in "personsConnectionEmployer"
+    - renamed property "voluntarilyInsuredPersons" to "personMentionedByName"
+    - removed property "personsConnectionEmployer"
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
 - OfferRequestUVGZType (Changed)
@@ -86,7 +87,8 @@
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
-    - replaced valid enum values for property "role" in "personsConnectionEmployer"
+    - renamed property "voluntarilyInsuredPersons" to "personMentionedByName"
+    - removed property "personsConnectionEmployer"
 - PayrollBasisType
     - capitalized enum value 'total wage'
 - PreviousInsurerType

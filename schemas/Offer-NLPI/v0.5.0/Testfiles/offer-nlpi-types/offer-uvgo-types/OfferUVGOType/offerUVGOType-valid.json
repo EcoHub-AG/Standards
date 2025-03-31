@@ -32,25 +32,7 @@
       }
     }
   ],
-  "voluntarilyInsuredPersons": [
-    {
-      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
-      "role": "Self-employed person",
-      "firstname": "John",
-      "surname": "Doe",
-      "birthDate": "1980-05-15",
-      "gender": "Female",
-      "payroll": 120000.00,
-      "coverage": "coverage according to compulsory accident insurance UVG",
-      "premiumInsuredPerson": {
-        "hazardClass": "A",
-        "hazardSubClass": "A1",
-        "finalPremiumRate": 3.600,
-        "totalPremium": 10000.00
-      }
-    }
-  ],
-  "personsConnectionEmployer": [
+  "personMentionedByName": [
     {
       "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
       "role": "Self-employed person",

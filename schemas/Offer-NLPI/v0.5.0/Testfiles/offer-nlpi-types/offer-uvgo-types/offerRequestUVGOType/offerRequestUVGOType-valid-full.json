@@ -11,19 +11,7 @@
       "coverage": "coverage according to compulsory accident insurance UVG"
     }
   ],
-  "voluntarilyInsuredPersons": [
-    {
-      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
-      "role": "Self-employed person",
-      "firstname": "John",
-      "surname": "Doe",
-      "birthDate": "1980-05-15",
-      "gender": "Female",
-      "payroll": 120000.00,
-      "coverage": "coverage according to compulsory accident insurance UVG"
-    }
-  ],
-  "personsConnectionEmployer": [
+  "personMentionedByName": [
     {
       "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
       "role": "Self-employed person",
