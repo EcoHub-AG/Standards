@@ -14,22 +14,6 @@
       "DSBBenefitPeriod": "365 days",
       "DSBBenefitAmountPercentage": 100,
       "DSBLegalBasis": "VVG"
-    },
-    "DSBMCoverage": [
-      {
-        "DSBMBenefitDurationWeeks": 14,
-        "DSBMBenefitAmountPercentage": 100,
-        "DSBMPayrollBasis": "Total wage",
-        "maxSalary": 100000
-      }
-    ],
-    "DSBPCoverage": [
-      {
-        "DSBPBenefitDurationWeeks": 6,
-        "DSBPBenefitAmountPercentage": 100,
-        "DSBPPayrollBasis": "EOG wage",
-        "maxSalary": 100000
-      }
-    ]
+    }
   }
 }

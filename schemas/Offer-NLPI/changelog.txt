@@ -32,9 +32,9 @@
     - Property "benefitCoverage" is only conditionally mandatory based on role
     - Capitalized enum values of property "insuranceType"
 - DSBMCoverageType (Changed)
-    - renamed property "maximumPayrollAmount" to "maxSalary"
+    - removed property "maximumPayrollAmount"
 - DSBPCoverageType (Changed)
-    - renamed property "maximumPayrollAmount" to "maxSalary"
+    - removed property "maximumPayrollAmount"
     - capitalized enum values of property "DSBCalculationBasis"
     - changed type of property "DSBBenefitPeriod" from object to enum
 - DSBPersonGroupsType (Changed)
