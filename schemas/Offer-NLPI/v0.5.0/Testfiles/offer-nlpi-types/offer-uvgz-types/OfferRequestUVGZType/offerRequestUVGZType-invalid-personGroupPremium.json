@@ -29,11 +29,9 @@
       }
     }
   ],
-  "insuranceOptionsVarious": {
-    "premiumRateGuaranty": true,
-    "renunciationTerminationRightClaim": true,
-    "annualCancellation": false,
-    "typePayInstalment": "1/2 year",
-    "surplusParticipation": true
+  "insuranceOptions": {
+    "insuranceOptionsVarious": {
+      "typePayInstalment": "1/2 year"
+    }
   }
 }

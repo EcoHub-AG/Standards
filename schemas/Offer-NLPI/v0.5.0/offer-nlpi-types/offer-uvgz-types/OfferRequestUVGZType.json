@@ -34,16 +34,20 @@
         }
       ]
     },
-    "insuranceOptionsVarious": {
-      "$ref": "../InsuranceOptionsVariousType.json",
+    "insuranceOptions": {
+      "$ref": "UVGZInsuranceOptionsType.json",
       "allOf": [
         {
-          "not": {
-            "required": [
-              "surplusParticipationPremiumRate",
-              "surplusParticipationRate",
-              "surplusParticipationPeriodYears"
-            ]
+          "properties": {
+            "insuranceOptionsVarious": {
+              "not": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
+            }
           }
         }
       ]
@@ -52,7 +56,7 @@
   "additionalProperties": false,
   "required": [
     "riskCharacteristic",
-    "insuranceOptionsVarious"
+    "insuranceOptions"
   ],
   "anyOf": [
     {

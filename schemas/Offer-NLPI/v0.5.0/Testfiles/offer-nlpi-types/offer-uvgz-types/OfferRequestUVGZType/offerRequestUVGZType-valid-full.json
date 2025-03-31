@@ -123,13 +123,18 @@
       }
     }
   ],
-  "insuranceOptionsVarious": {
-    "premiumRateGuaranty": true,
-    "renunciationTerminationRightClaim": true,
-    "annualCancellation": false,
-    "typePayInstalment": "1/2 year",
-    "surplusParticipation": true,
-    "additionalOptions": [
+  "insuranceOptions": {
+    "dailyAllowanceContinuedPaymentIncreasesBeforIncapacity": true,
+    "startInsuranceCoverStartEmploymentContract": true,
+    "endInsuranceCoverCoorindationUVG": true,
+    "waiverBenefitGrossNegligence": true,
+    "insuranceOptionsVarious": {
+      "premiumRateGuaranty": true,
+      "renunciationTerminationRightClaim": true,
+      "annualCancellation": false,
+      "typePayInstalment": "1/2 year",
+      "surplusParticipation": true,
+      "additionalOptions": [
         {
           "optionName": "Addtitional Insurance Option Bonus DSB",
           "optionValue": "20000",
@@ -141,5 +146,6 @@
           "optionDescription": "Bonus amount for no claims in 2 years for DSB"
         }
       ]
+    }
   }
 }

@@ -42,10 +42,6 @@
 	},
     "additionalProperties": false,
 	"required": [
-		"premiumRateGuaranty",
-		"renunciationTerminationRightClaim",
-		"annualCancellation",
-		"typePayInstalment",
-		"surplusParticipation"
+		"typePayInstalment"
 	]
 }

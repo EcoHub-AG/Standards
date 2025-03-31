@@ -54,6 +54,8 @@
 - InsuranceOptionsBenefitPeriodType (Removed)
 - InsuranceOptionsBenefitScopeType (Removed)
 - InsuranceOptionsEmployeesType (Removed)
+- InsuranceOptionsVariousType (Changed)
+    - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation" are now optional
 - MedicalExpensesHospitalType (Added)
 - OfferCustomerType (Changed)
     - UVGRiskNo is now mandatory
@@ -89,6 +91,8 @@
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
 - OfferRequestUVGZType (Changed)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
+    - renamed "insuranceOptionsVarious" to "insuranceOptions"
+    - changed type of "insuranceOptions" to "UVGZInsuranceOptionsType"
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
@@ -137,6 +141,7 @@
     - replaced properties in "disabilityPension"
     - replaced properties in "survivorsPension"
     - added property "survivorsPartnerPension"
+- UVGZInsuranceOptionsType (Added)
 - UVGZFixedPayrollsType (Changed)
     - renamed to "UVGZPersonType"
     - removed property "surplusPayroll"
