@@ -99,8 +99,11 @@
 - SUVACompanyType (Added)
 - UVGOCoverageType
     - replaced enum values
-- UVGOFixedPayrollsType (Renamed)
+- UVGOFixedPayrollsType (Changed)
     - Renamed to UVGOPersonType
+    - Added optional property "degreeOfEmployment"
+    - Added mandatory property "insuranceType"
+    - Removed property "coverage"
 - UVGOInsuranceOptionsVariousType (Changed)
     - Added "additionalOptions" property
 - UVGOInsurerType (Removed)

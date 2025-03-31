@@ -32,7 +32,11 @@
       },
       "coverage": {
         "description": "Coverage of the person groups UVG Compulsory Federal Accident Insurance Act (UVG)",
-        "$ref": "UVGOCoverageType.json"
+        "type": "string",
+        "enum": [
+          "Coverage according to compulsory accident insurance UVG",
+          "Coverage according to compulsory accident insurance OUFL"
+        ]
       },
       "premiumPersonGroup": {
         "description": "Premium of the insured group of persons",

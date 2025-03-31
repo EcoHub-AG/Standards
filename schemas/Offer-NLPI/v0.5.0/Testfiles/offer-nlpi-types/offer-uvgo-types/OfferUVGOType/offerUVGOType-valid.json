@@ -41,7 +41,8 @@
       "birthDate": "1980-05-15",
       "gender": "Female",
       "payroll": 120000.00,
-      "coverage": "coverage according to compulsory accident insurance UVG",
+      "degreeOfEmployment": 90,
+      "insuranceType": "Coverage according to compulsory accident insurance UVG",
       "premiumInsuredPerson": {
         "hazardClass": "A",
         "hazardSubClass": "A1",

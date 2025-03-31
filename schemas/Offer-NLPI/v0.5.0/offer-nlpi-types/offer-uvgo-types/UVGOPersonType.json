@@ -28,11 +28,21 @@
       "$ref": "../../../../Generics/v0.5.0/GenderType.json"
     },
     "payroll": {
-      "description": "Insured fixed salary of the insured person",
+      "description": "Fixed payroll UVG amount in CHF",
       "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
     },
-    "coverage": {
-      "$ref": "UVGOCoverageType.json"
+    "degreeOfEmployment": {
+      "description": "Degree of employment in %.",
+      "type": "number"
+    },
+    "insuranceType": {
+      "type": "string",
+      "enum": [
+        "Coverage according to compulsory accident insurance UVG",
+        "Coverage according to compulsory accident insurance OUFL",
+        "Coverage according to voluntary accident insurance UVG",
+        "Coverage according to voluntary accident insurance OUFL"
+      ]
     },
     "premiumInsuredPerson": {
       "type": "object",
@@ -71,6 +81,6 @@
     "firstname",
     "birthDate",
     "payroll",
-    "coverage"
+    "insuranceType"
   ]
 }
