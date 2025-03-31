@@ -25,7 +25,9 @@
     - replaced enum value "0%" with "none" for property "disabilityCapitalProg"
     - removed property "bridgingCapital"
     - properties "disabilityCapitalUVG", "disabilityCapitalSurplusSalary" and "disabilityCapitalProg" are now mandatory
-- DSBFixedPayrollsType (Renamed to DSBPersonType)
+- DSBFixedPayrollsType (Changed)
+    - Renamed type to DSBPersonType
+    - Added property "degreeOfEmployment"
 - DSBMCoverageType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
 - DSBPCoverageType (Changed)
