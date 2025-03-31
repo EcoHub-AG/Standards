@@ -67,6 +67,30 @@
         "leftBehindPensionSurplusSalaryBenefitPeriod"
       ],
       "additionalProperties": false
+    },
+    "survivorsPartnerPension": {
+      "description": "Survivors Pension",
+      "type": "object",
+      "properties": {
+        "survivorsPartnerPension": {
+          "description": "Partner's pension UVG",
+          "$ref": "PensionSalaryType.json"
+        },
+        "survivorsPartnerPensionUVGSalary": {
+          "description": "Partner's pension UVG salary",
+          "$ref": "PensionBenefitPeriodType.json"
+        },
+        "survivorsPartnerPensionSurplusSalary": {
+          "description": "Partner's pension surplus salary",
+          "$ref": "PensionBenefitPeriodType.json"
+        }
+      },
+      "required": [
+        "survivorsPartnerPension",
+        "survivorsPartnerPensionUVGSalary",
+        "survivorsPartnerPensionSurplusSalary"
+      ],
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

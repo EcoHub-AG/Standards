@@ -57,6 +57,11 @@
           "pensionInsured": true,
           "pensionPercent": 70,
           "benefitPeriod": "gemäss UVG"
+        },
+        "survivorsPartnerPension": {
+          "survivorsPartnerPension": "Analog UVG",
+          "survivorsPartnerPensionUVGSalary": "Until reference age",
+          "survivorsPartnerPensionSurplusSalary": "Until reference age"
         }
       }
     }
@@ -107,6 +112,11 @@
         "survivorsPension": {
           "leftBehindPensionSurplusSalary": "Analog UVG",
           "leftBehindPensionSurplusSalaryBenefitPeriod": "Until reference age"
+        },
+        "survivorsPartnerPension": {
+          "survivorsPartnerPension": "Analog UVG",
+          "survivorsPartnerPensionUVGSalary": "Until reference age",
+          "survivorsPartnerPensionSurplusSalary": "Until reference age"
         }
       }
     }

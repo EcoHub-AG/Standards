@@ -136,6 +136,7 @@
     - added property "medicalExpensesHospitalType"
     - replaced properties in "disabilityPension"
     - replaced properties in "survivorsPension"
+    - added property "survivorsPartnerPension"
 - UVGZFixedPayrollsType (Changed)
     - renamed property "personId" to "fixedPayrollId"
     - removed property "surplusPayroll"
