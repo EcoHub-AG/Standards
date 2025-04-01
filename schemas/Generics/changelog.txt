@@ -3,6 +3,8 @@
     - removed attribute "brokerContact" (moved to OfferNlpiRequestDataType)
 - CompanyCustomerType (Changed)
     - removed "riskCharacteristic"
+- CompanyLegalStatusType (Changed)
+    - Capitalized enum values
 - GenderType
     - removed values "other" and "unknown"
     - capitalized enum values
