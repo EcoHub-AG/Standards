@@ -3,6 +3,9 @@
   "type": "object",
   "description": "Daily sickness benefits",
   "properties": {
+    "riskCharacteristic": {
+      "$ref": "../RiskCharacteristicType.json"
+    },
     "personGroups": {
       "$ref": "DSBPersonGroupsType.json",
       "allOf": [
@@ -51,5 +54,8 @@
       }
     }
   },
+  "required": [
+    "riskCharacteristic"
+  ],
   "additionalProperties": false
 }
