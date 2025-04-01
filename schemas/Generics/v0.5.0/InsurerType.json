@@ -12,8 +12,7 @@
 			"description": "Company name. For a sole proprietorship, name and surname must be entered."
 		},
 		"insurerCode": {
-			"$ref": "InsurerCodeType.json",
-			"description": "Insurer code"
+			"$ref": "InsurerCodeType.json"
 		}
 	},
 	"additionalProperties": false,
