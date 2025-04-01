@@ -56,8 +56,8 @@
 				"description": "Daily sickness benefits insurance coverage",
 				"$ref": "CoverageType.json"
 			},
-			"premiumFixedPayroll": {
-				"description": "Premium of the insured fixed payroll total. Must be set for offer and omitted during request.",
+			"premiumPersonMentionedByName": {
+				"description": "Premium of the person mentioned by name total. Must be set for offer and omitted during request.",
 				"$ref": "DSBPremiumType.json"
 			}
 		},

@@ -20,7 +20,7 @@
           "DSBLegalBasis": "VVG"
         }
       },
-      "premiumFixedPayroll": {
+      "premiumPersonMentionedByName": {
         "netPremiumDSBMalePercentage": 1.000,
         "netPremiumDSBMaleAmount": 204.00,
         "netPremiumDSBFemalePercentage": 1.000,

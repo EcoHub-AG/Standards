@@ -51,6 +51,8 @@
     - removed property "averageAgePersonGroup"
     - added property "averageAgeMale"
     - added property "averageAgeFemale"
+- DSBPersonType (Changed)
+    - renamed property "premiumFixedPayroll" to "premiumPersonMentionedByName"
 - DSBPremiumType (Changed)
     - added property "premiumMinimumAmount"
 - InsuranceOptionsBenefitPeriodType (Removed)

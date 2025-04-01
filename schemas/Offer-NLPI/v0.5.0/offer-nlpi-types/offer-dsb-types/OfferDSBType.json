@@ -24,7 +24,7 @@
         {
           "items": {
             "required": [
-              "premiumFixedPayroll"
+              "premiumPersonMentionedByName"
             ]
           }
         }
