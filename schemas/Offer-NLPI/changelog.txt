@@ -53,6 +53,10 @@
     - added property "averageAgeFemale"
 - DSBPersonType (Changed)
     - renamed property "premiumFixedPayroll" to "premiumPersonMentionedByName"
+    - dereferenced type of "premiumPersonMentionedByName"
+    - added properties "netPremiumDSBPercentage", "netPremiumDSBAmount", "premiumMinimumAmount" to "premiumPersonMentionedByName"
+    - removed properties "netPremiumDSBMalePercentage", "netPremiumDSBMaleAmount", "netPremiumDSBFemalePercentage", "netPremiumDSBFemaleAmount" from "premiumPersonMentionedByName"
+    - properties "netPremiumDSBMPercentage", "netPremiumDSBPPercentage" are now optional
 - DSBPremiumType (Changed)
     - added property "premiumMinimumAmount"
 - InsuranceOptionsBenefitPeriodType (Removed)
