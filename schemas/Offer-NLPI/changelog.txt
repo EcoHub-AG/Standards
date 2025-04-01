@@ -51,6 +51,8 @@
     - removed property "averageAgePersonGroup"
     - added property "averageAgeMale"
     - added property "averageAgeFemale"
+- DSBPremiumType (Changed)
+    - added property "premiumMinimumAmount"
 - InsuranceOptionsBenefitPeriodType (Removed)
 - InsuranceOptionsBenefitScopeType (Removed)
 - InsuranceOptionsEmployeesType (Removed)
