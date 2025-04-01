@@ -10,8 +10,8 @@
 		"houseNumber": {
 			"$ref": "AddressDefinitions.json#/definitions/houseNumberDef"
 		},
-		"adressExtension": {
-			"$ref": "AddressDefinitions.json#/definitions/adressExtensionDef"
+		"addressExtension": {
+			"$ref": "AddressDefinitions.json#/definitions/addressExtensionDef"
 		},
 		"postOfficeBox": {
 			"$ref": "AddressDefinitions.json#/definitions/postOfficeBoxDef"

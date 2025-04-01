@@ -13,7 +13,7 @@
       "type": "string",
       "maxLength": 10
     },
-    "adressExtensionDef": {
+    "addressExtensionDef": {
       "description": "Additional address information",
       "type": "string",
       "maxLength": 100

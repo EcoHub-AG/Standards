@@ -7,7 +7,7 @@
   "domicilAddress": {
     "streetName": "Zollstrasse",
     "houseNumber": "1",
-    "adressExtension": "c/o Dachverband Kleingewerbe",
+    "addressExtension": "c/o Dachverband Kleingewerbe",
     "postOfficeBox": "501",
     "zip": "8000",
     "city": "Zürich",
@@ -21,6 +21,6 @@
     "streetName": "Zollstrasse",
     "houseNumber": "1",
     "postOfficeBox": "501",
-    "adressExtension": "c/o Dachverband Kleingewerbe"
+    "addressExtension": "c/o Dachverband Kleingewerbe"
   }
 }

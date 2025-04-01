@@ -1,4 +1,8 @@
 ### Version 0.5.5
+- AddressDefinitions (Changed)
+    - renamed definition "adressExtensionDef" to "addressExtensionDef"
+- AddressType (Changed)
+    - renamed property "adressExtension" to "addressExtension"
 - BrokerType (Changed)
     - removed attribute "brokerContact" (moved to OfferNlpiRequestDataType)
 - CompanyCustomerType (Changed)
