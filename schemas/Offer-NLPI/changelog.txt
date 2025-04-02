@@ -114,6 +114,8 @@
     - added mandatory property "riskCharacteristic"
     - property "annualCancellation" in "insuranceOptionsVarious" is mandatory
     - added mandatory property "premiumOverviewUVGCompulsory"
+- OfferUVGZType (Changed)
+    - added mandatory property "riskCharacteristic"
 - PayInstalmentType (Changed)
     - capitalized enum value "anually"
 - PayrollBasisType
