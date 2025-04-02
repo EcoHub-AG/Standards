@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "type": "array",
-  "description": "Fixed insured payroll",
+  "description": "Person mentioned by name",
   "minItems": 1,
   "items": {
     "type": "object",
@@ -40,7 +40,7 @@
         "type": "number"
       },
       "insuranceType": {
-        "description": "Insurance benefit type",
+        "description": "Insurance benefit type UVGZ",
         "type": "string",
         "enum": [
           "Sum insurance",
