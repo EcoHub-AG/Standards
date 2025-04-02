@@ -79,6 +79,8 @@
     - Added mandatory constants processName, subProcessName and processVersion
     - Added mandatory property "insurerContact"
     - Added property "combinationMeta"
+    - removed property "premiumOverview"
+    - added property "netPremiumNLPITotal"
 - OfferNlpiFeedbackDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiRequestDataType (Changed)
