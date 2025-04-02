@@ -133,6 +133,7 @@
     - Added mandatory property "insuranceType"
     - Removed property "coverage"
     - renamed property "premiumInsuredPerson" to "premiumPersonMentionedByName"
+    - properties "hazardClass" and "hazardSubClass" in "premiumPersonMentionedByName" are now mandatory
 - UVGOInsuranceOptionsVariousType (Changed)
     - Added "additionalOptions" property
     - property "annualCancellation" is now optional

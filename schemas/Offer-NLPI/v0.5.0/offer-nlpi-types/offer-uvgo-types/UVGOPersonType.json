@@ -49,25 +49,27 @@
       "description": "Only set for offer. Must be omitted in offer request.",
       "properties": {
         "hazardClass": {
-          "description": "Hazard class insured person",
+          "description": "Hazard class of the person mentioned by name",
           "type": "string"
         },
         "hazardSubClass": {
-          "description": "Hazard sub class insured person",
+          "description": "Hazard sub class of the person mentioned by name",
           "type": "string"
         },
         "finalPremiumRate": {
-          "description": "Final premium rate insured person in ‰. Corresponds to the final premium rate / gross premium rate",
+          "description": "Final premium rate of the person mentioned by name in ‰. Corresponds to the net premium rate",
           "type": "number",
           "multipleOf": 0.001
         },
         "totalPremium": {
-          "description": "Annual premium of the insured person",
+          "description": "Annual premium of the of the person mentioned by name",
           "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
         }
       },
       "additionalProperties": false,
       "required": [
+        "hazardClass",
+        "hazardSubClass",
         "finalPremiumRate",
         "totalPremium"
       ]
