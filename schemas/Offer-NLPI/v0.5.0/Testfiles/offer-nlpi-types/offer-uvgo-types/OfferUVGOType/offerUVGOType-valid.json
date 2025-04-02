@@ -44,7 +44,7 @@
       "payroll": 120000.00,
       "degreeOfEmployment": 90,
       "insuranceType": "Coverage according to compulsory accident insurance UVG",
-      "premiumInsuredPerson": {
+      "premiumPersonMentionedByName": {
         "hazardClass": "A",
         "hazardSubClass": "A1",
         "finalPremiumRate": 3.600,

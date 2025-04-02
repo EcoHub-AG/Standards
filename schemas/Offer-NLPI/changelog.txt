@@ -132,6 +132,7 @@
     - Added optional property "degreeOfEmployment"
     - Added mandatory property "insuranceType"
     - Removed property "coverage"
+    - renamed property "premiumInsuredPerson" to "premiumPersonMentionedByName"
 - UVGOInsuranceOptionsVariousType (Changed)
     - Added "additionalOptions" property
     - property "annualCancellation" is now optional

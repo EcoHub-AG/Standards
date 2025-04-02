@@ -44,7 +44,7 @@
         "Coverage according to voluntary accident insurance OUFL"
       ]
     },
-    "premiumInsuredPerson": {
+    "premiumPersonMentionedByName": {
       "type": "object",
       "description": "Only set for offer. Must be omitted in offer request.",
       "properties": {

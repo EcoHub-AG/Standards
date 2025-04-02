@@ -29,7 +29,7 @@
           {
             "not": {
               "required": [
-                "premiumInsuredPerson"
+                "premiumPersonMentionedByName"
               ]
             }
           }
