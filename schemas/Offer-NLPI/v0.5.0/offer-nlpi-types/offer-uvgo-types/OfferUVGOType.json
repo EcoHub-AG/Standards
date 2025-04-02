@@ -3,6 +3,9 @@
   "type": "object",
   "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
   "properties": {
+    "riskCharacteristic": {
+      "$ref": "../RiskCharacteristicType.json"
+    },
     "personGroup": {
       "$ref": "UVGOPersonGroupType.json",
       "allOf": [
@@ -45,5 +48,8 @@
       "$ref": "UVGOInsuranceOptionsVariousType.json"
     }
   },
+  "required": [
+    "riskCharacteristic"
+  ],
   "additionalProperties": false
 }
