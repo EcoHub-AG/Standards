@@ -28,7 +28,19 @@
       "$ref": "../offer-nlpi-types/CombinationMetaType.json"
     },
     "customer": {
-      "$ref": "../offer-nlpi-types/OfferCustomerType.json"
+      "$ref": "../offer-nlpi-types/OfferCustomerType.json",
+      "anyOf": [
+        {
+          "required": [
+            "UVGRiskNo"
+          ]
+        },
+        {
+          "required": [
+            "UVGRiskNo"
+          ]
+        }
+      ]
     },
     "coInsuredCustomer": {
       "type": "array",

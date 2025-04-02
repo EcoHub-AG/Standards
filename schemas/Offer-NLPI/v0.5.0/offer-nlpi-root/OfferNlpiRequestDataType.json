@@ -33,7 +33,15 @@
 			]
 		},
 		"customer": {
-			"$ref": "../offer-nlpi-types/OfferCustomerType.json"
+			"$ref": "../offer-nlpi-types/OfferCustomerType.json",
+			"allOf": [
+				{
+					"required": [
+						"NOGACodeMain",
+						"UVGRiskNo"
+					]
+				}
+			]
 		},
 		"coInsuredCustomer": {
 			"type": "array",

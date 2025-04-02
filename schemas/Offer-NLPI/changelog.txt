@@ -66,7 +66,7 @@
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation" are now optional
 - MedicalExpensesHospitalType (Added)
 - OfferCustomerType (Changed)
-    - UVGRiskNo is now mandatory
+    - NOGACodeMain is now optional
     - Added property "SUVACompany"
 - OfferDSBType (Changed)
     - renamed property "fixedPayrolls" to "personMentionedByName"
@@ -81,6 +81,7 @@
     - Added property "combinationMeta"
     - removed property "premiumOverview"
     - added property "netPremiumNLPITotal"
+    - one of the properties "NOGACodeMain" and "UVGRiskNo" in "customer" is now mandatory
 - OfferNlpiFeedbackDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiRequestDataType (Changed)
@@ -92,6 +93,7 @@
     - removed property "previousInsurer" (moved into DSB, UVGCompulsory, UVGSupplement)
     - removed property "UVGCompulsoryInsurer"
     - added property "uploadLink"
+    - properties "NOGACodeMain" and "UVGRiskNo" in "customer" are now mandatory
 - OfferRequestDSBType
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
