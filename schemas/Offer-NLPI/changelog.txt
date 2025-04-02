@@ -112,6 +112,7 @@
     - renamed property "voluntarilyInsuredPersons" to "personMentionedByName"
     - removed property "personsConnectionEmployer"
     - added mandatory property "riskCharacteristic"
+    - property "annualCancellation" in "insuranceOptionsVarious" is mandatory
 - PayInstalmentType (Changed)
     - capitalized enum value "anually"
 - PayrollBasisType

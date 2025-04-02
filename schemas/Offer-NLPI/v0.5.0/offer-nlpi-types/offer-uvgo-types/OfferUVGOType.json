@@ -45,7 +45,14 @@
       }
     },
     "insuranceOptionsVarious": {
-      "$ref": "UVGOInsuranceOptionsVariousType.json"
+      "$ref": "UVGOInsuranceOptionsVariousType.json",
+      "allOf": [
+        {
+          "required": [
+            "annualCancellation"
+          ]
+        }
+      ]
     }
   },
   "required": [

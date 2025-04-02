@@ -36,6 +36,7 @@
       "type": "number"
     },
     "insuranceType": {
+      "description": "Insurance type UVG",
       "type": "string",
       "enum": [
         "Coverage according to compulsory accident insurance UVG",
