@@ -113,6 +113,7 @@
     - removed property "personsConnectionEmployer"
     - added mandatory property "riskCharacteristic"
     - property "annualCancellation" in "insuranceOptionsVarious" is mandatory
+    - added mandatory property "premiumOverviewUVGCompulsory"
 - PayInstalmentType (Changed)
     - capitalized enum value "anually"
 - PayrollBasisType
