@@ -32,26 +32,56 @@
     },
     "insuranceOptions": {
       "$ref": "DSBInsuranceOptionsType.json",
-      "if": {
-        "properties": {
-          "insuranceOptionsVarious": {
-            "surplusParticipation": {
-              "const": true
+      "allOf": [
+        {
+          "properties": {
+            "insuranceOptionsVarious": {
+              "required": [
+                "premiumRateGuaranty",
+                "renunciationTerminationRightClaim",
+                "annualCancellation",
+                "surplusParticipation"
+              ]
+            }
+          },
+          "required": [
+            "insuranceStartByEmployment",
+            "insuranceTemporaryEmployees",
+            "insuranceParttimeEmployees",
+            "insuranceHourlyEmployees",
+            "insuranceEmployeesExhaustedBenefitPeriod",
+            "insuranceChildFamilyAllowances",
+            "insuranceWageIncreaseIncapacity",
+            "subsequentPaymentsAfterDeath",
+            "renunciationBenefitReductionsNegligence",
+            "unpaidLeaveInsurance",
+            "renunciationCreditingWaitingPeriod",
+            "subsequentBenefitsContractTermination"
+          ]
+        },
+        {
+          "if": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "surplusParticipation": {
+                  "const": true
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
             }
           }
         }
-      },
-      "then": {
-        "properties": {
-          "insuranceOptionsVarious": {
-            "required": [
-              "surplusParticipationPremiumRate",
-              "surplusParticipationRate",
-              "surplusParticipationPeriodYears"
-            ]
-          }
-        }
-      }
+      ]
     }
   },
   "required": [

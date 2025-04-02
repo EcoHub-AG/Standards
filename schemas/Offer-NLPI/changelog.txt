@@ -71,6 +71,7 @@
 - OfferDSBType (Changed)
     - renamed property "fixedPayrolls" to "personMentionedByName"
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
+    - all properties of "insuranceOptions" are mandatory
 - OfferNlpiConclusionDecisionDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiDataType (Changed)

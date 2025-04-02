@@ -1,0 +1,39 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "insuranceOptions": {
+    "insuranceStartByEmployment": true,
+    "insuranceTemporaryEmployees": true,
+    "insuranceParttimeEmployees": true,
+    "insuranceHourlyEmployees": true,
+    "insuranceEmployeesExhaustedBenefitPeriod": true,
+    "insuranceChildFamilyAllowances": false,
+    "insuranceWageIncreaseIncapacity": true,
+    "subsequentPaymentsAfterDeath": false,
+    "renunciationBenefitReductionsNegligence": true,
+    "unpaidLeaveInsurance": true,
+    "renunciationCreditingWaitingPeriod": false,
+    "subsequentBenefitsContractTermination": true,
+    "insuranceOptionsVarious": {
+      "premiumRateGuaranty": true,
+      "renunciationTerminationRightClaim": true,
+      "annualCancellation": true,
+      "typePayInstalment": "Annually",
+      "additionalOptions": [
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSB",
+          "optionValue": "20000",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        },
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSBM",
+          "optionValue": "DSBM",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        }
+      ],
+      "surplusParticipation": true,
+      "surplusParticipationPremiumRate": 25.65,
+      "surplusParticipationRate": 10.7,
+      "surplusParticipationPeriodYears": 5
+    }
+  }
+}
