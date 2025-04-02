@@ -82,6 +82,55 @@
           }
         }
       ]
+    },
+    "premiumOverviewDSB": {
+      "type": "object",
+      "properties": {
+        "tariffYear": {
+          "description": "Tariff year",
+          "type": "string"
+        },
+        "netPremiumDSBTotal": {
+          "description": "The total net premium DSB corresponds to the amount of the net premium total offered for DSB coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+          "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+        },
+        "instalmentSurchargeAmountDSB": {
+          "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for DSB.",
+          "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+        },
+        "instalmentSurchargePercentageDSB": {
+          "type": "number",
+          "multipleOf": 0.001,
+          "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage for DSB."
+        },
+        "premiumMinimumAmountDSB": {
+          "description": "Minimum premium for DSB in CHF. If is given per persongroup and person mentioned by name it  will be cumulated",
+          "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+        },
+        "combinationDiscountPercentage": {
+          "description": "Discount considered in the net premium in percentage when buying in combination with other products (e.g. DSB and UVGZ).",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "combinationDiscountIncluded": {
+          "description": "Combinaton discount is included",
+          "type": "boolean"
+        },
+        "otherDiscountPercentage": {
+          "description": "Additional discounts, e.g. progress-related or business policy discounts.",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "otherDiscountIncluded": {
+          "description": "Other discount is included",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "netPremiumDSBTotal",
+        "premiumMinimumAmountDSB",
+        "combinationDiscountIncluded"
+      ]
     }
   },
   "required": [

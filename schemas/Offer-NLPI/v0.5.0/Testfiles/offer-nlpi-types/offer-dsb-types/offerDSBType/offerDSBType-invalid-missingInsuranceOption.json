@@ -32,6 +32,11 @@
       "surplusParticipation": true,
       "surplusParticipationPremiumRate": 25.65,
       "surplusParticipationPeriodYears": 5
+    },
+    "premiumOverviewDSB": {
+      "netPremiumDSBTotal": 2500,
+      "premiumMinimumAmountDSB": 100,
+      "combinationDiscountIncluded": true
     }
   }
 }
