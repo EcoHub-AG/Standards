@@ -5,7 +5,7 @@
     "insurerCode": "901S"
   },
   "broker": {
-    "brokerRegisterNo": "CHE-FINMA-12345",
+    "brokerRegisterNo": "CHE-FINMA-F12345678",
     "companyId": "CHE-120.330.754",
     "companyName": "Test Broker"
   }
