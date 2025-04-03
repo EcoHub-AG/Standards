@@ -12,7 +12,7 @@
       "insuranceType": "Sum insurance",
       "coverage": {
       },
-      "premiumFixedPayroll": {
+      "premiumPersonMentionedByName": {
         "disabilityCapitalSalary": 100000.00,
         "disabilityCapitalSurplusSalary": 50000.00,
         "disabilityPensionSalary": 75000.00,

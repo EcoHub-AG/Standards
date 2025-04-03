@@ -181,6 +181,8 @@
     - removed property "surplusPayroll"
     - added property "degreeOfEmployment"
     - added mandatory property "insuranceType"
+    - renamed property "premiumFixedPayroll" to "premiumPersonMentionedByName"
+    - changed type of "premiumPersonMentionedByName" to "UVGZPremiumType"
 - UVGZPersonGroupsType (Changed)
     - Added property "personGroupDescription"
     - Removed property "payrollTotal"
@@ -190,8 +192,9 @@
     - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus"
     - Added restriction for allowed enum values for "disabilityCapitalUVG" and "disabilityCapitalSurplusSalary"
     - property "numberOfPersonsTotal" is now optional
-    - replaced properties in "premiumPersonGroup"
+    - changed type of "premiumPersonGroup" to "UVGZPremiumType"
 - UVGZPremiumRateType (Added)
+- UVGZPremiumType (Added)
 - YearlySalaryMultipleType (Changed)
     - translated and added enum values
 - YearlySalaryOptionalMultipleType (Removed)

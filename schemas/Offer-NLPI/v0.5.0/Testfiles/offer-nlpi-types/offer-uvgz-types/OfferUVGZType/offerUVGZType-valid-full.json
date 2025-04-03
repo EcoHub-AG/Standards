@@ -182,7 +182,7 @@
           "survivorsPartnerPensionSurplusSalary": "Until reference age"
         }
       },
-      "premiumFixedPayroll": {
+      "premiumPersonMentionedByName": {
         "disabilityCapitalSalary": 100000.00,
         "disabilityCapitalSurplusSalary": 50000.00,
         "disabilityPensionSalary": 80000.00,
