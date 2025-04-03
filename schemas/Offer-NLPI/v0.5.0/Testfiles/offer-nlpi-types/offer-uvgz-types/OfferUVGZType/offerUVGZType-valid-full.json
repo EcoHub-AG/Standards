@@ -230,6 +230,17 @@
       ]
     }
   },
+  "premiumOverviewUVGZ": {
+    "tariffYear": "2025",
+    "netPremiumTotal": 2500,
+    "instalmentSurchargeAmount": 50,
+    "instalmentSurchargePercentage": 0.02,
+    "premiumMinimumAmount": 100,
+    "combinationDiscountPercentage": 0.05,
+    "combinationDiscountIncluded": true,
+    "otherDiscountPercentage": 0.03,
+    "otherDiscountIncluded": true
+  },
   "previousInsurer": {
     "previousInsurer": true,
     "previousInsurerDetails": [

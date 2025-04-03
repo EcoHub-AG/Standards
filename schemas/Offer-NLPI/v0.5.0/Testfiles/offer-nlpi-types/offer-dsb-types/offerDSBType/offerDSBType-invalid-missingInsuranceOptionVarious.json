@@ -34,8 +34,8 @@
       "surplusParticipationPeriodYears": 5
     },
     "premiumOverviewDSB": {
-      "netPremiumDSBTotal": 2500,
-      "premiumMinimumAmountDSB": 100,
+      "netPremiumTotal": 2500,
+      "premiumMinimumAmount": 100,
       "combinationDiscountIncluded": true
     }
   }

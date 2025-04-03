@@ -74,6 +74,10 @@
           }
         }
       ]
+    },
+    "premiumOverviewUVGSupplement": {
+      "description": "Overview of the premium only for UVG supplement",
+      "$ref": "../PremiumOverviewType.json"
     }
   },
   "additionalProperties": false,

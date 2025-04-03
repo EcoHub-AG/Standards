@@ -127,6 +127,7 @@
     - added mandatory property "riskCharacteristic"
     - renamed property "insuranceOptionsVarious" to "insuranceOptions"
     - changed type of "insuranceOptions" to "UVGZInsuranceOptionsType"
+    - added property "premiumOverviewUVGZ"
 - PayInstalmentType (Changed)
     - capitalized enum value "anually"
 - PayrollBasisType
@@ -134,6 +135,7 @@
 - PayrollEmployeesType (Added)
 - PensionSalaryType (Added)
 - PensionBenefitPeriodType (Added)
+- PremiumOverviewType (Added)
 - PreviousInsurerType
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"

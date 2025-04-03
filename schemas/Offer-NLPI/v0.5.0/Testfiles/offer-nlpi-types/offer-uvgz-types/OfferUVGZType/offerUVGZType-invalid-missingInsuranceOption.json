@@ -27,6 +27,11 @@
       ]
     }
   },
+  "premiumOverviewUVGZ": {
+    "netPremiumTotal": 2500,
+    "premiumMinimumAmount": 100,
+    "combinationDiscountIncluded": true,
+  },
   "previousInsurer": {
     "previousInsurer": true,
     "previousInsurerDetails": [
