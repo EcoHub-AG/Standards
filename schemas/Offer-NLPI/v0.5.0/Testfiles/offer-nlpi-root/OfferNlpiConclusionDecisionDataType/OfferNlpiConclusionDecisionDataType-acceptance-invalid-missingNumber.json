@@ -20,7 +20,7 @@
 			}
 		}
 	},
-	"offerConclusionDecision": "Offer conclusion rejected",
+	"offerConclusionDecision": "Offer conclusion accepted",
 	"offerConclusionDecisionMessage": "Insurer comfirms the closed offer. Contract in preparation.",
 	"insurerContact": {
 		"contactName": "Broker Account Management West",

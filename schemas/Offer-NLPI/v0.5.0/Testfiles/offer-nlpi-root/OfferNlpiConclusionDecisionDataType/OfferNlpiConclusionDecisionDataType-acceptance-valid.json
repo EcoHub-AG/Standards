@@ -7,7 +7,7 @@
 	"header": {
 		"recipient": {
 			"broker": {
-				"brokerRegisterNo": "CHE-FINMA-12345",
+				"brokerRegisterNo": "CHE-FINMA-F12345678",
 				"companyId": "CHE-120.330.754",
 				"companyName": "Test Broker"
 			}
@@ -20,35 +20,9 @@
 			}
 		}
 	},
-	"customer": {
-		"companyName": "Coiffeur Verband Schweiz",
-		"companyId": "CHE-105.841.533",
-		"companyLegalForm": "Association",
-		"companyLegalStatus": "Active",
-		"companyFoundingYear": "2022",
-		"riskCharacteristic": "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)",
-		"domicilAddress": {
-			"zip": "8000",
-			"city": "Zürich",
-			"country": "CH",
-			"streetName": "Zollstrasse",
-			"houseNumber": "1",
-			"postOfficeBox": "501",
-			"adressExtension": "c/o Dachverband Kleingewerbe"
-		},
-		"isDomicilAddressCorrespondenceAddress": false,
-		"correspondenceAddress": {
-			"zip": "8000",
-			"city": "Zürich",
-			"country": "CH",
-			"streetName": "Zollstrasse",
-			"houseNumber": "1",
-			"postOfficeBox": "501",
-			"adressExtension": "c/o Dachverband Kleingewerbe"
-		}
-	},
-	"offerConclusionDecision": "offerConclusionDenial",
-	"offerConclusionDenialReason": "Just testing the if condition of the json schema",
+	"quotationNo": "123-456-789",
+	"contractNo": "123-456-789",
+	"offerConclusionDecision": "Offer conclusion accepted",
 	"offerConclusionDecisionMessage": "Insurer comfirms the closed offer. Contract in preparation.",
 	"insurerContact": {
 		"contactName": "Broker Account Management West",

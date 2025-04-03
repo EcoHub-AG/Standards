@@ -75,6 +75,12 @@
 - OfferCustomerType (Changed)
     - NOGACodeMain is now optional
     - Added property "SUVACompany"
+- OfferConclusionDecisionDataType (Changed)
+    - removed property "customer"
+    - added property "contractNo"
+    - replaced enum values of property "offerConclusionDecision"
+    - removed property "offerConclusionDenialReason"
+    - added property "attachmentDocument"
 - OfferDSBType (Changed)
     - renamed property "fixedPayrolls" to "personMentionedByName"
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
