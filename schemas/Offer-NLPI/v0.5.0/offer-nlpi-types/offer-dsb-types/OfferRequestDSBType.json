@@ -16,7 +16,12 @@
                 "premiumPersonGroup"
               ]
             }
-          }
+          },
+          "required": [
+            "numberOfPersonsFemale",
+            "numberOfPersonsMale",
+            "numberOfPersonsTotal"
+          ]
         }
       ]
     },

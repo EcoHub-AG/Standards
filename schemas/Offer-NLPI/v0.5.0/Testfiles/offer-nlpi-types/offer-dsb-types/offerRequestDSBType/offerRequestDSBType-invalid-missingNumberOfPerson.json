@@ -1,0 +1,110 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "personGroups": [
+    {
+      "personGroupId": "10000000-0000-0000-0000-000000000001",
+      "personGroupDescription": "Alle Frauen",
+      "numberOfPersonsFemale": 4,
+      "numberOfPersonsMale": 0,
+      "payrollFemale": 304000,
+      "payrollMale": 0,
+      "payrollTotal": 304000,
+      "maxSalary": 450000,
+      "averageAgeMale": 39.7,
+      "averageAgeFemale": 39.7,
+      "uniformPremiumRate": true,
+      "coverage": {
+        "DSBCoverage": {
+          "DSBDaysWaitingNo": 90,
+          "DSBCalculationBasis": "Case",
+          "DSBBenefitPeriod": "365 days",
+          "DSBBenefitAmountPercentage": 80,
+          "DSBLegalBasis": "VVG"
+        },
+        "DSBMCoverage": [
+          {
+            "DSBMBenefitDurationWeeks": 14,
+            "DSBMBenefitAmountPercentage": 80,
+            "DSBMPayrollBasis": "EOG wage"
+          }
+        ],
+        "DSBPCoverage": [
+          {
+            "DSBPBenefitDurationWeeks": 14,
+            "DSBPBenefitAmountPercentage": 80,
+            "DSBPPayrollBasis": "EOG wage"
+          }
+        ]
+      }
+    }
+  ],
+  "personMentionedByName": [
+    {
+      "personId": "06637133-2230-472e-80fa-ba1c9661d0a7",
+      "role": "Self-employed person",
+      "firstname": "Kaiser",
+      "surname": "Leonie",
+      "birthDate": "1996-03-14",
+      "gender": "Female",
+      "fixedPayroll": 99000,
+      "benefitCoverage": "Sickness",
+      "insuranceType": "Sum insurance",
+      "coverage": {
+        "DSBCoverage": {
+          "DSBDaysWaitingNo": 60,
+          "DSBCalculationBasis": "working year",
+          "DSBBenefitPeriod": "365 days",
+          "DSBBenefitAmountPercentage": 100,
+          "DSBLegalBasis": "VVG"
+        },
+        "DSBMCoverage": [
+          {
+            "DSBMBenefitDurationWeeks": 14,
+            "DSBMBenefitAmountPercentage": 100,
+            "DSBMPayrollBasis": "Total wage"
+          }
+        ],
+        "DSBPCoverage": [
+          {
+            "DSBPBenefitDurationWeeks": 6,
+            "DSBPBenefitAmountPercentage": 100,
+            "DSBPPayrollBasis": "EOG wage"
+          }
+        ]
+      }
+    }
+  ],
+  "insuranceOptions": {
+    "insuranceStartByEmployment": true,
+    "insuranceTemporaryEmployees": true,
+    "insuranceParttimeEmployees": true,
+    "insuranceHourlyEmployees": true,
+    "insuranceEmployeesExhaustedBenefitPeriod": true,
+    "insuranceChildFamilyAllowances": false,
+    "insuranceWageIncreaseIncapacity": true,
+    "subsequentPaymentsAfterDeath": false,
+    "renunciationBenefitReductionsNegligence": true,
+    "unpaidLeaveInsurance": true,
+    "renunciationCreditingWaitingPeriod": false,
+    "subsequentBenefitsContractTermination": true,
+    "insuranceOptionsVarious": {
+      "premiumRateGuaranty": true,
+      "renunciationTerminationRightClaim": true,
+      "annualCancellation": true,
+      "typePayInstalment": "Annually",
+      "additionalOptions": [
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSB",
+          "optionValue": "20000",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        },
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSBM",
+          "optionValue": "DSBM",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        }
+      ],
+      "surplusParticipation": true
+    }
+  }
+}

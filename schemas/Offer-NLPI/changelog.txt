@@ -51,6 +51,7 @@
     - removed property "averageAgePersonGroup"
     - added property "averageAgeMale"
     - added property "averageAgeFemale"
+    - properties "numberOfPersonsFemale", "numberOfPersonsMale", "numberOfPersonsTotal" are now optional
 - DSBPersonType (Changed)
     - renamed property "premiumFixedPayroll" to "premiumPersonMentionedByName"
     - dereferenced type of "premiumPersonMentionedByName"
@@ -98,6 +99,7 @@
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
     - renamed property "fixedPayrolls" to "personMentionedByName"
+    - properties "numberOfPersonsFemale", "numberOfPersonsMale", "numberOfPersonsTotal" in personGroups are mandatory
 - OfferRequestUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"

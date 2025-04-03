@@ -69,9 +69,6 @@
     "required": [
       "personGroupId",
       "personGroupDescription",
-      "numberOfPersonsFemale",
-      "numberOfPersonsMale",
-      "numberOfPersonsTotal",
       "payrollFemale",
       "payrollMale",
       "payrollTotal",
