@@ -15,7 +15,10 @@
               "required": [
                 "premiumPersonGroup"
               ]
-            }
+            },
+            "required": [
+              "numberOfPersonsTotal"
+            ]
           }
         }
       ]

@@ -193,7 +193,6 @@
     "required": [
       "personGroupId",
       "personGroupDescription",
-      "numberOfPersonsTotal",
       "maxSalary",
       "payrollEmployees",
       "coverage"

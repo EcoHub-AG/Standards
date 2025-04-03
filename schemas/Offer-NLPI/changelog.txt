@@ -114,6 +114,7 @@
     - renamed "insuranceOptionsVarious" to "insuranceOptions"
     - changed type of "insuranceOptions" to "UVGZInsuranceOptionsType"
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
+    - property "numberOfPersonsTotal" in "personGroups" is mandatory
 - OfferUVGOType (Changed)
     - removed max size restriction for voluntarilyInsuredPersons
     - replaced valid enum values for property "role" in "voluntarilyInsuredPersons"
@@ -188,6 +189,7 @@
     - Added mandatory property "payrollEmployees"
     - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus"
     - Added restriction for allowed enum values for "disabilityCapitalUVG" and "disabilityCapitalSurplusSalary"
+    - property "numberOfPersonsTotal" is now optional
 - YearlySalaryMultipleType (Changed)
     - translated and added enum values
 - YearlySalaryOptionalMultipleType (Removed)
