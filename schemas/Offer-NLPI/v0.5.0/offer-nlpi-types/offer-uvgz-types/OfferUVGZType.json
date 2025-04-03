@@ -82,7 +82,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "insuranceOptionsVarious",
+    "insuranceOptions",
     "riskCharacteristic"
   ],
   "anyOf": [

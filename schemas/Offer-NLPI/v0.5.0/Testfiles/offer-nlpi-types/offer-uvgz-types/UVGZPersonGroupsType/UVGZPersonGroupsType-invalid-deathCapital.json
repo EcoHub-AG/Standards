@@ -15,19 +15,67 @@
       }
     },
     "premiumPersonGroup": {
-      "medicalExpensesPremiumRate": 2.345,
-      "dailyAllowanceNetPremiumRate": 1.678,
-      "dailyHospitalAllowancePremiumRate": 0.987,
-      "disabilityCapitalPremiumRate": 3.210,
-      "disabilityCapitalSurplusSalaryPremiumRate": 1.543,
-      "disabilityPensionPremiumRate": 2.876,
-      "disabilityPensionSalarySurplusPremiumRate": 1.234,
-      "deathCapitalPremiumRate": 4.321,
-      "deathCapitalSurplusSalaryPremiumRate": 2.109,
-      "survivorsPensionSalaryPremiumRate": 3.654,
-      "survivorsPensionSalarySurplusPremiumRate": 1.987,
-      "premiumDiffCoverage": 1500.50,
-      "finalPremiumPersonGroup": 25000.75
+      "medicalExpensesPremiumRate": {
+        "totalPremiumRate": 5.000,
+        "premiumRateOA": 2.000,
+        "premiumRateNOA": 1.500
+      },
+      "dailyAllowanceNetPremiumRateUVGSalary": {
+        "totalPremiumRate": 4.000,
+        "premiumRateOA": 1.800,
+        "premiumRateNOA": 1.200
+      },
+      "dailyAllowanceSurplusSalaryNetPremiumRate": {
+        "totalPremiumRate": 3.500,
+        "premiumRateOA": 1.700,
+        "premiumRateNOA": 1.000
+      },
+      "dailyHospitalAllowancePremiumRate": 0.003,
+      "disabilityCapitalPremiumRateUVGSalary": {
+        "totalPremiumRate": 6.000,
+        "premiumRateOA": 2.500,
+        "premiumRateNOA": 2.000
+      },
+      "disabilityCapitalSurplusSalaryPremiumRate": {
+        "totalPremiumRate": 5.500,
+        "premiumRateOA": 2.200,
+        "premiumRateNOA": 1.800
+      },
+      "disabilityPensionPremiumRateUVGSalary": 0.004,
+      "disabilityPensionSalarySurplusPremiumRate": {
+        "totalPremiumRate": 4.500,
+        "premiumRateOA": 2.100,
+        "premiumRateNOA": 1.600
+      },
+      "deathCapitalPremiumRateUVGSalary": {
+        "totalPremiumRate": 7.000,
+        "premiumRateOA": 3.000,
+        "premiumRateNOA": 2.500
+      },
+      "deathCapitalSurplusSalaryPremiumRate": {
+        "totalPremiumRate": 6.500,
+        "premiumRateOA": 2.800,
+        "premiumRateNOA": 2.200
+      },
+      "survivorsPensionSalaryPremiumRateUVGSalary": 0.005,
+      "survivorsPensionSalarySurplusPremiumRate": {
+        "totalPremiumRate": 5.000,
+        "premiumRateOA": 2.400,
+        "premiumRateNOA": 1.900
+      },
+      "premiumDiffCoverage": 1000.00,
+      "UVGSalaryNetPremiumRate": {
+        "totalPremiumRate": 2.500,
+        "premiumRateOA": 1.200,
+        "premiumRateNOA": 1.000
+      },
+      "surplusSalaryNetPremiumRate": {
+        "totalPremiumRate": 3.000,
+        "premiumRateOA": 1.500,
+        "premiumRateNOA": 1.200
+      },
+      "premiumMinimumAmount": 50.00,
+      "finalPremium": 1500.00
     }
   }
 ]
