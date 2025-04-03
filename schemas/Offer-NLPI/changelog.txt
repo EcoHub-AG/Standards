@@ -74,6 +74,7 @@
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
     - all properties of "insuranceOptions" are mandatory
     - added property "premiumOverviewDSB"
+    - property "maxSalary" in "personGroups" is mandatory
 - OfferNlpiConclusionDecisionDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiDataType (Changed)

@@ -12,7 +12,8 @@
         {
           "items": {
             "required": [
-              "premiumPersonGroup"
+              "premiumPersonGroup",
+              "maxSalary"
             ]
           }
         }
