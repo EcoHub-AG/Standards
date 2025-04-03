@@ -30,20 +30,50 @@
         }
       ]
     },
-    "insuranceOptionsVarious": {
-      "$ref": "../InsuranceOptionsVariousType.json",
-      "if": {
-        "surplusParticipation": {
-          "const": true
+    "insuranceOptions": {
+      "$ref": "UVGZInsuranceOptionsType.json",
+      "allOf": [
+        {
+          "properties": {
+            "insuranceOptionsVarious": {
+              "required": [
+                "premiumRateGuaranty",
+                "renunciationTerminationRightClaim",
+                "annualCancellation",
+                "surplusParticipation"
+              ]
+            }
+          },
+          "required": [
+            "dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity",
+            "startInsuranceCoverStartEmploymentContract",
+            "endInsuranceCoverCoorindationUVG",
+            "waiverBenefitGrossNegligence"
+          ]
+        },
+        {
+          "if": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "surplusParticipation": {
+                  "const": true
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
+            }
+          }
         }
-      },
-      "then": {
-        "required": [
-          "surplusParticipationPremiumRate",
-          "surplusParticipationRate",
-          "surplusParticipationPeriodYears"
-        ]
-      }
+      ]
     }
   },
   "additionalProperties": false,

@@ -2,7 +2,7 @@
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"type": "object",
 	"properties": {
-		"dailyAllowanceContinuedPaymentIncreasesBeforIncapacity": {
+		"dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity": {
 			"description": "Daily allowance and continued payment of salary: consideration of salary increases agreed before the incapacity for work",
 			"type": "boolean"
 		},

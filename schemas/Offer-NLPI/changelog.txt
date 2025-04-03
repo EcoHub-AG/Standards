@@ -125,6 +125,8 @@
     - added mandatory property "premiumOverviewUVGCompulsory"
 - OfferUVGZType (Changed)
     - added mandatory property "riskCharacteristic"
+    - renamed property "insuranceOptionsVarious" to "insuranceOptions"
+    - changed type of "insuranceOptions" to "UVGZInsuranceOptionsType"
 - PayInstalmentType (Changed)
     - capitalized enum value "anually"
 - PayrollBasisType
