@@ -23,25 +23,6 @@
   },
   "quotationNo": "4564543-01",
   "offerDecision": "Offer accepted",
-  "offerAcceptance": {
-    "offerDocument": {
-      "signedOffer": true,
-      "signedDocument": [
-        {
-          "filename": "offerDocument2.pdf",
-          "data": "JVBER...",
-          "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
-        }
-      ]
-    },
-    "otherAttachmentDocument": [
-      {
-        "filename": "offerDocument2.pdf",
-        "data": "JVBER...",
-        "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
-      }
-    ]
-  },
   "offerFeedbackMessage": "Customer accepts the offer",
   "brokerContact": {
     "contactName": "Test Broker AG - Account Management West",

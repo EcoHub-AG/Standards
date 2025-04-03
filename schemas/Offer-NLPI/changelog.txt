@@ -66,6 +66,12 @@
 - InsuranceOptionsVariousType (Changed)
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation" are now optional
 - MedicalExpensesHospitalType (Added)
+- OfferAcceptanceType (Changed)
+    - renamed property "digitalSignedOffer" of "offerDocument" to "signedOffer"
+    - renamed property "digitalSignedDocument" of "offerDocument" to "signedDocument"
+    - removed property "physicalSignedDocument" of "offerDocument"
+    - renamed property "offerAttachementDocument" to "otherAttachementDocument"
+    - changed type of "otherAttachementDocument" to MultiFileType
 - OfferCustomerType (Changed)
     - NOGACodeMain is now optional
     - Added property "SUVACompany"
@@ -87,6 +93,9 @@
     - renamed property "offerAttachementDokument" to "otherAttachementDocument"
 - OfferNlpiFeedbackDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
+    - removed property "customer"
+    - extracted property "offerAcceptance" from "offerDecision"
+    - changed type of "offerDecision" from object to string
 - OfferNlpiRequestDataType (Changed)
     - added attribute "brokerContact" (moved to BrokerType)
     - "offerToDate" renamed to "offerDeadline" and now mandatory
@@ -97,6 +106,7 @@
     - removed property "UVGCompulsoryInsurer"
     - added property "uploadLink"
     - properties "NOGACodeMain" and "UVGRiskNo" in "customer" are now mandatory
+- OfferRejectionType (Removed)
 - OfferRequestDSBType
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)

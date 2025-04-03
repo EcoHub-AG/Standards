@@ -14,55 +14,16 @@
 		},
 		"sender": {
 			"broker": {
-				"brokerRegisterNo": "CHE-FINMA-12345",
+				"brokerRegisterNo": "CHE-FINMA-F12345678",
 				"companyId": "CHE-120.330.754",
 				"companyName": "Test Broker",
-				"brokerBranch": "789555",
-				"brokerContact": {
-					"contactName": "Test Broker AG - Account Management West",
-					"contactMail": "info@testbrokerag.ch",
-					"contactPhone": "+41444000000",
-					"consultantSurname": "Mustermann",
-					"consultantFirstName": "Max",
-					"consultantFINMARegisterNo": "CHE-IGB2B-56439"
-				}
+				"brokerBranch": "789555"
 			}
 		}
 	},
-	"customer": {
-		"companyName": "Coiffeur Verband Schweiz",
-		"companyId": "CHE-105.841.533",
-		"companyLegalForm": "Association",
-		"companyLegalStatus": "Active",
-		"companyFoundingYear": "2022",
-		"riskCharacteristic": "Anobag (Arbeitnehmer ohne beitragspflichtige Arbeitgeber)",
-		"domicilAddress": {
-			"zip": "8000",
-			"city": "Zürich",
-			"country": "CH",
-			"streetName": "Zollstrasse",
-			"houseNumber": "1",
-			"postOfficeBox": "501",
-			"adressExtension": "c/o Dachverband Kleingewerbe"
-		},
-		"isDomicilAddressCorrespondenceAddress": false,
-		"correspondenceAddress": {
-			"zip": "8000",
-			"city": "Zürich",
-			"country": "CH",
-			"streetName": "Zollstrasse",
-			"houseNumber": "1",
-			"postOfficeBox": "501",
-			"adressExtension": "c/o Dachverband Kleingewerbe"
-		}
-	},
 	"quotationNo": "4564543-01",
-	"offerDecision": {
-		"offerRejection": {
-			"offerRejectionReason": "This is a statement explaining why the offer was rejected."
-		}
-	},
-	"offerFeedbackMessage": "Customer rejects the offer",
+	"offerDecision": "Offer rejected",
+	"offerFeedbackMessage": "This is a statement explaining why the offer was rejected.",
 	"brokerContact": {
 		"contactName": "Test Broker AG - Account Management West",
 		"contactMail": "info@testbrokerag.ch",
