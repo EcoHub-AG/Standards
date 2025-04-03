@@ -43,6 +43,8 @@
   },
   "additionalProperties": false,
   "required": [
+    "hazardClass",
+    "hazardSubClass",
     "premiumRiskRate",
     "costAdminRate",
     "sharingCostRate",

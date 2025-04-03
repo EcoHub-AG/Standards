@@ -150,6 +150,8 @@
     - Added "additionalOptions" property
     - property "annualCancellation" is now optional
 - UVGOInsurerType (Removed)
+- UVGOPersonGroupPremiumType (Changed)
+    - properties "hazardClass" and "hazardSubClass" are now mandatory
 - UVGOPersonGroupType (Changed)
     - Added property "personGroupDescription"
     - renamed property "numberOfPersonsBU" to "numberOfPersonsOA"
