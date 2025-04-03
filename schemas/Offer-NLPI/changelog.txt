@@ -84,6 +84,7 @@
     - removed property "premiumOverview"
     - added property "netPremiumNLPITotal"
     - one of the properties "NOGACodeMain" and "UVGRiskNo" in "customer" is now mandatory
+    - renamed property "offerAttachementDokument" to "otherAttachementDocument"
 - OfferNlpiFeedbackDataType (Changed)
     - Added mandatory constants processName, subProcessName and processVersion
 - OfferNlpiRequestDataType (Changed)

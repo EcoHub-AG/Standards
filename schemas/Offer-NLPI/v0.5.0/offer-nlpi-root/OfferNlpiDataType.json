@@ -95,7 +95,7 @@
       "description": "Contract conditions document",
       "$ref": "../../../Generics/v0.5.0/MultiFileType.json"
     },
-    "offerAttachmentDocument": {
+    "otherAttachmentDocument": {
       "description": "Additional offer documents e.g. flyers, product fact sheets, health questionnaire",
       "$ref": "../../../Generics/v0.5.0/MultiFileType.json"
     }
