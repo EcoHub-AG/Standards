@@ -62,8 +62,6 @@
     "required": [
       "personGroupId",
       "personGroupDescription",
-      "numberOfPersonsOA",
-      "numberOfPersonsNOA",
       "payrollEmployeesOA",
       "payrollEmployeesNOA",
       "coverage"

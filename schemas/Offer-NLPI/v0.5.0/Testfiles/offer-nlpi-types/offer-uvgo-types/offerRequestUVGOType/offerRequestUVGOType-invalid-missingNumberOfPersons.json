@@ -5,23 +5,9 @@
       "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
       "personGroupDescription": "Group 1",
       "numberOfPersonsOA": 50,
-      "numberOfPersonsNOA": 30,
       "payrollEmployeesOA": 2500000.00,
       "payrollEmployeesNOA": 1500000.00,
       "coverage": "coverage according to compulsory accident insurance UVG"
-    }
-  ],
-  "personMentionedByName": [
-    {
-      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
-      "role": "Self-employed person",
-      "firstname": "John",
-      "surname": "Doe",
-      "birthDate": "1980-05-15",
-      "gender": "Female",
-      "payroll": 120000.00,
-      "degreeOfEmployment": 90,
-      "insuranceType": "Coverage according to compulsory accident insurance UVG"
     }
   ],
   "insuranceOptionsVarious": {

@@ -108,6 +108,7 @@
     - removed property "personsConnectionEmployer"
     - added mandatory property "previousInsurer" (moved from OfferNlpiRequestDataType)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
+    - properties "numberOfPersonsOA", "numberOfPersonsNOA in personGroups" are mandatory
 - OfferRequestUVGZType (Changed)
     - Added mandatory property "riskCharacteristic" (moved from CompanyCustomerType)
     - renamed "insuranceOptionsVarious" to "insuranceOptions"
@@ -153,6 +154,7 @@
     - Added property "personGroupDescription"
     - renamed property "numberOfPersonsBU" to "numberOfPersonsOA"
     - renamed property "numberOfPersonsNBU" to "numberOfPersonsNOA"
+    - properties "numberOfPersonsOA", "numberOfPersonsNOA in personGroups" are now optional
     - renamed property "payrollBU" to "payrollEmployeesOA"
     - renamed property "payrollNBU" to "payrollEmployeesNOA"
 - UVGZCoverageType (Changed)

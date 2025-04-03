@@ -15,7 +15,11 @@
               "required": [
                 "premiumPersonGroup"
               ]
-            }
+            },
+            "required": [
+              "numberOfPersonsOA",
+              "numberOfPersonsNOA"
+            ]
           }
         }
       ]
