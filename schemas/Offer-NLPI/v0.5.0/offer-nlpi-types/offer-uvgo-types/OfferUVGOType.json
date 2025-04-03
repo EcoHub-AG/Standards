@@ -28,16 +28,6 @@
             "required": [
               "premiumPersonMentionedByName"
             ]
-          },
-          {
-            "properties": {
-              "role": {
-                "enum": [
-                  "Self-employed person",
-                  "Contributing family member"
-                ]
-              }
-            }
           }
         ]
       }
