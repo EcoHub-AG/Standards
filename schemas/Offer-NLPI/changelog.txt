@@ -157,6 +157,8 @@
     - properties "numberOfPersonsOA", "numberOfPersonsNOA in personGroups" are now optional
     - renamed property "payrollBU" to "payrollEmployeesOA"
     - renamed property "payrollNBU" to "payrollEmployeesNOA"
+    - renamed property "premiumBU" to "premiumOA"
+    - renamed property "premiumNBU" to "premiumNOA"
 - UVGZCoverageType (Changed)
     - property "deathCapital" is now optional
     - property "disabilityCapital" is now optional

@@ -10,7 +10,7 @@
       "payrollEmployeesNOA": 1500000.00,
       "coverage": "coverage according to compulsory accident insurance UVG",
       "premiumPersonGroup": {
-        "premiumNBU": {
+        "premiumOA": {
           "hazardClass": "A1",
           "hazardSubClass": "B2",
           "premiumRiskRate": 1.5,
@@ -21,7 +21,7 @@
           "finalPremiumRate": 2.3,
           "totalPremium": 500.00
         },
-        "premiumBU": {
+        "premiumNOA": {
           "hazardClass": "A1",
           "hazardSubClass": "B2",
           "premiumRiskRate": 1.5,
