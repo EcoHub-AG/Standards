@@ -190,6 +190,8 @@
     - Added restriction for allowed enum values for "deathCapitalUVG" and "deathCapitalSurplus"
     - Added restriction for allowed enum values for "disabilityCapitalUVG" and "disabilityCapitalSurplusSalary"
     - property "numberOfPersonsTotal" is now optional
+    - replaced properties in "premiumPersonGroup"
+- UVGZPremiumRateType (Added)
 - YearlySalaryMultipleType (Changed)
     - translated and added enum values
 - YearlySalaryOptionalMultipleType (Removed)
