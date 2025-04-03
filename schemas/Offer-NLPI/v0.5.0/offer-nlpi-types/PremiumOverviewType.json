@@ -8,11 +8,11 @@
     },
     "netPremiumTotal": {
       "description": "The total net premium corresponds to the amount of the net premium total offered for DSB coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
-      "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      "$ref": "../../../Generics/v0.5.0/MonetaryAmountType.json"
     },
     "instalmentSurchargeAmount": {
       "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for DSB.",
-      "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      "$ref": "../../../Generics/v0.5.0/MonetaryAmountType.json"
     },
     "instalmentSurchargePercentage": {
       "type": "number",
@@ -21,7 +21,7 @@
     },
     "premiumMinimumAmount": {
       "description": "Minimum premium in CHF. If is given per persongroup and person mentioned by name it  will be cumulated",
-      "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      "$ref": "../../../Generics/v0.5.0/MonetaryAmountType.json"
     },
     "combinationDiscountPercentage": {
       "description": "Discount considered in the net premium in percentage when buying in combination with other products (e.g. DSB and UVGZ).",

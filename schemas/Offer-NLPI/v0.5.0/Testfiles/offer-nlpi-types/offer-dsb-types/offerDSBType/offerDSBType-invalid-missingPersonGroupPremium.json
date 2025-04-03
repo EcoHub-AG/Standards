@@ -71,6 +71,7 @@
       ],
       "surplusParticipation": true,
       "surplusParticipationPremiumRate": 25.65,
+      "surplusParticipationRate": 13.65,
       "surplusParticipationPeriodYears": 5
     }
   },

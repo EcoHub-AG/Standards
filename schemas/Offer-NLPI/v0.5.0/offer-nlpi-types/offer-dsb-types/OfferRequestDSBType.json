@@ -15,13 +15,13 @@
               "required": [
                 "premiumPersonGroup"
               ]
-            }
-          },
-          "required": [
-            "numberOfPersonsFemale",
-            "numberOfPersonsMale",
-            "numberOfPersonsTotal"
-          ]
+            },
+            "required": [
+              "numberOfPersonsFemale",
+              "numberOfPersonsMale",
+              "numberOfPersonsTotal"
+            ]
+          }
         }
       ]
     },

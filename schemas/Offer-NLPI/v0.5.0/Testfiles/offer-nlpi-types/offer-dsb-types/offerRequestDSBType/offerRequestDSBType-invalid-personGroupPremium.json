@@ -34,5 +34,62 @@
         "netPremiumDSBPAmount": 508.00
       }
     }
-  ]
+  ],
+  "previousInsurer": {
+    "previousInsurer": true,
+    "previousInsurerDetails": [
+      {
+        "insurerCode": "901S",
+        "companyName": "Test Insurer 1",
+        "contract": [
+          {
+            "contractNo": "4556664",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 1.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          },
+          {
+            "contractNo": "4556663",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 1.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          }
+        ]
+      },
+      {
+        "insurerCode": "902S",
+        "companyName": "Test Insurer 2",
+        "contract": [
+          {
+            "contractNo": "B123456789",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 2.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          },
+          {
+            "contractNo": "B123456781",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 2.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

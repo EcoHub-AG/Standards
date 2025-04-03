@@ -64,7 +64,7 @@
       "coverage": {
         "DSBCoverage": {
           "DSBDaysWaitingNo": 60,
-          "DSBCalculationBasis": "working year",
+          "DSBCalculationBasis": "Working year",
           "DSBBenefitPeriod": "365 days",
           "DSBBenefitAmountPercentage": 100,
           "DSBLegalBasis": "VVG"
@@ -127,6 +127,7 @@
       ],
       "surplusParticipation": true,
       "surplusParticipationPremiumRate": 25.65,
+      "surplusParticipationRate": 13.65,
       "surplusParticipationPeriodYears": 5
     }
   },

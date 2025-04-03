@@ -1,43 +1,45 @@
-{
-  "personId": "06637133-2230-472e-80fa-ba1c9661d0a7",
-  "role": "Self-employed person",
-  "firstname": "Kaiser",
-  "surname": "Leonie",
-  "birthDate": "1996-03-14",
-  "gender": "Female",
-  "fixedPayroll": 99000,
-  "benefitCoverage": "Sickness",
-  "insuranceType": "Sum insurance",
-  "coverage": {
-    "DSBCoverage": {
-      "DSBDaysWaitingNo": 60,
-      "DSBCalculationBasis": "working year",
-      "DSBBenefitPeriod": "365 days",
-      "DSBBenefitAmountPercentage": 100,
-      "DSBLegalBasis": "VVG"
+[
+  {
+    "personId": "06637133-2230-472e-80fa-ba1c9661d0a7",
+    "role": "Self-employed person",
+    "firstname": "Kaiser",
+    "surname": "Leonie",
+    "birthDate": "1996-03-14",
+    "gender": "Female",
+    "fixedPayroll": 99000,
+    "benefitCoverage": "Sickness",
+    "insuranceType": "Sum insurance",
+    "coverage": {
+      "DSBCoverage": {
+        "DSBDaysWaitingNo": 60,
+        "DSBCalculationBasis": "Working year",
+        "DSBBenefitPeriod": "365 days",
+        "DSBBenefitAmountPercentage": 100,
+        "DSBLegalBasis": "VVG"
+      },
+      "DSBMCoverage": [
+        {
+          "DSBMBenefitDurationWeeks": 14,
+          "DSBMBenefitAmountPercentage": 100,
+          "DSBMPayrollBasis": "Total wage"
+        }
+      ],
+      "DSBPCoverage": [
+        {
+          "DSBPBenefitDurationWeeks": 6,
+          "DSBPBenefitAmountPercentage": 100,
+          "DSBPPayrollBasis": "EOG wage"
+        }
+      ]
     },
-    "DSBMCoverage": [
-      {
-        "DSBMBenefitDurationWeeks": 14,
-        "DSBMBenefitAmountPercentage": 100,
-        "DSBMPayrollBasis": "Total wage"
-      }
-    ],
-    "DSBPCoverage": [
-      {
-        "DSBPBenefitDurationWeeks": 6,
-        "DSBPBenefitAmountPercentage": 100,
-        "DSBPPayrollBasis": "EOG wage"
-      }
-    ]
-  },
-  "premiumPersonMentionedByName": {
-    "netPremiumDSBPercentage": 0.025,
-    "netPremiumDSBAmount": 1500,
-    "netPremiumDSBMPercentage": 0.030,
-    "netPremiumDSBMAmount": 800,
-    "netPremiumDSBPPercentage": 0.015,
-    "netPremiumDSBPAmount": 500,
-    "premiumMinimumAmount": 100
+    "premiumPersonMentionedByName": {
+      "netPremiumDSBPercentage": 0.025,
+      "netPremiumDSBAmount": 1500,
+      "netPremiumDSBMPercentage": 0.030,
+      "netPremiumDSBMAmount": 800,
+      "netPremiumDSBPPercentage": 0.015,
+      "netPremiumDSBPAmount": 500,
+      "premiumMinimumAmount": 100
+    }
   }
-}
+]
