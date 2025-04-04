@@ -55,6 +55,8 @@
     - capitalized enum values of property "DSBCalculationBasis"
     - changed type of property "DSBBenefitPeriod" from object to enum
     - changed type of "DSBPBenefitDurationWeeks" from integer to string
+    - changed type of "DSBPBenefitAmountPercentage" from integer to string
+    - replaced enum values of "DSBPBenefitAmountPercentage"
 - DSBPersonGroupsType (Changed)
     - renamed property "maximumPayrollAmount" to "maxSalary"
     - removed property "averageAgePersonGroup"

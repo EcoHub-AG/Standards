@@ -33,11 +33,11 @@
       },
       "DSBPBenefitAmountPercentage": {
         "description": "Paternity daily benefit amount in percentage",
-        "type": "integer",
+        "type": "string",
         "enum": [
-          80,
-          90,
-          100
+          "80%",
+          "90%",
+          "100%"
         ]
       },
       "DSBPPayrollBasis": {

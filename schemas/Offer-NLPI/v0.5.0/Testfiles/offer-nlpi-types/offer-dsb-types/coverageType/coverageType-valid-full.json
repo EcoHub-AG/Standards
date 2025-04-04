@@ -16,7 +16,7 @@
   "DSBPCoverage": [
     {
       "DSBPBenefitDurationWeeks": "14",
-      "DSBPBenefitAmountPercentage": 80,
+      "DSBPBenefitAmountPercentage": "80%",
       "DSBPPayrollBasis": "EOG wage"
     }
   ]
