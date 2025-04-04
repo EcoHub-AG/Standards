@@ -47,6 +47,7 @@
     - moved-in sub-properties from "InsuranceOptionsBenefitPeriodType"
 - DSBMCoverageType (Changed)
     - removed property "maximumPayrollAmount"
+    - changed type of "DSBMBenefitDurationWeeks" from integer to string
 - DSBPCoverageType (Changed)
     - removed property "maximumPayrollAmount"
     - capitalized enum values of property "DSBCalculationBasis"

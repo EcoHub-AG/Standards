@@ -8,16 +8,16 @@
     "properties": {
       "DSBMBenefitDurationWeeks": {
         "description": "Daily childbirth allowance benefit duration in weeks",
-        "type": "integer",
+        "type": "string",
         "enum": [
-          14,
-          15,
-          16,
-          20,
-          21,
-          28,
-          35,
-          42
+          "14",
+          "15",
+          "16",
+          "20",
+          "21",
+          "28",
+          "35",
+          "42"
         ]
       },
       "DSBMBenefitAmountPercentage": {
