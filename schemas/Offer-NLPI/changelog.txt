@@ -65,6 +65,7 @@
 - InsuranceOptionsEmployeesType (Removed)
 - InsuranceOptionsVariousType (Changed)
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation" are now optional
+- InsurerCodeType (Removed)
 - MedicalExpensesHospitalType (Added)
 - OfferAcceptanceType (Changed)
     - renamed property "digitalSignedOffer" of "offerDocument" to "signedOffer"
@@ -154,6 +155,7 @@
 - PensionBenefitPeriodType (Added)
 - PremiumOverviewType (Added)
 - PreviousInsurerType
+    - changed type of insurerCode to "InsurerCodeType" from Generics
     - "insurerCode" is now mandatory
     - renamed "insuranceStartDate" to "beginningPreInsuranceDate"
     - renamed "insuranceEndDate" to "endPreInsuranceDate"

@@ -14,7 +14,7 @@
 				"type": "object",
 				"properties": {
 					"insurerCode": {
-						"$ref": "InsurerCodeType.json"
+						"$ref": "../../../Generics/v0.5.0/InsurerCodeType.json"
 					},
 					"companyName": {
 						"$ref": "../../../Generics/v0.5.0/CompanyNameType.json"
