@@ -116,29 +116,6 @@
     "offerDocument",
     "insurerContact"
   ],
-  "dependentSchemas": {
-    "DSB": {
-      "properties": {
-        "premiumOverview": {
-          "required": [
-            "netPremiumDSBTotal"
-          ]
-        }
-      }
-    },
-    "UVGCompulsory": {
-      "properties": {
-        "premiumOverview": {
-          "required": [
-            "totalPremiumBUAndNBU",
-            "netPremiumUVGTotal",
-            "premiumMinimumAmountBU",
-            "premiumMinimumAmountNBU"
-          ]
-        }
-      }
-    }
-  },
   "unevaluatedProperties": false,
   "additionalProperties": false
 }
