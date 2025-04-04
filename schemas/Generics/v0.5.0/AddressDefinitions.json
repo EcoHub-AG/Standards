@@ -1,7 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Address Type",
-  "name": "AddressType",
+  "description": "Address definitions",
   "definitions": {
     "streetNameDef": {
       "description": "Street name",

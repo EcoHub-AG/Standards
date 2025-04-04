@@ -1,7 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "description": "Legal form of the company",
-  "name": "CompanyLegalFormType",
   "type": "string",
   "enum": [
     "Incorporated company",
