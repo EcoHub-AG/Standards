@@ -10,7 +10,7 @@
     "insuranceType": "Sum insurance",
     "coverage": {
       "DSBCoverage": {
-        "DSBDaysWaitingNo": 60,
+        "DSBDaysWaitingNo": "60",
         "DSBCalculationBasis": "Working year",
         "DSBBenefitPeriod": "365 days",
         "DSBBenefitAmountPercentage": 100,

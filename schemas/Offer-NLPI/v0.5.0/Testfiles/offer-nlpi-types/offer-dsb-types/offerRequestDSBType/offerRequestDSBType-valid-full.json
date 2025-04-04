@@ -16,7 +16,7 @@
       "uniformPremiumRate": true,
       "coverage": {
         "DSBCoverage": {
-          "DSBDaysWaitingNo": 90,
+          "DSBDaysWaitingNo": "90",
           "DSBCalculationBasis": "Case",
           "DSBBenefitPeriod": "365 days",
           "DSBBenefitAmountPercentage": 80,
@@ -52,7 +52,7 @@
       "insuranceType": "Sum insurance",
       "coverage": {
         "DSBCoverage": {
-          "DSBDaysWaitingNo": 60,
+          "DSBDaysWaitingNo": "60",
           "DSBCalculationBasis": "Working year",
           "DSBBenefitPeriod": "365 days",
           "DSBBenefitAmountPercentage": 100,

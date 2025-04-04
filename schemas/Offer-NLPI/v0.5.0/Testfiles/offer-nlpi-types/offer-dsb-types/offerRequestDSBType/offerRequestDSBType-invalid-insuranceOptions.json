@@ -16,7 +16,7 @@
       "uniformPremiumRate": false,
       "coverage": {
         "DSBCoverage": {
-          "DSBDaysWaitingNo": 90,
+          "DSBDaysWaitingNo": "90",
           "DSBCalculationBasis": "Calendar year",
           "DSBBenefitPeriod": "365 days",
           "DSBBenefitAmountPercentage": 75,

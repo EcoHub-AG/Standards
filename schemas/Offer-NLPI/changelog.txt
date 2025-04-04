@@ -20,6 +20,7 @@
     - removed property "wageSupplement" (moved to UVGZCoverageType)
 - DisabilityCapitalProgressionType (Added)
 - DisabilityCapitalType (Changed)
+- DisabilityCapitalType (Changed)
     - removed property "disabilityCapitalInsured"
     - removed property "integrityCapital" (moved to UVGZCoverageType)
     - renamed property "disabilityCapitalUVG" to "disabilityCapitalUVGSalary"
@@ -30,6 +31,8 @@
     - removed property "bridgingCapital"
     - properties "disabilityCapitalUVGSalary", "disabilityCapitalSurplusSalary" and "disabilityCapitalProgUVGSalary" are now mandatory
     - added mandatory property "disabilityCapitalProgSurplusSalary"
+- DSBCoverageType (Changed)
+    - changed type of "DSBDaysWaitingNo" from integer to string
 - DSBFixedPayrollsType (Changed)
     - Renamed type to DSBPersonType
     - Added property "degreeOfEmployment"
