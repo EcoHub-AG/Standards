@@ -7,7 +7,7 @@
 			"$ref": "../../../Generics/v0.5.0/UuidType.json"
 		},
 		"combinationLobIG": {
-			"description": "\"IG B2B branch code according to IG B2B. Only main categories of the branch code list are used",
+			"description": "IG B2B branch code according to IG B2B. Only main categories of the branch code list are used",
 			"type": "array",
 			"items": {
 				"type": "string",

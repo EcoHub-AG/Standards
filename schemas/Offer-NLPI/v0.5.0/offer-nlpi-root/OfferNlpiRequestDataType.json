@@ -127,12 +127,14 @@
 				"required": ["UVGSupplement"]
 			},
 			"then": {
-				"customer": {
-					"required": ["SUVACompany"]
-				},
-				"coInsuredCustomer": {
-					"items": {
+				"properties": {
+					"customer": {
 						"required": ["SUVACompany"]
+					},
+					"coInsuredCustomer": {
+						"items": {
+							"required": ["SUVACompany"]
+						}
 					}
 				}
 			}
