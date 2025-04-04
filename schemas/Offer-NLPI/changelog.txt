@@ -48,6 +48,8 @@
 - DSBMCoverageType (Changed)
     - removed property "maximumPayrollAmount"
     - changed type of "DSBMBenefitDurationWeeks" from integer to string
+    - changed type of "DSBMBenefitAmountPercentage" from integer to string
+    - replaced enum values of "DSBMBenefitAmountPercentage"
 - DSBPCoverageType (Changed)
     - removed property "maximumPayrollAmount"
     - capitalized enum values of property "DSBCalculationBasis"
