@@ -35,6 +35,7 @@
     - changed type of "DSBDaysWaitingNo" from integer to string
     - changed type of "DSBBenefitAmountPercentage" from integer to string
     - replaced enum values of "DSBBenefitAmountPercentage"
+    - changed DSBCalculationBasis enum value "Cumulativ" to "Cumulative"
 - DSBFixedPayrollsType (Changed)
     - Renamed type to DSBPersonType
     - Added property "degreeOfEmployment"
