@@ -13,7 +13,7 @@
         "DSBDaysWaitingNo": "60",
         "DSBCalculationBasis": "Working year",
         "DSBBenefitPeriod": "365 days",
-        "DSBBenefitAmountPercentage": 100,
+        "DSBBenefitAmountPercentage": "100%",
         "DSBLegalBasis": "VVG"
       }
     }

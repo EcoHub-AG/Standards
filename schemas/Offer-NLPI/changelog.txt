@@ -33,6 +33,8 @@
     - added mandatory property "disabilityCapitalProgSurplusSalary"
 - DSBCoverageType (Changed)
     - changed type of "DSBDaysWaitingNo" from integer to string
+    - changed type of "DSBBenefitAmountPercentage" from integer to string
+    - replaced enum values of "DSBBenefitAmountPercentage"
 - DSBFixedPayrollsType (Changed)
     - Renamed type to DSBPersonType
     - Added property "degreeOfEmployment"
