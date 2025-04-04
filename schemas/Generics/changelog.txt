@@ -14,6 +14,8 @@
     - capitalized enum values
 - HeaderType (Changed)
     - removed property "standard"
+- InsurerCodeType (Changed)
+    - adjusted the pattern regex to limit allowed values
 - InsurerType (Changed)
     - removed property "insurerContact"
 - RegFINMANoType (Changed)
