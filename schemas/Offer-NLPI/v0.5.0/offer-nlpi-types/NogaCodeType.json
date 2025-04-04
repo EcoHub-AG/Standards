@@ -5,6 +5,7 @@
 		"NOGACode": {
 			"description": "6-digit NOGA code, without preceding letters",
 			"type": "string",
+			"minLength": 6,
 			"maxLength": 6
 		},
 		"NOGAName": {

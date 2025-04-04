@@ -79,6 +79,8 @@
     - properties "premiumRateGuaranty", "renunciationTerminationRightClaim", "annualCancellation", "surplusParticipation" are now optional
 - InsurerCodeType (Removed)
 - MedicalExpensesHospitalType (Added)
+- NogaCodeType (Changed)
+    - added minLength restriction to property "NOGACode"
 - OfferAcceptanceType (Changed)
     - renamed property "digitalSignedOffer" of "offerDocument" to "signedOffer"
     - renamed property "digitalSignedDocument" of "offerDocument" to "signedDocument"
