@@ -4,5 +4,5 @@
 	"examples": ["CHE-FINMA-F12345678", "LIE-FMA-12345", "CHE-IGB2B-12345"],
 	"type": "string",
 	"maxLength": 19,
-	"pattern": "^(CHE\\-(FINMA\\-F\\d{8}|IGB\\dB\\-(\\d{5}))|LIE\\-FMA\\-\\d{6})$"
+	"pattern": "^(CHE\\-(FINMA\\-F\\d{8}|IGB2B\\-(\\d{5}))|LIE\\-FMA\\-\\d{6})$"
 }
