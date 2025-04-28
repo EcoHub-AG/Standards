@@ -7,17 +7,17 @@
       "type": "string"
     },
     "netPremiumTotal": {
-      "description": "The total net premium corresponds to the amount of the net premium total offered for DSB coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+      "description": "The total net premium corresponds to the amount of the net premium total offered for the coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
       "$ref": "../../../Generics/v0.5.1/MonetaryAmountType.json"
     },
     "instalmentSurchargeAmount": {
-      "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for DSB.",
+      "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments.",
       "$ref": "../../../Generics/v0.5.1/MonetaryAmountType.json"
     },
     "instalmentSurchargePercentage": {
       "type": "number",
       "multipleOf": 0.001,
-      "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage for DSB."
+      "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage."
     },
     "premiumMinimumAmount": {
       "description": "Minimum premium in CHF. If is given per persongroup and person mentioned by name it  will be cumulated",

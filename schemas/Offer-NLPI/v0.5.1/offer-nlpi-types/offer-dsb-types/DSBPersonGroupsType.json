@@ -39,7 +39,7 @@
         "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
       },
       "maxSalary": {
-        "description": "Maximum salary in CHF",
+        "description": "Maximum salary in CHF. Required in offer.",
         "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
       },
       "averageAgeMale": {
