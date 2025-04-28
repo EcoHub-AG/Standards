@@ -3,6 +3,8 @@
     - Replaced enum values for combinationLobIG
 - CompanyCustomerType (Changed)
     - property "companyLegalStatus" is now optional
+- DeathCapitalType (Changed)
+    - renamed property "deathCapitalSurplus" to "deathCapitalSurplusSalary"
 - OfferNlpiConclusionDecisionDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const

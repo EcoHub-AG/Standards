@@ -11,7 +11,7 @@
     "coverage": {
       "deathCapital": {
         "deathCapitalUVGSalary": "10-fold",
-        "deathCapitalSurplus": "12-fold"
+        "deathCapitalSurplusSalary": "12-fold"
       }
     },
     "premiumPersonGroup": {

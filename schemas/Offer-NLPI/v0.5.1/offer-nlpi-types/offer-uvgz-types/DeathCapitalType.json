@@ -6,7 +6,7 @@
 			"description": "Death capital x times the annual salary. For personGroups, only values up to 9-fold are allowed.",
 			"$ref": "YearlySalaryMultipleType.json"
 		},
-		"deathCapitalSurplus": {
+		"deathCapitalSurplusSalary": {
 			"description": "Death capital x times the surplus annual salary. For personGroups, only values up to 9-fold are allowed.",
 			"$ref": "YearlySalaryMultipleType.json"
 		}
@@ -14,6 +14,6 @@
 	"additionalProperties": false,
 	"required": [
 		"deathCapitalUVGSalary",
-		"deathCapitalSurplus"
+		"deathCapitalSurplusSalary"
 	]
 }

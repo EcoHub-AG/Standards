@@ -49,7 +49,7 @@
                       "9-fold"
                     ]
                   },
-                  "deathCapitalSurplus": {
+                  "deathCapitalSurplusSalary": {
                     "enum": [
                       "No",
                       "0.5-fold",
