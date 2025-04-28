@@ -10,6 +10,7 @@
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
     - added restriction to make "companyLegalStatus" in "customer" mandatory
+    - added restriction: one of NogaCodeMain and UVGRiskNo is required for coInsuredCustomer
 - OfferNlpiFeedbackDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
@@ -17,6 +18,7 @@
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
     - added restriction to make "companyLegalStatus" in "customer" mandatory
+    - added restriction: NogaCodeMain is required for coInsuredCustomer
 - ProcessNameConstType (Added)
 - ProcessVersionConstType (Added)
 

@@ -51,7 +51,14 @@
 			"type": "array",
 			"minItems": 1,
 			"items": {
-				"$ref": "../offer-nlpi-types/OfferCustomerType.json"
+				"$ref": "../offer-nlpi-types/OfferCustomerType.json",
+				"allOf": [
+					{
+						"required": [
+							"NOGACodeMain"
+						]
+					}
+				]
 			},
 			"unevaluatedItems": false
 		},
