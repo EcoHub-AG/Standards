@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Insurer",
+	"properties": {
+		"companyId": {
+			"$ref": "CompanyIdType.json",
+			"description": "Unique company identification number (UID) for companies based in Switzerland or EU member states as specified in the UID register of the respective authority."
+		},
+		"companyName": {
+			"$ref": "CompanyNameType.json",
+			"description": "Company name. For a sole proprietorship, name and surname must be entered."
+		},
+		"insurerCode": {
+			"$ref": "InsurerCodeType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"companyId",
+		"companyName",
+		"insurerCode"
+	]
+}

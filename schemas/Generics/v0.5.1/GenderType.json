@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "GenderType",
+  "description": "Enum of available genders",
+  "type": "string",
+  "enum": [
+    "Female",
+    "Male"
+  ]
+}

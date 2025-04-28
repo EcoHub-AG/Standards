@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Contact information details",
+  "type": "object",
+  "properties": {
+    "contactName": {
+      "description": "Name of the contact",
+      "type": "string"
+    },
+    "contactMail": {
+      "description": "E-Mail of the contact",
+      "type": "string"
+    },
+    "contactPhone": {
+      "description": "Phonenumber of the contact",
+      "type": "string"
+    }
+  },
+  "required": [
+    "contactName",
+    "contactMail",
+    "contactPhone"
+  ],
+  "additionalProperties": false
+}
