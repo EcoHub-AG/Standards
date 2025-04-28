@@ -54,11 +54,11 @@
       "type": "object",
       "properties": {
         "leftBehindPensionSurplusSalary": {
-          "description": "Survivors' pension of the surplus salary (cumulative maximum salary of all individual pensions)",
+          "description": "Left behind pension of the surplus salary (cumulative maximum salary of all individual pensions)",
           "$ref": "PensionSalaryType.json"
         },
         "leftBehindPensionSurplusSalaryBenefitPeriod": {
-          "description": "Benefit period survivors' pension",
+          "description": "Benefit period left behind pension",
           "$ref": "PensionBenefitPeriodType.json"
         }
       },
