@@ -3,19 +3,19 @@
 	"type": "object",
 	"properties": {
 		"dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity": {
-			"description": "Daily allowance and continued payment of salary: consideration of salary increases agreed before the incapacity for work",
+			"description": "Daily allowance and continued payment of salary: consideration of salary increases agreed before the incapacity for work. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"startInsuranceCoverStartEmploymentContract": {
-			"description": "Start of insurance cover: Coordination with the UVG (start of employment contract)",
+			"description": "Start of insurance cover: Coordination with the UVG (start of employment contract). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"endInsuranceCoverCoorindationUVG": {
-			"description": "End of insurance cover: Coordination with the UVG (31st day)",
+			"description": "End of insurance cover: Coordination with the UVG (31st day). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"waiverBenefitGrossNegligence": {
-			"description": "Waiver of benefit reductions in the event of gross negligence",
+			"description": "Waiver of benefit reductions in the event of gross negligence. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceOptionsVarious": {
