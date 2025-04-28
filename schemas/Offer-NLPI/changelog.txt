@@ -1,18 +1,22 @@
 ### Version 0.5.1
 - CombinationMetaType (Changed)
     - Replaced enum values for combinationLobIG
+- CompanyCustomerType (Changed)
+    - property "companyLegalStatus" is now optional
 - OfferNlpiConclusionDecisionDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
 - OfferNlpiDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
+    - added restriction to make "companyLegalStatus" in "customer" mandatory
 - OfferNlpiFeedbackDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
 - OfferNlpiRequestDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
+    - added restriction to make "companyLegalStatus" in "customer" mandatory
 - ProcessNameConstType (Added)
 - ProcessVersionConstType (Added)
 

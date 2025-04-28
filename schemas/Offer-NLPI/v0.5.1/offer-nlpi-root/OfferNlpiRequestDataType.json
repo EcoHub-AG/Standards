@@ -35,6 +35,11 @@
 			"$ref": "../offer-nlpi-types/OfferCustomerType.json",
 			"allOf": [
 				{
+					"properties": {
+						"customer": {
+							"required": ["companyLegalStatus"]
+						}
+					},
 					"required": [
 						"NOGACodeMain",
 						"UVGRiskNo"

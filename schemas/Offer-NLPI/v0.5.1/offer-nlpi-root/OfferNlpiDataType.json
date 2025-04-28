@@ -28,6 +28,15 @@
     },
     "customer": {
       "$ref": "../offer-nlpi-types/OfferCustomerType.json",
+      "allOf": [
+        {
+          "properties": {
+            "customer": {
+              "required": ["companyLegalStatus"]
+            }
+          }
+        }
+      ],
       "anyOf": [
         {
           "required": [

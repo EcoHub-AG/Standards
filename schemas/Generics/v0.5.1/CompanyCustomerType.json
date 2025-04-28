@@ -40,7 +40,6 @@
   "required": [
     "companyName",
     "companyLegalForm",
-    "companyLegalStatus",
     "domicilAddress",
     "isDomicilAddressCorrespondenceAddress"
   ],
