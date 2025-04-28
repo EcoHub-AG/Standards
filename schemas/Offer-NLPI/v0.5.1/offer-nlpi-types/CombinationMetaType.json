@@ -3,18 +3,18 @@
 	"type": "object",
 	"properties": {
 		"combinationId": {
-			"description": "Unique identification number of the combination",
+			"description": "This is the unique identification number of the combination and must be identical for all related process events. Mandatory in the offer request, if combinationMeta is provided.",
 			"$ref": "../../../Generics/v0.5.1/UuidType.json"
 		},
 		"combinationLobIG": {
-			"description": "IG B2B branch code according to IG B2B. Only main categories of the branch code list are used",
+			"description": "List of all IG B2B branch codes associated with this combination. Only main categories of the IG B2B branch codes are permitted.",
 			"type": "array",
 			"items": {
 				"type": "string",
 				"enum": [
-					"38000 Compulsory accident insurance (UVG/OUFL)",
-					"36000 Supplementary accident insurance (UVGZ)",
-					"42000 Collective daily sickness benefits insurance"
+					"38000",
+					"36000",
+					"42000"
 				]
 			}
 		}

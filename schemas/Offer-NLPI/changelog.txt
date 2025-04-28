@@ -1,14 +1,16 @@
 ### Version 0.5.1
-- OfferNlpiConclusionDecisionDataType
+- CombinationMetaType (Changed)
+    - Replaced enum values for combinationLobIG
+- OfferNlpiConclusionDecisionDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
-- OfferNlpiDataType
+- OfferNlpiDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
-- OfferNlpiFeedbackDataType
+- OfferNlpiFeedbackDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
-- OfferNlpiRequestDataType
+- OfferNlpiRequestDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
 - ProcessNameConstType (Added)
