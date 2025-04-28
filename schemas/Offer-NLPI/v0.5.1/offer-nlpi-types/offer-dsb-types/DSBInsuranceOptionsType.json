@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"insuranceStartByEmployment": {
+			"description": "Insurance from the beginning of employment",
+			"type": "boolean"
+		},
+		"insuranceTemporaryEmployees": {
+			"description": "Insurance of temporarily employed persons (temporary employment up to 3 months)",
+			"type": "boolean"
+		},
+		"insuranceParttimeEmployees": {
+			"description": "Insurance of part-time employees (less than 8 working hours per week)",
+			"type": "boolean"
+		},
+		"insuranceHourlyEmployees": {
+			"description": "Insurance of employees on an hourly basis (at least 8 working hours per week)",
+			"type": "boolean"
+		},
+		"insuranceEmployeesExhaustedBenefitPeriod": {
+			"description": "Insurance of persons with exhausted benefit period",
+			"type": "boolean"
+		},
+		"insuranceChildFamilyAllowances": {
+			"description": "Insurance of child and family allowances",
+			"type": "boolean"
+		},
+		"insuranceWageIncreaseIncapacity": {
+			"description": "Insurance agreed wage increases before incapacity for work",
+			"type": "boolean"
+		},
+		"subsequentPaymentsAfterDeath": {
+			"description": "Supplementary salary in the event of death in accordance with Art. 338 OR",
+			"type": "boolean"
+		},
+		"renunciationBenefitReductionsNegligence": {
+			"description": "Waiver of benefit reductions in the event of gross negligence",
+			"type": "boolean"
+		},
+		"unpaidLeaveInsurance": {
+			"description": "Unpaid leave insurance",
+			"type": "boolean"
+		},
+		"renunciationCreditingWaitingPeriod": {
+			"description": "Waiver of crediting of the waiting period in the event of continued incapacity for work after UVG rejection of accident causality",
+			"type": "boolean"
+		},
+		"subsequentBenefitsContractTermination": {
+			"description": "Entitlement to subsequent payment at end of contract (without vested benefits)",
+			"type": "boolean"
+		},
+		"insuranceOptionsVarious": {
+			"$ref": "../InsuranceOptionsVariousType.json"
+		}
+	},
+	"additionalProperties": false
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "Daily sickness benefits",
+  "properties": {
+    "riskCharacteristic": {
+      "$ref": "../RiskCharacteristicType.json"
+    },
+    "personGroups": {
+      "$ref": "DSBPersonGroupsType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumPersonGroup"
+              ]
+            },
+            "required": [
+              "numberOfPersonsFemale",
+              "numberOfPersonsMale",
+              "numberOfPersonsTotal"
+            ]
+          }
+        }
+      ]
+    },
+    "personMentionedByName": {
+      "$ref": "DSBPersonType.json",
+      "allOf": [
+        {
+          "items": {
+            "not": {
+              "required": [
+                "premiumPersonMentionedByName"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "insuranceOptions": {
+      "$ref": "DSBInsuranceOptionsType.json",
+      "allOf": [
+        {
+          "properties": {
+            "insuranceOptionsVarious": {
+              "not": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "previousInsurer": {
+      "description": "Previous insurer",
+      "$ref": "../../offer-nlpi-types/PreviousInsurerType.json"
+    }
+  },
+  "required": [
+    "previousInsurer",
+    "riskCharacteristic"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "personGroups"
+      ]
+    },
+    {
+      "required": [
+        "personMentionedByName"
+      ]
+    }
+  ],
+  "additionalProperties": false,
+  "unevaluatedProperties": false
+}

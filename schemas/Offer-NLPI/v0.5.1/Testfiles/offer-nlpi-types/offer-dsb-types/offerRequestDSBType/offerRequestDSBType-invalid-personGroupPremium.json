@@ -1,0 +1,95 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "personGroups": [
+    {
+      "personGroupId": "10000000-0000-0000-0000-000000000001",
+      "personGroupDescription": "Alle Frauen",
+      "numberOfPersonsFemale": 4,
+      "numberOfPersonsMale": 0,
+      "numberOfPersonsTotal": 4,
+      "payrollFemale": 304000,
+      "payrollMale": 0,
+      "payrollTotal": 304000,
+      "maxSalary": 450000,
+      "averageAgeMale": 39.7,
+      "averageAgeFemale": 39.7,
+      "uniformPremiumRate": true,
+      "coverage": {
+        "DSBCoverage": {
+          "DSBDaysWaitingNo": "90",
+          "DSBCalculationBasis": "Case",
+          "DSBBenefitPeriod": "365 days",
+          "DSBBenefitAmountPercentage": "80%",
+          "DSBLegalBasis": "VVG"
+        }
+      },
+      "premiumPersonGroup": {
+        "netPremiumDSBMalePercentage": 1.000,
+        "netPremiumDSBMaleAmount": 204.00,
+        "netPremiumDSBFemalePercentage": 1.000,
+        "netPremiumDSBFemaleAmount": 304.00,
+        "netPremiumDSBMPercentage": 1.000,
+        "netPremiumDSBMAmount": 508.00,
+        "netPremiumDSBPPercentage": 1.000,
+        "netPremiumDSBPAmount": 508.00
+      }
+    }
+  ],
+  "previousInsurer": {
+    "previousInsurer": true,
+    "previousInsurerDetails": [
+      {
+        "insurerCode": "901S",
+        "companyName": "Test Insurer 1",
+        "contract": [
+          {
+            "contractNo": "4556664",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 1.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          },
+          {
+            "contractNo": "4556663",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 1.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          }
+        ]
+      },
+      {
+        "insurerCode": "902S",
+        "companyName": "Test Insurer 2",
+        "contract": [
+          {
+            "contractNo": "B123456789",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 2.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          },
+          {
+            "contractNo": "B123456781",
+            "beginningPreInsuranceDate": "2024-05-10",
+            "endPreInsuranceDate": "2024-05-10",
+            "claimsExperienceDocument": {
+              "filename": "claimsExperience Test Insurer 2.pdf",
+              "data": "JVBE...",
+              "fingerprint": "qnsvxfoqJ9kYtUVISlMdQA=="
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Person mentioned by name",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personId": {
+        "description": "ID of the insured Person",
+        "type": "string",
+        "format": "uuid",
+        "examples": [
+          "345aa049-7693-4710-89d7-e13b87ab988a"
+        ]
+      },
+      "role": {
+        "$ref": "../BusinessRelationPersonType.json"
+      },
+      "firstname": {
+        "$ref": "../../../../Generics/v0.5.0/FirstNameType.json"
+      },
+      "surname": {
+        "$ref": "../../../../Generics/v0.5.0/SurNameType.json"
+      },
+      "birthDate": {
+        "$ref": "../../../../Generics/v0.5.0/BirthDateType.json"
+      },
+      "gender": {
+        "$ref": "../../../../Generics/v0.5.0/GenderType.json"
+      },
+      "fixedPayroll": {
+        "description": "Fixed payroll DSB amount in CHF",
+        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      },
+      "degreeOfEmployment": {
+        "description": "Degree of employment in %.",
+        "type": "number"
+      },
+      "benefitCoverage": {
+        "type": "string",
+        "description": "Must be provided if the role of the insured person is either 'Self-employed person' or 'contributing family member'",
+        "enum": [
+          "Sickness",
+          "Accident",
+          "Sickness and accident"
+        ]
+      },
+      "insuranceType": {
+        "description": "Insurance benefit type",
+        "type": "string",
+        "enum": [
+          "Sum insurance",
+          "Damage insurance"
+        ]
+      },
+      "coverage": {
+        "description": "Daily sickness benefits insurance coverage",
+        "$ref": "CoverageType.json"
+      },
+      "premiumPersonMentionedByName": {
+        "description": "Premium of the person mentioned by name total. Must be set for offer and omitted during request.",
+        "type": "object",
+        "properties": {
+          "netPremiumDSBPercentage": {
+            "description": "Net premium rate for daily sickness benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "netPremiumDSBAmount": {
+            "description": "Fixed payroll amount in CHF",
+            "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+          },
+          "netPremiumDSBMPercentage": {
+            "description": "Net premium rate for maternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "netPremiumDSBMAmount": {
+            "description": "Fixed payroll amount in CHF",
+            "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+          },
+          "netPremiumDSBPPercentage": {
+            "description": "Net premium rate for paternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+            "type": "number",
+            "multipleOf": 0.001
+          },
+          "netPremiumDSBPAmount": {
+            "description": "Fixed payroll amount in CHF",
+            "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+          },
+          "premiumMinimumAmount": {
+            "description": "Minimum premium for DSB fixed payroll in CHF",
+            "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+          }
+        },
+        "required": [
+          "netPremiumDSBAmount",
+          "netPremiumDSBMAmount",
+          "netPremiumDSBPAmount"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "personId",
+      "role",
+      "firstname",
+      "surname",
+      "birthDate",
+      "gender",
+      "fixedPayroll",
+      "insuranceType",
+      "coverage"
+    ],
+    "allOf": [
+      {
+        "if": {
+          "role": "Self-employed person"
+        },
+        "then": {
+          "required": [
+            "benefitCoverage"
+          ]
+        }
+      },
+      {
+        "if": {
+          "role": "Contributing family member"
+        },
+        "then": {
+          "required": [
+            "benefitCoverage"
+          ]
+        }
+      }
+    ]
+  }
+}

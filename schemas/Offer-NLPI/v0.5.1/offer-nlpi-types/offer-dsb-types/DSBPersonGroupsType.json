@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Group(s) of persons",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personGroupId": {
+        "description": "ID of the person group",
+        "$ref": "../../../../Generics/v0.5.0/UuidType.json"
+      },
+      "personGroupDescription": {
+        "description": "Name of the group of persons",
+        "type": "string"
+      },
+      "numberOfPersonsFemale": {
+        "description": "Number of women. If unknown, value 0 can be specified.",
+        "type": "integer"
+      },
+      "numberOfPersonsMale": {
+        "description": "Number of men. If unknown, value 0 can be specified.",
+        "type": "integer"
+      },
+      "numberOfPersonsTotal": {
+        "description": "Total number of persons. If unknown, value 0 can be specified.",
+        "type": "integer"
+      },
+      "payrollFemale": {
+        "description": "Daily sickness benefits salary total for women",
+        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      },
+      "payrollMale": {
+        "description": "Daily sickness benefits salary total for men",
+        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      },
+      "payrollTotal": {
+        "description": "Total daily sickness benefits salary for men and women",
+        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      },
+      "maxSalary": {
+        "description": "Maximum salary in CHF",
+        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      },
+      "averageAgeMale": {
+        "description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then 4",
+        "type": "number",
+        "multipleOf": 0.01
+      },
+      "averageAgeFemale": {
+        "description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then 4",
+        "type": "number",
+        "multipleOf": 0.01
+      },
+      "uniformPremiumRate": {
+        "description": "Unit premium rate i.e. no distinction should be made between men and women in the premium rate.",
+        "type": "boolean"
+      },
+      "coverage": {
+        "description": "Daily sickness benefits insurance coverage",
+        "$ref": "CoverageType.json"
+      },
+      "premiumPersonGroup": {
+        "description": "Premium of the insured group of persons. Must be set for offer and omitted during request.",
+        "$ref": "DSBPremiumType.json"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "personGroupId",
+      "personGroupDescription",
+      "payrollFemale",
+      "payrollMale",
+      "payrollTotal",
+      "coverage"
+    ]
+  }
+}

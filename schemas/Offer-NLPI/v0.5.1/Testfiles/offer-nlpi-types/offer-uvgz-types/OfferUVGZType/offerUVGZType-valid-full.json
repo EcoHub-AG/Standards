@@ -1,0 +1,289 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "personGroups": [
+    {
+      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+      "personGroupDescription": "Group 1",
+      "numberOfPersonsTotal": 50,
+      "maxSalary": 2500000.00,
+      "payrollEmployees": {
+        "payrollTotalEmployees": 500000,
+        "UVGPayrollMaleOA": 150000,
+        "UVGPayrollFemaleOA": 120000,
+        "UVGPayrollMaleNOA": 100000,
+        "UVGPayrollFemaleNOA": 80000,
+        "surplusPayrollTotal": 20000,
+        "surplusPayrollMaleOA": 5000,
+        "surplusPayrollFemaleOA": 3000,
+        "surplusPayrollMaleNOA": 4000,
+        "surplusPayrollFemaleNOA": 3000
+      },
+      "coverage": {
+        "deathCapital": {
+          "deathCapitalUVGSalary": "3-fold",
+          "deathCapitalSurplus": "2-fold"
+        },
+        "subsequentPaymentsAfterDeath": true,
+        "disabilityCapital": {
+          "disabilityCapitalUVGSalary": "4-fold",
+          "disabilityCapitalSurplusSalary": "3-fold",
+          "disabilityCapitalProgUVGSalary": "225%",
+          "disabilityCapitalProgSurplusSalary": "225%"
+        },
+        "integrityCapital": true,
+        "dailyAllowance": {
+          "dailyAllowanceForUVGWaitingDaysUVGSalary": "90%",
+          "dailyAllowanceForUVGWaitingDaysSurplusSalary": "Not insured",
+          "waitingPeriodInDaysForDailyAllowanceUVGSalary": "1 (FL)",
+          "dailyAllowanceAfterExpiryWaitingPeriodUVGSalary": "5%",
+          "waitingPeriodInDaysForDailyAllowanceSurplusSalary": "365",
+          "dailyAllowanceAfterExpiryWaitingPeriodSurplusSalary": "100%",
+          "dailyAllowanceRelapsesLateEffectsUVG": "Insured for NOA-insured personnel",
+          "dailyAllowanceRelapsesLateEffectsUVGZ": "Insured"
+        },
+        "dailyHospitalAllowance": {
+          "dailyHospitalAllowanceFixAmount": 100.00
+        },
+        "medicalExpensesHospital": {
+          "medicalExpensesHospitalType": "Private ward"
+        },
+        "differentialCover": true,
+        "disabilityPension": {
+          "disabilityPensionSurplusSalary": "Analog UVG",
+          "disabilityPensionSurplusSalaryBenefitPeriod": "Until reference age"
+        },
+        "survivorsPension": {
+          "leftBehindPensionSurplusSalary": "Analog UVG",
+          "leftBehindPensionSurplusSalaryBenefitPeriod": "Until reference age"
+        },
+        "survivorsPartnerPension": {
+          "survivorsPartnerPension": "Analog UVG",
+          "survivorsPartnerPensionUVGSalary": "Until reference age",
+          "survivorsPartnerPensionSurplusSalary": "Until reference age"
+        }
+      },
+      "premiumPersonGroup": {
+        "medicalExpensesPremiumRate": {
+          "totalPremiumRate": 5.000,
+          "premiumRateOA": 2.000,
+          "premiumRateNOA": 1.500
+        },
+        "dailyAllowanceNetPremiumRateUVGSalary": {
+          "totalPremiumRate": 4.000,
+          "premiumRateOA": 1.800,
+          "premiumRateNOA": 1.200
+        },
+        "dailyAllowanceSurplusSalaryNetPremiumRate": {
+          "totalPremiumRate": 3.500,
+          "premiumRateOA": 1.700,
+          "premiumRateNOA": 1.000
+        },
+        "dailyHospitalAllowancePremiumRate": 0.003,
+        "disabilityCapitalPremiumRateUVGSalary": {
+          "totalPremiumRate": 6.000,
+          "premiumRateOA": 2.500,
+          "premiumRateNOA": 2.000
+        },
+        "disabilityCapitalSurplusSalaryPremiumRate": {
+          "totalPremiumRate": 5.500,
+          "premiumRateOA": 2.200,
+          "premiumRateNOA": 1.800
+        },
+        "disabilityPensionPremiumRateUVGSalary": 0.004,
+        "disabilityPensionSalarySurplusPremiumRate": {
+          "totalPremiumRate": 4.500,
+          "premiumRateOA": 2.100,
+          "premiumRateNOA": 1.600
+        },
+        "deathCapitalPremiumRateUVGSalary": {
+          "totalPremiumRate": 7.000,
+          "premiumRateOA": 3.000,
+          "premiumRateNOA": 2.500
+        },
+        "deathCapitalSurplusSalaryPremiumRate": {
+          "totalPremiumRate": 6.500,
+          "premiumRateOA": 2.800,
+          "premiumRateNOA": 2.200
+        },
+        "survivorsPensionSalaryPremiumRateUVGSalary": 0.005,
+        "survivorsPensionSalarySurplusPremiumRate": {
+          "totalPremiumRate": 5.000,
+          "premiumRateOA": 2.400,
+          "premiumRateNOA": 1.900
+        },
+        "premiumDiffCoverage": 1000.00,
+        "UVGSalaryNetPremiumRate": {
+          "totalPremiumRate": 2.500,
+          "premiumRateOA": 1.200,
+          "premiumRateNOA": 1.000
+        },
+        "surplusSalaryNetPremiumRate": {
+          "totalPremiumRate": 3.000,
+          "premiumRateOA": 1.500,
+          "premiumRateNOA": 1.200
+        },
+        "premiumMinimumAmount": 50.00,
+        "finalPremium": 1500.00
+      }
+    }
+  ],
+  "personMentionedByName": [
+    {
+      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+      "role": "Self-employed person",
+      "firstname": "John",
+      "surname": "Doe",
+      "birthDate": "1980-05-15",
+      "gender": "Female",
+      "fixedPayroll": 150000.00,
+      "degreeOfEmployment": 90,
+      "insuranceType": "Sum insurance",
+      "coverage": {
+        "deathCapital": {
+          "deathCapitalUVGSalary": "5-fold",
+          "deathCapitalSurplus": "3-fold"
+        },
+        "subsequentPaymentsAfterDeath": true,
+        "disabilityCapital": {
+          "disabilityCapitalUVGSalary": "4-fold",
+          "disabilityCapitalSurplusSalary": "3-fold",
+          "disabilityCapitalProgUVGSalary": "225%",
+          "disabilityCapitalProgSurplusSalary": "225%"
+        },
+        "integrityCapital": true,
+        "dailyAllowance": {
+          "dailyAllowanceForUVGWaitingDaysUVGSalary": "90%",
+          "dailyAllowanceForUVGWaitingDaysSurplusSalary": "Not insured",
+          "waitingPeriodInDaysForDailyAllowanceUVGSalary": "1 (FL)",
+          "dailyAllowanceAfterExpiryWaitingPeriodUVGSalary": "5%",
+          "waitingPeriodInDaysForDailyAllowanceSurplusSalary": "365",
+          "dailyAllowanceAfterExpiryWaitingPeriodSurplusSalary": "100%",
+          "dailyAllowanceRelapsesLateEffectsUVG": "Insured for NOA-insured personnel",
+          "dailyAllowanceRelapsesLateEffectsUVGZ": "Insured"
+        },
+        "dailyHospitalAllowance": {
+          "dailyHospitalAllowanceFixAmount": 10000
+        },
+        "medicalExpensesHospital": {
+          "medicalExpensesHospitalType": "Private ward"
+        },
+        "differentialCover": true,
+        "disabilityPension": {
+          "disabilityPensionSurplusSalary": "Analog UVG",
+          "disabilityPensionSurplusSalaryBenefitPeriod": "Until reference age"
+        },
+        "survivorsPension": {
+          "leftBehindPensionSurplusSalary": "Analog UVG",
+          "leftBehindPensionSurplusSalaryBenefitPeriod": "Until reference age"
+        },
+        "survivorsPartnerPension": {
+          "survivorsPartnerPension": "Analog UVG",
+          "survivorsPartnerPensionUVGSalary": "Until reference age",
+          "survivorsPartnerPensionSurplusSalary": "Until reference age"
+        }
+      },
+      "premiumPersonMentionedByName": {
+        "medicalExpensesPremiumRate": {
+          "totalPremiumRate": 5.000,
+          "premiumRateOA": 2.000,
+          "premiumRateNOA": 1.500
+        },
+        "dailyAllowanceNetPremiumRateUVGSalary": {
+          "totalPremiumRate": 4.000,
+          "premiumRateOA": 1.800,
+          "premiumRateNOA": 1.200
+        },
+        "dailyAllowanceSurplusSalaryNetPremiumRate": {
+          "totalPremiumRate": 3.500,
+          "premiumRateOA": 1.700,
+          "premiumRateNOA": 1.000
+        },
+        "dailyHospitalAllowancePremiumRate": 0.003,
+        "disabilityCapitalPremiumRateUVGSalary": {
+          "totalPremiumRate": 6.000,
+          "premiumRateOA": 2.500,
+          "premiumRateNOA": 2.000
+        },
+        "disabilityCapitalSurplusSalaryPremiumRate": {
+          "totalPremiumRate": 5.500,
+          "premiumRateOA": 2.200,
+          "premiumRateNOA": 1.800
+        },
+        "disabilityPensionPremiumRateUVGSalary": 0.004,
+        "disabilityPensionSalarySurplusPremiumRate": {
+          "totalPremiumRate": 4.500,
+          "premiumRateOA": 2.100,
+          "premiumRateNOA": 1.600
+        },
+        "deathCapitalPremiumRateUVGSalary": {
+          "totalPremiumRate": 7.000,
+          "premiumRateOA": 3.000,
+          "premiumRateNOA": 2.500
+        },
+        "deathCapitalSurplusSalaryPremiumRate": {
+          "totalPremiumRate": 6.500,
+          "premiumRateOA": 2.800,
+          "premiumRateNOA": 2.200
+        },
+        "survivorsPensionSalaryPremiumRateUVGSalary": 0.005,
+        "survivorsPensionSalarySurplusPremiumRate": {
+          "totalPremiumRate": 5.000,
+          "premiumRateOA": 2.400,
+          "premiumRateNOA": 1.900
+        },
+        "premiumDiffCoverage": 1000.00,
+        "UVGSalaryNetPremiumRate": {
+          "totalPremiumRate": 2.500,
+          "premiumRateOA": 1.200,
+          "premiumRateNOA": 1.000
+        },
+        "surplusSalaryNetPremiumRate": {
+          "totalPremiumRate": 3.000,
+          "premiumRateOA": 1.500,
+          "premiumRateNOA": 1.200
+        },
+        "premiumMinimumAmount": 50.00,
+        "finalPremium": 1500.00
+      }
+    }
+  ],
+  "insuranceOptions": {
+    "dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity": true,
+    "startInsuranceCoverStartEmploymentContract": true,
+    "endInsuranceCoverCoorindationUVG": true,
+    "waiverBenefitGrossNegligence": true,
+    "insuranceOptionsVarious": {
+      "premiumRateGuaranty": true,
+      "renunciationTerminationRightClaim": true,
+      "annualCancellation": false,
+      "typePayInstalment": "1/2 year",
+      "surplusParticipation": true,
+      "surplusParticipationPremiumRate": 5.250,
+      "surplusParticipationRate": 10.500,
+      "surplusParticipationPeriodYears": 3,
+      "additionalOptions": [
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSB",
+          "optionValue": "20000",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        },
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSBM",
+          "optionValue": "DSBM",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        }
+      ]
+    }
+  },
+  "premiumOverviewUVGSupplement": {
+    "tariffYear": "2025",
+    "netPremiumTotal": 2500,
+    "instalmentSurchargeAmount": 50,
+    "instalmentSurchargePercentage": 0.02,
+    "premiumMinimumAmount": 100,
+    "combinationDiscountPercentage": 0.05,
+    "combinationDiscountIncluded": true,
+    "otherDiscountPercentage": 0.03,
+    "otherDiscountIncluded": true
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Group(s) of persons",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personGroupId": {
+        "description": "ID of the person group",
+        "$ref": "../../../../Generics/v0.5.0/UuidType.json"
+      },
+      "personGroupDescription": {
+        "description": "Name of the group of persons",
+        "type": "string"
+      },
+      "numberOfPersonsTotal": {
+        "description": "Total number of employees. If unknown, 0 can also be entered.",
+        "type": "integer"
+      },
+      "maxSalary": {
+        "description": "Maximum salary in CHF",
+        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      },
+      "payrollEmployees": {
+        "description": "Payroll employees",
+        "$ref": "PayrollEmployeesType.json"
+      },
+      "coverage": {
+        "description": "Coverage of the person groups",
+        "$ref": "UVGZCoverageType.json",
+        "allOf": [
+          {
+            "properties": {
+              "deathCapital": {
+                "properties": {
+                  "deathCapitalUVGSalary": {
+                    "enum": [
+                      "No",
+                      "0.5-fold",
+                      "1-fold",
+                      "2-fold",
+                      "3-fold",
+                      "4-fold",
+                      "5-fold",
+                      "6-fold",
+                      "7-fold",
+                      "8-fold",
+                      "9-fold"
+                    ]
+                  },
+                  "deathCapitalSurplus": {
+                    "enum": [
+                      "No",
+                      "0.5-fold",
+                      "1-fold",
+                      "2-fold",
+                      "3-fold",
+                      "4-fold",
+                      "5-fold",
+                      "6-fold",
+                      "7-fold",
+                      "8-fold",
+                      "9-fold"
+                    ]
+                  }
+                }
+              },
+              "disabilityCapital": {
+                "properties": {
+                  "disabilityCapitalUVGSalary": {
+                    "enum": [
+                      "No",
+                      "0.5-fold",
+                      "1-fold",
+                      "2-fold",
+                      "3-fold",
+                      "4-fold",
+                      "5-fold",
+                      "6-fold",
+                      "7-fold",
+                      "8-fold",
+                      "9-fold"
+                    ]
+                  },
+                  "disabilityCapitalSurplusSalary": {
+                    "enum": [
+                      "No",
+                      "0.5-fold",
+                      "1-fold",
+                      "2-fold",
+                      "3-fold",
+                      "4-fold",
+                      "5-fold",
+                      "6-fold",
+                      "7-fold",
+                      "8-fold",
+                      "9-fold"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "premiumPersonGroup": {
+        "$ref": "UVGZPremiumType.json"
+      }
+    },
+    "required": [
+      "personGroupId",
+      "personGroupDescription",
+      "maxSalary",
+      "payrollEmployees",
+      "coverage"
+    ],
+    "additionalProperties": false
+  },
+  "additionalItems": false
+}

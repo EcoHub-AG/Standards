@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Coverage of the insured person",
+  "type": "object",
+  "properties": {
+    "deathCapital": {
+      "$ref": "DeathCapitalType.json"
+    },
+    "subsequentPaymentsAfterDeath": {
+      "description": "Supplementary salary in the event of death in accordance with Art. 338 OR",
+      "type": "boolean"
+    },
+    "disabilityCapital": {
+      "$ref": "DisabilityCapitalType.json"
+    },
+    "integrityCapital": {
+      "type": "boolean",
+      "description": "Integrity capital based on UVG benefits co-insured?"
+    },
+    "dailyAllowance": {
+      "$ref": "DailyAllowanceType.json"
+    },
+    "dailyHospitalAllowance": {
+      "$ref": "DailyHospitalAllowanceType.json"
+    },
+    "medicalExpensesHospital": {
+      "$ref": "MedicalExpensesHospitalType.json"
+    },
+    "differentialCover": {
+      "description": "Differential cover (special risk)",
+      "type": "boolean"
+    },
+    "disabilityPension": {
+      "description": "Disability Pension",
+      "type": "object",
+      "properties": {
+        "disabilityPensionSurplusSalary": {
+          "description": "Disability pension on surplus salary (cumulative maximum salary of all individual pensions)",
+          "$ref": "PensionSalaryType.json"
+        },
+        "disabilityPensionSurplusSalaryBenefitPeriod": {
+          "description": "Benefit period disability pension",
+          "$ref": "PensionBenefitPeriodType.json"
+        }
+      },
+      "required": [
+        "disabilityPensionSurplusSalary",
+        "disabilityPensionSurplusSalaryBenefitPeriod"
+      ],
+      "additionalProperties": false
+    },
+    "survivorsPension": {
+      "description": "Survivors Pension",
+      "type": "object",
+      "properties": {
+        "leftBehindPensionSurplusSalary": {
+          "description": "Survivors' pension of the surplus salary (cumulative maximum salary of all individual pensions)",
+          "$ref": "PensionSalaryType.json"
+        },
+        "leftBehindPensionSurplusSalaryBenefitPeriod": {
+          "description": "Benefit period survivors' pension",
+          "$ref": "PensionBenefitPeriodType.json"
+        }
+      },
+      "required": [
+        "leftBehindPensionSurplusSalary",
+        "leftBehindPensionSurplusSalaryBenefitPeriod"
+      ],
+      "additionalProperties": false
+    },
+    "survivorsPartnerPension": {
+      "description": "Survivors Pension",
+      "type": "object",
+      "properties": {
+        "survivorsPartnerPension": {
+          "description": "Partner's pension UVG",
+          "$ref": "PensionSalaryType.json"
+        },
+        "survivorsPartnerPensionUVGSalary": {
+          "description": "Partner's pension UVG salary",
+          "$ref": "PensionBenefitPeriodType.json"
+        },
+        "survivorsPartnerPensionSurplusSalary": {
+          "description": "Partner's pension surplus salary",
+          "$ref": "PensionBenefitPeriodType.json"
+        }
+      },
+      "required": [
+        "survivorsPartnerPension",
+        "survivorsPartnerPensionUVGSalary",
+        "survivorsPartnerPensionSurplusSalary"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

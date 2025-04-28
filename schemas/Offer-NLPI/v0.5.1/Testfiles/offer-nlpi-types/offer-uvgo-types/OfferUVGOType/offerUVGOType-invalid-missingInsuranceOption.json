@@ -1,0 +1,13 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "insuranceOptionsVarious": {
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
+  },
+  "premiumOverviewUVGCompulsory": {
+    "totalPremiumOAAndNOA": 5000,
+    "netPremiumUVGTotal": 4500,
+    "premiumMinimumAmountOA": 200,
+    "premiumMinimumAmountNOA": 150
+  }
+}

@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity": {
+			"description": "Daily allowance and continued payment of salary: consideration of salary increases agreed before the incapacity for work",
+			"type": "boolean"
+		},
+		"startInsuranceCoverStartEmploymentContract": {
+			"description": "Start of insurance cover: Coordination with the UVG (start of employment contract)",
+			"type": "boolean"
+		},
+		"endInsuranceCoverCoorindationUVG": {
+			"description": "End of insurance cover: Coordination with the UVG (31st day)",
+			"type": "boolean"
+		},
+		"waiverBenefitGrossNegligence": {
+			"description": "Waiver of benefit reductions in the event of gross negligence",
+			"type": "boolean"
+		},
+		"insuranceOptionsVarious": {
+			"$ref": "../InsuranceOptionsVariousType.json"
+		}
+	},
+	"required": [
+		"insuranceOptionsVarious"
+	],
+	"additionalProperties": false
+}

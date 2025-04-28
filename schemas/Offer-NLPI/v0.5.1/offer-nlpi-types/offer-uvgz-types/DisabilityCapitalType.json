@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"disabilityCapitalUVGSalary": {
+			"description": "Disability capital x times the annual salary",
+			"$ref": "YearlySalaryMultipleType.json"
+		},
+		"disabilityCapitalSurplusSalary": {
+			"description": "Disability capital surplus x times the surplus annual salary",
+			"$ref": "YearlySalaryMultipleType.json"
+		},
+		"disabilityCapitalProgUVGSalary": {
+			"description": "Disability capital progressive of the UVG salary in %",
+			"$ref": "DisabilityCapitalProgressionType.json"
+		},
+		"disabilityCapitalProgSurplusSalary": {
+			"description": "Disability capital progressive of surplus salary in %",
+			"$ref": "DisabilityCapitalProgressionType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"disabilityCapitalUVGSalary",
+		"disabilityCapitalSurplusSalary",
+		"disabilityCapitalProgUVGSalary",
+		"disabilityCapitalProgSurplusSalary"
+	]
+}

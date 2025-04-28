@@ -1,0 +1,69 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "personGroup": [
+    {
+      "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
+      "personGroupDescription": "Group 1",
+      "numberOfPersonsOA": 50,
+      "numberOfPersonsNOA": 30,
+      "payrollEmployeesOA": 2500000.00,
+      "payrollEmployeesNOA": 1500000.00,
+      "coverage": "Coverage according to compulsory accident insurance UVG",
+      "premiumPersonGroup": {
+        "premiumNOA": {
+          "hazardClass": "A",
+          "hazardSubClass": "A1",
+          "premiumRiskRate": 2.500,
+          "costAdminRate": 0.750,
+          "sharingCostRate": 0.250,
+          "accidentPreventionContributionRate": 0.100,
+          "finalPremiumRate": 3.600,
+          "totalPremium": 10000.00
+        },
+        "premiumOA": {
+          "hazardClass": "A",
+          "hazardSubClass": "A1",
+          "premiumRiskRate": 2.500,
+          "costAdminRate": 0.750,
+          "sharingCostRate": 0.250,
+          "accidentPreventionContributionRate": 0.100,
+          "finalPremiumRate": 3.600,
+          "totalPremium": 10000.00
+        }
+      }
+    }
+  ],
+  "personMentionedByName": [
+    {
+      "personId": "345aa049-7693-4710-89d7-e13b87ab988a",
+      "role": "Self-employed person",
+      "firstname": "John",
+      "surname": "Doe",
+      "birthDate": "1980-05-15",
+      "gender": "Female",
+      "payroll": 120000.00,
+      "degreeOfEmployment": 90,
+      "insuranceType": "Coverage according to compulsory accident insurance UVG",
+      "premiumPersonMentionedByName": {
+        "hazardClass": "A",
+        "hazardSubClass": "A1",
+        "finalPremiumRate": 3.600,
+        "totalPremium": 10000.00
+      }
+    }
+  ],
+  "insuranceOptionsVarious": {
+    "annualCancellation": true,
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
+  },
+  "premiumOverviewUVGCompulsory": {
+    "tariffYear": "2025",
+    "totalPremiumOAAndNOA": 5000,
+    "netPremiumUVGTotal": 4500,
+    "instalmentSurchargeAmountUVGCompulsory": 100,
+    "instalmentSurchargePercentageUVGCompulsory": 0.03,
+    "premiumMinimumAmountOA": 200,
+    "premiumMinimumAmountNOA": 150
+  }
+}

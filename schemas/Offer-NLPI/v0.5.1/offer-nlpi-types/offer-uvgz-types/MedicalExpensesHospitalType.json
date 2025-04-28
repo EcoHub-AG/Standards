@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Medical expenses hospital insured",
+	"properties": {
+		"medicalExpensesHospitalType": {
+			"description": "Type of medical expenses hospital",
+			"type": "string",
+			"enum": [
+				"Private ward",
+				"Semi-private ward"
+			]
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"medicalExpensesHospitalType"
+	]
+}
