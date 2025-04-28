@@ -47,16 +47,6 @@
           "medicalExpensesHospitalType": "Private ward"
         },
         "differentialCover": true,
-        "disabilityPension": {
-          "pensionInsured": true,
-          "pensionPercent": 80,
-          "benefitPeriod": "bis AHV-Alter"
-        },
-        "survivorsPension": {
-          "pensionInsured": true,
-          "pensionPercent": 70,
-          "benefitPeriod": "gemäss UVG"
-        },
         "survivorsPartnerPension": {
           "survivorsPartnerPension": "Analog UVG",
           "survivorsPartnerPensionUVGSalary": "Until reference age",
@@ -110,7 +100,7 @@
           "disabilityPensionSurplusSalary": "Analog UVG",
           "disabilityPensionSurplusSalaryBenefitPeriod": "Until reference age"
         },
-        "survivorsPension": {
+        "leftBehindPension": {
           "leftBehindPensionSurplusSalary": "Analog UVG",
           "leftBehindPensionSurplusSalaryBenefitPeriod": "Until reference age"
         },
