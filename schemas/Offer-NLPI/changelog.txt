@@ -5,6 +5,8 @@
     - property "companyLegalStatus" is now optional
 - DeathCapitalType (Changed)
     - renamed property "deathCapitalSurplus" to "deathCapitalSurplusSalary"
+- MedicalExpensesHospitalType (Changed)
+    - renamed property "medicalExpensesHospitalType" to "medicalExpensesHospitalCoverage"
 - OfferNlpiConclusionDecisionDataType (Changed)
     - Extracted definition for processName and processVersion to shared type
     - Added type keyword to subProcessName const
