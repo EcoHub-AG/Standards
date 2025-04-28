@@ -14,10 +14,10 @@
 				"type": "object",
 				"properties": {
 					"insurerCode": {
-						"$ref": "../../../Generics/v0.5.0/InsurerCodeType.json"
+						"$ref": "../../../Generics/v0.5.1/InsurerCodeType.json"
 					},
 					"companyName": {
-						"$ref": "../../../Generics/v0.5.0/CompanyNameType.json"
+						"$ref": "../../../Generics/v0.5.1/CompanyNameType.json"
 					},
 					"contract": {
 						"description": "Contract",
@@ -43,7 +43,7 @@
 								},
 								"claimsExperienceDocument": {
 									"description": "Claims experience document",
-									"$ref": "../../../Generics/v0.5.0/FileType.json"
+									"$ref": "../../../Generics/v0.5.1/FileType.json"
 								}
 							},
 							"required": [

@@ -38,7 +38,7 @@
     },
     "totalPremium": {
       "description": "Total annual premium in CHF",
-      "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+      "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
     }
   },
   "additionalProperties": false,

@@ -20,20 +20,20 @@
         "$ref": "../BusinessRelationPersonType.json"
       },
       "firstname": {
-        "$ref": "../../../../Generics/v0.5.0/FirstNameType.json"
+        "$ref": "../../../../Generics/v0.5.1/FirstNameType.json"
       },
       "surname": {
-        "$ref": "../../../../Generics/v0.5.0/SurNameType.json"
+        "$ref": "../../../../Generics/v0.5.1/SurNameType.json"
       },
       "birthDate": {
-        "$ref": "../../../../Generics/v0.5.0/BirthDateType.json"
+        "$ref": "../../../../Generics/v0.5.1/BirthDateType.json"
       },
       "gender": {
-        "$ref": "../../../../Generics/v0.5.0/GenderType.json"
+        "$ref": "../../../../Generics/v0.5.1/GenderType.json"
       },
       "fixedPayroll": {
         "description": "Fixed payroll UVGZ amount in CHF",
-        "$ref": "../../../../Generics/v0.5.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
       },
       "degreeOfEmployment": {
         "description": "Degree of employment in %.",
