@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "properties": {
+    "totalPremiumRate": {
+      "description": "Total premium rate",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "premiumRateOA": {
+      "description": "Premium rate OA",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "premiumRateNOA": {
+      "description": "Premium rate NOA",
+      "type": "number",
+      "multipleOf": 0.001
+    }
+  },
+  "required": [
+    "totalPremiumRate"
+  ]
+}

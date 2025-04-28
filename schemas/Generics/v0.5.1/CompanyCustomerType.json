@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Customer",
+  "type": "object",
+  "properties": {
+    "companyName": {
+      "$ref": "CompanyNameType.json"
+    },
+    "companyId": {
+      "$ref": "CompanyIdType.json"
+    },
+    "companyLegalForm": {
+      "$ref": "CompanyLegalFormType.json"
+    },
+    "companyLegalStatus": {
+      "$ref": "CompanyLegalStatusType.json"
+    },
+    "companyFoundingYear": {
+      "description": "Founding year of the company",
+      "type": "string",
+      "maxLength": 4,
+      "pattern": "^\\d{4}$",
+      "examples": [
+        "2024"
+      ]
+    },
+    "domicilAddress": {
+      "description": "Domicil Address Type",
+      "$ref": "AddressType.json"
+    },
+    "isDomicilAddressCorrespondenceAddress": {
+      "type": "boolean"
+    },
+    "correspondenceAddress": {
+      "description": "Address for correspondence. When 'isDomicilAddressCorrespondenceAddress' = false, this element is mandatory.",
+      "$ref": "AddressType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "companyName",
+    "companyLegalForm",
+    "domicilAddress",
+    "isDomicilAddressCorrespondenceAddress"
+  ],
+  "if": {
+    "properties": {
+      "isDomicilAddressCorrespondenceAddress": {
+        "const": false
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "correspondenceAddress"
+    ]
+  }
+}

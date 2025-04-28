@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Customer",
+  "type": "object",
+  "properties": {
+    "customer": {
+      "description": "Core information of the customer",
+      "$ref": "../../../Generics/v0.5.1/CompanyCustomerType.json"
+    },
+    "GAVCompliance": {
+      "description": "Guaranteed compliance with the GAV-conformity. Only relevant for DSB.",
+      "$ref": "../../../Generics/v0.5.1/TristateType.json"
+    },
+    "GAVName": {
+      "description": "GAV-Designation. Only relevant for DSB. Mandatory if GAVCompliance = 'Yes'",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "description": "GAV-Designation(s)",
+        "type": "string"
+      }
+    },
+    "UVGRiskNo": {
+      "description": "UVG risk number of the insured risk. Required in offer request for the customer but not the coInsuredCustomer. In the offer, one of UVGRiskNo and NOGACodeMain must be provided for the customer as well as coInsuredCustomer.",
+      "type": "string",
+      "maxLength": 7,
+      "pattern": "[0-9]{4}\\.[0-9]{2}"
+    },
+    "NOGACodeMain": {
+      "description": "Main NOGA-Code. Required in offer request. One of UVGRiskNo and NOGACodeMain must be provided in offer.",
+      "$ref": "NogaCodeType.json"
+    },
+    "NOGACodeAdditional": {
+      "description": "Additional NOGA-Code activities",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "NogaCodeType.json"
+      }
+    },
+    "typeOfActivity": {
+      "description": "Type of activity of the company",
+      "$ref": "../../../Generics/v0.5.1/RestrictedStringType.json"
+    },
+    "SUVACompany": {
+      "description": "Only relevant for UVGZ request",
+      "$ref": "SUVACompanyType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "customer"
+  ],
+  "if": {
+    "properties": {
+      "GAVCompliance": {
+        "const": "Yes"
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "GAVName"
+    ]
+  }
+}

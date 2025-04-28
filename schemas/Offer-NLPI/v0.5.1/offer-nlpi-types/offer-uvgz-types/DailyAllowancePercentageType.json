@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "string",
+  "enum": [
+    "80%",
+    "85%",
+    "90%",
+    "95%",
+    "100%",
+    "Not insured"
+  ]
+}

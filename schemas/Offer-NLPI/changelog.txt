@@ -1,3 +1,33 @@
+### Version 0.5.1
+- CombinationMetaType (Changed)
+    - Replaced enum values for combinationLobIG
+- CompanyCustomerType (Changed)
+    - property "companyLegalStatus" is now optional
+- DeathCapitalType (Changed)
+    - renamed property "deathCapitalSurplus" to "deathCapitalSurplusSalary"
+- MedicalExpensesHospitalType (Changed)
+    - renamed property "medicalExpensesHospitalType" to "medicalExpensesHospitalCoverage"
+- OfferNlpiConclusionDecisionDataType (Changed)
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+- OfferNlpiDataType (Changed)
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+    - added restriction to make "companyLegalStatus" in "customer" mandatory
+    - added restriction: one of NogaCodeMain and UVGRiskNo is required for coInsuredCustomer
+- OfferNlpiFeedbackDataType (Changed)
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+- OfferNlpiRequestDataType (Changed)
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+    - added restriction to make "companyLegalStatus" in "customer" mandatory
+    - added restriction: NogaCodeMain is required for coInsuredCustomer
+- ProcessNameConstType (Added)
+- ProcessVersionConstType (Added)
+- UVGZCoverageType (Changed)
+    - renamed property "survivorsPension" to "leftBehindPension"
+
 ### Version 0.5.0
 - AHVSalaryMultipleType (Removed)
 - BenefitPeriodType (Removed)

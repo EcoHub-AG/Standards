@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Must be set for offer and omitted for request.",
+  "type": "object",
+  "properties": {
+    "medicalExpensesPremiumRate": {
+      "description": "Medical expenses premium rates in ‰",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "dailyAllowanceNetPremiumRateUVGSalary": {
+      "description": "Daily allowance premium rates in ‰ (UVG salary)",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "dailyAllowanceSurplusSalaryNetPremiumRate": {
+      "description": "Daily allowance surplus salary premium rates in ‰",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "dailyHospitalAllowancePremiumRate": {
+      "description": "Daily hospital premium rate in ‰",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "disabilityCapitalPremiumRateUVGSalary": {
+      "description": "Disability capital lump sum premium rates in ‰ (UVG salary)",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "disabilityCapitalSurplusSalaryPremiumRate": {
+      "description": "Disability capital lump sum surplus salary premium rates in ‰",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "disabilityPensionPremiumRateUVGSalary": {
+      "description": "Disability pension premium rate in ‰ (UVG Salary)",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "disabilityPensionSalarySurplusPremiumRate": {
+      "description": "Disability pension salary surplus premium rates in ‰",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "deathCapitalPremiumRateUVGSalary": {
+      "description": "Lump-sum death benefit premium rates in ‰ (UVG Salary)",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "deathCapitalSurplusSalaryPremiumRate": {
+      "description": "Lump-sum death benefit surplus salary premium rates in ‰",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "survivorsPensionSalaryPremiumRateUVGSalary": {
+      "description": "Survivors' pension premium rate in ‰ (UVG salary)",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "survivorsPensionSalarySurplusPremiumRate": {
+      "description": "Survivors' pension surplus salary premium rates in ‰",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "premiumDiffCoverage": {
+      "description": "Premium for differential cover in CHF",
+      "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
+    },
+    "UVGSalaryNetPremiumRate": {
+      "description": "UVG salary net premium rates in %",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "surplusSalaryNetPremiumRate": {
+      "description": "Surplus salary net premium rates in %",
+      "$ref": "UVGZPremiumRateType.json"
+    },
+    "premiumMinimumAmount": {
+      "description": "Minimum premium of the person group in CHF",
+      "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
+    },
+    "finalPremium": {
+      "description": "Final premium in CHF",
+      "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
+    }
+  },
+  "required": [
+    "medicalExpensesPremiumRate",
+    "dailyAllowanceNetPremiumRateUVGSalary",
+    "dailyAllowanceSurplusSalaryNetPremiumRate",
+    "dailyHospitalAllowancePremiumRate",
+    "disabilityCapitalPremiumRateUVGSalary",
+    "disabilityCapitalSurplusSalaryPremiumRate",
+    "disabilityPensionPremiumRateUVGSalary",
+    "disabilityPensionSalarySurplusPremiumRate",
+    "deathCapitalPremiumRateUVGSalary",
+    "deathCapitalSurplusSalaryPremiumRate",
+    "survivorsPensionSalaryPremiumRateUVGSalary",
+    "survivorsPensionSalarySurplusPremiumRate",
+    "premiumDiffCoverage",
+    "UVGSalaryNetPremiumRate",
+    "surplusSalaryNetPremiumRate",
+    "premiumMinimumAmount",
+    "finalPremium"
+  ],
+  "additionalProperties": false
+}

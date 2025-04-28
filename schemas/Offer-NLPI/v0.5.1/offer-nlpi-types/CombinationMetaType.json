@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"combinationId": {
+			"description": "This is the unique identification number of the combination and must be identical for all related process events. Mandatory in the offer request, if combinationMeta is provided.",
+			"$ref": "../../../Generics/v0.5.1/UuidType.json"
+		},
+		"combinationLobIG": {
+			"description": "List of all IG B2B branch codes associated with this combination. Only main categories of the IG B2B branch codes are permitted.",
+			"type": "array",
+			"items": {
+				"type": "string",
+				"enum": [
+					"38000",
+					"36000",
+					"42000"
+				]
+			}
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"combinationLobIG"
+	]
+}

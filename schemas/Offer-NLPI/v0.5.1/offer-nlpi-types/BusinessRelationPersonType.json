@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Role of the insured person",
+	"type": "string",
+	"enum": [
+		"Self-employed person",
+		"Contributing family member",
+		"Partner",
+		"Shareholder",
+		"Cooperative member"
+	]
+}

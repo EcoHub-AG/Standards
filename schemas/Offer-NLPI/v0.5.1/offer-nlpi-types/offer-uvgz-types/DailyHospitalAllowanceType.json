@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Daily hospital allowance insured",
+	"properties": {
+		"dailyHospitalAllowanceFixAmount": {
+			"description": "Daily hospital allowance as a fixed amount in CHF",
+			"$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"dailyHospitalAllowanceFixAmount"
+	]
+}

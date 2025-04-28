@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Group of compulsory insured people",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personGroupId": {
+        "description": "ID of the person group",
+        "$ref": "../../../../Generics/v0.5.1/UuidType.json"
+      },
+      "personGroupDescription": {
+        "description": "Name of the group of persons",
+        "type": "string"
+      },
+      "numberOfPersonsOA": {
+        "description": "Number of employees OA. If unknown, value 0 can be specified. Required for offer request.",
+        "type": "integer"
+      },
+      "numberOfPersonsNOA": {
+        "description": "Number of employees NOA. If unknown, value 0 can be specified. Required for offer request.",
+        "type": "integer"
+      },
+      "payrollEmployeesOA": {
+        "description": "Accident insurance total payroll of all employees OA",
+        "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
+      },
+      "payrollEmployeesNOA": {
+        "description": "Accident insurance total payroll of all employees NOA",
+        "$ref": "../../../../Generics/v0.5.1/MonetaryAmountType.json"
+      },
+      "coverage": {
+        "description": "Coverage of the person groups UVG Compulsory Federal Accident Insurance Act (UVG)",
+        "type": "string",
+        "enum": [
+          "Coverage according to compulsory accident insurance UVG",
+          "Coverage according to compulsory accident insurance OUFL"
+        ]
+      },
+      "premiumPersonGroup": {
+        "description": "Premium of the insured group of persons",
+        "type": "object",
+        "properties": {
+          "premiumOA": {
+            "description": "Premium for NBU",
+            "$ref": "UVGOPersonGroupPremiumType.json"
+          },
+          "premiumNOA": {
+            "description": "Premium for BU",
+            "$ref": "UVGOPersonGroupPremiumType.json"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "premiumOA",
+          "premiumNOA"
+        ]
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "personGroupId",
+      "personGroupDescription",
+      "payrollEmployeesOA",
+      "payrollEmployeesNOA",
+      "coverage"
+    ]
+  }
+}
