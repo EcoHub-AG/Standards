@@ -15,15 +15,15 @@
         "type": "string"
       },
       "numberOfPersonsFemale": {
-        "description": "Number of women. If unknown, value 0 can be specified.",
+        "description": "Number of women. If unknown, value 0 can be specified. Required for offer request.",
         "type": "integer"
       },
       "numberOfPersonsMale": {
-        "description": "Number of men. If unknown, value 0 can be specified.",
+        "description": "Number of men. If unknown, value 0 can be specified. Required for offer request.",
         "type": "integer"
       },
       "numberOfPersonsTotal": {
-        "description": "Total number of persons. If unknown, value 0 can be specified.",
+        "description": "Total number of persons. If unknown, value 0 can be specified. Required for offer request.",
         "type": "integer"
       },
       "payrollFemale": {

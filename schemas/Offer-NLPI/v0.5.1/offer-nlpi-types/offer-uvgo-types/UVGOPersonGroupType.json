@@ -15,11 +15,11 @@
         "type": "string"
       },
       "numberOfPersonsOA": {
-        "description": "Number of employees OA. If unknown, value 0 can be specified.",
+        "description": "Number of employees OA. If unknown, value 0 can be specified. Required for offer request.",
         "type": "integer"
       },
       "numberOfPersonsNOA": {
-        "description": "Number of employees NOA. If unknown, value 0 can be specified.",
+        "description": "Number of employees NOA. If unknown, value 0 can be specified. Required for offer request.",
         "type": "integer"
       },
       "payrollEmployeesOA": {

@@ -3,11 +3,11 @@
 	"type": "object",
 	"properties": {
 		"disabilityCapitalUVGSalary": {
-			"description": "Disability capital x times the annual salary",
+			"description": "Disability capital x times the annual salary. For personGroups, only values ip to 9-fold are allowed.",
 			"$ref": "YearlySalaryMultipleType.json"
 		},
 		"disabilityCapitalSurplusSalary": {
-			"description": "Disability capital surplus x times the surplus annual salary",
+			"description": "Disability capital surplus x times the surplus annual salary. For personGroups, only values ip to 9-fold are allowed.",
 			"$ref": "YearlySalaryMultipleType.json"
 		},
 		"disabilityCapitalProgUVGSalary": {
