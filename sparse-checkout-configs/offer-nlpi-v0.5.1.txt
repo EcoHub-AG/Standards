@@ -1,0 +1,4 @@
+schemas/Offer-NLPI/v0.5.1/offer-nlpi-root
+schemas/Offer-NLPI/v0.5.1/offer-nlpi-types
+schemas/Generics/v0.5.1/*
+!schemas/Generics/v0.5.1/testFiles
