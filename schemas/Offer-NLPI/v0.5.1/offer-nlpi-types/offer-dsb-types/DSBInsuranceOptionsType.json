@@ -3,51 +3,51 @@
 	"type": "object",
 	"properties": {
 		"insuranceStartByEmployment": {
-			"description": "Insurance from the beginning of employment",
+			"description": "Insurance from the beginning of employment. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceTemporaryEmployees": {
-			"description": "Insurance of temporarily employed persons (temporary employment up to 3 months)",
+			"description": "Insurance of temporarily employed persons (temporary employment up to 3 months). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceParttimeEmployees": {
-			"description": "Insurance of part-time employees (less than 8 working hours per week)",
+			"description": "Insurance of part-time employees (less than 8 working hours per week). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceHourlyEmployees": {
-			"description": "Insurance of employees on an hourly basis (at least 8 working hours per week)",
+			"description": "Insurance of employees on an hourly basis (at least 8 working hours per week). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceEmployeesExhaustedBenefitPeriod": {
-			"description": "Insurance of persons with exhausted benefit period",
+			"description": "Insurance of persons with exhausted benefit period. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceChildFamilyAllowances": {
-			"description": "Insurance of child and family allowances",
+			"description": "Insurance of child and family allowances. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceWageIncreaseIncapacity": {
-			"description": "Insurance agreed wage increases before incapacity for work",
+			"description": "Insurance agreed wage increases before incapacity for work. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"subsequentPaymentsAfterDeath": {
-			"description": "Supplementary salary in the event of death in accordance with Art. 338 OR",
+			"description": "Supplementary salary in the event of death in accordance with Art. 338 OR. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"renunciationBenefitReductionsNegligence": {
-			"description": "Waiver of benefit reductions in the event of gross negligence",
+			"description": "Waiver of benefit reductions in the event of gross negligence. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"unpaidLeaveInsurance": {
-			"description": "Unpaid leave insurance",
+			"description": "Unpaid leave insurance. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"renunciationCreditingWaitingPeriod": {
-			"description": "Waiver of crediting of the waiting period in the event of continued incapacity for work after UVG rejection of accident causality",
+			"description": "Waiver of crediting of the waiting period in the event of continued incapacity for work after UVG rejection of accident causality. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"subsequentBenefitsContractTermination": {
-			"description": "Entitlement to subsequent payment at end of contract (without vested benefits)",
+			"description": "Entitlement to subsequent payment at end of contract (without vested benefits). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"insuranceOptionsVarious": {

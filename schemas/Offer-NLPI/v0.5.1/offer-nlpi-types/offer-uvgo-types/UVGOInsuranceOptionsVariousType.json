@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"annualCancellation": {
-			"description": "Annual right of termination",
+			"description": "Annual right of termination. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"typePayInstalment": {

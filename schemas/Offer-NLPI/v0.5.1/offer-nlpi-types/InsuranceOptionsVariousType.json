@@ -4,15 +4,15 @@
 	"type": "object",
 	"properties": {
 		"premiumRateGuaranty": {
-			"description": "Premium rate guarantee during the agreed contract period",
+			"description": "Premium rate guarantee during the agreed contract period. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"renunciationTerminationRightClaim": {
-			"description": "Waiver of the insurer's right to terminate the contract in the event of a claim",
+			"description": "Waiver of the insurer's right to terminate the contract in the event of a claim. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"annualCancellation": {
-			"description": "Annual right of termination",
+			"description": "Annual right of termination. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"typePayInstalment": {
@@ -22,7 +22,7 @@
 			"$ref": "../../../Generics/v0.5.1/AdditionalOptionsType.json"
 		},
 		"surplusParticipation": {
-			"description": "Surplus participation",
+			"description": "Surplus participation. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
 		"surplusParticipationPremiumRate": {
