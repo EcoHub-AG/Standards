@@ -1,3 +1,19 @@
+### Version 0.5.1
+- OfferNlpiConclusionDecisionDataType
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+- OfferNlpiDataType
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+- OfferNlpiFeedbackDataType
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+- OfferNlpiRequestDataType
+    - Extracted definition for processName and processVersion to shared type
+    - Added type keyword to subProcessName const
+- ProcessNameConstType (Added)
+- ProcessVersionConstType (Added)
+
 ### Version 0.5.0
 - AHVSalaryMultipleType (Removed)
 - BenefitPeriodType (Removed)

@@ -10,16 +10,15 @@
       "$ref": "../../../Generics/v0.5.1/TimestampType.json"
     },
     "processName": {
-      "description": "Name of the process",
-      "const": "offer.nlpi"
+      "$ref": "../offer-nlpi-types/ProcessNameConstType.json"
     },
     "subProcessName": {
       "description": "Name of the subprocess",
+      "type": "string",
       "const": "offer"
     },
     "processVersion": {
-      "description": "Version of the process",
-      "const": "0.5.0"
+      "$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
     },
     "header": {
       "$ref": "../../../Generics/v0.5.1/HeaderType.json"
