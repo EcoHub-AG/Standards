@@ -44,7 +44,8 @@
   },
   "offerFeedbackMessage": "Customer accepts the offer",
   "brokerContact": {
-    "contactName": "Test Broker AG - Account Management West",
+    "contactSurname": "Account Management West",
+    "contactFirstName": "Test Broker AG - ",
     "contactMail": "info@testbrokerag.ch",
     "contactPhone": "+41444000000"
   }

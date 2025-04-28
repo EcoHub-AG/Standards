@@ -22,7 +22,8 @@
 	},
 	"offerConclusionDecision": "Offer conclusion rejected",
 	"insurerContact": {
-		"contactName": "Broker Account Management West",
+		"contactSurname": "Management West",
+		"contactFirstName": "Broker Account",
 		"contactMail": "info-west@testinsurer.ch",
 		"contactPhone": "+41444200000"
 	}

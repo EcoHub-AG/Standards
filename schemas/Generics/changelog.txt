@@ -1,5 +1,11 @@
 ### Version 0.5.1
 - Adjusted some descriptions and examples
+- BrokerContactType (Changed)
+    - renamed property "contactName" to "contactFirstName"
+    - added mandatory property "contactSurname"
+- ContactType (Changed)
+    - renamed property "contactName" to "contactFirstName"
+    - added mandatory property "contactSurname"
 
 ### Version 0.5.5
 - AddressDefinitions (Changed)

@@ -3,8 +3,12 @@
   "description": "Contact information details",
   "type": "object",
   "properties": {
-    "contactName": {
-      "description": "Name of the contact",
+    "contactSurname": {
+      "description": "Surname of the contact",
+      "type": "string"
+    },
+    "contactFirstName": {
+      "description": "First name of the contact",
       "type": "string"
     },
     "contactMail": {
@@ -29,7 +33,8 @@
     }
   },
   "required": [
-    "contactName",
+    "contactSurname",
+    "contactFirstName",
     "contactMail",
     "contactPhone",
     "consultantSurname",

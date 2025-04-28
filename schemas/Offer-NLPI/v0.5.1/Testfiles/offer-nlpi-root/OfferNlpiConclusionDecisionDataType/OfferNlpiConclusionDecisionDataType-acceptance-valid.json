@@ -25,7 +25,8 @@
 	"offerConclusionDecision": "Offer conclusion accepted",
 	"offerConclusionDecisionMessage": "Insurer comfirms the closed offer. Contract in preparation.",
 	"insurerContact": {
-		"contactName": "Broker Account Management West",
+		"contactSurname": "Management West",
+		"contactFirstName": "Broker Account",
 		"contactMail": "info-west@testinsurer.ch",
 		"contactPhone": "+41444200000"
 	}

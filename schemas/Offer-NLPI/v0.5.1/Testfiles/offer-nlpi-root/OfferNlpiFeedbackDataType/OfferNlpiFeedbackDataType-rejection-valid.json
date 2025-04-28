@@ -25,7 +25,8 @@
 	"offerDecision": "Offer rejected",
 	"offerFeedbackMessage": "This is a statement explaining why the offer was rejected.",
 	"brokerContact": {
-		"contactName": "Test Broker AG - Account Management West",
+		"contactSurname": "Account Management West",
+		"contactFirstName": "Test Broker AG - ",
 		"contactMail": "info@testbrokerag.ch",
 		"contactPhone": "+41444000000"
 	}
