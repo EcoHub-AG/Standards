@@ -72,7 +72,7 @@
       "surname": "Doe",
       "birthDate": "1980-05-15",
       "gender": "Female",
-      "fixedPayroll": 150000.00,
+      "payroll": 150000.00,
       "degreeOfEmployment": 90,
       "insuranceType": "Sum insurance",
       "coverage": {

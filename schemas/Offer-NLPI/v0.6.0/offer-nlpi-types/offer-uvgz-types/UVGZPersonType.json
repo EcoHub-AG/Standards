@@ -31,7 +31,7 @@
       "gender": {
         "$ref": "../../../../Generics/v0.6.0/GenderType.json"
       },
-      "fixedPayroll": {
+      "payroll": {
         "description": "Fixed payroll UVGZ amount in CHF",
         "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
       },
@@ -61,7 +61,7 @@
       "surname",
       "firstname",
       "birthDate",
-      "fixedPayroll",
+      "payroll",
       "insuranceType",
       "coverage"
     ]
