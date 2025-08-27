@@ -30,7 +30,7 @@
         "description": "Accident insurance total payroll of all employees NOA",
         "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
       },
-      "coverage": {
+      "insuranceType": {
         "description": "Coverage of the person groups UVG Compulsory Federal Accident Insurance Act (UVG)",
         "type": "string",
         "enum": [
@@ -64,7 +64,7 @@
       "personGroupDescription",
       "payrollEmployeesOA",
       "payrollEmployeesNOA",
-      "coverage"
+      "insuranceType"
     ]
   }
 }

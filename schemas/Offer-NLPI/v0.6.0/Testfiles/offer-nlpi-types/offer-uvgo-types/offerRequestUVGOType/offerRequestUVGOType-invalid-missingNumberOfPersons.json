@@ -7,7 +7,7 @@
       "numberOfPersonsOA": 50,
       "payrollEmployeesOA": 2500000.00,
       "payrollEmployeesNOA": 1500000.00,
-      "coverage": "Coverage according to compulsory accident insurance UVG"
+      "insuranceType": "Coverage according to compulsory accident insurance UVG"
     }
   ],
   "insuranceOptionsVarious": {
