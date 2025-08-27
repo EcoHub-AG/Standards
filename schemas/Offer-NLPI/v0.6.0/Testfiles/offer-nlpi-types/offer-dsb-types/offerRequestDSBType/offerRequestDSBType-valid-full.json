@@ -27,13 +27,11 @@
           "DSBMBenefitAmountPercentage": "80%",
           "DSBMPayrollBasis": "EOG wage"
         },
-        "DSBPCoverage": [
-          {
-            "DSBPBenefitDurationWeeks": "14",
-            "DSBPBenefitAmountPercentage": "80%",
-            "DSBPPayrollBasis": "EOG wage"
-          }
-        ]
+        "DSBPCoverage": {
+          "DSBPBenefitDurationWeeks": "14",
+          "DSBPBenefitAmountPercentage": "80%",
+          "DSBPPayrollBasis": "EOG wage"
+        }
       }
     }
   ],
@@ -61,13 +59,11 @@
           "DSBMBenefitAmountPercentage": "100%",
           "DSBMPayrollBasis": "Total wage"
         },
-        "DSBPCoverage": [
-          {
-            "DSBPBenefitDurationWeeks": "6",
-            "DSBPBenefitAmountPercentage": "100%",
-            "DSBPPayrollBasis": "EOG wage"
-          }
-        ]
+        "DSBPCoverage": {
+          "DSBPBenefitDurationWeeks": "6",
+          "DSBPBenefitAmountPercentage": "100%",
+          "DSBPPayrollBasis": "EOG wage"
+        }
       }
     }
   ],

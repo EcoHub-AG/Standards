@@ -1,6 +1,8 @@
 ### Version 0.6.0
 - DSBMCoverageType (Changed)
     - Change type from array to object
+- DSBPCoverageType (Changed)
+    - Change type from array to object
 
 ### Version 0.5.1
 - CombinationMetaType (Changed)

@@ -22,13 +22,11 @@
           "DSBBenefitAmountPercentage": "75%",
           "DSBLegalBasis": "KVG"
         },
-        "DSBPCoverage": [
-          {
-            "DSBPBenefitDurationWeeks": "6",
-            "DSBPBenefitAmountPercentage": "100%",
-            "DSBPPayrollBasis": "EOG wage"
-          }
-        ]
+        "DSBPCoverage": {
+          "DSBPBenefitDurationWeeks": "6",
+          "DSBPBenefitAmountPercentage": "100%",
+          "DSBPPayrollBasis": "EOG wage"
+        }
       }
     }
   ],
