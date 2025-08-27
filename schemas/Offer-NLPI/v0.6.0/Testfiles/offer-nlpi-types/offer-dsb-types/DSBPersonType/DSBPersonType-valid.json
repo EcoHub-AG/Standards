@@ -17,13 +17,11 @@
         "DSBBenefitAmountPercentage": "100%",
         "DSBLegalBasis": "VVG"
       },
-      "DSBMCoverage": [
-        {
-          "DSBMBenefitDurationWeeks": "14",
-          "DSBMBenefitAmountPercentage": "100%",
-          "DSBMPayrollBasis": "Total wage"
-        }
-      ],
+      "DSBMCoverage": {
+        "DSBMBenefitDurationWeeks": "14",
+        "DSBMBenefitAmountPercentage": "100%",
+        "DSBMPayrollBasis": "Total wage"
+      },
       "DSBPCoverage": [
         {
           "DSBPBenefitDurationWeeks": "6",

@@ -6,13 +6,11 @@
     "DSBBenefitAmountPercentage": "80%",
     "DSBLegalBasis": "VVG"
   },
-  "DSBMCoverage": [
-    {
-      "DSBMBenefitDurationWeeks": "14",
-      "DSBMBenefitAmountPercentage": "80%",
-      "DSBMPayrollBasis": "EOG wage"
-    }
-  ],
+  "DSBMCoverage": {
+    "DSBMBenefitDurationWeeks": "14",
+    "DSBMBenefitAmountPercentage": "80%",
+    "DSBMPayrollBasis": "EOG wage"
+  },
   "DSBPCoverage": [
     {
       "DSBPBenefitDurationWeeks": "14",
