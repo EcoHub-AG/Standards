@@ -35,7 +35,7 @@
       "type": "object",
       "properties": {
         "disabilityPensionSurplusSalary": {
-          "description": "Disability pension on surplus salary (cumulative maximum salary of all individual pensions)",
+          "description": "Disability pension on surplus salary.",
           "$ref": "PensionSalaryType.json"
         },
         "disabilityPensionSurplusSalaryBenefitPeriod": {
