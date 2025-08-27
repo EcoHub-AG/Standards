@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
+  "properties": {
+    "riskCharacteristic": {
+      "$ref": "../RiskCharacteristicType.json"
+    },
+    "personGroup": {
+      "$ref": "UVGOPersonGroupType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumPersonGroup"
+            ]
+          }
+        }
+      ]
+    },
+    "personMentionedByName": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "UVGOPersonType.json",
+        "allOf": [
+          {
+            "required": [
+              "premiumPersonMentionedByName"
+            ]
+          }
+        ]
+      }
+    },
+    "insuranceOptionsVarious": {
+      "$ref": "UVGOInsuranceOptionsVariousType.json",
+      "allOf": [
+        {
+          "required": [
+            "annualCancellation"
+          ]
+        }
+      ]
+    },
+    "premiumOverviewUVGCompulsory": {
+      "type": "object",
+      "properties": {
+        "tariffYear": {
+          "description": "Tariff year",
+          "type": "string"
+        },
+        "totalPremiumOAAndNOA": {
+          "description": "Total annual premium OA/NOA in CHF",
+          "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+        },
+        "netPremiumUVGTotal": {
+          "description": "The total net premium UVG corresponds to the amount of the net premium total offered for UVG coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+          "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+        },
+        "instalmentSurchargeAmountUVGCompulsory": {
+          "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json",
+          "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for UVG compulsory."
+        },
+        "instalmentSurchargePercentageUVGCompulsory": {
+          "type": "number",
+          "multipleOf": 0.001,
+          "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage  for UVG compulsory."
+        },
+        "premiumMinimumAmountOA": {
+          "description": "Minimum premium for OA in CHF",
+          "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+        },
+        "premiumMinimumAmountNOA": {
+          "description": "Minimum premium for NOA in CHF",
+          "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+        }
+      },
+      "required": [
+        "totalPremiumOAAndNOA",
+        "netPremiumUVGTotal",
+        "premiumMinimumAmountOA",
+        "premiumMinimumAmountNOA"
+      ]
+    }
+  },
+  "required": [
+    "riskCharacteristic",
+    "premiumOverviewUVGCompulsory"
+  ],
+  "additionalProperties": false
+}

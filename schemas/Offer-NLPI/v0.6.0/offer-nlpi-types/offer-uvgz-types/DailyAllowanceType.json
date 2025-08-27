@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "Daily allowance insured",
+  "properties": {
+    "dailyAllowanceForUVGWaitingDaysUVGSalary": {
+      "description": "Daily allowance for UVG-waiting days UVG Salary",
+      "$ref": "DailyAllowancePercentageType.json"
+    },
+    "dailyAllowanceForUVGWaitingDaysSurplusSalary": {
+      "description": "Daily allowance for UVG-waiting days Surplus Salary",
+      "$ref": "DailyAllowancePercentageType.json"
+    },
+    "waitingPeriodInDaysForDailyAllowanceUVGSalary": {
+      "description": "Waiting period in days for daily allowance UVG salary",
+      "$ref": "DailyAllowanceWaitingPeriodType.json"
+    },
+    "dailyAllowanceAfterExpiryWaitingPeriodUVGSalary": {
+      "description": "Daily allowance UVG salary in % after expiry waiting period",
+      "type": "string",
+      "enum": [
+        "5%",
+        "10%",
+        "15%",
+        "20%",
+        "Not insured"
+      ]
+    },
+    "waitingPeriodInDaysForDailyAllowanceSurplusSalary": {
+      "description": "Waiting period in days for daily allowance surplus salary",
+      "$ref": "DailyAllowanceWaitingPeriodType.json"
+    },
+    "dailyAllowanceAfterExpiryWaitingPeriodSurplusSalary": {
+      "description": "Daily allowance surplus salary in % after expiry waiting period",
+      "$ref": "DailyAllowancePercentageType.json"
+    },
+    "dailyAllowanceRelapsesLateEffectsUVG": {
+      "description": "Daily allowance: relapses and late effects of previous accidents: Replacement daily allowance for the UVG daily allowance / continued payment of salary",
+      "$ref": "DailyAllowanceRelapsesType.json"
+    },
+    "dailyAllowanceRelapsesLateEffectsUVGZ": {
+      "description": "Daily allowance: relapses and late effects of previous accidents. Entitlement to UVG surplus wages",
+      "$ref": "DailyAllowanceRelapsesType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "dailyAllowanceForUVGWaitingDaysUVGSalary",
+    "dailyAllowanceForUVGWaitingDaysSurplusSalary",
+    "waitingPeriodInDaysForDailyAllowanceUVGSalary",
+    "dailyAllowanceAfterExpiryWaitingPeriodUVGSalary",
+    "waitingPeriodInDaysForDailyAllowanceSurplusSalary",
+    "dailyAllowanceAfterExpiryWaitingPeriodSurplusSalary",
+    "dailyAllowanceRelapsesLateEffectsUVG",
+    "dailyAllowanceRelapsesLateEffectsUVGZ"
+  ]
+}

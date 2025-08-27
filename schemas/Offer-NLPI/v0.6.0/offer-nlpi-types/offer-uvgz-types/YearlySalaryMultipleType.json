@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "string",
+  "enum": [
+    "No",
+    "0.5-fold",
+    "1-fold",
+    "2-fold",
+    "3-fold",
+    "4-fold",
+    "5-fold",
+    "6-fold",
+    "7-fold",
+    "8-fold",
+    "9-fold",
+    "10-fold",
+    "11-fold",
+    "12-fold",
+    "13-fold",
+    "14-fold",
+    "15-fold",
+    "16-fold"
+  ]
+}

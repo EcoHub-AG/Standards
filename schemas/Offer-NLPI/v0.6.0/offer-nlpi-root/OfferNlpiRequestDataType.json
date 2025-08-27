@@ -1,0 +1,154 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Schema for a request for an offer in the Offer NLPI process",
+	"properties": {
+		"processIdentificationNo": {
+			"$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
+		},
+		"timestamp": {
+			"$ref": "../../../Generics/v0.6.0/TimestampType.json"
+		},
+		"processName": {
+			"$ref": "../offer-nlpi-types/ProcessNameConstType.json"
+		},
+		"subProcessName": {
+			"description": "Name of the subprocess",
+			"type": "string",
+			"const": "request"
+		},
+		"processVersion": {
+			"$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
+		},
+		"header": {
+			"$ref": "../../../Generics/v0.6.0/HeaderType.json"
+		},
+		"combinationMeta": {
+			"$ref": "../offer-nlpi-types/CombinationMetaType.json",
+			"allOf": [
+				{
+					"required": ["combinationId"]
+				}
+			]
+		},
+		"customer": {
+			"$ref": "../offer-nlpi-types/OfferCustomerType.json",
+			"allOf": [
+				{
+					"properties": {
+						"customer": {
+							"required": ["companyLegalStatus"]
+						}
+					},
+					"required": [
+						"NOGACodeMain",
+						"UVGRiskNo"
+					]
+				}
+			]
+		},
+		"coInsuredCustomer": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$ref": "../offer-nlpi-types/OfferCustomerType.json",
+				"allOf": [
+					{
+						"required": [
+							"NOGACodeMain"
+						]
+					}
+				]
+			},
+			"unevaluatedItems": false
+		},
+		"offerDeadline": {
+			"type": "string",
+			"format": "date",
+			"description": "Date of offer by which the insurer must submit the offer"
+		},
+		"offerLanguage": {
+			"$ref": "../../../Generics/v0.6.0/LanguageType.json",
+			"description": "Language in which the offer must be made out"
+		},
+		"currency": {
+			"$ref": "../../../Generics/v0.6.0/CurrencyISOCodeType.json"
+		},
+		"insuranceStartDate": {
+			"$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
+		},
+		"insuranceDurationInYears": {
+			"$ref": "../offer-nlpi-types/InsuranceDurationInYearsType.json"
+		},
+		"DSB": {
+			"$ref": "../offer-nlpi-types/offer-dsb-types/OfferRequestDSBType.json"
+		},
+		"UVGCompulsory": {
+			"$ref": "../offer-nlpi-types/offer-uvgo-types/OfferRequestUVGOType.json"
+		},
+		"UVGSupplement": {
+			"$ref": "../offer-nlpi-types/offer-uvgz-types/OfferRequestUVGZType.json"
+		},
+		"comment": {
+			"$ref": "../../../Generics/v0.6.0/RestrictedStringType.json"
+		},
+		"brokerContact": {
+			"$ref": "../../../Generics/v0.6.0/BrokerContactType.json"
+		},
+		"document": {
+			"description": "Document (minimum PDF of the quote request)",
+			"$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+		},
+		"uploadLink": {
+			"type": "string",
+			"description": "Link to platform for access by underwriters. If the process cannot be handled exclusively via SAF."
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"processIdentificationNo",
+		"timestamp",
+		"processName",
+		"subProcessName",
+		"processVersion",
+		"header",
+		"customer",
+		"offerDeadline",
+		"offerLanguage",
+		"currency",
+		"insuranceStartDate",
+		"insuranceDurationInYears",
+		"brokerContact",
+		"document"
+	],
+	"anyOf": [
+		{
+			"required": ["DSB"]
+		},
+		{
+			"required": ["UVGCompulsory"]
+		},
+		{
+			"required": ["UVGSupplement"]
+		}
+	],
+	"allOf": [
+		{
+			"if": {
+				"required": ["UVGSupplement"]
+			},
+			"then": {
+				"properties": {
+					"customer": {
+						"required": ["SUVACompany"]
+					},
+					"coInsuredCustomer": {
+						"items": {
+							"required": ["SUVACompany"]
+						}
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Daily sickness benefit insurance coverage",
+  "type": "object",
+  "properties": {
+    "DSBDaysWaitingNo": {
+      "description": "Daily sickness benefits waiting period duration in days",
+      "type": "string",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "7",
+        "14",
+        "21",
+        "30",
+        "60",
+        "90",
+        "120",
+        "180",
+        "360",
+        "365"
+      ]
+    },
+    "DSBCalculationBasis": {
+      "description": "Daily sickness benefit calculation basis",
+      "type": "string",
+      "enum": [
+        "Case",
+        "Working year",
+        "Calendar year",
+        "Cumulative"
+      ]
+    },
+    "DSBBenefitPeriod": {
+      "type": "string",
+      "description": "Duration of benefits in days",
+      "enum": [
+        "60 days within 360",
+        "365 days",
+        "730 days minus waiting period",
+        "750 days minus waiting period",
+        "730 days after expiration of waiting period",
+        "720 in 900 days",
+        "730 in 900 days",
+        "365 days within 540 days",
+        "365 days minus waiting period"
+      ]
+    },
+    "DSBBenefitAmountPercentage": {
+      "description": "Daily sickness benefit amount in percentage",
+      "type": "string",
+      "enum": [
+        "10%",
+        "15%",
+        "20%",
+        "25%",
+        "30%",
+        "35%",
+        "40%",
+        "45%",
+        "50%",
+        "55%",
+        "60%",
+        "65%",
+        "70%",
+        "75%",
+        "80%",
+        "85%",
+        "87%",
+        "90%",
+        "92%",
+        "95%",
+        "97%",
+        "100%"
+      ]
+    },
+    "DSBLegalBasis": {
+      "description": "Daily sickness benefits legal basis",
+      "type": "string",
+      "enum": [
+        "VVG",
+        "KVG"
+      ]
+    }
+  },
+  "required": [
+    "DSBDaysWaitingNo",
+    "DSBCalculationBasis",
+    "DSBBenefitPeriod",
+    "DSBLegalBasis",
+    "DSBBenefitAmountPercentage"
+  ],
+  "additionalProperties": false
+}

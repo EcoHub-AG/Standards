@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Offer NLPI feedback",
+  "type": "object",
+  "properties": {
+    "processIdentificationNo": {
+      "$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
+    },
+    "timestamp": {
+      "$ref": "../../../Generics/v0.6.0/TimestampType.json"
+    },
+    "processName": {
+      "$ref": "../offer-nlpi-types/ProcessNameConstType.json"
+    },
+    "subProcessName": {
+      "description": "Name of the subprocess",
+      "type": "string",
+      "const": "feedback"
+    },
+    "processVersion": {
+      "$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
+    },
+    "header": {
+      "$ref": "../../../Generics/v0.6.0/HeaderType.json"
+    },
+    "quotationNo": {
+      "$ref": "../../../Generics/v0.6.0/QuotationNoType.json"
+    },
+    "offerDecision": {
+      "description": "Decision whether an offer is accepted or rejected",
+      "type": "string",
+      "enum": [
+        "Offer accepted",
+        "Offer rejected"
+      ]
+    },
+    "offerAcceptance": {
+      "$ref": "../offer-nlpi-types/OfferAcceptanceType.json"
+    },
+    "offerFeedbackMessage": {
+      "$ref": "../../../Generics/v0.6.0/RestrictedStringType.json",
+      "description": "Feedback text for the offer acceptance or rejection decision"
+    },
+    "brokerContact": {
+      "$ref": "../../../Generics/v0.6.0/ContactType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "processIdentificationNo",
+    "timestamp",
+    "processName",
+    "subProcessName",
+    "processVersion",
+    "header",
+    "quotationNo",
+    "offerDecision",
+    "brokerContact"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "offerDecision": {
+            "const": "Offer accepted"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "offerAcceptance"
+        ]
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

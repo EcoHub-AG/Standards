@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "array",
+  "description": "Person mentioned by name",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "personId": {
+        "description": "ID of the insured Person",
+        "type": "string",
+        "format": "uuid",
+        "examples": [
+          "345aa049-7693-4710-89d7-e13b87ab988a"
+        ]
+      },
+      "role": {
+        "type": "string",
+        "description": "Role of the insured person",
+        "$ref": "../BusinessRelationPersonType.json"
+      },
+      "firstname": {
+        "$ref": "../../../../Generics/v0.6.0/FirstNameType.json"
+      },
+      "surname": {
+        "$ref": "../../../../Generics/v0.6.0/SurNameType.json"
+      },
+      "birthDate": {
+        "$ref": "../../../../Generics/v0.6.0/BirthDateType.json"
+      },
+      "gender": {
+        "$ref": "../../../../Generics/v0.6.0/GenderType.json"
+      },
+      "fixedPayroll": {
+        "description": "Fixed payroll UVGZ amount in CHF",
+        "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+      },
+      "degreeOfEmployment": {
+        "description": "Degree of employment in %.",
+        "type": "number"
+      },
+      "insuranceType": {
+        "description": "Insurance benefit type UVGZ",
+        "type": "string",
+        "enum": [
+          "Sum insurance",
+          "Damage insurance"
+        ]
+      },
+      "coverage": {
+        "$ref": "UVGZCoverageType.json"
+      },
+      "premiumPersonMentionedByName": {
+        "$ref": "UVGZPremiumType.json"
+      }
+    },
+    "required": [
+      "personId",
+      "role",
+      "gender",
+      "surname",
+      "firstname",
+      "birthDate",
+      "fixedPayroll",
+      "insuranceType",
+      "coverage"
+    ]
+  }
+}

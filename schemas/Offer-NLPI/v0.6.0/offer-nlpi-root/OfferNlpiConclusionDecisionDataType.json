@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Offer NLPI conclusion decision",
+  "type": "object",
+  "properties": {
+    "processIdentificationNo": {
+      "$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
+    },
+    "timestamp": {
+      "$ref": "../../../Generics/v0.6.0/TimestampType.json"
+    },
+    "processName": {
+      "$ref": "../offer-nlpi-types/ProcessNameConstType.json"
+    },
+    "subProcessName": {
+      "description": "Name of the subprocess",
+      "type": "string",
+      "const": "conclusionDecision"
+    },
+    "processVersion": {
+      "$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
+    },
+    "header": {
+      "$ref": "../../../Generics/v0.6.0/HeaderType.json"
+    },
+    "quotationNo": {
+      "description": "Offer number. If the offer conclusion is accepted, one of quotationNo and contractNo must be provided.",
+      "$ref": "../../../Generics/v0.6.0/QuotationNoType.json"
+    },
+    "contractNo": {
+      "description": "Contract number. If the offer conclusion is accepted, one of quotationNo and contractNo must be provided.",
+      "$ref": "../../../Generics/v0.6.0/QuotationNoType.json"
+    },
+    "offerConclusionDecision": {
+      "description": "Definitive decision to close the offer",
+      "type": "string",
+      "enum": [
+        "Offer conclusion accepted",
+        "Offer conclusion rejected"
+      ]
+    },
+    "offerConclusionDecisionMessage": {
+      "description": "Feedback text for the offer closure decision. Mandatory if the offer conclusion is rejected.",
+      "type": "string"
+    },
+    "insurerContact": {
+      "$ref": "../../../Generics/v0.6.0/ContactType.json"
+    },
+    "attachmentDocument": {
+      "description": "Additional documents, e.g. policy",
+      "$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "offerConclusionDecision": {
+            "const": "Offer conclusion rejected"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "offerConclusionDecisionMessage"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "offerConclusionDecision": {
+            "const": "Offer conclusion accepted"
+          }
+        }
+      },
+      "then": {
+        "anyOf": [
+          {
+            "required": [
+              "quotationNo"
+            ]
+          },
+          {
+            "required": [
+              "contractNo"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "required": [
+    "processIdentificationNo",
+    "timestamp",
+    "processName",
+    "subProcessName",
+    "processVersion",
+    "header",
+    "offerConclusionDecision",
+    "insurerContact"
+  ],
+  "unevaluatedProperties": false
+}

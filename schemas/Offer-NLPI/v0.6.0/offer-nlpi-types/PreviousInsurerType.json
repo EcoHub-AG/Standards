@@ -1,0 +1,82 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"previousInsurer": {
+			"description": "Marker to determine if a previous insurer is known",
+			"type": "boolean"
+		},
+		"previousInsurerDetails": {
+			"description": "Details of the previous insurer. AKD/MIDI, in the event of non-delivery the insurer's response will take correspondingly longer.",
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "object",
+				"properties": {
+					"insurerCode": {
+						"$ref": "../../../Generics/v0.6.0/InsurerCodeType.json"
+					},
+					"companyName": {
+						"$ref": "../../../Generics/v0.6.0/CompanyNameType.json"
+					},
+					"contract": {
+						"description": "Contract",
+						"type": "array",
+						"minItems": 1,
+						"items": {
+							"type": "object",
+							"description": "Details of a contract",
+							"properties": {
+								"contractNo": {
+									"type": "string",
+									"description": "Unique number of the corresponding contract"
+								},
+								"beginningPreInsuranceDate": {
+									"description": "Beginning of the pre-insurance contract",
+									"type": "string",
+									"format": "date"
+								},
+								"endPreInsuranceDate": {
+									"description": "Beginning of the pre-insurance contract",
+									"type": "string",
+									"format": "date"
+								},
+								"claimsExperienceDocument": {
+									"description": "Claims experience document",
+									"$ref": "../../../Generics/v0.6.0/FileType.json"
+								}
+							},
+							"required": [
+								"contractNo"
+							],
+							"additionalProperties": false
+						}
+					}
+				},
+				"required": [
+					"insurerCode",
+					"companyName",
+					"contract"
+				],
+				"additionalProperties": false
+			},
+			"unevaluatedItems": false
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"previousInsurer"
+	],
+	"if": {
+		"properties": {
+			"previousInsurer": {
+				"const": true
+			}
+		}
+	},
+	"then": {
+		"required": [
+			"previousInsurerDetails"
+		]
+	}
+}

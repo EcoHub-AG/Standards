@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Premium of the insured group of persons",
+  "type": "object",
+  "properties": {
+    "hazardClass": {
+      "description": "Hazard class",
+      "type": "string"
+    },
+    "hazardSubClass": {
+      "description": "Hazard sub class",
+      "type": "string"
+    },
+    "premiumRiskRate": {
+      "description": "Premium risk rate in ‰",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "costAdminRate": {
+      "description": "Costs admin rate in ‰",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "sharingCostRate": {
+      "description": "Sharing costs  rate in ‰",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "accidentPreventionContributionRate": {
+      "description": "Accident prevention contribution in ‰",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "finalPremiumRate": {
+      "description": "Final premium rate in ‰. Corresponds to the final premium rate / gross premium rate",
+      "type": "number",
+      "multipleOf": 0.001
+    },
+    "totalPremium": {
+      "description": "Total annual premium in CHF",
+      "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "hazardClass",
+    "hazardSubClass",
+    "premiumRiskRate",
+    "costAdminRate",
+    "sharingCostRate",
+    "accidentPreventionContributionRate",
+    "finalPremiumRate",
+    "totalPremium"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Person mentioned by name",
+  "type": "object",
+  "properties": {
+    "personId": {
+      "description": "ID of the insured Person",
+      "type": "string",
+      "format": "uuid",
+      "examples": [
+        "345aa049-7693-4710-89d7-e13b87ab988a"
+      ]
+    },
+    "role": {
+      "description": "Role of the insured person",
+      "$ref": "../BusinessRelationPersonType.json"
+    },
+    "firstname": {
+      "$ref": "../../../../Generics/v0.6.0/FirstNameType.json"
+    },
+    "surname": {
+      "$ref": "../../../../Generics/v0.6.0/SurNameType.json"
+    },
+    "birthDate": {
+      "$ref": "../../../../Generics/v0.6.0/BirthDateType.json"
+    },
+    "gender": {
+      "$ref": "../../../../Generics/v0.6.0/GenderType.json"
+    },
+    "payroll": {
+      "description": "Fixed payroll UVG amount in CHF",
+      "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+    },
+    "degreeOfEmployment": {
+      "description": "Degree of employment in %.",
+      "type": "number"
+    },
+    "insuranceType": {
+      "description": "Insurance type UVG",
+      "type": "string",
+      "enum": [
+        "Coverage according to compulsory accident insurance UVG",
+        "Coverage according to compulsory accident insurance OUFL",
+        "Coverage according to voluntary accident insurance UVG",
+        "Coverage according to voluntary accident insurance OUFL"
+      ]
+    },
+    "premiumPersonMentionedByName": {
+      "type": "object",
+      "description": "Only set for offer. Must be omitted in offer request.",
+      "properties": {
+        "hazardClass": {
+          "description": "Hazard class of the person mentioned by name",
+          "type": "string"
+        },
+        "hazardSubClass": {
+          "description": "Hazard sub class of the person mentioned by name",
+          "type": "string"
+        },
+        "finalPremiumRate": {
+          "description": "Final premium rate of the person mentioned by name in ‰. Corresponds to the net premium rate",
+          "type": "number",
+          "multipleOf": 0.001
+        },
+        "totalPremium": {
+          "description": "Annual premium of the of the person mentioned by name",
+          "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "hazardClass",
+        "hazardSubClass",
+        "finalPremiumRate",
+        "totalPremium"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "personId",
+    "role",
+    "gender",
+    "surname",
+    "firstname",
+    "birthDate",
+    "payroll",
+    "insuranceType"
+  ]
+}

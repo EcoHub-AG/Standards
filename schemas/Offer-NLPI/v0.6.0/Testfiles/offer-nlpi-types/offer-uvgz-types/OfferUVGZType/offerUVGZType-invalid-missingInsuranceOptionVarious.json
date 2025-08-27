@@ -1,0 +1,35 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "insuranceOptions": {
+    "dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity": true,
+    "startInsuranceCoverStartEmploymentContract": true,
+    "endInsuranceCoverCoorindationUVG": true,
+    "waiverBenefitGrossNegligence": true,
+    "insuranceOptionsVarious": {
+      "renunciationTerminationRightClaim": true,
+      "annualCancellation": false,
+      "typePayInstalment": "1/2 year",
+      "surplusParticipation": true,
+      "surplusParticipationPremiumRate": 5.250,
+      "surplusParticipationRate": 10.500,
+      "surplusParticipationPeriodYears": 3,
+      "additionalOptions": [
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSB",
+          "optionValue": "20000",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        },
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSBM",
+          "optionValue": "DSBM",
+          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+        }
+      ]
+    }
+  },
+  "premiumOverviewUVGSupplement": {
+    "netPremiumTotal": 2500,
+    "premiumMinimumAmount": 100,
+    "combinationDiscountIncluded": true
+  }
+}

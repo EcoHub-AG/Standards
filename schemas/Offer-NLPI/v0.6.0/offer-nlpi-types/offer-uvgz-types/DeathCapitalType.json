@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"deathCapitalUVGSalary": {
+			"description": "Death capital x times the annual salary. For personGroups, only values up to 9-fold are allowed.",
+			"$ref": "YearlySalaryMultipleType.json"
+		},
+		"deathCapitalSurplusSalary": {
+			"description": "Death capital x times the surplus annual salary. For personGroups, only values up to 9-fold are allowed.",
+			"$ref": "YearlySalaryMultipleType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"deathCapitalUVGSalary",
+		"deathCapitalSurplusSalary"
+	]
+}
