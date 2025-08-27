@@ -69,7 +69,7 @@
       "additionalProperties": false
     },
     "survivorsPartnerPension": {
-      "description": "Survivors Pension",
+      "description": "Survivors partner pension",
       "type": "object",
       "properties": {
         "survivorsPartnerPension": {
