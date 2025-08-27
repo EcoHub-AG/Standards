@@ -6,7 +6,7 @@
     "surname": "Leonie",
     "birthDate": "1996-03-14",
     "gender": "Female",
-    "fixedPayroll": 99000,
+    "payroll": 99000,
     "insuranceType": "Sum insurance",
     "coverage": {
       "DSBCoverage": {

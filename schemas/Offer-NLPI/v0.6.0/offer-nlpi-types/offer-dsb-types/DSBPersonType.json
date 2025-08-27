@@ -29,7 +29,7 @@
       "gender": {
         "$ref": "../../../../Generics/v0.6.0/GenderType.json"
       },
-      "fixedPayroll": {
+      "payroll": {
         "description": "Fixed payroll DSB amount in CHF",
         "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
       },
@@ -110,7 +110,7 @@
       "surname",
       "birthDate",
       "gender",
-      "fixedPayroll",
+      "payroll",
       "insuranceType",
       "coverage"
     ],

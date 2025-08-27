@@ -3,6 +3,8 @@
     - Change type from array to object
 - DSBPCoverageType (Changed)
     - Change type from array to object
+- DSBPersonType (Changed)
+    - renamed property "fixedPayroll" to "payroll"
 
 ### Version 0.5.1
 - CombinationMetaType (Changed)
