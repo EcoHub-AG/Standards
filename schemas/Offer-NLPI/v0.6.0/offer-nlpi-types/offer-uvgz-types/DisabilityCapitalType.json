@@ -11,11 +11,11 @@
 			"$ref": "YearlySalaryMultipleType.json"
 		},
 		"disabilityCapitalProgUVGSalary": {
-			"description": "Disability capital progressive of the UVG salary in %",
+			"description": "Disability capital progressive of the UVG salary in %. No progression corresponds to the value 100%.",
 			"$ref": "DisabilityCapitalProgressionType.json"
 		},
 		"disabilityCapitalProgSurplusSalary": {
-			"description": "Disability capital progressive of surplus salary in %",
+			"description": "Disability capital progressive of surplus salary in %. No progression corresponds to the value 100%",
 			"$ref": "DisabilityCapitalProgressionType.json"
 		}
 	},

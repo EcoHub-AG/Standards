@@ -1,4 +1,6 @@
 ### Version 0.6.0
+- DisabilityCapitalProgressionType (Changed)
+    - removed enum value 'None'
 - DSBMCoverageType (Changed)
     - Change type from array to object
 - DSBPCoverageType (Changed)
