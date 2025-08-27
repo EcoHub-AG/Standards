@@ -1,0 +1,16 @@
+{
+  "recipient": {
+    "insurer": {
+      "companyId": "CHE-112.444.553",
+      "companyName": "Test Insurer",
+      "insurerCode": "901S"
+    }
+  },
+  "sender": {
+    "broker": {
+      "brokerRegisterNo": "CHE-FINMA-F12345678",
+      "companyId": "CHE-120.330.754",
+      "companyName": "Test Broker"
+    }
+  }
+}

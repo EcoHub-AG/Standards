@@ -1,0 +1,8 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Unique company identification number (UID) for companies based in Switzerland or EU member states as specified in the UID register of the respective authority.",
+	"type": "string",
+	"maxLength": 15,
+	"pattern": "(CHE|BE|BG|DK|DE|EE|FI|FR|EL|IE|IT|HR|LV|LT|LU|MT|NL|XI|AT|PL|PT|RO|SE|SK|SI|ES|CZ|HU|CY).{2,12}",
+	"examples": ["CHE-115.517.011"]
+}

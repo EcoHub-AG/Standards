@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Contact information details",
+  "type": "object",
+  "properties": {
+    "contactSurname": {
+      "description": "Surname of the contact",
+      "type": "string"
+    },
+    "contactFirstName": {
+      "description": "First name of the contact",
+      "type": "string"
+    },
+    "contactMail": {
+      "description": "E-Mail of the contact",
+      "type": "string"
+    },
+    "contactPhone": {
+      "description": "Phonenumber of the contact",
+      "type": "string"
+    },
+    "consultantSurname": {
+      "description": "Surname of the consultant",
+      "type": "string"
+    },
+    "consultantFirstName": {
+      "description": "First name of the consultant",
+      "type": "string"
+    },
+    "consultantFINMARegisterNo": {
+      "description": "FINMA-Nr. of the consultant",
+      "$ref": "RegFINMANoType.json"
+    }
+  },
+  "required": [
+    "contactSurname",
+    "contactFirstName",
+    "contactMail",
+    "contactPhone",
+    "consultantSurname",
+    "consultantFirstName",
+    "consultantFINMARegisterNo"
+  ],
+  "additionalProperties": false
+}

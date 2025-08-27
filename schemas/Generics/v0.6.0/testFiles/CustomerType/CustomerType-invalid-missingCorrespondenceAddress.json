@@ -1,0 +1,17 @@
+{
+  "companyName": "Coiffeur Verband Schweiz",
+  "companyId": "CHE-105.841.533",
+  "companyLegalForm": "Association",
+  "companyLegalStatus": "Active",
+  "companyFoundingYear": "2024",
+  "domicilAddress": {
+    "streetName": "Zollstrasse",
+    "houseNumber": "1",
+    "addressExtension": "c/o Dachverband Kleingewerbe",
+    "postOfficeBox": "501",
+    "zip": "8000",
+    "city": "Zürich",
+    "country": "CH"
+  },
+  "isDomicilAddressCorrespondenceAddress": false
+}
