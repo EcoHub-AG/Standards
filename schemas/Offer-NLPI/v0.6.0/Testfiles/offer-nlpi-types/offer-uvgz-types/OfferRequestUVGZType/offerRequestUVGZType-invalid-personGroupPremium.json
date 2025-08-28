@@ -42,7 +42,7 @@
           "totalPremiumRate": 6.500
         },
         "survivorsPartnerPensionSalaryPremiumRateUVGSalary": 0.005,
-        "survivorsPensionSalarySurplusPremiumRate": {
+        "survivorsPartnerPensionSalarySurplusPremiumRate": {
           "totalPremiumRate": 5.000
         },
         "premiumDiffCoverage": 1000.00,

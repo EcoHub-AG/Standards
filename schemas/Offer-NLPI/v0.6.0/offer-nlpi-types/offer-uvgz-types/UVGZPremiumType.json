@@ -49,8 +49,8 @@
       "type": "number",
       "multipleOf": 0.001
     },
-    "survivorsPensionSalarySurplusPremiumRate": {
-      "description": "Survivors' pension surplus salary premium rates in ‰",
+    "survivorsPartnerPensionSalarySurplusPremiumRate": {
+      "description": "Survivors' partner pension surplus salary premium rates in ‰",
       "$ref": "UVGZPremiumRateType.json"
     },
     "premiumDiffCoverage": {
@@ -86,7 +86,7 @@
     "deathCapitalPremiumRateUVGSalary",
     "deathCapitalSurplusSalaryPremiumRate",
     "survivorsPartnerPensionSalaryPremiumRateUVGSalary",
-    "survivorsPensionSalarySurplusPremiumRate",
+    "survivorsPartnerPensionSalarySurplusPremiumRate",
     "premiumDiffCoverage",
     "UVGSalaryNetPremiumRate",
     "surplusSalaryNetPremiumRate",
