@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Contact information details",
+  "description": "The contact is the employee at the broker who is responsible for the offer request (e.g. a backoffice employee).\n\nThe consultant is the client advisor who performs a consulting activity for the client. According to the FINMA register, the consultant is subdivided into surname/first name and must always be provided with requests for quotations, including the FINMA register no. \nFINMA definition of consulting activity: Consulting activity is when insurance contracts are offered or concluded.The provision of advice to clients with the aim of concluding an insurance contract. This can be done in direct contact with clients or via an electronic platform.",
   "type": "object",
   "properties": {
     "contactSurname": {
