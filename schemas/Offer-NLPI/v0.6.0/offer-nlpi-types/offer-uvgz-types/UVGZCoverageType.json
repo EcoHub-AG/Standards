@@ -72,9 +72,9 @@
       "description": "Survivors partner pension",
       "type": "object",
       "properties": {
-        "survivorsPartnerPension": {
-          "description": "Partner's pension UVG",
-          "$ref": "PensionSalaryType.json"
+        "survivorsPartnerPensionBenefitPeriod": {
+          "description": "Benefit period survivors partner pension",
+          "$ref": "PensionBenefitPeriodType.json"
         },
         "survivorsPartnerPensionUVGSalary": {
           "description": "Partner's pension UVG salary",

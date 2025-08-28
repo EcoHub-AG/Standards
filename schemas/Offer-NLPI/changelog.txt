@@ -11,6 +11,8 @@
     - renamed property "fixedPayroll" to "payroll"
 - UVGOPersonGroupType (Changed)
     - renamed property "coverage" to "insuranceType"
+- UVGZCoverageType (Changed)
+    - renamed "survivorsPartnerPension" to "survivorsPartnerPensionBenefitPeriod" and changed the type
 - UVGZPersonType (Changed)
     - renamed property "fixedPayroll" to "payroll"
 
