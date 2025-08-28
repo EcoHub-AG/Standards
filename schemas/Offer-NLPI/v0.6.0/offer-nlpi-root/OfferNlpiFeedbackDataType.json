@@ -42,6 +42,7 @@
       "description": "Feedback text for the offer acceptance or rejection decision"
     },
     "brokerContact": {
+      "description": "The contact is the employee at the broker who is responsible for the offer request (e.g. a backoffice employee).",
       "$ref": "../../../Generics/v0.6.0/ContactType.json"
     }
   },
