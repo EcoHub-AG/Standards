@@ -43,11 +43,11 @@
         "type": "object",
         "properties": {
           "premiumOA": {
-            "description": "Premium for NBU",
+            "description": "Premium for  OA occupational accidents",
             "$ref": "UVGOPersonGroupPremiumType.json"
           },
           "premiumNOA": {
-            "description": "Premium for BU",
+            "description": "Premium for NOA non-occupational accidents",
             "$ref": "UVGOPersonGroupPremiumType.json"
           }
         },
