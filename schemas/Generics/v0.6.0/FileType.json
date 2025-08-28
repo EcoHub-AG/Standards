@@ -13,7 +13,7 @@
       "maxLength": 10485760
     },
     "fingerprint": {
-      "description": "The base64-encoded MD5 hash value of the file binary",
+      "description": "The base64-encoded binary MD5 digest of the file binary",
       "type": "string",
       "examples": ["WAHLbX5Pnc0+qYwSonSm/w=="]
     }
