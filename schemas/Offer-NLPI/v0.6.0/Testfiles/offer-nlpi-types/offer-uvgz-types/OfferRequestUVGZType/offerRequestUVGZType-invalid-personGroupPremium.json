@@ -32,6 +32,9 @@
         "disabilityPensionSalarySurplusPremiumRate": {
           "totalPremiumRate": 4.500
         },
+        "leftbehindPensionSalarySurplusPremiumRate": {
+          "totalPremiumRate": 4.500
+        },
         "deathCapitalPremiumRateUVGSalary": {
           "totalPremiumRate": 7.000
         },

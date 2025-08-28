@@ -32,6 +32,10 @@
       "description": "Disability pension salary surplus premium rates in ‰",
       "$ref": "UVGZPremiumRateType.json"
     },
+    "leftbehindPensionSalarySurplusPremiumRate": {
+      "description": "Left behind pension salary surplus premium rates in ‰",
+      "$ref": "UVGZPremiumRateType.json"
+    },
     "deathCapitalPremiumRateUVGSalary": {
       "description": "Lump-sum death benefit premium rates in ‰ (UVG Salary)",
       "$ref": "UVGZPremiumRateType.json"
@@ -78,6 +82,7 @@
     "disabilityCapitalPremiumRateUVGSalary",
     "disabilityCapitalSurplusSalaryPremiumRate",
     "disabilityPensionSalarySurplusPremiumRate",
+    "leftbehindPensionSalarySurplusPremiumRate",
     "deathCapitalPremiumRateUVGSalary",
     "deathCapitalSurplusSalaryPremiumRate",
     "survivorsPensionSalaryPremiumRateUVGSalary",

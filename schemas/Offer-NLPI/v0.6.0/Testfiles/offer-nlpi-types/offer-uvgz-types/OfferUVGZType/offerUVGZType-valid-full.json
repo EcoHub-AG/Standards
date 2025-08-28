@@ -94,6 +94,11 @@
           "premiumRateOA": 2.100,
           "premiumRateNOA": 1.600
         },
+        "leftbehindPensionSalarySurplusPremiumRate": {
+          "totalPremiumRate": 4.500,
+          "premiumRateOA": 2.100,
+          "premiumRateNOA": 1.600
+        },
         "deathCapitalPremiumRateUVGSalary": {
           "totalPremiumRate": 7.000,
           "premiumRateOA": 3.000,
@@ -209,6 +214,11 @@
           "premiumRateNOA": 1.800
         },
         "disabilityPensionSalarySurplusPremiumRate": {
+          "totalPremiumRate": 4.500,
+          "premiumRateOA": 2.100,
+          "premiumRateNOA": 1.600
+        },
+        "leftbehindPensionSalarySurplusPremiumRate": {
           "totalPremiumRate": 4.500,
           "premiumRateOA": 2.100,
           "premiumRateNOA": 1.600

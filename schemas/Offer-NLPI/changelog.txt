@@ -25,6 +25,7 @@
     - renamed property "fixedPayroll" to "payroll"
 - UVGZPremiumType (Changed)
     - Removed property "disabilityPensionSalarySurplusPremiumRate"
+    - Added property "leftbehindPensionSalarySurplusPremiumRate"
 
 ### Version 0.5.1
 - CombinationMetaType (Changed)
