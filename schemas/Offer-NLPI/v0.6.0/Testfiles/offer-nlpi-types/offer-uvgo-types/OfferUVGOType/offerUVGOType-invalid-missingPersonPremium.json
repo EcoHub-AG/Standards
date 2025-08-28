@@ -20,7 +20,7 @@
   },
   "premiumOverviewUVGCompulsory": {
     "totalPremiumOAAndNOA": 5000,
-    "netPremiumUVGTotal": 4500,
+    "netPremiumTotal": 4500,
     "premiumMinimumAmountOA": 200,
     "premiumMinimumAmountNOA": 150
   }

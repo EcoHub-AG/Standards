@@ -13,6 +13,7 @@
     - Renamed "personGroup" to "personGroups"
 - OfferUVGOType (Changed)
     - Renamed "personGroup" to "personGroups"
+    - Renamed "netPremiumUVGTotal" to "netPremiumTotal"
 - UVGOPersonGroupType (Changed)
     - renamed property "coverage" to "insuranceType"
 - UVGOPersonPremiumType (Added)

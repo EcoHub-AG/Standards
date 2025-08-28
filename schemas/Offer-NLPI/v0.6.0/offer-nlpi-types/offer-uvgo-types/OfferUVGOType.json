@@ -53,7 +53,7 @@
           "description": "Total annual premium OA/NOA in CHF",
           "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
         },
-        "netPremiumUVGTotal": {
+        "netPremiumTotal": {
           "description": "The total net premium UVG corresponds to the amount of the net premium total offered for UVG coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
           "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
         },
@@ -77,7 +77,7 @@
       },
       "required": [
         "totalPremiumOAAndNOA",
-        "netPremiumUVGTotal",
+        "netPremiumTotal",
         "premiumMinimumAmountOA",
         "premiumMinimumAmountNOA"
       ]

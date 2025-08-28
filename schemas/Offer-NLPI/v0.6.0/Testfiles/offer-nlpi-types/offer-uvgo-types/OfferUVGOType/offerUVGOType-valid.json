@@ -68,7 +68,7 @@
   "premiumOverviewUVGCompulsory": {
     "tariffYear": "2025",
     "totalPremiumOAAndNOA": 5000,
-    "netPremiumUVGTotal": 4500,
+    "netPremiumTotal": 4500,
     "instalmentSurchargeAmountUVGCompulsory": 100,
     "instalmentSurchargePercentageUVGCompulsory": 0.03,
     "premiumMinimumAmountOA": 200,
