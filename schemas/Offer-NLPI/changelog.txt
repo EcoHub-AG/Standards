@@ -23,6 +23,8 @@
     - renamed "survivorsPartnerPension" to "survivorsPartnerPensionBenefitPeriod" and changed the type
 - UVGZPersonType (Changed)
     - renamed property "fixedPayroll" to "payroll"
+- UVGZPremiumType (Changed)
+    - Removed property "disabilityPensionSalarySurplusPremiumRate"
 
 ### Version 0.5.1
 - CombinationMetaType (Changed)

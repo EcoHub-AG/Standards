@@ -28,11 +28,6 @@
       "description": "Disability capital lump sum surplus salary premium rates in ‰",
       "$ref": "UVGZPremiumRateType.json"
     },
-    "disabilityPensionPremiumRateUVGSalary": {
-      "description": "Disability pension premium rate in ‰ (UVG Salary)",
-      "type": "number",
-      "multipleOf": 0.001
-    },
     "disabilityPensionSalarySurplusPremiumRate": {
       "description": "Disability pension salary surplus premium rates in ‰",
       "$ref": "UVGZPremiumRateType.json"
@@ -82,7 +77,6 @@
     "dailyHospitalAllowancePremiumRate",
     "disabilityCapitalPremiumRateUVGSalary",
     "disabilityCapitalSurplusSalaryPremiumRate",
-    "disabilityPensionPremiumRateUVGSalary",
     "disabilityPensionSalarySurplusPremiumRate",
     "deathCapitalPremiumRateUVGSalary",
     "deathCapitalSurplusSalaryPremiumRate",

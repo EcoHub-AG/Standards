@@ -89,7 +89,6 @@
           "premiumRateOA": 2.200,
           "premiumRateNOA": 1.800
         },
-        "disabilityPensionPremiumRateUVGSalary": 0.004,
         "disabilityPensionSalarySurplusPremiumRate": {
           "totalPremiumRate": 4.500,
           "premiumRateOA": 2.100,
@@ -209,7 +208,6 @@
           "premiumRateOA": 2.200,
           "premiumRateNOA": 1.800
         },
-        "disabilityPensionPremiumRateUVGSalary": 0.004,
         "disabilityPensionSalarySurplusPremiumRate": {
           "totalPremiumRate": 4.500,
           "premiumRateOA": 2.100,
