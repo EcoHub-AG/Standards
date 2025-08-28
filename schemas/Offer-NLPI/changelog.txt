@@ -26,6 +26,7 @@
 - UVGZPremiumType (Changed)
     - Removed property "disabilityPensionSalarySurplusPremiumRate"
     - Added property "leftbehindPensionSalarySurplusPremiumRate"
+    - Renamed "survivorsPensionSalaryPremiumRateUVGSalary" to "survivorsPartnerPensionSalaryPremiumRateUVGSalary"
 
 ### Version 0.5.1
 - CombinationMetaType (Changed)

@@ -44,8 +44,8 @@
       "description": "Lump-sum death benefit surplus salary premium rates in ‰",
       "$ref": "UVGZPremiumRateType.json"
     },
-    "survivorsPensionSalaryPremiumRateUVGSalary": {
-      "description": "Survivors' pension premium rate in ‰ (UVG salary)",
+    "survivorsPartnerPensionSalaryPremiumRateUVGSalary": {
+      "description": "Survivors' partner pension premium rate in ‰ (UVG salary)",
       "type": "number",
       "multipleOf": 0.001
     },
@@ -85,7 +85,7 @@
     "leftbehindPensionSalarySurplusPremiumRate",
     "deathCapitalPremiumRateUVGSalary",
     "deathCapitalSurplusSalaryPremiumRate",
-    "survivorsPensionSalaryPremiumRateUVGSalary",
+    "survivorsPartnerPensionSalaryPremiumRateUVGSalary",
     "survivorsPensionSalarySurplusPremiumRate",
     "premiumDiffCoverage",
     "UVGSalaryNetPremiumRate",

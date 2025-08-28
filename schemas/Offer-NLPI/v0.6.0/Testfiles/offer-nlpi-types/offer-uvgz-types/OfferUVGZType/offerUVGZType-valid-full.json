@@ -109,7 +109,7 @@
           "premiumRateOA": 2.800,
           "premiumRateNOA": 2.200
         },
-        "survivorsPensionSalaryPremiumRateUVGSalary": 0.005,
+        "survivorsPartnerPensionSalaryPremiumRateUVGSalary": 0.005,
         "survivorsPensionSalarySurplusPremiumRate": {
           "totalPremiumRate": 5.000,
           "premiumRateOA": 2.400,
@@ -233,7 +233,7 @@
           "premiumRateOA": 2.800,
           "premiumRateNOA": 2.200
         },
-        "survivorsPensionSalaryPremiumRateUVGSalary": 0.005,
+        "survivorsPartnerPensionSalaryPremiumRateUVGSalary": 0.005,
         "survivorsPensionSalarySurplusPremiumRate": {
           "totalPremiumRate": 5.000,
           "premiumRateOA": 2.400,
