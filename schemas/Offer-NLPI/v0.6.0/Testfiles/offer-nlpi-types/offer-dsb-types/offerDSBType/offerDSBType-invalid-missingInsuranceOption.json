@@ -8,7 +8,7 @@
     "insuranceChildFamilyAllowances": false,
     "insuranceWageIncreaseIncapacity": true,
     "subsequentPaymentsAfterDeath": false,
-    "renunciationBenefitReductionsNegligence": true,
+    "waiverBenefitGrossNegligence": true,
     "unpaidLeaveInsurance": true,
     "renunciationCreditingWaitingPeriod": false,
     "subsequentBenefitsContractTermination": true,

@@ -1,6 +1,8 @@
 ### Version 0.6.0
 - DisabilityCapitalProgressionType (Changed)
     - removed enum value 'None'
+- DSBInsuranceOptionsType (Changed)
+    - renamed "renunciationBenefitReductionsNegligence" to "waiverBenefitGrossNegligence"
 - DSBMCoverageType (Changed)
     - Change type from array to object
 - DSBPCoverageType (Changed)

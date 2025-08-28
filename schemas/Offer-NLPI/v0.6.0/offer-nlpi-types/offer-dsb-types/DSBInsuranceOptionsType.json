@@ -34,7 +34,7 @@
 			"description": "Supplementary salary in the event of death in accordance with Art. 338 OR. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
-		"renunciationBenefitReductionsNegligence": {
+		"waiverBenefitGrossNegligence": {
 			"description": "Waiver of benefit reductions in the event of gross negligence. Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
