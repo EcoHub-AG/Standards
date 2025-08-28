@@ -15,6 +15,9 @@
     - Renamed "personGroup" to "personGroups"
 - UVGOPersonGroupType (Changed)
     - renamed property "coverage" to "insuranceType"
+- UVGOPersonPremiumType (Added)
+- UVGOPersonType (Changed)
+    - splitted properties of "premiumPersonMentionedByName" into premiumOA and premiumNOA
 - UVGZCoverageType (Changed)
     - renamed "survivorsPartnerPension" to "survivorsPartnerPensionBenefitPeriod" and changed the type
 - UVGZPersonType (Changed)

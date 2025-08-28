@@ -12,10 +12,18 @@
       "degreeOfEmployment": 90,
       "insuranceType": "Coverage according to compulsory accident insurance UVG",
       "premiumPersonMentionedByName": {
-        "hazardClass": "B2",
-        "hazardSubClass": "C3",
-        "finalPremiumRate": 2.750,
-        "totalPremium": 3300.00
+        "premiumOA": {
+          "hazardClass": "B2",
+          "hazardSubClass": "C3",
+          "finalPremiumRate": 2.750,
+          "totalPremium": 3300.00
+        },
+        "premiumNOA": {
+          "hazardClass": "B2",
+          "hazardSubClass": "C3",
+          "finalPremiumRate": 2.750,
+          "totalPremium": 3300.00
+        }
       }
     }
   ],
