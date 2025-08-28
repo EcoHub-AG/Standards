@@ -86,7 +86,7 @@
         }
       },
       "required": [
-        "survivorsPartnerPension",
+        "survivorsPartnerPensionBenefitPeriod",
         "survivorsPartnerPensionUVGSalary",
         "survivorsPartnerPensionSurplusSalary"
       ],
