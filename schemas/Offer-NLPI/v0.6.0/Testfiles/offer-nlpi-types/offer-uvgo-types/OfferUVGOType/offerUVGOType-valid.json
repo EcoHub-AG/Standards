@@ -1,6 +1,6 @@
 {
   "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
-  "personGroup": [
+  "personGroups": [
     {
       "personGroupId": "550e8400-e29b-41d4-a716-446655440000",
       "personGroupDescription": "Group 1",

@@ -9,6 +9,10 @@
     - Change type from array to object
 - DSBPersonType (Changed)
     - renamed property "fixedPayroll" to "payroll"
+- OfferRequestUVGOType (Changed)
+    - Renamed "personGroup" to "personGroups"
+- OfferUVGOType (Changed)
+    - Renamed "personGroup" to "personGroups"
 - UVGOPersonGroupType (Changed)
     - renamed property "coverage" to "insuranceType"
 - UVGZCoverageType (Changed)

@@ -6,7 +6,7 @@
     "riskCharacteristic": {
       "$ref": "../RiskCharacteristicType.json"
     },
-    "personGroup": {
+    "personGroups": {
       "$ref": "UVGOPersonGroupType.json",
       "allOf": [
         {
