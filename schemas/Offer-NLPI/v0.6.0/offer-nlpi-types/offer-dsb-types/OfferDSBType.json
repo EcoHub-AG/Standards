@@ -64,8 +64,10 @@
           "if": {
             "properties": {
               "insuranceOptionsVarious": {
-                "surplusParticipation": {
-                  "const": true
+                "properties": {
+                  "surplusParticipation": {
+                    "const": true
+                  }
                 }
               }
             }
