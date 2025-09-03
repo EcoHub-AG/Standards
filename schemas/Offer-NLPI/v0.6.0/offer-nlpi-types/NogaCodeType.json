@@ -3,7 +3,7 @@
 	"type": "object",
 	"properties": {
 		"NOGACode": {
-			"description": "6-digit NOGA code, without preceding letters",
+			"description": "6-digit NOGA code, without preceding letters. Can either be a code from the 2008 or 2025 edition of the list.",
 			"type": "string",
 			"minLength": 6,
 			"maxLength": 6
