@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "string",
+  "enum": [
+    "Not insured",
+    "Analog UVG",
+    "Analog OUFL"
+  ]
+}

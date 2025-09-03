@@ -14,6 +14,7 @@
 - OfferUVGOType (Changed)
     - Renamed "personGroup" to "personGroups"
     - Renamed "netPremiumUVGTotal" to "netPremiumTotal"
+- OptionalPensionSalaryType (Added)
 - UVGOPersonGroupType (Changed)
     - renamed property "coverage" to "insuranceType"
 - UVGOPersonPremiumType (Added)
@@ -21,6 +22,7 @@
     - splitted properties of "premiumPersonMentionedByName" into premiumOA and premiumNOA
 - UVGZCoverageType (Changed)
     - renamed "survivorsPartnerPension" to "survivorsPartnerPensionBenefitPeriod" and changed the type
+    - changed type of "survivorsPartnerPensionUVGSalary" to "OptionalPensionSalaryType"
 - UVGZPersonType (Changed)
     - renamed property "fixedPayroll" to "payroll"
 - UVGZPremiumType (Changed)
