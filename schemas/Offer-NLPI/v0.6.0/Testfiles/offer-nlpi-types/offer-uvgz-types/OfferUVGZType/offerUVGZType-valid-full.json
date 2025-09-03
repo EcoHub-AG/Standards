@@ -59,7 +59,7 @@
         "survivorsPartnerPension": {
           "survivorsPartnerPensionBenefitPeriod": "Until reference age",
           "survivorsPartnerPensionUVGSalary": "Analog UVG",
-          "survivorsPartnerPensionSurplusSalary": "Until reference age"
+          "survivorsPartnerPensionSurplusSalary": "Analog UVG"
         }
       },
       "premiumPersonGroup": {
@@ -183,7 +183,7 @@
         "survivorsPartnerPension": {
           "survivorsPartnerPensionBenefitPeriod": "Until reference age",
           "survivorsPartnerPensionUVGSalary": "Analog UVG",
-          "survivorsPartnerPensionSurplusSalary": "Until reference age"
+          "survivorsPartnerPensionSurplusSalary": "Analog UVG"
         }
       },
       "premiumPersonMentionedByName": {

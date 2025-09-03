@@ -50,7 +50,7 @@
         "survivorsPartnerPension": {
           "survivorsPartnerPensionBenefitPeriod": "Until reference age",
           "survivorsPartnerPensionUVGSalary": "Analog UVG",
-          "survivorsPartnerPensionSurplusSalary": "Until reference age"
+          "survivorsPartnerPensionSurplusSalary": "Analog UVG"
         }
       }
     }
@@ -107,7 +107,7 @@
         "survivorsPartnerPension": {
           "survivorsPartnerPensionBenefitPeriod": "Until reference age",
           "survivorsPartnerPensionUVGSalary": "Analog UVG",
-          "survivorsPartnerPensionSurplusSalary": "Until reference age"
+          "survivorsPartnerPensionSurplusSalary": "Analog UVG"
         }
       }
     }

@@ -81,8 +81,8 @@
           "$ref": "OptionalPensionSalaryType.json"
         },
         "survivorsPartnerPensionSurplusSalary": {
-          "description": "Partner's pension surplus salary",
-          "$ref": "PensionBenefitPeriodType.json"
+          "description": "Survivors partner's pension of the UVG surplus salary",
+          "$ref": "OptionalPensionSalaryType.json"
         }
       },
       "required": [
