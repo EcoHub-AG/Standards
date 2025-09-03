@@ -1,6 +1,7 @@
 ### Version 0.6.0
 - AdditionalOptionsType (Changed)
     - removed property "optionDescription"
+    - property "optionValue" is now optional
 - TimestampType (Changed)
     - Enhanced description: Timestamp must always include the timezone
 
