@@ -10,7 +10,7 @@
 			"description": "Start of insurance cover: Coordination with the UVG (start of employment contract). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},
-		"endInsuranceCoverCoorindationUVG": {
+		"endInsuranceCoverCoordinationUVG": {
 			"description": "End of insurance cover: Coordination with the UVG (31st day). Must be specified (i.e. mandatory) in offer.",
 			"type": "boolean"
 		},

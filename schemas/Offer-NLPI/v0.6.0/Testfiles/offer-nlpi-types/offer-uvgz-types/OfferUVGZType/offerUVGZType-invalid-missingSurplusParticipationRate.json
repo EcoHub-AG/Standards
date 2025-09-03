@@ -92,7 +92,7 @@
   "insuranceOptions": {
     "dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity": true,
     "startInsuranceCoverStartEmploymentContract": true,
-    "endInsuranceCoverCoorindationUVG": true,
+    "endInsuranceCoverCoordinationUVG": true,
     "waiverBenefitGrossNegligence": true,
     "insuranceOptionsVarious": {
       "premiumRateGuaranty": true,

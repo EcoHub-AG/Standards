@@ -24,6 +24,8 @@
     - renamed "survivorsPartnerPension" to "survivorsPartnerPensionBenefitPeriod" and changed the type
     - changed type of "survivorsPartnerPensionUVGSalary" to "OptionalPensionSalaryType"
     - changed type of "survivorsPartnerPensionSurplusSalary" to "OptionalPensionSalaryType"
+- UVGZInsuranceOptionsType (Changed)
+    - renamed property "endInsuranceCoverCoorindationUVG" to "endInsuranceCoverCoordinationUVG"
 - UVGZPersonType (Changed)
     - renamed property "fixedPayroll" to "payroll"
 - UVGZPremiumType (Changed)

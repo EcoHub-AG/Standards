@@ -47,7 +47,7 @@
           "required": [
             "dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity",
             "startInsuranceCoverStartEmploymentContract",
-            "endInsuranceCoverCoorindationUVG",
+            "endInsuranceCoverCoordinationUVG",
             "waiverBenefitGrossNegligence"
           ]
         },
