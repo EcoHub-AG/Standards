@@ -16,13 +16,11 @@
       "additionalOptions": [
         {
           "optionName": "Addtitional Insurance Option Bonus DSB",
-          "optionValue": "20000",
-          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+          "optionValue": "20000"
         },
         {
           "optionName": "Addtitional Insurance Option Bonus DSBM",
-          "optionValue": "DSBM",
-          "optionDescription": "Bonus amount for no claims in 2 years for DSB"
+          "optionValue": "DSBM"
         }
       ]
     }

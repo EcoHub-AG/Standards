@@ -13,17 +13,12 @@
 			"optionValue": {
 				"description": "Option value",
 				"type": "string"
-			},
-			"optionDescription": {
-				"description": "Option description",
-				"type": "string"
 			}
 		},
 		"additionalProperties": false,
 		"required": [
 			"optionName",
-			"optionValue",
-			"optionDescription"
+			"optionValue"
 		]
 	}
 }
