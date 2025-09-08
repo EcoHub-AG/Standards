@@ -1,7 +1,8 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"type": "object",
-	"description": "Schema for a request for an offer in the Offer NLPI process",
+	"description": "Schema for a request for an offer in the Offer NLPI process. This schema is publicly accessible for informational purposes only. Usage requires prior authorization from EcoHub AG.",
+	"x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
 	"properties": {
 		"processIdentificationNo": {
 			"$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
