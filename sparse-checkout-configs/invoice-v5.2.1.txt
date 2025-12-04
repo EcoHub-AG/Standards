@@ -1,0 +1,5 @@
+schemas/legacy/5.2.1/billing*.xsd
+schemas/legacy/5.2.1/premiumReminder*.xsd
+schemas/legacy/5.2.1/businessFeedback*.xsd
+schemas/legacy/5.2.1/technicalError*.xsd
+schemas/legacy/5.2.1/globals*.xsd
