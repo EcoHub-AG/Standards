@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<commission xmlns="http://www.IGB2B.ch/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.IGB2B.ch/XMLSchema commission_V5.2.1.xsd">
+	<header>
+		<identificationNo>11F62972-9812-451C-98E2-D2E582C30492</identificationNo>
+		<dateTimeCreation>2021-04-11T05:55:50.490</dateTimeCreation>
+		<insurer>
+			<insurerCode>00S</insurerCode>
+			<insurerName>Testversicherung</insurerName>
+			<insurerAddress>
+				<street>Teststrasse 1</street>
+				<zip>8050</zip>
+				<city>Zürich</city>
+				<country>CH</country>
+			</insurerAddress>
+			<insurerEmail>info@testversicherung.ch</insurerEmail>
+			<insurerURL>http://www.testversicherung.ch</insurerURL>
+		</insurer>
+		<broker>
+			<brokerRegisterNo>CHE-FINMA-F12345678</brokerRegisterNo>
+			<brokerName>Testbroker AG</brokerName>
+			<brokerAddress>
+				<street>Teststrasse 20</street>
+				<zip>6000</zip>
+				<city>Luzern</city>
+				<country>CH</country>
+			</brokerAddress>
+			<brokerEmail>info@testbroker.ch</brokerEmail>
+		</broker>
+		<typeRec>003</typeRec>
+		<subTypeRec>000</subTypeRec>
+		<versionRec>5.2.1</versionRec>
+		<contentRec>01</contentRec>
+	</header>
+	<exchangeDateFrom>2020-12-01</exchangeDateFrom>
+	<exchangeDateTo>2020-12-31</exchangeDateTo>
+	<contractC contractNo="111222333">
+		<brokerCodeIns>1562</brokerCodeIns>
+		<agency>35</agency>
+		<invoiceNo>19827735</invoiceNo>
+		<invoiceDate>2020-11-09</invoiceDate>
+		<commStatement>
+			<commStatementList>
+				<commStatementTotal>
+					<datePeriodPremFrom>2021-01-01</datePeriodPremFrom>
+					<datePeriodPremTo>2021-12-31</datePeriodPremTo>
+					<typeAccountSettlement>04</typeAccountSettlement>
+					<typePayInstalment>01</typePayInstalment>
+					<lobIG>11000</lobIG>
+					<lobINS>Versicherungsprodukt mixed</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>2440.70</premiumComm>
+					<typeComm>01</typeComm>
+					<amountComm>277.60</amountComm>
+				</commStatementTotal>
+				<commStatementDetails>
+					<datePeriodPremFrom>2021-01-01</datePeriodPremFrom>
+					<datePeriodPremTo>2021-12-31</datePeriodPremTo>
+					<typeAccountSettlement>04</typeAccountSettlement>
+					<typePayInstalment>01</typePayInstalment>
+					<lobIG>11100</lobIG>
+					<lobINS>Versicherungsprodukt A</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>531.80</premiumComm>
+					<typeComm>01</typeComm>
+					<commissionRate>4.000</commissionRate>
+					<amountComm>21.30</amountComm>
+				</commStatementDetails>
+				<commStatementDetails>
+					<datePeriodPremFrom>2021-01-01</datePeriodPremFrom>
+					<datePeriodPremTo>2021-12-31</datePeriodPremTo>
+					<typeAccountSettlement>04</typeAccountSettlement>
+					<typePayInstalment>01</typePayInstalment>
+					<lobIG>11210</lobIG>
+					<lobINS>Versicherungsprodukt B</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>821.50</premiumComm>
+					<typeComm>01</typeComm>
+					<commissionRate>15.000</commissionRate>
+					<amountComm>123.20</amountComm>
+				</commStatementDetails>
+				<commStatementDetails>
+					<datePeriodPremFrom>2021-01-01</datePeriodPremFrom>
+					<datePeriodPremTo>2021-12-31</datePeriodPremTo>
+					<typeAccountSettlement>04</typeAccountSettlement>
+					<typePayInstalment>01</typePayInstalment>
+					<lobIG>11220</lobIG>
+					<lobINS>Versicherungsprodukt C</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>1000.90</premiumComm>
+					<typeComm>01</typeComm>
+					<commissionRate>12.000</commissionRate>
+					<amountComm>120.10</amountComm>
+				</commStatementDetails>
+				<commStatementDetails>
+					<datePeriodPremFrom>2021-01-01</datePeriodPremFrom>
+					<datePeriodPremTo>2021-12-31</datePeriodPremTo>
+					<typeAccountSettlement>04</typeAccountSettlement>
+					<typePayInstalment>01</typePayInstalment>
+					<lobIG>11300</lobIG>
+					<lobINS>Versicherungsprodukt D</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>86.50</premiumComm>
+					<typeComm>01</typeComm>
+					<commissionRate>15.000</commissionRate>
+					<amountComm>13.00</amountComm>
+				</commStatementDetails>
+			</commStatementList>
+		</commStatement>
+		<ICBusiness>
+			<ICBusinessName>BusinessClient AG</ICBusinessName>
+			<ICBusinessLocality>
+				<street>Hauptstrasse 1</street>
+				<zip>8000</zip>
+				<city>Zuerich</city>
+				<country>CH</country>
+			</ICBusinessLocality>
+		</ICBusiness>
+	</contractC>
+	<contractC contractNo="15796284">
+		<brokerCodeIns>1333</brokerCodeIns>
+		<agency>75</agency>
+		<invoiceNo>1678546885</invoiceNo>
+		<invoiceDate>2020-11-09</invoiceDate>
+		<commStatement>
+			<commStatementTotalOnly>
+				<datePeriodPremFrom>2021-01-01</datePeriodPremFrom>
+				<datePeriodPremTo>2021-06-30</datePeriodPremTo>
+				<typeAccountSettlement>04</typeAccountSettlement>
+				<typePayInstalment>02</typePayInstalment>
+				<lobIG>42000</lobIG>
+				<lobINS>Versicherungsprodukt F</lobINS>
+				<currency>CHF</currency>
+				<premiumComm>2743.40</premiumComm>
+				<typeComm>01</typeComm>
+				<commissionRate>7.500</commissionRate>
+				<amountComm>205.80</amountComm>
+			</commStatementTotalOnly>
+		</commStatement>
+		<ICBusiness>
+			<ICBusinessName>TestClient AG</ICBusinessName>
+			<ICBusinessLocality>
+				<street>Hauptstrasse 1</street>
+				<zip>6000</zip>
+				<city>Luzern</city>
+				<country>CH</country>
+			</ICBusinessLocality>
+		</ICBusiness>
+	</contractC>
+	<commissionTotal>483.40</commissionTotal>
+</commission>

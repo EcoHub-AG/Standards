@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commission xmlns="http://www.IGB2B.ch/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.IGB2B.ch/XMLSchema commission_V5.4.1.xsd">
+	<header>
+		<identificationNo>00000000-0000-1000-8000-000000000000</identificationNo>
+		<dateTimeCreation>2001-12-17T09:30:47Z</dateTimeCreation>
+		<sender>
+			<insurer>
+				<insurerCode>SZ999</insurerCode>
+				<companyId>CHE-112.444.553</companyId>
+				<companyName>Test Insurer</companyName>
+			</insurer>
+		</sender>
+		<recipient>
+			<broker>
+				<brokerRegisterNo>CHE-FINMA-F12345678</brokerRegisterNo>
+				<companyId>CHE-120.330.754</companyId>
+				<companyName>Test Broker</companyName>
+			</broker>
+		</recipient>
+		<typeRec>003</typeRec>
+		<subTypeRec>001</subTypeRec>
+		<versionRec>5.4.1</versionRec>
+	</header>
+	<exchangeDateFrom>2021-11-01</exchangeDateFrom>
+	<exchangeDateTo>2021-11-30</exchangeDateTo>
+	<contract contractNo="456824385">
+		<contractNoReplaced>9958462</contractNoReplaced>
+		<frameworkContractNo>100289</frameworkContractNo>
+		<brokerCodeIns>562</brokerCodeIns>
+		<agency>1002</agency>
+		<invoiceNo>600597821345</invoiceNo>
+		<invoiceDate>2021-11-15</invoiceDate>
+		<commStatement>
+			<commStatementTotalOnly>
+				<premiumPeriodFromDate>2020-11-01</premiumPeriodFromDate>
+				<premiumPeriodToDate>2021-10-31</premiumPeriodToDate>
+				<typeAccountSettlement>01</typeAccountSettlement>
+				<typePayInstalment>03</typePayInstalment>
+				<lobIG>11500</lobIG>
+				<lobINS>MF Flotte</lobINS>
+				<currency>CHF</currency>
+				<premiumComm>25000.00</premiumComm>
+				<typeComm>01</typeComm>
+				<commissionRate>001.500</commissionRate>
+				<commissionFactor>000.000</commissionFactor>
+				<commissionAmount>375.00</commissionAmount>
+			</commStatementTotalOnly>
+		</commStatement>
+		<ICBusiness>
+		<companyName>Test AG</companyName>
+		<companyId>CHE-100.000.000</companyId>
+			<locality>
+				<street>Teststrasse 12</street>
+				<addressExtension>001</addressExtension>
+				<postOfficeBox>176</postOfficeBox>
+				<zip>8001</zip>
+				<city>Zürich</city>
+				<country>CH</country>
+			</locality>
+		</ICBusiness>
+	</contract>
+	<contract contractNo="58753642">
+		<contractNoReplaced>45562886</contractNoReplaced>
+		<frameworkContractNo>4965</frameworkContractNo>
+		<brokerCodeIns>562</brokerCodeIns>
+		<agency>1002</agency>
+		<invoiceNo>5865784142</invoiceNo>
+		<invoiceDate>2021-11-17</invoiceDate>
+		<commStatement>
+			<commStatementList>
+				<commStatementTotal>
+					<premiumPeriodFromDate>2020-11-01</premiumPeriodFromDate>
+					<premiumPeriodToDate>2020-11-01</premiumPeriodToDate>
+					<typeAccountSettlement>01</typeAccountSettlement>
+					<typePayInstalment>01</typePayInstalment>
+					<lobIG>11400</lobIG>
+					<lobINS>MF privat</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>1500.00</premiumComm>
+					<typeComm>01</typeComm>
+					<commissionRate>004.167</commissionRate>
+					<commissionFactor>000.000</commissionFactor>
+					<commissionAmount>62.50</commissionAmount>
+				</commStatementTotal>
+				<commStatementDetail>
+					<premiumPeriodFromDate>2020-11-01</premiumPeriodFromDate>
+					<premiumPeriodToDate>2020-11-01</premiumPeriodToDate>
+					<typeAccountSettlement>01</typeAccountSettlement>
+					<typePayInstalment>04</typePayInstalment>
+					<lobIG>11422</lobIG>
+					<lobINS>MF privat Vollkasko</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>1000.00</premiumComm>
+					<typeComm>01</typeComm>
+					<commissionRate>005.000</commissionRate>
+					<commissionFactor>000.000</commissionFactor>
+					<commissionAmount>50.00</commissionAmount>
+				</commStatementDetail>
+				<commStatementDetail>
+					<premiumPeriodFromDate>2020-11-01</premiumPeriodFromDate>
+					<premiumPeriodToDate>2020-11-01</premiumPeriodToDate>
+					<typeAccountSettlement>01</typeAccountSettlement>
+					<typePayInstalment>01</typePayInstalment>
+					<lobIG>11410</lobIG>
+					<lobINS>MF privat Haftpflicht</lobINS>
+					<currency>CHF</currency>
+					<premiumComm>500.00</premiumComm>
+					<typeComm>01</typeComm>
+					<commissionRate>002.500</commissionRate>
+					<commissionFactor>000.000</commissionFactor>
+					<commissionAmount>12.50</commissionAmount>
+				</commStatementDetail>
+			</commStatementList>
+		</commStatement>
+		<ICPrivatePerson>
+			<firstname>Antje</firstname>
+			<surname>Müller</surname>
+			<locality>
+				<street>Gartenstrasse 3</street>
+				<addressExtension>c/o Burgener</addressExtension>
+				<postOfficeBox>56</postOfficeBox>
+				<zip>8000</zip>
+				<city>Zürich</city>
+				<country>CH</country>
+			</locality>
+		</ICPrivatePerson>
+	</contract>
+	<commissionTotal>437.50</commissionTotal>
+	<attachment>
+		<attachment>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhelugi</attachment>
+		<mime-type>application/xml</mime-type>
+		<filename>!</filename>
+	</attachment>
+</commission>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<businessFeedback xmlns="http://www.IGB2B.ch/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.IGB2B.ch/XMLSchema businessFeedback_V5.2.1.xsd">
+	<header>
+		<identificationNo>00000000-0000-1000-8000-000000BF0001</identificationNo>
+		<dateTimeCreation>2001-12-17T09:30:47Z</dateTimeCreation>
+		<insurer>
+			<insurerCode>SZ999</insurerCode>
+			<insurerName>Test Insurer</insurerName>
+			<insurerAddress>
+				<street>Seidengasse 12</street>
+				<addressExtension>C3</addressExtension>
+				<postOfficeBox>180</postOfficeBox>
+				<zip>5000</zip>
+				<city>Aarau</city>
+				<country>CH</country>
+			</insurerAddress>
+			<insurerEmail>testinsurer@test.ch</insurerEmail>
+			<insurerURL>www.testinsurer.ch</insurerURL>
+		</insurer>
+		<broker>
+			<brokerRegisterNo>CHE-FINMA-F12345678</brokerRegisterNo>
+			<brokerName>Test Broker</brokerName>
+			<brokerAddress>
+				<street>Gartenstrasse 2</street>
+				<zip>6000</zip>
+				<city>Luzern</city>
+				<country>CH</country>
+			</brokerAddress>
+			<brokerEmail>testbroker@test.ch</brokerEmail>
+			<brokerURL>www.testbroker.ch/</brokerURL>
+		</broker>
+		<typeRec>900</typeRec>
+		<subTypeRec>009</subTypeRec>
+		<versionRec>5.2.1</versionRec>
+		<contentRec>90</contentRec>
+	</header>
+	<feedbackTypeReferenceNo>
+		<feedbackSubType>019</feedbackSubType>
+	</feedbackTypeReferenceNo>
+	<feedbackMessage>Daten nicht korrekt.</feedbackMessage>
+</businessFeedback>
