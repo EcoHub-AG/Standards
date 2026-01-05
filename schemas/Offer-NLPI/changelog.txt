@@ -5,6 +5,8 @@
     - Updated const to version number 1.0.0
 - DSBPremiumType
     - Properties "netPremiumDSBMPercentage", "netPremiumDSBMAmount", "netPremiumDSBPPercentage", "netPremiumDSBPAmount" are no longer mandatory
+- UVGZPremiumType (Changed)
+    - Changed type from number to UVGZPremiumRateType
 
 
 ### Version 0.6.0

@@ -46,8 +46,7 @@
     },
     "survivorsPartnerPensionSalaryPremiumRateUVGSalary": {
       "description": "Survivors' partner pension premium rate in ‰ (UVG salary)",
-      "type": "number",
-      "multipleOf": 0.001
+      "$ref": "UVGZPremiumRateType.json"
     },
     "survivorsPartnerPensionSalarySurplusPremiumRate": {
       "description": "Survivors' partner pension surplus salary premium rates in ‰",
