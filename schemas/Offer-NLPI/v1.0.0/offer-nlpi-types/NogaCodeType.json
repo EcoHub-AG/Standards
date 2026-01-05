@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"NOGACode": {
+			"description": "6-digit NOGA code, without preceding letters. Can either be a code from the 2008 or 2025 edition of the list.",
+			"type": "string",
+			"minLength": 6,
+			"maxLength": 6
+		},
+		"NOGAName": {
+			"description": "NOGA name is derived from the 6-digit NOGA code",
+			"type": "string"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"NOGACode"
+	]
+}

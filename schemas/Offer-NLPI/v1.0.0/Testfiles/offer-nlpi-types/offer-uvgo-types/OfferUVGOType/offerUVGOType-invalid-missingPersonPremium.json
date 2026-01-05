@@ -1,0 +1,27 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "personMentionedByName": [
+    {
+      "personId": "789bb159-8704-4821-90e8-f24c98bc099b",
+      "role": "Contributing family member",
+      "firstname": "Jane",
+      "surname": "Doe",
+      "birthDate": "1982-09-22",
+      "gender": "Female",
+      "payroll": 90000.00,
+      "degreeOfEmployment": 90,
+      "insuranceType": "Coverage according to compulsory accident insurance UVG"
+    }
+  ],
+  "insuranceOptionsVarious": {
+    "annualCancellation": true,
+    "typePayInstalment": "1/2 year",
+    "contractExtensionAfterExpiration": false
+  },
+  "premiumOverviewUVGCompulsory": {
+    "totalPremiumOAAndNOA": 5000,
+    "netPremiumTotal": 4500,
+    "premiumMinimumAmountOA": 200,
+    "premiumMinimumAmountNOA": 150
+  }
+}

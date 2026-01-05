@@ -1,0 +1,31 @@
+{
+	"processIdentificationNo": "00000000-0000-0000-0000-000000000001",
+	"timestamp": "2024-01-11T09:30:47.512Z",
+	"processName": "offer.nlpi",
+	"subProcessName": "conclusionDecision",
+	"processVersion": "0.6.0",
+	"header": {
+		"recipient": {
+			"broker": {
+				"brokerRegisterNo": "CHE-FINMA-F12345678",
+				"companyId": "CHE-120.330.754",
+				"companyName": "Test Broker"
+			}
+		},
+		"sender": {
+			"insurer": {
+				"companyId": "CHE-112.444.553",
+				"companyName": "Test Insurer",
+				"insurerCode": "901S"
+			}
+		}
+	},
+	"offerConclusionDecision": "Offer conclusion accepted",
+	"offerConclusionDecisionMessage": "Insurer comfirms the closed offer. Contract in preparation.",
+	"insurerContact": {
+		"contactSurname": "Management West",
+		"contactFirstName": "Broker Account",
+		"contactMail": "info-west@testinsurer.ch",
+		"contactPhone": "+41444200000"
+	}
+}

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Schema for an offer within the Offer NLPI process. This schema is publicly accessible for informational purposes only. Usage requires prior authorization from EcoHub AG.",
+  "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
+  "type": "object",
+  "properties": {
+    "processIdentificationNo": {
+      "$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
+    },
+    "timestamp": {
+      "$ref": "../../../Generics/v0.6.0/TimestampType.json"
+    },
+    "processName": {
+      "$ref": "../offer-nlpi-types/ProcessNameConstType.json"
+    },
+    "subProcessName": {
+      "description": "Name of the subprocess",
+      "type": "string",
+      "const": "offer"
+    },
+    "processVersion": {
+      "$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
+    },
+    "header": {
+      "$ref": "../../../Generics/v0.6.0/HeaderType.json"
+    },
+    "combinationMeta": {
+      "$ref": "../offer-nlpi-types/CombinationMetaType.json"
+    },
+    "customer": {
+      "$ref": "../offer-nlpi-types/OfferCustomerType.json",
+      "allOf": [
+        {
+          "properties": {
+            "customer": {
+              "required": ["companyLegalStatus"]
+            }
+          }
+        }
+      ],
+      "anyOf": [
+        {
+          "required": [
+            "UVGRiskNo"
+          ]
+        },
+        {
+          "required": [
+            "UVGRiskNo"
+          ]
+        }
+      ]
+    },
+    "coInsuredCustomer": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "../offer-nlpi-types/OfferCustomerType.json",
+        "anyOf": [
+          {
+            "required": [
+              "UVGRiskNo"
+            ]
+          },
+          {
+            "required": [
+              "UVGRiskNo"
+            ]
+          }
+        ]
+      },
+      "unevaluatedItems": false
+    },
+    "quotationNo": {
+      "$ref": "../../../Generics/v0.6.0/QuotationNoType.json"
+    },
+    "offerValidToDate": {
+      "description": "Validity end date of the offer",
+      "type": "string",
+      "format": "date"
+    },
+    "insuranceStartDate": {
+      "$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
+    },
+    "insuranceEndDate": {
+      "$ref": "../offer-nlpi-types/InsuranceEndDateType.json"
+    },
+    "currency": {
+      "$ref": "../../../Generics/v0.6.0/CurrencyISOCodeType.json"
+    },
+    "DSB": {
+      "$ref": "../offer-nlpi-types/offer-dsb-types/OfferDSBType.json"
+    },
+    "UVGCompulsory": {
+      "$ref": "../offer-nlpi-types/offer-uvgo-types/OfferUVGOType.json"
+    },
+    "UVGSupplement": {
+      "$ref": "../offer-nlpi-types/offer-uvgz-types/OfferUVGZType.json"
+    },
+    "netPremiumNLPITotal": {
+      "description": "The total net premium of the contract  (UVGO, UVGZ, DSB) corresponds to the amount of the net premium total offered for  UVGO, UVGZ, DSB coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+      "$ref": "../../../Generics/v0.6.0/MonetaryAmountType.json"
+    },
+    "comment": {
+      "$ref": "../../../Generics/v0.6.0/RestrictedStringType.json",
+      "description": "General comment field"
+    },
+    "insurerContact": {
+      "$ref": "../../../Generics/v0.6.0/ContactType.json"
+    },
+    "offerDocument": {
+      "description": "Offer document",
+      "$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+    },
+    "contractConditionsDocument": {
+      "description": "Contract conditions document",
+      "$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+    },
+    "otherAttachmentDocument": {
+      "description": "Additional offer documents e.g. flyers, product fact sheets, health questionnaire",
+      "$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+    }
+  },
+  "required": [
+    "processIdentificationNo",
+    "timestamp",
+    "processName",
+    "subProcessName",
+    "processVersion",
+    "header",
+    "customer",
+    "quotationNo",
+    "offerValidToDate",
+    "insuranceStartDate",
+    "insuranceEndDate",
+    "currency",
+    "offerDocument",
+    "insurerContact"
+  ],
+  "unevaluatedProperties": false,
+  "additionalProperties": false
+}

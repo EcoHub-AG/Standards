@@ -1,0 +1,77 @@
+{
+  "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "personGroups": [
+    {
+      "personGroupId": "10000000-0000-0000-0000-000000000001",
+      "personGroupDescription": "Alle Frauen",
+      "numberOfPersonsFemale": 4,
+      "numberOfPersonsMale": 0,
+      "numberOfPersonsTotal": 4,
+      "payrollFemale": 304000,
+      "payrollMale": 0,
+      "payrollTotal": 304000,
+      "maxSalary": 450000,
+      "averageAgeMale": 39.7,
+      "averageAgeFemale": 39.7,
+      "uniformPremiumRate": true,
+      "coverage": {
+        "DSBCoverage": {
+          "DSBDaysWaitingNo": "90",
+          "DSBCalculationBasis": "Case",
+          "DSBBenefitPeriod": "365 days",
+          "DSBBenefitAmountPercentage": "80%",
+          "DSBLegalBasis": "VVG"
+        },
+        "DSBMCoverage": {
+          "DSBMBenefitDurationWeeks": "14",
+          "DSBMBenefitAmountPercentage": "80%",
+          "DSBMPayrollBasis": "EOG wage"
+        },
+        "DSBPCoverage": {
+          "DSBPBenefitDurationWeeks": "14",
+          "DSBPBenefitAmountPercentage": "80%",
+          "DSBPPayrollBasis": "EOG wage"
+        }
+      }
+    }
+  ],
+  "insuranceOptions": {
+    "insuranceStartByEmployment": true,
+    "insuranceTemporaryEmployees": true,
+    "insuranceParttimeEmployees": true,
+    "insuranceHourlyEmployees": true,
+    "insuranceEmployeesExhaustedBenefitPeriod": true,
+    "insuranceChildFamilyAllowances": false,
+    "insuranceWageIncreaseIncapacity": true,
+    "subsequentPaymentsAfterDeath": false,
+    "waiverBenefitGrossNegligence": true,
+    "unpaidLeaveInsurance": true,
+    "renunciationCreditingWaitingPeriod": false,
+    "subsequentBenefitsContractTermination": true,
+    "insuranceOptionsVarious": {
+      "premiumRateGuaranty": true,
+      "renunciationTerminationRightClaim": true,
+      "annualCancellation": true,
+      "typePayInstalment": "Annually",
+      "additionalOptions": [
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSB",
+          "optionValue": "20000"
+        },
+        {
+          "optionName": "Addtitional Insurance Option Bonus DSBM",
+          "optionValue": "DSBM"
+        }
+      ],
+      "surplusParticipation": true,
+      "surplusParticipationPremiumRate": 25.65,
+      "surplusParticipationRate": 13.65,
+      "surplusParticipationPeriodYears": 5
+    }
+  },
+  "premiumOverviewDSB": {
+    "netPremiumTotal": 2500,
+    "premiumMinimumAmount": 100,
+    "combinationDiscountIncluded": true
+  }
+}

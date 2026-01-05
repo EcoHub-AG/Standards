@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "UVG Compulsory. Federal Accident Insurance Act (UVG)",
+  "properties": {
+    "riskCharacteristic": {
+      "$ref": "../RiskCharacteristicType.json"
+    },
+    "personGroups": {
+      "$ref": "UVGZPersonGroupsType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumPersonGroup"
+            ]
+          }
+        }
+      ]
+    },
+    "personMentionedByName": {
+      "$ref": "UVGZPersonType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumPersonMentionedByName"
+            ]
+          }
+        }
+      ]
+    },
+    "insuranceOptions": {
+      "$ref": "UVGZInsuranceOptionsType.json",
+      "allOf": [
+        {
+          "properties": {
+            "insuranceOptionsVarious": {
+              "required": [
+                "premiumRateGuaranty",
+                "renunciationTerminationRightClaim",
+                "annualCancellation",
+                "surplusParticipation"
+              ]
+            }
+          },
+          "required": [
+            "dailyAllowanceContinuedPaymentIncreasesBeforeIncapacity",
+            "startInsuranceCoverStartEmploymentContract",
+            "endInsuranceCoverCoordinationUVG",
+            "waiverBenefitGrossNegligence"
+          ]
+        },
+        {
+          "if": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "properties": {
+                  "surplusParticipation": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "premiumOverviewUVGSupplement": {
+      "description": "Overview of the premium only for UVG supplement",
+      "$ref": "../PremiumOverviewType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "insuranceOptions",
+    "riskCharacteristic"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "personGroups"
+      ]
+    },
+    {
+      "required": [
+        "personMentionedByName"
+      ]
+    }
+  ]
+}

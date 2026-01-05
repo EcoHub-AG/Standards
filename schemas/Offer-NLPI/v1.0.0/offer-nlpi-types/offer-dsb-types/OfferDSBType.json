@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "Daily sickness benefits",
+  "properties": {
+    "riskCharacteristic": {
+      "$ref": "../RiskCharacteristicType.json"
+    },
+    "personGroups": {
+      "$ref": "DSBPersonGroupsType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumPersonGroup",
+              "maxSalary"
+            ]
+          }
+        }
+      ]
+    },
+    "personMentionedByName": {
+      "$ref": "DSBPersonType.json",
+      "allOf": [
+        {
+          "items": {
+            "required": [
+              "premiumPersonMentionedByName"
+            ]
+          }
+        }
+      ]
+    },
+    "insuranceOptions": {
+      "$ref": "DSBInsuranceOptionsType.json",
+      "allOf": [
+        {
+          "properties": {
+            "insuranceOptionsVarious": {
+              "required": [
+                "premiumRateGuaranty",
+                "renunciationTerminationRightClaim",
+                "annualCancellation",
+                "surplusParticipation"
+              ]
+            }
+          },
+          "required": [
+            "insuranceStartByEmployment",
+            "insuranceTemporaryEmployees",
+            "insuranceParttimeEmployees",
+            "insuranceHourlyEmployees",
+            "insuranceEmployeesExhaustedBenefitPeriod",
+            "insuranceChildFamilyAllowances",
+            "insuranceWageIncreaseIncapacity",
+            "subsequentPaymentsAfterDeath",
+            "waiverBenefitGrossNegligence",
+            "unpaidLeaveInsurance",
+            "renunciationCreditingWaitingPeriod",
+            "subsequentBenefitsContractTermination"
+          ]
+        },
+        {
+          "if": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "properties": {
+                  "surplusParticipation": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "insuranceOptionsVarious": {
+                "required": [
+                  "surplusParticipationPremiumRate",
+                  "surplusParticipationRate",
+                  "surplusParticipationPeriodYears"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "premiumOverviewDSB": {
+      "description": "Overview of the premium only for DSB",
+      "$ref": "../PremiumOverviewType.json"
+    }
+  },
+  "required": [
+    "riskCharacteristic"
+  ],
+  "additionalProperties": false
+}
