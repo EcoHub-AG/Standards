@@ -1,3 +1,9 @@
+### Version 1.0.0
+- AddressDefinitions (Removed)
+- AddressType (Changed)
+    - Inlined definitions for all properties
+    - Adjusted ZIP code regex to allow portugese zip codes
+
 ### Version 0.6.0
 - AdditionalOptionsType (Changed)
     - removed property "optionDescription"
