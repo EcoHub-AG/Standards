@@ -5,10 +5,10 @@
 	"x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
 	"properties": {
 		"processIdentificationNo": {
-			"$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
+			"$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
 		},
 		"timestamp": {
-			"$ref": "../../../Generics/v0.6.0/TimestampType.json"
+			"$ref": "../../../Generics/v1.0.0/TimestampType.json"
 		},
 		"processName": {
 			"$ref": "../offer-nlpi-types/ProcessNameConstType.json"
@@ -22,7 +22,7 @@
 			"$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
 		},
 		"header": {
-			"$ref": "../../../Generics/v0.6.0/HeaderType.json"
+			"$ref": "../../../Generics/v1.0.0/HeaderType.json"
 		},
 		"combinationMeta": {
 			"$ref": "../offer-nlpi-types/CombinationMetaType.json",
@@ -69,11 +69,11 @@
 			"description": "Date of offer by which the insurer must submit the offer"
 		},
 		"offerLanguage": {
-			"$ref": "../../../Generics/v0.6.0/LanguageType.json",
+			"$ref": "../../../Generics/v1.0.0/LanguageType.json",
 			"description": "Language in which the offer must be made out"
 		},
 		"currency": {
-			"$ref": "../../../Generics/v0.6.0/CurrencyISOCodeType.json"
+			"$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
 		},
 		"insuranceStartDate": {
 			"$ref": "../offer-nlpi-types/InsuranceStartDateType.json"
@@ -91,14 +91,14 @@
 			"$ref": "../offer-nlpi-types/offer-uvgz-types/OfferRequestUVGZType.json"
 		},
 		"comment": {
-			"$ref": "../../../Generics/v0.6.0/RestrictedStringType.json"
+			"$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
 		},
 		"brokerContact": {
-			"$ref": "../../../Generics/v0.6.0/BrokerContactType.json"
+			"$ref": "../../../Generics/v1.0.0/BrokerContactType.json"
 		},
 		"document": {
 			"description": "Document (minimum PDF of the quote request)",
-			"$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+			"$ref": "../../../Generics/v1.0.0/MultiFileType.json"
 		},
 		"uploadLink": {
 			"type": "string",

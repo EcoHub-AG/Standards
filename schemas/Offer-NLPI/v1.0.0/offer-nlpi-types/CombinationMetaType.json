@@ -4,7 +4,7 @@
 	"properties": {
 		"combinationId": {
 			"description": "This is the unique identification number of the combination and must be identical for all related process events. Mandatory in the offer request, if combinationMeta is provided.",
-			"$ref": "../../../Generics/v0.6.0/UuidType.json"
+			"$ref": "../../../Generics/v1.0.0/UuidType.json"
 		},
 		"combinationLobIG": {
 			"description": "List of all IG B2B branch codes associated with this combination. Only main categories of the IG B2B branch codes are permitted.",

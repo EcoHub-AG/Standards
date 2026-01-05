@@ -4,15 +4,15 @@
   "properties": {
     "SUVACompany": {
       "description": "Is the insurer of the compulsory accident insurance SUVA? Only relevant for UVGZ.",
-      "$ref": "../../../Generics/v0.6.0/TristateType.json"
+      "$ref": "../../../Generics/v1.0.0/TristateType.json"
     },
     "premiumOASUVA": {
       "description": "Mandatory if SUVA company = 'Yes'",
-      "$ref": "../../../Generics/v0.6.0/MonetaryAmountType.json"
+      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "premiumNOASUVA": {
       "description": "Mandatory if SUVA company = 'Yes'",
-      "$ref": "../../../Generics/v0.6.0/MonetaryAmountType.json"
+      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
     }
   },
   "required": [

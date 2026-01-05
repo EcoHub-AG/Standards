@@ -15,7 +15,7 @@
 			"description": "Contract extension by 1 year after expiration"
 		},
 		"additionalOptions": {
-			"$ref": "../../../../Generics/v0.6.0/AdditionalOptionsType.json"
+			"$ref": "../../../../Generics/v1.0.0/AdditionalOptionsType.json"
 		}
 	},
     "additionalProperties": false,

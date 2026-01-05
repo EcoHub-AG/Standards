@@ -5,10 +5,10 @@
   "type": "object",
   "properties": {
     "processIdentificationNo": {
-      "$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
+      "$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
     },
     "timestamp": {
-      "$ref": "../../../Generics/v0.6.0/TimestampType.json"
+      "$ref": "../../../Generics/v1.0.0/TimestampType.json"
     },
     "processName": {
       "$ref": "../offer-nlpi-types/ProcessNameConstType.json"
@@ -22,7 +22,7 @@
       "$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
     },
     "header": {
-      "$ref": "../../../Generics/v0.6.0/HeaderType.json"
+      "$ref": "../../../Generics/v1.0.0/HeaderType.json"
     },
     "combinationMeta": {
       "$ref": "../offer-nlpi-types/CombinationMetaType.json"
@@ -72,7 +72,7 @@
       "unevaluatedItems": false
     },
     "quotationNo": {
-      "$ref": "../../../Generics/v0.6.0/QuotationNoType.json"
+      "$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
     },
     "offerValidToDate": {
       "description": "Validity end date of the offer",
@@ -86,7 +86,7 @@
       "$ref": "../offer-nlpi-types/InsuranceEndDateType.json"
     },
     "currency": {
-      "$ref": "../../../Generics/v0.6.0/CurrencyISOCodeType.json"
+      "$ref": "../../../Generics/v1.0.0/CurrencyISOCodeType.json"
     },
     "DSB": {
       "$ref": "../offer-nlpi-types/offer-dsb-types/OfferDSBType.json"
@@ -99,26 +99,26 @@
     },
     "netPremiumNLPITotal": {
       "description": "The total net premium of the contract  (UVGO, UVGZ, DSB) corresponds to the amount of the net premium total offered for  UVGO, UVGZ, DSB coverage after deduction of any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
-      "$ref": "../../../Generics/v0.6.0/MonetaryAmountType.json"
+      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "comment": {
-      "$ref": "../../../Generics/v0.6.0/RestrictedStringType.json",
+      "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
       "description": "General comment field"
     },
     "insurerContact": {
-      "$ref": "../../../Generics/v0.6.0/ContactType.json"
+      "$ref": "../../../Generics/v1.0.0/ContactType.json"
     },
     "offerDocument": {
       "description": "Offer document",
-      "$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
     },
     "contractConditionsDocument": {
       "description": "Contract conditions document",
-      "$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
     },
     "otherAttachmentDocument": {
       "description": "Additional offer documents e.g. flyers, product fact sheets, health questionnaire",
-      "$ref": "../../../Generics/v0.6.0/MultiFileType.json"
+      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
     }
   },
   "required": [

@@ -5,11 +5,11 @@
   "properties": {
     "customer": {
       "description": "Core information of the customer",
-      "$ref": "../../../Generics/v0.6.0/CompanyCustomerType.json"
+      "$ref": "../../../Generics/v1.0.0/CompanyCustomerType.json"
     },
     "GAVCompliance": {
       "description": "Guaranteed compliance with the GAV-conformity. Only relevant for DSB.",
-      "$ref": "../../../Generics/v0.6.0/TristateType.json"
+      "$ref": "../../../Generics/v1.0.0/TristateType.json"
     },
     "GAVName": {
       "description": "GAV-Designation. Only relevant for DSB. Mandatory if GAVCompliance = 'Yes'",
@@ -40,7 +40,7 @@
     },
     "typeOfActivity": {
       "description": "Type of activity of the company",
-      "$ref": "../../../Generics/v0.6.0/RestrictedStringType.json"
+      "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json"
     },
     "SUVACompany": {
       "description": "Only relevant for UVGZ request",

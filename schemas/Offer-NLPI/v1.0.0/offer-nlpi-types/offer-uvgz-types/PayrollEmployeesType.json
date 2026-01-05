@@ -4,43 +4,43 @@
 	"properties": {
 		"payrollTotalEmployees": {
 			"description": "Total UVG payroll for the entire personnel group in CHF",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"UVGPayrollMaleOA": {
 			"description": "UVG payroll male OA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"UVGPayrollFemaleOA": {
 			"description": "UVG payroll female OA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"UVGPayrollMaleNOA": {
 			"description": "UVG payroll male NOA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"UVGPayrollFemaleNOA": {
 			"description": "UVG payroll female NOA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"surplusPayrollTotal": {
 			"description": "Total surplus payroll for the entire personnel group in CHF",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"surplusPayrollMaleOA": {
 			"description": "Surplus payroll male OA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"surplusPayrollFemaleOA": {
 			"description": "Surplus payroll male NOA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"surplusPayrollMaleNOA": {
 			"description": "Surplus payroll female OA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"surplusPayrollFemaleNOA": {
 			"description": "Surplus payroll female NOA",
-			"$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		}
 	},
 	"additionalProperties": false,

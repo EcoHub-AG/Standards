@@ -5,10 +5,10 @@
   "type": "object",
   "properties": {
     "processIdentificationNo": {
-      "$ref": "../../../Generics/v0.6.0/ProcessIdentificationNoType.json"
+      "$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
     },
     "timestamp": {
-      "$ref": "../../../Generics/v0.6.0/TimestampType.json"
+      "$ref": "../../../Generics/v1.0.0/TimestampType.json"
     },
     "processName": {
       "$ref": "../offer-nlpi-types/ProcessNameConstType.json"
@@ -22,10 +22,10 @@
       "$ref": "../offer-nlpi-types/ProcessVersionConstType.json"
     },
     "header": {
-      "$ref": "../../../Generics/v0.6.0/HeaderType.json"
+      "$ref": "../../../Generics/v1.0.0/HeaderType.json"
     },
     "quotationNo": {
-      "$ref": "../../../Generics/v0.6.0/QuotationNoType.json"
+      "$ref": "../../../Generics/v1.0.0/QuotationNoType.json"
     },
     "offerDecision": {
       "description": "Decision whether an offer is accepted or rejected",
@@ -39,12 +39,12 @@
       "$ref": "../offer-nlpi-types/OfferAcceptanceType.json"
     },
     "offerFeedbackMessage": {
-      "$ref": "../../../Generics/v0.6.0/RestrictedStringType.json",
+      "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
       "description": "Feedback text for the offer acceptance or rejection decision"
     },
     "brokerContact": {
       "description": "The contact is the employee at the broker who is responsible for the offer request (e.g. a backoffice employee).",
-      "$ref": "../../../Generics/v0.6.0/ContactType.json"
+      "$ref": "../../../Generics/v1.0.0/ContactType.json"
     }
   },
   "additionalProperties": false,

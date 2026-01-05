@@ -18,20 +18,20 @@
         "$ref": "../BusinessRelationPersonType.json"
       },
       "firstname": {
-        "$ref": "../../../../Generics/v0.6.0/FirstNameType.json"
+        "$ref": "../../../../Generics/v1.0.0/FirstNameType.json"
       },
       "surname": {
-        "$ref": "../../../../Generics/v0.6.0/SurNameType.json"
+        "$ref": "../../../../Generics/v1.0.0/SurNameType.json"
       },
       "birthDate": {
-        "$ref": "../../../../Generics/v0.6.0/BirthDateType.json"
+        "$ref": "../../../../Generics/v1.0.0/BirthDateType.json"
       },
       "gender": {
-        "$ref": "../../../../Generics/v0.6.0/GenderType.json"
+        "$ref": "../../../../Generics/v1.0.0/GenderType.json"
       },
       "payroll": {
         "description": "Fixed payroll DSB amount in CHF",
-        "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+        "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
       "degreeOfEmployment": {
         "description": "Degree of employment in %.",
@@ -70,7 +70,7 @@
           },
           "netPremiumDSBAmount": {
             "description": "Fixed payroll amount in CHF",
-            "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
           },
           "netPremiumDSBMPercentage": {
             "description": "Net premium rate for maternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
@@ -79,7 +79,7 @@
           },
           "netPremiumDSBMAmount": {
             "description": "Fixed payroll amount in CHF",
-            "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
           },
           "netPremiumDSBPPercentage": {
             "description": "Net premium rate for paternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
@@ -88,11 +88,11 @@
           },
           "netPremiumDSBPAmount": {
             "description": "Fixed payroll amount in CHF",
-            "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
           },
           "premiumMinimumAmount": {
             "description": "Minimum premium for DSB fixed payroll in CHF",
-            "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+            "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
           }
         },
         "required": [

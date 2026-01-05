@@ -54,7 +54,7 @@
     },
     "premiumDiffCoverage": {
       "description": "Premium for differential cover in CHF",
-      "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "UVGSalaryNetPremiumRate": {
       "description": "UVG salary net premium rates in %",
@@ -66,11 +66,11 @@
     },
     "premiumMinimumAmount": {
       "description": "Minimum premium of the person group in CHF",
-      "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "finalPremium": {
       "description": "Final premium in CHF",
-      "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
+      "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
     }
   },
   "required": [
