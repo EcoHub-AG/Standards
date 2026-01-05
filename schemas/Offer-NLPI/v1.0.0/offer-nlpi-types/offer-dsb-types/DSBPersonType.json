@@ -35,7 +35,8 @@
       },
       "degreeOfEmployment": {
         "description": "Degree of employment in %.",
-        "type": "number"
+        "type": "number",
+        "examples": [90]
       },
       "benefitCoverage": {
         "type": "string",
