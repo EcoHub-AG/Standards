@@ -33,7 +33,8 @@
     },
     "degreeOfEmployment": {
       "description": "Degree of employment in %.",
-      "type": "number"
+      "type": "number",
+      "examples": [90]
     },
     "insuranceType": {
       "description": "Insurance type UVG",
