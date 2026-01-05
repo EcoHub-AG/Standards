@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"description": "Broker",
+	"properties": {
+		"brokerRegisterNo": {
+			"$ref": "RegFINMANoType.json",
+			"description": "Register number of the broker. Register number for the independent intermediaries as defined by the IG B2B ; prefix with country code and register plus register number FINMA or FMA (example: CHE-FINMA-F12345678). Note for insurers: For those intermediaries who are not at FINMA or FMA but want to participate on electronic data exchange, e.g., in-house brokers, the code assigned by IG B2B (example: CHE-IGB2B-50001) must be recorded."
+		},
+		"companyId": {
+			"$ref": "CompanyIdType.json",
+			"description": "Unique company identification number (UID) for companies based in Switzerland or EU member states as specified in the UID register of the respective authority."
+		},
+		"companyName": {
+			"$ref": "CompanyNameType.json",
+			"description": "Company name. For a sole proprietorship, name and surname must be entered."
+		},
+		"brokerBranch": {
+			"description": "IGB2B Number of the branch, agency of the broker, broker entitled to commission. Can be HQ or deviation branch. Mandatory if the broker is the sender of the event",
+			"$ref": "OrgUnitNumberType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"brokerRegisterNo",
+		"companyName",
+		"companyId"
+	]
+}
