@@ -2,5 +2,5 @@
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"description": "Version of the process",
 	"type": "string",
-	"const": "0.6.0"
+	"const": "1.0.0"
 }

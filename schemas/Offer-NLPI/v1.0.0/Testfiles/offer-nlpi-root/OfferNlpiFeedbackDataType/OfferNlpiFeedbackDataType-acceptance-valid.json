@@ -3,7 +3,7 @@
   "timestamp": "2024-01-11T09:30:47.512Z",
   "processName": "offer.nlpi",
   "subProcessName": "feedback",
-  "processVersion": "0.6.0",
+  "processVersion": "1.0.0",
   "header": {
     "recipient": {
       "insurer": {
