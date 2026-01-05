@@ -1,8 +1,11 @@
 ### Version 1.0.0
-- ProcessVersionConstType (Changed)
-    - Updated const to version number 1.0.0
 - BusinessRelationPersonType (Changed)
     - Added new enum value "Other person mentioned by name"
+- ProcessVersionConstType (Changed)
+    - Updated const to version number 1.0.0
+- DSBPremiumType
+    - Properties "netPremiumDSBMPercentage", "netPremiumDSBMAmount", "netPremiumDSBPPercentage", "netPremiumDSBPAmount" are no longer mandatory
+
 
 ### Version 0.6.0
 - DisabilityCapitalProgressionType (Changed)

@@ -22,21 +22,21 @@
       "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
     },
     "netPremiumDSBMPercentage": {
-      "description": "Net premium rate for maternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+      "description": "Net premium rate for maternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Must be set if requested in the offer request.",
       "type": "number",
       "multipleOf": 0.001
     },
     "netPremiumDSBMAmount": {
-      "description": "Net premium amount for maternity benefits. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+      "description": "Net premium amount for maternity benefits. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Must be set if requested in the offer request.",
       "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
     },
     "netPremiumDSBPPercentage": {
-      "description": "Net premium rate for paternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+      "description": "Net premium rate for paternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Must be set if requested in the offer request.",
       "type": "number",
       "multipleOf": 0.001
     },
     "netPremiumDSBPAmount": {
-      "description": "Net premium amount for paternity benefits. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer.",
+      "description": "Net premium amount for paternity benefits. The net premium amount corresponds to the amount of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Must be set if requested in the offer request.",
       "$ref": "../../../../Generics/v0.6.0/MonetaryAmountType.json"
     },
     "premiumMinimumAmount": {
@@ -48,11 +48,7 @@
     "netPremiumDSBMalePercentage",
     "netPremiumDSBMaleAmount",
     "netPremiumDSBFemalePercentage",
-    "netPremiumDSBFemaleAmount",
-    "netPremiumDSBMPercentage",
-    "netPremiumDSBMAmount",
-    "netPremiumDSBPPercentage",
-    "netPremiumDSBPAmount"
+    "netPremiumDSBFemaleAmount"
   ],
   "additionalProperties": false
 }
