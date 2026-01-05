@@ -1,5 +1,8 @@
 ### Version 1.0.0
-- Updated the ProcessVersionConstType to version number 1.0.0
+- ProcessVersionConstType (Changed)
+    - Updated const to version number 1.0.0
+- BusinessRelationPersonType (Changed)
+    - Added new enum value "Other person mentioned by name"
 
 ### Version 0.6.0
 - DisabilityCapitalProgressionType (Changed)
