@@ -1,6 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2019-09/schema",
 	"type": "object",
+	"description": "Rule for all insurance options: True = “insured/fulfilled”, False = “not insured/not fulfilled”. The answer “True” or “False” must correspond to reality. It does not matter whether this answer comes from the offer document or from the conditions underlying the offer. Mandatory/Optional: If an InsuranceOption is requested, the insurer must also respond to it in the offer. The insurer may also respond to an InsuranceOption that has not been requested (e.g., annual right of termination).",
 	"properties": {
 		"insuranceStartByEmployment": {
 			"description": "Insurance from the beginning of employment. Must be specified (i.e. mandatory) in offer.",
