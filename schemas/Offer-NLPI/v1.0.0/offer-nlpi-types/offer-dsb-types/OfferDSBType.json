@@ -6,6 +6,16 @@
     "riskCharacteristic": {
       "$ref": "../RiskCharacteristicType.json"
     },
+    "averageAgeMale": {
+      "description": "Average age of males, only required if the total number of persons is less than 4.",
+      "type": "number",
+      "multipleOf": 0.01
+    },
+    "averageAgeFemale": {
+      "description": "Average age of females, only required if the total number of persons is less than 4.",
+      "type": "number",
+      "multipleOf": 0.01
+    },
     "personGroups": {
       "$ref": "DSBPersonGroupsType.json",
       "allOf": [

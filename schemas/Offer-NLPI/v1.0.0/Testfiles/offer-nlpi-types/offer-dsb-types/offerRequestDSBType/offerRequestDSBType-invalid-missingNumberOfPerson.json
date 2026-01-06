@@ -1,5 +1,7 @@
 {
   "riskCharacteristic": "Anobag (employees without employers liable to pay contributions)",
+  "averageAgeMale": 39.7,
+  "averageAgeFemale": 39.7,
   "personGroups": [
     {
       "personGroupId": "10000000-0000-0000-0000-000000000001",
@@ -10,8 +12,6 @@
       "payrollMale": 0,
       "payrollTotal": 304000,
       "maxSalary": 450000,
-      "averageAgeMale": 39.7,
-      "averageAgeFemale": 39.7,
       "uniformPremiumRate": true,
       "coverage": {
         "DSBCoverage": {

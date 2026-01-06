@@ -1,8 +1,14 @@
 ### Version 1.0.0
 - BusinessRelationPersonType (Changed)
     - Added new enum value "Other person mentioned by name"
+- DSBPersonGroupsType (Changed)
+    - removed properties "averageAgeMale" and "averageAgeFemale" (moved to OfferRequestDSBTye and OfferDSBType)
 - DSBPremiumType
     - Properties "netPremiumDSBMPercentage", "netPremiumDSBMAmount", "netPremiumDSBPPercentage", "netPremiumDSBPAmount" are no longer mandatory
+- OfferDSBType (Changed)
+    - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
+- OfferRequestDSBType (Changed)
+    - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
 - ProcessVersionConstType (Changed)
     - Updated const to version number 1.0.0
 - SUVACompanyType (Changed)

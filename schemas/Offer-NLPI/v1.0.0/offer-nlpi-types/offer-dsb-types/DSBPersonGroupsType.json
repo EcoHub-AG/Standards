@@ -42,16 +42,6 @@
         "description": "Maximum salary in CHF. Required in offer.",
         "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
       },
-      "averageAgeMale": {
-        "description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then 4",
-        "type": "number",
-        "multipleOf": 0.01
-      },
-      "averageAgeFemale": {
-        "description": "Average age of the persongroup, only needed if the total amount of persons in the persongroup is less then 4",
-        "type": "number",
-        "multipleOf": 0.01
-      },
       "uniformPremiumRate": {
         "description": "Unit premium rate i.e. no distinction should be made between men and women in the premium rate.",
         "type": "boolean"
