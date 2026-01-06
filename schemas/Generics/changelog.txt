@@ -3,6 +3,7 @@
 - AddressType (Changed)
     - Inlined definitions for all properties
     - Adjusted ZIP code regex to allow portugese zip codes
+- PercentageType (Added)
 
 ### Version 0.6.0
 - AdditionalOptionsType (Changed)
