@@ -1,10 +1,12 @@
 ### Version 1.0.0
 - BusinessRelationPersonType (Changed)
     - Added new enum value "Other person mentioned by name"
-- ProcessVersionConstType (Changed)
-    - Updated const to version number 1.0.0
 - DSBPremiumType
     - Properties "netPremiumDSBMPercentage", "netPremiumDSBMAmount", "netPremiumDSBPPercentage", "netPremiumDSBPAmount" are no longer mandatory
+- ProcessVersionConstType (Changed)
+    - Updated const to version number 1.0.0
+- SUVACompanyType (Changed)
+    - changed type of premiumOASUVA and premiumNOASUVA to PercentageType
 - UVGZPremiumType (Changed)
     - Changed type from number to UVGZPremiumRateType
 

@@ -7,12 +7,12 @@
       "$ref": "../../../Generics/v1.0.0/TristateType.json"
     },
     "premiumOASUVA": {
-      "description": "Mandatory if SUVA company = 'Yes'",
-      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+      "description": "Mandatory if SUVA company = 'Yes'. Premium rates are always specified as a percentages in the format xxx.yyyyy. Note: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../Generics/v1.0.0/PercentageType.json.json"
     },
     "premiumNOASUVA": {
-      "description": "Mandatory if SUVA company = 'Yes'",
-      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+      "description": "Mandatory if SUVA company = 'Yes'. Premium rates are always specified as a percentages in the format xxx.yyyyy. Note: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../Generics/v1.0.0/PercentageType.json.json"
     }
   },
   "required": [
