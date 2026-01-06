@@ -3,6 +3,8 @@
     - Added new enum value "Other person mentioned by name"
 - DSBPersonGroupsType (Changed)
     - removed properties "averageAgeMale" and "averageAgeFemale" (moved to OfferRequestDSBTye and OfferDSBType)
+- DSBPersonType (Changed)
+    - changed type of "netPremiumDSBPercentage", "netPremiumDSBMPercentage", "netPremiumDSBPPercentage" to percentageType.
 - DSBPremiumType (Changed)
     - Properties "netPremiumDSBMPercentage", "netPremiumDSBMAmount", "netPremiumDSBPPercentage", "netPremiumDSBPAmount" are no longer mandatory
     - changed type of "netPremiumDSBMalePercentage", "netPremiumDSBFemalePercentage", "netPremiumDSBMPercentage", "netPremiumDSBPPercentage" to percentageType.
