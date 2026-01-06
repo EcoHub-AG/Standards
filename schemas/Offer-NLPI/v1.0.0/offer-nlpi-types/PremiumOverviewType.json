@@ -17,25 +17,24 @@
     "instalmentSurchargePercentage": {
       "type": "number",
       "multipleOf": 0.001,
-      "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage."
+      "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage. Instalment rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../Generics/v1.0.0/PercentageType.json"
     },
     "premiumMinimumAmount": {
       "description": "Minimum premium in CHF. If is given per persongroup and person mentioned by name it  will be cumulated",
       "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "combinationDiscountPercentage": {
-      "description": "Discount considered in the net premium in percentage when buying in combination with other products (e.g. DSB and UVGZ).",
-      "type": "number",
-      "multipleOf": 0.001
+      "description": "Discount considered in the net premium in percentage when buying in combination with other products (e.g. DSB and UVGZ). Discount rates are always specified as a percentage in the format xxx.yyyyy.. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../Generics/v1.0.0/PercentageType.json"
     },
     "combinationDiscountIncluded": {
       "description": "Combinaton discount is included",
       "type": "boolean"
     },
     "otherDiscountPercentage": {
-      "description": "Additional discounts, e.g. progress-related or business policy discounts.",
-      "type": "number",
-      "multipleOf": 0.001
+      "description": "Additional discounts, e.g. progress-related or business policy discounts. Discount rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../Generics/v1.0.0/PercentageType.json"
     },
     "otherDiscountIncluded": {
       "description": "Other discount is included",

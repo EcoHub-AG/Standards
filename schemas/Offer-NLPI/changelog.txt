@@ -8,16 +8,29 @@
 - DSBPremiumType (Changed)
     - Properties "netPremiumDSBMPercentage", "netPremiumDSBMAmount", "netPremiumDSBPPercentage", "netPremiumDSBPAmount" are no longer mandatory
     - changed type of "netPremiumDSBMalePercentage", "netPremiumDSBFemalePercentage", "netPremiumDSBMPercentage", "netPremiumDSBPPercentage" to percentageType.
+- InsuranceOptionsVariousType (Changed)
+    - changed type of "surplusParticipationPremiumRate" and "surplusParticipationRate" to PercentageType.
 - OfferDSBType (Changed)
     - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
 - OfferRequestDSBType (Changed)
     - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
+- OfferUVGOType (Changed)
+    - changed type of "instalmentSurchargePercentageUVGCompulsory" to PercentageType.
+- PremiumOverviewType (Changed)
+    - changed type of "instalmentSurchargePercentage", "combinationDiscountPercentage", "otherDiscountPercentage" to PercentageType.
 - ProcessVersionConstType (Changed)
     - Updated const to version number 1.0.0
 - SUVACompanyType (Changed)
     - changed type of premiumOASUVA and premiumNOASUVA to PercentageType
+- UVGOPersonGroupPremiumType (Changed)
+    - changed type of "premiumRiskRate", "costAdminRate", "sharingCostRate", "accidentPreventionContributionRate", "finalPremiumRate" to PercentageType.
+- UVGOPersonPremiumType (Changed)
+    - changed type of "finalPremiumRate" to PercentageType.
+- UVGZPremiumRateType (Changed)
+    - changed type of "totalPremiumRate", "premiumRateOA", "premiumRateNOA" to PercentageType.
 - UVGZPremiumType (Changed)
-    - Changed type from number to UVGZPremiumRateType
+    - Changed type of "survivorsPartnerPensionSalaryPremiumRateUVGSalary" from number to UVGZPremiumRateType
+    - changed type of "dailyHospitalAllowancePremiumRate" to PercentageType.
 
 
 ### Version 0.6.0

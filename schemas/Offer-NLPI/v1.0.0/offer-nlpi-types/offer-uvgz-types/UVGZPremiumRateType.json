@@ -3,19 +3,16 @@
   "type": "object",
   "properties": {
     "totalPremiumRate": {
-      "description": "Total premium rate",
-      "type": "number",
-      "multipleOf": 0.001
+      "description": "Total premium rate. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "premiumRateOA": {
-      "description": "Premium rate OA",
-      "type": "number",
-      "multipleOf": 0.001
+      "description": "Premium rate OA. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "premiumRateNOA": {
-      "description": "Premium rate NOA",
-      "type": "number",
-      "multipleOf": 0.001
+      "description": "Premium rate NOA. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     }
   },
   "required": [
