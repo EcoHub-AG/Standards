@@ -12,6 +12,8 @@
     - changed type of "surplusParticipationPremiumRate" and "surplusParticipationRate" to PercentageType.
 - OfferDSBType (Changed)
     - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
+- OfferNlpiDataType (changed)
+    - property "companyLegalStatus" in "customer" is now optional
 - OfferRequestDSBType (Changed)
     - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
 - OfferUVGOType (Changed)
