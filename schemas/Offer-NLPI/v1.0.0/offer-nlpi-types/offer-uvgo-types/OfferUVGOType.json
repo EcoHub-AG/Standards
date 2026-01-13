@@ -61,7 +61,7 @@
           "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json",
           "description": "Instalment surcharge amount: Surcharge on the tariff premium due to payment in instalments for UVG compulsory."
         },
-        "instalmentSurchargePercentageUVGCompulsory": {,
+        "instalmentSurchargePercentageUVGCompulsory": {
           "description": "Instalment surcharge percentage: Surcharge on the tariff premium due to payment in instalments in percentage  for UVG compulsory. Instalment surcharge rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
         "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
         },
