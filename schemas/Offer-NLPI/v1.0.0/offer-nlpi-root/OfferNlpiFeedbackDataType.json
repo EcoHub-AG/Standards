@@ -40,7 +40,7 @@
     },
     "offerFeedbackMessage": {
       "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
-      "description": "Feedback text for the offer acceptance or rejection decision"
+      "description": "Feedback text for the offer acceptance or rejection decision. Mandatory if the offer is rejected."
     },
     "brokerContact": {
       "description": "The contact is the employee at the broker who is responsible for the offer request (e.g. a backoffice employee).",

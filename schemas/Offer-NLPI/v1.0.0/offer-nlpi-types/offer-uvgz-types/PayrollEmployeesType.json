@@ -3,7 +3,7 @@
 	"type": "object",
 	"properties": {
 		"payrollTotalEmployees": {
-			"description": "Total UVG payroll for the entire personnel group in CHF",
+			"description": "Total UVG payroll OA for the entire personnel group in CHF (male and female)",
 			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"UVGPayrollMaleOA": {
@@ -23,7 +23,7 @@
 			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"surplusPayrollTotal": {
-			"description": "Total surplus payroll for the entire personnel group in CHF",
+			"description": "Total surplus payroll OA for the entire personnel group in CHF (male and female)",
 			"$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
 		},
 		"surplusPayrollMaleOA": {
