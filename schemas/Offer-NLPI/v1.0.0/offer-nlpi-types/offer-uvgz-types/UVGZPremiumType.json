@@ -4,43 +4,43 @@
   "type": "object",
   "properties": {
     "medicalExpensesPremiumRate": {
-      "description": "Medical expenses premium rates in ‰",
+      "description": "Medical expenses premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "dailyAllowanceNetPremiumRateUVGSalary": {
-      "description": "Daily allowance premium rates in ‰ (UVG salary)",
+      "description": "Daily allowance premium rates (UVG salary).",
       "$ref": "UVGZPremiumRateType.json"
     },
     "dailyAllowanceSurplusSalaryNetPremiumRate": {
-      "description": "Daily allowance surplus salary premium rates in ‰",
+      "description": "Daily allowance surplus salary premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "dailyHospitalAllowancePremiumRate": {
-      "description": "Daily hospital premium rate in ‰. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "description": "Daily hospital premium rate. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
       "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "disabilityCapitalPremiumRateUVGSalary": {
-      "description": "Disability capital lump sum premium rates in ‰ (UVG salary)",
+      "description": "Disability capital lump sum premium rates(UVG salary).",
       "$ref": "UVGZPremiumRateType.json"
     },
     "disabilityCapitalSurplusSalaryPremiumRate": {
-      "description": "Disability capital lump sum surplus salary premium rates in ‰",
+      "description": "Disability capital lump sum surplus salary premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "disabilityPensionSalarySurplusPremiumRate": {
-      "description": "Disability pension salary surplus premium rates in ‰",
+      "description": "Disability pension salary surplus premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "leftbehindPensionSalarySurplusPremiumRate": {
-      "description": "Left behind pension salary surplus premium rates in ‰",
+      "description": "Left behind pension salary surplus premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "deathCapitalPremiumRateUVGSalary": {
-      "description": "Lump-sum death benefit premium rates in ‰ (UVG Salary)",
+      "description": "Lump-sum death benefit premium rates (UVG Salary)",
       "$ref": "UVGZPremiumRateType.json"
     },
     "deathCapitalSurplusSalaryPremiumRate": {
-      "description": "Lump-sum death benefit surplus salary premium rates in ‰",
+      "description": "Lump-sum death benefit surplus salary premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "survivorsPartnerPensionSalaryPremiumRateUVGSalary": {
@@ -48,7 +48,7 @@
       "$ref": "UVGZPremiumRateType.json"
     },
     "survivorsPartnerPensionSalarySurplusPremiumRate": {
-      "description": "Survivors' partner pension surplus salary premium rates in ‰",
+      "description": "Survivors' partner pension surplus salary premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "premiumDiffCoverage": {
@@ -56,11 +56,11 @@
       "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
     },
     "UVGSalaryNetPremiumRate": {
-      "description": "UVG salary net premium rates in %",
+      "description": "UVG salary net premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "surplusSalaryNetPremiumRate": {
-      "description": "Surplus salary net premium rates in %",
+      "description": "Surplus salary net premium rates.",
       "$ref": "UVGZPremiumRateType.json"
     },
     "premiumMinimumAmount": {

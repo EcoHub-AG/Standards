@@ -11,7 +11,7 @@
       "type": "string"
     },
     "finalPremiumRate": {
-      "description": "Final premium rate of the person mentioned by name in ‰. Corresponds to the net premium rate. . Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "description": "Final premium rate of the person mentioned by name. Corresponds to the net premium rate. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
       "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "totalPremium": {

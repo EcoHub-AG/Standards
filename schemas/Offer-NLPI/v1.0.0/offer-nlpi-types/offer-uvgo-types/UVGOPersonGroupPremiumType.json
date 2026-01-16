@@ -12,23 +12,23 @@
       "type": "string"
     },
     "premiumRiskRate": {
-      "description": "Premium risk rate in ‰. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "description": "Premium risk rate. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
       "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "costAdminRate": {
-      "description": "Costs admin rate in ‰. Cost admin rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "description": "Costs admin rate. Cost admin rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
       "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "sharingCostRate": {
-      "description": "Sharing costs  rate in ‰. Sharing cost rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "description": "Sharing costs  rate. Sharing cost rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
       "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "accidentPreventionContributionRate": {
-      "description": "Accident prevention contribution in ‰. Prevention rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "description": "Accident prevention contribution. Prevention rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
       "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "finalPremiumRate": {
-      "description": "Final premium rate in ‰. Corresponds to the final premium rate / gross premium rate. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+      "description": "Final premium rate. Corresponds to the final premium rate / gross premium rate. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
       "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
     },
     "totalPremium": {
