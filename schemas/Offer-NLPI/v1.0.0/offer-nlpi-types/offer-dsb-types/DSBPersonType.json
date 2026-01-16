@@ -72,19 +72,19 @@
             "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
           },
           "netPremiumDSBMPercentage": {
-            "description": "Net premium rate for maternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+            "description": "Net premium rate for maternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%. The value only needs to be set in the offer if requested in the offer request.",
             "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
           },
           "netPremiumDSBMAmount": {
-            "description": "Fixed payroll amount in CHF",
+            "description": "Fixed payroll amount in CHF. The value only needs to be set in the offer if requested in the offer request.",
             "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
           },
           "netPremiumDSBPPercentage": {
-            "description": "Net premium rate for paternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%.",
+            "description": "Net premium rate for paternity benefits. The net premium rate corresponds to the percentage of the net premium offered after deducting any discounts (combination discounts, payroll discounts, etc.), but without surcharges for fixed premium components. The net premium includes any final fee, brokerage fee, taxes and duties. Corresponds to the premium charged to the customer. Premium rates are always specified as a percentage in the format xxx.yyyyy. Note for insurers: A premium rate of 0.5‰ is displayed as 0.05%. The value only needs to be set in the offer if requested in the offer request.",
             "$ref": "../../../../Generics/v1.0.0/PercentageType.json"
           },
           "netPremiumDSBPAmount": {
-            "description": "Fixed payroll amount in CHF",
+            "description": "Fixed payroll amount in CHF. The value only needs to be set in the offer if requested in the offer request.",
             "$ref": "../../../../Generics/v1.0.0/MonetaryAmountType.json"
           },
           "premiumMinimumAmount": {
@@ -93,9 +93,7 @@
           }
         },
         "required": [
-          "netPremiumDSBAmount",
-          "netPremiumDSBMAmount",
-          "netPremiumDSBPAmount"
+          "netPremiumDSBAmount"
         ],
         "additionalProperties": false
       }

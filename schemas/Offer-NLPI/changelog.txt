@@ -5,6 +5,7 @@
     - removed properties "averageAgeMale" and "averageAgeFemale" (moved to OfferRequestDSBTye and OfferDSBType)
 - DSBPersonType (Changed)
     - changed type of "netPremiumDSBPercentage", "netPremiumDSBMPercentage", "netPremiumDSBPPercentage" to percentageType.
+    - properties "netPremiumDSBMAmount" and "netPremiumDSBPAmount" are now optional
 - DSBPremiumType (Changed)
     - Properties "netPremiumDSBMPercentage", "netPremiumDSBMAmount", "netPremiumDSBPPercentage", "netPremiumDSBPAmount" are no longer mandatory
     - changed type of "netPremiumDSBMalePercentage", "netPremiumDSBFemalePercentage", "netPremiumDSBMPercentage", "netPremiumDSBPPercentage" to percentageType.
