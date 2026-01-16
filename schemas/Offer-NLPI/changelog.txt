@@ -14,6 +14,7 @@
     - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
 - OfferNlpiDataType (changed)
     - property "companyLegalStatus" in "customer" is now optional
+    - properties "UVGRiskNo" and "NogaCodeMain" in "customer" and "coInsuredCustomer" are now always optional
 - OfferRequestDSBType (Changed)
     - added properties "averageAgeMale" and "averageAgeFemale" (moved from DSBPersonGroupsType)
 - OfferUVGOType (Changed)

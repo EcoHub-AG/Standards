@@ -21,13 +21,13 @@
       }
     },
     "UVGRiskNo": {
-      "description": "UVG risk number of the insured risk. Required in offer request for the customer but not the coInsuredCustomer. In the offer, one of UVGRiskNo and NOGACodeMain must be provided for the customer as well as coInsuredCustomer.",
+      "description": "UVG risk number of the insured risk. Required in offer request for the customer but not the coInsuredCustomer. Optional in the offer for the customer as well as coInsuredCustomer. For newly formed companies without a RiskNo, provide the value 0000.00.",
       "type": "string",
       "maxLength": 7,
       "pattern": "[0-9]{4}\\.[0-9]{2}"
     },
     "NOGACodeMain": {
-      "description": "Main NOGA-Code. Required in offer request. One of UVGRiskNo and NOGACodeMain must be provided in offer.",
+      "description": "Main NOGA-Code. Required in offer request, optional in offer.",
       "$ref": "NogaCodeType.json"
     },
     "NOGACodeAdditional": {

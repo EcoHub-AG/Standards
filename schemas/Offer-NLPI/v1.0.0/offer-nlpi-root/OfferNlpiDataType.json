@@ -28,37 +28,13 @@
       "$ref": "../offer-nlpi-types/CombinationMetaType.json"
     },
     "customer": {
-      "$ref": "../offer-nlpi-types/OfferCustomerType.json",
-      "anyOf": [
-        {
-          "required": [
-            "UVGRiskNo"
-          ]
-        },
-        {
-          "required": [
-            "UVGRiskNo"
-          ]
-        }
-      ]
+      "$ref": "../offer-nlpi-types/OfferCustomerType.json"
     },
     "coInsuredCustomer": {
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "../offer-nlpi-types/OfferCustomerType.json",
-        "anyOf": [
-          {
-            "required": [
-              "UVGRiskNo"
-            ]
-          },
-          {
-            "required": [
-              "UVGRiskNo"
-            ]
-          }
-        ]
+        "$ref": "../offer-nlpi-types/OfferCustomerType.json"
       },
       "unevaluatedItems": false
     },
