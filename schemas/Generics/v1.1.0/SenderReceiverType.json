@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "The sender or receiver of the file",
+  "type": "object",
+  "properties": {
+    "broker": {
+      "$ref": "BrokerType.json"
+    },
+    "insurer": {
+      "$ref": "InsurerType.json"
+    },
+    "otherExchangePartner": {
+      "$ref": "OtherExchangePartnerType.json"
+    }
+  },
+  "additionalProperties": false,
+  "oneOf": [
+    {
+      "required": [
+        "broker"
+      ]
+    },
+    {
+      "required": [
+        "insurer"
+      ]
+    },
+    {
+      "required": [
+        "otherExchangePartner"
+      ]
+    }
+  ]
+}
