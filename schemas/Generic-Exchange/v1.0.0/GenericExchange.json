@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "description": "Schema for Generic Exchange payloads in SAF. Generic Exchange is a dedicated SAF mechanism for exchanging non-standardized documents and messages, not a SAF data exchange standard.",
+  "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
+  "properties": {
+    "processIdentificationNo": {
+      "$ref": "../../Generics/v1.1.0/ProcessIdentificationNoType.json"
+    },
+    "timestamp": {
+      "$ref": "../../Generics/v1.1.0/TimestampType.json"
+    },
+    "processName": {
+      "$ref": "ProcessNameType.json"
+    },
+    "processVersion": {
+      "description": "Version of the Generic Exchange schema.",
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "header": {
+      "$ref": "../../Generics/v1.1.0/HeaderType.json"
+    },
+    "lobIG": {
+      "$ref": "../../Generics/v1.1.0/LOBIGType.json"
+    },
+    "lobINS": {
+      "description": "Branch code insurer. The level of detail should allow receivers to relate the exchange to upstream and downstream processes.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "unevaluatedItems": false
+    },
+    "customer": {
+      "$ref": "CustomerType.json"
+    },
+    "requestedResponseDate": {
+      "description": "Date by which the sender requests a response, if applicable.",
+      "type": "string",
+      "format": "date"
+    },
+    "comment": {
+      "description": "Free-text message or additional context not covered by the attachments.",
+      "type": "string",
+      "maxLength": 10000
+    },
+    "contact": {
+      "$ref": "../../Generics/v1.1.0/ContactType.json"
+    },
+    "attachment": {
+      "description": "One or more classified attachments belonging to the business context defined by processName.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "AttachmentType.json"
+      },
+      "unevaluatedItems": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "processIdentificationNo",
+    "timestamp",
+    "processName",
+    "subProcessName",
+    "processVersion",
+    "header",
+    "lobIG",
+    "customer"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Customer context for a Generic Exchange event.",
+  "type": "object",
+  "properties": {
+    "customerNumber": {
+      "description": "Number of the customer",
+      "type": "string"
+    },
+    "contractNumber": {
+      "description": "Contract number or contract numbers related to the exchange.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "unevaluatedItems": false
+    },
+    "company": {
+      "description": "The company the exchange relates to. Either company or person must be specified.",
+      "$ref": "../../Generics/v1.1.0/CompanyMinimalType.json"
+    },
+    "person": {
+      "description": "The person the exchange relates to. Either company or person must be specified.",
+      "$ref": "../../Generics/v1.1.0/PersonMinimalType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+  ],
+  "oneOf": [
+    {
+      "required": [
+        "company"
+      ]
+    },
+    {
+      "required": [
+        "person"
+      ]
+    }
+  ]
+}
