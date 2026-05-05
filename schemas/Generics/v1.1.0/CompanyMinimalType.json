@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Type for a legal entity with minimum fields.",
+  "type": "object",
+  "properties": {
+    "companyName": {
+      "$ref": "CompanyNameType.json"
+    },
+    "companyId": {
+      "$ref": "CompanyIdType.json"
+    },
+    "address": {
+      "$ref": "AddressType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "companyName",
+    "address"
+  ]
+}

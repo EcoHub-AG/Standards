@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Type for a natural person with minimum fields.",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "$ref": "FirstNameType.json"
+    },
+    "lastName": {
+      "$ref": "SurNameType.json"
+    },
+    "birthDate": {
+      "$ref": "BirthDateType.json"
+    },
+    "address": {
+      "$ref": "AddressType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "address"
+  ]
+}

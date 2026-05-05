@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "List of IG B2B branch codes. Only main categories of the IG B2B branch codes are permitted.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "string",
+    "pattern": "^(000|110|111|112|113|120|121|122|123|130|131|132|133|140|199|200|210|220|299|300|310|320|330|340|350|360|370|380|381|382|383|384|399|410|420|499|500|510|520|530|540|541|542|550|560|580|599|600|610|620|630|640|650|660|699|700|710|720|730|731|732|733|734|740|750|799|810|820|899|910|920|930|931|932|940|950|999)\\d{2}$"
+  },
+  "unevaluatedItems": false
+}
