@@ -48,9 +48,10 @@
       "maxLength": 10000
     },
     "contact": {
+      "description": "Contact information of the sender",
       "$ref": "../../Generics/v1.1.0/ContactType.json"
     },
-    "attachment": {
+    "attachments": {
       "description": "One or more classified attachments belonging to the business context defined by processName.",
       "type": "array",
       "minItems": 1,
@@ -65,10 +66,8 @@
     "processIdentificationNo",
     "timestamp",
     "processName",
-    "subProcessName",
     "processVersion",
     "header",
-    "lobIG",
-    "customer"
+    "lobIG"
   ]
 }
