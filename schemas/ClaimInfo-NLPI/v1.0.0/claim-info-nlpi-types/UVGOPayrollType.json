@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "UVGO payroll information",
+  "type": "object",
+  "properties": {
+    "occupationalAccident": {
+      "description": "Total wages for occupational disability insurance.",
+      "$ref": "ClaimInfoGenderSplitPayrollType.json"
+    },
+    "nonOccupationalAccident": {
+      "description": "Total wages for non-occupational disability insurance.",
+      "$ref": "ClaimInfoGenderSplitPayrollType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "occupationalAccident",
+    "nonOccupationalAccident"
+  ]
+}

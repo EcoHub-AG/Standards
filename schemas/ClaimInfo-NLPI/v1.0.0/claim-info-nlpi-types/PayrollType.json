@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Payroll information for one calendar year",
+  "type": "object",
+  "properties": {
+    "year": {
+      "description": "Calendar year of coverage validity",
+      "type": "integer"
+    },
+    "DSB": {
+      "description": "Total wages for DSB. If a group of persons changes its coverage during the year, the corresponding annual wage sum is distributed pro rata among the corresponding coverage groups. Example: “Management” with an insured annual wage sum for men of 400,000 has a waiting period of 30 days from January 1, 20yy to March 31, 20yy (coverage group n) and a waiting period of 60 days from April 1, 20yy to December 31, 20yy (coverage group m). This results in the following presentation in the information: Coverage group n shows an insured total salary of 100,000 in 20yy; coverage group m shows an insured total salary of 300,000 in 20yy.",
+      "$ref": "ClaimInfoGenderSplitPayrollType.json"
+    },
+    "UVGO": {
+      "description": "Total wages for occupational and non-occupational disability insurance.",
+      "$ref": "ClaimInfoUVGOPayrollType.json"
+    },
+    "UVGZ": {
+      "type": "object",
+      "properties": {
+        "upToUVGMaximum": {
+          "description": "Total wages up to UVG max. If available, definitively settled insured total wages up to UVG max. (men and women), rounded commercially to whole CHF. Otherwise, advance total wages (usually in the current year), rounded commercially to whole CHF.",
+          "type": "integer"
+        },
+        "aboveUVGMaximum": {
+          "description": "Wage sum above UVG max. If available, definitively settled insured wage sum above UVG max. (men and women), rounded to the nearest whole CHF. Otherwise, advance wage sum (usually in the current year), rounded to the nearest whole CHF.",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "year"
+  ]
+}

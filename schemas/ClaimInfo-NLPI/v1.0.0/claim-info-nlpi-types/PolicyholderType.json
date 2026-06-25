@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Policyholder information",
+  "type": "object",
+  "properties": {
+    "companyName": {
+      "description": "Name of the company to be insured. Policyholder designation: Customer name",
+      "$ref": "../../../Generics/v1.0.0/CompanyNameType.json"
+    },
+    "address": {
+      "description": "Address of the policyholder",
+      "$ref": "../../../Generics/v1.0.0/AddressType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "companyName",
+    "address"
+  ]
+}

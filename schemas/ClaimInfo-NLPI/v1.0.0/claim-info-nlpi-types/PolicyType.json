@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Claims information for a single policy",
+  "type": "object",
+  "properties": {
+    "previousInsurerCompanyNumber": {
+      "$ref": "PreviousInsurerCompanyNumberType.json"
+    },
+    "subSectorCode": {
+      "$ref": "SubSectorCodeType.json"
+    },
+    "policyNumber": {
+      "$ref": "PolicyNumberType.json"
+    },
+    "policyholder": {
+      "description": "Policyholder information",
+      "$ref": "PolicyholderType.json"
+    },
+    "policyStartDate": {
+      "description": "Original start date of the insurance with the company providing the information. This is usually the original start date of the policy. In the event of interim changes to the policy number, this refers to the start date of the earliest policy.",
+      "type": "string",
+      "format": "date"
+    },
+    "policyEndDate": {
+      "description": "The next possible termination date of the policy (either the expiration date, if this is in the future, or the end of the year if the contract is tacitly renewed).",
+      "type": "string",
+      "format": "date"
+    },
+    "UVGRiskNo": {
+      "description": "Risk number according to the UVG risk classification",
+      "type": "string",
+      "pattern": "^[0-9]{4}\\.[0-9]{2}$"
+    },
+    "operatingMode": {
+      "description": "Operating mode in text form. Description of the operation according to the UVG risk classification (currently 2010 edition) in the language of the operation/information (consistent with language field).",
+      "type": "string"
+    },
+    "language": {
+      "$ref": "../../../Generics/v1.0.0/LanguageType.json"
+    },
+    "viewDate": {
+      "description": "Date of the data/processing status shown",
+      "type": "string",
+      "format": "date"
+    },
+    "eventBasedAccounting": {
+      "description": "Indicates whether the information uses event view instead of financial view (Event view: Payments are assigned to the year of the corresponding event. Financial view: Payments are assigned to the year they were paid).",
+      "type": "boolean"
+    },
+    "UVGInsuranceExists": {
+      "description": "Indicator whether insurance of the workforce exists (UVG). Omitted if not UVG.",
+      "type": "boolean"
+    },
+    "voluntaryInsuranceExists": {
+      "description": "Indicator whether voluntary insurance of individual exists (UVG). Omitted if not UVG.",
+      "type": "boolean"
+    },
+    "voluntaryInsurancePayroll": {
+      "description": "Insured wage sum for voluntary insurance (UVG). Omitted if not UVG or if no voluntary insurance exists.",
+      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+    },
+    "terminated": {
+      "description": "Indicates whether the contract has been terminated.",
+      "type": "boolean"
+    },
+    "terminationDate": {
+      "description": "Effective termination date. Omitted if not terminated.",
+      "type": "string",
+      "format": "date"
+    },
+    "terminatedByCustomer": {
+      "description": "Indicates whether termination was initiated by the customer or the insurer. Omitted if not terminated.",
+      "type": "boolean"
+    },
+    "occupationalSafetyViolation": {
+      "description": "Indicates whether a higher classification was ordered because of occupational safety violations.",
+      "type": "boolean"
+    },
+    "competentAuthorityName": {
+      "description": "Name of the competent implementing body. Omitted if occupational safety violation is not applicable.",
+      "type": "string"
+    },
+    "coverageGroups": {
+      "description": "Coverage groups insured under the policy. A “coverage group” here refers to the unique combination of a group of persons defined in the contract (e.g., “All employees including apprentices”, “Management,” ...) and the entirety of the cover insured for this group of persons at a given point in time. If a group of persons changes its cover during the period shown (e.g., change in the waiting period in the KTG), this results in a new coverage group.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "ClaimInfoCoverageGroupType.json"
+      },
+      "unevaluatedItems": false
+    },
+    "claimHistory": {
+      "description": "Aggregated information on the number of claims, payments, and provisions as of the date of the report",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "ClaimInfoClaimHistoryType.json"
+      },
+      "unevaluatedItems": false
+    },
+    "longTermClaims": {
+      "description": "Long term claims are only relevant for KTG. No entries are required for information on the UVG or UVG-Z sectors. All KTG individual claims from the relevant observation period that are open, have been settled (full benefit period reached) or have incurred expenses (total of payments and provisions) of more than CHF 10,000 are listed here. If there are no such claims for a KTG policy, the array is omitted. Otherwise, there is one entry per listed claim, sorted in ascending order by eventDate.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "ClaimInfoLongTermClaimType.json"
+      },
+      "unevaluatedItems": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "previousInsurerCompanyNumber",
+    "subSectorCode",
+    "policyNumber",
+    "policyholder",
+    "policyStartDate",
+    "policyEndDate",
+    "riskNumber",
+    "operatingMode",
+    "language",
+    "viewDate",
+    "eventBasedAccounting",
+    "terminated",
+    "coverageGroups"
+  ]
+}

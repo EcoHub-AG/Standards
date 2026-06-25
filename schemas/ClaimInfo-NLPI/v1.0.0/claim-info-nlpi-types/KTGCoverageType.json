@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "DSB coverage information",
+  "type": "object",
+  "properties": {
+    "isIndemnityInsurance": {
+      "description": "Indicates whether the coverage group is indemnity insurance instead of sum insured.",
+      "type": "boolean"
+    },
+    "isFullCoverage": {
+      "description": "Indicates whether the KTG cover is full coverage instead of coordination coverage.",
+      "type": "boolean"
+    },
+    "dailyAllowanceInsured": {
+      "description": "Indicates whether daily allowance coverage is insured.",
+      "type": "boolean"
+    },
+    "maximumBenefitPeriodInDays": {
+      "description": "Maximum benefit period without deduction of the waiting period; normally 720 or 730.",
+      "type": "integer"
+    },
+    "dailyAllowanceStages": {
+      "description": "Configured daily allowance stages in chronological order. Single entry if daily allowance is not staggered. Up to 3 entries if staggered, for first, second and third daily allowance.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "$ref": "ClaimInfoDailyAllowanceStageType.json"
+      },
+      "unevaluatedItems": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "isIndemnityInsurance",
+    "isFullCoverage",
+    "dailyAllowanceInsured",
+    "maximumBenefitPeriodInDays"
+  ]
+}

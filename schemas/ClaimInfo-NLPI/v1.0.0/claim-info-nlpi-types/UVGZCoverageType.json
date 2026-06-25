@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "UVGZ coverage information",
+  "type": "object",
+  "properties": {
+    "dailyAllowanceUpToUVGMaximumInsured": {
+      "description": "Indicates whether daily allowance up to the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "dailyAllowanceUpToUVGMaximumStages": {
+      "description": "Daily allowance stages up to the UVG maximum in chronological order. Single entry if daily allowance is not staggered. Up to 3 entries if staggered, for first, second and third daily allowance",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "$ref": "ClaimInfoDailyAllowanceStageType.json"
+      },
+      "unevaluatedItems": false
+    },
+    "dailyAllowanceFirstTwoDaysInsured": {
+      "description": "Indicates whether a specific day 1 and 2 daily allowance is insured.",
+      "type": "boolean"
+    },
+    "dailyAllowanceFirstTwoDaysBenefitPercentage": {
+      "description": "Benefit amount in percent for the first two days (whole number).",
+      "type": "integer"
+    },
+    "dailyAllowanceAboveUVGMaximumInsured": {
+      "description": "Indicates whether daily allowance above the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "dailyAllowanceAboveUVGMaximumStages": {
+      "description": "Daily allowance stages above the UVG maximum in chronological order. Single entry if daily allowance is not staggered. Up to 3 entries if staggered, for first, second and third daily allowance.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "ClaimInfoDailyAllowanceStageType.json"
+      },
+      "unevaluatedItems": false
+    },
+    "disabilityPensionAboveUVGMaximumInsured": {
+      "description": "Indicates whether disability pension above the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "disabilityCapitalUpToUVGMaximum": {
+      "description": "Disability capital up to the UVG maximum.",
+      "$ref": "ClaimInfoUVGZDisabilityCapitalBenefitType.json"
+    },
+    "disabilityCapitalAboveUVGMaximum": {
+      "description": "Disability capital above the UVG maximum.",
+      "$ref": "ClaimInfoUVGZDisabilitySurplusCapitalBenefitType.json"
+    },
+    "survivorsPensionAboveUVGMaximumInsured": {
+      "description": "Indicates whether survivors pension above the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "deathCapitalUpToUVGMaximum": {
+      "$ref": "ClaimInfoUVGZCapitalBenefitType.json"
+    },
+    "deathCapitalAboveUVGMaximum": {
+      "$ref": "ClaimInfoUVGZCapitalBenefitType.json"
+    },
+    "medicalExpenses": {
+      "$ref": "ClaimInfoUVGZMedicalExpensesType.json"
+    },
+    "differenceCoverageInsured": {
+      "description": "Indicates whether difference coverage is insured.",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "dailyAllowanceUpToUVGMaximumInsured",
+    "dailyAllowanceUpToUVGMaximumStages",
+    "dailyAllowanceFirstTwoDaysInsured",
+    "dailyAllowanceAboveUVGMaximumInsured",
+    "disabilityPensionAboveUVGMaximumInsured",
+    "disabilityCapitalUpToUVGMaximum",
+    "disabilityCapitalAboveUVGMaximum",
+    "survivorsPensionAboveUVGMaximumInsured",
+    "deathCapitalUpToUVGMaximum",
+    "deathCapitalAboveUVGMaximum",
+    "medicalExpenses",
+    "differenceCoverageInsured"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Capital benefit configuration for UVGZ coverages",
+  "type": "object",
+  "properties": {
+    "insured": {
+      "description": "Indicates whether the benefit is insured.",
+      "type": "boolean"
+    },
+    "benefitType": {
+      "description": "Type of capital benefit amount",
+      "type": "string",
+      "enum": [
+        "salaryMultiple",
+        "amount"
+      ]
+    },
+    "benefitValue": {
+      "description": "Benefit amount as annual salary multiple (0.5, 1-10) or amount in whole CHF depending on benefitType.",
+      "type": "number"
+    },
+    "progression": {
+      "description": "Progression value, if applicable.",
+      "type": "integer",
+      "enum": [
+        100,
+        225,
+        350
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "insured"
+  ]
+}

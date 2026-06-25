@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Long-term KTG claim",
+  "type": "object",
+  "properties": {
+    "claimId": {
+      "description": "Serial number of the claim, starting at 1 and ascending chronologically.",
+      "type": "integer"
+    },
+    "eventDate": {
+      "description": "Date on which the damage occurred.",
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "description": "Status of the long-term claim",
+      "type": "string",
+      "enum": [
+        "open",
+        "settled",
+        "maximumBenefitPeriodReached"
+      ]
+    },
+    "totalPayment": {
+      "description": "Total of all daily allowances paid and case-related costs (e.g., medical certificates). Consistency with aggregated values claimsHistory must be ensured.",
+      "type": "integer"
+    },
+    "caseReserves": {
+      "description": "Open case reserves. For closed cases, 0.",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "claimId",
+    "eventDate",
+    "status",
+    "totalPayment",
+    "caseReserves"
+  ]
+}
