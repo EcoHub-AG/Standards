@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "type": "object",
-  "description": "Schema for a request for claims information in the ClaimsExperience NLPI process. This schema is publicly accessible for informational purposes only. Usage requires prior authorization from EcoHub AG.",
+  "description": "Schema for claims information data in the ClaimsExperience NLPI process. This schema is publicly accessible for informational purposes only. Usage requires prior authorization from EcoHub AG.",
   "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
   "properties": {
     "processIdentificationNo": {
@@ -11,50 +11,38 @@
       "$ref": "../../../Generics/v1.0.0/TimestampType.json"
     },
     "processName": {
-      "$ref": "../claim-info-nlpi-types/ProcessNameConstType.json"
+      "$ref": "../claimsExperience-nlpi-types/ProcessNameConstType.json"
     },
     "subProcessName": {
       "description": "Name of the subprocess",
       "type": "string",
-      "const": "request"
+      "const": "claimsExperience"
     },
     "processVersion": {
-      "$ref": "../claim-info-nlpi-types/ProcessVersionConstType.json"
+      "$ref": "../claimsExperience-nlpi-types/ProcessVersionConstType.json"
     },
     "header": {
       "$ref": "../../../Generics/v1.0.0/HeaderType.json"
     },
-    "previousInsurerCompanyNumber": {
-      "$ref": "../claim-info-nlpi-types/PreviousInsurerCompanyNumberType.json"
-    },
-    "subSectorCode": {
-      "$ref": "../claim-info-nlpi-types/SubSectorCodeType.json"
-    },
-    "policyNumbers": {
-      "description": "Policy numbers for which claims information is requested.",
+    "policies": {
+      "description": "Claims information grouped by policy.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "../claim-info-nlpi-types/PolicyNumberType.json"
+        "$ref": "../claimsExperience-nlpi-types/ClaimInfoPolicyType.json"
       },
       "unevaluatedItems": false
-    },
-    "policyholder": {
-      "$ref": "../claim-info-nlpi-types/PolicyholderType.json"
-    },
-    "language": {
-      "$ref": "../../../Generics/v1.0.0/LanguageType.json"
     },
     "comment": {
       "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
       "description": "General comment field"
     },
     "contactDetails": {
-      "description": "Contact details of the employee at the broker who is responsible for the request (e.g. backoffice employee).",
+      "description": "Contact details of the employee at the insurer who is responsible for the request (e.g. backoffice employee).",
       "$ref": "../../../Generics/v1.0.0/ContactType.json"
     },
     "document": {
-      "description": "Supporting documents in any file format.",
+      "description": "Claims experience documents, typically PDF and CSV.",
       "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
     }
   },
@@ -66,9 +54,8 @@
     "subProcessName",
     "processVersion",
     "header",
-    "subSectorCode",
-    "policyNumbers",
-    "policyholder",
-    "language"
+    "policies",
+    "contactDetails",
+    "document"
   ]
 }
