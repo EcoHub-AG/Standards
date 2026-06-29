@@ -2,6 +2,7 @@
 - CompanyMinimalType (Added)
 - PersonMinimalType (Added)
 - LOBIGType (Added)
+- UVGRiskNoType (Added)
 
 ### Version 1.0.0
 - AddressDefinitions (Removed)
