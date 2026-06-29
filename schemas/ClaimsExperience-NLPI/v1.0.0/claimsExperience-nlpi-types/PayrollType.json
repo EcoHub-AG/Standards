@@ -7,15 +7,15 @@
       "description": "Calendar year of coverage validity",
       "type": "integer"
     },
-    "DSB": {
-      "description": "Total wages for DSB. If a group of persons changes its coverage during the year, the corresponding annual wage sum is distributed pro rata among the corresponding coverage groups. Example: “Management” with an insured annual wage sum for men of 400,000 has a waiting period of 30 days from January 1, 20yy to March 31, 20yy (coverage group n) and a waiting period of 60 days from April 1, 20yy to December 31, 20yy (coverage group m). This results in the following presentation in the information: Coverage group n shows an insured total salary of 100,000 in 20yy; coverage group m shows an insured total salary of 300,000 in 20yy.",
-      "$ref": "ClaimInfoGenderSplitPayrollType.json"
+    "KTGWageSums": {
+      "description": "Total wages for KTG. If a group of persons changes its coverage during the year, the corresponding annual wage sum is distributed pro rata among the corresponding coverage groups. Example: “Management” with an insured annual wage sum for men of 400,000 has a waiting period of 30 days from January 1, 20yy to March 31, 20yy (coverage group n) and a waiting period of 60 days from April 1, 20yy to December 31, 20yy (coverage group m). This results in the following presentation in the information: Coverage group n shows an insured total salary of 100,000 in 20yy; coverage group m shows an insured total salary of 300,000 in 20yy.",
+      "$ref": "GenderSplitPayrollType.json"
     },
-    "UVGO": {
+    "UVGOWageSums": {
       "description": "Total wages for occupational and non-occupational disability insurance.",
-      "$ref": "ClaimInfoUVGOPayrollType.json"
+      "$ref": "UVGOPayrollType.json"
     },
-    "UVGZ": {
+    "UVGZWageSums": {
       "type": "object",
       "properties": {
         "upToUVGMaximum": {
@@ -27,7 +27,11 @@
           "type": "integer"
         }
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "required": [
+        "upToUVGMaximum",
+        "aboveUVGMaximum"
+      ]
     }
   },
   "additionalProperties": false,

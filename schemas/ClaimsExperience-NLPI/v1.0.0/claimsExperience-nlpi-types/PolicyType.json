@@ -12,9 +12,9 @@
     "policyNumber": {
       "$ref": "PolicyNumberType.json"
     },
-    "policyholder": {
-      "description": "Policyholder information",
-      "$ref": "PolicyholderType.json"
+    "customer": {
+      "description": "Information about the customer / policy holder.",
+      "$ref": "../../../Generics/v1.1.0/CompanyMinimalType.json"
     },
     "policyStartDate": {
       "description": "Original start date of the insurance with the company providing the information. This is usually the original start date of the policy. In the event of interim changes to the policy number, this refers to the start date of the earliest policy.",
@@ -27,16 +27,15 @@
       "format": "date"
     },
     "UVGRiskNo": {
-      "description": "Risk number according to the UVG risk classification",
-      "type": "string",
-      "pattern": "^[0-9]{4}\\.[0-9]{2}$"
+      "description": "Risk number according to the UVG risk classification (currently 2010 edition). Mandatory if the subSectorCode is UVG or UVG-Z.",
+      "$ref": "../../../Generics/v1.1.0/UVGRiskNoType.json"
     },
     "operatingMode": {
       "description": "Operating mode in text form. Description of the operation according to the UVG risk classification (currently 2010 edition) in the language of the operation/information (consistent with language field).",
       "type": "string"
     },
     "language": {
-      "$ref": "../../../Generics/v1.0.0/LanguageType.json"
+      "$ref": "../../../Generics/v1.1.0/LanguageType.json"
     },
     "viewDate": {
       "description": "Date of the data/processing status shown",
@@ -55,9 +54,9 @@
       "description": "Indicator whether voluntary insurance of individual exists (UVG). Omitted if not UVG.",
       "type": "boolean"
     },
-    "voluntaryInsurancePayroll": {
+    "voluntaryInsuranceWageSum": {
       "description": "Insured wage sum for voluntary insurance (UVG). Omitted if not UVG or if no voluntary insurance exists.",
-      "$ref": "../../../Generics/v1.0.0/MonetaryAmountType.json"
+      "type": "integer"
     },
     "terminated": {
       "description": "Indicates whether the contract has been terminated.",
@@ -76,7 +75,7 @@
       "description": "Indicates whether a higher classification was ordered because of occupational safety violations.",
       "type": "boolean"
     },
-    "competentAuthorityName": {
+    "competentAuthority": {
       "description": "Name of the competent implementing body. Omitted if occupational safety violation is not applicable.",
       "type": "string"
     },
@@ -85,16 +84,16 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "ClaimInfoCoverageGroupType.json"
+        "$ref": "CoverageGroupType.json"
       },
       "unevaluatedItems": false
     },
     "claimHistory": {
-      "description": "Aggregated information on the number of claims, payments, and provisions as of the date of the report",
+      "description": "Aggregated information on the number of claims, payments, and provisions as of the date of the report. Sorted in ascending order by year.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "ClaimInfoClaimHistoryType.json"
+        "$ref": "ClaimHistoryType.json"
       },
       "unevaluatedItems": false
     },
@@ -103,7 +102,7 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "ClaimInfoLongTermClaimType.json"
+        "$ref": "LongTermClaimType.json"
       },
       "unevaluatedItems": false
     }
@@ -113,15 +112,181 @@
     "previousInsurerCompanyNumber",
     "subSectorCode",
     "policyNumber",
-    "policyholder",
+    "customer",
     "policyStartDate",
     "policyEndDate",
-    "riskNumber",
-    "operatingMode",
     "language",
     "viewDate",
     "eventBasedAccounting",
     "terminated",
     "coverageGroups"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "voluntaryInsuranceExists": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "voluntaryInsuranceWageSum"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "terminated": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "terminationDate",
+          "terminatedByCustomer"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "occupationalSafetyViolation": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "competentAuthority"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subSectorCode": {
+            "const": 360
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "coverageGroups": {
+            "items": {
+              "properties": {
+                "insuredWageSums": {
+                  "items": {
+                    "required": [
+                      "UVGZWageSums"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "UVGZCoverage"
+              ]
+            }
+          },
+          "claimHistory": {
+            "items": {
+              "required": [
+                "totalPayment",
+                "caseReserves"
+              ]
+            }
+          }
+        },
+        "required": [
+          "UVGRiskNo",
+          "operatingMode"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subSectorCode": {
+            "const": 380
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "coverageGroups": {
+            "items": {
+              "properties": {
+                "insuredWageSums": {
+                  "items": {
+                    "required": [
+                      "UVGOWageSums"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "UVGCoverage"
+              ]
+            }
+          },
+          "claimHistory": {
+            "items": {
+              "required": [
+                "accidentType",
+                "medicalExpensesPayment",
+                "dailyAllowancePayment"
+              ]
+            }
+          }
+        },
+        "required": [
+          "UVGInsuranceExists",
+          "voluntaryInsuranceExists",
+          "occupationalSafetyViolation",
+          "UVGRiskNo",
+          "operatingMode"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "subSectorCode": {
+            "const": 420
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "coverageGroups": {
+            "items": {
+              "properties": {
+                "insuredWageSums": {
+                  "items": {
+                    "required": [
+                      "KTGWageSums"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "KTGCoverage"
+              ]
+            }
+          },
+          "claimHistory": {
+            "items": {
+              "required": [
+                "totalPayment",
+                "caseReserves"
+              ]
+            }
+          }
+        }
+      }
+    }
   ]
 }

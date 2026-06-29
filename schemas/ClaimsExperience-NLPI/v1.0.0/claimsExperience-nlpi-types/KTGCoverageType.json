@@ -15,17 +15,17 @@
       "description": "Indicates whether daily allowance coverage is insured.",
       "type": "boolean"
     },
-    "maximumBenefitPeriodInDays": {
-      "description": "Maximum benefit period without deduction of the waiting period; normally 720 or 730.",
+    "maximumBenefitPeriod": {
+      "description": "Maximum benefit period in days without deduction of the waiting period; normally 720 or 730.",
       "type": "integer"
     },
     "dailyAllowanceStages": {
-      "description": "Configured daily allowance stages in chronological order. Single entry if daily allowance is not staggered. Up to 3 entries if staggered, for first, second and third daily allowance.",
+      "description": "Daily allowance stages in chronological order. Single entry if daily allowance is not staggered. Up to 3 entries if staggered, for first, second and third daily allowance.",
       "type": "array",
       "minItems": 1,
       "maxItems": 3,
       "items": {
-        "$ref": "ClaimInfoDailyAllowanceStageType.json"
+        "$ref": "DailyAllowanceStageType.json"
       },
       "unevaluatedItems": false
     }
@@ -35,6 +35,18 @@
     "isIndemnityInsurance",
     "isFullCoverage",
     "dailyAllowanceInsured",
-    "maximumBenefitPeriodInDays"
-  ]
+    "maximumBenefitPeriod"
+  ],
+  "if": {
+    "properties": {
+      "dailyAllowanceInsured": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "dailyAllowanceStages"
+    ]
+  }
 }

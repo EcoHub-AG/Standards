@@ -7,7 +7,7 @@
       "description": "Benefit amount in percent (whole number)",
       "type": "integer"
     },
-    "waitingPeriodInDays": {
+    "waitingPeriod": {
       "description": "Waiting period in days",
       "type": "integer"
     }
@@ -15,6 +15,6 @@
   "additionalProperties": false,
   "required": [
     "benefitPercentage",
-    "waitingPeriodInDays"
+    "waitingPeriod"
   ]
 }

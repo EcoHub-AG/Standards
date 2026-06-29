@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Capital benefit configuration for UVGZ coverages",
+  "description": "Death lump sum benefit",
   "type": "object",
   "properties": {
     "insured": {
@@ -28,5 +28,17 @@
   "additionalProperties": false,
   "required": [
     "insured"
-  ]
+  ],
+  "if": {
+    "properties": {
+      "insured": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "benefitValue"
+    ]
+  }
 }

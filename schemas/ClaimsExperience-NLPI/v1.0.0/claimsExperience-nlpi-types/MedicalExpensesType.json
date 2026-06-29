@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "UVGZ medical expenses coverage",
+  "description": "Medical expenses coverage",
   "type": "object",
   "properties": {
     "insured": {
@@ -12,12 +12,24 @@
       "type": "string",
       "enum": [
         "private",
-        "semiPrivate"
+        "semi-private"
       ]
     }
   },
   "additionalProperties": false,
   "required": [
     "insured"
-  ]
+  ],
+  "if": {
+    "properties": {
+      "insured": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "hospitalClass"
+    ]
+  }
 }

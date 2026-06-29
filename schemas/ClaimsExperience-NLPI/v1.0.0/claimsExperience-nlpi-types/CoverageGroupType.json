@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "sequenceNumber": {
-      "description": "Sequence number of the coverage group, starting at 1; must be unique within the same JSON document.",
+      "description": "Sequence number of the coverage group, starting at 1; must be unique within the JSON document.",
       "type": "integer"
     },
     "isIndividual": {
@@ -19,21 +19,21 @@
       "description": "Last year in which the relevant coverage group was insured under the policy. Serves to define the time period if individual insured groups change their coverage during the term of the contract.",
       "type": "integer"
     },
-    "DSBCoverage": {
-      "$ref": "ClaimInfoKTGCoverageType.json"
+    "KTGCoverage": {
+      "$ref": "KTGCoverageType.json"
     },
-    "UVGOCoverage": {
-      "$ref": "ClaimInfoUVGOCoverageType.json"
+    "UVGCoverage": {
+      "$ref": "UVGCoverageType.json"
     },
     "UVGZCoverage": {
-      "$ref": "ClaimInfoUVGZCoverageType.json"
+      "$ref": "UVGZCoverageType.json"
     },
-    "insuredPayrolls": {
-      "description": "Information on the insured wage sums for the coverage group.",
+    "insuredWageSums": {
+      "description": "Information on the insured wage sums for the coverage group, sorted in ascending order by year.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "ClaimInfoPayrollType.json"
+        "$ref": "PayrollType.json"
       },
       "unevaluatedItems": false
     }

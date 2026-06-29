@@ -39,7 +39,7 @@
       },
       "unevaluatedItems": false
     },
-    "policyholder": {
+    "customer": {
       "$ref": "../claimsExperience-nlpi-types/PolicyholderType.json"
     },
     "language": {

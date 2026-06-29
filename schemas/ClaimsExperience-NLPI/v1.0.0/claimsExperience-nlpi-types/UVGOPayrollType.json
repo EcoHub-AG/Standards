@@ -5,11 +5,11 @@
   "properties": {
     "occupationalAccident": {
       "description": "Total wages for occupational disability insurance.",
-      "$ref": "ClaimInfoGenderSplitPayrollType.json"
+      "$ref": "GenderSplitPayrollType.json"
     },
     "nonOccupationalAccident": {
       "description": "Total wages for non-occupational disability insurance.",
-      "$ref": "ClaimInfoGenderSplitPayrollType.json"
+      "$ref": "GenderSplitPayrollType.json"
     }
   },
   "additionalProperties": false,

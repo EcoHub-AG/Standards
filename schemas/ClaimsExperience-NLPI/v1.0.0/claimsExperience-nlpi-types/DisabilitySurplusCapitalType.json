@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Capital benefit configuration for UVGZ coverages",
+  "description": "Disability lump sum benefit above the UVG maximum",
   "type": "object",
   "properties": {
     "insured": {
-      "description": "Indicates whether the benefit is insured.",
+      "description": "Indicates whether the disability lump sum benefit above the UVG maximum is insured.",
       "type": "boolean"
     },
     "benefitValue": {
@@ -24,5 +24,18 @@
   "additionalProperties": false,
   "required": [
     "insured"
-  ]
+  ],
+  "if": {
+    "properties": {
+      "insured": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "benefitValue",
+      "progression"
+    ]
+  }
 }
