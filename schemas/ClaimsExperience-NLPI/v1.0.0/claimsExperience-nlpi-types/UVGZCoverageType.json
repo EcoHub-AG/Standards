@@ -69,6 +69,35 @@
     "differenceCoverageInsured": {
       "description": "Indicates whether difference coverage is insured.",
       "type": "boolean"
+    },
+    "insuredWageSums": {
+      "description": "Information on the insured UVGZ wage sums for the coverage group, sorted in ascending order by year.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "description": "Calendar year of coverage validity",
+            "type": "integer"
+          },
+          "upToUVGMaximum": {
+            "description": "Total wages up to UVG max. If available, definitively settled insured total wages up to UVG max. (men and women), rounded commercially to whole CHF. Otherwise, advance total wages (usually in the current year), rounded commercially to whole CHF.",
+            "type": "integer"
+          },
+          "aboveUVGMaximum": {
+            "description": "Wage sum above UVG max. If available, definitively settled insured wage sum above UVG max. (men and women), rounded to the nearest whole CHF. Otherwise, advance wage sum (usually in the current year), rounded to the nearest whole CHF.",
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "year",
+          "upToUVGMaximum",
+          "aboveUVGMaximum"
+        ]
+      },
+      "unevaluatedItems": false
     }
   },
   "additionalProperties": false,
@@ -84,7 +113,8 @@
     "deathCapitalUpToUVGMaximum",
     "deathCapitalAboveUVGMaximum",
     "medicalExpenses",
-    "differenceCoverageInsured"
+    "differenceCoverageInsured",
+    "insuredWageSums"
   ],
   "allOf": [
     {

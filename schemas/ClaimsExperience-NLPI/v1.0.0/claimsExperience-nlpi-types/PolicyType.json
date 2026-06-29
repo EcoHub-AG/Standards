@@ -177,15 +177,6 @@
         "properties": {
           "coverageGroups": {
             "items": {
-              "properties": {
-                "insuredWageSums": {
-                  "items": {
-                    "required": [
-                      "UVGZWageSums"
-                    ]
-                  }
-                }
-              },
               "required": [
                 "UVGZCoverage"
               ]
@@ -218,15 +209,6 @@
         "properties": {
           "coverageGroups": {
             "items": {
-              "properties": {
-                "insuredWageSums": {
-                  "items": {
-                    "required": [
-                      "UVGOWageSums"
-                    ]
-                  }
-                }
-              },
               "required": [
                 "UVGCoverage"
               ]
@@ -263,15 +245,6 @@
         "properties": {
           "coverageGroups": {
             "items": {
-              "properties": {
-                "insuredWageSums": {
-                  "items": {
-                    "required": [
-                      "KTGWageSums"
-                    ]
-                  }
-                }
-              },
               "required": [
                 "KTGCoverage"
               ]
