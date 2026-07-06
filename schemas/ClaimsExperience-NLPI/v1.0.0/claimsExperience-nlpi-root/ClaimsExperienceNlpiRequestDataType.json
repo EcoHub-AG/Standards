@@ -40,7 +40,7 @@
       "unevaluatedItems": false
     },
     "customer": {
-      "$ref": "../claimsExperience-nlpi-types/PolicyholderType.json"
+      "$ref": "../../../Generics/v1.1.0/CompanyMinimalType.json"
     },
     "language": {
       "$ref": "../../../Generics/v1.0.0/LanguageType.json"

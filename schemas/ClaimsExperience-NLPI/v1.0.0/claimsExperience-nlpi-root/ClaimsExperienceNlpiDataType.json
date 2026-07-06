@@ -5,10 +5,10 @@
   "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
   "properties": {
     "processIdentificationNo": {
-      "$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
+      "$ref": "../../../Generics/v1.1.0/ProcessIdentificationNoType.json"
     },
     "timestamp": {
-      "$ref": "../../../Generics/v1.0.0/TimestampType.json"
+      "$ref": "../../../Generics/v1.1.0/TimestampType.json"
     },
     "processName": {
       "$ref": "../claimsExperience-nlpi-types/ProcessNameConstType.json"
@@ -22,7 +22,7 @@
       "$ref": "../claimsExperience-nlpi-types/ProcessVersionConstType.json"
     },
     "header": {
-      "$ref": "../../../Generics/v1.0.0/HeaderType.json"
+      "$ref": "../../../Generics/v1.1.0/HeaderType.json"
     },
     "policies": {
       "description": "Claims information grouped by policy.",
@@ -34,16 +34,16 @@
       "unevaluatedItems": false
     },
     "comment": {
-      "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
+      "$ref": "../../../Generics/v1.1.0/RestrictedStringType.json",
       "description": "General comment field"
     },
     "contactDetails": {
-      "description": "Contact details of the employee at the insurer who is responsible for the request (e.g. backoffice employee).",
-      "$ref": "../../../Generics/v1.0.0/ContactType.json"
+      "description": "Contact details of the employee at the insurer who is responsible for the claims information (e.g. backoffice employee).",
+      "$ref": "../../../Generics/v1.1.0/ContactType.json"
     },
     "document": {
       "description": "Claims experience documents, typically PDF and CSV.",
-      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
+      "$ref": "../../../Generics/v1.1.0/MultiFileType.json"
     }
   },
   "additionalProperties": false,

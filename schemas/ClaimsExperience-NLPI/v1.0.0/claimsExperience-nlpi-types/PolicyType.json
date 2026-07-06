@@ -128,7 +128,10 @@
           "voluntaryInsuranceExists": {
             "const": true
           }
-        }
+        },
+        "required": [
+          "voluntaryInsuranceExists"
+        ]
       },
       "then": {
         "required": [
@@ -142,7 +145,10 @@
           "terminated": {
             "const": true
           }
-        }
+        },
+        "required": [
+          "terminated"
+        ]
       },
       "then": {
         "required": [
@@ -157,7 +163,10 @@
           "occupationalSafetyViolation": {
             "const": true
           }
-        }
+        },
+        "required": [
+          "occupationalSafetyViolation"
+        ]
       },
       "then": {
         "required": [
@@ -171,7 +180,10 @@
           "subSectorCode": {
             "const": 360
           }
-        }
+        },
+        "required": [
+          "subSectorCode"
+        ]
       },
       "then": {
         "properties": {
@@ -203,7 +215,10 @@
           "subSectorCode": {
             "const": 380
           }
-        }
+        },
+        "required": [
+          "subSectorCode"
+        ]
       },
       "then": {
         "properties": {
@@ -239,7 +254,10 @@
           "subSectorCode": {
             "const": 420
           }
-        }
+        },
+        "required": [
+          "subSectorCode"
+        ]
       },
       "then": {
         "properties": {
