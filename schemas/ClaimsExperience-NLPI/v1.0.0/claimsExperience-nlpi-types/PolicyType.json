@@ -35,7 +35,10 @@
       "type": "string"
     },
     "language": {
-      "$ref": "../../../Generics/v1.1.0/LanguageType.json"
+      "$ref": "../../../Generics/v1.1.0/LanguageType.json",
+      "not": {
+        "const": "en"
+      }
     },
     "viewDate": {
       "description": "Date of the data/processing status shown",
