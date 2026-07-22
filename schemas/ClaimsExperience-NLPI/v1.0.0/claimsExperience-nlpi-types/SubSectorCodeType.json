@@ -1,10 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "description": "Sub-sector code according to the co-insurance exchange logic. 360: UVG-Z, 380: UVG/OUFL, 420: KTG",
+  "description": "Sub-sector code according to the co-insurance exchange logic. 360: UVG-Z, 380: UVG/OUFL, 420: KTG, 999: Other or Unknown",
   "type": "integer",
   "enum": [
     360,
     380,
-    420
+    420,
+    999
   ]
 }
