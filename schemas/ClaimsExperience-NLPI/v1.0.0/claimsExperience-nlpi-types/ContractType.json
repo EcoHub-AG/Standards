@@ -3,25 +3,25 @@
   "description": "Claims information for a single policy",
   "type": "object",
   "properties": {
-    "previousInsurerCompanyNumber": {
-      "$ref": "PreviousInsurerCompanyNumberType.json"
+    "previousInsurerCompanyNo": {
+      "$ref": "PreviousInsurerCompanyNoType.json"
     },
     "subSectorCode": {
       "$ref": "SubSectorCodeType.json"
     },
-    "policyNumber": {
-      "$ref": "PolicyNumberType.json"
+    "contractNo": {
+      "$ref": "ContractNoType.json"
     },
     "customer": {
       "description": "Information about the customer / policy holder.",
       "$ref": "../../../Generics/v1.1.0/CompanyMinimalType.json"
     },
-    "policyStartDate": {
+    "contractStartDate": {
       "description": "Original start date of the insurance with the company providing the information. This is usually the original start date of the policy. In the event of interim changes to the policy number, this refers to the start date of the earliest policy.",
       "type": "string",
       "format": "date"
     },
-    "policyEndDate": {
+    "contractEndDate": {
       "description": "The next possible termination date of the policy (either the expiration date, if this is in the future, or the end of the year if the contract is tacitly renewed).",
       "type": "string",
       "format": "date"
@@ -61,7 +61,7 @@
       "description": "Insured wage sum for voluntary insurance (UVG). Omitted if not UVG or if no voluntary insurance exists.",
       "type": "integer"
     },
-    "terminated": {
+    "isTerminated": {
       "description": "Indicates whether the contract has been terminated.",
       "type": "boolean"
     },
@@ -70,7 +70,7 @@
       "type": "string",
       "format": "date"
     },
-    "terminatedByCustomer": {
+    "isTerminatedByCustomer": {
       "description": "Indicates whether termination was initiated by the customer or the insurer. Omitted if not terminated.",
       "type": "boolean"
     },
@@ -91,12 +91,12 @@
       },
       "unevaluatedItems": false
     },
-    "claimHistory": {
+    "claimExperience": {
       "description": "Aggregated information on the number of claims, payments, and provisions as of the date of the report. Sorted in ascending order by year.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "ClaimHistoryType.json"
+        "$ref": "ClaimExperienceType.json"
       },
       "unevaluatedItems": false
     },
@@ -112,16 +112,16 @@
   },
   "additionalProperties": false,
   "required": [
-    "previousInsurerCompanyNumber",
+    "previousInsurerCompanyNo",
     "subSectorCode",
-    "policyNumber",
+    "contractNo",
     "customer",
-    "policyStartDate",
-    "policyEndDate",
+    "contractStartDate",
+    "contractEndDate",
     "language",
     "viewDate",
     "eventBasedAccounting",
-    "terminated",
+    "isTerminated",
     "coverageGroups"
   ],
   "allOf": [
@@ -145,18 +145,18 @@
     {
       "if": {
         "properties": {
-          "terminated": {
+          "isTerminated": {
             "const": true
           }
         },
         "required": [
-          "terminated"
+          "isTerminated"
         ]
       },
       "then": {
         "required": [
           "terminationDate",
-          "terminatedByCustomer"
+          "isTerminatedByCustomer"
         ]
       }
     },
@@ -197,7 +197,7 @@
               ]
             }
           },
-          "claimHistory": {
+          "ClaimExperience": {
             "items": {
               "required": [
                 "totalPayment",
@@ -232,7 +232,7 @@
               ]
             }
           },
-          "claimHistory": {
+          "ClaimExperience": {
             "items": {
               "required": [
                 "accidentType",
@@ -271,7 +271,7 @@
               ]
             }
           },
-          "claimHistory": {
+          "ClaimExperience": {
             "items": {
               "required": [
                 "totalPayment",

@@ -24,12 +24,12 @@
     "header": {
       "$ref": "../../../Generics/v1.1.0/HeaderType.json"
     },
-    "policies": {
-      "description": "Claims information grouped by policy.",
+    "contracts": {
+      "description": "Claims information grouped by contract.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "../claimsExperience-nlpi-types/PolicyType.json"
+        "$ref": "../claimsExperience-nlpi-types/ContractType.json"
       },
       "unevaluatedItems": false
     },
@@ -37,7 +37,7 @@
       "$ref": "../../../Generics/v1.1.0/RestrictedStringType.json",
       "description": "General comment field"
     },
-    "contactDetails": {
+    "insurerContact": {
       "description": "Contact details of the employee at the insurer who is responsible for the claims information (e.g. backoffice employee).",
       "$ref": "../../../Generics/v1.1.0/ContactType.json"
     },
@@ -54,8 +54,8 @@
     "subProcessName",
     "processVersion",
     "header",
-    "policies",
-    "contactDetails",
+    "contracts",
+    "insurerContact",
     "document"
   ]
 }
