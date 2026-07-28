@@ -197,7 +197,7 @@
               ]
             }
           },
-          "ClaimExperience": {
+          "claimExperience": {
             "items": {
               "required": [
                 "totalPayment",
@@ -232,7 +232,7 @@
               ]
             }
           },
-          "ClaimExperience": {
+          "claimExperience": {
             "items": {
               "required": [
                 "accidentType",
@@ -271,7 +271,7 @@
               ]
             }
           },
-          "ClaimExperience": {
+          "claimExperience": {
             "items": {
               "required": [
                 "totalPayment",
