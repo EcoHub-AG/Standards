@@ -22,7 +22,7 @@
       ]
     },
     "totalPayment": {
-      "description": "Total of all daily allowances paid and case-related costs (e.g., medical certificates). Consistency with aggregated values claimsExperience must be ensured.",
+      "description": "Total of all daily allowances paid and case-related costs (e.g., medical certificates). Consistency with aggregated values claimsHistory must be ensured.",
       "type": "integer"
     },
     "caseReserves": {

@@ -24,18 +24,18 @@
     "header": {
       "$ref": "../../../Generics/v1.0.0/HeaderType.json"
     },
-    "previousInsurerCompanyNo": {
-      "$ref": "../claimsExperience-nlpi-types/PreviousInsurerCompanyNoType.json"
+    "previousInsurerCompanyNumber": {
+      "$ref": "../claimsExperience-nlpi-types/PreviousInsurerCompanyNumberType.json"
     },
     "subSectorCode": {
       "$ref": "../claimsExperience-nlpi-types/SubSectorCodeType.json"
     },
-    "contractNo": {
-      "description": "Contract numbers for which claims information is requested.",
+    "policyNumbers": {
+      "description": "Policy numbers for which claims information is requested.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "../claimsExperience-nlpi-types/ContractNoType.json"
+        "$ref": "../claimsExperience-nlpi-types/PolicyNumberType.json"
       },
       "unevaluatedItems": false
     },
@@ -49,7 +49,7 @@
       "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
       "description": "General comment field"
     },
-    "brokerContact": {
+    "contactDetails": {
       "description": "Contact details of the employee at the broker who is responsible for the request (e.g. backoffice employee).",
       "$ref": "../../../Generics/v1.0.0/ContactType.json"
     },
@@ -67,8 +67,8 @@
     "processVersion",
     "header",
     "subSectorCode",
-    "contractNo",
-    "customer",
+    "policyNumbers",
+    "policyholder",
     "language"
   ]
 }
