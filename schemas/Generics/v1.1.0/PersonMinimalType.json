@@ -20,7 +20,6 @@
   "required": [
     "firstName",
     "lastName",
-    "birthDate",
     "address"
   ]
 }
