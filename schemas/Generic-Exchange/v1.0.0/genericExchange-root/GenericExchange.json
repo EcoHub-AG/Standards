@@ -5,13 +5,13 @@
   "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
   "properties": {
     "processIdentificationNo": {
-      "$ref": "../../Generics/v1.1.0/ProcessIdentificationNoType.json"
+      "$ref": "../../../Generics/v1.1.0/ProcessIdentificationNoType.json"
     },
     "timestamp": {
-      "$ref": "../../Generics/v1.1.0/TimestampType.json"
+      "$ref": "../../../Generics/v1.1.0/TimestampType.json"
     },
     "processName": {
-      "$ref": "ProcessNameType.json"
+      "$ref": "../genericExchange-types/ProcessNameType.json"
     },
     "processVersion": {
       "description": "Version of the Generic Exchange schema.",
@@ -19,10 +19,10 @@
       "const": "1.0.0"
     },
     "header": {
-      "$ref": "../../Generics/v1.1.0/HeaderType.json"
+      "$ref": "../../../Generics/v1.1.0/HeaderType.json"
     },
     "lobIG": {
-      "$ref": "../../Generics/v1.1.0/LOBIGType.json"
+      "$ref": "../../../Generics/v1.1.0/LOBIGType.json"
     },
     "lobINS": {
       "description": "Branch code insurer. The level of detail should allow receivers to relate the exchange to upstream and downstream processes.",
@@ -35,7 +35,7 @@
       "unevaluatedItems": false
     },
     "customer": {
-      "$ref": "CustomerType.json"
+      "$ref": "../genericExchange-types/CustomerType.json"
     },
     "requestedResponseDate": {
       "description": "Date by which the sender requests a response, if applicable.",
@@ -49,14 +49,14 @@
     },
     "contact": {
       "description": "Contact information of the sender of this exchange.",
-      "$ref": "../../Generics/v1.1.0/ContactType.json"
+      "$ref": "../../../Generics/v1.1.0/ContactType.json"
     },
     "attachments": {
       "description": "One or more classified attachments belonging to the business context defined by processName.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "AttachmentType.json"
+        "$ref": "../genericExchange-types/AttachmentType.json"
       },
       "unevaluatedItems": false
     }

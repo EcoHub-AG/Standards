@@ -18,11 +18,11 @@
     },
     "company": {
       "description": "The company the exchange relates to. Either company or person must be specified.",
-      "$ref": "../../Generics/v1.1.0/CompanyMinimalType.json"
+      "$ref": "../../../Generics/v1.1.0/CompanyMinimalType.json"
     },
     "person": {
       "description": "The person the exchange relates to. Either company or person must be specified.",
-      "$ref": "../../Generics/v1.1.0/PersonMinimalType.json"
+      "$ref": "../../../Generics/v1.1.0/PersonMinimalType.json"
     }
   },
   "additionalProperties": false,
