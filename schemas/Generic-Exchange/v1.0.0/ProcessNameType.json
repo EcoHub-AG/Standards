@@ -10,7 +10,8 @@
     "mandate",
     "claimsExperience",
     "claims",
-    "customerInformation",
-    "brokerInformation"
+    "information",
+    "customer",
+    "broker"
   ]
 }

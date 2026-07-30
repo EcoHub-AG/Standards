@@ -48,7 +48,7 @@
       "maxLength": 10000
     },
     "contact": {
-      "description": "Contact information of the sender",
+      "description": "Contact information of the sender of this exchange.",
       "$ref": "../../Generics/v1.1.0/ContactType.json"
     },
     "attachments": {
