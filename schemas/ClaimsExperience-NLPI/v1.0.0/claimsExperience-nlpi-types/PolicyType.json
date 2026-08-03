@@ -3,25 +3,25 @@
   "description": "Claims information for a single policy",
   "type": "object",
   "properties": {
-    "previousInsurerCompanyNumber": {
+    "previousInsurerCompanyNo": {
       "$ref": "PreviousInsurerCompanyNumberType.json"
     },
     "subSectorCode": {
       "$ref": "SubSectorCodeType.json"
     },
-    "policyNumber": {
+    "contractNo": {
       "$ref": "PolicyNumberType.json"
     },
     "customer": {
       "description": "Information about the customer / policy holder.",
       "$ref": "../../../Generics/v1.1.0/CompanyMinimalType.json"
     },
-    "policyStartDate": {
+    "insuranceStartDate": {
       "description": "Original start date of the insurance with the company providing the information. This is usually the original start date of the policy. In the event of interim changes to the policy number, this refers to the start date of the earliest policy.",
       "type": "string",
       "format": "date"
     },
-    "policyEndDate": {
+    "insuranceEndDate": {
       "description": "The next possible termination date of the policy (either the expiration date, if this is in the future, or the end of the year if the contract is tacitly renewed).",
       "type": "string",
       "format": "date"
@@ -45,23 +45,23 @@
       "type": "string",
       "format": "date"
     },
-    "eventBasedAccounting": {
+    "isEventBasedAccounting": {
       "description": "Indicates whether the information uses event view instead of financial view (Event view: Payments are assigned to the year of the corresponding event. Financial view: Payments are assigned to the year they were paid).",
       "type": "boolean"
     },
-    "UVGInsuranceExists": {
+    "isPersonGroupInsured": {
       "description": "Indicator whether insurance of the workforce exists (UVG). Omitted if not UVG.",
       "type": "boolean"
     },
-    "voluntaryInsuranceExists": {
+    "isPersonMentionedByNameInsured": {
       "description": "Indicator whether voluntary insurance of individual exists (UVG). Omitted if not UVG.",
       "type": "boolean"
     },
-    "voluntaryInsuranceWageSum": {
+    "personsMentionedByNamePayroll": {
       "description": "Insured wage sum for voluntary insurance (UVG). Omitted if not UVG or if no voluntary insurance exists.",
       "type": "integer"
     },
-    "terminated": {
+    "isTerminated": {
       "description": "Indicates whether the contract has been terminated.",
       "type": "boolean"
     },
@@ -112,45 +112,45 @@
   },
   "additionalProperties": false,
   "required": [
-    "previousInsurerCompanyNumber",
+    "previousInsurerCompanyNo",
     "subSectorCode",
-    "policyNumber",
+    "contractNo",
     "customer",
-    "policyStartDate",
-    "policyEndDate",
+    "insuranceStartDate",
+    "insuranceEndDate",
     "language",
     "viewDate",
-    "eventBasedAccounting",
-    "terminated",
+    "isEventBasedAccounting",
+    "isTerminated",
     "coverageGroups"
   ],
   "allOf": [
     {
       "if": {
         "properties": {
-          "voluntaryInsuranceExists": {
+          "isPersonMentionedByNameInsured": {
             "const": true
           }
         },
         "required": [
-          "voluntaryInsuranceExists"
+          "isPersonMentionedByNameInsured"
         ]
       },
       "then": {
         "required": [
-          "voluntaryInsuranceWageSum"
+          "personsMentionedByNamePayroll"
         ]
       }
     },
     {
       "if": {
         "properties": {
-          "terminated": {
+          "isTerminated": {
             "const": true
           }
         },
         "required": [
-          "terminated"
+          "isTerminated"
         ]
       },
       "then": {
@@ -193,7 +193,7 @@
           "coverageGroups": {
             "items": {
               "required": [
-                "UVGZCoverage"
+                "UVGSupplement"
               ]
             }
           },
@@ -228,7 +228,7 @@
           "coverageGroups": {
             "items": {
               "required": [
-                "UVGCoverage"
+                "UVGCompulsory"
               ]
             }
           },
@@ -243,8 +243,8 @@
           }
         },
         "required": [
-          "UVGInsuranceExists",
-          "voluntaryInsuranceExists",
+          "isPersonGroupInsured",
+          "isPersonMentionedByNameInsured",
           "occupationalSafetyViolation",
           "UVGRiskNo",
           "operatingMode"
@@ -267,7 +267,7 @@
           "coverageGroups": {
             "items": {
               "required": [
-                "KTGCoverage"
+                "DSB"
               ]
             }
           },

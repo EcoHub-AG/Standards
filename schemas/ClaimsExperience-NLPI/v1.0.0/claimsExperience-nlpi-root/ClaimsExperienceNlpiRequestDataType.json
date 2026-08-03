@@ -24,13 +24,13 @@
     "header": {
       "$ref": "../../../Generics/v1.0.0/HeaderType.json"
     },
-    "previousInsurerCompanyNumber": {
+    "previousInsurerCompanyNo": {
       "$ref": "../claimsExperience-nlpi-types/PreviousInsurerCompanyNumberType.json"
     },
     "subSectorCode": {
       "$ref": "../claimsExperience-nlpi-types/SubSectorCodeType.json"
     },
-    "policyNumbers": {
+    "contractNumbers": {
       "description": "Policy numbers for which claims information is requested.",
       "type": "array",
       "minItems": 1,
@@ -67,8 +67,8 @@
     "processVersion",
     "header",
     "subSectorCode",
-    "policyNumbers",
-    "policyholder",
+    "contractNumbers",
+    "customer",
     "language"
   ]
 }

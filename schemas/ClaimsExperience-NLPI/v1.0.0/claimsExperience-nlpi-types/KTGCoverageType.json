@@ -11,7 +11,7 @@
       "description": "Indicates whether the KTG cover is full coverage instead of coordination coverage.",
       "type": "boolean"
     },
-    "dailyAllowanceInsured": {
+    "isDailyAllowanceInsured": {
       "description": "Indicates whether daily allowance coverage is insured.",
       "type": "boolean"
     },
@@ -29,7 +29,7 @@
       },
       "unevaluatedItems": false
     },
-    "insuredWageSums": {
+    "payrolls": {
       "description": "Information on the insured KTG wage sums for the coverage group, sorted in ascending order by year. The information includes data for the current year and at least the six preceding years, where available.",
       "type": "array",
       "minItems": 1,
@@ -40,7 +40,7 @@
             "description": "Calendar year of coverage validity",
             "type": "integer"
           },
-          "KTGWageSums": {
+          "payroll": {
             "description": "Total wages for KTG. If a group of persons changes its coverage during the year, the corresponding annual wage sum is distributed pro rata among the corresponding coverage groups. Example: Management with an insured annual wage sum for men of 400,000 has a waiting period of 30 days from January 1, 20yy to March 31, 20yy (coverage group n) and a waiting period of 60 days from April 1, 20yy to December 31, 20yy (coverage group m). This results in the following presentation in the information: Coverage group n shows an insured total salary of 100,000 in 20yy; coverage group m shows an insured total salary of 300,000 in 20yy.",
             "$ref": "GenderSplitPayrollType.json"
           }
@@ -48,7 +48,7 @@
         "additionalProperties": false,
         "required": [
           "year",
-          "KTGWageSums"
+          "payroll"
         ]
       },
       "unevaluatedItems": false
@@ -58,12 +58,12 @@
   "required": [
     "isIndemnityInsurance",
     "isFullCoverage",
-    "dailyAllowanceInsured",
+    "isDailyAllowanceInsured",
     "maximumBenefitPeriod"
   ],
   "if": {
     "properties": {
-      "dailyAllowanceInsured": {
+      "isDailyAllowanceInsured": {
         "const": true
       }
     }

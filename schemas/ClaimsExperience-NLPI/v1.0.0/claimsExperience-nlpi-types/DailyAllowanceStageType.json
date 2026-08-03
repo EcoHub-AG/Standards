@@ -3,18 +3,18 @@
   "description": "A daily allowance stage with benefit percentage and waiting period",
   "type": "object",
   "properties": {
-    "benefitPercentage": {
+    "benefitAmountPercentage": {
       "description": "Benefit amount in percent (whole number)",
       "type": "integer"
     },
-    "waitingPeriod": {
+    "waitingPeriodInDays": {
       "description": "Waiting period in days",
       "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "benefitPercentage",
-    "waitingPeriod"
+    "benefitAmountPercentage",
+    "waitingPeriodInDays"
   ]
 }

@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "year": {
-      "description": "For event view (eventBasedAccounting = true on ClaimInfoPolicyType) Calendar year of the loss event, i.e. technically consistent with the validity of the coverages. For financial view (eventBasedAccounting = false) Year of payment confirmation.",
+      "description": "For event view (isEventBasedAccounting = true on ClaimInfoPolicyType) Calendar year of the loss event, i.e. technically consistent with the validity of the coverages. For financial view (isEventBasedAccounting = false) Year of payment confirmation.",
       "type": "integer"
     },
     "accidentType": {

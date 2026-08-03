@@ -3,11 +3,11 @@
   "description": "Death lump sum benefit",
   "type": "object",
   "properties": {
-    "insured": {
+    "isDeathCapitalInsured": {
       "description": "Indicates whether the benefit is insured.",
       "type": "boolean"
     },
-    "benefitValue": {
+    "deathCapitalBenefitValue": {
       "description": "Benefit amount as annual salary multiple.",
       "type": "number",
       "enum": [
@@ -27,18 +27,18 @@
   },
   "additionalProperties": false,
   "required": [
-    "insured"
+    "isDeathCapitalInsured"
   ],
   "if": {
     "properties": {
-      "insured": {
+      "isDeathCapitalInsured": {
         "const": true
       }
     }
   },
   "then": {
     "required": [
-      "benefitValue"
+      "deathCapitalBenefitValue"
     ]
   }
 }

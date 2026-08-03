@@ -24,7 +24,7 @@
     "header": {
       "$ref": "../../../Generics/v1.1.0/HeaderType.json"
     },
-    "policies": {
+    "claimsExperiences": {
       "description": "Claims information grouped by policy.",
       "type": "array",
       "minItems": 1,
@@ -54,7 +54,7 @@
     "subProcessName",
     "processVersion",
     "header",
-    "policies",
+    "claimsExperiences",
     "contactDetails",
     "document"
   ]

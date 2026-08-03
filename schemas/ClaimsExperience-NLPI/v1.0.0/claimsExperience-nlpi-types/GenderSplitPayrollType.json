@@ -3,23 +3,23 @@
   "description": "Payroll split by gender with an optional total",
   "type": "object",
   "properties": {
-    "male": {
+    "payrollMale": {
       "description": "Total wages for men. If available, the definitively settled insured total wages for men in the corresponding calendar year, rounded to the nearest whole CHF. Otherwise, the advance total wages (usually in the current year), rounded to the nearest whole CHF.",
       "type": "integer"
     },
-    "female": {
+    "payrollFemale": {
       "description": "Total wages for women. If available, definitively settled insured total wages for women, rounded to whole CHF. Otherwise, advance total wages (usually in the current year), rounded to whole CHF.",
       "type": "integer"
     },
-    "total": {
+    "payrollTotal": {
       "description": "Total wages (men and women). This field can be used if it is not possible to divide the wage sum between men and women; otherwise, sum of male and female fields.",
       "type": "integer"
     }
   },
   "required": [
-    "male",
-    "female",
-    "total"
+    "payrollMale",
+    "payrollFemale",
+    "payrollTotal"
   ],
   "additionalProperties": false
 }

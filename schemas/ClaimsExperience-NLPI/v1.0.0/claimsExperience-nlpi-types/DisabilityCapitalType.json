@@ -3,11 +3,11 @@
   "description": "Disability lump sum benefit up to the UVG maximum",
   "type": "object",
   "properties": {
-    "insured": {
+    "isDisabilityCapitalUVGSalaryInsured": {
       "description": "Indicates whether disability lump sum benefit up to the UVG maximum is insured.",
       "type": "boolean"
     },
-    "benefitType": {
+    "disabilityCapitalProgUVGSalaryBenefitType": {
       "description": "Type of capital benefit amount",
       "type": "string",
       "enum": [
@@ -15,11 +15,11 @@
         "amount"
       ]
     },
-    "benefitValue": {
-      "description": "Benefit amount as annual salary multiple (0.5, 1-10) or amount in whole CHF depending on benefitType.",
+    "disabilityCapitalProgUVGSalaryBenefitValue": {
+      "description": "Benefit amount as annual salary multiple (0.5, 1-10) or amount in whole CHF depending on disabilityCapitalProgUVGSalaryBenefitType.",
       "type": "number"
     },
-    "progression": {
+    "disabilityCapitalProgUVGSalary": {
       "description": "Progression value, if applicable.",
       "type": "integer",
       "enum": [
@@ -31,20 +31,20 @@
   },
   "additionalProperties": false,
   "required": [
-    "insured"
+    "isDisabilityCapitalUVGSalaryInsured"
   ],
   "if": {
     "properties": {
-      "insured": {
+      "isDisabilityCapitalUVGSalaryInsured": {
         "const": true
       }
     }
   },
   "then": {
     "required": [
-      "benefitType",
-      "benefitValue",
-      "progression"
+      "disabilityCapitalProgUVGSalaryBenefitType",
+      "disabilityCapitalProgUVGSalaryBenefitValue",
+      "disabilityCapitalProgUVGSalary"
     ]
   }
 }

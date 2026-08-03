@@ -3,15 +3,15 @@
   "description": "Coverage group information",
   "type": "object",
   "properties": {
-    "sequenceNumber": {
+    "id": {
       "description": "Sequence number of the coverage group, starting at 1; must be unique within the JSON document.",
       "type": "integer"
     },
-    "isIndividual": {
+    "isPersonMentionedByName": {
       "description": "Indicates whether the coverage group represents an individual instead of a group of persons.",
       "type": "boolean"
     },
-    "groupDescription": {
+    "coverageGroupDescription": {
       "description": "Designation of the group of persons as text. E.g., 'All employees, including apprentices', ‘management’, etc.; if a more precise designation of the group is not available, then ‘group 1’, ‘group 2’, etc.; for individuals, e.g., ‘individual 1’, etc.; for data protection reasons, the designations should not contain any personal data. Self-employed persons do not need to be reported to KTG.",
       "type": "string"
     },
@@ -19,21 +19,21 @@
       "description": "Last year in which the relevant coverage group was insured under the policy. Serves to define the time period if individual insured groups change their coverage during the term of the contract.",
       "type": "integer"
     },
-    "KTGCoverage": {
+    "DSB": {
       "$ref": "KTGCoverageType.json"
     },
-    "UVGCoverage": {
+    "UVGCompulsory": {
       "$ref": "UVGCoverageType.json"
     },
-    "UVGZCoverage": {
+    "UVGSupplement": {
       "$ref": "UVGZCoverageType.json"
     }
   },
   "additionalProperties": false,
   "required": [
-    "sequenceNumber",
-    "isIndividual",
-    "groupDescription",
+    "id",
+    "isPersonMentionedByName",
+    "coverageGroupDescription",
     "lastInsuredYear"
   ]
 }

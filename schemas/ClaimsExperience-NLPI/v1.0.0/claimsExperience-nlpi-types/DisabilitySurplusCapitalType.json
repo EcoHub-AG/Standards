@@ -3,11 +3,11 @@
   "description": "Disability lump sum benefit above the UVG maximum",
   "type": "object",
   "properties": {
-    "insured": {
+    "isDisabilityCapitalUVGSurplusSalaryInsured": {
       "description": "Indicates whether the disability lump sum benefit above the UVG maximum is insured.",
       "type": "boolean"
     },
-    "benefitValue": {
+    "disabilityCapitalSurplusSalary": {
       "description": "Benefit amount as annual salary multiple (0.5, 1-10).",
       "type": "number"
     },
@@ -23,18 +23,18 @@
   },
   "additionalProperties": false,
   "required": [
-    "insured"
+    "isDisabilityCapitalUVGSurplusSalaryInsured"
   ],
   "if": {
     "properties": {
-      "insured": {
+      "isDisabilityCapitalUVGSurplusSalaryInsured": {
         "const": true
       }
     }
   },
   "then": {
     "required": [
-      "benefitValue",
+      "disabilityCapitalSurplusSalary",
       "progression"
     ]
   }

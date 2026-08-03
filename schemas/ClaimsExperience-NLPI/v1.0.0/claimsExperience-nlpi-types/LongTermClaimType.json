@@ -3,7 +3,7 @@
   "description": "Long-term KTG claim",
   "type": "object",
   "properties": {
-    "claimId": {
+    "id": {
       "description": "Serial number of the claim, starting at 1 and ascending chronologically.",
       "type": "integer"
     },
@@ -32,7 +32,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "claimId",
+    "id",
     "eventDate",
     "status",
     "totalPayment",

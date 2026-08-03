@@ -3,11 +3,11 @@
   "description": "Medical expenses coverage",
   "type": "object",
   "properties": {
-    "insured": {
+    "isMedicalExpensesHospitalCoverageInsured": {
       "description": "Indicates whether medical expenses coverage is insured.",
       "type": "boolean"
     },
-    "hospitalClass": {
+    "medicalExpensesHospitalClass": {
       "description": "Insured hospital class",
       "type": "string",
       "enum": [
@@ -18,18 +18,18 @@
   },
   "additionalProperties": false,
   "required": [
-    "insured"
+    "isMedicalExpensesHospitalCoverageInsured"
   ],
   "if": {
     "properties": {
-      "insured": {
+      "isMedicalExpensesHospitalCoverageInsured": {
         "const": true
       }
     }
   },
   "then": {
     "required": [
-      "hospitalClass"
+      "medicalExpensesHospitalClass"
     ]
   }
 }
