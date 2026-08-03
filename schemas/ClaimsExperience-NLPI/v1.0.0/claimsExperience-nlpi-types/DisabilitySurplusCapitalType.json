@@ -11,7 +11,7 @@
       "description": "Benefit amount as annual salary multiple (0.5, 1-10).",
       "type": "number"
     },
-    "progression": {
+    "disabilityCapitalProgSurplusSalary": {
       "description": "Progression value, if applicable.",
       "type": "integer",
       "enum": [
@@ -35,7 +35,7 @@
   "then": {
     "required": [
       "disabilityCapitalSurplusSalary",
-      "progression"
+      "disabilityCapitalProgSurplusSalary"
     ]
   }
 }

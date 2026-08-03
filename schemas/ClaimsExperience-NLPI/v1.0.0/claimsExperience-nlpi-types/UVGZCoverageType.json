@@ -47,7 +47,7 @@
       "description": "Disability capital up to the UVG maximum.",
       "$ref": "DisabilityCapitalType.json"
     },
-    "disabilityCapitalUVGSurplusSalary": {
+    "disabilityCapitalSurplusSalary": {
       "description": "Disability capital above the UVG maximum.",
       "$ref": "DisabilitySurplusCapitalType.json"
     },
@@ -59,14 +59,14 @@
       "description": "Death lump sum benefit up to the UVG maximum",
       "$ref": "DeathCapitalType.json"
     },
-    "deathCapitalUVGSurplusSalary": {
+    "deathCapitalSurplusSalary": {
       "description": "Death lump sum benefit above the UVG maximum",
       "$ref": "DeathCapitalType.json"
     },
-    "medicalExpensesHospitalCoverage": {
+    "medicalExpensesHospital": {
       "$ref": "MedicalExpensesType.json"
     },
-    "isDifferentialCoverInsuerd": {
+    "isDifferentialCoverInsured": {
       "description": "Indicates whether difference coverage is insured.",
       "type": "boolean"
     },
@@ -108,12 +108,12 @@
     "isDailyAllowanceUVGSurplusSalaryInsured",
     "isDisabilityPensionSurplusSalaryInsured",
     "disabilityCapitalUVGSalary",
-    "disabilityCapitalUVGSurplusSalary",
+    "disabilityCapitalSurplusSalary",
     "isLeftBehindPensionSurplusSalaryInsured",
     "deathCapitalUVGSalary",
-    "deathCapitalUVGSurplusSalary",
-    "medicalExpensesHospitalCoverage",
-    "isDifferentialCoverInsuerd",
+    "deathCapitalSurplusSalary",
+    "medicalExpensesHospital",
+    "isDifferentialCoverInsured",
     "payroll"
   ],
   "allOf": [

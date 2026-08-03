@@ -3,7 +3,7 @@
   "description": "Coverage group information",
   "type": "object",
   "properties": {
-    "id": {
+    "coverageGroupId": {
       "description": "Sequence number of the coverage group, starting at 1; must be unique within the JSON document.",
       "type": "integer"
     },
@@ -31,7 +31,7 @@
   },
   "additionalProperties": false,
   "required": [
-    "id",
+    "coverageGroupId",
     "isPersonMentionedByName",
     "coverageGroupDescription",
     "lastInsuredYear"

@@ -100,7 +100,7 @@
       },
       "unevaluatedItems": false
     },
-    "longTermClaims": {
+    "longTailClaims": {
       "description": "Long term claims are only relevant for KTG. No entries are required for information on the UVG or UVG-Z sectors. All KTG individual claims from the relevant observation period that are open, have been settled (full benefit period reached) or have incurred expenses (total of payments and provisions) of more than CHF 10,000 are listed here. If there are no such claims for a KTG policy, the array is omitted. Otherwise, there is one entry per listed claim, sorted in ascending order by eventDate.",
       "type": "array",
       "minItems": 1,
@@ -201,7 +201,7 @@
             "items": {
               "required": [
                 "totalPayment",
-                "caseReserves"
+                "claimsReserves"
               ]
             }
           }
@@ -275,7 +275,7 @@
             "items": {
               "required": [
                 "totalPayment",
-                "caseReserves"
+                "claimsReserves"
               ]
             }
           }

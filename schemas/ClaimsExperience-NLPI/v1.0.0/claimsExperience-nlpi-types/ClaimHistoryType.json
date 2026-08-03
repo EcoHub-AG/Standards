@@ -16,11 +16,11 @@
         "voluntaryInsurance"
       ]
     },
-    "totalNumberOfClaims": {
+    "claimsReported": {
       "description": "Total number of claims in the relevant year as of the date of the information request. Closed claims without payments and without costs should not be taken into account.",
       "type": "integer"
     },
-    "openNumberOfClaims": {
+    "claimsPending": {
       "description": "Number of outstanding claims in the relevant year on the date the information is available.",
       "type": "integer"
     },
@@ -36,7 +36,7 @@
       "description": "Total payment (including case-related costs) in the case of DSB or UVGZ. DSB: Daily allowances and case-related costs minus recourse income and maternity benefits; UVG-Z: All benefits for coverage according to the coverage groups and case-related costs, minus recourse income; rounded commercially to whole CHF. Omitted if UVGO.",
       "type": "integer"
     },
-    "caseReserves": {
+    "claimsReserves": {
       "description": "Cumulative case reserves in the case of DSB and UVGZ. Open reserves required on the date of disclosure for corresponding insurance benefits and case-related costs; rounded to whole CHF for commercial purposes. Provisions are aggregated for all coverages.",
       "type": "integer"
     }
@@ -44,7 +44,7 @@
   "additionalProperties": false,
   "required": [
     "year",
-    "totalNumberOfClaims",
-    "openNumberOfClaims"
+    "claimsReported",
+    "claimsPending"
   ]
 }

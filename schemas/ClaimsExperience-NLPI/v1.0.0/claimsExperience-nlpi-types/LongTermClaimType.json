@@ -25,7 +25,7 @@
       "description": "Total of all daily allowances paid and case-related costs (e.g., medical certificates). Consistency with aggregated values claimsHistory must be ensured.",
       "type": "integer"
     },
-    "caseReserves": {
+    "claimsReserves": {
       "description": "Open case reserves. For closed cases, 0.",
       "type": "integer"
     }
@@ -36,6 +36,6 @@
     "eventDate",
     "status",
     "totalPayment",
-    "caseReserves"
+    "claimsReserves"
   ]
 }
