@@ -3,7 +3,7 @@
   "description": "UVGO coverage information",
   "type": "object",
   "properties": {
-    "isPersonMentionedByName": {
+    "isVoluntaryInsurance": {
       "description": "Indicates whether the coverage group is insured voluntarily or compulsorily.",
       "type": "boolean"
     },
@@ -39,6 +39,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "isPersonMentionedByName"
+    "isVoluntaryInsurance"
   ]
 }
