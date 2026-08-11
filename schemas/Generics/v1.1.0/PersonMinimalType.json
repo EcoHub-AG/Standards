@@ -9,9 +9,6 @@
     "lastName": {
       "$ref": "SurNameType.json"
     },
-    "birthDate": {
-      "$ref": "BirthDateType.json"
-    },
     "address": {
       "$ref": "AddressType.json"
     }
