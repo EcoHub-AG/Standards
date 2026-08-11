@@ -7,12 +7,36 @@
       "description": "Number of the customer",
       "type": "string"
     },
-    "contractNumber": {
-      "description": "Contract number or contract numbers related to the exchange.",
+    "contracts": {
+      "description": "Contract or contracts related to the exchange.",
       "type": "array",
       "minItems": 1,
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "contractNumber": {
+            "description": "Contract number related to the exchange.",
+            "type": "string"
+          },
+          "lobIG": {
+            "$ref": "../../../Generics/v1.1.0/LOBIGType.json"
+          },
+          "lobINS": {
+            "description": "Branch code insurer. The level of detail should allow receivers to relate the exchange to upstream and downstream processes.",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "maxLength": 100
+            },
+            "unevaluatedItems": false
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "contractNumber",
+          "lobIG"
+        ]
       },
       "unevaluatedItems": false
     },
