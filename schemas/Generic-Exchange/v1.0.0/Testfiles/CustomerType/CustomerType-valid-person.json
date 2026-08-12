@@ -1,0 +1,15 @@
+{
+  "customerNumber": "CUST-100002",
+  "person": {
+    "firstName": "Erika",
+    "lastName": "Muster",
+    "birthDate": "1985-04-12",
+    "address": {
+      "streetName": "Bahnhofstrasse",
+      "houseNumber": "10",
+      "zip": "8001",
+      "city": "Zurich",
+      "country": "CH"
+    }
+  }
+}
