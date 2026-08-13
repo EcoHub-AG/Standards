@@ -1,0 +1,69 @@
+{
+  "previousInsurerCompanyNo": 901,
+  "subSectorCode": 420,
+  "contractNo": "POL-420-009",
+  "customer": {
+    "companyName": "Example Trading AG",
+    "address": {
+      "streetName": "Zollstrasse",
+      "houseNumber": "1",
+      "zip": "8005",
+      "city": "Zurich",
+      "country": "CH"
+    }
+  },
+  "insuranceStartDate": "2020-01-01",
+  "insuranceEndDate": "2026-12-31",
+  "language": "de",
+  "viewDate": "2026-01-31",
+  "isEventBasedAccounting": true,
+  "isTerminated": true,
+  "terminationDate": "2026-12-31",
+  "terminatedByCustomer": true,
+  "coverageGroups": [
+    {
+      "coverageGroupId": 1,
+      "isSinglePersonCoverage": false,
+      "coverageGroupDescription": "All employees",
+      "lastInsuredYear": 2025,
+      "DSB": {
+        "isIndemnityInsurance": false,
+        "isFullCoverage": true,
+        "isDailyAllowanceInsured": true,
+        "maximumBenefitPeriod": 730,
+        "dailyAllowanceStages": [
+          {
+            "benefitAmountPercentage": 80,
+            "waitingPeriodInDays": 30
+          }
+        ],
+        "payrolls": [
+          {
+            "year": 2025,
+            "payroll": {
+              "payrollMale": 250000,
+              "payrollFemale": 250000,
+              "payrollTotal": 500000
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "claimHistory": [
+    {
+      "year": 2025,
+      "claimsReported": 2,
+      "claimsPending": 1
+    }
+  ],
+  "longTailClaims": [
+    {
+      "id": 1,
+      "eventDate": "2025-03-15",
+      "status": "open",
+      "totalPayment": 12000,
+      "claimsReserves": 4000
+    }
+  ]
+}

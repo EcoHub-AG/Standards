@@ -1,0 +1,44 @@
+{
+  "previousInsurerCompanyNo": 901,
+  "subSectorCode": 380,
+  "contractNo": "POL-380-004",
+  "customer": {
+    "companyName": "Example Trading AG",
+    "address": {
+      "streetName": "Zollstrasse",
+      "houseNumber": "1",
+      "zip": "8005",
+      "city": "Zurich",
+      "country": "CH"
+    }
+  },
+  "insuranceStartDate": "2020-01-01",
+  "insuranceEndDate": "2026-12-31",
+  "UVGRiskNo": "1234.56",
+  "operatingMode": "Office administration",
+  "language": "de",
+  "viewDate": "2026-01-31",
+  "isEventBasedAccounting": true,
+  "isPersonGroupInsured": true,
+  "isPersonMentionedByNameInsured": false,
+  "isTerminated": false,
+  "occupationalSafetyViolation": false,
+  "coverageGroups": [
+    {
+      "coverageGroupId": 1,
+      "isSinglePersonCoverage": false,
+      "coverageGroupDescription": "All employees",
+      "lastInsuredYear": 2025
+    }
+  ],
+  "claimHistory": [
+    {
+      "year": 2025,
+      "accidentType": "occupationalAccident",
+      "claimsReported": 2,
+      "claimsPending": 1,
+      "medicalExpensesPayment": 5000,
+      "dailyAllowancePayment": 3000
+    }
+  ]
+}
