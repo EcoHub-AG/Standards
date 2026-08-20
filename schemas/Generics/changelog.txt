@@ -1,3 +1,8 @@
+### Version 1.1.0
+- CompanyMinimalType (Added)
+- PersonMinimalType (Added)
+- LOBIGType (Added)
+
 ### Version 1.0.0
 - AddressDefinitions (Removed)
 - AddressType (Changed)

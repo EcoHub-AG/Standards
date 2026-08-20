@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Standard header information",
+	"type": "object",
+	"properties": {
+		"recipient": {
+			"$ref": "SenderReceiverType.json"
+		},
+		"sender": {
+			"$ref": "SenderReceiverType.json"
+		}
+	},
+	"additionalProperties": false,
+	"required": [
+		"sender",
+		"recipient"
+	],
+	"allOf": [
+		{
+			"if": {
+				"properties": {
+					"sender": {
+						"required": ["broker"]
+					}
+				}
+			},
+			"then": {
+				"properties": {
+					"sender": {
+						"properties": {
+							"broker": {
+								"required": ["brokerBranch"]
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

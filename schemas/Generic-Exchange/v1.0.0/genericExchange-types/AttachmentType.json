@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Classified attachment for a Generic Exchange event.",
+  "type": "object",
+  "properties": {
+    "documentType": {
+      "$ref": "DocumentTypeType.json"
+    },
+    "file": {
+      "$ref": "../../../Generics/v1.1.0/FileType.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "documentType",
+    "file"
+  ]
+}

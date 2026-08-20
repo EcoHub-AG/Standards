@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Business context for a Generic Exchange event. The value can be used for automatic triage and routing of Generic Exchange events and must match the processName in the SAF event envelope.",
+  "type": "string",
+  "enum": [
+    "offer",
+    "invoice",
+    "commission",
+    "contract",
+    "mandate",
+    "claimsExperience",
+    "claims",
+    "information",
+    "customer",
+    "broker"
+  ]
+}

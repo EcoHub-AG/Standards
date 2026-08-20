@@ -1,0 +1,8 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"description": "Organizational unit number, as specified in EcoHub",
+	"examples": ["101156", "320000"],
+	"type": "string",
+	"maxLength": 6,
+	"pattern": "^\\d{6}$"
+}
