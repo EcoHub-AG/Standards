@@ -55,7 +55,7 @@ jobs:
             exit 1
           fi
 
-      - name: Generate documentation
+      - name: Generate documentation for Offer NLPI
         if: steps.api_info.outputs.offerNlpi == 'true'
         run: |
           API_NAME=${{ steps.api_info.outputs.API_NAME }}
@@ -64,6 +64,16 @@ jobs:
           
           mkdir -p "${OUTPUT_DIR}"
           generate-schema-doc "schemas/Offer-NLPI/v${API_VERSION}/offer-nlpi-root" "${OUTPUT_DIR}"
+
+      - name: Generate documentation for Generic Exchange
+        if: steps.api_info.outputs.genericExchange == 'true'
+        run: |
+          API_NAME=${{ steps.api_info.outputs.API_NAME }}
+          API_VERSION=${{ steps.api_info.outputs.API_VERSION }}
+          OUTPUT_DIR="docs/${API_NAME}/${API_VERSION}"
+          
+          mkdir -p "${OUTPUT_DIR}"
+          generate-schema-doc "schemas/Generic-Exchange/v${API_VERSION}/genericExchange-root" "${OUTPUT_DIR}"
 
 
       # Commit all changed files back to the repository
