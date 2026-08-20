@@ -46,6 +46,10 @@ jobs:
             echo "offerNlpi=true" >> $GITHUB_OUTPUT
             echo "API_NAME=Offer-NLPI" >> $GITHUB_OUTPUT
             echo "API_VERSION=${TAG_NAME#offer-nlpi-v}" >> $GITHUB_OUTPUT
+          elif [[ $TAG_NAME == genericExchange-v* ]]; then
+            echo "genericExchange=true" >> $GITHUB_OUTPUT
+            echo "API_NAME=Generic-Exchange" >> $GITHUB_OUTPUT
+            echo "API_VERSION=${TAG_NAME#genericExchange-v}" >> $GITHUB_OUTPUT
           else
             echo "Unknown API tag format"
             exit 1
