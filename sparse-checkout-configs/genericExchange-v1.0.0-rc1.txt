@@ -1,4 +1,0 @@
-schemas/GenericExchange/v1.0.0-rc1/genericExchange-root
-schemas/GenericExchange/v1.0.0-rc1/genericExchange-types
-schemas/Generics/v1.1.0/*
-!schemas/Generics/v1.1.0/testFiles
