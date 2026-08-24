@@ -1,0 +1,70 @@
+{
+  "processIdentificationNo": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c",
+  "timestamp": "2026-08-24T12:00:00.000Z",
+  "processName": "contract",
+  "processVersion": "1.0.0",
+  "header": {
+    "sender": {
+      "broker": {
+        "brokerRegisterNo": "CHE-FINMA-F12345678",
+        "companyId": "CHE-115.517.011",
+        "companyName": "Example Broker AG",
+        "brokerBranch": "101156"
+      }
+    },
+    "recipient": {
+      "insurer": {
+        "companyId": "CHE-107.516.123",
+        "companyName": "Example Insurance AG",
+        "insurerCode": "15S"
+      }
+    }
+  },
+  "customer": {
+    "customerNumber": "CUST-100001",
+    "contracts": [
+      {
+        "contractNumber": "CON-2026-0001",
+        "lobIG": [
+          "11000",
+          "12000"
+        ],
+        "lobINS": [
+          "MOTOR",
+          "LIABILITY"
+        ]
+      }
+    ],
+    "company": {
+      "companyName": "Example Trading AG",
+      "companyId": "CHE-115.517.011",
+      "address": {
+        "streetName": "Zollstrasse",
+        "houseNumber": "1",
+        "addressExtension": "Building A",
+        "postOfficeBox": "P.O. Box 100",
+        "zip": "8005",
+        "city": "Zurich",
+        "country": "CH"
+      }
+    }
+  },
+  "requestedResponseDate": "2026-09-15",
+  "comment": "Please process the attached contract document and respond by the requested response date.",
+  "contact": {
+    "contactSurname": "Muster",
+    "contactFirstName": "Erika",
+    "contactMail": "erika.muster@example.com",
+    "contactPhone": "+41441234567"
+  },
+  "attachments": [
+    {
+      "documentType": "contractDocument",
+      "file": {
+        "filename": "contract-document.pdf",
+        "data": "SGVsbG8gd29ybGQ=",
+        "fingerprint": "WAHLbX5Pnc0+qYwSonSm/w=="
+      }
+    }
+  ]
+}
