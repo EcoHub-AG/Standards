@@ -70,9 +70,13 @@
       "type": "string",
       "format": "date"
     },
-    "terminatedByCustomer": {
+    "terminatedBy": {
       "description": "Indicates whether termination was initiated by the customer or the insurer. Omitted if not terminated.",
-      "type": "boolean"
+      "type": "string",
+      "enum": [
+        "insurer",
+        "customer"
+      ]
     },
     "occupationalSafetyViolation": {
       "description": "Indicates whether a higher classification was ordered because of occupational safety violations.",
@@ -156,7 +160,7 @@
       "then": {
         "required": [
           "terminationDate",
-          "terminatedByCustomer"
+          "terminatedBy"
         ]
       }
     },

@@ -48,7 +48,7 @@
       "isEventBasedAccounting": true,
       "isTerminated": true,
       "terminationDate": "2026-12-31",
-      "terminatedByCustomer": true,
+      "terminatedBy": "customer",
       "coverageGroups": [
         {
           "coverageGroupId": 1,
