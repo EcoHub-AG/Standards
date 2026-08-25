@@ -1,0 +1,114 @@
+{
+  "processIdentificationNo": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c",
+  "timestamp": "2026-08-24T12:00:00.000Z",
+  "processName": "claimsExperience.nlpi",
+  "subProcessName": "claimsExperience",
+  "processVersion": "1.0.0",
+  "header": {
+    "sender": {
+      "insurer": {
+        "companyId": "CHE-107.516.123",
+        "companyName": "Example Insurance AG",
+        "insurerCode": "15S"
+      }
+    },
+    "recipient": {
+      "broker": {
+        "brokerRegisterNo": "CHE-FINMA-F12345678",
+        "companyId": "CHE-115.517.011",
+        "companyName": "Example Broker AG",
+        "brokerBranch": "101156"
+      }
+    }
+  },
+  "claimsExperiences": [
+    {
+      "previousInsurerCompanyNo": 901,
+      "subSectorCode": 380,
+      "contractNo": "POL-380-003",
+      "customer": {
+        "companyName": "Example Trading AG",
+        "companyId": "CHE-115.517.011",
+        "address": {
+          "streetName": "Zollstrasse",
+          "houseNumber": "1",
+          "addressExtension": "Building A",
+          "postOfficeBox": "P.O. Box 100",
+          "zip": "8005",
+          "city": "Zurich",
+          "country": "CH"
+        }
+      },
+      "insuranceStartDate": "2020-01-01",
+      "insuranceEndDate": "2026-12-31",
+      "UVGRiskNo": "1234.56",
+      "operatingMode": "Office administration",
+      "language": "de",
+      "viewDate": "2026-01-31",
+      "isEventBasedAccounting": true,
+      "isPersonGroupInsured": true,
+      "isPersonMentionedByNameInsured": true,
+      "personsMentionedByNamePayroll": 120000,
+      "isTerminated": true,
+      "terminationDate": "2026-12-31",
+      "terminatedByCustomer": true,
+      "occupationalSafetyViolation": true,
+      "competentAuthority": "Cantonal labour inspectorate",
+      "coverageGroups": [
+        {
+          "coverageGroupId": 1,
+          "isSinglePersonCoverage": false,
+          "coverageGroupDescription": "All employees",
+          "lastInsuredYear": 2025,
+          "UVGCompulsory": {
+            "isVoluntaryInsurance": true,
+            "payrolls": [
+              {
+                "year": 2025,
+                "payrollOA": {
+                  "payrollMale": 250000,
+                  "payrollFemale": 250000,
+                  "payrollTotal": 500000
+                },
+                "payrollNOA": {
+                  "payrollMale": 240000,
+                  "payrollFemale": 240000,
+                  "payrollTotal": 480000
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "claimHistory": [
+        {
+          "year": 2025,
+          "accidentType": "occupationalAccident",
+          "claimsReported": 2,
+          "claimsPending": 1,
+          "medicalExpensesPayment": 5000,
+          "dailyAllowancePayment": 3000
+        }
+      ]
+    }
+  ],
+  "comment": "Claims experience information for a UVG contract.",
+  "contactDetails": {
+    "contactSurname": "Muster",
+    "contactFirstName": "Erika",
+    "contactMail": "erika.muster@example.com",
+    "contactPhone": "+41441234567"
+  },
+  "document": [
+    {
+      "filename": "claims-experience-report-uvg.pdf",
+      "data": "SGVsbG8gd29ybGQ=",
+      "fingerprint": "WAHLbX5Pnc0+qYwSonSm/w=="
+    },
+    {
+      "filename": "claims-experience-report-uvg.csv",
+      "data": "Y29udHJhY3RObyx5ZWFyLGNsYWltc1JlcG9ydGVk",
+      "fingerprint": "WAHLbX5Pnc0+qYwSonSm/w=="
+    }
+  ]
+}

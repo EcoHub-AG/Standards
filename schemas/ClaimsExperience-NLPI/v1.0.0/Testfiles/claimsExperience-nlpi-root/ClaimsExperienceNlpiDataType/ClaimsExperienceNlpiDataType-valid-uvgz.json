@@ -1,0 +1,157 @@
+{
+  "processIdentificationNo": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c",
+  "timestamp": "2026-08-24T12:00:00.000Z",
+  "processName": "claimsExperience.nlpi",
+  "subProcessName": "claimsExperience",
+  "processVersion": "1.0.0",
+  "header": {
+    "sender": {
+      "insurer": {
+        "companyId": "CHE-107.516.123",
+        "companyName": "Example Insurance AG",
+        "insurerCode": "15S"
+      }
+    },
+    "recipient": {
+      "broker": {
+        "brokerRegisterNo": "CHE-FINMA-F12345678",
+        "companyId": "CHE-115.517.011",
+        "companyName": "Example Broker AG",
+        "brokerBranch": "101156"
+      }
+    }
+  },
+  "claimsExperiences": [
+    {
+      "previousInsurerCompanyNo": 901,
+      "subSectorCode": 360,
+      "contractNo": "POL-360-001",
+      "customer": {
+        "companyName": "Example Trading AG",
+        "companyId": "CHE-115.517.011",
+        "address": {
+          "streetName": "Zollstrasse",
+          "houseNumber": "1",
+          "addressExtension": "Building A",
+          "postOfficeBox": "P.O. Box 100",
+          "zip": "8005",
+          "city": "Zurich",
+          "country": "CH"
+        }
+      },
+      "insuranceStartDate": "2020-01-01",
+      "insuranceEndDate": "2026-12-31",
+      "UVGRiskNo": "1234.56",
+      "operatingMode": "Office administration",
+      "language": "de",
+      "viewDate": "2026-01-31",
+      "isEventBasedAccounting": true,
+      "isTerminated": true,
+      "terminationDate": "2026-12-31",
+      "terminatedByCustomer": true,
+      "coverageGroups": [
+        {
+          "coverageGroupId": 1,
+          "isSinglePersonCoverage": false,
+          "coverageGroupDescription": "All employees",
+          "lastInsuredYear": 2025,
+          "UVGSupplement": {
+            "isDailyAllowanceUVGSalaryInsured": true,
+            "dailyAllowanceUVGSalaryStages": [
+              {
+                "benefitAmountPercentage": 80,
+                "waitingPeriodInDays": 30
+              },
+              {
+                "benefitAmountPercentage": 85,
+                "waitingPeriodInDays": 60
+              },
+              {
+                "benefitAmountPercentage": 95,
+                "waitingPeriodInDays": 90
+              }
+            ],
+            "isDailyAllowanceFirstCoupleDaysInsured": true,
+            "dailyAllowanceFirstCoupleDays": 80,
+            "isDailyAllowanceUVGSurplusSalaryInsured": true,
+            "dailyAllowanceUVGSurplusSalaryStages": [
+              {
+                "benefitAmountPercentage": 90,
+                "waitingPeriodInDays": 30
+              },
+              {
+                "benefitAmountPercentage": 92,
+                "waitingPeriodInDays": 60
+              },
+              {
+                "benefitAmountPercentage": 95,
+                "waitingPeriodInDays": 90
+              }
+            ],
+            "isDisabilityPensionSurplusSalaryInsured": true,
+            "disabilityCapitalUVGSalary": {
+              "isDisabilityCapitalUVGSalaryInsured": true,
+              "disabilityCapitalProgUVGSalaryBenefitType": "salaryMultiple",
+              "disabilityCapitalProgUVGSalaryBenefitValue": 2,
+              "disabilityCapitalProgUVGSalary": 225
+            },
+            "disabilityCapitalSurplusSalary": {
+              "isDisabilityCapitalUVGSurplusSalaryInsured": true,
+              "disabilityCapitalSurplusSalary": 2,
+              "disabilityCapitalProgSurplusSalary": 225
+            },
+            "isLeftBehindPensionSurplusSalaryInsured": true,
+            "deathCapitalUVGSalary": {
+              "isDeathCapitalInsured": true,
+              "deathCapitalBenefitValue": 2
+            },
+            "deathCapitalSurplusSalary": {
+              "isDeathCapitalInsured": true,
+              "deathCapitalBenefitValue": 2
+            },
+            "medicalExpensesHospital": {
+              "isMedicalExpensesHospitalCoverageInsured": true,
+              "medicalExpensesHospitalCoverage": "private"
+            },
+            "isDifferentialCoverInsured": true,
+            "payroll": [
+              {
+                "year": 2025,
+                "payrollUVGSalary": 500000,
+                "payrollUVGSurplusSalary": 150000
+              }
+            ]
+          }
+        }
+      ],
+      "claimHistory": [
+        {
+          "year": 2025,
+          "claimsReported": 2,
+          "claimsPending": 1,
+          "totalPayment": 12000,
+          "claimsReserves": 4000
+        }
+      ]
+    }
+  ],
+  "comment": "Claims experience information for a UVG-Z contract.",
+  "contactDetails": {
+    "contactSurname": "Muster",
+    "contactFirstName": "Erika",
+    "contactMail": "erika.muster@example.com",
+    "contactPhone": "+41441234567"
+  },
+  "document": [
+    {
+      "filename": "claims-experience-report-uvgz.pdf",
+      "data": "SGVsbG8gd29ybGQ=",
+      "fingerprint": "WAHLbX5Pnc0+qYwSonSm/w=="
+    },
+    {
+      "filename": "claims-experience-report-uvgz.csv",
+      "data": "Y29udHJhY3RObyx5ZWFyLGNsYWltc1JlcG9ydGVk",
+      "fingerprint": "WAHLbX5Pnc0+qYwSonSm/w=="
+    }
+  ]
+}
