@@ -1,0 +1,26 @@
+{
+  "customerNumber": "CUST-100004",
+  "company": {
+    "companyName": "Example Trading AG",
+    "companyId": "CHE-115.517.011",
+    "address": {
+      "streetName": "Zollstrasse",
+      "houseNumber": "1",
+      "zip": "8005",
+      "city": "Zurich",
+      "country": "CH"
+    }
+  },
+  "person": {
+    "firstName": "Erika",
+    "lastName": "Muster",
+    "birthDate": "1985-04-12",
+    "address": {
+      "streetName": "Bahnhofstrasse",
+      "houseNumber": "10",
+      "zip": "8001",
+      "city": "Zurich",
+      "country": "CH"
+    }
+  }
+}

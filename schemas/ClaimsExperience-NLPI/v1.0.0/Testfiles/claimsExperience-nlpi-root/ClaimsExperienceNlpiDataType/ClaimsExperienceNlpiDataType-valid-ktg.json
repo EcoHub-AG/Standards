@@ -1,0 +1,127 @@
+{
+  "processIdentificationNo": "632e56bd-5f23-4d5b-b1ca-d8d9ccda278c",
+  "timestamp": "2026-08-24T12:00:00.000Z",
+  "processName": "claimsExperience.nlpi",
+  "subProcessName": "claimsExperience",
+  "processVersion": "1.0.0",
+  "header": {
+    "sender": {
+      "insurer": {
+        "companyId": "CHE-107.516.123",
+        "companyName": "Example Insurance AG",
+        "insurerCode": "15S"
+      }
+    },
+    "recipient": {
+      "broker": {
+        "brokerRegisterNo": "CHE-FINMA-F12345678",
+        "companyId": "CHE-115.517.011",
+        "companyName": "Example Broker AG",
+        "brokerBranch": "101156"
+      }
+    }
+  },
+  "claimsExperiences": [
+    {
+      "previousInsurerCompanyNo": 901,
+      "subSectorCode": 420,
+      "contractNo": "POL-420-005",
+      "customer": {
+        "companyName": "Example Trading AG",
+        "companyId": "CHE-115.517.011",
+        "address": {
+          "streetName": "Zollstrasse",
+          "houseNumber": "1",
+          "addressExtension": "Building A",
+          "postOfficeBox": "P.O. Box 100",
+          "zip": "8005",
+          "city": "Zurich",
+          "country": "CH"
+        }
+      },
+      "insuranceStartDate": "2020-01-01",
+      "insuranceEndDate": "2026-12-31",
+      "language": "de",
+      "viewDate": "2026-01-31",
+      "isEventBasedAccounting": true,
+      "isTerminated": true,
+      "terminationDate": "2026-12-31",
+      "terminatedBy": "customer",
+      "coverageGroups": [
+        {
+          "coverageGroupId": 1,
+          "isSinglePersonCoverage": false,
+          "coverageGroupDescription": "All employees",
+          "lastInsuredYear": 2025,
+          "DSB": {
+            "isIndemnityInsurance": false,
+            "isFullCoverage": true,
+            "isDailyAllowanceInsured": true,
+            "maximumBenefitPeriod": 730,
+            "dailyAllowanceStages": [
+              {
+                "benefitAmountPercentage": 80,
+                "waitingPeriodInDays": 30
+              },
+              {
+                "benefitAmountPercentage": 85,
+                "waitingPeriodInDays": 60
+              },
+              {
+                "benefitAmountPercentage": 95,
+                "waitingPeriodInDays": 90
+              }
+            ],
+            "payrolls": [
+              {
+                "year": 2025,
+                "payroll": {
+                  "payrollMale": 250000,
+                  "payrollFemale": 250000,
+                  "payrollTotal": 500000
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "claimHistory": [
+        {
+          "year": 2025,
+          "claimsReported": 2,
+          "claimsPending": 1,
+          "totalPayment": 12000,
+          "claimsReserves": 4000
+        }
+      ],
+      "longTailClaims": [
+        {
+          "id": 1,
+          "eventDate": "2025-03-15",
+          "status": "open",
+          "totalPayment": 12000,
+          "claimsReserves": 4000
+        }
+      ]
+    }
+  ],
+  "comment": "Claims experience information for a KTG contract.",
+  "contactDetails": {
+    "contactSurname": "Muster",
+    "contactFirstName": "Erika",
+    "contactMail": "erika.muster@example.com",
+    "contactPhone": "+41441234567"
+  },
+  "document": [
+    {
+      "filename": "claims-experience-report-ktg.pdf",
+      "data": "SGVsbG8gd29ybGQ=",
+      "fingerprint": "WAHLbX5Pnc0+qYwSonSm/w=="
+    },
+    {
+      "filename": "claims-experience-report-ktg.csv",
+      "data": "Y29udHJhY3RObyx5ZWFyLGNsYWltc1JlcG9ydGVk",
+      "fingerprint": "WAHLbX5Pnc0+qYwSonSm/w=="
+    }
+  ]
+}

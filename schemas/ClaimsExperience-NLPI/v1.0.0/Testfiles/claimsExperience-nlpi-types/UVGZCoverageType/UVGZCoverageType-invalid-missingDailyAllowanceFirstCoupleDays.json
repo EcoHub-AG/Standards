@@ -1,0 +1,50 @@
+{
+  "isDailyAllowanceUVGSalaryInsured": true,
+  "dailyAllowanceUVGSalaryStages": [
+    {
+      "benefitAmountPercentage": 80,
+      "waitingPeriodInDays": 30
+    }
+  ],
+  "isDailyAllowanceFirstCoupleDaysInsured": true,
+  "isDailyAllowanceUVGSurplusSalaryInsured": true,
+  "dailyAllowanceUVGSurplusSalaryStages": [
+    {
+      "benefitAmountPercentage": 90,
+      "waitingPeriodInDays": 30
+    }
+  ],
+  "isDisabilityPensionSurplusSalaryInsured": true,
+  "disabilityCapitalUVGSalary": {
+    "isDisabilityCapitalUVGSalaryInsured": true,
+    "disabilityCapitalProgUVGSalaryBenefitType": "salaryMultiple",
+    "disabilityCapitalProgUVGSalaryBenefitValue": 2,
+    "disabilityCapitalProgUVGSalary": 225
+  },
+  "disabilityCapitalSurplusSalary": {
+    "isDisabilityCapitalUVGSurplusSalaryInsured": true,
+    "disabilityCapitalSurplusSalary": 2,
+    "disabilityCapitalProgSurplusSalary": 225
+  },
+  "isLeftBehindPensionSurplusSalaryInsured": true,
+  "deathCapitalUVGSalary": {
+    "isDeathCapitalInsured": true,
+    "deathCapitalBenefitValue": 2
+  },
+  "deathCapitalSurplusSalary": {
+    "isDeathCapitalInsured": true,
+    "deathCapitalBenefitValue": 2
+  },
+  "medicalExpensesHospital": {
+    "isMedicalExpensesHospitalCoverageInsured": true,
+    "medicalExpensesHospitalCoverage": "private"
+  },
+  "isDifferentialCoverInsured": false,
+  "payroll": [
+    {
+      "year": 2025,
+      "payrollUVGSalary": 500000,
+      "payrollUVGSurplusSalary": 150000
+    }
+  ]
+}

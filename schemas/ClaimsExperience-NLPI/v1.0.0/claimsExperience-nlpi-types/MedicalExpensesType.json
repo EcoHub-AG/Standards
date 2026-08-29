@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Medical expenses coverage",
+  "type": "object",
+  "properties": {
+    "isMedicalExpensesHospitalCoverageInsured": {
+      "description": "Indicates whether medical expenses coverage is insured.",
+      "type": "boolean"
+    },
+    "medicalExpensesHospitalCoverage": {
+      "description": "Insured hospital class",
+      "type": "string",
+      "enum": [
+        "private",
+        "semi-private"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "isMedicalExpensesHospitalCoverageInsured"
+  ],
+  "if": {
+    "properties": {
+      "isMedicalExpensesHospitalCoverageInsured": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "medicalExpensesHospitalCoverage"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Aggregated claims information for one calendar year",
+  "type": "object",
+  "properties": {
+    "year": {
+      "description": "For event view (isEventBasedAccounting = true on ClaimInfoPolicyType) Calendar year of the loss event, i.e. technically consistent with the validity of the coverages. For financial view (isEventBasedAccounting = false) Year of payment confirmation.",
+      "type": "integer"
+    },
+    "accidentType": {
+      "description": "Type of accident for UVGO claims. Omitted if not UVGO.",
+      "type": "string",
+      "enum": [
+        "occupationalAccident",
+        "nonOccupationalAccident",
+        "voluntaryInsurance"
+      ]
+    },
+    "claimsReported": {
+      "description": "Total number of claims in the relevant year as of the date of the information request. Closed claims without payments and without costs should not be taken into account.",
+      "type": "integer"
+    },
+    "claimsPending": {
+      "description": "Number of outstanding claims in the relevant year on the date the information is available.",
+      "type": "integer"
+    },
+    "medicalExpensesPayment": {
+      "description": "Payment of medical expenses in the case of UVGO. Payments made on the date of the information in accordance with UVG Art. 10, 12, and 13 (including benefits in accordance with these articles within the scope of UVG Art. 21), UVV Art. 15-18, and 20. Omitted if not UVGO.",
+      "type": "integer"
+    },
+    "dailyAllowancePayment": {
+      "description": "Daily allowance payment in the case of UVGO. Payments made on the date of the information in accordance with UVG Art. 16 and 17 (including daily allowances within the scope of UVG Art. 21), UVV Art. 25-27, as well as transitional daily allowances in accordance with VUV Art. 83-85. Omitted if not UVGO.",
+      "type": "integer"
+    },
+    "totalPayment": {
+      "description": "Total payment (including case-related costs) in the case of DSB or UVGZ. DSB: Daily allowances and case-related costs minus recourse income and maternity benefits; UVG-Z: All benefits for coverage according to the coverage groups and case-related costs, minus recourse income; rounded commercially to whole CHF. Omitted if UVGO.",
+      "type": "integer"
+    },
+    "claimsReserves": {
+      "description": "Cumulative case reserves in the case of DSB and UVGZ. Open reserves required on the date of disclosure for corresponding insurance benefits and case-related costs; rounded to whole CHF for commercial purposes. Provisions are aggregated for all coverages.",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "year",
+    "claimsReported",
+    "claimsPending"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "previousInsurerCompanyNo": 901,
+  "subSectorCode": 360,
+  "contractNo": "POL-360-001",
+  "customer": {
+    "companyName": "Example Trading AG",
+    "address": {
+      "streetName": "Zollstrasse",
+      "houseNumber": "1",
+      "zip": "8005",
+      "city": "Zurich",
+      "country": "CH"
+    }
+  },
+  "insuranceStartDate": "2020-01-01",
+  "insuranceEndDate": "2026-12-31",
+  "language": "de",
+  "viewDate": "2026-01-31",
+  "isEventBasedAccounting": true,
+  "isTerminated": true,
+  "terminationDate": "2026-12-31",
+  "terminatedBy": "customer",
+  "coverageGroups": [
+    {
+      "coverageGroupId": 1,
+      "isSinglePersonCoverage": false,
+      "coverageGroupDescription": "All employees",
+      "lastInsuredYear": 2025,
+      "UVGSupplement": {
+        "isDailyAllowanceUVGSalaryInsured": true,
+        "dailyAllowanceUVGSalaryStages": [
+          {
+            "benefitAmountPercentage": 80,
+            "waitingPeriodInDays": 30
+          },
+          {
+            "benefitAmountPercentage": 85,
+            "waitingPeriodInDays": 60
+          },
+          {
+            "benefitAmountPercentage": 95,
+            "waitingPeriodInDays": 90
+          }
+        ],
+        "isDailyAllowanceFirstCoupleDaysInsured": true,
+        "dailyAllowanceFirstCoupleDays": 80,
+        "isDailyAllowanceUVGSurplusSalaryInsured": true,
+        "dailyAllowanceUVGSurplusSalaryStages": [
+          {
+            "benefitAmountPercentage": 90,
+            "waitingPeriodInDays": 30
+          },
+          {
+            "benefitAmountPercentage": 92,
+            "waitingPeriodInDays": 60
+          },
+          {
+            "benefitAmountPercentage": 95,
+            "waitingPeriodInDays": 90
+          }
+        ],
+        "isDisabilityPensionSurplusSalaryInsured": true,
+        "disabilityCapitalUVGSalary": {
+          "isDisabilityCapitalUVGSalaryInsured": true,
+          "disabilityCapitalProgUVGSalaryBenefitType": "salaryMultiple",
+          "disabilityCapitalProgUVGSalaryBenefitValue": 2,
+          "disabilityCapitalProgUVGSalary": 225
+        },
+        "disabilityCapitalSurplusSalary": {
+          "isDisabilityCapitalUVGSurplusSalaryInsured": true,
+          "disabilityCapitalSurplusSalary": 2,
+          "disabilityCapitalProgSurplusSalary": 225
+        },
+        "isLeftBehindPensionSurplusSalaryInsured": true,
+        "deathCapitalUVGSalary": {
+          "isDeathCapitalInsured": true,
+          "deathCapitalBenefitValue": 2
+        },
+        "deathCapitalSurplusSalary": {
+          "isDeathCapitalInsured": true,
+          "deathCapitalBenefitValue": 2
+        },
+        "medicalExpensesHospital": {
+          "isMedicalExpensesHospitalCoverageInsured": true,
+          "medicalExpensesHospitalCoverage": "private"
+        },
+        "isDifferentialCoverInsured": true,
+        "payroll": [
+          {
+            "year": 2025,
+            "payrollUVGSalary": 500000,
+            "payrollUVGSurplusSalary": 150000
+          }
+        ]
+      }
+    }
+  ],
+  "claimHistory": [
+    {
+      "year": 2025,
+      "claimsReported": 2,
+      "claimsPending": 1,
+      "totalPayment": 12000,
+      "claimsReserves": 4000
+    }
+  ]
+}

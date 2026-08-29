@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Company number of the previous insurer according to the co-insurance exchange",
+  "type": "integer"
+}

@@ -1,0 +1,12 @@
+{
+  "isIndemnityInsurance": false,
+  "isFullCoverage": true,
+  "isDailyAllowanceInsured": true,
+  "maximumBenefitPeriod": 730,
+  "dailyAllowanceStages": [
+    {
+      "benefitAmountPercentage": 80,
+      "waitingPeriodInDays": 30
+    }
+  ]
+}

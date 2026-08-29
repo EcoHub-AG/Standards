@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "Death lump sum benefit",
+  "type": "object",
+  "properties": {
+    "isDeathCapitalInsured": {
+      "description": "Indicates whether the benefit is insured.",
+      "type": "boolean"
+    },
+    "deathCapitalBenefitValue": {
+      "description": "Benefit amount as annual salary multiple.",
+      "type": "number",
+      "enum": [
+        0.5,
+        1,
+        1.5,
+        2,
+        2.5,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "isDeathCapitalInsured"
+  ],
+  "if": {
+    "properties": {
+      "isDeathCapitalInsured": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "deathCapitalBenefitValue"
+    ]
+  }
+}

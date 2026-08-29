@@ -1,0 +1,45 @@
+{
+  "previousInsurerCompanyNo": 901,
+  "subSectorCode": 420,
+  "contractNo": "POL-420-004",
+  "customer": {
+    "companyName": "Example Trading AG",
+    "address": {
+      "streetName": "Zollstrasse",
+      "houseNumber": "1",
+      "zip": "8005",
+      "city": "Zurich",
+      "country": "CH"
+    }
+  },
+  "insuranceStartDate": "2020-01-01",
+  "insuranceEndDate": "2026-12-31",
+  "language": "de",
+  "viewDate": "2026-01-31",
+  "isEventBasedAccounting": true,
+  "isTerminated": false,
+  "occupationalSafetyViolation": true,
+  "coverageGroups": [
+    {
+      "coverageGroupId": 1,
+      "isSinglePersonCoverage": false,
+      "coverageGroupDescription": "All employees",
+      "lastInsuredYear": 2025,
+      "DSB": {
+        "isIndemnityInsurance": false,
+        "isFullCoverage": true,
+        "isDailyAllowanceInsured": false,
+        "maximumBenefitPeriod": 730
+      }
+    }
+  ],
+  "claimHistory": [
+    {
+      "year": 2025,
+      "claimsReported": 2,
+      "claimsPending": 1,
+      "totalPayment": 12000,
+      "claimsReserves": 4000
+    }
+  ]
+}

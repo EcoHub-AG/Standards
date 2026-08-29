@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "A daily allowance stage with benefit percentage and waiting period",
+  "type": "object",
+  "properties": {
+    "benefitAmountPercentage": {
+      "description": "Benefit amount in percent (whole number)",
+      "type": "integer"
+    },
+    "waitingPeriodInDays": {
+      "description": "Waiting period in days",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "benefitAmountPercentage",
+    "waitingPeriodInDays"
+  ]
+}

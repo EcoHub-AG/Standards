@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "description": "UVGZ coverage information",
+  "type": "object",
+  "properties": {
+    "isDailyAllowanceUVGSalaryInsured": {
+      "description": "Indicates whether daily allowance up to the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "dailyAllowanceUVGSalaryStages": {
+      "description": "Daily allowance stages up to the UVG maximum in chronological order. Single entry if daily allowance is not staggered. Up to 3 entries if staggered, for first, second and third daily allowance",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "$ref": "DailyAllowanceStageType.json"
+      },
+      "unevaluatedItems": false
+    },
+    "isDailyAllowanceFirstCoupleDaysInsured": {
+      "description": "Indicates whether a daily allowance for the first and second day is insured.",
+      "type": "boolean"
+    },
+    "dailyAllowanceFirstCoupleDays": {
+      "description": "Benefit amount in percent for the first two days (whole number).",
+      "type": "integer"
+    },
+    "isDailyAllowanceUVGSurplusSalaryInsured": {
+      "description": "Indicates whether daily allowance above the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "dailyAllowanceUVGSurplusSalaryStages": {
+      "description": "Daily allowance stages above the UVG maximum in chronological order. Single entry if daily allowance is not staggered. Up to 3 entries if staggered, for first, second and third daily allowance.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "$ref": "DailyAllowanceStageType.json"
+      },
+      "unevaluatedItems": false
+    },
+    "isDisabilityPensionSurplusSalaryInsured": {
+      "description": "Indicates whether disability pension above the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "disabilityCapitalUVGSalary": {
+      "description": "Disability capital up to the UVG maximum.",
+      "$ref": "DisabilityCapitalType.json"
+    },
+    "disabilityCapitalSurplusSalary": {
+      "description": "Disability capital above the UVG maximum.",
+      "$ref": "DisabilitySurplusCapitalType.json"
+    },
+    "isLeftBehindPensionSurplusSalaryInsured": {
+      "description": "Indicates whether survivors pension above the UVG maximum is insured.",
+      "type": "boolean"
+    },
+    "deathCapitalUVGSalary": {
+      "description": "Death lump sum benefit up to the UVG maximum",
+      "$ref": "DeathCapitalType.json"
+    },
+    "deathCapitalSurplusSalary": {
+      "description": "Death lump sum benefit above the UVG maximum",
+      "$ref": "DeathCapitalType.json"
+    },
+    "medicalExpensesHospital": {
+      "$ref": "MedicalExpensesType.json"
+    },
+    "isDifferentialCoverInsured": {
+      "description": "Indicates whether difference coverage is insured.",
+      "type": "boolean"
+    },
+    "payroll": {
+      "description": "Information on the insured UVGZ wage sums for the coverage group, sorted in ascending order by year. The information includes data for the current year and at least the six preceding years, where available.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "description": "Calendar year of coverage validity",
+            "type": "integer"
+          },
+          "payrollUVGSalary": {
+            "description": "Total wages up to UVG max. If available, definitively settled insured total wages up to UVG max. (men and women), rounded commercially to whole CHF. Otherwise, advance total wages (usually in the current year), rounded commercially to whole CHF.",
+            "type": "integer"
+          },
+          "payrollUVGSurplusSalary": {
+            "description": "Wage sum above UVG max. If available, definitively settled insured wage sum above UVG max. (men and women), rounded to the nearest whole CHF. Otherwise, advance wage sum (usually in the current year), rounded to the nearest whole CHF.",
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "year",
+          "payrollUVGSalary",
+          "payrollUVGSurplusSalary"
+        ]
+      },
+      "unevaluatedItems": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "isDailyAllowanceUVGSalaryInsured",
+    "dailyAllowanceUVGSalaryStages",
+    "isDailyAllowanceFirstCoupleDaysInsured",
+    "isDailyAllowanceUVGSurplusSalaryInsured",
+    "isDisabilityPensionSurplusSalaryInsured",
+    "disabilityCapitalUVGSalary",
+    "disabilityCapitalSurplusSalary",
+    "isLeftBehindPensionSurplusSalaryInsured",
+    "deathCapitalUVGSalary",
+    "deathCapitalSurplusSalary",
+    "medicalExpensesHospital",
+    "isDifferentialCoverInsured",
+    "payroll"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "isDailyAllowanceUVGSalaryInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "dailyAllowanceUVGSalaryStages"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "isDailyAllowanceFirstCoupleDaysInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "dailyAllowanceFirstCoupleDays"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "isDailyAllowanceUVGSurplusSalaryInsured": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "dailyAllowanceUVGSurplusSalaryStages"
+        ]
+      }
+    }
+  ]
+}
