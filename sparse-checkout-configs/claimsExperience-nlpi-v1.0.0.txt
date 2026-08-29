@@ -1,0 +1,4 @@
+schemas/ClaimsExperience-NLPI/v1.0.0/claimsExperience-nlpi-root
+schemas/ClaimsExperience-NLPI/v1.0.0/claimsExperience-nlpi-types
+schemas/Generics/v1.1.0/*
+!schemas/Generics/v1.1.0/testFiles

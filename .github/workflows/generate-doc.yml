@@ -5,7 +5,9 @@ on:
   # Triggers the workflow on new tags following the naming pattern
   push:
     tags:
-      - '**'
+      - 'offer-nlpi-v*'
+      - 'genericExchange-v*'
+      - 'claimsExperience-nlpi-v*'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -50,6 +52,10 @@ jobs:
             echo "genericExchange=true" >> $GITHUB_OUTPUT
             echo "API_NAME=Generic-Exchange" >> $GITHUB_OUTPUT
             echo "API_VERSION=${TAG_NAME#genericExchange-v}" >> $GITHUB_OUTPUT
+          elif [[ $TAG_NAME == claimsExperience-nlpi-v* ]]; then
+            echo "claimsExperienceNlpi=true" >> $GITHUB_OUTPUT
+            echo "API_NAME=ClaimsExperience-NLPI" >> $GITHUB_OUTPUT
+            echo "API_VERSION=${TAG_NAME#claimsExperience-nlpi-v}" >> $GITHUB_OUTPUT
           else
             echo "Unknown API tag format"
             exit 1
@@ -74,6 +80,16 @@ jobs:
           
           mkdir -p "${OUTPUT_DIR}"
           generate-schema-doc "schemas/GenericExchange/v${API_VERSION}/genericExchange-root" "${OUTPUT_DIR}"
+
+      - name: Generate documentation for ClaimsExperience NLPI
+        if: steps.api_info.outputs.claimsExperienceNlpi == 'true'
+        run: |
+          API_NAME=${{ steps.api_info.outputs.API_NAME }}
+          API_VERSION=${{ steps.api_info.outputs.API_VERSION }}
+          OUTPUT_DIR="docs/${API_NAME}/${API_VERSION}"
+          
+          mkdir -p "${OUTPUT_DIR}"
+          generate-schema-doc "schemas/ClaimsExperience-NLPI/v${API_VERSION}/claimsExperience-nlpi-root" "${OUTPUT_DIR}"
 
 
       # Commit all changed files back to the repository
