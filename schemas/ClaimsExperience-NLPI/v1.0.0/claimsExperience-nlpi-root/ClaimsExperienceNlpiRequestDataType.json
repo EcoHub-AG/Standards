@@ -5,10 +5,10 @@
   "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
   "properties": {
     "processIdentificationNo": {
-      "$ref": "../../../Generics/v1.0.0/ProcessIdentificationNoType.json"
+      "$ref": "../../../Generics/v1.1.0/ProcessIdentificationNoType.json"
     },
     "timestamp": {
-      "$ref": "../../../Generics/v1.0.0/TimestampType.json"
+      "$ref": "../../../Generics/v1.1.0/TimestampType.json"
     },
     "processName": {
       "$ref": "../claimsExperience-nlpi-types/ProcessNameConstType.json"
@@ -22,7 +22,7 @@
       "$ref": "../claimsExperience-nlpi-types/ProcessVersionConstType.json"
     },
     "header": {
-      "$ref": "../../../Generics/v1.0.0/HeaderType.json"
+      "$ref": "../../../Generics/v1.1.0/HeaderType.json"
     },
     "previousInsurerCompanyNo": {
       "$ref": "../claimsExperience-nlpi-types/PreviousInsurerCompanyNumberType.json"
@@ -43,19 +43,19 @@
       "$ref": "../../../Generics/v1.1.0/CompanyMinimalType.json"
     },
     "language": {
-      "$ref": "../../../Generics/v1.0.0/LanguageType.json"
+      "$ref": "../../../Generics/v1.1.0/LanguageType.json"
     },
     "comment": {
-      "$ref": "../../../Generics/v1.0.0/RestrictedStringType.json",
+      "$ref": "../../../Generics/v1.1.0/RestrictedStringType.json",
       "description": "General comment field"
     },
     "contactDetails": {
       "description": "Contact details of the employee at the broker who is responsible for the request (e.g. backoffice employee).",
-      "$ref": "../../../Generics/v1.0.0/ContactType.json"
+      "$ref": "../../../Generics/v1.1.0/ContactType.json"
     },
     "document": {
       "description": "Supporting documents in any file format.",
-      "$ref": "../../../Generics/v1.0.0/MultiFileType.json"
+      "$ref": "../../../Generics/v1.1.0/MultiFileType.json"
     }
   },
   "additionalProperties": false,
