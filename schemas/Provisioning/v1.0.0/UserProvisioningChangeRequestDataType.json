@@ -1,0 +1,206 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "UserProvisioningChangeRequestDataType",
+    "description": "Schema for a UserProvisioning change request payload. Accepts either the direct payload or a wrapper object with property 'updateUserType'.",
+    "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
+    "type": "object",
+    "properties": {
+        "idpUserId": {
+            "type": "string",
+            "maxLength": 10,
+            "pattern": "^IDP",
+            "description": "IDP_UserID. This ID is unique across all users within EcoHub and must start with 'IDP'."
+        },
+        "userIsConsulting": {
+            "type": "boolean"
+        },
+        "userIsFINMARegistered": {
+            "type": "boolean"
+        },
+        "userRegNo": {
+            "type": "string",
+            "maxLength": 30
+        },
+        "igRoles": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "maxLength": 20
+            },
+            "uniqueItems": true
+        },
+        "vuRights": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "maxLength": 50
+            },
+            "uniqueItems": true
+        },
+        "orgId": {
+            "type": "string",
+            "maxLength": 30
+        },
+        "orgRegNo": {
+            "type": "string",
+            "maxLength": 30
+        },
+        "currentOrgRegNo": {
+            "type": "string",
+            "maxLength": 30
+        },
+        "primaryOU": {
+            "$ref": "./provisioning-types/OrgUnitInfoType.json"
+        },
+        "additionalOU": {
+            "anyOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "./provisioning-types/OrgUnitInfoType.json"
+                    },
+                    "uniqueItems": true
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        },
+        "employed": {
+            "type": "boolean"
+        },
+        "givenName": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "surname": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "userEmail": {
+            "type": "string",
+            "maxLength": 70,
+            "format": "email"
+        },
+        "userOfficePhone": {
+            "type": "string",
+            "maxLength": 25
+        },
+        "userMobilePhone": {
+            "type": "string",
+            "maxLength": 25
+        },
+        "userBirthday": {
+            "anyOf": [
+                {
+                    "type": "string",
+                    "format": "date"
+                },
+                {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            ]
+        },
+        "userSex": {
+            "type": "string",
+            "enum": [
+                "M",
+                "F"
+            ]
+        },
+        "userLanguage": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 2,
+            "enum": [
+                "DE",
+                "IT",
+                "FR",
+                "EN"
+            ]
+        },
+        "validFrom": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "validTo": {
+            "anyOf": [
+                {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        },
+        "userType": {
+            "type": "string",
+            "enum": [
+                "TECHNICAL",
+                "PERSONAL"
+            ]
+        },
+        "userCategory": {
+            "type": "string"
+        },
+        "requestId": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "creationDate": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "creationUser": {
+            "type": "string",
+            "maxLength": 50,
+            "pattern": "^IDP"
+        },
+        "modificationDate": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "modificationUser": {
+            "type": "string",
+            "maxLength": 50,
+            "pattern": "^IDP"
+        },
+        "requestTime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "returnCode": {
+            "type": "string"
+        },
+        "errorMessage": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    },
+    "required": [
+        "idpUserId",
+        "orgId",
+        "orgRegNo",
+        "primaryOU",
+        "employed",
+        "givenName",
+        "surname",
+        "userBirthday",
+        "userSex",
+        "userLanguage",
+        "validFrom",
+        "userType",
+        "userCategory",
+        "requestId",
+        "creationDate",
+        "creationUser",
+        "modificationDate",
+        "modificationUser",
+        "requestTime"
+    ],
+    "additionalProperties": false
+}

@@ -1,0 +1,43 @@
+{
+  "updateUserType": {
+    "idpUserId": "IDP1863743",
+    "igRoles": [
+      "EL_INFO",
+      "EL_OFFERT",
+      "NL-VSV_MF-EVN",
+      "NL-VSV_OFFERT",
+      "NL-VSV_INFO",
+      "NL-PV_INFO",
+      "KL_INFO"
+    ],
+    "vuRights": [],
+    "orgId": "2169",
+    "orgRegNo": "CHE-FINMA-F01086868",
+    "primaryOU": {
+      "id": "102192",
+      "regNo": "CHE-FINMA-F01086868",
+      "type": "headquarter",
+      "name": "smzh ag"
+    },
+    "additionalOU": null,
+    "employed": true,
+    "givenName": "Reidan",
+    "surname": "Sulejmani",
+    "userEmail": "sulejmani@smzh.ch",
+    "userOfficePhone": "+41433551650",
+    "userMobilePhone": "+41 782337757",
+    "userBirthday": "2002-07-13T00:00:00",
+    "userSex": "M",
+    "userLanguage": "DE",
+    "validFrom": "2026-09-23T15:51:31Z",
+    "validTo": null,
+    "userType": "PERSONAL",
+    "userCategory": "BROKER",
+    "creationDate": "2026-09-23T15:51:31Z",
+    "creationUser": "IDP0000000",
+    "modificationDate": "2026-09-23T15:51:31Z",
+    "modificationUser": "IDP0000000",
+    "requestId": "UagAMXXpMu",
+    "requestTime": "2026-09-23T15:54:00.3376052+00:00"
+  }
+}

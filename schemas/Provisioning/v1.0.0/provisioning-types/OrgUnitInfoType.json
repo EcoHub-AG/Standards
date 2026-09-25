@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "OrgUnitInfo",
+  "description": "Information about an organizational unit.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string", "maxLength": 30, "description": "ID der Organizational unit." },
+    "regNo": { "type": "string", "maxLength": 30, "description": "Old register number of the organizational unit." },
+    "currentRegNo": { "type": "string", "maxLength": 30, "description": "Current register number of the organizational unit." },
+    "type": { "type": "string", "maxLength": 30, "description": "Type of organizational unit. Known values: \"headquarter\", \"branch\", \"subsidiary\", \"affiliate\", \"specialAccount\". Service providers must accept unknown/new values." },
+    "name": { "type": "string", "maxLength": 150, "description": "Name of the OU (informative only, must not be used to identify the OU)." }
+  },
+  "required": ["id", "regNo", "type", "name"],
+  "additionalProperties": true
+}
