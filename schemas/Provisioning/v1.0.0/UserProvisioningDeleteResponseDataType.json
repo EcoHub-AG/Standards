@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "UserProvisioningDeleteResponseDataType",
+  "description": "Response DataType for a UserProvisioning delete request. Captures outcome code, human-readable description and optional error message.",
+  "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "enum": ["OK", "USER_NOT_FOUND", "ERROR"],
+      "description": "Outcome code: OK, USER_NOT_FOUND, or ERROR."
+    },
+    "description": {
+      "type": "string",
+      "description": "Human readable explanation of the code. Examples:\n- OK: The information about deleting the user on EcoHub has been registered.\n- USER_NOT_FOUND: The user with the specified IDP_UserID does not exist at the service provider.\n- ERROR: An internal error occurred; see errorMessage for stack trace."
+    },
+    "errorMessage": {
+      "type": ["string", "null"],
+      "description": "Optional error details or stack trace when code is ERROR."
+    }
+  },
+  "required": ["code", "description"],
+  "additionalProperties": false
+}

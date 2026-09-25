@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "UserProvisioningChangeResponseDataType",
+  "description": "Response DataType for a UserProvisioning change request. Captures outcome code, human-readable description and optional error message.",
+  "x-ecohub-license": "© 2025 EcoHub AG. Usage restricted. Prior written authorization required. Swiss law applies. Jurisdiction: Zurich.",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "enum": ["OK", "PENDING", "USER_EXISTS", "ERROR"],
+      "description": "Outcome code: OK, PENDING, USER_EXISTS, or ERROR."
+    },
+    "description": {
+      "type": "string",
+      "description": "Human readable explanation of the code. Examples:\n- OK: The user was created at the service provider (synchronous).\n- PENDING: Request received; user not yet created (asynchronous).\n- USER_EXISTS: A user with the same IDP_UserID already exists.\n- ERROR: An internal error occurred; see errorMessage for stack trace."
+    },
+    "errorMessage": {
+      "type": ["string", "null"],
+      "description": "Optional error details or stack trace when code is ERROR."
+    }
+  },
+  "required": ["code", "description"],
+  "additionalProperties": false
+}
