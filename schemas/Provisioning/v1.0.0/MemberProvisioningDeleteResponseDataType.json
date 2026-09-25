@@ -10,16 +10,19 @@
                 "OK",
                 "MEMBER_NOT_FOUND",
                 "ERROR"
-            ]
+            ],
+            "description": "Outcome code: OK, MEMBER_NOT_FOUND, or ERROR."
         },
         "description": {
-            "type": "string"
+            "type": "string",
+            "description": "Human readable explanation of the code. Examples:\n- OK: The information about deleting the member has been registered.\n- MEMBER_NOT_FOUND: The member with the specified id does not exist.\n- ERROR: An internal error occurred; see errorMessage for stack trace."
         },
         "errorMessage": {
             "type": [
                 "string",
                 "null"
-            ]
+            ],
+            "description": "Optional error details or stack trace when code is ERROR."
         }
     },
     "required": [

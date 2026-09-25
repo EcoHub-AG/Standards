@@ -11,16 +11,19 @@
                 "PENDING",
                 "MEMBER_EXISTS",
                 "ERROR"
-            ]
+            ],
+            "description": "Outcome code: OK, PENDING, MEMBER_EXISTS, or ERROR."
         },
         "description": {
-            "type": "string"
+            "type": "string",
+            "description": "Human readable explanation of the code. Examples:\n- OK: The member change has been accepted and processed.\n- PENDING: The change has been accepted but processing is pending.\n- MEMBER_EXISTS: A member with the same identifier already exists.\n- ERROR: An internal error occurred; see errorMessage for details."
         },
         "errorMessage": {
             "type": [
                 "string",
                 "null"
-            ]
+            ],
+            "description": "Optional error details or stack trace when code is ERROR."
         }
     },
     "required": [
