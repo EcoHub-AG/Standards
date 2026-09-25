@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "MembershipDeletionPayload",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "The member ID (OrgId)."
+        }
+    },
+    "required": [
+        "id"
+    ],
+    "additionalProperties": false
+}

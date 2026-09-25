@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "OrgProvisioningDeleteResponseDataType",
+    "description": "Response for OrgUnit Deletion provisioning requests.",
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "string",
+            "enum": [
+                "OK",
+                "ORG_NOT_FOUND",
+                "ERROR"
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "errorMessage": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    },
+    "required": [
+        "code",
+        "description"
+    ],
+    "additionalProperties": false
+}

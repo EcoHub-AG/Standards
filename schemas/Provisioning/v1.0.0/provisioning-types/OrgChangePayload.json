@@ -1,0 +1,67 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "OrgChangePayload",
+    "description": "Payload for creating or updating an organizational unit in EcoHub.",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "orgUnitName": {
+            "type": "string"
+        },
+        "orgUnitType": {
+            "type": "string"
+        },
+        "orgId": {
+            "type": "integer"
+        },
+        "membershipName": {
+            "type": "string"
+        },
+        "legalForm": {
+            "type": "string"
+        },
+        "address": {
+            "$ref": "./Address.json"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "finma": {
+            "type": "string"
+        },
+        "currentFinma": {
+            "type": "string"
+        },
+        "fax": {
+            "type": "string"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "language": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "address",
+        "email",
+        "fax",
+        "finma",
+        "currentFinma",
+        "id",
+        "language",
+        "legalForm",
+        "membershipName",
+        "orgId",
+        "orgUnitName",
+        "orgUnitType",
+        "phone",
+        "uid"
+    ],
+    "additionalProperties": false
+}

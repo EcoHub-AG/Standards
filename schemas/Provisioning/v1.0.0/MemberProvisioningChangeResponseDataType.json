@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "MemberProvisioningChangeResponseDataType",
+    "description": "Response for Member Upsert provisioning requests.",
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "string",
+            "enum": [
+                "OK",
+                "PENDING",
+                "MEMBER_EXISTS",
+                "ERROR"
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "errorMessage": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    },
+    "required": [
+        "code",
+        "description"
+    ],
+    "additionalProperties": false
+}

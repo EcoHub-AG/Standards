@@ -1,0 +1,69 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "MemberChangePayload",
+    "description": "Payload for creating or updating a member (membership) in EcoHub.",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "membershipType": {
+            "type": "string"
+        },
+        "brokerType": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "registrationNumber": {
+            "type": "string"
+        },
+        "currentRegistrationNumber": {
+            "type": "string"
+        },
+        "primaryOrgUnitId": {
+            "type": "integer"
+        },
+        "legalForm": {
+            "type": "string"
+        },
+        "companyName": {
+            "type": "string"
+        },
+        "address": {
+            "$ref": "./Address.json"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "fax": {
+            "type": "string"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "language": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "address",
+        "companyName",
+        "email",
+        "fax",
+        "id",
+        "language",
+        "legalForm",
+        "membershipType",
+        "phone",
+        "primaryOrgUnitId",
+        "registrationNumber",
+        "currentRegistrationNumber",
+        "uid"
+    ],
+    "additionalProperties": false
+}

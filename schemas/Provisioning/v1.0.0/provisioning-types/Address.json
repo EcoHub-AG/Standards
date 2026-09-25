@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "Address",
+    "description": "Postal address structure used by provisioning payloads.",
+    "type": "object",
+    "properties": {
+        "addressLine1": {
+            "type": "string"
+        },
+        "addressLine2": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "zipCode": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "addressLine1",
+        "city",
+        "country",
+        "zipCode"
+    ],
+    "additionalProperties": false
+}

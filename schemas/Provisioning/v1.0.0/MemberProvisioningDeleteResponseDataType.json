@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "MemberProvisioningDeleteResponseDataType",
+    "description": "Response for Member Deletion provisioning requests.",
+    "type": "object",
+    "properties": {
+        "code": {
+            "type": "string",
+            "enum": [
+                "OK",
+                "MEMBER_NOT_FOUND",
+                "ERROR"
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "errorMessage": {
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    },
+    "required": [
+        "code",
+        "description"
+    ],
+    "additionalProperties": false
+}
